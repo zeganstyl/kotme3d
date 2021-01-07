@@ -4,6 +4,7 @@ import io.ktor.application.*
 import io.ktor.http.*
 import io.ktor.http.cio.websocket.*
 import io.ktor.http.content.*
+import io.ktor.response.*
 import io.ktor.routing.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
@@ -73,7 +74,7 @@ object MainKotmeServer {
 
             routing {
                 get("/") {
-                    call.push("/index.html")
+                    call.respondRedirect("/index.html", permanent = true)
                 }
 
                 // This defines a websocket `/ws` route that allows a protocol upgrade to convert a HTTP request/response request
