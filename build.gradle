@@ -1,0 +1,48 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.21'
+}
+
+repositories {
+    jcenter()
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+def kotlinVersion = "1.4.21"
+def ktor_version = "1.4.1"
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion"
+
+    implementation("org.jetbrains.kotlin:kotlin-scripting-common:$kotlinVersion")
+    implementation("org.jetbrains.kotlin:kotlin-scripting-jvm:$kotlinVersion")
+    implementation("org.jetbrains.kotlin:kotlin-scripting-jvm-host:$kotlinVersion")
+
+    implementation("io.ktor:ktor-server-core:$ktor_version")
+    implementation("io.ktor:ktor-server-netty:$ktor_version")
+    implementation("io.ktor:ktor-websockets:$ktor_version")
+
+    implementation("com.github.cliftonlabs:json-simple:3.1.1")
+
+    implementation name: 'thelema-core-0.6.0'
+    implementation name: 'thelema-jvm-0.6.0'
+    implementation name: 'kotme'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.kotme.MainKotmeServer'
+        )
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
