@@ -42847,32 +42847,32 @@ function ck_KotmeJsMain$main$4__init_(var_0, var_1, var_2, var_3) {
     return var_4;
 }
 function ck_KotmeJsMain$main$4_handleEvent($this, $it) {
-    var var$2, var$3, var$4, var$5, var$6;
+    var var$2, var$3, $loc, $protocol, var$6, var$7;
     oktt_TeaVMApp_initiateAudio($this.$$app);
     ck_LocationView_initAudio($this.$$location);
     var$2 = $rt_str($this.$$name.value);
     kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(1087));
     var$3 = var$2.$length() <= 0 ? 0 : 1;
     if (var$3 && !$this.$$connected.$element2) {
+        var$2 = window;
+        kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(341));
+        $loc = var$2.location;
+        kji_Intrinsics_checkNotNullExpressionValue($loc, $rt_s(1088));
+        $protocol = !kji_Intrinsics_areEqual($rt_str($loc.protocol), $rt_s(1089)) ? $rt_s(1090) : $rt_s(1091);
         ck_KotmeJsMain_$callClinit();
         var$2 = ck_KotmeJsMain_INSTANCE;
-        var$4 = jl_StringBuilder__init_().$append($rt_s(1088));
-        var$5 = window;
-        kji_Intrinsics_checkNotNullExpressionValue(var$5, $rt_s(341));
-        var$5 = var$5.location;
-        kji_Intrinsics_checkNotNullExpressionValue(var$5, $rt_s(1089));
-        var$4 = new WebSocket($rt_ustr(var$4.$append($rt_str(var$5.host)).$append($rt_s(1090)).$toString()));
-        kji_Intrinsics_checkNotNullExpressionValue(var$4, $rt_s(1091));
-        ck_KotmeJsMain_setWs(var$2, var$4);
-        var$6 = ck_KotmeJsMain_getWs(ck_KotmeJsMain_INSTANCE);
+        var$6 = new WebSocket($rt_ustr(jl_StringBuilder__init_().$append($protocol).$append($rt_s(1092)).$append($rt_str($loc.host)).$append($rt_s(1093)).$toString()));
+        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1094));
+        ck_KotmeJsMain_setWs(var$2, var$6);
+        var$7 = ck_KotmeJsMain_getWs(ck_KotmeJsMain_INSTANCE);
         var$2 = otji_JS_function(otji_JS_functionAsObject(ck_KotmeJsMain$main$4$1__init_($this), "handleEvent"), "handleEvent");
-        var$6.onopen = var$2;
-        var$6 = ck_KotmeJsMain_getWs(ck_KotmeJsMain_INSTANCE);
+        var$7.onopen = var$2;
+        var$7 = ck_KotmeJsMain_getWs(ck_KotmeJsMain_INSTANCE);
         var$2 = otji_JS_function(otji_JS_functionAsObject(ck_KotmeJsMain$main$4$2__init_($this), "handleEvent"), "handleEvent");
-        var$6.onmessage = var$2;
-        var$6 = ck_KotmeJsMain_getWs(ck_KotmeJsMain_INSTANCE);
+        var$7.onmessage = var$2;
+        var$7 = ck_KotmeJsMain_getWs(ck_KotmeJsMain_INSTANCE);
         var$2 = otji_JS_function(otji_JS_functionAsObject(ck_KotmeJsMain$main$4$3__init_($this), "handleEvent"), "handleEvent");
-        var$6.onclose = var$2;
+        var$7.onclose = var$2;
     }
 }
 function ck_KotmeJsMain$main$4__init_0(var$0, var$1, var$2, var$3, var$4) {
@@ -43059,10 +43059,10 @@ function okta_Vec4Track_setDuration($this, $_set___) {
 }
 function okta_Vec4Track__init_1($this, $interpolation, $nodeIndex, $nodeName, $times, $values, $inTangents, $outTangents, $duration) {
     kji_Intrinsics_checkNotNullParameter($nodeName, $rt_s(364));
-    kji_Intrinsics_checkNotNullParameter($times, $rt_s(1092));
+    kji_Intrinsics_checkNotNullParameter($times, $rt_s(1095));
     kji_Intrinsics_checkNotNullParameter($values, $rt_s(53));
-    kji_Intrinsics_checkNotNullParameter($inTangents, $rt_s(1093));
-    kji_Intrinsics_checkNotNullParameter($outTangents, $rt_s(1094));
+    kji_Intrinsics_checkNotNullParameter($inTangents, $rt_s(1096));
+    kji_Intrinsics_checkNotNullParameter($outTangents, $rt_s(1097));
     jl_Object__init_0($this);
     $this.$interpolation1 = $interpolation;
     $this.$nodeIndex0 = $nodeIndex;
@@ -43408,10 +43408,10 @@ function oktgg_GLTF$readJson$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTF$readJson$1_invoke0($this, $$this$get) {
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
-    $$this$get.$string($rt_s(1095), oktgg_GLTF$readJson$1$1__init_($this));
-    $$this$get.$string($rt_s(1096), oktgg_GLTF$readJson$1$2__init_($this));
-    $this.$this$084.$setVersion($$this$get.$string4($rt_s(1097)));
-    $$this$get.$string($rt_s(1098), oktgg_GLTF$readJson$1$3__init_($this));
+    $$this$get.$string($rt_s(1098), oktgg_GLTF$readJson$1$1__init_($this));
+    $$this$get.$string($rt_s(1099), oktgg_GLTF$readJson$1$2__init_($this));
+    $this.$this$084.$setVersion($$this$get.$string4($rt_s(1100)));
+    $$this$get.$string($rt_s(1101), oktgg_GLTF$readJson$1$3__init_($this));
 }
 function oktgg_GLTF$readJson$1__init_0(var$0, var$1) {
     var$0.$this$084 = var$1;
@@ -43524,14 +43524,14 @@ function okts_Shader_fragSourceCode($this, $title, $pad) {
 function okts_Shader_getVersionStr($this) {
     var var$1;
     okta_APP_$callClinit();
-    var$1 = okta_APP_getPlatformType(okta_APP_INSTANCE) ? ($this.$getVersion() >= 330 ? $rt_s(1099) : $rt_s(1100)) : !($this.$getProfile().$length() <= 0 ? 0 : 1) ? jl_StringBuilder__init_().$append($rt_s(1101)).$append1($this.$getVersion()).$append8(10).$toString() : jl_StringBuilder__init_().$append($rt_s(1101)).$append1($this.$getVersion()).$append8(32).$append($this.$getProfile()).$append8(10).$toString();
+    var$1 = okta_APP_getPlatformType(okta_APP_INSTANCE) ? ($this.$getVersion() >= 330 ? $rt_s(1102) : $rt_s(1103)) : !($this.$getProfile().$length() <= 0 ? 0 : 1) ? jl_StringBuilder__init_().$append($rt_s(1104)).$append1($this.$getVersion()).$append8(10).$toString() : jl_StringBuilder__init_().$append($rt_s(1104)).$append1($this.$getVersion()).$append8(32).$append($this.$getProfile()).$append8(10).$toString();
     return var$1;
 }
 function okts_Shader_load($this, $vertCode, $fragCode) {
     var $ver, $fullVertCode, $fullFragCode, $params, var$7, $type, $numAttributes, $i, var$11, $name, $location, $numUniforms, var$15;
     a: {
-        kji_Intrinsics_checkNotNullParameter($vertCode, $rt_s(1102));
-        kji_Intrinsics_checkNotNullParameter($fragCode, $rt_s(1103));
+        kji_Intrinsics_checkNotNullParameter($vertCode, $rt_s(1105));
+        kji_Intrinsics_checkNotNullParameter($fragCode, $rt_s(1106));
         $ver = okts_Shader_getVersionStr($this);
         $fullVertCode = jl_StringBuilder__init_().$append($ver).$append($this.$defaultPrecision).$append($vertCode).$toString();
         $fullFragCode = jl_StringBuilder__init_().$append($ver).$append($this.$defaultPrecision).$append($fragCode).$toString();
@@ -43574,9 +43574,9 @@ function okts_Shader_load($this, $vertCode, $fragCode) {
         oktg_GL_$callClinit();
         oktu_ILog$DefaultImpls_error$default(var$15, oktg_IGL$DefaultImpls_getErrorString$default(oktg_GL_INSTANCE, 0, 1, null), null, 2, null);
         if (!($this.$getName().$length() <= 0 ? 0 : 1))
-            oktu_ILog$DefaultImpls_error$default(oktu_LOG_INSTANCE, $rt_s(1104), null, 2, null);
+            oktu_ILog$DefaultImpls_error$default(oktu_LOG_INSTANCE, $rt_s(1107), null, 2, null);
         else
-            oktu_ILog$DefaultImpls_error$default(oktu_LOG_INSTANCE, jl_StringBuilder__init_().$append($rt_s(1105)).$append($this.$getName()).$append($rt_s(1106)).$toString(), null, 2, null);
+            oktu_ILog$DefaultImpls_error$default(oktu_LOG_INSTANCE, jl_StringBuilder__init_().$append($rt_s(1108)).$append($this.$getName()).$append($rt_s(1109)).$toString(), null, 2, null);
         oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, $this.$getLog(), null, 2, null);
         oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, okts_IShader$DefaultImpls_sourceCode$default($this, 0, 1, null), null, 2, null);
     }
@@ -43612,7 +43612,7 @@ function okts_Shader_loadShader($this, $type, $source) {
         return $shader;
     $infoLog = oktg_GL_glGetShaderInfoLog(oktg_GL_INSTANCE, $shader);
     var$8 = $this.$logInternal;
-    $this.$logInternal = jl_StringBuilder__init_().$append(var$8).$append($type != 35633 ? $rt_s(1107) : $rt_s(1108)).$toString();
+    $this.$logInternal = jl_StringBuilder__init_().$append(var$8).$append($type != 35633 ? $rt_s(1110) : $rt_s(1111)).$toString();
     var$8 = $this.$logInternal;
     $this.$logInternal = jl_StringBuilder__init_().$append(var$8).$append($infoLog).$toString();
     return (-1);
@@ -43687,20 +43687,20 @@ function okts_Shader_buildByNodes($this) {
         $it.$executionFrag($fragExe);
     }
     $vertDecl.$append8(10);
-    $vertDecl.$append($rt_s(1109));
+    $vertDecl.$append($rt_s(1112));
     $vertDecl.$append12($vertExe);
     $vertDecl.$append8(10);
     $vertDecl.$append($rt_s(512));
     var$6 = $vertDecl.$toString();
-    kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1110));
+    kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1113));
     $this.$setVertCode(var$6);
     $fragDecl.$append8(10);
-    $fragDecl.$append($rt_s(1109));
+    $fragDecl.$append($rt_s(1112));
     $fragDecl.$append12($fragExe);
     $fragDecl.$append8(10);
     $fragDecl.$append($rt_s(512));
     var$8 = $fragDecl.$toString();
-    kji_Intrinsics_checkNotNullExpressionValue(var$8, $rt_s(1111));
+    kji_Intrinsics_checkNotNullExpressionValue(var$8, $rt_s(1114));
     $this.$setFragCode(var$8);
 }
 function okts_Shader_build($this) {
@@ -43712,7 +43712,7 @@ function okts_Shader_build($this) {
     if (!$this.$isCompiled()) {
         oktu_LOG_$callClinit();
         oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, okts_IShader$DefaultImpls_sourceCode$default($this, 0, 1, null), null, 2, null);
-        $rt_throw(jl_RuntimeException__init_($rt_s(1112)));
+        $rt_throw(jl_RuntimeException__init_($rt_s(1115)));
     }
     $this.$bind();
     $$this$forEach$iv = $this.$getNodes1();
@@ -43745,7 +43745,7 @@ function okts_Shader_findMaxChildrenTreeDepth($this, $node, $count) {
 }
 function okts_Shader_findMaxChildrenTreeDepth$default(var$1, var$2, var$3, var$4, var$5) {
     if (var$5 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1113)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1116)));
     if (var$4 & 2)
         var$3 = 0;
     return okts_Shader_findMaxChildrenTreeDepth(var$1, var$2, var$3);
@@ -43772,11 +43772,11 @@ function okts_Shader_getProfile($this) {
     return $this.$profile;
 }
 function okts_Shader__init_2($this, $vertCode, $fragCode, $name, $compile, $defaultPrecision, $version, $profile) {
-    kji_Intrinsics_checkNotNullParameter($vertCode, $rt_s(1102));
-    kji_Intrinsics_checkNotNullParameter($fragCode, $rt_s(1103));
+    kji_Intrinsics_checkNotNullParameter($vertCode, $rt_s(1105));
+    kji_Intrinsics_checkNotNullParameter($fragCode, $rt_s(1106));
     kji_Intrinsics_checkNotNullParameter($name, $rt_s(12));
-    kji_Intrinsics_checkNotNullParameter($defaultPrecision, $rt_s(1114));
-    kji_Intrinsics_checkNotNullParameter($profile, $rt_s(1115));
+    kji_Intrinsics_checkNotNullParameter($defaultPrecision, $rt_s(1117));
+    kji_Intrinsics_checkNotNullParameter($profile, $rt_s(1118));
     jl_Object__init_0($this);
     $this.$name43 = $name;
     $this.$defaultPrecision = $defaultPrecision;
@@ -43803,7 +43803,7 @@ function okts_Shader__init_0(var$0, var$1, var$2, var$3, var$4, var$5, var$6, va
         var$4 = 1;
     if (var$8 & 16) {
         okta_APP_$callClinit();
-        var$5 = !okta_APP_getPlatformType(okta_APP_INSTANCE) ? $rt_s(6) : $rt_s(1116);
+        var$5 = !okta_APP_getPlatformType(okta_APP_INSTANCE) ? $rt_s(6) : $rt_s(1119);
     }
     if (var$8 & 32)
         var$6 = 110;
@@ -43912,13 +43912,13 @@ function oktd_DataByteOrder__clinit_() {
     var var$1, var$2, var$3;
     var$1 = $rt_createArray(oktd_DataByteOrder, 3);
     var$2 = var$1.data;
-    var$3 = oktd_DataByteOrder__init_($rt_s(1117), 0);
+    var$3 = oktd_DataByteOrder__init_($rt_s(1120), 0);
     oktd_DataByteOrder_Native = var$3;
     var$2[0] = var$3;
-    var$3 = oktd_DataByteOrder__init_($rt_s(1118), 1);
+    var$3 = oktd_DataByteOrder__init_($rt_s(1121), 1);
     oktd_DataByteOrder_LittleEndian = var$3;
     var$2[1] = var$3;
-    var$3 = oktd_DataByteOrder__init_($rt_s(1119), 2);
+    var$3 = oktd_DataByteOrder__init_($rt_s(1122), 2);
     oktd_DataByteOrder_BigEndian = var$3;
     var$2[2] = var$3;
     oktd_DataByteOrder_$VALUES = var$1;
@@ -44208,7 +44208,7 @@ function oktr_DefaultResources_update($this, $delta) {
     }
 }
 function oktr_DefaultResources_addResourceType($this, $provider) {
-    kji_Intrinsics_checkNotNullParameter($provider, $rt_s(1120));
+    kji_Intrinsics_checkNotNullParameter($provider, $rt_s(1123));
     $this.$typesInternal.$add3($provider);
 }
 function oktr_DefaultResources_load($this, $uri, $beforeLoad, $afterLoad) {
@@ -44240,7 +44240,7 @@ function oktr_DefaultResources_load($this, $uri, $beforeLoad, $afterLoad) {
             if ($i >= var$6)
                 break a;
             var$7 = $this.$typesInternal.$get1($i);
-            kji_Intrinsics_checkNotNullExpressionValue(var$7, $rt_s(1121));
+            kji_Intrinsics_checkNotNullExpressionValue(var$7, $rt_s(1124));
             $type = var$7;
             if ($type.$canLoad($uri)) {
                 $res = $type.$provideResource($uri);
@@ -44261,7 +44261,7 @@ function oktr_DefaultResources_load($this, $uri, $beforeLoad, $afterLoad) {
             $i = $i + 1 | 0;
         }
     }
-    $rt_throw(jl_IllegalStateException__init_0(jl_StringBuilder__init_().$append($rt_s(1122)).$append($uri).$toString()));
+    $rt_throw(jl_IllegalStateException__init_0(jl_StringBuilder__init_().$append($rt_s(1125)).$append($uri).$toString()));
 }
 function oktr_DefaultResources_getOrNull($this, $uri) {
     kji_Intrinsics_checkNotNullParameter($uri, $rt_s(26));
@@ -44309,7 +44309,7 @@ function ki_ProgressionUtilKt_differenceModulo($a, $b, $c) {
 function ki_ProgressionUtilKt_getProgressionLastElement($start, $end, $step) {
     if ($step <= 0) {
         if ($step >= 0)
-            $rt_throw(jl_IllegalArgumentException__init_0($rt_s(1123)));
+            $rt_throw(jl_IllegalArgumentException__init_0($rt_s(1126)));
         if ($start > $end)
             $end = $end + ki_ProgressionUtilKt_differenceModulo($start, $end,  -$step) | 0;
     } else if ($start < $end)
@@ -44355,7 +44355,7 @@ function oktsn_SplitVec4Node__init_(var_0, var_1, var_2) {
 }
 function oktsn_SplitVec4Node_getVector($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(1124));
+    var$1 = $this.$getInput().$get0($rt_s(1127));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE);
@@ -44382,33 +44382,33 @@ function oktsn_SplitVec4Node_setChannelNames($this) {
                 break;
             case 4:
                 $this.$x4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(7)).$toString());
-                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1125)).$toString());
-                $this.$z3.$setInlineCode($rt_s(1126));
-                $this.$w1.$setInlineCode($rt_s(1127));
+                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1128)).$toString());
+                $this.$z3.$setInlineCode($rt_s(1129));
+                $this.$w1.$setInlineCode($rt_s(1130));
                 break a;
             case 5:
                 $this.$x4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(7)).$toString());
-                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1125)).$toString());
-                $this.$z3.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1128)).$toString());
-                $this.$w1.$setInlineCode($rt_s(1127));
+                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1128)).$toString());
+                $this.$z3.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1131)).$toString());
+                $this.$w1.$setInlineCode($rt_s(1130));
                 break a;
             default:
                 $this.$x4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(7)).$toString());
-                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1125)).$toString());
-                $this.$z3.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1128)).$toString());
-                $this.$w1.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1129)).$toString());
+                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1128)).$toString());
+                $this.$z3.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1131)).$toString());
+                $this.$w1.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1132)).$toString());
                 break a;
         }
         $this.$x4.$setInlineCode(oktsn_SplitVec4Node_getVector($this).$getRef0());
-        $this.$y4.$setInlineCode($rt_s(1126));
-        $this.$z3.$setInlineCode($rt_s(1126));
-        $this.$w1.$setInlineCode($rt_s(1127));
+        $this.$y4.$setInlineCode($rt_s(1129));
+        $this.$z3.$setInlineCode($rt_s(1129));
+        $this.$w1.$setInlineCode($rt_s(1130));
     }
 }
 function oktsn_SplitVec4Node__init_1($this, $vector) {
     var var$2;
     oktsn_SplitVec4Node_$callClinit();
-    kji_Intrinsics_checkNotNullParameter($vector, $rt_s(1124));
+    kji_Intrinsics_checkNotNullParameter($vector, $rt_s(1127));
     oktsn_ShaderNode__init_0($this);
     var$2 = oktsn_GLSLFloat__init_($rt_s(480));
     var$2.$setScope(0);
@@ -44422,7 +44422,7 @@ function oktsn_SplitVec4Node__init_1($this, $vector) {
     var$2 = oktsn_GLSLFloat__init_($rt_s(97));
     var$2.$setScope(0);
     $this.$w1 = oktsn_ShaderNode_defOut($this, var$2);
-    $this.$setInput($rt_s(1124), $vector);
+    $this.$setInput($rt_s(1127), $vector);
 }
 function oktsn_SplitVec4Node__init_2(var$0, var$1, var$2, var$3) {
     oktsn_SplitVec4Node_$callClinit();
@@ -44436,7 +44436,7 @@ function oktsn_SplitVec4Node__clinit_() {
     var var$1;
     oktsn_SplitVec4Node_Companion = oktsn_SplitVec4Node$Companion__init_1(null);
     var$1 = ju_LinkedHashMap__init_();
-    var$1.$put2($rt_s(1124), jl_Integer_valueOf(6));
+    var$1.$put2($rt_s(1127), jl_Integer_valueOf(6));
     oktsn_SplitVec4Node_InputForm = var$1;
 }
 function okta_DelayRunAction() {
@@ -44514,14 +44514,14 @@ function oktm_IMeshProvider$DefaultImpls() {
 }
 function oktm_IMeshProvider$DefaultImpls_vertexBuffer$default(var$1, var$2, var$3, var$4, var$5, var$6) {
     if (var$6 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1130)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1133)));
     if (var$5 & 4)
         var$4 = 1;
     return var$1.$vertexBuffer(var$2, var$3, var$4);
 }
 function oktm_IMeshProvider$DefaultImpls_indexBuffer$default(var$1, var$2, var$3, var$4, var$5, var$6) {
     if (var$6 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1131)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1134)));
     if (var$5 & 4)
         var$4 = 1;
     return var$1.$indexBuffer(var$2, var$3, var$4);
@@ -45952,7 +45952,7 @@ $rt_stringPool(["@", "bytes", "vertexInputs", "$receiver", "it", "<set-?>", "", 
 "null cannot be cast to non-null type org.ksdfv.thelema.fs.IFile", "UTF8", "null cannot be cast to non-null type org.ksdfv.thelema.json.IJsonObject", "arrayName", "buffers", "glTF: array name is unknown: ", "asset", "extensionsRequired", "glTF extensions are not supported yet", "bufferViews", "accessors", "images", "textures", "materials", "cameras", "nodes", "skins", "animations", "scenes", "skinnedNodes[i]", "sourceType", "directory", "2.0", "viewProj", "camFar", "camPos", "uSunPosition", "uSunColor", "\nattribute vec3 POSITION;\nvarying vec3 vPosition;\n\nuniform mat4 viewProj;\nuniform vec3 camPos;\nuniform float camFar;\n\nvoid main () {\n    vPosition = POSITION;\n    gl_Position = viewProj * vec4(POSITION * camFar + camPos, 1.0);\n}",
 "\nvarying vec3 vPosition;\nuniform samplerCube texture;\n\nuniform vec3 uSunColor;\nuniform vec3 uSunPosition;\nconst float uSunDiskSize = 0.05;\nconst float uSunStrength = 2.0;\n\nvoid main () {\n    vec3 norm = normalize(vPosition);\n    \n    vec3 up = vec3(0.1, 0.5, 0.6);\n    vec3 bottom = vec3(0.5, 0.7, 0.8);\n    vec3 skyColor = mix(bottom, up, clamp(norm.y, 0.0, 1.0));\n    \n    float dist = length(norm - uSunPosition);\n\tfloat sunMix = clamp(uSunDiskSize/dist, 0.0, uSunStrength);\n\n\tvec3 skySun = mix(skyColor, uSun"
 + "Color, sunMix);\n    //vec3 skySun = skyColor + uSunColor * sunMix;\n    \n    gl_FragColor = vec4(skySun, 1.0);\n}", "null cannot be cast to non-null type org.ksdfv.thelema.g3d.gltf.IGLTFArray<org.ksdfv.thelema.g3d.gltf.IGLTFArrayElement>", "list[index]", "list.iterator()", "Either src or dest is null", "shortArray", "arg1.xyz * arg2", "Currently mesh builder supports only maximum 32768 vertices", "heightProvider", "lateinit property ", " has not been initialized", " must not be null", "Parameter specified as non-null is null: method ",
-".", ", parameter ", "ActiveCamera proxy can\'t be ActiveCamera", " = normalize(", ".z;\n", "vec3 ", "cameraPosition", "prevViewProjectionMatrix", "viewMatrix", "projectionMatrix", "inverseViewProjectionMatrix", "viewZDepth", "viewSpacePosition", "stars-above-head/stars-above-head.gltf", "byteStride", "Collection doesn\'t contain element at index ", "name.value", "ws://", "Window.current().location", "/ws", "WebSocket.create(\"ws://$…ent().location.host}/ws\")", "times", "inTangents", "outTangents", "copyright",
+".", ", parameter ", "ActiveCamera proxy can\'t be ActiveCamera", " = normalize(", ".z;\n", "vec3 ", "cameraPosition", "prevViewProjectionMatrix", "viewMatrix", "projectionMatrix", "inverseViewProjectionMatrix", "viewZDepth", "viewSpacePosition", "stars-above-head/stars-above-head.gltf", "byteStride", "Collection doesn\'t contain element at index ", "name.value", "loc", "https:", "ws:", "wss:", "//", "/ws", "WebSocket.create(\"$protocol//${loc.host}/ws\")", "times", "inTangents", "outTangents", "copyright",
 "generator", "version", "minVersion", "#version 300 es\n", "#version 100\n", "#version ", "vertCode", "fragCode", "==== Errors in shader ====", "==== Errors in shader \"", "\" ====", "Fragment shader:\n", "Vertex shader:\n", "void main() {\n", "vertDecl.toString()", "fragDecl.toString()", "Errors in generated shader", "Super calls with default arguments not supported in this target, function: findMaxChildrenTreeDepth", "defaultPrecision", "profile", "precision mediump float;\n", "Native", "LittleEndian", "BigEndian",
 "provider", "typesInternal[i]", "Resource type is not found for: ", "Step is zero.", "vector", ".y", "0.0", "1.0", ".z", ".w", "Super calls with default arguments not supported in this target, function: vertexBuffer", "Super calls with default arguments not supported in this target, function: indexBuffer"]);
 jl_String.prototype.toString = function() {
