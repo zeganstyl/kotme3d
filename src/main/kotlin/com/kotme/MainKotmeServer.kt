@@ -67,8 +67,7 @@ object MainKotmeServer {
             // This adds an interceptor that will create a specific session in each request if no session is available already.
             intercept(ApplicationCallPipeline.Features) {
                 if (call.sessions.get<ChatSession>() == null) {
-                    //call.sessions.set(ChatSession(generateNonce()))
-                    call.sessions.set(ChatSession("root"))
+                    call.sessions.set(ChatSession(generateNonce()))
                 }
             }
 

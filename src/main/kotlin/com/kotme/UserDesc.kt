@@ -1,6 +1,6 @@
 package com.kotme
 
-class UserDesc(var character: JonesImp, var name: String) {
+class UserDesc constructor(var character: JonesImp, var name: String) {
     var thread: Thread? = null
         set(value) {
             field?.interrupt()

@@ -61,14 +61,10 @@ class LocationServer: LocationImp() {
             writeJson(this)
         }
 
-        userDescriptions.forEach {
-            sendCharacterToUser(it.key, it.value)
-        }
-    }
-
-    fun sendCharacterToUser(user: String, userDesc: UserDesc = userDescriptions[user]!!) {
-        sendToClient(MessageType.ClientSetCharacter, user) {
-            set("character", userDesc.character.id)
+        userDescriptions.forEach { entry ->
+            sendToClient(MessageType.ClientSetCharacter, entry.key) {
+                set("character", entry.value.character.id)
+            }
         }
     }
 
@@ -113,13 +109,20 @@ class LocationServer: LocationImp() {
         }
     }
 
-    fun receiveMessage(user: String, messageType: Int, json: IJsonObject) {
+    fun receiveMessage(member: String, messageType: Int, json: IJsonObject) {
         when (messageType) {
             MessageType.ServerEval -> {
-                scripting.eval(json.string("code"), user, userDescriptions[user]!!)
+                scripting.eval(json.string("code"), member, userDescriptions[member]!!)
             }
             MessageType.ServerRestartLocation -> {
                 resetScene()
+            }
+            MessageType.ServerRenameUser -> {
+                json.string("name") {
+                    runBlocking {
+                        memberRenamed(member, it)
+                    }
+                }
             }
         }
     }
@@ -142,11 +145,27 @@ class LocationServer: LocationImp() {
         val list = userSessions.computeIfAbsent(member) { CopyOnWriteArrayList() }
         list.add(socket)
 
-        sendToClient(MessageType.ClientSetLocation, member) {
-            writeJson(this)
+        runBlocking {
+            sendToSingleUserSession(MessageType.ClientSetLocation, socket) {
+                writeJson(this)
+            }
+
+            sendToSingleUserSession(MessageType.ClientSetCharacter, socket) {
+                set("character", user.character.id)
+            }
         }
 
-        sendCharacterToUser(member, user)
+        sendUserNames()
+    }
+
+    private fun sendUserNames() {
+        sendToClient(MessageType.ClientSetUsersList, null) {
+            setArray("users") {
+                userDescriptions.forEach {
+                    add(it.value.name)
+                }
+            }
+        }
     }
 
     fun addUserCharacter(): JonesImp {
@@ -162,6 +181,7 @@ class LocationServer: LocationImp() {
      */
     suspend fun memberRenamed(member: String, to: String) {
         userDescriptions[member]?.name = to
+        sendUserNames()
     }
 
     /**
@@ -181,6 +201,8 @@ class LocationServer: LocationImp() {
                 removeSceneObject(user.character.id)
             }
         }
+
+        sendUserNames()
     }
 
     /**
@@ -219,6 +241,25 @@ class LocationServer: LocationImp() {
     private suspend fun broadcast(sender: String, message: String) {
         val name = userDescriptions[sender] ?: sender
         broadcast("[$name] $message")
+    }
+
+    private suspend fun sendToSingleUserSession(type: Int, socket: WebSocketSession, block: IJsonObject.() -> Unit) {
+        try {
+            val text = JSON.printObject {
+                set("type", type)
+                set("obj") {
+                    block(this)
+                }
+            }
+
+            socket.send(Frame.Text(text))
+        } catch (t: Throwable) {
+            try {
+                socket.close(CloseReason(CloseReason.Codes.PROTOCOL_ERROR, ""))
+            } catch (ignore: ClosedSendChannelException) {
+                // at some point it will get closed
+            }
+        }
     }
 
     /**

@@ -1626,6 +1626,13 @@ function okti_IKB$DefaultImpls_getShift($$this) {
     okti_KB_$callClinit();
     return !okti_KB_isKeyPressed(okti_KB_INSTANCE, 59) && !okti_KB_isKeyPressed(okti_KB_INSTANCE, 60) ? 0 : 1;
 }
+function otj_JSObject() {
+}
+function otj_JSObject_cast$static($this) {
+    return $this;
+}
+function otjdc_ElementCSSInlineStyle() {
+}
 function jur_AbstractCharClass$LazyAlpha() {
     jur_AbstractCharClass$LazyCharClass.call(this);
 }
@@ -5592,6 +5599,35 @@ function oktm_IVec4__clinit_() {
     oktm_IVec4$Companion_$callClinit();
     oktm_IVec4_Companion = oktm_IVec4$Companion_$$INSTANCE;
 }
+function otjdx_Node() {
+}
+function otjdx_Element() {
+}
+function otjde_EventTarget() {
+}
+function otjde_FocusEventTarget() {
+}
+function otjde_MouseEventTarget() {
+}
+function otjde_WheelEventTarget() {
+}
+function otjde_KeyboardEventTarget() {
+}
+function otjde_LoadEventTarget() {
+}
+function otjdh_HTMLElement() {
+}
+function otjdh_HTMLElement_clear$static($this) {
+    var $node, $node_0;
+    $node = $this.lastChild;
+    while ($node !== null) {
+        $node_0 = $node.previousSibling;
+        if ($node.nodeType != 2)
+            $this.removeChild($node);
+        $node = $node_0;
+    }
+    return $this;
+}
 function oktm_IVec3() {
 }
 function jl_UnsupportedOperationException() {
@@ -7083,11 +7119,6 @@ function ks_SequencesKt___SequencesKt$asIterable$$inlined$Iterable$1__init_0($th
 function ks_SequencesKt___SequencesKt$asIterable$$inlined$Iterable$1_iterator($this) {
     return $this.$$this_asIterable$inlined.$iterator();
 }
-function otj_JSObject() {
-}
-function otj_JSObject_cast$static($this) {
-    return $this;
-}
 function otjde_EventListener() {
 }
 function oktt_TvmMouse$2() {
@@ -8023,9 +8054,6 @@ function oktr_ResourceListenerAdapter__init_() {
 function oktr_ResourceListenerAdapter_error($this, $resource, $status) {
     kji_Intrinsics_checkNotNullParameter($resource, $rt_s(316));
 }
-function oktr_ResourceListenerAdapter_loaded($this, $resource) {
-    kji_Intrinsics_checkNotNullParameter($resource, $rt_s(316));
-}
 function oktr_ResourceListenerAdapter_progressChanged($this, $resource, $oldValue, $newValue) {
     kji_Intrinsics_checkNotNullParameter($resource, $rt_s(316));
 }
@@ -8050,9 +8078,10 @@ function oktr_DefaultResources$resourceListener$1__init_(var_0) {
 function oktr_DefaultResources$resourceListener$1_removeListenerOnLoaded($this) {
     return 0;
 }
-function oktr_DefaultResources$resourceListener$1_runOnGLThreadRequested($this, $resource) {
+function oktr_DefaultResources$resourceListener$1_loaded($this, $resource) {
     kji_Intrinsics_checkNotNullParameter($resource, $rt_s(316));
-    oktr_DefaultResources_access$getResourcesRequestedGLCalls$p($this.$this$020).$add3($resource);
+    if ($resource.$getRunOnGLThreadRequest())
+        oktr_DefaultResources_access$getResourcesRequestedGLCalls$p($this.$this$020).$add3($resource);
 }
 function oktr_DefaultResources$resourceListener$1__init_0($this, $this$0) {
     $this.$this$020 = $this$0;
@@ -11593,10 +11622,6 @@ function okta_Vec3Track__init_0($this, $interpolation, $nodeIndex, $nodeName) {
 function okta_Vec3Track_calculateDuration($this) {
     return okta_IAnimTrack$DefaultImpls_calculateDuration($this);
 }
-function otjde_EventTarget() {
-}
-function otjde_KeyboardEventTarget() {
-}
 function oktgg_IGLTFArrayListener() {
 }
 function oktgg_GLTF$WhenMappings() {
@@ -14676,8 +14701,6 @@ function jur_PossessiveCompositeQuantifierSet_matches($this, $stringIndex, $test
     }
     return (-1);
 }
-function otjde_LoadEventTarget() {
-}
 function ck_CharacterImp$readJson$4() {
     kji_Lambda.call(this);
     this.$this$052 = null;
@@ -16331,6 +16354,31 @@ function jl_NoSuchMethodError__init_(var_0) {
 function jl_NoSuchMethodError__init_0($this, $message) {
     jl_IncompatibleClassChangeError__init_0($this, $message);
 }
+function ck_KotmeJsMain$main$4$1$1() {
+    kji_Lambda.call(this);
+    this.$this$066 = null;
+}
+function ck_KotmeJsMain$main$4$1$1__init_(var_0) {
+    var var_1 = new ck_KotmeJsMain$main$4$1$1();
+    ck_KotmeJsMain$main$4$1$1__init_0(var_1, var_0);
+    return var_1;
+}
+function ck_KotmeJsMain$main$4$1$1_invoke(var$0, var$1) {
+    ck_KotmeJsMain$main$4$1$1_invoke0(var$0, var$1);
+    k_Unit_$callClinit();
+    return k_Unit_INSTANCE;
+}
+function ck_KotmeJsMain$main$4$1$1_invoke0($this, $$this$send) {
+    var var$2;
+    kji_Intrinsics_checkNotNullParameter($$this$send, $rt_s(3));
+    var$2 = $rt_str($this.$this$066.$this$067.$$userName.value);
+    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(484));
+    $$this$send.$set21($rt_s(12), var$2);
+}
+function ck_KotmeJsMain$main$4$1$1__init_0(var$0, var$1) {
+    var$0.$this$066 = var$1;
+    kji_Lambda__init_0(var$0, 1);
+}
 function ji_IOException() {
     jl_Exception.call(this);
 }
@@ -16343,7 +16391,7 @@ function ck_SceneObject$DefaultImpls_readJson($$this, $json) {
 }
 function oktgg_GLTF$readJson$3$1() {
     kji_Lambda.call(this);
-    this.$this$066 = null;
+    this.$this$068 = null;
 }
 function oktgg_GLTF$readJson$3$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$3$1();
@@ -16358,12 +16406,12 @@ function oktgg_GLTF$readJson$3$1_invoke(var$0, var$1) {
 function oktgg_GLTF$readJson$3$1_invoke0($this, $$this$objs) {
     var $bufferView;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    $bufferView = oktgg_GLTFBufferView__init_($this.$this$066.$this$067, oktgg_GLTFArray_size($this.$this$066.$this$067.$getBufferViews0()), 0, 0, 0, 0, 0, null, 252, null);
-    oktgg_GLTFArray_add($this.$this$066.$this$067.$getBufferViews0(), $bufferView);
+    $bufferView = oktgg_GLTFBufferView__init_($this.$this$068.$this$069, oktgg_GLTFArray_size($this.$this$068.$this$069.$getBufferViews0()), 0, 0, 0, 0, 0, null, 252, null);
+    oktgg_GLTFArray_add($this.$this$068.$this$069.$getBufferViews0(), $bufferView);
     oktgg_GLTFBufferView_readJson($bufferView, $$this$objs);
 }
 function oktgg_GLTF$readJson$3$1__init_0(var$0, var$1) {
-    var$0.$this$066 = var$1;
+    var$0.$this$068 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktu_IAsyncList$DefaultImpls() {
@@ -16402,7 +16450,7 @@ function ju_AbstractList$1() {
     a.$modCount1 = 0;
     a.$size2 = 0;
     a.$removeIndex = 0;
-    a.$this$068 = null;
+    a.$this$070 = null;
 }
 function ju_AbstractList$1__init_(var_0) {
     var var_1 = new ju_AbstractList$1();
@@ -16410,10 +16458,10 @@ function ju_AbstractList$1__init_(var_0) {
     return var_1;
 }
 function ju_AbstractList$1__init_0($this, $this$0) {
-    $this.$this$068 = $this$0;
+    $this.$this$070 = $this$0;
     jl_Object__init_0($this);
-    $this.$modCount1 = $this.$this$068.$modCount0;
-    $this.$size2 = $this.$this$068.$size();
+    $this.$modCount1 = $this.$this$070.$modCount0;
+    $this.$size2 = $this.$this$070.$size();
     $this.$removeIndex = (-1);
 }
 function ju_AbstractList$1_hasNext($this) {
@@ -16423,13 +16471,13 @@ function ju_AbstractList$1_next($this) {
     var var$1, var$2;
     ju_AbstractList$1_checkConcurrentModification($this);
     $this.$removeIndex = $this.$index1;
-    var$1 = $this.$this$068;
+    var$1 = $this.$this$070;
     var$2 = $this.$index1;
     $this.$index1 = var$2 + 1 | 0;
     return var$1.$get1(var$2);
 }
 function ju_AbstractList$1_checkConcurrentModification($this) {
-    if ($this.$modCount1 >= $this.$this$068.$modCount0)
+    if ($this.$modCount1 >= $this.$this$070.$modCount0)
         return;
     $rt_throw(ju_ConcurrentModificationException__init_());
 }
@@ -16468,7 +16516,7 @@ function ks_SequencesKt___SequencesKt() {
     ks_SequencesKt___SequencesJvmKt.call(this);
 }
 function ks_SequencesKt___SequencesKt_asIterable($$this$asIterable) {
-    kji_Intrinsics_checkNotNullParameter($$this$asIterable, $rt_s(484));
+    kji_Intrinsics_checkNotNullParameter($$this$asIterable, $rt_s(485));
     return ks_SequencesKt___SequencesKt$asIterable$$inlined$Iterable$1__init_($$this$asIterable);
 }
 function ks_SequencesKt() {
@@ -16584,9 +16632,9 @@ function oktgg_GLTFCamera_setYmag($this, $_set___) {
 function oktgg_GLTFCamera_readJson($this, $json) {
     kji_Intrinsics_checkNotNullParameter($json, $rt_s(25));
     $json.$string($rt_s(12), oktgg_GLTFCamera$readJson$1__init_($this));
-    $this.$type1 = $json.$string4($rt_s(485));
-    $json.$obj($rt_s(486), oktgg_GLTFCamera$readJson$2__init_($this, $json));
-    $json.$obj($rt_s(487), oktgg_GLTFCamera$readJson$3__init_($this, $json));
+    $this.$type1 = $json.$string4($rt_s(486));
+    $json.$obj($rt_s(487), oktgg_GLTFCamera$readJson$2__init_($this, $json));
+    $json.$obj($rt_s(488), oktgg_GLTFCamera$readJson$3__init_($this, $json));
     oktgg_GLTFCamera_getGltf($this).$getCameras().$ready(oktgg_GLTFCamera_getElementIndex($this));
 }
 function oktgg_GLTFCamera_getGltf($this) {
@@ -16636,7 +16684,7 @@ function ck_CharacterImp$readJson$4$1__init_0(var$0, var$1) {
 }
 function ck_CharacterImp$readJson$4$3() {
     kji_Lambda.call(this);
-    this.$this$069 = null;
+    this.$this$071 = null;
 }
 function ck_CharacterImp$readJson$4$3__init_(var_0) {
     var var_1 = new ck_CharacterImp$readJson$4$3();
@@ -16650,16 +16698,16 @@ function ck_CharacterImp$readJson$4$3_invoke(var$0, var$1) {
 }
 function ck_CharacterImp$readJson$4$3_invoke0($this, $$this$array) {
     kji_Intrinsics_checkNotNullParameter($$this$array, $rt_s(3));
-    okta_SequenceAction_getChildren(ck_CharacterImp_getActions($this.$this$069.$this$052)).$clear();
+    okta_SequenceAction_getChildren(ck_CharacterImp_getActions($this.$this$071.$this$052)).$clear();
     $$this$array.$objs(ck_CharacterImp$readJson$4$3$1__init_($this));
 }
 function ck_CharacterImp$readJson$4$3__init_0(var$0, var$1) {
-    var$0.$this$069 = var$1;
+    var$0.$this$071 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function ck_CharacterImp$readJson$4$2() {
     kji_Lambda.call(this);
-    this.$this$070 = null;
+    this.$this$072 = null;
 }
 function ck_CharacterImp$readJson$4$2__init_(var_0) {
     var var_1 = new ck_CharacterImp$readJson$4$2();
@@ -16672,10 +16720,10 @@ function ck_CharacterImp$readJson$4$2_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function ck_CharacterImp$readJson$4$2_invoke0($this, $it) {
-    $this.$this$070.$this$052.$clearActions();
+    $this.$this$072.$this$052.$clearActions();
 }
 function ck_CharacterImp$readJson$4$2__init_0(var$0, var$1) {
-    var$0.$this$070 = var$1;
+    var$0.$this$072 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_PossessiveQuantifierSet() {
@@ -16740,7 +16788,7 @@ function jl_Short__clinit_() {
 }
 function oktgg_BoxMeshBuilder$build$1() {
     kji_Lambda.call(this);
-    this.$this$071 = null;
+    this.$this$073 = null;
 }
 function oktgg_BoxMeshBuilder$build$1__init_(var_0) {
     var var_1 = new oktgg_BoxMeshBuilder$build$1();
@@ -16755,23 +16803,23 @@ function oktgg_BoxMeshBuilder$build$1_invoke(var$0, var$1) {
 function oktgg_BoxMeshBuilder$build$1_invoke0($this, $$this$createVerticesFloat) {
     var $xs, $ys, $zs, var$5, var$6, var$7, var$8;
     kji_Intrinsics_checkNotNullParameter($$this$createVerticesFloat, $rt_s(3));
-    $xs = oktgg_BoxMeshBuilder_getXSize($this.$this$071) * 0.5;
-    $ys = oktgg_BoxMeshBuilder_getYSize($this.$this$071) * 0.5;
-    $zs = oktgg_BoxMeshBuilder_getZSize($this.$this$071) * 0.5;
-    var$5 = $this.$this$071;
+    $xs = oktgg_BoxMeshBuilder_getXSize($this.$this$073) * 0.5;
+    $ys = oktgg_BoxMeshBuilder_getYSize($this.$this$073) * 0.5;
+    $zs = oktgg_BoxMeshBuilder_getZSize($this.$this$073) * 0.5;
+    var$5 = $this.$this$073;
     var$6 =  -$xs;
     var$7 =  -$ys;
     oktgg_BoxMeshBuilder_access$putSide(var$5, $$this$createVerticesFloat, 0.0, 0.0, 1.0, var$6, var$7, $zs, $xs, var$7, $zs, $xs, $ys, $zs, var$6, $ys, $zs);
-    var$5 = $this.$this$071;
+    var$5 = $this.$this$073;
     var$8 =  -$zs;
     oktgg_BoxMeshBuilder_access$putSide(var$5, $$this$createVerticesFloat, 0.0, 1.0, 0.0, var$6, $ys, $zs, $xs, $ys, $zs, $xs, $ys, var$8, var$6, $ys, var$8);
-    oktgg_BoxMeshBuilder_access$putSide($this.$this$071, $$this$createVerticesFloat, 0.0, 0.0, (-1.0), $xs, var$7, var$8, var$6, var$7, var$8, var$6, $ys, var$8, $xs, $ys, var$8);
-    oktgg_BoxMeshBuilder_access$putSide($this.$this$071, $$this$createVerticesFloat, 0.0, (-1.0), 0.0, var$6, var$7, var$8, $xs, var$7, var$8, $xs, var$7, $zs, var$6, var$7, $zs);
-    oktgg_BoxMeshBuilder_access$putSide($this.$this$071, $$this$createVerticesFloat, (-1.0), 0.0, 0.0, var$6, var$7, $zs, var$6, var$7, var$8, var$6, $ys, var$8, var$6, $ys, $zs);
-    oktgg_BoxMeshBuilder_access$putSide($this.$this$071, $$this$createVerticesFloat, 1.0, 0.0, 0.0, $xs, var$7, $zs, $xs, var$7, var$8, $xs, $ys, var$8, $xs, $ys, $zs);
+    oktgg_BoxMeshBuilder_access$putSide($this.$this$073, $$this$createVerticesFloat, 0.0, 0.0, (-1.0), $xs, var$7, var$8, var$6, var$7, var$8, var$6, $ys, var$8, $xs, $ys, var$8);
+    oktgg_BoxMeshBuilder_access$putSide($this.$this$073, $$this$createVerticesFloat, 0.0, (-1.0), 0.0, var$6, var$7, var$8, $xs, var$7, var$8, $xs, var$7, $zs, var$6, var$7, $zs);
+    oktgg_BoxMeshBuilder_access$putSide($this.$this$073, $$this$createVerticesFloat, (-1.0), 0.0, 0.0, var$6, var$7, $zs, var$6, var$7, var$8, var$6, $ys, var$8, var$6, $ys, $zs);
+    oktgg_BoxMeshBuilder_access$putSide($this.$this$073, $$this$createVerticesFloat, 1.0, 0.0, 0.0, $xs, var$7, $zs, $xs, var$7, var$8, $xs, $ys, var$8, $xs, $ys, $zs);
 }
 function oktgg_BoxMeshBuilder$build$1__init_0(var$0, var$1) {
-    var$0.$this$071 = var$1;
+    var$0.$this$073 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_BoxMeshBuilder$build$2() {
@@ -16865,7 +16913,7 @@ function oktsn_ToneMapNode__init_1(var_0, var_1, var_2, var_3) {
 }
 function oktsn_ToneMapNode_getInputColor($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(488));
+    var$1 = $this.$getInput().$get0($rt_s(489));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getOneFloat(oktsn_GLSL_INSTANCE);
@@ -16874,7 +16922,7 @@ function oktsn_ToneMapNode_getInputColor($this) {
 }
 function oktsn_ToneMapNode_setInputColor($this, $value) {
     kji_Intrinsics_checkNotNullParameter($value, $rt_s(278));
-    $this.$setInput($rt_s(488), $value);
+    $this.$setInput($rt_s(489), $value);
 }
 function oktsn_ToneMapNode_getResult($this) {
     return $this.$result0;
@@ -16882,19 +16930,18 @@ function oktsn_ToneMapNode_getResult($this) {
 function oktsn_ToneMapNode_prepareToDrawScene($this, $scene) {
     kji_Intrinsics_checkNotNullParameter($scene, $rt_s(275));
     oktsn_ShaderNode_prepareToDrawScene($this, $scene);
-    $this.$getShader().$set15($rt_s(489), $scene.$getWorld().$getExposure());
+    $this.$getShader().$set15($rt_s(490), $scene.$getWorld().$getExposure());
 }
 function oktsn_ToneMapNode_declarationFrag($this, $out) {
     var var$2;
     a: {
         kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
-        $out.$append($rt_s(490));
-        $out.$append(jl_StringBuilder__init_().$append($this.$result0.$getTypedRef0()).$append($rt_s(491)).$toString());
-        $out.$append($rt_s(492));
+        $out.$append($rt_s(491));
+        $out.$append(jl_StringBuilder__init_().$append($this.$result0.$getTypedRef0()).$append($rt_s(492)).$toString());
         $out.$append($rt_s(493));
+        $out.$append($rt_s(494));
         switch ($this.$toneMapType) {
             case 1:
-                $out.$append($rt_s(494));
                 $out.$append($rt_s(495));
                 $out.$append($rt_s(496));
                 $out.$append($rt_s(497));
@@ -16902,39 +16949,40 @@ function oktsn_ToneMapNode_declarationFrag($this, $out) {
                 $out.$append($rt_s(499));
                 $out.$append($rt_s(500));
                 $out.$append($rt_s(501));
-                var$2 = $out.$append($rt_s(502));
+                $out.$append($rt_s(502));
+                var$2 = $out.$append($rt_s(503));
                 break a;
             case 2:
-                $out.$append($rt_s(503));
-                var$2 = $out.$append($rt_s(504));
+                $out.$append($rt_s(504));
+                var$2 = $out.$append($rt_s(505));
                 break a;
             case 3:
-                $out.$append($rt_s(505));
                 $out.$append($rt_s(506));
                 $out.$append($rt_s(507));
                 $out.$append($rt_s(508));
                 $out.$append($rt_s(509));
                 $out.$append($rt_s(510));
-                var$2 = $out.$append($rt_s(511));
+                $out.$append($rt_s(511));
+                var$2 = $out.$append($rt_s(512));
                 break a;
             default:
         }
-        var$2 = $rt_s(511);
+        var$2 = $rt_s(512);
     }
     $out.$append12(var$2);
-    $out.$append($rt_s(512));
+    $out.$append($rt_s(513));
 }
 function oktsn_ToneMapNode_executionFrag($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
-    $out.$append(jl_StringBuilder__init_().$append($this.$result0.$getRef0()).$append($rt_s(513)).$append(oktsn_ToneMapNode_getInputColor($this).$asVec3()).$append($rt_s(514)).$append(oktsn_ToneMapNode_getInputColor($this).$getRef0()).$append($rt_s(515)).$toString());
+    $out.$append(jl_StringBuilder__init_().$append($this.$result0.$getRef0()).$append($rt_s(514)).$append(oktsn_ToneMapNode_getInputColor($this).$asVec3()).$append($rt_s(515)).$append(oktsn_ToneMapNode_getInputColor($this).$getRef0()).$append($rt_s(516)).$toString());
 }
 function oktsn_ToneMapNode__init_0($this, $inputColor, $toneMapType) {
     oktsn_ToneMapNode_$callClinit();
-    kji_Intrinsics_checkNotNullParameter($inputColor, $rt_s(488));
+    kji_Intrinsics_checkNotNullParameter($inputColor, $rt_s(489));
     oktsn_ShaderNode__init_0($this);
     $this.$toneMapType = $toneMapType;
-    $this.$result0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(516)));
-    $this.$setInput($rt_s(488), $inputColor);
+    $this.$result0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(517)));
+    $this.$setInput($rt_s(489), $inputColor);
 }
 function oktsn_ToneMapNode__init_2(var$0, var$1, var$2, var$3, var$4) {
     oktsn_ToneMapNode_$callClinit();
@@ -16950,12 +16998,12 @@ function oktsn_ToneMapNode__clinit_() {
     var var$1;
     oktsn_ToneMapNode_Companion = oktsn_ToneMapNode$Companion__init_(null);
     var$1 = ju_LinkedHashMap__init_();
-    var$1.$put2($rt_s(488), jl_Integer_valueOf(6));
+    var$1.$put2($rt_s(489), jl_Integer_valueOf(6));
     oktsn_ToneMapNode_InputForm = var$1;
 }
 function jur_AbstractCharClass$LazyJavaLetter$1() {
     jur_AbstractCharClass.call(this);
-    this.$this$072 = null;
+    this.$this$074 = null;
 }
 function jur_AbstractCharClass$LazyJavaLetter$1__init_(var_0) {
     var var_1 = new jur_AbstractCharClass$LazyJavaLetter$1();
@@ -16963,7 +17011,7 @@ function jur_AbstractCharClass$LazyJavaLetter$1__init_(var_0) {
     return var_1;
 }
 function jur_AbstractCharClass$LazyJavaLetter$1__init_0($this, $this$0) {
-    $this.$this$072 = $this$0;
+    $this.$this$074 = $this$0;
     jur_AbstractCharClass__init_0($this);
 }
 function jur_AbstractCharClass$LazyJavaLetter$1_contains($this, $ch) {
@@ -17011,7 +17059,7 @@ function oktu_Pool_free($this, $instance) {
     $this.$usedInternal.$remove1($instance);
 }
 function oktu_Pool__init_1($this, $create, $reset) {
-    kji_Intrinsics_checkNotNullParameter($create, $rt_s(517));
+    kji_Intrinsics_checkNotNullParameter($create, $rt_s(518));
     jl_Object__init_0($this);
     $this.$create = $create;
     $this.$reset1 = $reset;
@@ -17019,7 +17067,7 @@ function oktu_Pool__init_1($this, $create, $reset) {
     $this.$usedInternal = ju_ArrayList__init_();
 }
 function oktu_Pool__init_2($this, $create) {
-    kji_Intrinsics_checkNotNullParameter($create, $rt_s(517));
+    kji_Intrinsics_checkNotNullParameter($create, $rt_s(518));
     oktu_Pool__init_1($this, $create, null);
 }
 function oktsn_UVNode() {
@@ -17053,7 +17101,7 @@ function oktsn_UVNode_declarationFrag($this, $out) {
 function oktsn_UVNode_executionVert($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if ($this.$uv0.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append($this.$uv0.$getRef0()).$append($rt_s(518)).$append($this.$aUVName).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($this.$uv0.$getRef0()).$append($rt_s(519)).$append($this.$aUVName).$append($rt_s(286)).$toString());
 }
 function oktsn_UVNode_declarationVert($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
@@ -17065,7 +17113,7 @@ function oktsn_UVNode_declarationVert($this, $out) {
 function oktsn_UVNode__init_0($this) {
     oktsn_UVNode_$callClinit();
     oktsn_ShaderNode__init_0($this);
-    $this.$aUVName = $rt_s(519);
+    $this.$aUVName = $rt_s(520);
     $this.$uv0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec2__init_($rt_s(326)));
 }
 function oktsn_UVNode__clinit_() {
@@ -17103,14 +17151,14 @@ function ck_LocationImp_getSceneObjects($this) {
 }
 function ck_LocationImp_sendToClient$default(var$1, var$2, var$3, var$4, var$5, var$6) {
     if (var$6 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(520)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(521)));
     if (var$5 & 2)
         var$3 = null;
     var$1.$sendToClient(var$2, var$3, var$4);
 }
 function ck_LocationImp_readJson($this, $json) {
     kji_Intrinsics_checkNotNullParameter($json, $rt_s(25));
-    $json.$array($rt_s(521), ck_LocationImp$readJson$1__init_($this));
+    $json.$array($rt_s(522), ck_LocationImp$readJson$1__init_($this));
 }
 function ck_LocationImp_resetScene($this) {
     $this.$gameObjectsInternal.$clear();
@@ -17198,7 +17246,7 @@ function ck_LocationView_initAudio($this) {
         okta_AL_$callClinit();
         var$1 = okta_AL_INSTANCE;
         oktf_FS_$callClinit();
-        $this.$music = okta_AL_newMusic(var$1, oktf_FS_internal(oktf_FS_INSTANCE, $rt_s(522)));
+        $this.$music = okta_AL_newMusic(var$1, oktf_FS_internal(oktf_FS_INSTANCE, $rt_s(523)));
         var$1 = $this.$music;
         if (var$1 !== null)
             var$1.$setVolume(0.20000000298023224);
@@ -17217,23 +17265,23 @@ function ck_LocationView_receiveJson($this, $json, $messageType) {
         kji_Intrinsics_checkNotNullParameter($json, $rt_s(25));
         switch ($messageType) {
             case 50:
-                $console = $json.$string2($rt_s(523), $rt_s(6));
-                $errors = $json.$string2($rt_s(524), $rt_s(6));
+                $console = $json.$string2($rt_s(524), $rt_s(6));
+                $errors = $json.$string2($rt_s(525), $rt_s(6));
                 $this.$evalResult($console, $errors);
                 break a;
             case 51:
-                var$5 = ck_LocationImp_getSceneObjectsMap($this).$get0(jl_Integer_valueOf($json.$int0($rt_s(525))));
+                var$5 = ck_LocationImp_getSceneObjectsMap($this).$get0(jl_Integer_valueOf($json.$int0($rt_s(526))));
                 if (var$5 === null)
                     break a;
                 var$5.$readJson($json);
                 break a;
             case 52:
-                $obj = $this.$createObject($json.$int0($rt_s(485)), $json.$int0($rt_s(525)));
+                $obj = $this.$createObject($json.$int0($rt_s(486)), $json.$int0($rt_s(526)));
                 $obj.$readJson($json);
                 $this.$addSceneObject($obj);
                 break a;
             case 53:
-                $this.$removeSceneObject($json.$int0($rt_s(525)));
+                $this.$removeSceneObject($json.$int0($rt_s(526)));
                 break a;
             case 54:
                 break;
@@ -17241,11 +17289,12 @@ function ck_LocationView_receiveJson($this, $json, $messageType) {
                 $json.$array($rt_s(48), ck_LocationView$receiveJson$2__init_($this));
                 break a;
             case 56:
-                $json.$int($rt_s(526), ck_LocationView$receiveJson$1__init_($this));
+                $json.$int($rt_s(527), ck_LocationView$receiveJson$1__init_($this));
                 break a;
             default:
                 break a;
         }
+        $this.$resetScene();
         $this.$readJson($json);
     }
 }
@@ -17271,7 +17320,7 @@ function ck_LocationView_createObject($this, $type, $id) {
                 var$3 = ck_CrabView__init_($this, $id);
                 break a;
             default:
-                $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(527)).$append1($type).$toString()));
+                $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(528)).$append1($type).$toString()));
         }
         var$3 = ck_JonesView__init_($this, $id);
     }
@@ -17289,14 +17338,13 @@ function ck_LocationView_resetScene($this) {
     }
     $this.$mainScene.$getScenes().$clear();
     oktr_RES_$callClinit();
-    $$this$apply = oktr_RES_getTyped(oktr_RES_INSTANCE, $rt_s(528));
+    $$this$apply = oktr_RES_getTyped(oktr_RES_INSTANCE, $rt_s(529));
     oktr_IResource$DefaultImpls_onLoaded$default($$this$apply, null, ck_LocationView$resetScene$$inlined$apply$lambda$1__init_($$this$apply, $this), 1, null);
 }
 function ck_LocationView__init_0($this) {
-    var var$1, var$2;
+    var var$1, var$2, var$3, var$4;
     ck_LocationImp__init_0($this);
     $this.$mainScene = oktg_Scene__init_1(null, null, 3, null);
-    $this.$sky = ck_SkyClient__init_();
     $this.$sea = ck_SeaClient__init_();
     var$1 = new oktgc_OrbitCameraControl;
     oktgc_ActiveCamera_$callClinit();
@@ -17305,10 +17353,11 @@ function ck_LocationView__init_0($this) {
     oktr_RES_$callClinit();
     oktr_RES_setLoadOnSeparateThreadByDefault(oktr_RES_INSTANCE, 1);
     var$2 = oktgc_ActiveCamera_INSTANCE;
-    var$1 = oktgc_Camera__init_1(null, null, null, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, null, 0, 4095, null);
-    oktgc_Camera_setNear(var$1, 0.10000000149011612);
-    oktgc_Camera_setFar(var$1, 200.0);
-    oktgc_ActiveCamera_setProxy(var$2, var$1);
+    var$3 = oktgc_Camera__init_1(null, null, null, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, null, 0, 4095, null);
+    oktgc_Camera_setNear(var$3, 0.10000000149011612);
+    oktgc_Camera_setFar(var$3, 200.0);
+    oktgc_ActiveCamera_setProxy(var$2, var$3);
+    $this.$sky = ck_SkyClient__init_();
     $this.$mainScene.$getLights().$add3(ck_Sky_getLight($this.$sky));
     oktgc_OrbitCameraControl_listenToMouse($this.$cameraControl);
     oktgc_OrbitCameraControl_setTranslationEnabled($this.$cameraControl, 0);
@@ -17317,16 +17366,20 @@ function ck_LocationView__init_0($this) {
     oktgc_OrbitCameraControl_setMinTargetDistance($this.$cameraControl, 1.0);
     oktgc_OrbitCameraControl_setMinZenith($this.$cameraControl, 0.10000000149011612);
     oktgc_OrbitCameraControl_setMaxZenith($this.$cameraControl, 1.5);
-    oktr_IResources$DefaultImpls_loadTyped$default(oktr_RES_INSTANCE, $rt_s(528), null, ck_LocationView$2__init_($this), 2, null);
+    var$2 = oktr_RES_INSTANCE;
+    ck_LocationView$2_$callClinit();
+    var$1 = ck_LocationView$2_INSTANCE;
+    var$4 = ck_LocationView$3__init_($this);
+    oktr_RES_loadTyped(var$2, $rt_s(529), var$1, var$4);
     oktg_GL_$callClinit();
     oktg_GL_glClearColor(oktg_GL_INSTANCE, 0.0, 0.0, 0.0, 1.0);
     oktg_GL_setSimpleAlphaBlending(oktg_GL_INSTANCE);
     oktg_GL_setDepthTestEnabled(oktg_GL_INSTANCE, 1);
-    oktg_GL_render(oktg_GL_INSTANCE, ck_LocationView$3__init_($this));
+    oktg_GL_render(oktg_GL_INSTANCE, ck_LocationView$4__init_($this));
 }
 function ck_KotmeJsMain$main$4$2() {
     jl_Object.call(this);
-    this.$this$073 = null;
+    this.$this$075 = null;
 }
 function ck_KotmeJsMain$main$4$2__init_(var_0) {
     var var_1 = new ck_KotmeJsMain$main$4$2();
@@ -17337,11 +17390,22 @@ function ck_KotmeJsMain$main$4$2_handleEvent(var$0, var$1) {
     ck_KotmeJsMain$main$4$2_handleEvent0(var$0, var$1);
 }
 function ck_KotmeJsMain$main$4$2_handleEvent0($this, $it) {
-    oktg_GL_$callClinit();
-    oktg_GL_call(oktg_GL_INSTANCE, ck_KotmeJsMain$main$4$2$1__init_($this, $it));
+    var var$2, var$3, $json, $type, $obj;
+    oktj_JSON_$callClinit();
+    var$2 = oktj_JSON_INSTANCE;
+    kji_Intrinsics_checkNotNullExpressionValue($it, $rt_s(4));
+    var$3 = $rt_str($it.data);
+    kji_Intrinsics_checkNotNullExpressionValue(var$3, $rt_s(530));
+    $json = oktj_JSON_parseObject(var$2, var$3);
+    $type = $json.$int0($rt_s(486));
+    $obj = $json.$obj0($rt_s(276));
+    if ($type != 58)
+        ck_LocationView_receiveJson($this.$this$075.$$location, $obj, $type);
+    else
+        $obj.$array($rt_s(531), ck_KotmeJsMain$main$4$2$1__init_($this));
 }
 function ck_KotmeJsMain$main$4$2__init_0(var$0, var$1) {
-    var$0.$this$073 = var$1;
+    var$0.$this$075 = var$1;
     jl_Object__init_0(var$0);
 }
 function ck_KotmeJsMain$main$4$2_handleEvent$exported$0(var$0, var$1) {
@@ -17363,7 +17427,7 @@ function jur_AbstractCharClass$LazyUpper_computeValue($this) {
 }
 function ck_KotmeJsMain$main$4$3() {
     jl_Object.call(this);
-    this.$this$074 = null;
+    this.$this$076 = null;
 }
 function ck_KotmeJsMain$main$4$3__init_(var_0) {
     var var_1 = new ck_KotmeJsMain$main$4$3();
@@ -17374,10 +17438,10 @@ function ck_KotmeJsMain$main$4$3_handleEvent(var$0, var$1) {
     ck_KotmeJsMain$main$4$3_handleEvent0(var$0, var$1);
 }
 function ck_KotmeJsMain$main$4$3_handleEvent0($this, $it) {
-    $this.$this$074.$$connected.$element2 = 0;
+    $this.$this$076.$$connected.$element2 = 0;
 }
 function ck_KotmeJsMain$main$4$3__init_0(var$0, var$1) {
-    var$0.$this$074 = var$1;
+    var$0.$this$076 = var$1;
     jl_Object__init_0(var$0);
 }
 function ck_KotmeJsMain$main$4$3_handleEvent$exported$0(var$0, var$1) {
@@ -17402,7 +17466,7 @@ function oktd_IShortData() {
 }
 function ck_KotmeJsMain$main$4$1() {
     jl_Object.call(this);
-    this.$this$075 = null;
+    this.$this$067 = null;
 }
 function ck_KotmeJsMain$main$4$1__init_(var_0) {
     var var_1 = new ck_KotmeJsMain$main$4$1();
@@ -17413,10 +17477,12 @@ function ck_KotmeJsMain$main$4$1_handleEvent(var$0, var$1) {
     ck_KotmeJsMain$main$4$1_handleEvent0(var$0, var$1);
 }
 function ck_KotmeJsMain$main$4$1_handleEvent0($this, $it) {
-    $this.$this$075.$$connected.$element2 = 1;
+    $this.$this$067.$$connected.$element2 = 1;
+    ck_KotmeJsMain_$callClinit();
+    ck_KotmeJsMain_send(ck_KotmeJsMain_INSTANCE, 3, ck_KotmeJsMain$main$4$1$1__init_($this));
 }
 function ck_KotmeJsMain$main$4$1__init_0(var$0, var$1) {
-    var$0.$this$075 = var$1;
+    var$0.$this$067 = var$1;
     jl_Object__init_0(var$0);
 }
 function ck_KotmeJsMain$main$4$1_handleEvent$exported$0(var$0, var$1) {
@@ -17477,7 +17543,7 @@ function oktr_ResourceAdapter_notifyAndCleanListeners($this, $block) {
     var$4 = $this.$listeners0.$size();
     while ($i < var$4) {
         var$5 = $this.$listeners0.$get1($i);
-        kji_Intrinsics_checkNotNullExpressionValue(var$5, $rt_s(529));
+        kji_Intrinsics_checkNotNullExpressionValue(var$5, $rt_s(532));
         $listener = var$5;
         $block.$invoke8($listener);
         if ($listener.$removeListenerOnLoaded0())
@@ -17518,7 +17584,7 @@ function oktr_ResourceAdapter_onLoaded($this, $error, $ready) {
 }
 function oktgg_GLTFSkin$readJson$2$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$076 = null;
+    a.$this$077 = null;
     a.$$i = null;
 }
 function oktgg_GLTFSkin$readJson$2$1__init_(var_0, var_1) {
@@ -17533,14 +17599,14 @@ function oktgg_GLTFSkin$readJson$2$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFSkin$readJson$2$1_invoke0($this, $boneIndex) {
     var $node, var$3;
-    $node = oktgg_GLTFSkin_getGltf($this.$this$076.$this$077).$getNodes0().$get1($boneIndex);
-    oktgg_GLTFSkin_getSkin($this.$this$076.$this$077).$getBones().data[$this.$$i.$element1] = oktgg_GLTFNode_getNode($node);
-    oktgg_GLTFSkin_getSkin($this.$this$076.$this$077).$getBoneNames().data[$this.$$i.$element1] = oktgg_GLTFNode_getName($node);
+    $node = oktgg_GLTFSkin_getGltf($this.$this$077.$this$078).$getNodes0().$get1($boneIndex);
+    oktgg_GLTFSkin_getSkin($this.$this$077.$this$078).$getBones().data[$this.$$i.$element1] = oktgg_GLTFNode_getNode($node);
+    oktgg_GLTFSkin_getSkin($this.$this$077.$this$078).$getBoneNames().data[$this.$$i.$element1] = oktgg_GLTFNode_getName($node);
     var$3 = $this.$$i;
     var$3.$element1 = var$3.$element1 + 1 | 0;
 }
 function oktgg_GLTFSkin$readJson$2$1__init_0(var$0, var$1, var$2) {
-    var$0.$this$076 = var$1;
+    var$0.$this$077 = var$1;
     var$0.$$i = var$2;
     kji_Lambda__init_0(var$0, 1);
 }
@@ -17585,7 +17651,7 @@ function ju_HashSet_size($this) {
 }
 function ck_JonesView$2() {
     kji_Lambda.call(this);
-    this.$this$078 = null;
+    this.$this$079 = null;
 }
 function ck_JonesView$2__init_(var_0) {
     var var_1 = new ck_JonesView$2();
@@ -17602,7 +17668,7 @@ function ck_JonesView$2_invoke0($this, $$this$loadTyped) {
     oktr_IResource$DefaultImpls_onLoaded$default($$this$loadTyped, null, ck_JonesView$2$1__init_($this, $$this$loadTyped), 1, null);
 }
 function ck_JonesView$2__init_0(var$0, var$1) {
-    var$0.$this$078 = var$1;
+    var$0.$this$079 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktsn_GLSL$12() {
@@ -17657,7 +17723,7 @@ function kt_StringsKt__StringsKt$rangesDelimitedBy$2__init_0(var$0, var$1, var$2
 }
 function ck_JonesView$1() {
     kji_Lambda.call(this);
-    this.$this$079 = null;
+    this.$this$080 = null;
 }
 function ck_JonesView$1__init_(var_0) {
     var var_1 = new ck_JonesView$1();
@@ -17674,7 +17740,7 @@ function ck_JonesView$1_invoke0($this, $$this$loadTyped) {
     oktr_IResource$DefaultImpls_onLoaded$default($$this$loadTyped, null, ck_JonesView$1$1__init_($this), 1, null);
 }
 function ck_JonesView$1__init_0(var$0, var$1) {
-    var$0.$this$079 = var$1;
+    var$0.$this$080 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktsn_GLSL$13() {
@@ -17933,34 +17999,6 @@ function oktsn_GLSL$7__init_0(var$0) {
 function oktsn_GLSL$7__clinit_() {
     oktsn_GLSL$7_INSTANCE = oktsn_GLSL$7__init_();
 }
-function ck_LocationView$2$1() {
-    var a = this; kji_Lambda.call(a);
-    a.$this$080 = null;
-    a.$$this_loadTyped = null;
-}
-function ck_LocationView$2$1__init_(var_0, var_1) {
-    var var_2 = new ck_LocationView$2$1();
-    ck_LocationView$2$1__init_0(var_2, var_0, var_1);
-    return var_2;
-}
-function ck_LocationView$2$1_invoke(var$0) {
-    ck_LocationView$2$1_invoke0(var$0);
-    k_Unit_$callClinit();
-    return k_Unit_INSTANCE;
-}
-function ck_LocationView$2$1_invoke0($this) {
-    var var$1, $gltfScene;
-    var$1 = $this.$$this_loadTyped.$getScene();
-    kji_Intrinsics_checkNotNull(var$1);
-    $gltfScene = var$1.$copy4();
-    ck_LocationView_getMainScene($this.$this$080.$this$081).$getScenes().$add3($gltfScene);
-    $gltfScene.$getLights().$add3(ck_Sky_getLight(ck_LocationView_getSky($this.$this$080.$this$081)));
-}
-function ck_LocationView$2$1__init_0(var$0, var$1, var$2) {
-    var$0.$this$080 = var$1;
-    var$0.$$this_loadTyped = var$2;
-    kji_Lambda__init_0(var$0, 0);
-}
 function jur_AbstractCharClass$LazyLower() {
     jur_AbstractCharClass$LazyCharClass.call(this);
 }
@@ -17977,7 +18015,7 @@ function jur_AbstractCharClass$LazyLower_computeValue($this) {
 }
 function oktgg_GLTFPrimitive$loadIndices$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$082 = null;
+    a.$this$081 = null;
     a.$$accessor = null;
     a.$$bufferView = null;
     a.$$out = null;
@@ -17994,9 +18032,9 @@ function oktgg_GLTFPrimitive$loadIndices$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFPrimitive$loadIndices$1_invoke0($this, $buffer) {
     var var$2, var$3, var$4, $indexBytes, $i;
-    kji_Intrinsics_checkNotNullParameter($buffer, $rt_s(530));
-    if (!kji_Intrinsics_areEqual(oktgg_GLTFAccessor_getType($this.$$accessor), $rt_s(531)))
-        $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(532)).$append(oktgg_GLTFAccessor_getType($this.$$accessor)).$toString()));
+    kji_Intrinsics_checkNotNullParameter($buffer, $rt_s(533));
+    if (!kji_Intrinsics_areEqual(oktgg_GLTFAccessor_getType($this.$$accessor), $rt_s(534)))
+        $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(535)).$append(oktgg_GLTFAccessor_getType($this.$$accessor)).$toString()));
     a: {
         oktgg_GLTFBuffer_getBytes($buffer).$setPosition(oktgg_GLTFBufferView_getByteOffset($this.$$bufferView) + oktgg_GLTFAccessor_getByteOffset($this.$$accessor) | 0);
         oktd_DATA_$callClinit();
@@ -18018,7 +18056,7 @@ function oktgg_GLTFPrimitive$loadIndices$1_invoke0($this, $buffer) {
                 break a;
             default:
         }
-        $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(533)).$append1(oktgg_GLTFAccessor_getComponentType($this.$$accessor)).$toString()));
+        $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(536)).$append1(oktgg_GLTFAccessor_getComponentType($this.$$accessor)).$toString()));
     }
     $indexBytes = oktd_DATA_bytes(var$2, $rt_imul(var$3, var$4));
     $i = 0;
@@ -18047,14 +18085,14 @@ function oktgg_GLTFPrimitive$loadIndices$1_invoke0($this, $buffer) {
                 break b;
             default:
         }
-        $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(534)).$append1(oktgg_GLTFAccessor_getComponentType($this.$$accessor)).$toString()));
+        $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(537)).$append1(oktgg_GLTFAccessor_getComponentType($this.$$accessor)).$toString()));
     }
     oktm_IndexBufferObject_setType(var$2, var$3);
     oktgg_GLTFBuffer_getBytes($buffer).$setPosition(0);
-    oktgg_GLTFPrimitive_getGltf($this.$this$082).$runGLCall(oktgg_GLTFPrimitive$loadIndices$1$1__init_($this));
+    oktgg_GLTFPrimitive_getGltf($this.$this$081).$runGLCall(oktgg_GLTFPrimitive$loadIndices$1$1__init_($this));
 }
 function oktgg_GLTFPrimitive$loadIndices$1__init_0(var$0, var$1, var$2, var$3, var$4) {
-    var$0.$this$082 = var$1;
+    var$0.$this$081 = var$1;
     var$0.$$accessor = var$2;
     var$0.$$bufferView = var$3;
     var$0.$$out = var$4;
@@ -18088,7 +18126,7 @@ function oktsn_GLSL$9__clinit_() {
 }
 function oktgg_GLTF$readJson$1$1() {
     kji_Lambda.call(this);
-    this.$this$083 = null;
+    this.$this$082 = null;
 }
 function oktgg_GLTF$readJson$1$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$1$1();
@@ -18102,15 +18140,15 @@ function oktgg_GLTF$readJson$1$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTF$readJson$1$1_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    $this.$this$083.$this$084.$setCopyright($it);
+    $this.$this$082.$this$083.$setCopyright($it);
 }
 function oktgg_GLTF$readJson$1$1__init_0(var$0, var$1) {
-    var$0.$this$083 = var$1;
+    var$0.$this$082 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTF$readJson$1$2() {
     kji_Lambda.call(this);
-    this.$this$085 = null;
+    this.$this$084 = null;
 }
 function oktgg_GLTF$readJson$1$2__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$1$2();
@@ -18124,15 +18162,15 @@ function oktgg_GLTF$readJson$1$2_invoke(var$0, var$1) {
 }
 function oktgg_GLTF$readJson$1$2_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    $this.$this$085.$this$084.$setGenerator($it);
+    $this.$this$084.$this$083.$setGenerator($it);
 }
 function oktgg_GLTF$readJson$1$2__init_0(var$0, var$1) {
-    var$0.$this$085 = var$1;
+    var$0.$this$084 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTF$readJson$1$3() {
     kji_Lambda.call(this);
-    this.$this$086 = null;
+    this.$this$085 = null;
 }
 function oktgg_GLTF$readJson$1$3__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$1$3();
@@ -18146,10 +18184,10 @@ function oktgg_GLTF$readJson$1$3_invoke(var$0, var$1) {
 }
 function oktgg_GLTF$readJson$1$3_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    $this.$this$086.$this$084.$setMinVersion($it);
+    $this.$this$085.$this$083.$setMinVersion($it);
 }
 function oktgg_GLTF$readJson$1$3__init_0(var$0, var$1) {
-    var$0.$this$086 = var$1;
+    var$0.$this$085 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function ju_HashMap$HashMapEntrySet() {
@@ -18207,7 +18245,7 @@ function kc_EmptyList_size(var$0) {
     return kc_EmptyList_getSize(var$0);
 }
 function kc_EmptyList_get($this, $index) {
-    $rt_throw(jl_IndexOutOfBoundsException__init_0(jl_StringBuilder__init_().$append($rt_s(535)).$append1($index).$append8(46).$toString()));
+    $rt_throw(jl_IndexOutOfBoundsException__init_0(jl_StringBuilder__init_().$append($rt_s(538)).$append1($index).$append8(46).$toString()));
 }
 function kc_EmptyList_get0(var$0, var$1) {
     return kc_EmptyList_get(var$0, var$1);
@@ -18268,7 +18306,7 @@ function oktsn_GLSLValue_asVec3($this) {
     a: {
         switch (oktsn_GLSLValue_getType($this)) {
             case 3:
-                var$1 = jl_StringBuilder__init_().$append($rt_s(8)).$append($this.$getRef0()).$append($rt_s(536)).$toString();
+                var$1 = jl_StringBuilder__init_().$append($rt_s(8)).$append($this.$getRef0()).$append($rt_s(539)).$toString();
                 break a;
             case 4:
                 var$1 = jl_StringBuilder__init_().$append($rt_s(8)).$append($this.$getRef0()).$append($rt_s(9)).$toString();
@@ -18288,7 +18326,7 @@ function oktsn_GLSLValue_asVec4($this) {
     a: {
         switch (oktsn_GLSLValue_getType($this)) {
             case 3:
-                var$1 = jl_StringBuilder__init_().$append($rt_s(10)).$append($this.$getRef0()).$append($rt_s(537)).$toString();
+                var$1 = jl_StringBuilder__init_().$append($rt_s(10)).$append($this.$getRef0()).$append($rt_s(540)).$toString();
                 break a;
             case 4:
                 var$1 = jl_StringBuilder__init_().$append($rt_s(10)).$append($this.$getRef0()).$append($rt_s(11)).$toString();
@@ -18485,7 +18523,7 @@ function jur_NonCapFSet_hasConsumed($this, $mr) {
 }
 function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1() {
     kji_Lambda.call(this);
-    this.$this$087 = null;
+    this.$this$086 = null;
 }
 function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1__init_(var_0) {
     var var_1 = new oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1();
@@ -18493,7 +18531,7 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1__init_(var_0) 
     return var_1;
 }
 function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1__init_0(var$0, var$1) {
-    var$0.$this$087 = var$1;
+    var$0.$this$086 = var$1;
     kji_Lambda__init_0(var$0, 0);
 }
 function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1_invoke(var$0) {
@@ -18503,7 +18541,7 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1_invoke(var$0) 
 }
 function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1_invoke0($this) {
     var var$1;
-    var$1 = oktgg_GLTFPrimitive_getMesh($this.$this$087.$this$088).$getVertices();
+    var$1 = oktgg_GLTFPrimitive_getMesh($this.$this$086.$this$087).$getVertices();
     if (var$1 !== null)
         var$1.$initGpuObjects();
 }
@@ -18575,7 +18613,7 @@ function oktgg_GLTFAnimation$asFloatBuffer$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFAnimation$asFloatBuffer$1_invoke0($this, $buffer) {
     var $view;
-    kji_Intrinsics_checkNotNullParameter($buffer, $rt_s(530));
+    kji_Intrinsics_checkNotNullParameter($buffer, $rt_s(533));
     oktgg_GLTFBuffer_getBytes($buffer).$setPosition(oktgg_GLTFBufferView_getByteOffset($this.$$bufferView0) + oktgg_GLTFAccessor_getByteOffset($this.$$accessor0) | 0);
     $view = oktgg_GLTFBuffer_getBytes($buffer).$floatView();
     $view.$setSize(oktgg_GLTFAccessor_size($this.$$accessor0) / 4 | 0);
@@ -18625,7 +18663,7 @@ function kt_StringsKt___StringsKt() {
 }
 function oktgg_GLTFAnimation$readJson$2() {
     var a = this; kji_Lambda.call(a);
-    a.$this$089 = null;
+    a.$this$088 = null;
     a.$$animationSamplers = null;
 }
 function oktgg_GLTFAnimation$readJson$2__init_(var_0, var_1) {
@@ -18643,7 +18681,7 @@ function oktgg_GLTFAnimation$readJson$2_invoke0($this, $$this$array) {
     $$this$array.$objs(oktgg_GLTFAnimation$readJson$2$1__init_($this));
 }
 function oktgg_GLTFAnimation$readJson$2__init_0(var$0, var$1, var$2) {
-    var$0.$this$089 = var$1;
+    var$0.$this$088 = var$1;
     var$0.$$animationSamplers = var$2;
     kji_Lambda__init_0(var$0, 1);
 }
@@ -18668,7 +18706,7 @@ function oktgg_GLTFTexture$readJson$2$2$1_invoke(var$0, var$1) {
 function oktgg_GLTFTexture$readJson$2$2$1_invoke0($this, $$this$get) {
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
     oktgg_GLTFTexture$readJson$2$2$1$1_$callClinit();
-    $$this$get.$get4($rt_s(538), oktgg_GLTFTexture$readJson$2$2$1$1_INSTANCE);
+    $$this$get.$get4($rt_s(541), oktgg_GLTFTexture$readJson$2$2$1$1_INSTANCE);
     oktgg_GLTFTexture$readJson$2$2$1$2_$callClinit();
     $$this$get.$get4($rt_s(42), oktgg_GLTFTexture$readJson$2$2$1$2_INSTANCE);
 }
@@ -18770,7 +18808,7 @@ function oktt_TvmMouse_setLastButton($this, $_set___) {
 function oktt_TvmMouse_getButton($this, $event) {
     var var$2;
     a: {
-        kji_Intrinsics_checkNotNullParameter($event, $rt_s(539));
+        kji_Intrinsics_checkNotNullParameter($event, $rt_s(542));
         switch ($event.button) {
             case 0:
                 break;
@@ -18795,7 +18833,7 @@ function oktt_TvmMouse_getButton($this, $event) {
     return var$2;
 }
 function oktt_TvmMouse_updatePos($this, $event) {
-    kji_Intrinsics_checkNotNullParameter($event, $rt_s(539));
+    kji_Intrinsics_checkNotNullParameter($event, $rt_s(542));
     oktt_TvmMouse_setX($this, $event.screenX);
     oktt_TvmMouse_setY($this, $event.screenY);
     oktt_TvmMouse_setDeltaX($this, $event.movementX | 0);
@@ -18950,7 +18988,7 @@ function okti_Texture__init_0($this, $glTarget, $textureHandle) {
 }
 function oktgg_GLTFNode$readJson$10() {
     var a = this; kji_Lambda.call(a);
-    a.$this$090 = null;
+    a.$this$089 = null;
     a.$$obj = null;
 }
 function oktgg_GLTFNode$readJson$10__init_(var_0, var_1) {
@@ -18964,11 +19002,11 @@ function oktgg_GLTFNode$readJson$10_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFNode$readJson$10_invoke0($this, $skinIndex) {
-    oktgg_GLTFNode_setSkin($this.$this$090, $skinIndex);
-    oktgg_GLTFNode_getGltf($this.$this$090).$getSkins().$getOrWait0($skinIndex, oktgg_GLTFNode$readJson$10$1__init_($this));
+    oktgg_GLTFNode_setSkin($this.$this$089, $skinIndex);
+    oktgg_GLTFNode_getGltf($this.$this$089).$getSkins().$getOrWait0($skinIndex, oktgg_GLTFNode$readJson$10$1__init_($this));
 }
 function oktgg_GLTFNode$readJson$10__init_0(var$0, var$1, var$2) {
-    var$0.$this$090 = var$1;
+    var$0.$this$089 = var$1;
     var$0.$$obj = var$2;
     kji_Lambda__init_0(var$0, 1);
 }
@@ -18976,7 +19014,7 @@ function oktg_IArmature() {
 }
 function oktgg_GLTFAnimation$readJson$1$1() {
     kji_Lambda.call(this);
-    this.$this$091 = null;
+    this.$this$090 = null;
 }
 function oktgg_GLTFAnimation$readJson$1$1__init_(var_0) {
     var var_1 = new oktgg_GLTFAnimation$readJson$1$1();
@@ -18991,18 +19029,18 @@ function oktgg_GLTFAnimation$readJson$1$1_invoke(var$0, var$1) {
 function oktgg_GLTFAnimation$readJson$1$1_invoke0($this, $$this$objs) {
     var var$2, var$3;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    var$2 = $this.$this$091.$$animationSamplers0;
+    var$2 = $this.$this$090.$$animationSamplers0;
     var$3 = oktgg_GLTFAnimationSampler__init_(0, null, 0, 7, null);
     oktgg_GLTFAnimationSampler_readJson(var$3, $$this$objs);
     var$2.$add3(var$3);
 }
 function oktgg_GLTFAnimation$readJson$1$1__init_0(var$0, var$1) {
-    var$0.$this$091 = var$1;
+    var$0.$this$090 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_AbstractCharClass$LazyJavaLowerCase$1() {
     jur_AbstractCharClass.call(this);
-    this.$this$092 = null;
+    this.$this$091 = null;
 }
 function jur_AbstractCharClass$LazyJavaLowerCase$1__init_(var_0) {
     var var_1 = new jur_AbstractCharClass$LazyJavaLowerCase$1();
@@ -19010,7 +19048,7 @@ function jur_AbstractCharClass$LazyJavaLowerCase$1__init_(var_0) {
     return var_1;
 }
 function jur_AbstractCharClass$LazyJavaLowerCase$1__init_0($this, $this$0) {
-    $this.$this$092 = $this$0;
+    $this.$this$091 = $this$0;
     jur_AbstractCharClass__init_0($this);
 }
 function jur_AbstractCharClass$LazyJavaLowerCase$1_contains($this, $ch) {
@@ -19018,7 +19056,7 @@ function jur_AbstractCharClass$LazyJavaLowerCase$1_contains($this, $ch) {
 }
 function oktgg_GLTFBuffer$readJson$4() {
     kji_Lambda.call(this);
-    this.$this$093 = null;
+    this.$this$092 = null;
 }
 function oktgg_GLTFBuffer$readJson$4__init_(var_0) {
     var var_1 = new oktgg_GLTFBuffer$readJson$4();
@@ -19032,16 +19070,16 @@ function oktgg_GLTFBuffer$readJson$4_invoke(var$0, var$1) {
 }
 function oktgg_GLTFBuffer$readJson$4_invoke0($this, $it) {
     oktu_LOG_$callClinit();
-    oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, jl_StringBuilder__init_().$append($rt_s(475)).$append(oktgg_GLTFBuffer_getUri($this.$this$093)).$append($rt_s(404)).$append1($it).$toString(), null, 2, null);
-    oktgg_GLTFBuffer_getGltf($this.$this$093).$getBuffers().$ready(oktgg_GLTFBuffer_getElementIndex($this.$this$093));
+    oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, jl_StringBuilder__init_().$append($rt_s(475)).$append(oktgg_GLTFBuffer_getUri($this.$this$092)).$append($rt_s(404)).$append1($it).$toString(), null, 2, null);
+    oktgg_GLTFBuffer_getGltf($this.$this$092).$getBuffers().$ready(oktgg_GLTFBuffer_getElementIndex($this.$this$092));
 }
 function oktgg_GLTFBuffer$readJson$4__init_0(var$0, var$1) {
-    var$0.$this$093 = var$1;
+    var$0.$this$092 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFBuffer$readJson$3() {
     kji_Lambda.call(this);
-    this.$this$094 = null;
+    this.$this$093 = null;
 }
 function oktgg_GLTFBuffer$readJson$3__init_(var_0) {
     var var_1 = new oktgg_GLTFBuffer$readJson$3();
@@ -19055,16 +19093,16 @@ function oktgg_GLTFBuffer$readJson$3_invoke(var$0, var$1) {
 }
 function oktgg_GLTFBuffer$readJson$3_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    oktgg_GLTFBuffer_getBytes($this.$this$094).$put7($it);
-    oktgg_GLTFBuffer_getGltf($this.$this$094).$getBuffers().$ready(oktgg_GLTFBuffer_getElementIndex($this.$this$094));
+    oktgg_GLTFBuffer_getBytes($this.$this$093).$put7($it);
+    oktgg_GLTFBuffer_getGltf($this.$this$093).$getBuffers().$ready(oktgg_GLTFBuffer_getElementIndex($this.$this$093));
 }
 function oktgg_GLTFBuffer$readJson$3__init_0(var$0, var$1) {
-    var$0.$this$094 = var$1;
+    var$0.$this$093 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFBuffer$readJson$2() {
     kji_Lambda.call(this);
-    this.$this$095 = null;
+    this.$this$094 = null;
 }
 function oktgg_GLTFBuffer$readJson$2__init_(var_0) {
     var var_1 = new oktgg_GLTFBuffer$readJson$2();
@@ -19077,15 +19115,15 @@ function oktgg_GLTFBuffer$readJson$2_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFBuffer$readJson$2_invoke0($this, $it) {
-    oktgg_GLTFBuffer_setByteLength($this.$this$095, $it);
+    oktgg_GLTFBuffer_setByteLength($this.$this$094, $it);
 }
 function oktgg_GLTFBuffer$readJson$2__init_0(var$0, var$1) {
-    var$0.$this$095 = var$1;
+    var$0.$this$094 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFBuffer$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$096 = null;
+    this.$this$095 = null;
 }
 function oktgg_GLTFBuffer$readJson$1__init_(var_0) {
     var var_1 = new oktgg_GLTFBuffer$readJson$1();
@@ -19099,10 +19137,10 @@ function oktgg_GLTFBuffer$readJson$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFBuffer$readJson$1_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    oktgg_GLTFBuffer_setUri($this.$this$096, $it);
+    oktgg_GLTFBuffer_setUri($this.$this$095, $it);
 }
 function oktgg_GLTFBuffer$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$096 = var$1;
+    var$0.$this$095 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_UCISupplRangeSet() {
@@ -19174,43 +19212,43 @@ function oktgg_GLTFAccessor_typeSize($this) {
                                             default:
                                                 break a;
                                         }
-                                        if (!var$1.$equals($rt_s(531)))
+                                        if (!var$1.$equals($rt_s(534)))
                                             break a;
                                         var$2 = 1;
                                         break b;
                                     }
-                                    if (!var$1.$equals($rt_s(540)))
+                                    if (!var$1.$equals($rt_s(543)))
                                         break a;
                                     var$2 = 9;
                                     break b;
                                 }
-                                if (!var$1.$equals($rt_s(541)))
+                                if (!var$1.$equals($rt_s(544)))
                                     break a;
                                 var$2 = 16;
                                 break b;
                             }
-                            if (!var$1.$equals($rt_s(542)))
+                            if (!var$1.$equals($rt_s(545)))
                                 break a;
                             var$2 = 2;
                             break b;
                         }
-                        if (!var$1.$equals($rt_s(543)))
+                        if (!var$1.$equals($rt_s(546)))
                             break a;
                         var$2 = 3;
                         break b;
                     }
-                    if (!var$1.$equals($rt_s(544)))
+                    if (!var$1.$equals($rt_s(547)))
                         break a;
                     break c;
                 }
-                if (!var$1.$equals($rt_s(545)))
+                if (!var$1.$equals($rt_s(548)))
                     break a;
             }
             var$2 = 4;
         }
         return var$2;
     }
-    $rt_throw(jl_IllegalStateException__init_0(jl_StringBuilder__init_().$append($rt_s(546)).$append($this.$type3).$toString()));
+    $rt_throw(jl_IllegalStateException__init_0(jl_StringBuilder__init_().$append($rt_s(549)).$append($this.$type3).$toString()));
 }
 function oktgg_GLTFAccessor_componentTypeSize($this) {
     var var$1;
@@ -19243,7 +19281,7 @@ function oktgg_GLTFAccessor_componentTypeSize($this) {
         }
         return var$1;
     }
-    $rt_throw(jl_IllegalStateException__init_0(jl_StringBuilder__init_().$append($rt_s(546)).$append1($this.$componentType).$toString()));
+    $rt_throw(jl_IllegalStateException__init_0(jl_StringBuilder__init_().$append($rt_s(549)).$append1($this.$componentType).$toString()));
 }
 function oktgg_GLTFAccessor_strideSize($this) {
     return $rt_imul(oktgg_GLTFAccessor_typeSize($this), oktgg_GLTFAccessor_componentTypeSize($this));
@@ -19255,13 +19293,13 @@ function oktgg_GLTFAccessor_readJson($this, $json) {
     kji_Intrinsics_checkNotNullParameter($json, $rt_s(25));
     $json.$int($rt_s(28), oktgg_GLTFAccessor$readJson$1__init_($this));
     $json.$int($rt_s(267), oktgg_GLTFAccessor$readJson$2__init_($this));
-    $this.$componentType = $json.$int0($rt_s(547));
-    $json.$bool($rt_s(548), oktgg_GLTFAccessor$readJson$3__init_($this));
+    $this.$componentType = $json.$int0($rt_s(550));
+    $json.$bool($rt_s(551), oktgg_GLTFAccessor$readJson$3__init_($this));
     $this.$count = $json.$int0($rt_s(361));
-    $this.$type3 = $json.$string4($rt_s(485));
-    $json.$array($rt_s(549), oktgg_GLTFAccessor$readJson$4__init_($this));
-    $json.$array($rt_s(550), oktgg_GLTFAccessor$readJson$5__init_($this));
-    $json.$get4($rt_s(551), oktgg_GLTFAccessor$readJson$6__init_($this));
+    $this.$type3 = $json.$string4($rt_s(486));
+    $json.$array($rt_s(552), oktgg_GLTFAccessor$readJson$4__init_($this));
+    $json.$array($rt_s(553), oktgg_GLTFAccessor$readJson$5__init_($this));
+    $json.$get4($rt_s(554), oktgg_GLTFAccessor$readJson$6__init_($this));
     oktgg_GLTFAccessor_getGltf($this).$getAccessors().$ready(oktgg_GLTFAccessor_getElementIndex($this));
 }
 function oktgg_GLTFAccessor_getGltf($this) {
@@ -19314,7 +19352,7 @@ function oktgg_GLTFAccessor_setSparse($this, $_set___) {
 }
 function oktgg_GLTFAccessor__init_0($this, $gltf, $elementIndex, $bufferView, $byteOffset, $componentType, $normalized, $count, $type, $max, $min, $sparse, $name) {
     kji_Intrinsics_checkNotNullParameter($gltf, $rt_s(29));
-    kji_Intrinsics_checkNotNullParameter($type, $rt_s(485));
+    kji_Intrinsics_checkNotNullParameter($type, $rt_s(486));
     kji_Intrinsics_checkNotNullParameter($name, $rt_s(12));
     jl_Object__init_0($this);
     $this.$gltf4 = $gltf;
@@ -19355,7 +19393,7 @@ function oktgg_GLTFAccessor__init_2(var$0, var$1, var$2, var$3, var$4, var$5, va
 }
 function ck_CharacterImp$healthImp$1() {
     kji_Lambda.call(this);
-    this.$this$097 = null;
+    this.$this$096 = null;
 }
 function ck_CharacterImp$healthImp$1__init_(var_0) {
     var var_1 = new ck_CharacterImp$healthImp$1();
@@ -19363,7 +19401,7 @@ function ck_CharacterImp$healthImp$1__init_(var_0) {
     return var_1;
 }
 function ck_CharacterImp$healthImp$1__init_0(var$0, var$1) {
-    var$0.$this$097 = var$1;
+    var$0.$this$096 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_AbstractCharClass$LazyPunct() {
@@ -19420,7 +19458,7 @@ function oktt_HtmlImageData_getName($this) {
     return $this.$name20;
 }
 function oktt_HtmlImageData__init_($this, $htmlImage) {
-    kji_Intrinsics_checkNotNullParameter($htmlImage, $rt_s(552));
+    kji_Intrinsics_checkNotNullParameter($htmlImage, $rt_s(555));
     jl_Object__init_0($this);
     $this.$htmlImage = $htmlImage;
     $this.$name20 = $rt_s(6);
@@ -19441,7 +19479,7 @@ function jur_AbstractCharClass$LazySpace_computeValue($this) {
 }
 function ju_HashMap$1() {
     ju_AbstractSet.call(this);
-    this.$this$098 = null;
+    this.$this$097 = null;
 }
 function ju_HashMap$1__init_(var_0) {
     var var_1 = new ju_HashMap$1();
@@ -19449,11 +19487,11 @@ function ju_HashMap$1__init_(var_0) {
     return var_1;
 }
 function ju_HashMap$1__init_0($this, $this$0) {
-    $this.$this$098 = $this$0;
+    $this.$this$097 = $this$0;
     ju_AbstractSet__init_0($this);
 }
 function ju_HashMap$1_iterator($this) {
-    return ju_HashMap$KeyIterator__init_($this.$this$098);
+    return ju_HashMap$KeyIterator__init_($this.$this$097);
 }
 function oktd_IIntData() {
 }
@@ -19477,7 +19515,7 @@ function oktt_TvmInt32Array_get0(var$0, var$1) {
     return oktt_TvmInt32Array_get(var$0, var$1);
 }
 function oktt_TvmInt32Array__init_($this, $intArray) {
-    kji_Intrinsics_checkNotNullParameter($intArray, $rt_s(553));
+    kji_Intrinsics_checkNotNullParameter($intArray, $rt_s(556));
     oktt_TvmArrayBufferView__init_0($this);
     $this.$intArray = $intArray;
     $this.$size3 = $this.$intArray.length;
@@ -19487,7 +19525,7 @@ function oktt_TvmInt32Array_toUInt($this, $index) {
 }
 function ju_HashMap$2() {
     ju_AbstractCollection.call(this);
-    this.$this$099 = null;
+    this.$this$098 = null;
 }
 function ju_HashMap$2__init_(var_0) {
     var var_1 = new ju_HashMap$2();
@@ -19495,11 +19533,11 @@ function ju_HashMap$2__init_(var_0) {
     return var_1;
 }
 function ju_HashMap$2__init_0($this, $this$0) {
-    $this.$this$099 = $this$0;
+    $this.$this$098 = $this$0;
     ju_AbstractCollection__init_0($this);
 }
 function ju_HashMap$2_iterator($this) {
-    return ju_HashMap$ValueIterator__init_($this.$this$099);
+    return ju_HashMap$ValueIterator__init_($this.$this$098);
 }
 function oktgc_OrbitCameraControl() {
     var a = this; jl_Object.call(a);
@@ -19692,10 +19730,6 @@ function oktgc_OrbitCameraControl__init_(var$0, var$1, var$2, var$3, var$4, var$
         var$13 = oktm_Vec3__init_0(0.0, 0.0, 0.0, 7, null);
     oktgc_OrbitCameraControl__init_1(var$0, var$1, var$2, var$3, var$4, var$5, var$6, var$7, var$8, var$9, var$10, var$11, var$12, var$13);
 }
-function otjde_FocusEventTarget() {
-}
-function otjde_MouseEventTarget() {
-}
 function otjb_WindowEventTarget() {
 }
 function oktr_IResources$loadTyped$1() {
@@ -19726,6 +19760,22 @@ function oktr_IResources$loadTyped$1__init_0(var$0) {
 function oktr_IResources$loadTyped$1__clinit_() {
     oktr_IResources$loadTyped$1_INSTANCE = oktr_IResources$loadTyped$1__init_();
 }
+function ju_LinkedHashMap$2() {
+    ju_AbstractCollection.call(this);
+    this.$this$099 = null;
+}
+function ju_LinkedHashMap$2__init_(var_0) {
+    var var_1 = new ju_LinkedHashMap$2();
+    ju_LinkedHashMap$2__init_0(var_1, var_0);
+    return var_1;
+}
+function ju_LinkedHashMap$2__init_0($this, $this$0) {
+    $this.$this$099 = $this$0;
+    ju_AbstractCollection__init_0($this);
+}
+function ju_LinkedHashMap$2_iterator($this) {
+    return ju_LinkedHashMap$ValueIterator__init_($this.$this$099);
+}
 function oktr_IResources$loadTyped$2() {
     kji_Lambda.call(this);
 }
@@ -19754,22 +19804,6 @@ function oktr_IResources$loadTyped$2__init_0(var$0) {
 function oktr_IResources$loadTyped$2__clinit_() {
     oktr_IResources$loadTyped$2_INSTANCE = oktr_IResources$loadTyped$2__init_();
 }
-function ju_LinkedHashMap$2() {
-    ju_AbstractCollection.call(this);
-    this.$this$0100 = null;
-}
-function ju_LinkedHashMap$2__init_(var_0) {
-    var var_1 = new ju_LinkedHashMap$2();
-    ju_LinkedHashMap$2__init_0(var_1, var_0);
-    return var_1;
-}
-function ju_LinkedHashMap$2__init_0($this, $this$0) {
-    $this.$this$0100 = $this$0;
-    ju_AbstractCollection__init_0($this);
-}
-function ju_LinkedHashMap$2_iterator($this) {
-    return ju_LinkedHashMap$ValueIterator__init_($this.$this$0100);
-}
 function oktd_IIntData$DefaultImpls() {
     jl_Object.call(this);
 }
@@ -19778,7 +19812,7 @@ function oktd_IIntData$DefaultImpls_toUInt($$this, $index) {
 }
 function okttj_TvmJsonObject() {
     jl_Object.call(this);
-    this.$obj0 = null;
+    this.$obj1 = null;
 }
 function okttj_TvmJsonObject__init_1(var_0) {
     var var_1 = new okttj_TvmJsonObject();
@@ -19792,9 +19826,9 @@ function okttj_TvmJsonObject__init_0(var_0, var_1, var_2) {
 }
 function okttj_TvmJsonObject_obj($this, $key) {
     var var$2, var$3;
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     var$2 = new okttj_TvmJsonObject;
-    var$3 = $this.$obj0[$rt_ustr($key)];
+    var$3 = $this.$obj1[$rt_ustr($key)];
     if (var$3 !== null) {
         okttj_TvmJsonObject__init_(var$2, var$3);
         return var$2;
@@ -19803,39 +19837,39 @@ function okttj_TvmJsonObject_obj($this, $key) {
 }
 function okttj_TvmJsonObject_array($this, $key) {
     var var$2, var$3;
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     var$2 = new okttj_TvmJsonArray;
-    var$3 = $this.$obj0[$rt_ustr($key)];
+    var$3 = $this.$obj1[$rt_ustr($key)];
     if (var$3 !== null) {
         okttj_TvmJsonArray__init_(var$2, var$3);
         return var$2;
     }
-    $rt_throw(jl_NullPointerException__init_0($rt_s(555)));
+    $rt_throw(jl_NullPointerException__init_0($rt_s(558)));
 }
 function okttj_TvmJsonObject_string($this, $key) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
-    return $rt_str($this.$obj0[$rt_ustr($key)]);
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
+    return $rt_str($this.$obj1[$rt_ustr($key)]);
 }
 function okttj_TvmJsonObject_float($this, $key) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
-    return $this.$obj0[$rt_ustr($key)];
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
+    return $this.$obj1[$rt_ustr($key)];
 }
 function okttj_TvmJsonObject_int($this, $key) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
-    return $this.$obj0[$rt_ustr($key)];
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
+    return $this.$obj1[$rt_ustr($key)];
 }
 function okttj_TvmJsonObject_bool($this, $key) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
-    return $this.$obj0[$rt_ustr($key)] ? 1 : 0;
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
+    return $this.$obj1[$rt_ustr($key)] ? 1 : 0;
 }
 function okttj_TvmJsonObject_contains($this, $key) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
-    return $rt_ustr($key) in $this.$obj0 ? 1 : 0;
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
+    return $rt_ustr($key) in $this.$obj1 ? 1 : 0;
 }
 function okttj_TvmJsonObject_ints($this, $call) {
     var $keys, var$3, $i, var$5;
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
-    $keys = otji_JS_unwrapStringArray(Object.keys($this.$obj0));
+    $keys = otji_JS_unwrapStringArray(Object.keys($this.$obj1));
     var$3 = $keys.data;
     $i = 0;
     var$5 = var$3.length;
@@ -19846,103 +19880,103 @@ function okttj_TvmJsonObject_ints($this, $call) {
 }
 function okttj_TvmJsonObject_set($this, $key, $childBlock) {
     var var$3, var$4;
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
-    kji_Intrinsics_checkNotNullParameter($childBlock, $rt_s(556));
-    var$3 = $this.$obj0;
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
+    kji_Intrinsics_checkNotNullParameter($childBlock, $rt_s(559));
+    var$3 = $this.$obj1;
     var$4 = okttj_TvmJsonObject__init_0(null, 1, null);
     $childBlock.$invoke8(var$4);
-    var$4 = var$4.$obj0;
+    var$4 = var$4.$obj1;
     var$3[$rt_ustr($key)] = var$4;
 }
 function okttj_TvmJsonObject_set0($this, $key, $value) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
-    $this.$obj0[$rt_ustr($key)] = $value;
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
+    $this.$obj1[$rt_ustr($key)] = $value;
 }
 function okttj_TvmJsonObject_set1($this, $key, $value) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($value, $rt_s(278));
-    $this.$obj0[$rt_ustr($key)] = $rt_ustr($value);
+    $this.$obj1[$rt_ustr($key)] = $rt_ustr($value);
 }
 function okttj_TvmJsonObject_getObj($this) {
-    return $this.$obj0;
+    return $this.$obj1;
 }
 function okttj_TvmJsonObject__init_($this, $obj) {
     kji_Intrinsics_checkNotNullParameter($obj, $rt_s(276));
     jl_Object__init_0($this);
-    $this.$obj0 = $obj;
+    $this.$obj1 = $obj;
 }
 function okttj_TvmJsonObject__init_2(var$0, var$1, var$2, var$3) {
     if (var$2 & 1) {
         var$3 = otjc_JSObjects_create$js_body$_2();
-        kji_Intrinsics_checkNotNullExpressionValue(var$3, $rt_s(557));
+        kji_Intrinsics_checkNotNullExpressionValue(var$3, $rt_s(560));
         var$1 = var$3;
     }
     okttj_TvmJsonObject__init_(var$0, var$1);
 }
 function okttj_TvmJsonObject_obj0($this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     return oktj_IJsonObject$DefaultImpls_obj($this, $key, $call);
 }
 function okttj_TvmJsonObject_array0($this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     return oktj_IJsonObject$DefaultImpls_array($this, $key, $call);
 }
 function okttj_TvmJsonObject_string0($this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     oktj_IJsonObject$DefaultImpls_string($this, $key, $call);
 }
 function okttj_TvmJsonObject_string1($this, $key, $default) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
-    kji_Intrinsics_checkNotNullParameter($default, $rt_s(558));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
+    kji_Intrinsics_checkNotNullParameter($default, $rt_s(561));
     return oktj_IJsonObject$DefaultImpls_string0($this, $key, $default);
 }
 function okttj_TvmJsonObject_float0($this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     oktj_IJsonObject$DefaultImpls_float($this, $key, $call);
 }
 function okttj_TvmJsonObject_float1($this, $key, $default) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     return oktj_IJsonObject$DefaultImpls_float0($this, $key, $default);
 }
 function okttj_TvmJsonObject_int0($this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     oktj_IJsonObject$DefaultImpls_int($this, $key, $call);
 }
 function okttj_TvmJsonObject_int1($this, $key, $default) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     return oktj_IJsonObject$DefaultImpls_int0($this, $key, $default);
 }
 function okttj_TvmJsonObject_bool0($this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     oktj_IJsonObject$DefaultImpls_bool($this, $key, $call);
 }
 function okttj_TvmJsonObject_ints0($this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     oktj_IJsonObject$DefaultImpls_ints($this, $key, $call);
 }
 function okttj_TvmJsonObject_floats($this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     oktj_IJsonObject$DefaultImpls_floats($this, $key, $call);
 }
 function okttj_TvmJsonObject_arrayOrNull($this, $key) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     return oktj_IJsonObject$DefaultImpls_arrayOrNull($this, $key);
 }
 function okttj_TvmJsonObject_get($this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     return oktj_IJsonObject$DefaultImpls_get($this, $key, $call);
 }
 function okttj_TvmJsonObject_objOrNull($this, $key) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     return oktj_IJsonObject$DefaultImpls_objOrNull($this, $key);
 }
 function jl_NegativeArraySizeException() {
@@ -19974,7 +20008,7 @@ function okti_IImg$DefaultImpls_load$default(var$1, var$2, var$3, var$4, var$5, 
 }
 function oktgg_GLTF$arrayListener$1() {
     jl_Object.call(this);
-    this.$this$0101 = null;
+    this.$this$0100 = null;
 }
 function oktgg_GLTF$arrayListener$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$arrayListener$1();
@@ -19983,15 +20017,15 @@ function oktgg_GLTF$arrayListener$1__init_(var_0) {
 }
 function oktgg_GLTF$arrayListener$1_ready($this, $array, $index) {
     kji_Intrinsics_checkNotNullParameter($array, $rt_s(37));
-    oktgg_GLTF_updateProgress($this.$this$0101);
+    oktgg_GLTF_updateProgress($this.$this$0100);
 }
 function oktgg_GLTF$arrayListener$1__init_0($this, $this$0) {
-    $this.$this$0101 = $this$0;
+    $this.$this$0100 = $this$0;
     jl_Object__init_0($this);
 }
 function oktgg_GLTF$readJson$7$1() {
     kji_Lambda.call(this);
-    this.$this$0102 = null;
+    this.$this$0101 = null;
 }
 function oktgg_GLTF$readJson$7$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$7$1();
@@ -20006,12 +20040,12 @@ function oktgg_GLTF$readJson$7$1_invoke(var$0, var$1) {
 function oktgg_GLTF$readJson$7$1_invoke0($this, $$this$objs) {
     var $texture;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    $texture = oktgg_GLTFTexture__init_($this.$this$0102.$this$0103, oktgg_GLTFArray_size($this.$this$0102.$this$0103.$getTextures()), null, null, 12, null);
-    oktgg_GLTFArray_add($this.$this$0102.$this$0103.$getTextures(), $texture);
+    $texture = oktgg_GLTFTexture__init_($this.$this$0101.$this$0102, oktgg_GLTFArray_size($this.$this$0101.$this$0102.$getTextures()), null, null, 12, null);
+    oktgg_GLTFArray_add($this.$this$0101.$this$0102.$getTextures(), $texture);
     oktgg_GLTFTexture_readJson($texture, $$this$objs);
 }
 function oktgg_GLTF$readJson$7$1__init_0(var$0, var$1) {
-    var$0.$this$0102 = var$1;
+    var$0.$this$0101 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function okti_IMouseListener$DefaultImpls() {
@@ -20025,7 +20059,7 @@ function okti_IMouseListener$DefaultImpls_moved($$this, $screenX, $screenY) {
 }
 function oktgg_GLTFPrimitive$readJson$2$1() {
     kji_Lambda.call(this);
-    this.$this$0104 = null;
+    this.$this$0103 = null;
 }
 function oktgg_GLTFPrimitive$readJson$2$1__init_(var_0) {
     var var_1 = new oktgg_GLTFPrimitive$readJson$2$1();
@@ -20039,17 +20073,17 @@ function oktgg_GLTFPrimitive$readJson$2$1_invoke(var$0, var$1, var$2) {
 }
 function oktgg_GLTFPrimitive$readJson$2$1_invoke0($this, $attributeName, $accessorIndex) {
     var $accessor;
-    kji_Intrinsics_checkNotNullParameter($attributeName, $rt_s(559));
-    $accessor = oktgg_GLTFPrimitive_getGltf($this.$this$0104.$this$063).$getAccessors().$get1($accessorIndex);
-    oktgg_GLTFPrimitive_getAttributesMap($this.$this$0104.$this$063).$put2($attributeName, jl_Integer_valueOf($accessorIndex));
-    $this.$this$0104.$$vertexInputs.$add7(oktm_VertexInput__init_(oktgg_GLTFAccessor_typeSize($accessor), $attributeName, 5126, oktgg_GLTFAccessor_getNormalized($accessor)));
+    kji_Intrinsics_checkNotNullParameter($attributeName, $rt_s(562));
+    $accessor = oktgg_GLTFPrimitive_getGltf($this.$this$0103.$this$063).$getAccessors().$get1($accessorIndex);
+    oktgg_GLTFPrimitive_getAttributesMap($this.$this$0103.$this$063).$put2($attributeName, jl_Integer_valueOf($accessorIndex));
+    $this.$this$0103.$$vertexInputs.$add7(oktm_VertexInput__init_(oktgg_GLTFAccessor_typeSize($accessor), $attributeName, 5126, oktgg_GLTFAccessor_getNormalized($accessor)));
     if (kji_Intrinsics_areEqual($attributeName, $rt_s(402)))
-        $this.$this$0104.$$hasNormals.$element2 = 1;
-    else if (kji_Intrinsics_areEqual($attributeName, $rt_s(560)))
-        $this.$this$0104.$$hasTangents.$element2 = 1;
+        $this.$this$0103.$$hasNormals.$element2 = 1;
+    else if (kji_Intrinsics_areEqual($attributeName, $rt_s(563)))
+        $this.$this$0103.$$hasTangents.$element2 = 1;
 }
 function oktgg_GLTFPrimitive$readJson$2$1__init_0(var$0, var$1) {
-    var$0.$this$0104 = var$1;
+    var$0.$this$0103 = var$1;
     kji_Lambda__init_0(var$0, 2);
 }
 function oktd_IFloatData() {
@@ -20099,7 +20133,7 @@ function oktt_TvmFloat32Array_put0(var$0, var$1) {
     oktt_TvmFloat32Array_put(var$0, var$1.$floatValue());
 }
 function oktt_TvmFloat32Array__init_($this, $floatArray) {
-    kji_Intrinsics_checkNotNullParameter($floatArray, $rt_s(561));
+    kji_Intrinsics_checkNotNullParameter($floatArray, $rt_s(564));
     oktt_TvmArrayBufferView__init_0($this);
     $this.$floatArray = $floatArray;
     $this.$size4 = $this.$floatArray.length;
@@ -20138,7 +20172,7 @@ function ck_Sky__init_0($this) {
 }
 function oktgg_GLTFNode$readJson$2$1() {
     kji_Lambda.call(this);
-    this.$this$0105 = null;
+    this.$this$0104 = null;
 }
 function oktgg_GLTFNode$readJson$2$1__init_(var_0) {
     var var_1 = new oktgg_GLTFNode$readJson$2$1();
@@ -20151,11 +20185,11 @@ function oktgg_GLTFNode$readJson$2$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFNode$readJson$2$1_invoke0($this, $childNode) {
-    kji_Intrinsics_checkNotNullParameter($childNode, $rt_s(562));
-    oktgg_GLTFNode_getNode($this.$this$0105.$this$0106).$addChildNode0(oktgg_GLTFNode_getNode($childNode));
+    kji_Intrinsics_checkNotNullParameter($childNode, $rt_s(565));
+    oktgg_GLTFNode_getNode($this.$this$0104.$this$0105).$addChildNode0(oktgg_GLTFNode_getNode($childNode));
 }
 function oktgg_GLTFNode$readJson$2$1__init_0(var$0, var$1) {
-    var$0.$this$0105 = var$1;
+    var$0.$this$0104 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jl_VirtualMachineError() {
@@ -20182,8 +20216,8 @@ function jl_OutOfMemoryError__init_0($this) {
 }
 function ck_JonesView$2$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0107 = null;
-    a.$$this_loadTyped0 = null;
+    a.$this$0106 = null;
+    a.$$this_loadTyped = null;
 }
 function ck_JonesView$2$1__init_(var_0, var_1) {
     var var_2 = new ck_JonesView$2$1();
@@ -20197,18 +20231,18 @@ function ck_JonesView$2$1_invoke(var$0) {
 }
 function ck_JonesView$2$1_invoke0($this) {
     var var$1, $scene;
-    var$1 = $this.$$this_loadTyped0.$getScene();
+    var$1 = $this.$$this_loadTyped.$getScene();
     kji_Intrinsics_checkNotNull(var$1);
     $scene = var$1.$copy4();
     $scene.$getRotation0().$setQuaternionByAxis(1.0, 0.0, 0.0, (-1.5707963705062866));
     $scene.$getRotation0().$mulLeft1(oktm_Vec4_setQuaternionByAxis(oktm_Vec4__init_0(0.0, 0.0, 0.0, 0.0, 15, null), 0.0, 1.0, 0.0, 0.6283185482025146));
     var$1 = $scene.$getPosition0();
     var$1.$setY0(var$1.$getY0() + 0.15000000596046448);
-    ck_JonesView_setBranch($this.$this$0107.$this$078, $scene);
+    ck_JonesView_setBranch($this.$this$0106.$this$079, $scene);
 }
 function ck_JonesView$2$1__init_0(var$0, var$1, var$2) {
-    var$0.$this$0107 = var$1;
-    var$0.$$this_loadTyped0 = var$2;
+    var$0.$this$0106 = var$1;
+    var$0.$$this_loadTyped = var$2;
     kji_Lambda__init_0(var$0, 0);
 }
 function jl_IllegalStateException() {
@@ -20305,7 +20339,7 @@ function oktsn_VelocityNode_getStretchedClipSpacePosition($this) {
 }
 function oktsn_VelocityNode_getWorldSpacePosition($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(563));
+    var$1 = $this.$getInput().$get0($rt_s(566));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE);
@@ -20314,7 +20348,7 @@ function oktsn_VelocityNode_getWorldSpacePosition($this) {
 }
 function oktsn_VelocityNode_getClipSpacePosition($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(564));
+    var$1 = $this.$getInput().$get0($rt_s(567));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE);
@@ -20323,7 +20357,7 @@ function oktsn_VelocityNode_getClipSpacePosition($this) {
 }
 function oktsn_VelocityNode_getPreviousViewProjectionMatrix($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(565));
+    var$1 = $this.$getInput().$get0($rt_s(568));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getOneFloat(oktsn_GLSL_INSTANCE);
@@ -20340,10 +20374,10 @@ function oktsn_VelocityNode_getNormal($this) {
     return var$1;
 }
 function oktsn_VelocityNode_getUPrevBoneMatricesName($this) {
-    return jl_StringBuilder__init_().$append($rt_s(566)).$append1(oktsn_VelocityNode_getUid($this)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(569)).$append1(oktsn_VelocityNode_getUid($this)).$toString();
 }
 function oktsn_VelocityNode_getUPrevWorldMatrixName($this) {
-    return jl_StringBuilder__init_().$append($rt_s(567)).$append1(oktsn_VelocityNode_getUid($this)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(570)).$append1(oktsn_VelocityNode_getUid($this)).$toString();
 }
 function oktsn_VelocityNode_getUid($this) {
     return 0;
@@ -20358,7 +20392,7 @@ function oktsn_VelocityNode_shaderCompiled($this) {
         $this.$bonesTemp = $rt_createFloatArray($bonesTempNewSize);
 }
 function oktsn_VelocityNode_boneInfluenceCode($this, $component, $bonesName, $weightsName, $sumName) {
-    return jl_StringBuilder__init_().$append($rt_s(568)).$append($weightsName).$append8(46).$append($component).$append($rt_s(569)).$append($sumName).$append($rt_s(570)).$append($weightsName).$append8(46).$append($component).$append($rt_s(571)).$append(oktsn_VelocityNode_getUPrevBoneMatricesName($this)).$append($rt_s(572)).$append($bonesName).$append8(46).$append($component).$append($rt_s(573)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(571)).$append($weightsName).$append8(46).$append($component).$append($rt_s(572)).$append($sumName).$append($rt_s(573)).$append($weightsName).$append8(46).$append($component).$append($rt_s(574)).$append(oktsn_VelocityNode_getUPrevBoneMatricesName($this)).$append($rt_s(575)).$append($bonesName).$append8(46).$append($component).$append($rt_s(576)).$toString();
 }
 function oktsn_VelocityNode_skinningSetCode($this, $out, $bonesName, $weightsName, $sumName) {
     $out.$append(oktsn_VelocityNode_boneInfluenceCode($this, $rt_s(480), $bonesName, $weightsName, $sumName));
@@ -20370,7 +20404,7 @@ function oktsn_VelocityNode_prepareObjectData($this, $obj) {
     var $armature, $bonesTemp, $prevMatrices, var$5, $i, var$7, $floatOffset, $values, $j;
     kji_Intrinsics_checkNotNullParameter($obj, $rt_s(276));
     oktsn_ShaderNode_prepareObjectData($this, $obj);
-    $this.$getShader().$set22(oktsn_VelocityNode_getUPrevWorldMatrixName($this), $obj.$getPreviousTransform().$getWorldMatrix());
+    $this.$getShader().$set23(oktsn_VelocityNode_getUPrevWorldMatrixName($this), $obj.$getPreviousTransform().$getWorldMatrix());
     $armature = $obj.$getArmature();
     if ($armature !== null) {
         $bonesTemp = $this.$bonesTemp;
@@ -20396,9 +20430,9 @@ function oktsn_VelocityNode_executionVert($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if (!(!$this.$prevPosition.$isUsed0() && !$this.$velocity.$isUsed0() && !$this.$stretchedClipSpacePosition.$isUsed0())) {
         $uid = 0;
-        $prevPos = jl_StringBuilder__init_().$append($rt_s(574)).$append1($uid).$toString();
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(575)).$append($prevPos).$append($rt_s(576)).$append($this.$aPositionName).$append($rt_s(577)).$toString());
-        $prevSkinningName = $rt_s(578);
+        $prevPos = jl_StringBuilder__init_().$append($rt_s(577)).$append1($uid).$toString();
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(578)).$append($prevPos).$append($rt_s(579)).$append($this.$aPositionName).$append($rt_s(580)).$toString());
+        $prevSkinningName = $rt_s(581);
         if (oktsn_VelocityNode_getHasBones($this)) {
             $aBonesName = $this.$aBonesName;
             $aBoneWeightsName = $this.$aBoneWeightsName;
@@ -20409,39 +20443,39 @@ function oktsn_VelocityNode_executionVert($this, $out) {
                 oktsn_VelocityNode_skinningSetCode($this, $out, jl_StringBuilder__init_().$append($aBonesName).$append($index).$toString(), jl_StringBuilder__init_().$append($aBoneWeightsName).$append($index).$toString(), $prevSkinningName);
                 $i = $i + 1 | 0;
             }
-            $out.$append(jl_StringBuilder__init_().$append($prevPos).$append($rt_s(518)).$append($prevSkinningName).$append($rt_s(571)).$append($prevPos).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($prevPos).$append($rt_s(519)).$append($prevSkinningName).$append($rt_s(574)).$append($prevPos).$append($rt_s(286)).$toString());
         }
         a: {
             switch ($this.$worldTransformType) {
                 case 1:
-                    $out.$append(jl_StringBuilder__init_().$append($prevPos).$append($rt_s(518)).$append(oktsn_VelocityNode_getUPrevWorldMatrixName($this)).$append($rt_s(571)).$append($prevPos).$append($rt_s(286)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($prevPos).$append($rt_s(519)).$append(oktsn_VelocityNode_getUPrevWorldMatrixName($this)).$append($rt_s(574)).$append($prevPos).$append($rt_s(286)).$toString());
                     break a;
                 case 2:
                     break;
                 case 3:
-                    $out.$append(jl_StringBuilder__init_().$append($prevPos).$append($rt_s(579)).$append($prevPos).$append($rt_s(580)).$append1($uid).$append($rt_s(581)).$append1($uid).$append($rt_s(582)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($prevPos).$append($rt_s(582)).$append($prevPos).$append($rt_s(583)).$append1($uid).$append($rt_s(584)).$append1($uid).$append($rt_s(585)).$toString());
                     break a;
                 case 4:
                     break a;
                 case 5:
-                    $out.$append(jl_StringBuilder__init_().$append($prevPos).$append($rt_s(583)).$append1($uid).$append($rt_s(584)).$append1($uid).$append($rt_s(585)).$append1($uid).$append($rt_s(582)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($prevPos).$append($rt_s(586)).$append1($uid).$append($rt_s(587)).$append1($uid).$append($rt_s(588)).$append1($uid).$append($rt_s(585)).$toString());
                     break a;
                 default:
                     break a;
             }
-            $out.$append(jl_StringBuilder__init_().$append($prevPos).$append($rt_s(579)).$append($prevPos).$append($rt_s(586)).$append1($uid).$append($rt_s(582)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($prevPos).$append($rt_s(582)).$append($prevPos).$append($rt_s(589)).$append1($uid).$append($rt_s(585)).$toString());
         }
         $prevPositionRef = $this.$prevPosition.$getRef0();
-        $out.$append(jl_StringBuilder__init_().$append($prevPositionRef).$append($rt_s(518)).$append($prevPos).$append($rt_s(582)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($prevPositionRef).$append($rt_s(519)).$append($prevPos).$append($rt_s(585)).$toString());
         if (!(!$this.$velocity.$isUsed0() && !$this.$stretchedClipSpacePosition.$isUsed0())) {
-            $out.$append(jl_StringBuilder__init_().$append($rt_s(587)).$append(oktsn_VelocityNode_getPreviousViewProjectionMatrix($this).$getRef0()).$append($rt_s(571)).$append($prevPos).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($rt_s(590)).$append(oktsn_VelocityNode_getPreviousViewProjectionMatrix($this).$getRef0()).$append($rt_s(574)).$append($prevPos).$append($rt_s(286)).$toString());
             if ($this.$stretchedClipSpacePosition.$isUsed0()) {
                 $posRef = oktsn_VelocityNode_getWorldSpacePosition($this).$asVec3();
                 $stretchedClipSpacePositionRef = $this.$stretchedClipSpacePosition.$getRef0();
-                var$13 = jl_StringBuilder__init_().$append($rt_s(588));
-                var$13 = var$13.$append($posRef).$append($rt_s(589)).$append($this.$prevPosition.$getRef0()).$append($rt_s(301)).$append(oktsn_VelocityNode_getNormal($this).$asVec3()).$append($rt_s(590));
-                var$13 = var$13.$append($stretchedClipSpacePositionRef).$append($rt_s(518)).$append(oktsn_VelocityNode_getClipSpacePosition($this).$asVec4()).$append($rt_s(591));
-                var$13 = var$13.$append($stretchedClipSpacePositionRef).$append($rt_s(592)).$toString();
+                var$13 = jl_StringBuilder__init_().$append($rt_s(591));
+                var$13 = var$13.$append($posRef).$append($rt_s(592)).$append($this.$prevPosition.$getRef0()).$append($rt_s(301)).$append(oktsn_VelocityNode_getNormal($this).$asVec3()).$append($rt_s(593));
+                var$13 = var$13.$append($stretchedClipSpacePositionRef).$append($rt_s(519)).$append(oktsn_VelocityNode_getClipSpacePosition($this).$asVec4()).$append($rt_s(594));
+                var$13 = var$13.$append($stretchedClipSpacePositionRef).$append($rt_s(595)).$toString();
                 $out.$append(var$13);
             }
         }
@@ -20451,50 +20485,50 @@ function oktsn_VelocityNode_executionFrag($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     oktsn_ShaderNode_executionFrag($this, $out);
     if ($this.$velocity.$isUsed0()) {
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(593)).$append(oktsn_VelocityNode_getClipSpacePosition($this).$asVec4()).$append($rt_s(286)).$toString());
-        $out.$append($rt_s(594));
-        $out.$append($rt_s(595));
-        $out.$append(jl_StringBuilder__init_().$append($this.$velocity.$getRef0()).$append($rt_s(596)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(596)).$append(oktsn_VelocityNode_getClipSpacePosition($this).$asVec4()).$append($rt_s(286)).$toString());
+        $out.$append($rt_s(597));
+        $out.$append($rt_s(598));
+        $out.$append(jl_StringBuilder__init_().$append($this.$velocity.$getRef0()).$append($rt_s(599)).$toString());
     }
 }
 function oktsn_VelocityNode_declarationFrag($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if (!(!$this.$prevPosition.$isUsed0() && !$this.$velocity.$isUsed0())) {
-        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(597)).$append($this.$prevPosition.$getRef0()).$append($rt_s(286)).$toString());
-        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(598)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(600)).$append($this.$prevPosition.$getRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(601)).$toString());
         if ($this.$velocity.$isUsed0())
-            $out.$append(jl_StringBuilder__init_().$append($rt_s(599)).$append($this.$velocity.$getRef0()).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($rt_s(602)).$append($this.$velocity.$getRef0()).$append($rt_s(286)).$toString());
     }
 }
 function oktsn_VelocityNode_declarationVert($this, $out) {
     var $uid;
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if (!(!$this.$prevPosition.$isUsed0() && !$this.$velocity.$isUsed0() && !$this.$stretchedClipSpacePosition.$isUsed0())) {
-        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(597)).$append($this.$prevPosition.$getRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(600)).$append($this.$prevPosition.$getRef0()).$append($rt_s(286)).$toString());
         if (!(!$this.$velocity.$isUsed0() && !$this.$stretchedClipSpacePosition.$isUsed0())) {
-            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(598)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(601)).$toString());
             if ($this.$stretchedClipSpacePosition.$isUsed0())
-                $out.$append(jl_StringBuilder__init_().$append($rt_s(575)).$append($this.$stretchedClipSpacePosition.$getRef0()).$append($rt_s(286)).$toString());
+                $out.$append(jl_StringBuilder__init_().$append($rt_s(578)).$append($this.$stretchedClipSpacePosition.$getRef0()).$append($rt_s(286)).$toString());
         }
         a: {
             $uid = 0;
             switch ($this.$worldTransformType) {
                 case 1:
-                    $out.$append(jl_StringBuilder__init_().$append($rt_s(600)).$append(oktsn_VelocityNode_getUPrevWorldMatrixName($this)).$append($rt_s(286)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($rt_s(603)).$append(oktsn_VelocityNode_getUPrevWorldMatrixName($this)).$append($rt_s(286)).$toString());
                     break a;
                 case 2:
                     break;
                 case 3:
-                    $out.$append(jl_StringBuilder__init_().$append($rt_s(601)).$append1($uid).$append($rt_s(286)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($rt_s(604)).$append1($uid).$append($rt_s(286)).$toString());
                     break a;
                 default:
                     break a;
             }
-            $out.$append(jl_StringBuilder__init_().$append($rt_s(602)).$append1($uid).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($rt_s(605)).$append1($uid).$append($rt_s(286)).$toString());
         }
         if (oktsn_VelocityNode_getHasBones($this)) {
-            $out.$append(jl_StringBuilder__init_().$append($rt_s(600)).$append(oktsn_VelocityNode_getUPrevBoneMatricesName($this)).$append8(91).$append1($this.$maxBones).$append($rt_s(603)).$toString());
-            $out.$append($rt_s(604));
+            $out.$append(jl_StringBuilder__init_().$append($rt_s(603)).$append(oktsn_VelocityNode_getUPrevBoneMatricesName($this)).$append8(91).$append1($this.$maxBones).$append($rt_s(606)).$toString());
+            $out.$append($rt_s(607));
         }
     }
 }
@@ -20506,24 +20540,24 @@ function oktsn_VelocityNode_setWorldTransformType($this, $_set___) {
 }
 function oktsn_VelocityNode__init_1($this, $worldSpacePosition, $clipSpacePosition, $previousViewProjectionMatrix, $normal, $maxBones, $worldTransformType, $bonesSetsNum) {
     oktsn_VelocityNode_$callClinit();
-    kji_Intrinsics_checkNotNullParameter($worldSpacePosition, $rt_s(563));
-    kji_Intrinsics_checkNotNullParameter($clipSpacePosition, $rt_s(564));
-    kji_Intrinsics_checkNotNullParameter($previousViewProjectionMatrix, $rt_s(565));
+    kji_Intrinsics_checkNotNullParameter($worldSpacePosition, $rt_s(566));
+    kji_Intrinsics_checkNotNullParameter($clipSpacePosition, $rt_s(567));
+    kji_Intrinsics_checkNotNullParameter($previousViewProjectionMatrix, $rt_s(568));
     kji_Intrinsics_checkNotNullParameter($normal, $rt_s(306));
     oktsn_ShaderNode__init_0($this);
     $this.$maxBones = $maxBones;
     $this.$worldTransformType = $worldTransformType;
     $this.$bonesSetsNum = $bonesSetsNum;
     $this.$aPositionName = $rt_s(400);
-    $this.$aBonesName = $rt_s(605);
-    $this.$aBoneWeightsName = $rt_s(606);
-    $this.$prevPosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec3__init_($rt_s(607)));
-    $this.$velocity = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec2__init_($rt_s(608)));
-    $this.$stretchedClipSpacePosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(609)));
+    $this.$aBonesName = $rt_s(608);
+    $this.$aBoneWeightsName = $rt_s(609);
+    $this.$prevPosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec3__init_($rt_s(610)));
+    $this.$velocity = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec2__init_($rt_s(611)));
+    $this.$stretchedClipSpacePosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(612)));
     $this.$bonesTemp = $rt_createFloatArray($this.$maxBones * 16 | 0);
-    $this.$setInput($rt_s(563), $worldSpacePosition);
-    $this.$setInput($rt_s(564), $clipSpacePosition);
-    $this.$setInput($rt_s(565), $previousViewProjectionMatrix);
+    $this.$setInput($rt_s(566), $worldSpacePosition);
+    $this.$setInput($rt_s(567), $clipSpacePosition);
+    $this.$setInput($rt_s(568), $previousViewProjectionMatrix);
     $this.$setInput($rt_s(306), $normal);
 }
 function oktsn_VelocityNode__init_2(var$0, var$1, var$2, var$3, var$4, var$5, var$6, var$7, var$8, var$9) {
@@ -20556,16 +20590,16 @@ function oktsn_VelocityNode__clinit_() {
     var var$1;
     oktsn_VelocityNode_Companion = oktsn_VelocityNode$Companion__init_1(null);
     var$1 = ju_LinkedHashMap__init_();
-    var$1.$put2($rt_s(563), jl_Integer_valueOf(5));
-    var$1.$put2($rt_s(564), jl_Integer_valueOf(6));
-    var$1.$put2($rt_s(565), jl_Integer_valueOf(9));
+    var$1.$put2($rt_s(566), jl_Integer_valueOf(5));
+    var$1.$put2($rt_s(567), jl_Integer_valueOf(6));
+    var$1.$put2($rt_s(568), jl_Integer_valueOf(9));
     var$1.$put2($rt_s(306), jl_Integer_valueOf(5));
-    var$1.$put2($rt_s(610), jl_Integer_valueOf(9));
+    var$1.$put2($rt_s(613), jl_Integer_valueOf(9));
     oktsn_VelocityNode_InputForm = var$1;
 }
 function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$088 = null;
+    a.$this$087 = null;
     a.$$hasNormals$inlined = null;
     a.$$vertexInputs$inlined = null;
     a.$$indices$inlined = null;
@@ -20582,7 +20616,7 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1__init_(var_0, va
     return var_10;
 }
 function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1__init_0(var$0, var$1, var$2, var$3, var$4, var$5, var$6, var$7, var$8, var$9, var$10) {
-    var$0.$this$088 = var$1;
+    var$0.$this$087 = var$1;
     var$0.$$hasNormals$inlined = var$2;
     var$0.$$vertexInputs$inlined = var$3;
     var$0.$$indices$inlined = var$4;
@@ -20602,7 +20636,7 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke(var$0) {
 function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke0($this) {
     var $posOffset, $normalOffset, $index, var$4, $indx, var$6, $indy, $indz, $indicesView, $maxIndices, $uvOffset, $tangentOffset, var$13;
     a: {
-        if (!$this.$$hasNormals$inlined.$element2 && oktgg_GLTFPrimitive_getMesh($this.$this$088).$getPrimitiveType() == 4) {
+        if (!$this.$$hasNormals$inlined.$element2 && oktgg_GLTFPrimitive_getMesh($this.$this$087).$getPrimitiveType() == 4) {
             $posOffset = $this.$$vertexInputs$inlined.$floatOffsetOf($rt_s(400));
             $normalOffset = $this.$$vertexInputs$inlined.$floatOffsetOf($rt_s(402));
             $index = 0;
@@ -20616,7 +20650,7 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke0($this) {
                     $indy = $rt_imul(var$4, $this.$$floatsPerVertex$inlined);
                     $index = var$6 + 1 | 0;
                     $indz = $rt_imul(var$6, $this.$$floatsPerVertex$inlined);
-                    oktgg_GLTFPrimitive_access$calculateFlatNormal($this.$this$088, $indx, $indy, $indz, $posOffset, $normalOffset, $this.$$vertices$inlined);
+                    oktgg_GLTFPrimitive_access$calculateFlatNormal($this.$this$087, $indx, $indy, $indz, $posOffset, $normalOffset, $this.$$vertices$inlined);
                 }
             b: {
                 switch (oktm_IndexBufferObject_getType($this.$$indices$inlined)) {
@@ -20634,7 +20668,7 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke0($this) {
                         break b;
                     default:
                 }
-                $rt_throw(jl_IllegalStateException__init_0($rt_s(611)));
+                $rt_throw(jl_IllegalStateException__init_0($rt_s(614)));
             }
             $maxIndices = $indicesView.$getSize();
             while (true) {
@@ -20646,15 +20680,15 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke0($this) {
                 $indy = $rt_imul($indicesView.$toUInt1(var$4), $this.$$floatsPerVertex$inlined);
                 $index = var$6 + 1 | 0;
                 $indz = $rt_imul($indicesView.$toUInt1(var$6), $this.$$floatsPerVertex$inlined);
-                oktgg_GLTFPrimitive_access$calculateFlatNormal($this.$this$088, $indx, $indy, $indz, $posOffset, $normalOffset, $this.$$vertices$inlined);
+                oktgg_GLTFPrimitive_access$calculateFlatNormal($this.$this$087, $indx, $indy, $indz, $posOffset, $normalOffset, $this.$$vertices$inlined);
             }
         }
     }
     c: {
-        if (!$this.$$hasTangents$inlined.$element2 && $this.$$vertexInputs$inlined.$contains($rt_s(519)) && oktgg_GLTFPrimitive_getMesh($this.$this$088).$getPrimitiveType() == 4) {
+        if (!$this.$$hasTangents$inlined.$element2 && $this.$$vertexInputs$inlined.$contains($rt_s(520)) && oktgg_GLTFPrimitive_getMesh($this.$this$087).$getPrimitiveType() == 4) {
             $posOffset = $this.$$vertexInputs$inlined.$floatOffsetOf($rt_s(400));
-            $uvOffset = $this.$$vertexInputs$inlined.$floatOffsetOf($rt_s(519));
-            $tangentOffset = $this.$$vertexInputs$inlined.$floatOffsetOf($rt_s(560));
+            $uvOffset = $this.$$vertexInputs$inlined.$floatOffsetOf($rt_s(520));
+            $tangentOffset = $this.$$vertexInputs$inlined.$floatOffsetOf($rt_s(563));
             $index = 0;
             if ($this.$$indices$inlined === null)
                 while (true) {
@@ -20666,7 +20700,7 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke0($this) {
                     $indy = $rt_imul(var$4, $this.$$floatsPerVertex$inlined);
                     $index = var$6 + 1 | 0;
                     $indz = $rt_imul(var$6, $this.$$floatsPerVertex$inlined);
-                    oktgg_GLTFPrimitive_access$calculateTangent($this.$this$088, $indx, $indy, $indz, $this.$$vertices$inlined, $posOffset, $uvOffset, $tangentOffset);
+                    oktgg_GLTFPrimitive_access$calculateTangent($this.$this$087, $indx, $indy, $indz, $this.$$vertices$inlined, $posOffset, $uvOffset, $tangentOffset);
                 }
             d: {
                 switch (oktm_IndexBufferObject_getType($this.$$indices$inlined)) {
@@ -20684,7 +20718,7 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke0($this) {
                         break d;
                     default:
                 }
-                $rt_throw(jl_IllegalStateException__init_0($rt_s(611)));
+                $rt_throw(jl_IllegalStateException__init_0($rt_s(614)));
             }
             $maxIndices = $indicesView.$getSize();
             while (true) {
@@ -20696,15 +20730,15 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke0($this) {
                 $indy = $rt_imul($indicesView.$toUInt1(var$4), $this.$$floatsPerVertex$inlined);
                 $index = var$6 + 1 | 0;
                 $indz = $rt_imul($indicesView.$toUInt1(var$6), $this.$$floatsPerVertex$inlined);
-                oktgg_GLTFPrimitive_access$calculateTangent($this.$this$088, $indx, $indy, $indz, $this.$$vertices$inlined, $posOffset, $uvOffset, $tangentOffset);
+                oktgg_GLTFPrimitive_access$calculateTangent($this.$this$087, $indx, $indy, $indz, $this.$$vertices$inlined, $posOffset, $uvOffset, $tangentOffset);
             }
         }
     }
-    var$13 = oktgg_GLTFPrimitive_getMesh($this.$this$088);
+    var$13 = oktgg_GLTFPrimitive_getMesh($this.$this$087);
     oktm_MSH_$callClinit();
     var$13.$setVertices(oktm_MSH_vertexBuffer(oktm_MSH_INSTANCE, $this.$$vertexBuffer$inlined, $this.$$vertexInputs$inlined, 0));
-    oktgg_GLTFArray_ready(oktgg_GLTFMesh_getPrimitives(oktgg_GLTFPrimitive_getGltf($this.$this$088).$getMeshes().$get1(oktgg_GLTFPrimitive_getMeshIndex($this.$this$088))), oktgg_GLTFPrimitive_getElementIndex($this.$this$088));
-    oktgg_GLTFPrimitive_getGltf($this.$this$088).$runGLCall(oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1__init_($this));
+    oktgg_GLTFArray_ready(oktgg_GLTFMesh_getPrimitives(oktgg_GLTFPrimitive_getGltf($this.$this$087).$getMeshes().$get1(oktgg_GLTFPrimitive_getMeshIndex($this.$this$087))), oktgg_GLTFPrimitive_getElementIndex($this.$this$087));
+    oktgg_GLTFPrimitive_getGltf($this.$this$087).$runGLCall(oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1__init_($this));
 }
 function jur_ReluctantCompositeQuantifierSet() {
     jur_CompositeQuantifierSet.call(this);
@@ -20761,7 +20795,7 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$2() {
     a.$$attributeAccessor = null;
     a.$$attribute = null;
     a.$$completeCall = null;
-    a.$this$0108 = null;
+    a.$this$0107 = null;
     a.$$hasNormals$inlined0 = null;
     a.$$vertexInputs$inlined0 = null;
     a.$$indices$inlined0 = null;
@@ -20782,7 +20816,7 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$2__init_0(var$0, v
     var$0.$$attributeAccessor = var$2;
     var$0.$$attribute = var$3;
     var$0.$$completeCall = var$4;
-    var$0.$this$0108 = var$5;
+    var$0.$this$0107 = var$5;
     var$0.$$hasNormals$inlined0 = var$6;
     var$0.$$vertexInputs$inlined0 = var$7;
     var$0.$$indices$inlined0 = var$8;
@@ -20801,7 +20835,7 @@ function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$2_invoke(var$0, va
 }
 function oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$2_invoke0($this, $buffer) {
     var $byteStride, $verticesOffset, $stride, $attributeBuffer, $j, var$7, $k, var$9, var$10;
-    kji_Intrinsics_checkNotNullParameter($buffer, $rt_s(530));
+    kji_Intrinsics_checkNotNullParameter($buffer, $rt_s(533));
     oktgg_GLTFBuffer_getBytes($buffer).$setPosition(oktgg_GLTFBufferView_getByteOffset($this.$$bufferView1) + oktgg_GLTFAccessor_getByteOffset($this.$$attributeAccessor) | 0);
     $byteStride = oktgg_GLTFBufferView_getByteStride($this.$$bufferView1) != (-1) ? oktgg_GLTFBufferView_getByteStride($this.$$bufferView1) : oktgg_GLTFAccessor_strideSize($this.$$attributeAccessor);
     a: {
@@ -20917,51 +20951,51 @@ function oktsn_IShaderData$DefaultImpls_getTypeStr($$this) {
                 case 0:
                     break;
                 case 1:
-                    var$2 = $rt_s(612);
+                    var$2 = $rt_s(615);
                     break a;
                 case 2:
                 case 10:
                     break b;
                 case 3:
-                    var$2 = $rt_s(613);
-                    break a;
-                case 4:
-                    var$2 = $rt_s(614);
-                    break a;
-                case 5:
-                    var$2 = $rt_s(615);
-                    break a;
-                case 6:
                     var$2 = $rt_s(616);
                     break a;
-                case 7:
+                case 4:
                     var$2 = $rt_s(617);
                     break a;
-                case 8:
+                case 5:
                     var$2 = $rt_s(618);
                     break a;
-                case 9:
+                case 6:
                     var$2 = $rt_s(619);
                     break a;
-                case 11:
+                case 7:
                     var$2 = $rt_s(620);
                     break a;
-                case 12:
+                case 8:
                     var$2 = $rt_s(621);
                     break a;
-                case 13:
+                case 9:
                     var$2 = $rt_s(622);
                     break a;
-                case 14:
+                case 11:
                     var$2 = $rt_s(623);
                     break a;
-                case 15:
+                case 12:
                     var$2 = $rt_s(624);
+                    break a;
+                case 13:
+                    var$2 = $rt_s(625);
+                    break a;
+                case 14:
+                    var$2 = $rt_s(626);
+                    break a;
+                case 15:
+                    var$2 = $rt_s(627);
                     break a;
                 default:
                     break b;
             }
-            var$2 = $rt_s(625);
+            var$2 = $rt_s(628);
             break a;
         }
         var$2 = $rt_s(6);
@@ -21121,7 +21155,7 @@ function oktm_IMat4$DefaultImpls_isNotEqualTo($$this, $other) {
 }
 function oktm_IMat4$DefaultImpls_set($$this, $other) {
     kji_Intrinsics_checkNotNullParameter($other, $rt_s(266));
-    return $$this.$set23($other.$getValues());
+    return $$this.$set24($other.$getValues());
 }
 function oktm_IMat4$DefaultImpls_set0($$this, $other) {
     var $i, var$4;
@@ -21149,7 +21183,7 @@ function oktm_IMat4$DefaultImpls_set1($$this, $translation, $rotation, $scale) {
     var$12 = $scale.$getX();
     var$13 = $scale.$getY0();
     var$14 = $scale.$getZ();
-    return $$this.$set24(var$5, var$6, var$7, var$8, var$9, var$10, var$11, var$12, var$13, var$14);
+    return $$this.$set25(var$5, var$6, var$7, var$8, var$9, var$10, var$11, var$12, var$13, var$14);
 }
 function oktm_IMat4$DefaultImpls_set2($$this, $tx, $ty, $tz, $qx, $qy, $qz, $qw, $sx, $sy, $sz) {
     var $xs, $ys, $zs, $wx, $wy, $wz, $xx, $xy, $xz, $yy, $yz, $zz;
@@ -21223,7 +21257,7 @@ function oktm_IMat4$DefaultImpls_mul($$this, $other, $out) {
 }
 function oktm_IMat4$DefaultImpls_mul$default(var$1, var$2, var$3, var$4, var$5) {
     if (var$5 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(626)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(629)));
     if (var$4 & 2)
         var$3 = var$1;
     return var$1.$mul0(var$2, var$3);
@@ -21402,7 +21436,7 @@ function oktm_IMat4$DefaultImpls_scale($$this, $scaleX, $scaleY, $scaleZ) {
 }
 function oktm_IMat4$DefaultImpls_project($$this, $vec, $out) {
     var $invW, var$5, var$6, var$7;
-    kji_Intrinsics_checkNotNullParameter($vec, $rt_s(627));
+    kji_Intrinsics_checkNotNullParameter($vec, $rt_s(630));
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     $invW = 1.0 / ($vec.$getX() * $$this.$getM30() + $vec.$getY0() * $$this.$getM31() + $vec.$getZ() * $$this.$getM32() + $$this.$getM33());
     var$5 = ($vec.$getX() * $$this.$getM00() + $vec.$getY0() * $$this.$getM01() + $vec.$getZ() * $$this.$getM02() + $$this.$getM03()) * $invW;
@@ -21450,7 +21484,7 @@ function jn_ByteBuffer_put0($this, $src, $offset, $length) {
         if ($offset < var$5) {
             var$6 = $offset + $length | 0;
             if (var$6 > var$5)
-                $rt_throw(jl_IndexOutOfBoundsException__init_0(jl_StringBuilder__init_().$append($rt_s(628)).$append1(var$6).$append($rt_s(352)).$append1(var$5).$toString()));
+                $rt_throw(jl_IndexOutOfBoundsException__init_0(jl_StringBuilder__init_().$append($rt_s(631)).$append1(var$6).$append($rt_s(352)).$append1(var$5).$toString()));
             if ($length < 0)
                 $rt_throw(jl_IndexOutOfBoundsException__init_0(jl_StringBuilder__init_().$append($rt_s(353)).$append1($length).$append($rt_s(354)).$toString()));
             $pos = $this.$position2 + $this.$start4 | 0;
@@ -21499,7 +21533,7 @@ function jur_SOLSet_hasConsumed($this, $matchResult) {
 }
 function ck_SceneObject$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$0109 = null;
+    this.$this$0108 = null;
 }
 function ck_SceneObject$readJson$1__init_(var_0) {
     var var_1 = new ck_SceneObject$readJson$1();
@@ -21513,10 +21547,10 @@ function ck_SceneObject$readJson$1_invoke(var$0, var$1) {
 }
 function ck_SceneObject$readJson$1_invoke0($this, $$this$array) {
     kji_Intrinsics_checkNotNullParameter($$this$array, $rt_s(3));
-    $this.$this$0109.$getPosition0().$set13($$this$array.$float1(0), $$this$array.$float1(1), $$this$array.$float1(2));
+    $this.$this$0108.$getPosition0().$set13($$this$array.$float1(0), $$this$array.$float1(1), $$this$array.$float1(2));
 }
 function ck_SceneObject$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$0109 = var$1;
+    var$0.$this$0108 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jl_Byte() {
@@ -21552,12 +21586,12 @@ function oktj_IJsonObject$DefaultImpls() {
     jl_Object.call(this);
 }
 function oktj_IJsonObject$DefaultImpls_objOrNull($$this, $key) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
-    return !$$this.$contains($key) ? null : $$this.$obj2($key);
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
+    return !$$this.$contains($key) ? null : $$this.$obj0($key);
 }
 function oktj_IJsonObject$DefaultImpls_obj($$this, $key, $call) {
     var var$4;
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     var$4 = $$this.$objOrNull0($key);
     if (var$4 === null)
@@ -21567,12 +21601,12 @@ function oktj_IJsonObject$DefaultImpls_obj($$this, $key, $call) {
     return var$4;
 }
 function oktj_IJsonObject$DefaultImpls_arrayOrNull($$this, $key) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     return !$$this.$contains($key) ? null : $$this.$array0($key);
 }
 function oktj_IJsonObject$DefaultImpls_array($$this, $key, $call) {
     var var$4;
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     var$4 = $$this.$arrayOrNull0($key);
     if (var$4 === null)
@@ -21582,51 +21616,51 @@ function oktj_IJsonObject$DefaultImpls_array($$this, $key, $call) {
     return var$4;
 }
 function oktj_IJsonObject$DefaultImpls_string0($$this, $key, $default) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
-    kji_Intrinsics_checkNotNullParameter($default, $rt_s(558));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
+    kji_Intrinsics_checkNotNullParameter($default, $rt_s(561));
     if ($$this.$contains($key))
         $default = $$this.$string4($key);
     return $default;
 }
 function oktj_IJsonObject$DefaultImpls_float0($$this, $key, $default) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     if ($$this.$contains($key))
         $default = $$this.$float0($key);
     return $default;
 }
 function oktj_IJsonObject$DefaultImpls_int0($$this, $key, $default) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     if ($$this.$contains($key))
         $default = $$this.$int0($key);
     return $default;
 }
 function oktj_IJsonObject$DefaultImpls_string($$this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     if ($$this.$contains($key))
         $call.$invoke8($$this.$string4($key));
 }
 function oktj_IJsonObject$DefaultImpls_float($$this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     if ($$this.$contains($key))
         $call.$invoke8(jl_Float_valueOf($$this.$float0($key)));
 }
 function oktj_IJsonObject$DefaultImpls_int($$this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     if ($$this.$contains($key))
         $call.$invoke8(jl_Integer_valueOf($$this.$int0($key)));
 }
 function oktj_IJsonObject$DefaultImpls_bool($$this, $key, $call) {
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     if ($$this.$contains($key))
         $call.$invoke8(jl_Boolean_valueOf($$this.$bool1($key)));
 }
 function oktj_IJsonObject$DefaultImpls_ints($$this, $key, $call) {
     var var$4;
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     var$4 = $$this.$arrayOrNull0($key);
     if (var$4 !== null)
@@ -21634,7 +21668,7 @@ function oktj_IJsonObject$DefaultImpls_ints($$this, $key, $call) {
 }
 function oktj_IJsonObject$DefaultImpls_floats($$this, $key, $call) {
     var var$4;
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     var$4 = $$this.$arrayOrNull0($key);
     if (var$4 !== null)
@@ -21642,7 +21676,7 @@ function oktj_IJsonObject$DefaultImpls_floats($$this, $key, $call) {
 }
 function oktj_IJsonObject$DefaultImpls_get($$this, $key, $call) {
     var $json;
-    kji_Intrinsics_checkNotNullParameter($key, $rt_s(554));
+    kji_Intrinsics_checkNotNullParameter($key, $rt_s(557));
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     $json = $$this.$objOrNull0($key);
     if ($json !== null)
@@ -21651,7 +21685,7 @@ function oktj_IJsonObject$DefaultImpls_get($$this, $key, $call) {
 }
 function oktgg_GLTFCamera$readJson$3$2() {
     kji_Lambda.call(this);
-    this.$this$0110 = null;
+    this.$this$0109 = null;
 }
 function oktgg_GLTFCamera$readJson$3$2__init_(var_0) {
     var var_1 = new oktgg_GLTFCamera$readJson$3$2();
@@ -21664,15 +21698,15 @@ function oktgg_GLTFCamera$readJson$3$2_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFCamera$readJson$3$2_invoke0($this, $it) {
-    oktgg_GLTFCamera_setYmag($this.$this$0110.$this$047, $it);
+    oktgg_GLTFCamera_setYmag($this.$this$0109.$this$047, $it);
 }
 function oktgg_GLTFCamera$readJson$3$2__init_0(var$0, var$1) {
-    var$0.$this$0110 = var$1;
+    var$0.$this$0109 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFCamera$readJson$3$3() {
     kji_Lambda.call(this);
-    this.$this$0111 = null;
+    this.$this$0110 = null;
 }
 function oktgg_GLTFCamera$readJson$3$3__init_(var_0) {
     var var_1 = new oktgg_GLTFCamera$readJson$3$3();
@@ -21685,16 +21719,16 @@ function oktgg_GLTFCamera$readJson$3$3_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFCamera$readJson$3$3_invoke0($this, $it) {
-    oktgg_GLTFCamera_setZfar($this.$this$0111.$this$047, $it);
-    oktgg_GLTFCamera_getCamera($this.$this$0111.$this$047).$setFar($it);
+    oktgg_GLTFCamera_setZfar($this.$this$0110.$this$047, $it);
+    oktgg_GLTFCamera_getCamera($this.$this$0110.$this$047).$setFar($it);
 }
 function oktgg_GLTFCamera$readJson$3$3__init_0(var$0, var$1) {
-    var$0.$this$0111 = var$1;
+    var$0.$this$0110 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFCamera$readJson$3$1() {
     kji_Lambda.call(this);
-    this.$this$0112 = null;
+    this.$this$0111 = null;
 }
 function oktgg_GLTFCamera$readJson$3$1__init_(var_0) {
     var var_1 = new oktgg_GLTFCamera$readJson$3$1();
@@ -21707,10 +21741,10 @@ function oktgg_GLTFCamera$readJson$3$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFCamera$readJson$3$1_invoke0($this, $it) {
-    oktgg_GLTFCamera_setXmag($this.$this$0112.$this$047, $it);
+    oktgg_GLTFCamera_setXmag($this.$this$0111.$this$047, $it);
 }
 function oktgg_GLTFCamera$readJson$3$1__init_0(var$0, var$1) {
-    var$0.$this$0112 = var$1;
+    var$0.$this$0111 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function kt_CharsKt() {
@@ -21860,17 +21894,9 @@ function oktg_GL_setSimpleAlphaBlending($this) {
         kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(270));
     var$1.$setSimpleAlphaBlending();
 }
-function oktg_GL_call($this, $function) {
-    var var$2;
-    kji_Intrinsics_checkNotNullParameter($function, $rt_s(629));
-    var$2 = oktg_GL_proxy;
-    if (var$2 === null)
-        kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(270));
-    var$2.$call($function);
-}
 function oktg_GL_render($this, $function) {
     var var$2;
-    kji_Intrinsics_checkNotNullParameter($function, $rt_s(629));
+    kji_Intrinsics_checkNotNullParameter($function, $rt_s(632));
     var$2 = oktg_GL_proxy;
     if (var$2 === null)
         kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(270));
@@ -21892,7 +21918,7 @@ function oktg_GL_runRenderCalls($this) {
 }
 function oktg_GL_isExtensionSupported($this, $extension) {
     var var$2;
-    kji_Intrinsics_checkNotNullParameter($extension, $rt_s(630));
+    kji_Intrinsics_checkNotNullParameter($extension, $rt_s(633));
     var$2 = oktg_GL_proxy;
     if (var$2 === null)
         kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(270));
@@ -21907,7 +21933,7 @@ function oktg_GL_getErrorString($this, $error) {
 }
 function oktg_GL_glDrawBuffers($this, $n, $bufs) {
     var var$3;
-    kji_Intrinsics_checkNotNullParameter($bufs, $rt_s(631));
+    kji_Intrinsics_checkNotNullParameter($bufs, $rt_s(634));
     var$3 = oktg_GL_proxy;
     if (var$3 === null)
         kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(270));
@@ -22126,8 +22152,8 @@ function oktg_GL_glGenFramebuffer($this) {
 }
 function oktg_GL_glGetActiveAttrib($this, $program, $index, $size, $type) {
     var var$5;
-    kji_Intrinsics_checkNotNullParameter($size, $rt_s(632));
-    kji_Intrinsics_checkNotNullParameter($type, $rt_s(485));
+    kji_Intrinsics_checkNotNullParameter($size, $rt_s(635));
+    kji_Intrinsics_checkNotNullParameter($type, $rt_s(486));
     var$5 = oktg_GL_proxy;
     if (var$5 === null)
         kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(270));
@@ -22135,8 +22161,8 @@ function oktg_GL_glGetActiveAttrib($this, $program, $index, $size, $type) {
 }
 function oktg_GL_glGetActiveUniform($this, $program, $index, $size, $type) {
     var var$5;
-    kji_Intrinsics_checkNotNullParameter($size, $rt_s(632));
-    kji_Intrinsics_checkNotNullParameter($type, $rt_s(485));
+    kji_Intrinsics_checkNotNullParameter($size, $rt_s(635));
+    kji_Intrinsics_checkNotNullParameter($type, $rt_s(486));
     var$5 = oktg_GL_proxy;
     if (var$5 === null)
         kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(270));
@@ -22152,7 +22178,7 @@ function oktg_GL_glGetAttribLocation($this, $program, $name) {
 }
 function oktg_GL_glGetProgramiv($this, $program, $pname, $params) {
     var var$4;
-    kji_Intrinsics_checkNotNullParameter($params, $rt_s(633));
+    kji_Intrinsics_checkNotNullParameter($params, $rt_s(636));
     var$4 = oktg_GL_proxy;
     if (var$4 === null)
         kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(270));
@@ -22167,7 +22193,7 @@ function oktg_GL_glGetProgramInfoLog($this, $program) {
 }
 function oktg_GL_glGetShaderiv($this, $shader, $pname, $params) {
     var var$4;
-    kji_Intrinsics_checkNotNullParameter($params, $rt_s(633));
+    kji_Intrinsics_checkNotNullParameter($params, $rt_s(636));
     var$4 = oktg_GL_proxy;
     if (var$4 === null)
         kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(270));
@@ -22306,55 +22332,55 @@ function oktsn_GLSL__clinit_() {
     oktsn_GLSL_defaultNormal = oktsn_GLSLVec3Inline__init_1(0.5, 0.5, 1.0, null, 8, null);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$1_$callClinit();
-    var$1.$put2($rt_s(634), oktsn_GLSL$1_INSTANCE);
+    var$1.$put2($rt_s(637), oktsn_GLSL$1_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$2_$callClinit();
-    var$1.$put2($rt_s(635), oktsn_GLSL$2_INSTANCE);
+    var$1.$put2($rt_s(638), oktsn_GLSL$2_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$3_$callClinit();
     var$1.$put2($rt_s(326), oktsn_GLSL$3_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$4_$callClinit();
-    var$1.$put2($rt_s(636), oktsn_GLSL$4_INSTANCE);
+    var$1.$put2($rt_s(639), oktsn_GLSL$4_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$5_$callClinit();
-    var$1.$put2($rt_s(637), oktsn_GLSL$5_INSTANCE);
+    var$1.$put2($rt_s(640), oktsn_GLSL$5_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$6_$callClinit();
-    var$1.$put2($rt_s(638), oktsn_GLSL$6_INSTANCE);
+    var$1.$put2($rt_s(641), oktsn_GLSL$6_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$7_$callClinit();
-    var$1.$put2($rt_s(639), oktsn_GLSL$7_INSTANCE);
+    var$1.$put2($rt_s(642), oktsn_GLSL$7_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$8_$callClinit();
-    var$1.$put2($rt_s(640), oktsn_GLSL$8_INSTANCE);
+    var$1.$put2($rt_s(643), oktsn_GLSL$8_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$9_$callClinit();
-    var$1.$put2($rt_s(641), oktsn_GLSL$9_INSTANCE);
+    var$1.$put2($rt_s(644), oktsn_GLSL$9_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$10_$callClinit();
-    var$1.$put2($rt_s(642), oktsn_GLSL$10_INSTANCE);
+    var$1.$put2($rt_s(645), oktsn_GLSL$10_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$11_$callClinit();
-    var$1.$put2($rt_s(643), oktsn_GLSL$11_INSTANCE);
+    var$1.$put2($rt_s(646), oktsn_GLSL$11_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$12_$callClinit();
-    var$1.$put2($rt_s(644), oktsn_GLSL$12_INSTANCE);
+    var$1.$put2($rt_s(647), oktsn_GLSL$12_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$13_$callClinit();
     var$1.$put2($rt_s(271), oktsn_GLSL$13_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$14_$callClinit();
-    var$1.$put2($rt_s(645), oktsn_GLSL$14_INSTANCE);
+    var$1.$put2($rt_s(648), oktsn_GLSL$14_INSTANCE);
     var$1 = oktsn_GLSL_nodes;
     oktsn_GLSL$15_$callClinit();
-    var$1.$put2($rt_s(608), oktsn_GLSL$15_INSTANCE);
+    var$1.$put2($rt_s(611), oktsn_GLSL$15_INSTANCE);
 }
 function kjf_Function18() {
 }
 function oktgg_IGLTFMaterial$readJson$9() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0113 = null;
+    a.$this$0112 = null;
     a.$$shader = null;
     a.$$uvNodes = null;
     a.$$principledBSDF = null;
@@ -22372,15 +22398,15 @@ function oktgg_IGLTFMaterial$readJson$9_invoke(var$0, var$1) {
 function oktgg_IGLTFMaterial$readJson$9_invoke0($this, $$this$get) {
     var $uvNode, $textureNode;
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
-    $$this$get.$float($rt_s(646), oktgg_IGLTFMaterial$readJson$9$1__init_($this));
-    $$this$get.$int($rt_s(647), oktgg_IGLTFMaterial$readJson$9$2__init_($this));
-    $uvNode = oktgg_IGLTFMaterial$DefaultImpls_access$getOrCreateUVNode($this.$this$0113, $this.$$shader, jl_StringBuilder__init_().$append($rt_s(648)).$append1($this.$this$0113.$getOcclusionTextureUV()).$toString(), $this.$$uvNodes);
-    $this.$this$0113.$setOcclusionTexture($$this$get.$int0($rt_s(649)));
-    $textureNode = $this.$$shader.$addNode(oktsn_TextureNode__init_(oktsn_UVNode_getUv($uvNode), oktgg_GLTFTexture_getTexture($this.$this$0113.$getGltf().$getTextures0().$get1($this.$this$0113.$getOcclusionTexture())), 0, 0, 8, null));
+    $$this$get.$float($rt_s(649), oktgg_IGLTFMaterial$readJson$9$1__init_($this));
+    $$this$get.$int($rt_s(650), oktgg_IGLTFMaterial$readJson$9$2__init_($this));
+    $uvNode = oktgg_IGLTFMaterial$DefaultImpls_access$getOrCreateUVNode($this.$this$0112, $this.$$shader, jl_StringBuilder__init_().$append($rt_s(651)).$append1($this.$this$0112.$getOcclusionTextureUV()).$toString(), $this.$$uvNodes);
+    $this.$this$0112.$setOcclusionTexture($$this$get.$int0($rt_s(652)));
+    $textureNode = $this.$$shader.$addNode(oktsn_TextureNode__init_(oktsn_UVNode_getUv($uvNode), oktgg_GLTFTexture_getTexture($this.$this$0112.$getGltf().$getTextures0().$get1($this.$this$0112.$getOcclusionTexture())), 0, 0, 8, null));
     oktsn_PrincipledBSDF_setOcclusion($this.$$principledBSDF, oktsn_TextureNode_getColor($textureNode));
 }
 function oktgg_IGLTFMaterial$readJson$9__init_0(var$0, var$1, var$2, var$3, var$4) {
-    var$0.$this$0113 = var$1;
+    var$0.$this$0112 = var$1;
     var$0.$$shader = var$2;
     var$0.$$uvNodes = var$3;
     var$0.$$principledBSDF = var$4;
@@ -22417,23 +22443,23 @@ function oktgg_GLTFBuffer_readJson($this, $json) {
     var var$2, $file, var$4, $$this$toTypedArray$iv, var$6, $headerBody, $body;
     kji_Intrinsics_checkNotNullParameter($json, $rt_s(25));
     $json.$string($rt_s(26), oktgg_GLTFBuffer$readJson$1__init_($this));
-    $json.$int($rt_s(650), oktgg_GLTFBuffer$readJson$2__init_($this));
+    $json.$int($rt_s(653), oktgg_GLTFBuffer$readJson$2__init_($this));
     oktd_DATA_$callClinit();
     $this.$bytes1 = oktd_DATA_bytes(oktd_DATA_INSTANCE, $this.$byteLength);
     var$2 = $this.$bytes1;
     oktd_DataByteOrder_$callClinit();
     var$2.$setOrder(oktd_DataByteOrder_LittleEndian);
-    if (!kt_StringsKt__StringsJVMKt_startsWith$default($this.$uri0, $rt_s(651), 0, 2, null)) {
+    if (!kt_StringsKt__StringsJVMKt_startsWith$default($this.$uri0, $rt_s(654), 0, 2, null)) {
         $file = oktgg_GLTFBuffer_getGltf($this).$getDirectory().$child(oktd_DATA_decodeURI(oktd_DATA_INSTANCE, $this.$uri0));
         var$2 = oktgg_GLTFBuffer$readJson$3__init_($this);
         var$4 = oktgg_GLTFBuffer$readJson$4__init_($this);
         $file.$readBytes(var$4, var$2);
     } else {
         var$2 = $this.$uri0;
-        $$this$toTypedArray$iv = kt_Regex_split(kt_Regex__init_1($rt_s(652)), var$2, 2);
+        $$this$toTypedArray$iv = kt_Regex_split(kt_Regex__init_1($rt_s(655)), var$2, 2);
         var$6 = $$this$toTypedArray$iv.$toArray0($rt_createArray(jl_String, 0));
         if (var$6 === null)
-            $rt_throw(jl_NullPointerException__init_0($rt_s(653)));
+            $rt_throw(jl_NullPointerException__init_0($rt_s(656)));
         $headerBody = var$6;
         var$6 = $headerBody.data;
         $body = var$6[1];
@@ -22490,7 +22516,7 @@ function kjf_Function14() {
 }
 function oktgg_IGLTFMaterial$readJson$5() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0114 = null;
+    a.$this$0113 = null;
     a.$$shader0 = null;
     a.$$uvNodes0 = null;
     a.$$alphaNodes = null;
@@ -22511,14 +22537,14 @@ function oktgg_IGLTFMaterial$readJson$5_invoke(var$0, var$1) {
 }
 function oktgg_IGLTFMaterial$readJson$5_invoke0($this, $$this$get) {
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
-    $$this$get.$get4($rt_s(654), oktgg_IGLTFMaterial$readJson$5$1__init_($this));
-    $$this$get.$array($rt_s(655), oktgg_IGLTFMaterial$readJson$5$2__init_($this));
-    $$this$get.$get4($rt_s(656), oktgg_IGLTFMaterial$readJson$5$3__init_($this));
-    $$this$get.$float($rt_s(657), oktgg_IGLTFMaterial$readJson$5$4__init_($this));
-    $$this$get.$float($rt_s(658), oktgg_IGLTFMaterial$readJson$5$5__init_($this));
+    $$this$get.$get4($rt_s(657), oktgg_IGLTFMaterial$readJson$5$1__init_($this));
+    $$this$get.$array($rt_s(658), oktgg_IGLTFMaterial$readJson$5$2__init_($this));
+    $$this$get.$get4($rt_s(659), oktgg_IGLTFMaterial$readJson$5$3__init_($this));
+    $$this$get.$float($rt_s(660), oktgg_IGLTFMaterial$readJson$5$4__init_($this));
+    $$this$get.$float($rt_s(661), oktgg_IGLTFMaterial$readJson$5$5__init_($this));
 }
 function oktgg_IGLTFMaterial$readJson$5__init_0(var$0, var$1, var$2, var$3, var$4, var$5, var$6, var$7, var$8) {
-    var$0.$this$0114 = var$1;
+    var$0.$this$0113 = var$1;
     var$0.$$shader0 = var$2;
     var$0.$$uvNodes0 = var$3;
     var$0.$$alphaNodes = var$4;
@@ -22553,9 +22579,9 @@ function oktgg_IGLTFMaterial$readJson$4_invoke0($this, $$this$get) {
     var $uvNode, $textureNode, var$4, var$5;
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
     $$this$get.$float($rt_s(42), oktgg_IGLTFMaterial$readJson$4$1__init_($this));
-    $$this$get.$int($rt_s(647), oktgg_IGLTFMaterial$readJson$4$2__init_($this));
-    $uvNode = oktgg_IGLTFMaterial$DefaultImpls_access$getOrCreateUVNode($this.$this$024, $this.$$shader1, jl_StringBuilder__init_().$append($rt_s(648)).$append1($this.$this$024.$getNormalTextureUV()).$toString(), $this.$$uvNodes1);
-    $this.$this$024.$setNormalTexture($$this$get.$int0($rt_s(649)));
+    $$this$get.$int($rt_s(650), oktgg_IGLTFMaterial$readJson$4$2__init_($this));
+    $uvNode = oktgg_IGLTFMaterial$DefaultImpls_access$getOrCreateUVNode($this.$this$024, $this.$$shader1, jl_StringBuilder__init_().$append($rt_s(651)).$append1($this.$this$024.$getNormalTextureUV()).$toString(), $this.$$uvNodes1);
+    $this.$this$024.$setNormalTexture($$this$get.$int0($rt_s(652)));
     $textureNode = $this.$$shader1.$addNode(oktsn_TextureNode__init_(oktsn_UVNode_getUv($uvNode), oktgg_GLTFTexture_getTexture($this.$this$024.$getGltf().$getTextures0().$get1($this.$this$024.$getNormalTexture())), 0, 0, 8, null));
     var$4 = $this.$$shader1;
     var$5 = oktsn_NormalMapNode__init_(oktsn_VertexNode_getPosition($this.$$vertexNode));
@@ -22658,7 +22684,7 @@ function kjf_Function16() {
 }
 function oktgg_GLTFScene$readJson$3$1$1() {
     kji_Lambda.call(this);
-    this.$this$0115 = null;
+    this.$this$0114 = null;
 }
 function oktgg_GLTFScene$readJson$3$1$1__init_(var_0) {
     var var_1 = new oktgg_GLTFScene$readJson$3$1$1();
@@ -22671,11 +22697,11 @@ function oktgg_GLTFScene$readJson$3$1$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFScene$readJson$3$1$1_invoke0($this, $gltfNode) {
-    kji_Intrinsics_checkNotNullParameter($gltfNode, $rt_s(659));
-    oktgg_GLTFScene_getScene($this.$this$0115.$this$05.$this$06).$getProxyNode().$addChildNode0(oktgg_GLTFNode_getNode($gltfNode));
+    kji_Intrinsics_checkNotNullParameter($gltfNode, $rt_s(662));
+    oktgg_GLTFScene_getScene($this.$this$0114.$this$05.$this$06).$getProxyNode().$addChildNode0(oktgg_GLTFNode_getNode($gltfNode));
 }
 function oktgg_GLTFScene$readJson$3$1$1__init_0(var$0, var$1) {
-    var$0.$this$0115 = var$1;
+    var$0.$this$0114 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function kjf_Function17() {
@@ -22723,14 +22749,14 @@ function kc_ArraysKt___ArraysKt_indexOf($$this$indexOf, $element) {
 function kc_ArraysKt___ArraysKt_single($$this$single) {
     var var$2, var$3;
     var$2 = $$this$single.data;
-    kji_Intrinsics_checkNotNullParameter($$this$single, $rt_s(660));
+    kji_Intrinsics_checkNotNullParameter($$this$single, $rt_s(663));
     switch (var$2.length) {
         case 0:
-            $rt_throw(ju_NoSuchElementException__init_0($rt_s(661)));
+            $rt_throw(ju_NoSuchElementException__init_0($rt_s(664)));
         case 1:
             break;
         default:
-            $rt_throw(jl_IllegalArgumentException__init_0($rt_s(662)));
+            $rt_throw(jl_IllegalArgumentException__init_0($rt_s(665)));
     }
     var$3 = var$2[0];
     return var$3;
@@ -22763,7 +22789,7 @@ function kjf_Function13() {
 }
 function oktgg_GLTF$readJson$10$1() {
     kji_Lambda.call(this);
-    this.$this$0116 = null;
+    this.$this$0115 = null;
 }
 function oktgg_GLTF$readJson$10$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$10$1();
@@ -22778,12 +22804,12 @@ function oktgg_GLTF$readJson$10$1_invoke(var$0, var$1) {
 function oktgg_GLTF$readJson$10$1_invoke0($this, $$this$objs) {
     var $camera;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    $camera = oktgg_GLTFCamera__init_1($this.$this$0116.$this$0117, oktgg_GLTFArray_size($this.$this$0116.$this$0117.$getCameras0()), null, 4, null);
-    oktgg_GLTFArray_add($this.$this$0116.$this$0117.$getCameras0(), $camera);
+    $camera = oktgg_GLTFCamera__init_1($this.$this$0115.$this$0116, oktgg_GLTFArray_size($this.$this$0115.$this$0116.$getCameras0()), null, 4, null);
+    oktgg_GLTFArray_add($this.$this$0115.$this$0116.$getCameras0(), $camera);
     oktgg_GLTFCamera_readJson($camera, $$this$objs);
 }
 function oktgg_GLTF$readJson$10$1__init_0(var$0, var$1) {
-    var$0.$this$0116 = var$1;
+    var$0.$this$0115 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFImage$readJson$5() {
@@ -22803,8 +22829,8 @@ function oktgg_GLTFImage$readJson$5_invoke(var$0, var$1) {
 function oktgg_GLTFImage$readJson$5_invoke0($this, $uri) {
     var $decoded, $file, var$4, var$5, var$6, var$7;
     kji_Intrinsics_checkNotNullParameter($uri, $rt_s(26));
-    if (kt_StringsKt__StringsJVMKt_startsWith$default($uri, $rt_s(651), 0, 2, null))
-        $rt_throw(jl_RuntimeException__init_($rt_s(663)));
+    if (kt_StringsKt__StringsJVMKt_startsWith$default($uri, $rt_s(654), 0, 2, null))
+        $rt_throw(jl_RuntimeException__init_($rt_s(666)));
     oktd_DATA_$callClinit();
     $decoded = oktd_DATA_decodeURI(oktd_DATA_INSTANCE, $uri);
     $file = oktgg_GLTFImage_getGltf($this.$this$046).$getDirectory().$child($decoded);
@@ -22871,7 +22897,7 @@ function jnc_CoderResult__clinit_() {
 }
 function oktgg_GLTFImage$readJson$3() {
     kji_Lambda.call(this);
-    this.$this$0118 = null;
+    this.$this$0117 = null;
 }
 function oktgg_GLTFImage$readJson$3__init_(var_0) {
     var var_1 = new oktgg_GLTFImage$readJson$3();
@@ -22885,10 +22911,10 @@ function oktgg_GLTFImage$readJson$3_invoke(var$0, var$1) {
 }
 function oktgg_GLTFImage$readJson$3_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    oktgg_GLTFImage_setMimeType($this.$this$0118, $it);
+    oktgg_GLTFImage_setMimeType($this.$this$0117, $it);
 }
 function oktgg_GLTFImage$readJson$3__init_0(var$0, var$1) {
-    var$0.$this$0118 = var$1;
+    var$0.$this$0117 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktg_IObject3D() {
@@ -22960,9 +22986,9 @@ function oktg_Object3D_setArmature($this, $_set___) {
 }
 function oktg_Object3D__init_0($this, $proxyNode, $previousTransform, $name, $isVisible, $meshes, $armature, $boundingBox) {
     kji_Intrinsics_checkNotNullParameter($proxyNode, $rt_s(313));
-    kji_Intrinsics_checkNotNullParameter($previousTransform, $rt_s(664));
+    kji_Intrinsics_checkNotNullParameter($previousTransform, $rt_s(667));
     kji_Intrinsics_checkNotNullParameter($name, $rt_s(12));
-    kji_Intrinsics_checkNotNullParameter($meshes, $rt_s(665));
+    kji_Intrinsics_checkNotNullParameter($meshes, $rt_s(668));
     jl_Object__init_0($this);
     $this.$proxyNode0 = $proxyNode;
     $this.$previousTransform = $previousTransform;
@@ -23000,7 +23026,7 @@ function oktg_Object3D_set0($this, $other) {
     return oktg_IObject3D$DefaultImpls_set0($this, $other);
 }
 function oktg_Object3D_set1(var$0, var$1) {
-    return var$0.$set27(var$1);
+    return var$0.$set28(var$1);
 }
 function oktg_Object3D_copy($this) {
     return oktg_IObject3D$DefaultImpls_copy($this);
@@ -23074,11 +23100,11 @@ function ck_HitFX__init_(var_0, var_1, var_2, var_3) {
 function ck_HitFX_render($this, $shaderChannel) {
     var var$2;
     ck_HitFX_shader.$bind();
-    ck_HitFX_shader.$set22($rt_s(666), $this.$getWorldMatrix());
-    ck_HitFX_shader.$set28($rt_s(667), okta_Frame2DAnim_getTranslationX($this.$anim0), okta_Frame2DAnim_getTranslationY($this.$anim0));
+    ck_HitFX_shader.$set23($rt_s(669), $this.$getWorldMatrix());
+    ck_HitFX_shader.$set29($rt_s(670), okta_Frame2DAnim_getTranslationX($this.$anim0), okta_Frame2DAnim_getTranslationY($this.$anim0));
     var$2 = ck_HitFX_shader;
     oktgc_ActiveCamera_$callClinit();
-    var$2.$set22($rt_s(668), oktgc_ActiveCamera_getViewProjectionMatrix(oktgc_ActiveCamera_INSTANCE));
+    var$2.$set23($rt_s(671), oktgc_ActiveCamera_getViewProjectionMatrix(oktgc_ActiveCamera_INSTANCE));
     ck_HitFX_hitTexture.$bind4(0);
     oktg_Object3D_render($this, $shaderChannel);
 }
@@ -23103,7 +23129,7 @@ function ck_HitFX__init_0($this, $location, $x, $y, $z) {
     $this.$getWorldMatrix().$scale1(3.0, 3.0, 3.0);
     var$5 = ck_HitFX_hitSound;
     if (var$5 === null)
-        kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(669));
+        kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(672));
     okta_ISound$DefaultImpls_play$default(var$5, 0.0, 0.0, 0.0, 0, 15, null);
     $this.$getMeshes0().$add3(ck_HitFX_mesh);
     ck_LocationView_getMainScene($this.$location0).$getObjects().$add3($this);
@@ -23145,7 +23171,7 @@ function ck_HitFX_access$setInititated$cp($_set___) {
 }
 function oktgg_GLTFImage$readJson$4() {
     kji_Lambda.call(this);
-    this.$this$0119 = null;
+    this.$this$0118 = null;
 }
 function oktgg_GLTFImage$readJson$4__init_(var_0) {
     var var_1 = new oktgg_GLTFImage$readJson$4();
@@ -23158,10 +23184,10 @@ function oktgg_GLTFImage$readJson$4_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFImage$readJson$4_invoke0($this, $it) {
-    oktgg_GLTFImage_setBufferView($this.$this$0119, $it);
+    oktgg_GLTFImage_setBufferView($this.$this$0118, $it);
 }
 function oktgg_GLTFImage$readJson$4__init_0(var$0, var$1) {
-    var$0.$this$0119 = var$1;
+    var$0.$this$0118 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_EOLSet() {
@@ -23217,7 +23243,7 @@ function jur_EOLSet_hasConsumed($this, $matchResult) {
 }
 function oktgg_GLTFImage$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$0120 = null;
+    this.$this$0119 = null;
 }
 function oktgg_GLTFImage$readJson$1__init_(var_0) {
     var var_1 = new oktgg_GLTFImage$readJson$1();
@@ -23231,10 +23257,10 @@ function oktgg_GLTFImage$readJson$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFImage$readJson$1_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    oktgg_GLTFImage_setName($this.$this$0120, $it);
+    oktgg_GLTFImage_setName($this.$this$0119, $it);
 }
 function oktgg_GLTFImage$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$0120 = var$1;
+    var$0.$this$0119 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktm_Frustum() {
@@ -23263,7 +23289,7 @@ function oktm_Frustum_getPoints($this) {
 }
 function oktm_Frustum_setFromMatrix($this, $inverseViewProjection) {
     var $i, var$3, $point;
-    kji_Intrinsics_checkNotNullParameter($inverseViewProjection, $rt_s(670));
+    kji_Intrinsics_checkNotNullParameter($inverseViewProjection, $rt_s(673));
     $i = 0;
     var$3 = oktm_Frustum_clipSpacePlanePoints.data.length;
     while ($i < var$3) {
@@ -23300,7 +23326,7 @@ function oktm_Frustum__init_1($this) {
 }
 function oktm_Frustum__init_2($this, $inverseProjectionView) {
     oktm_Frustum_$callClinit();
-    kji_Intrinsics_checkNotNullParameter($inverseProjectionView, $rt_s(671));
+    kji_Intrinsics_checkNotNullParameter($inverseProjectionView, $rt_s(674));
     oktm_Frustum__init_1($this);
     oktm_Frustum_setFromMatrix($this, $inverseProjectionView);
 }
@@ -23321,7 +23347,7 @@ function oktm_Frustum__clinit_() {
 }
 function oktgg_GLTFImage$readJson$2() {
     kji_Lambda.call(this);
-    this.$this$0121 = null;
+    this.$this$0120 = null;
 }
 function oktgg_GLTFImage$readJson$2__init_(var_0) {
     var var_1 = new oktgg_GLTFImage$readJson$2();
@@ -23335,15 +23361,15 @@ function oktgg_GLTFImage$readJson$2_invoke(var$0, var$1) {
 }
 function oktgg_GLTFImage$readJson$2_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    oktgg_GLTFImage_setUri($this.$this$0121, $it);
+    oktgg_GLTFImage_setUri($this.$this$0120, $it);
 }
 function oktgg_GLTFImage$readJson$2__init_0(var$0, var$1) {
-    var$0.$this$0121 = var$1;
+    var$0.$this$0120 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_IGLTFMaterial$readJson$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0122 = null;
+    a.$this$0121 = null;
     a.$$material = null;
 }
 function oktgg_IGLTFMaterial$readJson$1__init_(var_0, var_1) {
@@ -23358,11 +23384,11 @@ function oktgg_IGLTFMaterial$readJson$1_invoke(var$0, var$1) {
 }
 function oktgg_IGLTFMaterial$readJson$1_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    $this.$this$0122.$setName($it);
+    $this.$this$0121.$setName($it);
     $this.$$material.$setName($it);
 }
 function oktgg_IGLTFMaterial$readJson$1__init_0(var$0, var$1, var$2) {
-    var$0.$this$0122 = var$1;
+    var$0.$this$0121 = var$1;
     var$0.$$material = var$2;
     kji_Lambda__init_0(var$0, 1);
 }
@@ -23393,7 +23419,7 @@ function oktg_G3D__clinit_() {
 }
 function oktgg_IGLTFMaterial$readJson$3() {
     kji_Lambda.call(this);
-    this.$this$0123 = null;
+    this.$this$0122 = null;
 }
 function oktgg_IGLTFMaterial$readJson$3__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$3();
@@ -23406,15 +23432,15 @@ function oktgg_IGLTFMaterial$readJson$3_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_IGLTFMaterial$readJson$3_invoke0($this, $it) {
-    $this.$this$0123.$setDoubleSided($it);
+    $this.$this$0122.$setDoubleSided($it);
 }
 function oktgg_IGLTFMaterial$readJson$3__init_0(var$0, var$1) {
-    var$0.$this$0123 = var$1;
+    var$0.$this$0122 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_IGLTFMaterial$readJson$2() {
     kji_Lambda.call(this);
-    this.$this$0124 = null;
+    this.$this$0123 = null;
 }
 function oktgg_IGLTFMaterial$readJson$2__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$2();
@@ -23428,10 +23454,10 @@ function oktgg_IGLTFMaterial$readJson$2_invoke(var$0, var$1) {
 }
 function oktgg_IGLTFMaterial$readJson$2_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    $this.$this$0124.$setAlphaMode($it);
+    $this.$this$0123.$setAlphaMode($it);
 }
 function oktgg_IGLTFMaterial$readJson$2__init_0(var$0, var$1) {
-    var$0.$this$0124 = var$1;
+    var$0.$this$0123 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_Lexer() {
@@ -23897,7 +23923,7 @@ function jur_Lexer_parseCharClassName($this) {
     $sb = jl_StringBuilder__init_0(10);
     if ($this.$index2 < ($this.$pattern.data.length - 2 | 0)) {
         if ($this.$pattern.data[$this.$index2] != 123)
-            return jl_StringBuilder__init_().$append($rt_s(672)).$append(jl_String__init_0($this.$pattern, jur_Lexer_nextIndex($this), 1)).$toString();
+            return jl_StringBuilder__init_().$append($rt_s(675)).$append(jl_String__init_0($this.$pattern, jur_Lexer_nextIndex($this), 1)).$toString();
         jur_Lexer_nextIndex($this);
         $ch = 0;
         a: {
@@ -23915,13 +23941,13 @@ function jur_Lexer_parseCharClassName($this) {
         $rt_throw(jur_PatternSyntaxException__init_($rt_s(6), $this.$toString(), $this.$index2));
     $res = $sb.$toString();
     if ($res.$length() == 1)
-        return jl_StringBuilder__init_().$append($rt_s(672)).$append($res).$toString();
+        return jl_StringBuilder__init_().$append($rt_s(675)).$append($res).$toString();
     b: {
         c: {
             if ($res.$length() > 3) {
-                if ($res.$startsWith0($rt_s(672)))
+                if ($res.$startsWith0($rt_s(675)))
                     break c;
-                if ($res.$startsWith0($rt_s(673)))
+                if ($res.$startsWith0($rt_s(676)))
                     break c;
             }
             break b;
@@ -24247,7 +24273,7 @@ function kjf_Function22() {
 }
 function oktgg_GLTF$readJson$5$1() {
     kji_Lambda.call(this);
-    this.$this$0125 = null;
+    this.$this$0124 = null;
 }
 function oktgg_GLTF$readJson$5$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$5$1();
@@ -24262,12 +24288,12 @@ function oktgg_GLTF$readJson$5$1_invoke(var$0, var$1) {
 function oktgg_GLTF$readJson$5$1_invoke0($this, $$this$objs) {
     var $sampler;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    $sampler = oktgg_GLTFSampler__init_($this.$this$0125.$this$0126, oktgg_GLTFArray_size($this.$this$0125.$this$0126.$getSamplers()), 0, 0, 0, 0, null, 124, null);
-    oktgg_GLTFArray_add($this.$this$0125.$this$0126.$getSamplers(), $sampler);
+    $sampler = oktgg_GLTFSampler__init_($this.$this$0124.$this$0125, oktgg_GLTFArray_size($this.$this$0124.$this$0125.$getSamplers()), 0, 0, 0, 0, null, 124, null);
+    oktgg_GLTFArray_add($this.$this$0124.$this$0125.$getSamplers(), $sampler);
     oktgg_GLTFSampler_readJson($sampler, $$this$objs);
 }
 function oktgg_GLTF$readJson$5$1__init_0(var$0, var$1) {
-    var$0.$this$0125 = var$1;
+    var$0.$this$0124 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgn_PreviousTRS() {
@@ -24359,7 +24385,7 @@ function oktm_IndexBufferObject_getType($this) {
 }
 function oktm_IndexBufferObject_setType($this, $value) {
     if ($value != 5121 && $value != 5123 && $value != 5125)
-        $rt_throw(jl_RuntimeException__init_($rt_s(674)));
+        $rt_throw(jl_RuntimeException__init_($rt_s(677)));
     $this.$type4 = $value;
 }
 function oktm_IndexBufferObject_initGpuObjects($this) {
@@ -24446,7 +24472,7 @@ function oktsn_ShaderNodeLink_getInputName($this) {
 }
 function oktsn_ShaderNodeLink__init_0($this, $node, $inputName) {
     kji_Intrinsics_checkNotNullParameter($node, $rt_s(47));
-    kji_Intrinsics_checkNotNullParameter($inputName, $rt_s(675));
+    kji_Intrinsics_checkNotNullParameter($inputName, $rt_s(678));
     jl_Object__init_0($this);
     $this.$node1 = $node;
     $this.$inputName = $inputName;
@@ -24619,7 +24645,7 @@ function ck_CrabView_setAnger($this, $_set___) {
 }
 function ck_CrabView_getGltf($this) {
     oktr_RES_$callClinit();
-    return oktr_RES_getTyped(oktr_RES_INSTANCE, $rt_s(676));
+    return oktr_RES_getTyped(oktr_RES_INSTANCE, $rt_s(679));
 }
 function ck_CrabView_getGltf0(var$0) {
     return ck_CrabView_getGltf(var$0);
@@ -24666,7 +24692,7 @@ function ck_CrabView_animNameMap($this, $animName) {
                     break b;
             }
             if ($animName.$equals($rt_s(358))) {
-                $animName = $rt_s(677);
+                $animName = $rt_s(680);
                 break a;
             }
         }
@@ -24690,7 +24716,7 @@ function ck_CrabView__init_0($this, $location, $id) {
     var$4 = null;
     var$5 = ck_CrabView$1__init_($this);
     var$6 = null;
-    oktr_IResources$DefaultImpls_loadTyped$default(var$3, $rt_s(676), var$4, var$5, 2, var$6);
+    oktr_IResources$DefaultImpls_loadTyped$default(var$3, $rt_s(679), var$4, var$5, 2, var$6);
 }
 function ck_CrabView_animateClient($this, $animName, $transition, $loopCount) {
     kji_Intrinsics_checkNotNullParameter($animName, $rt_s(376));
@@ -24914,7 +24940,7 @@ function oktg_AbstractGL_initGL($this) {
             }
         }
     }
-    if ($this.$isExtensionSupported($rt_s(678))) {
+    if ($this.$isExtensionSupported($rt_s(681))) {
         $buffer2 = $rt_createFloatArray(16);
         var$2 = $buffer2.data;
         $this.$glGetFloatv(34047, $buffer2);
@@ -24927,7 +24953,7 @@ function oktg_AbstractGL_getNextTextureUnit($this) {
     $this.$textureUnitCounter = $this.$textureUnitCounter + 1 | 0;
     if ($this.$textureUnitCounter <= $this.$getTextureUnits().$size())
         return $unit;
-    $rt_throw(jl_IllegalStateException__init_0($rt_s(679)));
+    $rt_throw(jl_IllegalStateException__init_0($rt_s(682)));
 }
 function oktg_AbstractGL_resetTextureUnitCounter($this) {
     $this.$textureUnitCounter = 0;
@@ -24968,12 +24994,8 @@ function oktg_AbstractGL_glUseProgram($this, $program) {
 function oktg_AbstractGL_setSimpleAlphaBlending($this) {
     $this.$glBlendFunc(770, 771);
 }
-function oktg_AbstractGL_call($this, $function) {
-    kji_Intrinsics_checkNotNullParameter($function, $rt_s(629));
-    $this.$singleCalls.$add3($function);
-}
 function oktg_AbstractGL_render($this, $function) {
-    kji_Intrinsics_checkNotNullParameter($function, $rt_s(629));
+    kji_Intrinsics_checkNotNullParameter($function, $rt_s(632));
     $this.$renderCalls.$add3($function);
 }
 function oktg_AbstractGL_runSingleCalls($this) {
@@ -25051,7 +25073,7 @@ function oktgg_GLTFTexture$readJson$2_invoke0($this, $sourceIndex) {
     oktgg_GLTFTexture_getGltf($this.$this$010).$getImages().$getOrWait0(oktgg_GLTFTexture_getSource($this.$this$010), oktgg_GLTFTexture$readJson$2$1__init_($this));
     var$2 = $this.$$json1;
     oktgg_GLTFTexture$readJson$2$2_$callClinit();
-    var$2.$get4($rt_s(680), oktgg_GLTFTexture$readJson$2$2_INSTANCE);
+    var$2.$get4($rt_s(683), oktgg_GLTFTexture$readJson$2$2_INSTANCE);
 }
 function oktgg_GLTFTexture$readJson$2__init_0(var$0, var$1, var$2, var$3, var$4, var$5, var$6, var$7) {
     var$0.$this$010 = var$1;
@@ -25065,7 +25087,7 @@ function oktgg_GLTFTexture$readJson$2__init_0(var$0, var$1, var$2, var$3, var$4,
 }
 function oktgg_GLTFTexture$readJson$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0127 = null;
+    a.$this$0126 = null;
     a.$$minFilter1 = null;
     a.$$magFilter1 = null;
     a.$$sWrap1 = null;
@@ -25083,15 +25105,15 @@ function oktgg_GLTFTexture$readJson$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFTexture$readJson$1_invoke0($this, $it) {
     var $sampler;
-    oktgg_GLTFTexture_setSampler($this.$this$0127, $it);
-    $sampler = oktgg_GLTFTexture_getGltf($this.$this$0127).$getSamplers0().$get1($it);
+    oktgg_GLTFTexture_setSampler($this.$this$0126, $it);
+    $sampler = oktgg_GLTFTexture_getGltf($this.$this$0126).$getSamplers0().$get1($it);
     $this.$$minFilter1.$element1 = oktgg_GLTFSampler_getMinFilter($sampler);
     $this.$$magFilter1.$element1 = oktgg_GLTFSampler_getMagFilter($sampler);
     $this.$$sWrap1.$element1 = oktgg_GLTFSampler_getWrapS($sampler);
     $this.$$tWrap1.$element1 = oktgg_GLTFSampler_getWrapT($sampler);
 }
 function oktgg_GLTFTexture$readJson$1__init_0(var$0, var$1, var$2, var$3, var$4, var$5) {
-    var$0.$this$0127 = var$1;
+    var$0.$this$0126 = var$1;
     var$0.$$minFilter1 = var$2;
     var$0.$$magFilter1 = var$3;
     var$0.$$sWrap1 = var$4;
@@ -25278,7 +25300,7 @@ function jl_Thread_getStackTrace($this) {
     return $rt_createArray(jl_StackTraceElement, 0);
 }
 function jl_Thread__clinit_() {
-    jl_Thread_mainThread = jl_Thread__init_($rt_s(681));
+    jl_Thread_mainThread = jl_Thread__init_($rt_s(684));
     jl_Thread_currentThread0 = jl_Thread_mainThread;
     jl_Thread_nextId = Long_fromInt(1);
     jl_Thread_activeCount = 1;
@@ -25352,7 +25374,7 @@ function oktt_TeaVMApp$sam$org_teavm_jso_browser_AnimationFrameCallback$0__init_
     var$0.$function0 = var$1;
 }
 function oktt_TeaVMApp$sam$org_teavm_jso_browser_AnimationFrameCallback$0_onAnimationFrame($this, $p0) {
-    kji_Intrinsics_checkNotNullExpressionValue($this.$function0.$invoke8(jl_Double_valueOf($p0)), $rt_s(682));
+    kji_Intrinsics_checkNotNullExpressionValue($this.$function0.$invoke8(jl_Double_valueOf($p0)), $rt_s(685));
 }
 function oktt_TeaVMApp$sam$org_teavm_jso_browser_AnimationFrameCallback$0_onAnimationFrame$exported$0(var$0, var$1) {
     oktt_TeaVMApp$sam$org_teavm_jso_browser_AnimationFrameCallback$0_onAnimationFrame(var$0, var$1);
@@ -25384,6 +25406,16 @@ function oktj_IJsonArray$DefaultImpls_ints($$this, $call) {
     var$4 = $$this.$getSize();
     while ($i < var$4) {
         $call.$invoke8(jl_Integer_valueOf($$this.$int4($i)));
+        $i = $i + 1 | 0;
+    }
+}
+function oktj_IJsonArray$DefaultImpls_strings($$this, $call) {
+    var $i, var$4;
+    kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
+    $i = 0;
+    var$4 = $$this.$getSize();
+    while ($i < var$4) {
+        $call.$invoke8($$this.$string7($i));
         $i = $i + 1 | 0;
     }
 }
@@ -25439,9 +25471,9 @@ function ck_ActionDescriptor_setDistance2($this, $_set___) {
 }
 function ck_ActionDescriptor_readJson($this, $json) {
     kji_Intrinsics_checkNotNullParameter($json, $rt_s(25));
-    $json.$int($rt_s(525), ck_ActionDescriptor$readJson$1__init_($this));
+    $json.$int($rt_s(526), ck_ActionDescriptor$readJson$1__init_($this));
     $json.$int($rt_s(49), ck_ActionDescriptor$readJson$2__init_($this));
-    $json.$float($rt_s(683), ck_ActionDescriptor$readJson$3__init_($this));
+    $json.$float($rt_s(686), ck_ActionDescriptor$readJson$3__init_($this));
 }
 function ck_ActionDescriptor_getType($this) {
     return $this.$type5;
@@ -25510,7 +25542,7 @@ function okta_ISound$DefaultImpls() {
 }
 function okta_ISound$DefaultImpls_play$default(var$1, var$2, var$3, var$4, var$5, var$6, var$7) {
     if (var$7 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(684)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(687)));
     if (var$6 & 1)
         var$2 = 1.0;
     if (var$6 & 2)
@@ -25581,34 +25613,6 @@ function oktt_TeaVMApp$anim$1__init_0(var$0) {
 function oktt_TeaVMApp$anim$1__clinit_() {
     oktt_TeaVMApp$anim$1_INSTANCE = oktt_TeaVMApp$anim$1__init_();
 }
-function ck_LocationView$resetScene$$inlined$apply$lambda$1() {
-    var a = this; kji_Lambda.call(a);
-    a.$$this_apply = null;
-    a.$this$0128 = null;
-}
-function ck_LocationView$resetScene$$inlined$apply$lambda$1__init_(var_0, var_1) {
-    var var_2 = new ck_LocationView$resetScene$$inlined$apply$lambda$1();
-    ck_LocationView$resetScene$$inlined$apply$lambda$1__init_0(var_2, var_0, var_1);
-    return var_2;
-}
-function ck_LocationView$resetScene$$inlined$apply$lambda$1__init_0(var$0, var$1, var$2) {
-    var$0.$$this_apply = var$1;
-    var$0.$this$0128 = var$2;
-    kji_Lambda__init_0(var$0, 0);
-}
-function ck_LocationView$resetScene$$inlined$apply$lambda$1_invoke(var$0) {
-    ck_LocationView$resetScene$$inlined$apply$lambda$1_invoke0(var$0);
-    k_Unit_$callClinit();
-    return k_Unit_INSTANCE;
-}
-function ck_LocationView$resetScene$$inlined$apply$lambda$1_invoke0($this) {
-    var var$1, $gltfScene;
-    var$1 = $this.$$this_apply.$getScene();
-    kji_Intrinsics_checkNotNull(var$1);
-    $gltfScene = var$1.$copy4();
-    ck_LocationView_getMainScene($this.$this$0128).$getScenes().$add3($gltfScene);
-    $gltfScene.$getLights().$add3(ck_Sky_getLight(ck_LocationView_getSky($this.$this$0128)));
-}
 function jn_ByteOrder() {
     jl_Object.call(this);
     this.$name24 = null;
@@ -25630,8 +25634,36 @@ function jn_ByteOrder__init_0($this, $name) {
     $this.$name24 = $name;
 }
 function jn_ByteOrder__clinit_() {
-    jn_ByteOrder_BIG_ENDIAN = jn_ByteOrder__init_($rt_s(685));
-    jn_ByteOrder_LITTLE_ENDIAN = jn_ByteOrder__init_($rt_s(686));
+    jn_ByteOrder_BIG_ENDIAN = jn_ByteOrder__init_($rt_s(688));
+    jn_ByteOrder_LITTLE_ENDIAN = jn_ByteOrder__init_($rt_s(689));
+}
+function ck_LocationView$resetScene$$inlined$apply$lambda$1() {
+    var a = this; kji_Lambda.call(a);
+    a.$$this_apply = null;
+    a.$this$0127 = null;
+}
+function ck_LocationView$resetScene$$inlined$apply$lambda$1__init_(var_0, var_1) {
+    var var_2 = new ck_LocationView$resetScene$$inlined$apply$lambda$1();
+    ck_LocationView$resetScene$$inlined$apply$lambda$1__init_0(var_2, var_0, var_1);
+    return var_2;
+}
+function ck_LocationView$resetScene$$inlined$apply$lambda$1__init_0(var$0, var$1, var$2) {
+    var$0.$$this_apply = var$1;
+    var$0.$this$0127 = var$2;
+    kji_Lambda__init_0(var$0, 0);
+}
+function ck_LocationView$resetScene$$inlined$apply$lambda$1_invoke(var$0) {
+    ck_LocationView$resetScene$$inlined$apply$lambda$1_invoke0(var$0);
+    k_Unit_$callClinit();
+    return k_Unit_INSTANCE;
+}
+function ck_LocationView$resetScene$$inlined$apply$lambda$1_invoke0($this) {
+    var var$1, $gltfScene;
+    var$1 = $this.$$this_apply.$getScene();
+    kji_Intrinsics_checkNotNull(var$1);
+    $gltfScene = var$1.$copy4();
+    ck_LocationView_getMainScene($this.$this$0127).$getScenes().$add3($gltfScene);
+    $gltfScene.$getLights().$add3(ck_Sky_getLight(ck_LocationView_getSky($this.$this$0127)));
 }
 function k_Unit() {
     jl_Object.call(this);
@@ -25773,7 +25805,7 @@ function jur_DotAllQuantifierSet_find($this, $stringIndex, $testString, $matchRe
 }
 function oktgg_IGLTFMaterial$readJson$5$2() {
     kji_Lambda.call(this);
-    this.$this$0129 = null;
+    this.$this$0128 = null;
 }
 function oktgg_IGLTFMaterial$readJson$5$2__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$5$2();
@@ -25794,29 +25826,29 @@ function oktgg_IGLTFMaterial$readJson$5$2_invoke0($this, $$this$array) {
     var$5 = $$this$array.$float4(2, 0.0);
     var$6 = $$this$array.$float4(3, 0.0);
     oktm_Vec4__init_1($color, var$3, var$4, var$5, var$6);
-    $this.$this$0129.$this$0114.$setBaseColor($color);
+    $this.$this$0128.$this$0113.$setBaseColor($color);
     $factor = oktsn_GLSLVec4Inline__init_(oktm_Vec4_getX($color), oktm_Vec4_getY($color), oktm_Vec4_getZ($color), oktm_Vec4_getW($color), null, 16, null);
-    var$8 = $this.$this$0129.$$baseColorValue;
-    var$9 = $this.$this$0129.$$baseColorValue.$element;
+    var$8 = $this.$this$0128.$$baseColorValue;
+    var$9 = $this.$this$0128.$$baseColorValue.$element;
     oktsn_GLSL_$callClinit();
     if (var$9 === oktsn_GLSL_getOneFloat(oktsn_GLSL_INSTANCE))
         var$9 = $factor;
     else {
-        var$10 = $this.$this$0129.$$shader0;
+        var$10 = $this.$this$0128.$$shader0;
         var$11 = new oktsn_OperationNode;
         var$12 = $rt_createArray(oktsn_IShaderData, 2);
         var$13 = var$12.data;
-        var$13[0] = $this.$this$0129.$$baseColorValue.$element;
+        var$13[0] = $this.$this$0128.$$baseColorValue.$element;
         var$13[1] = $factor;
-        oktsn_OperationNode__init_0(var$11, kc_CollectionsKt__CollectionsKt_listOf(var$12), $rt_s(687), 6);
+        oktsn_OperationNode__init_0(var$11, kc_CollectionsKt__CollectionsKt_listOf(var$12), $rt_s(690), 6);
         $node = var$10.$addNode(var$11);
-        $this.$this$0129.$$alphaNodes.$add3($node);
+        $this.$this$0128.$$alphaNodes.$add3($node);
         var$9 = oktsn_OperationNode_getResult($node);
     }
     var$8.$element = var$9;
 }
 function oktgg_IGLTFMaterial$readJson$5$2__init_0(var$0, var$1) {
-    var$0.$this$0129 = var$1;
+    var$0.$this$0128 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktt_TvmGL$shaders$1() {
@@ -25848,7 +25880,7 @@ function oktt_TvmGL$shaders$1__clinit_() {
 }
 function oktgg_IGLTFMaterial$readJson$5$1() {
     kji_Lambda.call(this);
-    this.$this$0130 = null;
+    this.$this$0129 = null;
 }
 function oktgg_IGLTFMaterial$readJson$5$1__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$5$1();
@@ -25863,16 +25895,16 @@ function oktgg_IGLTFMaterial$readJson$5$1_invoke(var$0, var$1) {
 function oktgg_IGLTFMaterial$readJson$5$1_invoke0($this, $$this$get) {
     var $uvNode, $textureNode;
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
-    $$this$get.$int($rt_s(647), oktgg_IGLTFMaterial$readJson$5$1$1__init_($this));
-    $uvNode = oktgg_IGLTFMaterial$DefaultImpls_access$getOrCreateUVNode($this.$this$0130.$this$0114, $this.$this$0130.$$shader0, jl_StringBuilder__init_().$append($rt_s(648)).$append1($this.$this$0130.$this$0114.$getBaseColorTextureUV()).$toString(), $this.$this$0130.$$uvNodes0);
-    $this.$this$0130.$$alphaNodes.$add3($uvNode);
-    $this.$this$0130.$this$0114.$setBaseColorTexture($$this$get.$int0($rt_s(649)));
-    $textureNode = $this.$this$0130.$$shader0.$addNode(oktsn_TextureNode__init_(oktsn_UVNode_getUv($uvNode), oktgg_GLTFTexture_getTexture($this.$this$0130.$this$0114.$getGltf().$getTextures0().$get1($this.$this$0130.$this$0114.$getBaseColorTexture())), 0, 0, 12, null));
-    $this.$this$0130.$$alphaNodes.$add3($textureNode);
-    $this.$this$0130.$$baseColorValue.$element = oktsn_TextureNode_getColor($textureNode);
+    $$this$get.$int($rt_s(650), oktgg_IGLTFMaterial$readJson$5$1$1__init_($this));
+    $uvNode = oktgg_IGLTFMaterial$DefaultImpls_access$getOrCreateUVNode($this.$this$0129.$this$0113, $this.$this$0129.$$shader0, jl_StringBuilder__init_().$append($rt_s(651)).$append1($this.$this$0129.$this$0113.$getBaseColorTextureUV()).$toString(), $this.$this$0129.$$uvNodes0);
+    $this.$this$0129.$$alphaNodes.$add3($uvNode);
+    $this.$this$0129.$this$0113.$setBaseColorTexture($$this$get.$int0($rt_s(652)));
+    $textureNode = $this.$this$0129.$$shader0.$addNode(oktsn_TextureNode__init_(oktsn_UVNode_getUv($uvNode), oktgg_GLTFTexture_getTexture($this.$this$0129.$this$0113.$getGltf().$getTextures0().$get1($this.$this$0129.$this$0113.$getBaseColorTexture())), 0, 0, 12, null));
+    $this.$this$0129.$$alphaNodes.$add3($textureNode);
+    $this.$this$0129.$$baseColorValue.$element = oktsn_TextureNode_getColor($textureNode);
 }
 function oktgg_IGLTFMaterial$readJson$5$1__init_0(var$0, var$1) {
-    var$0.$this$0130 = var$1;
+    var$0.$this$0129 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function okti_IKB() {
@@ -25918,7 +25950,7 @@ function okti_KB__clinit_() {
 }
 function oktgg_GLTFSampler$readJson$2() {
     kji_Lambda.call(this);
-    this.$this$0131 = null;
+    this.$this$0130 = null;
 }
 function oktgg_GLTFSampler$readJson$2__init_(var_0) {
     var var_1 = new oktgg_GLTFSampler$readJson$2();
@@ -25931,15 +25963,15 @@ function oktgg_GLTFSampler$readJson$2_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFSampler$readJson$2_invoke0($this, $it) {
-    oktgg_GLTFSampler_setMagFilter($this.$this$0131, $it);
+    oktgg_GLTFSampler_setMagFilter($this.$this$0130, $it);
 }
 function oktgg_GLTFSampler$readJson$2__init_0(var$0, var$1) {
-    var$0.$this$0131 = var$1;
+    var$0.$this$0130 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFSampler$readJson$3() {
     kji_Lambda.call(this);
-    this.$this$0132 = null;
+    this.$this$0131 = null;
 }
 function oktgg_GLTFSampler$readJson$3__init_(var_0) {
     var var_1 = new oktgg_GLTFSampler$readJson$3();
@@ -25952,15 +25984,15 @@ function oktgg_GLTFSampler$readJson$3_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFSampler$readJson$3_invoke0($this, $it) {
-    oktgg_GLTFSampler_setWrapS($this.$this$0132, $it);
+    oktgg_GLTFSampler_setWrapS($this.$this$0131, $it);
 }
 function oktgg_GLTFSampler$readJson$3__init_0(var$0, var$1) {
-    var$0.$this$0132 = var$1;
+    var$0.$this$0131 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFSampler$readJson$4() {
     kji_Lambda.call(this);
-    this.$this$0133 = null;
+    this.$this$0132 = null;
 }
 function oktgg_GLTFSampler$readJson$4__init_(var_0) {
     var var_1 = new oktgg_GLTFSampler$readJson$4();
@@ -25973,15 +26005,15 @@ function oktgg_GLTFSampler$readJson$4_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFSampler$readJson$4_invoke0($this, $it) {
-    oktgg_GLTFSampler_setWrapT($this.$this$0133, $it);
+    oktgg_GLTFSampler_setWrapT($this.$this$0132, $it);
 }
 function oktgg_GLTFSampler$readJson$4__init_0(var$0, var$1) {
-    var$0.$this$0133 = var$1;
+    var$0.$this$0132 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFSampler$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$0134 = null;
+    this.$this$0133 = null;
 }
 function oktgg_GLTFSampler$readJson$1__init_(var_0) {
     var var_1 = new oktgg_GLTFSampler$readJson$1();
@@ -25994,10 +26026,10 @@ function oktgg_GLTFSampler$readJson$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFSampler$readJson$1_invoke0($this, $it) {
-    oktgg_GLTFSampler_setMinFilter($this.$this$0134, $it);
+    oktgg_GLTFSampler_setMinFilter($this.$this$0133, $it);
 }
 function oktgg_GLTFSampler$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$0134 = var$1;
+    var$0.$this$0133 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktsn_VertexNode() {
@@ -26061,10 +26093,10 @@ function oktsn_VertexNode_getTbn($this) {
     return $this.$tbn;
 }
 function oktsn_VertexNode_getUBoneMatricesName($this) {
-    return jl_StringBuilder__init_().$append($rt_s(688)).$append1(oktsn_VertexNode_getUid($this)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(691)).$append1(oktsn_VertexNode_getUid($this)).$toString();
 }
 function oktsn_VertexNode_getUWorldMatrix($this) {
-    return jl_StringBuilder__init_().$append($rt_s(689)).$append1(oktsn_VertexNode_getUid($this)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(692)).$append1(oktsn_VertexNode_getUid($this)).$toString();
 }
 function oktsn_VertexNode_getHasBones($this) {
     return $this.$maxBones0 > 0 && $this.$bonesSetsNum0 > 0 ? 1 : 0;
@@ -26079,7 +26111,7 @@ function oktsn_VertexNode_shaderCompiled($this) {
         $this.$bonesTemp0 = $rt_createFloatArray($bonesTempNewSize);
 }
 function oktsn_VertexNode_boneInfluenceCode($this, $component, $bonesName, $weightsName, $sumName) {
-    return jl_StringBuilder__init_().$append($rt_s(568)).$append($weightsName).$append8(46).$append($component).$append($rt_s(569)).$append($sumName).$append($rt_s(570)).$append($weightsName).$append8(46).$append($component).$append($rt_s(571)).$append(oktsn_VertexNode_getUBoneMatricesName($this)).$append($rt_s(572)).$append($bonesName).$append8(46).$append($component).$append($rt_s(573)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(571)).$append($weightsName).$append8(46).$append($component).$append($rt_s(572)).$append($sumName).$append($rt_s(573)).$append($weightsName).$append8(46).$append($component).$append($rt_s(574)).$append(oktsn_VertexNode_getUBoneMatricesName($this)).$append($rt_s(575)).$append($bonesName).$append8(46).$append($component).$append($rt_s(576)).$toString();
 }
 function oktsn_VertexNode_skinningSetCode($this, $out, $bonesName, $weightsName, $sumName) {
     $out.$append(oktsn_VertexNode_boneInfluenceCode($this, $rt_s(480), $bonesName, $weightsName, $sumName));
@@ -26091,7 +26123,7 @@ function oktsn_VertexNode_prepareObjectData($this, $obj) {
     var $armature, $matrices, $bonesTemp, var$5, var$6, $i, var$8, $floatOffset, $values, $j;
     kji_Intrinsics_checkNotNullParameter($obj, $rt_s(276));
     oktsn_ShaderNode_prepareObjectData($this, $obj);
-    $this.$getShader().$set22(oktsn_VertexNode_getUWorldMatrix($this), $obj.$getWorldMatrix());
+    $this.$getShader().$set23(oktsn_VertexNode_getUWorldMatrix($this), $obj.$getWorldMatrix());
     $armature = $obj.$getArmature();
     if ($armature !== null) {
         $matrices = $armature.$getBoneMatrices();
@@ -26116,15 +26148,15 @@ function oktsn_VertexNode_prepareObjectData($this, $obj) {
     }
 }
 function oktsn_VertexNode_mat4ToMat3($this, $mat4) {
-    return jl_StringBuilder__init_().$append($rt_s(690)).$append($mat4).$append($rt_s(691)).$append($mat4).$append($rt_s(692)).$append($mat4).$append($rt_s(693)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(693)).$append($mat4).$append($rt_s(694)).$append($mat4).$append($rt_s(695)).$append($mat4).$append($rt_s(696)).$toString();
 }
 function oktsn_VertexNode_executionVert($this, $out) {
     var $pos, $skinningName, $aBonesName, $aBoneWeightsName, $i, var$7, $index, $aTangentName, $aNormalName, $normalRef, $tbnRef;
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if ($this.$position10.$isUsed0()) {
-        $pos = jl_StringBuilder__init_().$append($rt_s(694)).$append1(oktsn_VertexNode_getUid($this)).$toString();
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(575)).$append($pos).$append($rt_s(576)).$append($this.$positionName0).$append($rt_s(577)).$toString());
-        $skinningName = $rt_s(695);
+        $pos = jl_StringBuilder__init_().$append($rt_s(697)).$append1(oktsn_VertexNode_getUid($this)).$toString();
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(578)).$append($pos).$append($rt_s(579)).$append($this.$positionName0).$append($rt_s(580)).$toString());
+        $skinningName = $rt_s(698);
         if (oktsn_VertexNode_getHasBones($this)) {
             $aBonesName = $this.$bonesName;
             $aBoneWeightsName = $this.$boneWeightsName;
@@ -26135,56 +26167,56 @@ function oktsn_VertexNode_executionVert($this, $out) {
                 oktsn_VertexNode_skinningSetCode($this, $out, jl_StringBuilder__init_().$append($aBonesName).$append($index).$toString(), jl_StringBuilder__init_().$append($aBoneWeightsName).$append($index).$toString(), $skinningName);
                 $i = $i + 1 | 0;
             }
-            $out.$append(jl_StringBuilder__init_().$append($pos).$append($rt_s(518)).$append($skinningName).$append($rt_s(571)).$append($pos).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($pos).$append($rt_s(519)).$append($skinningName).$append($rt_s(574)).$append($pos).$append($rt_s(286)).$toString());
         }
         a: {
             switch ($this.$worldTransformType0) {
                 case 1:
                     break;
                 case 2:
-                    $out.$append(jl_StringBuilder__init_().$append($pos).$append($rt_s(579)).$append($pos).$append($rt_s(586)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(582)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($pos).$append($rt_s(582)).$append($pos).$append($rt_s(589)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(585)).$toString());
                     break a;
                 case 3:
-                    $out.$append(jl_StringBuilder__init_().$append($pos).$append($rt_s(579)).$append($pos).$append($rt_s(580)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(581)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(582)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($pos).$append($rt_s(582)).$append($pos).$append($rt_s(583)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(584)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(585)).$toString());
                     break a;
                 case 4:
                     break a;
                 case 5:
-                    $out.$append(jl_StringBuilder__init_().$append($pos).$append($rt_s(583)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(584)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(585)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(582)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($pos).$append($rt_s(586)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(587)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(588)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(585)).$toString());
                     break a;
                 default:
                     break a;
             }
-            $out.$append(jl_StringBuilder__init_().$append($pos).$append($rt_s(518)).$append(oktsn_VertexNode_getUWorldMatrix($this)).$append($rt_s(571)).$append($pos).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($pos).$append($rt_s(519)).$append(oktsn_VertexNode_getUWorldMatrix($this)).$append($rt_s(574)).$append($pos).$append($rt_s(286)).$toString());
         }
-        $out.$append(jl_StringBuilder__init_().$append($this.$position10.$getRef0()).$append($rt_s(518)).$append($pos).$append($rt_s(582)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($this.$position10.$getRef0()).$append($rt_s(519)).$append($pos).$append($rt_s(585)).$toString());
         if (!(!$this.$normal0.$isUsed0() && !$this.$tbn.$isUsed0())) {
             $aTangentName = $this.$tangentName;
             $aNormalName = $this.$normalName0;
             $normalRef = $this.$normal0.$getRef0();
             $tbnRef = $this.$tbn.$getRef0();
             if (oktsn_VertexNode_getHasBones($this)) {
-                $out.$append(jl_StringBuilder__init_().$append($rt_s(696)).$append(oktsn_VertexNode_mat4ToMat3($this, $skinningName)).$append($rt_s(286)).$toString());
-                $out.$append(jl_StringBuilder__init_().$append($normalRef).$append($rt_s(697)).$append($aNormalName).$append($rt_s(331)).$toString());
+                $out.$append(jl_StringBuilder__init_().$append($rt_s(699)).$append(oktsn_VertexNode_mat4ToMat3($this, $skinningName)).$append($rt_s(286)).$toString());
+                $out.$append(jl_StringBuilder__init_().$append($normalRef).$append($rt_s(700)).$append($aNormalName).$append($rt_s(331)).$toString());
                 if ($this.$tbn.$isUsed0()) {
-                    $out.$append(jl_StringBuilder__init_().$append($rt_s(698)).$append($aTangentName).$append($rt_s(699)).$toString());
-                    $out.$append(jl_StringBuilder__init_().$append($rt_s(700)).$append($normalRef).$append($rt_s(701)).$append($aTangentName).$append($rt_s(702)).$toString());
-                    $out.$append(jl_StringBuilder__init_().$append($tbnRef).$append($rt_s(703)).$append($normalRef).$append($rt_s(331)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($rt_s(701)).$append($aTangentName).$append($rt_s(702)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($rt_s(703)).$append($normalRef).$append($rt_s(704)).$append($aTangentName).$append($rt_s(705)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($tbnRef).$append($rt_s(706)).$append($normalRef).$append($rt_s(331)).$toString());
                 }
             } else if ($this.$worldTransformType0 != 1) {
-                $out.$append(jl_StringBuilder__init_().$append($normalRef).$append($rt_s(518)).$append($aNormalName).$append($rt_s(286)).$toString());
+                $out.$append(jl_StringBuilder__init_().$append($normalRef).$append($rt_s(519)).$append($aNormalName).$append($rt_s(286)).$toString());
                 if ($this.$tbn.$isUsed0()) {
-                    $out.$append(jl_StringBuilder__init_().$append($rt_s(704)).$append($aTangentName).$append($rt_s(582)).$toString());
-                    $out.$append(jl_StringBuilder__init_().$append($rt_s(700)).$append($normalRef).$append($rt_s(701)).$append($aTangentName).$append($rt_s(702)).$toString());
-                    $out.$append(jl_StringBuilder__init_().$append($tbnRef).$append($rt_s(703)).$append($normalRef).$append($rt_s(331)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($rt_s(707)).$append($aTangentName).$append($rt_s(585)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($rt_s(703)).$append($normalRef).$append($rt_s(704)).$append($aTangentName).$append($rt_s(705)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($tbnRef).$append($rt_s(706)).$append($normalRef).$append($rt_s(331)).$toString());
                 }
             } else {
-                $out.$append(jl_StringBuilder__init_().$append($rt_s(696)).$append(oktsn_VertexNode_mat4ToMat3($this, oktsn_VertexNode_getUWorldMatrix($this))).$append($rt_s(286)).$toString());
-                $out.$append(jl_StringBuilder__init_().$append($normalRef).$append($rt_s(697)).$append($aNormalName).$append($rt_s(331)).$toString());
+                $out.$append(jl_StringBuilder__init_().$append($rt_s(699)).$append(oktsn_VertexNode_mat4ToMat3($this, oktsn_VertexNode_getUWorldMatrix($this))).$append($rt_s(286)).$toString());
+                $out.$append(jl_StringBuilder__init_().$append($normalRef).$append($rt_s(700)).$append($aNormalName).$append($rt_s(331)).$toString());
                 if ($this.$tbn.$isUsed0()) {
-                    $out.$append(jl_StringBuilder__init_().$append($rt_s(698)).$append($aTangentName).$append($rt_s(699)).$toString());
-                    $out.$append(jl_StringBuilder__init_().$append($rt_s(700)).$append($normalRef).$append($rt_s(701)).$append($aTangentName).$append($rt_s(702)).$toString());
-                    $out.$append(jl_StringBuilder__init_().$append($tbnRef).$append($rt_s(703)).$append($normalRef).$append($rt_s(331)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($rt_s(701)).$append($aTangentName).$append($rt_s(702)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($rt_s(703)).$append($normalRef).$append($rt_s(704)).$append($aTangentName).$append($rt_s(705)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($tbnRef).$append($rt_s(706)).$append($normalRef).$append($rt_s(331)).$toString());
                 }
             }
         }
@@ -26193,62 +26225,62 @@ function oktsn_VertexNode_executionVert($this, $out) {
 function oktsn_VertexNode_declarationFrag($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if ($this.$position10.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(597)).$append($this.$position10.$getRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(600)).$append($this.$position10.$getRef0()).$append($rt_s(286)).$toString());
     if ($this.$normal0.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(597)).$append($this.$normal0.$getRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(600)).$append($this.$normal0.$getRef0()).$append($rt_s(286)).$toString());
     if ($this.$tbn.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(705)).$append($this.$tbn.$getRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(708)).$append($this.$tbn.$getRef0()).$append($rt_s(286)).$toString());
 }
 function oktsn_VertexNode_declarationVert($this, $out) {
     var var$2, $i, var$4;
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if ($this.$position10.$isUsed0()) {
         a: {
-            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getAttribute($this)).$append($rt_s(597)).$append($this.$positionName0).$append($rt_s(286)).$toString());
-            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(597)).$append($this.$position10.$getRef0()).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getAttribute($this)).$append($rt_s(600)).$append($this.$positionName0).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(600)).$append($this.$position10.$getRef0()).$append($rt_s(286)).$toString());
             switch ($this.$worldTransformType0) {
                 case 1:
                     break;
                 case 2:
-                    $out.$append(jl_StringBuilder__init_().$append($rt_s(602)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(286)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($rt_s(605)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(286)).$toString());
                     break a;
                 case 3:
-                    $out.$append(jl_StringBuilder__init_().$append($rt_s(601)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(286)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append($rt_s(604)).$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(286)).$toString());
                     break a;
                 case 4:
                     break a;
                 case 5:
-                    var$2 = jl_StringBuilder__init_().$append($rt_s(706));
-                    var$2 = var$2.$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(707)).$toString();
+                    var$2 = jl_StringBuilder__init_().$append($rt_s(709));
+                    var$2 = var$2.$append1(oktsn_VertexNode_getUid($this)).$append($rt_s(710)).$toString();
                     $out.$append(var$2);
                     break a;
                 default:
                     break a;
             }
-            $out.$append(jl_StringBuilder__init_().$append($rt_s(600)).$append(oktsn_VertexNode_getUWorldMatrix($this)).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($rt_s(603)).$append(oktsn_VertexNode_getUWorldMatrix($this)).$append($rt_s(286)).$toString());
         }
         b: {
             if (oktsn_VertexNode_getHasBones($this)) {
-                $out.$append(jl_StringBuilder__init_().$append($rt_s(600)).$append(oktsn_VertexNode_getUBoneMatricesName($this)).$append8(91).$append1($this.$maxBones0).$append($rt_s(603)).$toString());
-                $out.$append($rt_s(708));
+                $out.$append(jl_StringBuilder__init_().$append($rt_s(603)).$append(oktsn_VertexNode_getUBoneMatricesName($this)).$append8(91).$append1($this.$maxBones0).$append($rt_s(606)).$toString());
+                $out.$append($rt_s(711));
                 $i = 0;
                 var$4 = $this.$bonesSetsNum0;
                 while (true) {
                     if ($i >= var$4)
                         break b;
-                    $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getAttribute($this)).$append($rt_s(709)).$append($this.$bonesName).$append1($i).$append($rt_s(286)).$toString());
-                    $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getAttribute($this)).$append($rt_s(709)).$append($this.$boneWeightsName).$append1($i).$append($rt_s(286)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getAttribute($this)).$append($rt_s(712)).$append($this.$bonesName).$append1($i).$append($rt_s(286)).$toString());
+                    $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getAttribute($this)).$append($rt_s(712)).$append($this.$boneWeightsName).$append1($i).$append($rt_s(286)).$toString());
                     $i = $i + 1 | 0;
                 }
             }
         }
         if (!(!$this.$normal0.$isUsed0() && !$this.$tbn.$isUsed0())) {
-            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getAttribute($this)).$append($rt_s(597)).$append($this.$normalName0).$append($rt_s(286)).$toString());
-            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(597)).$append($this.$normal0.$getRef0()).$append($rt_s(286)).$toString());
-            $out.$append($rt_s(710));
+            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getAttribute($this)).$append($rt_s(600)).$append($this.$normalName0).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(600)).$append($this.$normal0.$getRef0()).$append($rt_s(286)).$toString());
+            $out.$append($rt_s(713));
             if ($this.$tbn.$isUsed0()) {
-                $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getAttribute($this)).$append($rt_s(709)).$append($this.$tangentName).$append($rt_s(286)).$toString());
-                $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(705)).$append($this.$tbn.$getRef0()).$append($rt_s(286)).$toString());
+                $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getAttribute($this)).$append($rt_s(712)).$append($this.$tangentName).$append($rt_s(286)).$toString());
+                $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(708)).$append($this.$tbn.$getRef0()).$append($rt_s(286)).$toString());
             }
         }
     }
@@ -26267,9 +26299,9 @@ function oktsn_VertexNode__init_1($this, $maxBones, $worldTransformType, $bonesS
     $this.$bonesSetsNum0 = $bonesSetsNum;
     $this.$positionName0 = $rt_s(400);
     $this.$normalName0 = $rt_s(402);
-    $this.$tangentName = $rt_s(560);
-    $this.$bonesName = $rt_s(605);
-    $this.$boneWeightsName = $rt_s(606);
+    $this.$tangentName = $rt_s(563);
+    $this.$bonesName = $rt_s(608);
+    $this.$boneWeightsName = $rt_s(609);
     $this.$position10 = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec3__init_($rt_s(48)));
     $this.$normal0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec3__init_($rt_s(306)));
     $this.$tbn = oktsn_ShaderNode_defOut($this, oktsn_GLSLMat3__init_($rt_s(329)));
@@ -26311,7 +26343,7 @@ function jur_ReluctantGroupQuantifierSet_matches($this, $stringIndex, $testStrin
 }
 function oktgg_PlaneMeshBuilder$build$2() {
     kji_Lambda.call(this);
-    this.$this$0135 = null;
+    this.$this$0134 = null;
 }
 function oktgg_PlaneMeshBuilder$build$2__init_(var_0) {
     var var_1 = new oktgg_PlaneMeshBuilder$build$2();
@@ -26326,8 +26358,8 @@ function oktgg_PlaneMeshBuilder$build$2_invoke(var$0, var$1) {
 function oktgg_PlaneMeshBuilder$build$2_invoke0($this, $$this$createIndicesShort) {
     var $xQuads, $yQuads, $v0, $v1, $v2, $v3, $ri, $ci, var$10, var$11, var$12, var$13;
     kji_Intrinsics_checkNotNullParameter($$this$createIndicesShort, $rt_s(3));
-    $xQuads = oktgg_PlaneMeshBuilder_getXDivisions($this.$this$0135);
-    $yQuads = oktgg_PlaneMeshBuilder_getYDivisions($this.$this$0135);
+    $xQuads = oktgg_PlaneMeshBuilder_getXDivisions($this.$this$0134);
+    $yQuads = oktgg_PlaneMeshBuilder_getYDivisions($this.$this$0134);
     $v0 = 0;
     $v1 = $xQuads + 1 | 0;
     $v2 = 1;
@@ -26361,12 +26393,12 @@ function oktgg_PlaneMeshBuilder$build$2_invoke0($this, $$this$createIndicesShort
     }
 }
 function oktgg_PlaneMeshBuilder$build$2__init_0(var$0, var$1) {
-    var$0.$this$0135 = var$1;
+    var$0.$this$0134 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTF$readJson$12$1() {
     kji_Lambda.call(this);
-    this.$this$0136 = null;
+    this.$this$0135 = null;
 }
 function oktgg_GLTF$readJson$12$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$12$1();
@@ -26381,17 +26413,17 @@ function oktgg_GLTF$readJson$12$1_invoke(var$0, var$1) {
 function oktgg_GLTF$readJson$12$1_invoke0($this, $$this$objs) {
     var $skin;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    $skin = oktgg_GLTFSkin__init_1($this.$this$0136.$this$0137, oktgg_GLTFArray_size($this.$this$0136.$this$0137.$getSkins0()), null, 4, null);
-    oktgg_GLTFArray_add($this.$this$0136.$this$0137.$getSkins0(), $skin);
+    $skin = oktgg_GLTFSkin__init_1($this.$this$0135.$this$0136, oktgg_GLTFArray_size($this.$this$0135.$this$0136.$getSkins0()), null, 4, null);
+    oktgg_GLTFArray_add($this.$this$0135.$this$0136.$getSkins0(), $skin);
     oktgg_GLTFSkin_readJson($skin, $$this$objs);
 }
 function oktgg_GLTF$readJson$12$1__init_0(var$0, var$1) {
-    var$0.$this$0136 = var$1;
+    var$0.$this$0135 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_PlaneMeshBuilder$build$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0138 = null;
+    a.$this$0137 = null;
     a.$$yNum = 0;
     a.$$xNum = 0;
 }
@@ -26408,19 +26440,19 @@ function oktgg_PlaneMeshBuilder$build$1_invoke(var$0, var$1) {
 function oktgg_PlaneMeshBuilder$build$1_invoke0($this, $$this$createVerticesFloat) {
     var $uv, $normals, $halfWidth, $halfHeight, $normalX, $normalY, $normalZ, $xStart, $xStep, $uStep, $yStart, $yStep, $vStep, $v, $iy, $u, $ix, var$19, var$20, var$21;
     kji_Intrinsics_checkNotNullParameter($$this$createVerticesFloat, $rt_s(3));
-    $uv = $this.$this$0138.$getUv();
-    $normals = $this.$this$0138.$getNormals();
-    $halfWidth = oktgg_PlaneMeshBuilder_getWidth($this.$this$0138) * 0.5;
-    $halfHeight = oktgg_PlaneMeshBuilder_getHeight($this.$this$0138) * 0.5;
-    $normalX = oktgg_PlaneMeshBuilder_getNormal($this.$this$0138).$getX();
-    $normalY = oktgg_PlaneMeshBuilder_getNormal($this.$this$0138).$getY0();
-    $normalZ = oktgg_PlaneMeshBuilder_getNormal($this.$this$0138).$getZ();
+    $uv = $this.$this$0137.$getUv();
+    $normals = $this.$this$0137.$getNormals();
+    $halfWidth = oktgg_PlaneMeshBuilder_getWidth($this.$this$0137) * 0.5;
+    $halfHeight = oktgg_PlaneMeshBuilder_getHeight($this.$this$0137) * 0.5;
+    $normalX = oktgg_PlaneMeshBuilder_getNormal($this.$this$0137).$getX();
+    $normalY = oktgg_PlaneMeshBuilder_getNormal($this.$this$0137).$getY0();
+    $normalZ = oktgg_PlaneMeshBuilder_getNormal($this.$this$0137).$getZ();
     $xStart =  -$halfWidth;
-    $xStep = oktgg_PlaneMeshBuilder_getWidth($this.$this$0138) / oktgg_PlaneMeshBuilder_getXDivisions($this.$this$0138);
-    $uStep = $xStep / oktgg_PlaneMeshBuilder_getWidth($this.$this$0138);
+    $xStep = oktgg_PlaneMeshBuilder_getWidth($this.$this$0137) / oktgg_PlaneMeshBuilder_getXDivisions($this.$this$0137);
+    $uStep = $xStep / oktgg_PlaneMeshBuilder_getWidth($this.$this$0137);
     $yStart =  -$halfHeight;
-    $yStep = oktgg_PlaneMeshBuilder_getHeight($this.$this$0138) / oktgg_PlaneMeshBuilder_getYDivisions($this.$this$0138);
-    $vStep = $yStep / oktgg_PlaneMeshBuilder_getHeight($this.$this$0138);
+    $yStep = oktgg_PlaneMeshBuilder_getHeight($this.$this$0137) / oktgg_PlaneMeshBuilder_getYDivisions($this.$this$0137);
+    $vStep = $yStep / oktgg_PlaneMeshBuilder_getHeight($this.$this$0137);
     $v = 0.0;
     $iy = 0;
     while ($iy < $this.$$yNum) {
@@ -26431,7 +26463,7 @@ function oktgg_PlaneMeshBuilder$build$1_invoke0($this, $$this$createVerticesFloa
             var$20 = $rt_createArray(jl_Float, 3);
             var$21 = var$20.data;
             var$21[0] = jl_Float_valueOf(var$19);
-            var$21[1] = oktgg_PlaneMeshBuilder_getHeightProvider($this.$this$0138).$invoke42(jl_Integer_valueOf($ix), jl_Integer_valueOf($iy));
+            var$21[1] = oktgg_PlaneMeshBuilder_getHeightProvider($this.$this$0137).$invoke42(jl_Integer_valueOf($ix), jl_Integer_valueOf($iy));
             var$21[2] = jl_Float_valueOf($yStart);
             $$this$createVerticesFloat.$put3(var$20);
             if ($uv) {
@@ -26459,7 +26491,7 @@ function oktgg_PlaneMeshBuilder$build$1_invoke0($this, $$this$createVerticesFloa
     }
 }
 function oktgg_PlaneMeshBuilder$build$1__init_0(var$0, var$1, var$2, var$3) {
-    var$0.$this$0138 = var$1;
+    var$0.$this$0137 = var$1;
     var$0.$$yNum = var$2;
     var$0.$$xNum = var$3;
     kji_Lambda__init_0(var$0, 1);
@@ -26566,7 +26598,7 @@ function jur_CIDecomposedCharSet__init_0($this, $decomp, $decomposedCharLength) 
 }
 function oktt_TvmSound$1() {
     kji_Lambda.call(this);
-    this.$this$0139 = null;
+    this.$this$0138 = null;
 }
 function oktt_TvmSound$1__init_(var_0) {
     var var_1 = new oktt_TvmSound$1();
@@ -26582,26 +26614,26 @@ function oktt_TvmSound$1_invoke0($this) {
     kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(341));
     var$2 = var$1.document.createElement("audio");
     if (var$2 === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(711)));
+        $rt_throw(jl_NullPointerException__init_0($rt_s(714)));
     $element = var$2;
-    var$2 = $rt_ustr(oktt_TvmSound_getSrc($this.$this$0139));
+    var$2 = $rt_ustr(oktt_TvmSound_getSrc($this.$this$0138));
     $element.src = var$2;
-    var$2 = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0139));
+    var$2 = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0138));
     var$1 = $element;
     $source = var$2.createMediaElementSource(var$1);
-    $gain = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0139)).createGain();
+    $gain = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0138)).createGain();
     kji_Intrinsics_checkNotNullExpressionValue($gain, $rt_s(438));
     var$1 = $gain.gain;
-    kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(712));
-    var$2 = oktt_TvmSound_getVolume($this.$this$0139);
+    kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(715));
+    var$2 = oktt_TvmSound_getVolume($this.$this$0138);
     var$1.value = var$2;
-    $panner = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0139)).createStereoPanner();
+    $panner = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0138)).createStereoPanner();
     var$2 = $gain;
     $source.connect(var$2);
     var$2 = $panner;
     $gain.connect(var$2);
-    var$1 = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0139));
-    kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(713));
+    var$1 = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0138));
+    kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(716));
     var$2 = var$1.destination;
     $panner.connect(var$2);
     $instance = new oktt_SoundInstance;
@@ -26613,7 +26645,7 @@ function oktt_TvmSound$1_invoke0($this) {
     return $instance;
 }
 function oktt_TvmSound$1__init_0(var$0, var$1) {
-    var$0.$this$0139 = var$1;
+    var$0.$this$0138 = var$1;
     kji_Lambda__init_0(var$0, 0);
 }
 function oktr_IResource$onLoaded$listener$1() {
@@ -26689,7 +26721,7 @@ function oktm_VertexInputs_get($this, $name) {
 function oktm_VertexInputs_get0($this, $index) {
     var var$2;
     var$2 = $this.$map.$values();
-    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(714));
+    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(717));
     return kc_CollectionsKt___CollectionsKt_elementAt(var$2, $index);
 }
 function oktm_VertexInputs_iterator($this) {
@@ -26700,7 +26732,7 @@ function oktm_VertexInputs_updateVertexOffsets($this) {
     $byteCount = 0;
     $componentCount = 0;
     var$3 = $this.$map.$values();
-    kji_Intrinsics_checkNotNullExpressionValue(var$3, $rt_s(714));
+    kji_Intrinsics_checkNotNullExpressionValue(var$3, $rt_s(717));
     $$this$forEach$iv = var$3;
     var$5 = $$this$forEach$iv.$iterator();
     while (var$5.$hasNext()) {
@@ -26720,7 +26752,7 @@ function oktm_VertexInputs__init_1($this) {
 function oktm_VertexInputs__init_($this, $inputs) {
     var var$2, var$3, var$4, $element$iv;
     var$2 = $inputs.data;
-    kji_Intrinsics_checkNotNullParameter($inputs, $rt_s(715));
+    kji_Intrinsics_checkNotNullParameter($inputs, $rt_s(718));
     oktm_VertexInputs__init_1($this);
     var$3 = var$2.length;
     var$4 = 0;
@@ -26768,7 +26800,7 @@ function oktt_TvmGL$FrameBufferWrap_getGl0(var$0) {
     return oktt_TvmGL$FrameBufferWrap_getGl(var$0);
 }
 function oktt_TvmGL$FrameBufferWrap__init_0($this, $gl) {
-    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(716));
+    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(719));
     oktt_TvmGL$GLObject__init_0($this);
     $this.$gl0 = $gl;
 }
@@ -26793,53 +26825,53 @@ function oktsn_GLSLType_getTypeName($this, $type) {
                 case 0:
                     break;
                 case 1:
-                    var$2 = $rt_s(612);
+                    var$2 = $rt_s(615);
                     break a;
                 case 2:
                     break b;
                 case 3:
-                    var$2 = $rt_s(613);
-                    break a;
-                case 4:
-                    var$2 = $rt_s(614);
-                    break a;
-                case 5:
-                    var$2 = $rt_s(615);
-                    break a;
-                case 6:
                     var$2 = $rt_s(616);
                     break a;
-                case 7:
+                case 4:
                     var$2 = $rt_s(617);
                     break a;
-                case 8:
+                case 5:
                     var$2 = $rt_s(618);
                     break a;
-                case 9:
+                case 6:
                     var$2 = $rt_s(619);
                     break a;
-                case 10:
-                    var$2 = $rt_s(717);
-                    break a;
-                case 11:
+                case 7:
                     var$2 = $rt_s(620);
                     break a;
-                case 12:
+                case 8:
                     var$2 = $rt_s(621);
                     break a;
-                case 13:
+                case 9:
                     var$2 = $rt_s(622);
                     break a;
-                case 14:
+                case 10:
+                    var$2 = $rt_s(720);
+                    break a;
+                case 11:
                     var$2 = $rt_s(623);
                     break a;
-                case 15:
+                case 12:
                     var$2 = $rt_s(624);
+                    break a;
+                case 13:
+                    var$2 = $rt_s(625);
+                    break a;
+                case 14:
+                    var$2 = $rt_s(626);
+                    break a;
+                case 15:
+                    var$2 = $rt_s(627);
                     break a;
                 default:
                     break b;
             }
-            var$2 = $rt_s(625);
+            var$2 = $rt_s(628);
             break a;
         }
         var$2 = $rt_s(6);
@@ -26857,7 +26889,7 @@ function okti_IMouseListener() {
 }
 function oktgc_OrbitCameraControl$listenToMouse$listener$1() {
     jl_Object.call(this);
-    this.$this$0140 = null;
+    this.$this$0139 = null;
 }
 function oktgc_OrbitCameraControl$listenToMouse$listener$1__init_(var_0) {
     var var_1 = new oktgc_OrbitCameraControl$listenToMouse$listener$1();
@@ -26865,19 +26897,19 @@ function oktgc_OrbitCameraControl$listenToMouse$listener$1__init_(var_0) {
     return var_1;
 }
 function oktgc_OrbitCameraControl$listenToMouse$listener$1_buttonDown($this, $button, $screenX, $screenY, $pointer) {
-    $this.$this$0140.$buttonDown0($screenX, $screenY, $button);
+    $this.$this$0139.$buttonDown0($screenX, $screenY, $button);
 }
 function oktgc_OrbitCameraControl$listenToMouse$listener$1_dragged($this, $screenX, $screenY, $pointer) {
-    $this.$this$0140.$dragged0($screenX, $screenY);
+    $this.$this$0139.$dragged0($screenX, $screenY);
 }
 function oktgc_OrbitCameraControl$listenToMouse$listener$1_scrolled($this, $amount) {
     var var$2;
-    var$2 = $this.$this$0140;
+    var$2 = $this.$this$0139;
     okti_MOUSE_$callClinit();
     var$2.$scrolled0(okti_MOUSE_getX(okti_MOUSE_INSTANCE), okti_MOUSE_getY(okti_MOUSE_INSTANCE), $amount);
 }
 function oktgc_OrbitCameraControl$listenToMouse$listener$1__init_0($this, $this$0) {
-    $this.$this$0140 = $this$0;
+    $this.$this$0139 = $this$0;
     jl_Object__init_0($this);
 }
 function oktgc_OrbitCameraControl$listenToMouse$listener$1_buttonUp($this, $button, $screenX, $screenY, $pointer) {
@@ -26902,13 +26934,13 @@ function oktt_TvmGL$ShaderWrap_getGl0(var$0) {
     return oktt_TvmGL$ShaderWrap_getGl(var$0);
 }
 function oktt_TvmGL$ShaderWrap__init_0($this, $gl) {
-    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(716));
+    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(719));
     oktt_TvmGL$GLObject__init_0($this);
     $this.$gl1 = $gl;
 }
 function ck_LocationImp$readJson$1$1() {
     kji_Lambda.call(this);
-    this.$this$0141 = null;
+    this.$this$0140 = null;
 }
 function ck_LocationImp$readJson$1$1__init_(var_0) {
     var var_1 = new ck_LocationImp$readJson$1$1();
@@ -26923,13 +26955,13 @@ function ck_LocationImp$readJson$1$1_invoke(var$0, var$1) {
 function ck_LocationImp$readJson$1$1_invoke0($this, $$this$objs) {
     var $obj;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    $obj = $this.$this$0141.$this$0142.$createObject($$this$objs.$int0($rt_s(485)), $$this$objs.$int0($rt_s(525)));
+    $obj = $this.$this$0140.$this$0141.$createObject($$this$objs.$int0($rt_s(486)), $$this$objs.$int0($rt_s(526)));
     $obj.$readJson($$this$objs);
-    $this.$this$0141.$this$0142.$addSceneObject($obj);
-    ck_LocationImp_setIdCounter($this.$this$0141.$this$0142, jl_Math_max(ck_LocationImp_getIdCounter($this.$this$0141.$this$0142), $obj.$getId()));
+    $this.$this$0140.$this$0141.$addSceneObject($obj);
+    ck_LocationImp_setIdCounter($this.$this$0140.$this$0141, jl_Math_max(ck_LocationImp_getIdCounter($this.$this$0140.$this$0141), $obj.$getId()));
 }
 function ck_LocationImp$readJson$1$1__init_0(var$0, var$1) {
-    var$0.$this$0141 = var$1;
+    var$0.$this$0140 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktm_IIndexBufferObject$DefaultImpls() {
@@ -26967,9 +26999,9 @@ function oktt_TvmGL$ProgramWrap_getUniformLocationsMap($this) {
     return $this.$uniformLocationsMap;
 }
 function oktt_TvmGL$ProgramWrap__init_0($this, $gl, $uniformLocations, $uniformLocationsMap) {
-    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(716));
-    kji_Intrinsics_checkNotNullParameter($uniformLocations, $rt_s(718));
-    kji_Intrinsics_checkNotNullParameter($uniformLocationsMap, $rt_s(719));
+    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(719));
+    kji_Intrinsics_checkNotNullParameter($uniformLocations, $rt_s(721));
+    kji_Intrinsics_checkNotNullParameter($uniformLocationsMap, $rt_s(722));
     oktt_TvmGL$GLObject__init_0($this);
     $this.$gl2 = $gl;
     $this.$uniformLocations = $uniformLocations;
@@ -26984,7 +27016,7 @@ function oktt_TvmGL$ProgramWrap__init_2(var$0, var$1, var$2, var$3, var$4, var$5
 }
 function oktgg_IGLTFMaterial$readJson$5$1$1() {
     kji_Lambda.call(this);
-    this.$this$0143 = null;
+    this.$this$0142 = null;
 }
 function oktgg_IGLTFMaterial$readJson$5$1$1__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$5$1$1();
@@ -26997,10 +27029,10 @@ function oktgg_IGLTFMaterial$readJson$5$1$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_IGLTFMaterial$readJson$5$1$1_invoke0($this, $it) {
-    $this.$this$0143.$this$0130.$this$0114.$setBaseColorTextureUV($it);
+    $this.$this$0142.$this$0129.$this$0113.$setBaseColorTextureUV($it);
 }
 function oktgg_IGLTFMaterial$readJson$5$1$1__init_0(var$0, var$1) {
-    var$0.$this$0143 = var$1;
+    var$0.$this$0142 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTF$Companion() {
@@ -27037,7 +27069,7 @@ function okti_IFrameBufferAttachment() {
 }
 function oktgg_GLTFNode$readJson$10$1() {
     kji_Lambda.call(this);
-    this.$this$0144 = null;
+    this.$this$0143 = null;
 }
 function oktgg_GLTFNode$readJson$10$1__init_(var_0) {
     var var_1 = new oktgg_GLTFNode$readJson$10$1();
@@ -27051,13 +27083,13 @@ function oktgg_GLTFNode$readJson$10$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFNode$readJson$10$1_invoke0($this, $gltfSkin) {
     var $skin, var$3, $$this$forEach$iv, $element$iv, $mesh, var$7, $$this$first$iv, $it, $vertexNode, var$11, $velocityNode;
-    kji_Intrinsics_checkNotNullParameter($gltfSkin, $rt_s(720));
+    kji_Intrinsics_checkNotNullParameter($gltfSkin, $rt_s(723));
     $skin = oktgg_GLTFSkin_getSkin($gltfSkin);
-    var$3 = $this.$this$0144.$$obj.$element;
+    var$3 = $this.$this$0143.$$obj.$element;
     if (var$3 !== null)
         var$3.$setArmature($skin);
     a: {
-        var$3 = $this.$this$0144.$$obj.$element;
+        var$3 = $this.$this$0143.$$obj.$element;
         if (var$3 !== null) {
             var$3 = var$3.$getMeshes0();
             if (var$3 !== null) {
@@ -27074,7 +27106,7 @@ function oktgg_GLTFNode$readJson$10$1_invoke0($this, $gltfSkin) {
                         var$7 = $$this$first$iv.$iterator();
                         while (true) {
                             if (!var$7.$hasNext())
-                                $rt_throw(ju_NoSuchElementException__init_0($rt_s(721)));
+                                $rt_throw(ju_NoSuchElementException__init_0($rt_s(724)));
                             $element$iv = var$7.$next();
                             $it = $element$iv;
                             if (!($it instanceof oktsn_VertexNode))
@@ -27083,12 +27115,12 @@ function oktgg_GLTFNode$readJson$10$1_invoke0($this, $gltfSkin) {
                                 break;
                         }
                         if ($element$iv === null)
-                            $rt_throw(jl_NullPointerException__init_0($rt_s(722)));
+                            $rt_throw(jl_NullPointerException__init_0($rt_s(725)));
                         $vertexNode = $element$iv;
                         oktsn_VertexNode_setMaxBones($vertexNode, $skin.$getBoneMatrices().data.length);
                         oktsn_VertexNode_setWorldTransformType($vertexNode, 0);
                     }
-                    if (oktgg_GLTFConf_getSetupVelocityShader(oktgg_GLTFNode_getGltf($this.$this$0144.$this$090).$getConf())) {
+                    if (oktgg_GLTFConf_getSetupVelocityShader(oktgg_GLTFNode_getGltf($this.$this$0143.$this$089).$getConf())) {
                         var$7 = $mesh.$getMaterial().$getShaderChannels();
                         oktg_ShaderChannel_$callClinit();
                         var$7 = var$7.$get0(jl_Integer_valueOf(oktg_ShaderChannel_getVelocity(oktg_ShaderChannel_INSTANCE)));
@@ -27097,7 +27129,7 @@ function oktgg_GLTFNode$readJson$10$1_invoke0($this, $gltfSkin) {
                             var$11 = $$this$first$iv.$iterator();
                             while (true) {
                                 if (!var$11.$hasNext())
-                                    $rt_throw(ju_NoSuchElementException__init_0($rt_s(721)));
+                                    $rt_throw(ju_NoSuchElementException__init_0($rt_s(724)));
                                 $element$iv = var$11.$next();
                                 $it = $element$iv;
                                 if (!($it instanceof oktsn_VertexNode))
@@ -27106,7 +27138,7 @@ function oktgg_GLTFNode$readJson$10$1_invoke0($this, $gltfSkin) {
                                     break;
                             }
                             if ($element$iv === null)
-                                $rt_throw(jl_NullPointerException__init_0($rt_s(722)));
+                                $rt_throw(jl_NullPointerException__init_0($rt_s(725)));
                             $vertexNode = $element$iv;
                             oktsn_VertexNode_setMaxBones($vertexNode, $skin.$getBoneMatrices().data.length);
                             oktsn_VertexNode_setWorldTransformType($vertexNode, 0);
@@ -27114,7 +27146,7 @@ function oktgg_GLTFNode$readJson$10$1_invoke0($this, $gltfSkin) {
                             var$7 = $$this$first$iv.$iterator();
                             while (true) {
                                 if (!var$7.$hasNext())
-                                    $rt_throw(ju_NoSuchElementException__init_0($rt_s(721)));
+                                    $rt_throw(ju_NoSuchElementException__init_0($rt_s(724)));
                                 $element$iv = var$7.$next();
                                 $it = $element$iv;
                                 if (!($it instanceof oktsn_VelocityNode))
@@ -27123,13 +27155,13 @@ function oktgg_GLTFNode$readJson$10$1_invoke0($this, $gltfSkin) {
                                     break;
                             }
                             if ($element$iv === null)
-                                $rt_throw(jl_NullPointerException__init_0($rt_s(723)));
+                                $rt_throw(jl_NullPointerException__init_0($rt_s(726)));
                             $velocityNode = $element$iv;
                             oktsn_VelocityNode_setMaxBones($velocityNode, $skin.$getBoneMatrices().data.length);
                             oktsn_VelocityNode_setWorldTransformType($velocityNode, 0);
                         }
                     }
-                    if (oktgg_GLTFConf_getSetupDepthRendering(oktgg_GLTFNode_getGltf($this.$this$0144.$this$090).$getConf())) {
+                    if (oktgg_GLTFConf_getSetupDepthRendering(oktgg_GLTFNode_getGltf($this.$this$0143.$this$089).$getConf())) {
                         var$7 = $mesh.$getMaterial().$getShaderChannels();
                         oktg_ShaderChannel_$callClinit();
                         var$7 = var$7.$get0(jl_Integer_valueOf(oktg_ShaderChannel_getDepth(oktg_ShaderChannel_INSTANCE)));
@@ -27138,7 +27170,7 @@ function oktgg_GLTFNode$readJson$10$1_invoke0($this, $gltfSkin) {
                             var$7 = $$this$first$iv.$iterator();
                             while (true) {
                                 if (!var$7.$hasNext())
-                                    $rt_throw(ju_NoSuchElementException__init_0($rt_s(721)));
+                                    $rt_throw(ju_NoSuchElementException__init_0($rt_s(724)));
                                 $element$iv = var$7.$next();
                                 $it = $element$iv;
                                 if (!($it instanceof oktsn_VertexNode))
@@ -27154,14 +27186,14 @@ function oktgg_GLTFNode$readJson$10$1_invoke0($this, $gltfSkin) {
                         }
                     }
                 }
-                $rt_throw(jl_NullPointerException__init_0($rt_s(722)));
+                $rt_throw(jl_NullPointerException__init_0($rt_s(725)));
             }
         }
     }
-    oktgg_GLTFNode_getGltf($this.$this$0144.$this$090).$getNodes0().$ready(oktgg_GLTFNode_getElementIndex($this.$this$0144.$this$090));
+    oktgg_GLTFNode_getGltf($this.$this$0143.$this$089).$getNodes0().$ready(oktgg_GLTFNode_getElementIndex($this.$this$0143.$this$089));
 }
 function oktgg_GLTFNode$readJson$10$1__init_0(var$0, var$1) {
-    var$0.$this$0144 = var$1;
+    var$0.$this$0143 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function otci_IntegerUtil() {
@@ -27170,7 +27202,7 @@ function otci_IntegerUtil() {
 function otci_IntegerUtil_toUnsignedLogRadixString($value, $radixLog2) {
     var $radix, $mask, $sz, $chars, $pos, $target, var$9, $target_0;
     if (!$value)
-        return $rt_s(724);
+        return $rt_s(727);
     $radix = 1 << $radixLog2;
     $mask = $radix - 1 | 0;
     $sz = (((32 - jl_Integer_numberOfLeadingZeros($value) | 0) + $radixLog2 | 0) - 1 | 0) / $radixLog2 | 0;
@@ -27221,16 +27253,16 @@ function oktsn_NormalMapNode$Companion__init_(var_0) {
 }
 function oktsn_NormalMapNode$Companion_normalCode($this, $outTangentName, $outBiNormalName, $outNormalName) {
     var var$4;
-    kji_Intrinsics_checkNotNullParameter($outTangentName, $rt_s(725));
-    kji_Intrinsics_checkNotNullParameter($outBiNormalName, $rt_s(726));
-    kji_Intrinsics_checkNotNullParameter($outNormalName, $rt_s(727));
-    var$4 = jl_StringBuilder__init_().$append($rt_s(728));
-    var$4 = var$4.$append($outTangentName).$append($rt_s(729));
-    var$4 = var$4.$append($outBiNormalName).$append($rt_s(729));
-    var$4 = var$4.$append($outNormalName).$append($rt_s(730));
-    var$4 = var$4.$append($outTangentName).$append($rt_s(731));
+    kji_Intrinsics_checkNotNullParameter($outTangentName, $rt_s(728));
+    kji_Intrinsics_checkNotNullParameter($outBiNormalName, $rt_s(729));
+    kji_Intrinsics_checkNotNullParameter($outNormalName, $rt_s(730));
+    var$4 = jl_StringBuilder__init_().$append($rt_s(731));
+    var$4 = var$4.$append($outTangentName).$append($rt_s(732));
     var$4 = var$4.$append($outBiNormalName).$append($rt_s(732));
-    var$4 = var$4.$append($outNormalName).$append($rt_s(733)).$toString();
+    var$4 = var$4.$append($outNormalName).$append($rt_s(733));
+    var$4 = var$4.$append($outTangentName).$append($rt_s(734));
+    var$4 = var$4.$append($outBiNormalName).$append($rt_s(735));
+    var$4 = var$4.$append($outNormalName).$append($rt_s(736)).$toString();
     return var$4;
 }
 function oktsn_NormalMapNode$Companion__init_1($this) {
@@ -27282,7 +27314,7 @@ function okta_Frame2DAnim_update($this, $delta) {
     }
 }
 function okta_Frame2DAnim__init_0($this, $conf) {
-    kji_Intrinsics_checkNotNullParameter($conf, $rt_s(734));
+    kji_Intrinsics_checkNotNullParameter($conf, $rt_s(737));
     jl_Object__init_0($this);
     $this.$conf = $conf;
 }
@@ -27313,11 +27345,11 @@ function ck_SeaClient_render($this) {
     oktg_GL_$callClinit();
     oktg_GL_setBlendingEnabled(oktg_GL_INSTANCE, 1);
     $this.$shader.$bind();
-    $this.$shader.$set15($rt_s(735), $this.$time);
+    $this.$shader.$set15($rt_s(738), $this.$time);
     var$1 = $this.$shader;
     oktgc_ActiveCamera_$callClinit();
-    var$1.$set22($rt_s(736), oktgc_ActiveCamera_getViewProjectionMatrix(oktgc_ActiveCamera_INSTANCE));
-    $this.$shader.$set30($rt_s(737), oktgc_ActiveCamera_getPosition(oktgc_ActiveCamera_INSTANCE));
+    var$1.$set23($rt_s(739), oktgc_ActiveCamera_getViewProjectionMatrix(oktgc_ActiveCamera_INSTANCE));
+    $this.$shader.$set31($rt_s(740), oktgc_ActiveCamera_getPosition(oktgc_ActiveCamera_INSTANCE));
     $this.$shader.$set15($rt_s(417), oktgc_ActiveCamera_getFar(oktgc_ActiveCamera_INSTANCE) * $this.$fadeStart0);
     $this.$shader.$set15($rt_s(418), 1.0 / (oktgc_ActiveCamera_getFar(oktgc_ActiveCamera_INSTANCE) * (1.0 - $this.$fadeStart0)));
     $this.$foamTex.$bind4(1);
@@ -27331,7 +27363,7 @@ function ck_SeaClient__init_0($this) {
     var$3 = null;
     var$4 = null;
     var$5 = null;
-    okts_Shader__init_0(var$1, $rt_s(738), $rt_s(739), var$2, 0, var$3, 0, var$4, 124, var$5);
+    okts_Shader__init_0(var$1, $rt_s(741), $rt_s(742), var$2, 0, var$3, 0, var$4, 124, var$5);
     $this.$shader = var$1;
     $this.$fadeStart0 = 0.800000011920929;
     $this.$foamTex = okti_Texture2D__init_0(0, 1, null);
@@ -27344,12 +27376,12 @@ function ck_SeaClient__init_0($this) {
     var$7 = null;
     $this.$mesh1 = oktgg_MeshBuilder_build$default(var$1, var$6, 1, var$7);
     $this.$shader.$bind();
-    $this.$shader.$set31($rt_s(740), 0.10000000149011612, 0.4000000059604645, 0.5);
-    $this.$shader.$set31($rt_s(741), 0.699999988079071, 0.699999988079071, 0.699999988079071);
-    $this.$shader.$set15($rt_s(735), $this.$time);
-    $this.$shader.$set32($rt_s(742), 1);
-    $this.$shader.$set15($rt_s(743), (-1.0));
-    okti_ITexture2D$DefaultImpls_load$default($this.$foamTex, $rt_s(744), 9987, 0, 0, 0, 0.0, jl_Boolean_valueOf(1), 60, null);
+    $this.$shader.$set32($rt_s(743), 0.10000000149011612, 0.4000000059604645, 0.5);
+    $this.$shader.$set32($rt_s(744), 0.699999988079071, 0.699999988079071, 0.699999988079071);
+    $this.$shader.$set15($rt_s(738), $this.$time);
+    $this.$shader.$set33($rt_s(745), 1);
+    $this.$shader.$set15($rt_s(746), (-1.0));
+    okti_ITexture2D$DefaultImpls_load$default($this.$foamTex, $rt_s(747), 9987, 0, 0, 0, 0.0, jl_Boolean_valueOf(1), 60, null);
 }
 function oktr_IResources() {
 }
@@ -27372,8 +27404,8 @@ function oktr_RES_setLoadOnSeparateThreadByDefault($this, $value) {
 }
 function oktr_RES_loadTyped($this, $uri, $beforeLoad, $afterLoad) {
     kji_Intrinsics_checkNotNullParameter($uri, $rt_s(26));
-    kji_Intrinsics_checkNotNullParameter($beforeLoad, $rt_s(745));
-    kji_Intrinsics_checkNotNullParameter($afterLoad, $rt_s(746));
+    kji_Intrinsics_checkNotNullParameter($beforeLoad, $rt_s(748));
+    kji_Intrinsics_checkNotNullParameter($afterLoad, $rt_s(749));
     return oktr_RES_proxy.$loadTyped($uri, $beforeLoad, $afterLoad);
 }
 function oktr_RES_update($this, $delta) {
@@ -27432,7 +27464,7 @@ function oktgg_GLTFPrimitive_readJson($this, $json) {
         oktgg_GLTFPrimitive_setName($this, $json.$string2($rt_s(12), $rt_s(6)));
         $this.$mesh2.$setName(oktgg_GLTFPrimitive_getName($this));
         var$2 = $this.$mesh2;
-        switch ($json.$int1($rt_s(747), 4)) {
+        switch ($json.$int1($rt_s(750), 4)) {
             case 0:
                 break;
             case 1:
@@ -27460,7 +27492,7 @@ function oktgg_GLTFPrimitive_readJson($this, $json) {
         var$3 = 0;
     }
     var$2.$setPrimitiveType(var$3);
-    $json.$int($rt_s(748), oktgg_GLTFPrimitive$readJson$1__init_($this));
+    $json.$int($rt_s(751), oktgg_GLTFPrimitive$readJson$1__init_($this));
     $this.$indices0 = $json.$int1($rt_s(362), (-1));
     $indices = $this.$indices0 == (-1) ? null : oktgg_GLTFPrimitive_loadIndices$default($this, $this.$indices0, null, 2, null);
     $this.$mesh2.$setIndices($indices);
@@ -27469,11 +27501,11 @@ function oktgg_GLTFPrimitive_readJson($this, $json) {
     $hasNormals.$element2 = 0;
     $hasTangents = kji_Ref$BooleanRef__init_();
     $hasTangents.$element2 = 0;
-    $json.$get4($rt_s(749), oktgg_GLTFPrimitive$readJson$2__init_($this, $vertexInputs, $hasNormals, $hasTangents));
+    $json.$get4($rt_s(752), oktgg_GLTFPrimitive$readJson$2__init_($this, $vertexInputs, $hasNormals, $hasTangents));
     if (!$hasNormals.$element2)
         $vertexInputs.$add7(oktm_VertexInput__init_(3, $rt_s(402), 5126, 0));
-    if ($vertexInputs.$contains($rt_s(519)) && !$hasTangents.$element2)
-        $vertexInputs.$add7(oktm_VertexInput__init_(4, $rt_s(560), 5126, 0));
+    if ($vertexInputs.$contains($rt_s(520)) && !$hasTangents.$element2)
+        $vertexInputs.$add7(oktm_VertexInput__init_(4, $rt_s(563), 5126, 0));
     $floatsPerVertex = $vertexInputs.$getFloatsPerVertex0();
     $maxVertices = oktgg_GLTFAccessor_getCount(oktgg_GLTFPrimitive_getGltf($this).$getAccessors().$get1(kc_CollectionsKt___CollectionsKt_first($this.$attributesMap.$values()).$intValue()));
     oktd_DATA_$callClinit();
@@ -27678,10 +27710,10 @@ function oktsn_AttributeNode__init_(var_0, var_1, var_2, var_3) {
 function oktsn_AttributeNode__init_1($this, $attributeName, $type) {
     var var$3;
     oktsn_AttributeNode_$callClinit();
-    kji_Intrinsics_checkNotNullParameter($attributeName, $rt_s(559));
+    kji_Intrinsics_checkNotNullParameter($attributeName, $rt_s(562));
     oktsn_ShaderNode__init_0($this);
     $this.$attributeName = $attributeName;
-    var$3 = oktsn_GLSLValue__init_($rt_s(750), $type);
+    var$3 = oktsn_GLSLValue__init_($rt_s(753), $type);
     oktsn_ShaderNode_defOut($this, var$3);
     $this.$value4 = var$3;
 }
@@ -27699,7 +27731,7 @@ function oktsn_AttributeNode__clinit_() {
 }
 function oktgg_GLTF$destroy$1() {
     kji_Lambda.call(this);
-    this.$this$0145 = null;
+    this.$this$0144 = null;
 }
 function oktgg_GLTF$destroy$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$destroy$1();
@@ -27714,19 +27746,19 @@ function oktgg_GLTF$destroy$1_invoke(var$0) {
 function oktgg_GLTF$destroy$1_invoke0($this) {
     var $i, var$2;
     $i = 0;
-    var$2 = oktgg_GLTFArray_size($this.$this$0145.$getTextures());
+    var$2 = oktgg_GLTFArray_size($this.$this$0144.$getTextures());
     while ($i < var$2) {
-        oktgg_GLTFTexture_destroy(oktgg_GLTFArray_get($this.$this$0145.$getTextures(), $i));
+        oktgg_GLTFTexture_destroy(oktgg_GLTFArray_get($this.$this$0144.$getTextures(), $i));
         $i = $i + 1 | 0;
     }
 }
 function oktgg_GLTF$destroy$1__init_0(var$0, var$1) {
-    var$0.$this$0145 = var$1;
+    var$0.$this$0144 = var$1;
     kji_Lambda__init_0(var$0, 0);
 }
 function oktgg_GLTF$readJson$8$1() {
     kji_Lambda.call(this);
-    this.$this$0146 = null;
+    this.$this$0145 = null;
 }
 function oktgg_GLTF$readJson$8$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$8$1();
@@ -27741,12 +27773,12 @@ function oktgg_GLTF$readJson$8$1_invoke(var$0, var$1) {
 function oktgg_GLTF$readJson$8$1_invoke0($this, $$this$objs) {
     var $material;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    $material = $this.$this$0146.$this$0147.$createMaterial();
-    $this.$this$0146.$this$0147.$getMaterials().$add3($material);
+    $material = $this.$this$0145.$this$0146.$createMaterial();
+    $this.$this$0145.$this$0146.$getMaterials().$add3($material);
     $material.$readJson($$this$objs);
 }
 function oktgg_GLTF$readJson$8$1__init_0(var$0, var$1) {
-    var$0.$this$0146 = var$1;
+    var$0.$this$0145 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktg_IMaterial() {
@@ -27810,9 +27842,9 @@ function oktg_Material_getShaderChannels($this) {
     return $this.$shaderChannels;
 }
 function oktg_Material__init_1($this, $shader, $baseColor, $metallic, $roughness, $alphaCutoff, $alphaMode, $cullFaceMode, $translucentPriority, $depthMask, $name, $shaderChannels) {
-    kji_Intrinsics_checkNotNullParameter($baseColor, $rt_s(751));
+    kji_Intrinsics_checkNotNullParameter($baseColor, $rt_s(754));
     kji_Intrinsics_checkNotNullParameter($name, $rt_s(12));
-    kji_Intrinsics_checkNotNullParameter($shaderChannels, $rt_s(752));
+    kji_Intrinsics_checkNotNullParameter($shaderChannels, $rt_s(755));
     jl_Object__init_0($this);
     $this.$shader0 = $shader;
     $this.$baseColor = $baseColor;
@@ -27859,7 +27891,7 @@ function ju_Objects_hashCode($o) {
 }
 function jur_SequenceSet() {
     var a = this; jur_LeafSet.call(a);
-    a.$string7 = null;
+    a.$string8 = null;
     a.$leftToRight = null;
     a.$rightToLeft = null;
 }
@@ -27871,14 +27903,14 @@ function jur_SequenceSet__init_(var_0) {
 function jur_SequenceSet__init_0($this, $substring) {
     var $j;
     jur_LeafSet__init_2($this);
-    $this.$string7 = $substring.$toString();
+    $this.$string8 = $substring.$toString();
     $this.$charCount = $substring.$length();
     $this.$leftToRight = jur_SequenceSet$IntHash__init_($this.$charCount);
     $this.$rightToLeft = jur_SequenceSet$IntHash__init_($this.$charCount);
     $j = 0;
     while ($j < ($this.$charCount - 1 | 0)) {
-        $this.$leftToRight.$put11($this.$string7.$charAt($j), ($this.$charCount - $j | 0) - 1 | 0);
-        $this.$rightToLeft.$put11($this.$string7.$charAt(($this.$charCount - $j | 0) - 1 | 0), ($this.$charCount - $j | 0) - 1 | 0);
+        $this.$leftToRight.$put11($this.$string8.$charAt($j), ($this.$charCount - $j | 0) - 1 | 0);
+        $this.$rightToLeft.$put11($this.$string8.$charAt(($this.$charCount - $j | 0) - 1 | 0), ($this.$charCount - $j | 0) - 1 | 0);
         $j = $j + 1 | 0;
     }
 }
@@ -27917,18 +27949,18 @@ function jur_SequenceSet_findBack($this, $strIndex, $lastIndex, $testString, $ma
 function jur_SequenceSet_first($this, $set) {
     var var$2, var$3, var$4, var$5, var$6;
     if ($set instanceof jur_CharSet)
-        return $set.$getChar() != $this.$string7.$charAt(0) ? 0 : 1;
+        return $set.$getChar() != $this.$string8.$charAt(0) ? 0 : 1;
     if ($set instanceof jur_RangeSet)
-        return $set.$accepts(0, $this.$string7.$substring(0, 1)) <= 0 ? 0 : 1;
+        return $set.$accepts(0, $this.$string8.$substring(0, 1)) <= 0 ? 0 : 1;
     if (!($set instanceof jur_SupplRangeSet)) {
         if (!($set instanceof jur_SupplCharSet))
             return 1;
         a: {
-            if ($this.$string7.$length() > 1) {
+            if ($this.$string8.$length() > 1) {
                 var$2 = $set;
                 var$3 = var$2.$getCodePoint();
-                var$4 = $this.$string7.$charAt(0);
-                var$2 = $this.$string7;
+                var$4 = $this.$string8.$charAt(0);
+                var$2 = $this.$string8;
                 var$5 = var$2.$charAt(1);
                 if (var$3 == jl_Character_toCodePoint(var$4, var$5)) {
                     var$4 = 1;
@@ -27942,12 +27974,12 @@ function jur_SequenceSet_first($this, $set) {
     b: {
         c: {
             var$2 = $set;
-            if (!var$2.$contains0($this.$string7.$charAt(0))) {
-                var$6 = $this.$string7;
+            if (!var$2.$contains0($this.$string8.$charAt(0))) {
+                var$6 = $this.$string8;
                 if (var$6.$length() <= 1)
                     break c;
-                var$6 = $this.$string7;
-                var$4 = jl_Character_toCodePoint(var$6.$charAt(0), $this.$string7.$charAt(1));
+                var$6 = $this.$string8;
+                var$4 = jl_Character_toCodePoint(var$6.$charAt(0), $this.$string8.$charAt(1));
                 if (!var$2.$contains0(var$4))
                     break c;
             }
@@ -27960,7 +27992,7 @@ function jur_SequenceSet_first($this, $set) {
 }
 function jur_SequenceSet_indexOf($this, $str, $i, $to) {
     var $last, $ch;
-    $last = $this.$string7.$charAt($this.$charCount - 1 | 0);
+    $last = $this.$string8.$charAt($this.$charCount - 1 | 0);
     while (true) {
         if ($i > ($to - $this.$charCount | 0))
             return (-1);
@@ -27973,7 +28005,7 @@ function jur_SequenceSet_indexOf($this, $str, $i, $to) {
 }
 function jur_SequenceSet_lastIndexOf($this, $str, $to, $i) {
     var $first, $size, $delta, $ch;
-    $first = $this.$string7.$charAt(0);
+    $first = $this.$string8.$charAt(0);
     $size = $str.$length();
     $delta = ($size - $i | 0) - $this.$charCount | 0;
     if ($delta <= 0)
@@ -27992,7 +28024,7 @@ function jur_SequenceSet_startsWith($this, $str, $from) {
     var $i;
     $i = 0;
     while ($i < $this.$charCount) {
-        if ($str.$charAt($i + $from | 0) != $this.$string7.$charAt($i))
+        if ($str.$charAt($i + $from | 0) != $this.$string8.$charAt($i))
             return 0;
         $i = $i + 1 | 0;
     }
@@ -28005,15 +28037,15 @@ function kc_CollectionsKt___CollectionsKt() {
     kc_CollectionsKt___CollectionsJvmKt.call(this);
 }
 function kc_CollectionsKt___CollectionsKt_elementAt($$this$elementAt, $index) {
-    kji_Intrinsics_checkNotNullParameter($$this$elementAt, $rt_s(753));
+    kji_Intrinsics_checkNotNullParameter($$this$elementAt, $rt_s(756));
     if ($rt_isInstance($$this$elementAt, ju_List))
         return $$this$elementAt.$get1($index);
     return kc_CollectionsKt___CollectionsKt_elementAtOrElse($$this$elementAt, $index, kc_CollectionsKt___CollectionsKt$elementAt$1__init_($index));
 }
 function kc_CollectionsKt___CollectionsKt_elementAtOrElse($$this$elementAtOrElse, $index, $defaultValue) {
     var var$4, $iterator, $count, $element, $count_0;
-    kji_Intrinsics_checkNotNullParameter($$this$elementAtOrElse, $rt_s(754));
-    kji_Intrinsics_checkNotNullParameter($defaultValue, $rt_s(755));
+    kji_Intrinsics_checkNotNullParameter($$this$elementAtOrElse, $rt_s(757));
+    kji_Intrinsics_checkNotNullParameter($defaultValue, $rt_s(758));
     if ($rt_isInstance($$this$elementAtOrElse, ju_List)) {
         var$4 = $$this$elementAtOrElse;
         return $index >= 0 && $index <= kc_CollectionsKt__CollectionsKt_getLastIndex(var$4) ? var$4.$get1($index) : $defaultValue.$invoke8(jl_Integer_valueOf($index));
@@ -28035,22 +28067,22 @@ function kc_CollectionsKt___CollectionsKt_elementAtOrElse($$this$elementAtOrElse
 }
 function kc_CollectionsKt___CollectionsKt_first($$this$first) {
     var $iterator;
-    kji_Intrinsics_checkNotNullParameter($$this$first, $rt_s(756));
+    kji_Intrinsics_checkNotNullParameter($$this$first, $rt_s(759));
     if ($rt_isInstance($$this$first, ju_List))
         return kc_CollectionsKt___CollectionsKt_first0($$this$first);
     $iterator = $$this$first.$iterator();
     if ($iterator.$hasNext())
         return $iterator.$next();
-    $rt_throw(ju_NoSuchElementException__init_0($rt_s(757)));
+    $rt_throw(ju_NoSuchElementException__init_0($rt_s(760)));
 }
 function kc_CollectionsKt___CollectionsKt_first0($$this$first) {
-    kji_Intrinsics_checkNotNullParameter($$this$first, $rt_s(756));
+    kji_Intrinsics_checkNotNullParameter($$this$first, $rt_s(759));
     if (!$$this$first.$isEmpty())
         return $$this$first.$get1(0);
-    $rt_throw(ju_NoSuchElementException__init_0($rt_s(758)));
+    $rt_throw(ju_NoSuchElementException__init_0($rt_s(761)));
 }
 function kc_CollectionsKt___CollectionsKt_getOrNull($$this$getOrNull, $index) {
-    kji_Intrinsics_checkNotNullParameter($$this$getOrNull, $rt_s(759));
+    kji_Intrinsics_checkNotNullParameter($$this$getOrNull, $rt_s(762));
     return $index >= 0 && $index <= kc_CollectionsKt__CollectionsKt_getLastIndex($$this$getOrNull) ? $$this$getOrNull.$get1($index) : null;
 }
 function kc_CollectionsKt() {
@@ -28082,7 +28114,7 @@ function jur_AltGroupQuantifierSet_setNext($this, $next) {
 }
 function oktgg_IGLTFMaterial$readJson$5$5() {
     kji_Lambda.call(this);
-    this.$this$0148 = null;
+    this.$this$0147 = null;
 }
 function oktgg_IGLTFMaterial$readJson$5$5__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$5$5();
@@ -28096,32 +28128,32 @@ function oktgg_IGLTFMaterial$readJson$5$5_invoke(var$0, var$1) {
 }
 function oktgg_IGLTFMaterial$readJson$5$5_invoke0($this, $it) {
     var $factor, var$3, var$4, var$5, var$6, var$7;
-    $this.$this$0148.$this$0114.$setMetallic($it);
+    $this.$this$0147.$this$0113.$setMetallic($it);
     $factor = oktsn_GLSLFloatInline__init_($it, null, 2, null);
-    var$3 = $this.$this$0148.$$metallicValue;
-    var$4 = $this.$this$0148.$$metallicValue.$element;
+    var$3 = $this.$this$0147.$$metallicValue;
+    var$4 = $this.$this$0147.$$metallicValue.$element;
     oktsn_GLSL_$callClinit();
     if (var$4 === oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE))
         var$4 = $factor;
     else {
-        var$5 = $this.$this$0148.$$shader0;
+        var$5 = $this.$this$0147.$$shader0;
         var$4 = new oktsn_OperationNode;
         var$6 = $rt_createArray(oktsn_IShaderData, 2);
         var$7 = var$6.data;
-        var$7[0] = $this.$this$0148.$$metallicValue.$element;
+        var$7[0] = $this.$this$0147.$$metallicValue.$element;
         var$7[1] = $factor;
-        oktsn_OperationNode__init_0(var$4, kc_CollectionsKt__CollectionsKt_listOf(var$6), $rt_s(687), 3);
+        oktsn_OperationNode__init_0(var$4, kc_CollectionsKt__CollectionsKt_listOf(var$6), $rt_s(690), 3);
         var$4 = oktsn_OperationNode_getResult(var$5.$addNode(var$4));
     }
     var$3.$element = var$4;
 }
 function oktgg_IGLTFMaterial$readJson$5$5__init_0(var$0, var$1) {
-    var$0.$this$0148 = var$1;
+    var$0.$this$0147 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_IGLTFMaterial$readJson$5$4() {
     kji_Lambda.call(this);
-    this.$this$0149 = null;
+    this.$this$0148 = null;
 }
 function oktgg_IGLTFMaterial$readJson$5$4__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$5$4();
@@ -28135,32 +28167,32 @@ function oktgg_IGLTFMaterial$readJson$5$4_invoke(var$0, var$1) {
 }
 function oktgg_IGLTFMaterial$readJson$5$4_invoke0($this, $it) {
     var $factor, var$3, var$4, var$5, var$6, var$7;
-    $this.$this$0149.$this$0114.$setRoughness($it);
+    $this.$this$0148.$this$0113.$setRoughness($it);
     $factor = oktsn_GLSLFloatInline__init_($it, null, 2, null);
-    var$3 = $this.$this$0149.$$roughnessValue;
-    var$4 = $this.$this$0149.$$roughnessValue.$element;
+    var$3 = $this.$this$0148.$$roughnessValue;
+    var$4 = $this.$this$0148.$$roughnessValue.$element;
     oktsn_GLSL_$callClinit();
     if (var$4 === oktsn_GLSL_getOneFloat(oktsn_GLSL_INSTANCE))
         var$4 = $factor;
     else {
-        var$5 = $this.$this$0149.$$shader0;
+        var$5 = $this.$this$0148.$$shader0;
         var$4 = new oktsn_OperationNode;
         var$6 = $rt_createArray(oktsn_IShaderData, 2);
         var$7 = var$6.data;
-        var$7[0] = $this.$this$0149.$$roughnessValue.$element;
+        var$7[0] = $this.$this$0148.$$roughnessValue.$element;
         var$7[1] = $factor;
-        oktsn_OperationNode__init_0(var$4, kc_CollectionsKt__CollectionsKt_listOf(var$6), $rt_s(687), 3);
+        oktsn_OperationNode__init_0(var$4, kc_CollectionsKt__CollectionsKt_listOf(var$6), $rt_s(690), 3);
         var$4 = oktsn_OperationNode_getResult(var$5.$addNode(var$4));
     }
     var$3.$element = var$4;
 }
 function oktgg_IGLTFMaterial$readJson$5$4__init_0(var$0, var$1) {
-    var$0.$this$0149 = var$1;
+    var$0.$this$0148 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_IGLTFMaterial$readJson$5$3() {
     kji_Lambda.call(this);
-    this.$this$0150 = null;
+    this.$this$0149 = null;
 }
 function oktgg_IGLTFMaterial$readJson$5$3__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$5$3();
@@ -28175,17 +28207,17 @@ function oktgg_IGLTFMaterial$readJson$5$3_invoke(var$0, var$1) {
 function oktgg_IGLTFMaterial$readJson$5$3_invoke0($this, $$this$get) {
     var $uvNode, $textureNode, $splitNode;
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
-    $$this$get.$int($rt_s(647), oktgg_IGLTFMaterial$readJson$5$3$1__init_($this));
-    $uvNode = oktgg_IGLTFMaterial$DefaultImpls_access$getOrCreateUVNode($this.$this$0150.$this$0114, $this.$this$0150.$$shader0, jl_StringBuilder__init_().$append($rt_s(648)).$append1($this.$this$0150.$this$0114.$getMetallicRoughnessTextureUV()).$toString(), $this.$this$0150.$$uvNodes0);
-    $this.$this$0150.$this$0114.$setMetallicRoughnessTexture($$this$get.$int0($rt_s(649)));
-    $textureNode = $this.$this$0150.$$shader0.$addNode(oktsn_TextureNode__init_(oktsn_UVNode_getUv($uvNode), oktgg_GLTFTexture_getTexture($this.$this$0150.$this$0114.$getGltf().$getTextures0().$get1($this.$this$0150.$this$0114.$getMetallicRoughnessTexture())), 0, 0, 8, null));
-    $splitNode = $this.$this$0150.$$shader0.$addNode(oktsn_SplitVec4Node__init_0(oktsn_TextureNode_getColor($textureNode)));
-    $this.$this$0150.$$occlusionValue.$element = oktsn_SplitVec4Node_getX($splitNode);
-    $this.$this$0150.$$roughnessValue.$element = oktsn_SplitVec4Node_getY($splitNode);
-    $this.$this$0150.$$metallicValue.$element = oktsn_SplitVec4Node_getZ($splitNode);
+    $$this$get.$int($rt_s(650), oktgg_IGLTFMaterial$readJson$5$3$1__init_($this));
+    $uvNode = oktgg_IGLTFMaterial$DefaultImpls_access$getOrCreateUVNode($this.$this$0149.$this$0113, $this.$this$0149.$$shader0, jl_StringBuilder__init_().$append($rt_s(651)).$append1($this.$this$0149.$this$0113.$getMetallicRoughnessTextureUV()).$toString(), $this.$this$0149.$$uvNodes0);
+    $this.$this$0149.$this$0113.$setMetallicRoughnessTexture($$this$get.$int0($rt_s(652)));
+    $textureNode = $this.$this$0149.$$shader0.$addNode(oktsn_TextureNode__init_(oktsn_UVNode_getUv($uvNode), oktgg_GLTFTexture_getTexture($this.$this$0149.$this$0113.$getGltf().$getTextures0().$get1($this.$this$0149.$this$0113.$getMetallicRoughnessTexture())), 0, 0, 8, null));
+    $splitNode = $this.$this$0149.$$shader0.$addNode(oktsn_SplitVec4Node__init_0(oktsn_TextureNode_getColor($textureNode)));
+    $this.$this$0149.$$occlusionValue.$element = oktsn_SplitVec4Node_getX($splitNode);
+    $this.$this$0149.$$roughnessValue.$element = oktsn_SplitVec4Node_getY($splitNode);
+    $this.$this$0149.$$metallicValue.$element = oktsn_SplitVec4Node_getZ($splitNode);
 }
 function oktgg_IGLTFMaterial$readJson$5$3__init_0(var$0, var$1) {
-    var$0.$this$0150 = var$1;
+    var$0.$this$0149 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_UCIRangeSet() {
@@ -28227,7 +28259,7 @@ function ck_KotmeJsMain_getWs($this) {
     var var$1;
     var$1 = ck_KotmeJsMain_ws;
     if (var$1 === null)
-        kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(760));
+        kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(763));
     return var$1;
 }
 function ck_KotmeJsMain_setWs($this, $_set___) {
@@ -28239,15 +28271,15 @@ function ck_KotmeJsMain_send($this, $type, $block) {
     kji_Intrinsics_checkNotNullParameter($block, $rt_s(343));
     var$3 = ck_KotmeJsMain_ws;
     if (var$3 === null)
-        kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(760));
+        kji_Intrinsics_throwUninitializedPropertyAccessException($rt_s(763));
     oktj_JSON_$callClinit();
     var$4 = oktj_JSON_printObject(oktj_JSON_INSTANCE, ck_KotmeJsMain$send$1__init_($type, $block));
     var$3.send($rt_ustr(var$4));
 }
 function ck_KotmeJsMain_main($args) {
-    var var$2, $document, var$4, $canvas, $consoleArea, $codeArea, $connect, $name, $eval, $restart, $music, $app, $connected, $location, var$16;
+    var var$2, $document, var$4, $canvas, $consoleArea, $codeArea, $users, $connect, $userName, $eval, $restart, $music, $app, $connected, $location;
     ck_KotmeJsMain_$callClinit();
-    kji_Intrinsics_checkNotNullParameter($args, $rt_s(761));
+    kji_Intrinsics_checkNotNullParameter($args, $rt_s(764));
     var$2 = window;
     kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(341));
     $document = var$2.document;
@@ -28257,31 +28289,34 @@ function ck_KotmeJsMain_main($args) {
     $canvas = var$4;
     var$4 = $document.getElementById("console");
     if (var$4 === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(762)));
+        $rt_throw(jl_NullPointerException__init_0($rt_s(765)));
     $consoleArea = var$4;
     var$4 = $document.getElementById("code");
     if (var$4 === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(762)));
+        $rt_throw(jl_NullPointerException__init_0($rt_s(765)));
     $codeArea = var$4;
+    $users = $document.getElementById("users");
+    if ($users === null)
+        $rt_throw(jl_NullPointerException__init_0($rt_s(766)));
     var$4 = $document.getElementById("connect");
     if (var$4 === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(763)));
+        $rt_throw(jl_NullPointerException__init_0($rt_s(767)));
     $connect = var$4;
     var$4 = $document.getElementById("name");
     if (var$4 === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(764)));
-    $name = var$4;
+        $rt_throw(jl_NullPointerException__init_0($rt_s(768)));
+    $userName = var$4;
     var$4 = $document.getElementById("eval");
     if (var$4 === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(763)));
+        $rt_throw(jl_NullPointerException__init_0($rt_s(767)));
     $eval = var$4;
     var$4 = $document.getElementById("restart");
     if (var$4 === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(763)));
+        $rt_throw(jl_NullPointerException__init_0($rt_s(767)));
     $restart = var$4;
     var$4 = $document.getElementById("music");
     if (var$4 === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(764)));
+        $rt_throw(jl_NullPointerException__init_0($rt_s(768)));
     $music = var$4;
     var$4 = "\nval crab = location.crabs[0]\nwhile (crab.isAlive) {\n    jones.attack(crab)\n}\n";
     $codeArea.value = var$4;
@@ -28291,11 +28326,11 @@ function ck_KotmeJsMain_main($args) {
     $location = ck_KotmeJsMain$main$location$1__init_($consoleArea);
     var$2 = otji_JS_functionAsObject(ck_KotmeJsMain$main$1__init_($connected, $codeArea), "handleEvent");
     $eval.addEventListener("click", otji_JS_function(var$2, "handleEvent"));
-    var$16 = otji_JS_functionAsObject(ck_KotmeJsMain$main$2__init_($connected, $location), "handleEvent");
-    $restart.addEventListener("click", otji_JS_function(var$16, "handleEvent"));
-    var$16 = otji_JS_functionAsObject(ck_KotmeJsMain$main$3__init_($music, $app, $location), "handleEvent");
-    $music.addEventListener("change", otji_JS_function(var$16, "handleEvent"));
-    var$4 = otji_JS_functionAsObject(ck_KotmeJsMain$main$4__init_($app, $location, $connected, $name), "handleEvent");
+    var$4 = otji_JS_functionAsObject(ck_KotmeJsMain$main$2__init_($connected), "handleEvent");
+    $restart.addEventListener("click", otji_JS_function(var$4, "handleEvent"));
+    var$4 = otji_JS_functionAsObject(ck_KotmeJsMain$main$3__init_($music, $app, $location), "handleEvent");
+    $music.addEventListener("change", otji_JS_function(var$4, "handleEvent"));
+    var$4 = otji_JS_functionAsObject(ck_KotmeJsMain$main$4__init_($app, $location, $connected, $userName, $users, $document), "handleEvent");
     $connect.addEventListener("click", otji_JS_function(var$4, "handleEvent"));
     oktt_TeaVMApp_startLoop($app);
 }
@@ -28308,7 +28343,7 @@ function ck_KotmeJsMain__clinit_() {
 }
 function oktgg_GLTF$readJson$14$1() {
     kji_Lambda.call(this);
-    this.$this$0151 = null;
+    this.$this$0150 = null;
 }
 function oktgg_GLTF$readJson$14$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$14$1();
@@ -28323,12 +28358,12 @@ function oktgg_GLTF$readJson$14$1_invoke(var$0, var$1) {
 function oktgg_GLTF$readJson$14$1_invoke0($this, $$this$objs) {
     var $scene;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    $scene = oktgg_GLTFScene__init_($this.$this$0151.$this$0152, oktgg_GLTFArray_size($this.$this$0151.$this$0152.$getScenes0()), null, 4, null);
-    oktgg_GLTFArray_add($this.$this$0151.$this$0152.$getScenes0(), $scene);
+    $scene = oktgg_GLTFScene__init_($this.$this$0150.$this$0151, oktgg_GLTFArray_size($this.$this$0150.$this$0151.$getScenes0()), null, 4, null);
+    oktgg_GLTFArray_add($this.$this$0150.$this$0151.$getScenes0(), $scene);
     oktgg_GLTFScene_readJson($scene, $$this$objs);
 }
 function oktgg_GLTF$readJson$14$1__init_0(var$0, var$1) {
-    var$0.$this$0151 = var$1;
+    var$0.$this$0150 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktt_TvmGL$renderBuffers$1() {
@@ -28429,7 +28464,7 @@ function oktt_TvmFile$readText$1_run($this) {
             var$1 = $this.$$xhr0;
             kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(433));
             var$2 = $rt_str(var$1.responseText);
-            kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(765));
+            kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(769));
             var$3.$invoke8(var$2);
         }
     }
@@ -28478,13 +28513,13 @@ function oktgg_GLTFSourceType__clinit_() {
     var var$1, var$2, var$3;
     var$1 = $rt_createArray(oktgg_GLTFSourceType, 3);
     var$2 = var$1.data;
-    var$3 = oktgg_GLTFSourceType__init_($rt_s(766), 0);
+    var$3 = oktgg_GLTFSourceType__init_($rt_s(770), 0);
     oktgg_GLTFSourceType_None = var$3;
     var$2[0] = var$3;
-    var$3 = oktgg_GLTFSourceType__init_($rt_s(767), 1);
+    var$3 = oktgg_GLTFSourceType__init_($rt_s(771), 1);
     oktgg_GLTFSourceType_GLTFFile = var$3;
     var$2[1] = var$3;
-    var$3 = oktgg_GLTFSourceType__init_($rt_s(768), 2);
+    var$3 = oktgg_GLTFSourceType__init_($rt_s(772), 2);
     oktgg_GLTFSourceType_JSON = var$3;
     var$2[2] = var$3;
     oktgg_GLTFSourceType_$VALUES = var$1;
@@ -28525,9 +28560,9 @@ function jnc_CodingErrorAction__init_0($this, $name) {
     $this.$name28 = $name;
 }
 function jnc_CodingErrorAction__clinit_() {
-    jnc_CodingErrorAction_IGNORE = jnc_CodingErrorAction__init_($rt_s(769));
-    jnc_CodingErrorAction_REPLACE = jnc_CodingErrorAction__init_($rt_s(770));
-    jnc_CodingErrorAction_REPORT = jnc_CodingErrorAction__init_($rt_s(771));
+    jnc_CodingErrorAction_IGNORE = jnc_CodingErrorAction__init_($rt_s(773));
+    jnc_CodingErrorAction_REPLACE = jnc_CodingErrorAction__init_($rt_s(774));
+    jnc_CodingErrorAction_REPORT = jnc_CodingErrorAction__init_($rt_s(775));
 }
 function oktf_IFile() {
 }
@@ -28546,12 +28581,12 @@ function oktt_TvmFile_child($this, $name) {
 }
 function oktt_TvmFile_parent($this) {
     if (kji_Intrinsics_areEqual(oktt_TvmFile_getPath($this), oktt_TvmFile_getName($this)))
-        $rt_throw(jl_IllegalStateException__init_0($rt_s(772)));
+        $rt_throw(jl_IllegalStateException__init_0($rt_s(776)));
     return oktt_TvmFile__init_(kt_StringsKt__StringsKt_removeSuffix(oktt_TvmFile_getPath($this), oktt_TvmFile_getName($this)));
 }
 function oktt_TvmFile_readText($this, $charset, $error, $ready) {
     var $xhr, var$5;
-    kji_Intrinsics_checkNotNullParameter($charset, $rt_s(773));
+    kji_Intrinsics_checkNotNullParameter($charset, $rt_s(777));
     kji_Intrinsics_checkNotNullParameter($error, $rt_s(293));
     kji_Intrinsics_checkNotNullParameter($ready, $rt_s(294));
     $xhr = new XMLHttpRequest();
@@ -28658,7 +28693,7 @@ function oktsn_GLSLMat4_asVec3($this) {
     return jl_StringBuilder__init_().$append($this.$getFRef0()).$append($rt_s(14)).$toString();
 }
 function oktsn_GLSLMat4_asVec4($this) {
-    return jl_StringBuilder__init_().$append($this.$getFRef0()).$append($rt_s(774)).$toString();
+    return jl_StringBuilder__init_().$append($this.$getFRef0()).$append($rt_s(778)).$toString();
 }
 function oktsn_GLSLMat4_getName($this) {
     return $this.$name29;
@@ -28690,7 +28725,7 @@ function oktsn_GLSLMat3_asVec3($this) {
     return jl_StringBuilder__init_().$append($this.$getFRef0()).$append($rt_s(14)).$toString();
 }
 function oktsn_GLSLMat3_asVec4($this) {
-    return jl_StringBuilder__init_().$append($rt_s(10)).$append($this.$getFRef0()).$append($rt_s(775)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(10)).$append($this.$getFRef0()).$append($rt_s(779)).$toString();
 }
 function oktsn_GLSLMat3_getName($this) {
     return $this.$name30;
@@ -28706,18 +28741,18 @@ function oktr_IResources$DefaultImpls() {
 function oktr_IResources$DefaultImpls_loadTyped($$this, $uri, $beforeLoad, $afterLoad) {
     var var$5, var$6;
     kji_Intrinsics_checkNotNullParameter($uri, $rt_s(26));
-    kji_Intrinsics_checkNotNullParameter($beforeLoad, $rt_s(745));
-    kji_Intrinsics_checkNotNullParameter($afterLoad, $rt_s(746));
+    kji_Intrinsics_checkNotNullParameter($beforeLoad, $rt_s(748));
+    kji_Intrinsics_checkNotNullParameter($afterLoad, $rt_s(749));
     var$5 = kji_TypeIntrinsics_beforeCheckcastToFunctionOfArity($beforeLoad, 1);
     var$6 = kji_TypeIntrinsics_beforeCheckcastToFunctionOfArity($afterLoad, 1);
     var$5 = $$this.$load3($uri, var$5, var$6);
     if (var$5 !== null)
         return var$5;
-    $rt_throw(jl_NullPointerException__init_0($rt_s(776)));
+    $rt_throw(jl_NullPointerException__init_0($rt_s(780)));
 }
 function oktr_IResources$DefaultImpls_loadTyped$default(var$1, var$2, var$3, var$4, var$5, var$6) {
     if (var$6 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(777)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(781)));
     if (var$5 & 2) {
         oktr_IResources$loadTyped$1_$callClinit();
         var$3 = oktr_IResources$loadTyped$1_INSTANCE;
@@ -28741,7 +28776,7 @@ function oktr_IResources$DefaultImpls_getTyped($$this, $uri) {
     var$3 = $$this.$get18($uri);
     if (var$3 !== null)
         return var$3;
-    $rt_throw(jl_NullPointerException__init_0($rt_s(776)));
+    $rt_throw(jl_NullPointerException__init_0($rt_s(780)));
 }
 function oktgg_MeshBuilder$createIndicesShort$1() {
     kji_Lambda.call(this);
@@ -28836,13 +28871,13 @@ function oktt_TvmGL$VertexArrayWrap_getGl0(var$0) {
     return oktt_TvmGL$VertexArrayWrap_getGl(var$0);
 }
 function oktt_TvmGL$VertexArrayWrap__init_0($this, $gl) {
-    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(716));
+    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(719));
     oktt_TvmGL$GLObject__init_0($this);
     $this.$gl3 = $gl;
 }
 function oktgg_GLTF$load$2() {
     kji_Lambda.call(this);
-    this.$this$0153 = null;
+    this.$this$0152 = null;
 }
 function oktgg_GLTF$load$2__init_(var_0) {
     var var_1 = new oktgg_GLTF$load$2();
@@ -28857,12 +28892,12 @@ function oktgg_GLTF$load$2_invoke(var$0, var$1) {
 function oktgg_GLTF$load$2_invoke0($this, $text) {
     var var$2;
     kji_Intrinsics_checkNotNullParameter($text, $rt_s(317));
-    var$2 = $this.$this$0153;
+    var$2 = $this.$this$0152;
     oktj_JSON_$callClinit();
     var$2.$readJson(oktj_JSON_parseObject(oktj_JSON_INSTANCE, $text));
 }
 function oktgg_GLTF$load$2__init_0(var$0, var$1) {
-    var$0.$this$0153 = var$1;
+    var$0.$this$0152 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_BackReferenceSet() {
@@ -28936,7 +28971,7 @@ function jur_BackReferenceSet_first($this, $set) {
 }
 function oktgg_GLTF$load$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0154 = null;
+    a.$this$0153 = null;
     a.$$gltfFile = null;
 }
 function oktgg_GLTF$load$1__init_(var_0, var_1) {
@@ -28951,13 +28986,13 @@ function oktgg_GLTF$load$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTF$load$1_invoke0($this, $status) {
     oktu_LOG_$callClinit();
-    oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, jl_StringBuilder__init_().$append($this.$$gltfFile.$getPath()).$append($rt_s(778)).$append1($status).$toString(), null, 2, null);
-    oktgg_GLTF_access$setProgressInternal$p($this.$this$0154, 0.0);
-    oktgg_GLTF_setLoadingInternal($this.$this$0154, 0);
-    oktgg_GLTF_access$notifyError($this.$this$0154, $status);
+    oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, jl_StringBuilder__init_().$append($this.$$gltfFile.$getPath()).$append($rt_s(782)).$append1($status).$toString(), null, 2, null);
+    oktgg_GLTF_access$setProgressInternal$p($this.$this$0153, 0.0);
+    oktgg_GLTF_setLoadingInternal($this.$this$0153, 0);
+    oktgg_GLTF_access$notifyError($this.$this$0153, $status);
 }
 function oktgg_GLTF$load$1__init_0(var$0, var$1, var$2) {
-    var$0.$this$0154 = var$1;
+    var$0.$this$0153 = var$1;
     var$0.$$gltfFile = var$2;
     kji_Lambda__init_0(var$0, 1);
 }
@@ -29202,16 +29237,16 @@ function ck_HitFX$Companion_initiate($this) {
         okta_AL_$callClinit();
         var$2 = okta_AL_INSTANCE;
         oktf_FS_$callClinit();
-        ck_HitFX$Companion_setHitSound(var$1, okta_AL_newSound(var$2, oktf_FS_internal(oktf_FS_INSTANCE, $rt_s(779))));
+        ck_HitFX$Companion_setHitSound(var$1, okta_AL_newSound(var$2, oktf_FS_internal(oktf_FS_INSTANCE, $rt_s(783))));
         var$3 = oktgt_GrassPatchMeshBuilder__init_(0.0, 0.0, 3, null);
         oktgt_GrassPatchMeshBuilder_setPolygonsNum(var$3, 3);
         oktgt_GrassPatchMeshBuilder_setPoints(var$3, kc_CollectionsKt__CollectionsJVMKt_listOf(oktm_Vec3__init_(0.0, (-0.5), 0.0)));
         oktgt_GrassPatchMeshBuilder_build(var$3, ck_HitFX$Companion_getMesh(var$1));
-        okti_ITexture2D$DefaultImpls_load$default(ck_HitFX$Companion_getHitTexture(var$1), $rt_s(780), 9987, 0, 0, 0, 0.0, null, 124, null);
-        okts_Shader_load(ck_HitFX$Companion_getShader(var$1), $rt_s(781), $rt_s(782));
+        okti_ITexture2D$DefaultImpls_load$default(ck_HitFX$Companion_getHitTexture(var$1), $rt_s(784), 9987, 0, 0, 0, 0.0, null, 124, null);
+        okts_Shader_load(ck_HitFX$Companion_getShader(var$1), $rt_s(785), $rt_s(786));
         ck_HitFX$Companion_getShader(var$1).$bind();
-        ck_HitFX$Companion_getShader(var$1).$set32($rt_s(783), 0);
-        ck_HitFX$Companion_getShader(var$1).$set28($rt_s(784), 0.25, 0.25);
+        ck_HitFX$Companion_getShader(var$1).$set33($rt_s(787), 0);
+        ck_HitFX$Companion_getShader(var$1).$set29($rt_s(788), 0.25, 0.25);
         oktm_Mesh_getMaterial(ck_HitFX$Companion_getMesh(var$1)).$setShader(ck_HitFX$Companion_getShader(var$1));
         oktm_Mesh_getMaterial(ck_HitFX$Companion_getMesh(var$1)).$setAlphaMode0(1);
         oktm_Mesh_getMaterial(ck_HitFX$Companion_getMesh(var$1)).$setCullFaceMode(0);
@@ -29241,8 +29276,8 @@ function ck_KotmeJsMain$send$1_invoke(var$0, var$1) {
 }
 function ck_KotmeJsMain$send$1_invoke0($this, $$this$printObject) {
     kji_Intrinsics_checkNotNullParameter($$this$printObject, $rt_s(3));
-    $$this$printObject.$set32($rt_s(485), $this.$$type);
-    $$this$printObject.$set33($rt_s(276), ck_KotmeJsMain$send$1$1__init_($this));
+    $$this$printObject.$set33($rt_s(486), $this.$$type);
+    $$this$printObject.$set34($rt_s(276), ck_KotmeJsMain$send$1$1__init_($this));
 }
 function ck_KotmeJsMain$send$1__init_0(var$0, var$1, var$2) {
     var$0.$$type = var$1;
@@ -29298,7 +29333,7 @@ function oktsn_GLSLFloat__init_0($this, $name) {
 }
 function oktgg_IGLTFMaterial$readJson$5$3$1() {
     kji_Lambda.call(this);
-    this.$this$0155 = null;
+    this.$this$0154 = null;
 }
 function oktgg_IGLTFMaterial$readJson$5$3$1__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$5$3$1();
@@ -29311,10 +29346,10 @@ function oktgg_IGLTFMaterial$readJson$5$3$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_IGLTFMaterial$readJson$5$3$1_invoke0($this, $it) {
-    $this.$this$0155.$this$0150.$this$0114.$setMetallicRoughnessTextureUV($it);
+    $this.$this$0154.$this$0149.$this$0113.$setMetallicRoughnessTextureUV($it);
 }
 function oktgg_IGLTFMaterial$readJson$5$3$1__init_0(var$0, var$1) {
-    var$0.$this$0155 = var$1;
+    var$0.$this$0154 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgt_GrassPatchMeshBuilder() {
@@ -29395,7 +29430,7 @@ function oktgt_GrassPatchMeshBuilder__init_2(var$0, var$1, var$2, var$3, var$4) 
 }
 function jur_AbstractCharClass$LazyJavaJavaIdentifierStart$1() {
     jur_AbstractCharClass.call(this);
-    this.$this$0156 = null;
+    this.$this$0155 = null;
 }
 function jur_AbstractCharClass$LazyJavaJavaIdentifierStart$1__init_(var_0) {
     var var_1 = new jur_AbstractCharClass$LazyJavaJavaIdentifierStart$1();
@@ -29403,7 +29438,7 @@ function jur_AbstractCharClass$LazyJavaJavaIdentifierStart$1__init_(var_0) {
     return var_1;
 }
 function jur_AbstractCharClass$LazyJavaJavaIdentifierStart$1__init_0($this, $this$0) {
-    $this.$this$0156 = $this$0;
+    $this.$this$0155 = $this$0;
     jur_AbstractCharClass__init_0($this);
 }
 function jur_AbstractCharClass$LazyJavaJavaIdentifierStart$1_contains($this, $ch) {
@@ -29635,7 +29670,7 @@ function ju_Arrays_asList($a) {
 }
 function ck_KotmeJsMain$main$1$1() {
     kji_Lambda.call(this);
-    this.$this$0157 = null;
+    this.$this$0156 = null;
 }
 function ck_KotmeJsMain$main$1$1__init_(var_0) {
     var var_1 = new ck_KotmeJsMain$main$1$1();
@@ -29650,12 +29685,12 @@ function ck_KotmeJsMain$main$1$1_invoke(var$0, var$1) {
 function ck_KotmeJsMain$main$1$1_invoke0($this, $$this$send) {
     var var$2;
     kji_Intrinsics_checkNotNullParameter($$this$send, $rt_s(3));
-    var$2 = $rt_str($this.$this$0157.$$codeArea.value);
-    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(785));
-    $$this$send.$set34($rt_s(786), var$2);
+    var$2 = $rt_str($this.$this$0156.$$codeArea.value);
+    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(789));
+    $$this$send.$set21($rt_s(790), var$2);
 }
 function ck_KotmeJsMain$main$1$1__init_0(var$0, var$1) {
-    var$0.$this$0157 = var$1;
+    var$0.$this$0156 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jl_ConsoleOutputStreamStdout() {
@@ -29674,7 +29709,7 @@ function jl_ConsoleOutputStreamStdout_write($this, $b) {
 }
 function oktgg_GLTFSkin$readJson$2() {
     kji_Lambda.call(this);
-    this.$this$077 = null;
+    this.$this$078 = null;
 }
 function oktgg_GLTFSkin$readJson$2__init_(var_0) {
     var var_1 = new oktgg_GLTFSkin$readJson$2();
@@ -29694,12 +29729,12 @@ function oktgg_GLTFSkin$readJson$2_invoke0($this, $$this$array) {
     $$this$array.$ints2(oktgg_GLTFSkin$readJson$2$1__init_($this, $i));
 }
 function oktgg_GLTFSkin$readJson$2__init_0(var$0, var$1) {
-    var$0.$this$077 = var$1;
+    var$0.$this$078 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFSkin$readJson$4() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0158 = null;
+    a.$this$0157 = null;
     a.$$ibmBufferView = null;
     a.$$ibmAccessor = null;
 }
@@ -29715,19 +29750,19 @@ function oktgg_GLTFSkin$readJson$4_invoke(var$0, var$1) {
 }
 function oktgg_GLTFSkin$readJson$4_invoke0($this, $buffer) {
     var $floatBuffer, $i, var$4;
-    kji_Intrinsics_checkNotNullParameter($buffer, $rt_s(530));
+    kji_Intrinsics_checkNotNullParameter($buffer, $rt_s(533));
     oktgg_GLTFBuffer_getBytes($buffer).$setPosition(oktgg_GLTFBufferView_getByteOffset($this.$$ibmBufferView) + oktgg_GLTFAccessor_getByteOffset($this.$$ibmAccessor) | 0);
     $floatBuffer = oktgg_GLTFBuffer_getBytes($buffer).$floatView();
     $i = 0;
-    var$4 = oktgg_GLTFSkin_getSkin($this.$this$0158).$getInverseBoneMatrices().data.length;
+    var$4 = oktgg_GLTFSkin_getSkin($this.$this$0157).$getInverseBoneMatrices().data.length;
     while ($i < var$4) {
-        $floatBuffer.$get19(oktgg_GLTFSkin_getSkin($this.$this$0158).$getInverseBoneMatrices().data[$i].$getValues());
+        $floatBuffer.$get19(oktgg_GLTFSkin_getSkin($this.$this$0157).$getInverseBoneMatrices().data[$i].$getValues());
         $i = $i + 1 | 0;
     }
-    oktgg_GLTFSkin_getGltf($this.$this$0158).$getSkins().$ready(oktgg_GLTFSkin_getElementIndex($this.$this$0158));
+    oktgg_GLTFSkin_getGltf($this.$this$0157).$getSkins().$ready(oktgg_GLTFSkin_getElementIndex($this.$this$0157));
 }
 function oktgg_GLTFSkin$readJson$4__init_0(var$0, var$1, var$2, var$3) {
-    var$0.$this$0158 = var$1;
+    var$0.$this$0157 = var$1;
     var$0.$$ibmBufferView = var$2;
     var$0.$$ibmAccessor = var$3;
     kji_Lambda__init_0(var$0, 1);
@@ -29736,7 +29771,7 @@ function jur_CharClass$3() {
     var a = this; jur_AbstractCharClass.call(a);
     a.$val$curAlt = 0;
     a.$val$cc = null;
-    a.$this$0159 = null;
+    a.$this$0158 = null;
 }
 function jur_CharClass$3__init_(var_0, var_1, var_2) {
     var var_3 = new jur_CharClass$3();
@@ -29744,17 +29779,17 @@ function jur_CharClass$3__init_(var_0, var_1, var_2) {
     return var_3;
 }
 function jur_CharClass$3__init_0($this, $this$0, var$2, var$3) {
-    $this.$this$0159 = $this$0;
+    $this.$this$0158 = $this$0;
     $this.$val$curAlt = var$2;
     $this.$val$cc = var$3;
     jur_AbstractCharClass__init_0($this);
 }
 function jur_CharClass$3_contains($this, $ch) {
-    return !($this.$val$curAlt ^ $this.$this$0159.$bits.$get7($ch)) && !($this.$val$curAlt ^ $this.$this$0159.$inverted ^ $this.$val$cc.$contains0($ch)) ? 0 : 1;
+    return !($this.$val$curAlt ^ $this.$this$0158.$bits.$get7($ch)) && !($this.$val$curAlt ^ $this.$this$0158.$inverted ^ $this.$val$cc.$contains0($ch)) ? 0 : 1;
 }
 function oktgg_GLTFSkin$readJson$3() {
     kji_Lambda.call(this);
-    this.$this$0160 = null;
+    this.$this$0159 = null;
 }
 function oktgg_GLTFSkin$readJson$3__init_(var_0) {
     var var_1 = new oktgg_GLTFSkin$readJson$3();
@@ -29768,10 +29803,10 @@ function oktgg_GLTFSkin$readJson$3_invoke(var$0, var$1) {
 }
 function oktgg_GLTFSkin$readJson$3_invoke0($this, $node) {
     kji_Intrinsics_checkNotNullParameter($node, $rt_s(47));
-    oktgg_GLTFSkin_getSkin($this.$this$0160).$setNode(oktgg_GLTFNode_getNode($node));
+    oktgg_GLTFSkin_getSkin($this.$this$0159).$setNode(oktgg_GLTFNode_getNode($node));
 }
 function oktgg_GLTFSkin$readJson$3__init_0(var$0, var$1) {
-    var$0.$this$0160 = var$1;
+    var$0.$this$0159 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_CharClass$4() {
@@ -29779,7 +29814,7 @@ function jur_CharClass$4() {
     a.$val$curAlt0 = 0;
     a.$val$nb = null;
     a.$val$cc0 = null;
-    a.$this$0161 = null;
+    a.$this$0160 = null;
 }
 function jur_CharClass$4__init_(var_0, var_1, var_2, var_3) {
     var var_4 = new jur_CharClass$4();
@@ -29787,7 +29822,7 @@ function jur_CharClass$4__init_(var_0, var_1, var_2, var_3) {
     return var_4;
 }
 function jur_CharClass$4__init_0($this, $this$0, var$2, var$3, var$4) {
-    $this.$this$0161 = $this$0;
+    $this.$this$0160 = $this$0;
     $this.$val$curAlt0 = var$2;
     $this.$val$nb = var$3;
     $this.$val$cc0 = var$4;
@@ -29799,7 +29834,7 @@ function jur_CharClass$4_contains($this, $ch) {
 function jur_CharClass$1() {
     var a = this; jur_AbstractCharClass.call(a);
     a.$val$cc1 = null;
-    a.$this$0162 = null;
+    a.$this$0161 = null;
 }
 function jur_CharClass$1__init_(var_0, var_1) {
     var var_2 = new jur_CharClass$1();
@@ -29807,7 +29842,7 @@ function jur_CharClass$1__init_(var_0, var_1) {
     return var_2;
 }
 function jur_CharClass$1__init_0($this, $this$0, var$2) {
-    $this.$this$0162 = $this$0;
+    $this.$this$0161 = $this$0;
     $this.$val$cc1 = var$2;
     jur_AbstractCharClass__init_0($this);
 }
@@ -29818,7 +29853,7 @@ function jur_CharClass$2() {
     var a = this; jur_AbstractCharClass.call(a);
     a.$val$curAlt1 = 0;
     a.$val$cc2 = null;
-    a.$this$0163 = null;
+    a.$this$0162 = null;
 }
 function jur_CharClass$2__init_(var_0, var_1, var_2) {
     var var_3 = new jur_CharClass$2();
@@ -29826,18 +29861,18 @@ function jur_CharClass$2__init_(var_0, var_1, var_2) {
     return var_3;
 }
 function jur_CharClass$2__init_0($this, $this$0, var$2, var$3) {
-    $this.$this$0163 = $this$0;
+    $this.$this$0162 = $this$0;
     $this.$val$curAlt1 = var$2;
     $this.$val$cc2 = var$3;
     jur_AbstractCharClass__init_0($this);
 }
 function jur_CharClass$2_contains($this, $ch) {
-    return !($this.$val$curAlt1 ^ $this.$this$0163.$bits.$get7($ch)) && !($this.$val$curAlt1 ^ $this.$this$0163.$inverted ^ $this.$val$cc2.$contains0($ch)) ? 1 : 0;
+    return !($this.$val$curAlt1 ^ $this.$this$0162.$bits.$get7($ch)) && !($this.$val$curAlt1 ^ $this.$this$0162.$inverted ^ $this.$val$cc2.$contains0($ch)) ? 1 : 0;
 }
 function jur_CharClass$7() {
     var a = this; jur_AbstractCharClass.call(a);
     a.$val$clazz = null;
-    a.$this$0164 = null;
+    a.$this$0163 = null;
 }
 function jur_CharClass$7__init_(var_0, var_1) {
     var var_2 = new jur_CharClass$7();
@@ -29845,7 +29880,7 @@ function jur_CharClass$7__init_(var_0, var_1) {
     return var_2;
 }
 function jur_CharClass$7__init_0($this, $this$0, var$2) {
-    $this.$this$0164 = $this$0;
+    $this.$this$0163 = $this$0;
     $this.$val$clazz = var$2;
     jur_AbstractCharClass__init_0($this);
 }
@@ -29856,7 +29891,7 @@ function jur_CharClass$8() {
     var a = this; jur_AbstractCharClass.call(a);
     a.$val$clazz0 = null;
     a.$val$curAlt2 = 0;
-    a.$this$0165 = null;
+    a.$this$0164 = null;
 }
 function jur_CharClass$8__init_(var_0, var_1, var_2) {
     var var_3 = new jur_CharClass$8();
@@ -29864,20 +29899,20 @@ function jur_CharClass$8__init_(var_0, var_1, var_2) {
     return var_3;
 }
 function jur_CharClass$8__init_0($this, $this$0, var$2, var$3) {
-    $this.$this$0165 = $this$0;
+    $this.$this$0164 = $this$0;
     $this.$val$clazz0 = var$2;
     $this.$val$curAlt2 = var$3;
     jur_AbstractCharClass__init_0($this);
 }
 function jur_CharClass$8_contains($this, $ch) {
-    return !$this.$val$clazz0.$contains0($ch) && !($this.$val$curAlt2 ^ $this.$this$0165.$bits.$get7($ch)) ? 1 : 0;
+    return !$this.$val$clazz0.$contains0($ch) && !($this.$val$curAlt2 ^ $this.$this$0164.$bits.$get7($ch)) ? 1 : 0;
 }
 function jur_CharClass$5() {
     var a = this; jur_AbstractCharClass.call(a);
     a.$val$curAlt3 = 0;
     a.$val$nb0 = null;
     a.$val$cc3 = null;
-    a.$this$0166 = null;
+    a.$this$0165 = null;
 }
 function jur_CharClass$5__init_(var_0, var_1, var_2, var_3) {
     var var_4 = new jur_CharClass$5();
@@ -29885,7 +29920,7 @@ function jur_CharClass$5__init_(var_0, var_1, var_2, var_3) {
     return var_4;
 }
 function jur_CharClass$5__init_0($this, $this$0, var$2, var$3, var$4) {
-    $this.$this$0166 = $this$0;
+    $this.$this$0165 = $this$0;
     $this.$val$curAlt3 = var$2;
     $this.$val$nb0 = var$3;
     $this.$val$cc3 = var$4;
@@ -29897,7 +29932,7 @@ function jur_CharClass$5_contains($this, $ch) {
 function jur_CharClass$6() {
     var a = this; jur_AbstractCharClass.call(a);
     a.$val$clazz1 = null;
-    a.$this$0167 = null;
+    a.$this$0166 = null;
 }
 function jur_CharClass$6__init_(var_0, var_1) {
     var var_2 = new jur_CharClass$6();
@@ -29905,7 +29940,7 @@ function jur_CharClass$6__init_(var_0, var_1) {
     return var_2;
 }
 function jur_CharClass$6__init_0($this, $this$0, var$2) {
-    $this.$this$0167 = $this$0;
+    $this.$this$0166 = $this$0;
     $this.$val$clazz1 = var$2;
     jur_AbstractCharClass__init_0($this);
 }
@@ -29957,7 +29992,7 @@ function jur_CharClass$9() {
     var a = this; jur_AbstractCharClass.call(a);
     a.$val$clazz2 = null;
     a.$val$curAlt4 = 0;
-    a.$this$0168 = null;
+    a.$this$0167 = null;
 }
 function jur_CharClass$9__init_(var_0, var_1, var_2) {
     var var_3 = new jur_CharClass$9();
@@ -29965,13 +30000,13 @@ function jur_CharClass$9__init_(var_0, var_1, var_2) {
     return var_3;
 }
 function jur_CharClass$9__init_0($this, $this$0, var$2, var$3) {
-    $this.$this$0168 = $this$0;
+    $this.$this$0167 = $this$0;
     $this.$val$clazz2 = var$2;
     $this.$val$curAlt4 = var$3;
     jur_AbstractCharClass__init_0($this);
 }
 function jur_CharClass$9_contains($this, $ch) {
-    return !$this.$val$clazz2.$contains0($ch) && !($this.$val$curAlt4 ^ $this.$this$0168.$bits.$get7($ch)) ? 0 : 1;
+    return !$this.$val$clazz2.$contains0($ch) && !($this.$val$curAlt4 ^ $this.$this$0167.$bits.$get7($ch)) ? 0 : 1;
 }
 function jl_Character() {
     jl_Object.call(this);
@@ -30619,10 +30654,10 @@ function ck_KotmeJsMain$main$location$1__init_(var_0) {
 }
 function ck_KotmeJsMain$main$location$1_evalResult($this, $console, $errors) {
     var var$3, var$4;
-    kji_Intrinsics_checkNotNullParameter($console, $rt_s(523));
-    kji_Intrinsics_checkNotNullParameter($errors, $rt_s(524));
+    kji_Intrinsics_checkNotNullParameter($console, $rt_s(524));
+    kji_Intrinsics_checkNotNullParameter($errors, $rt_s(525));
     var$3 = $this.$$consoleArea;
-    var$4 = $rt_ustr(jl_StringBuilder__init_().$append($console).$append($rt_s(787)).$append($errors).$toString());
+    var$4 = $rt_ustr(jl_StringBuilder__init_().$append($console).$append($rt_s(791)).$append($errors).$toString());
     var$3.value = var$4;
 }
 function ck_KotmeJsMain$main$location$1__init_0($this, $$captured_local_variable$0) {
@@ -30673,7 +30708,7 @@ function oktsn_OperationNode$Companion__init_2($this, $$constructor_marker) {
 }
 function oktgg_GLTFBufferView$readJson$2() {
     kji_Lambda.call(this);
-    this.$this$0169 = null;
+    this.$this$0168 = null;
 }
 function oktgg_GLTFBufferView$readJson$2__init_(var_0) {
     var var_1 = new oktgg_GLTFBufferView$readJson$2();
@@ -30686,15 +30721,15 @@ function oktgg_GLTFBufferView$readJson$2_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFBufferView$readJson$2_invoke0($this, $it) {
-    oktgg_GLTFBufferView_setByteStride($this.$this$0169, $it);
+    oktgg_GLTFBufferView_setByteStride($this.$this$0168, $it);
 }
 function oktgg_GLTFBufferView$readJson$2__init_0(var$0, var$1) {
-    var$0.$this$0169 = var$1;
+    var$0.$this$0168 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFBufferView$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$0170 = null;
+    this.$this$0169 = null;
 }
 function oktgg_GLTFBufferView$readJson$1__init_(var_0) {
     var var_1 = new oktgg_GLTFBufferView$readJson$1();
@@ -30707,15 +30742,15 @@ function oktgg_GLTFBufferView$readJson$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFBufferView$readJson$1_invoke0($this, $it) {
-    oktgg_GLTFBufferView_setByteOffset($this.$this$0170, $it);
+    oktgg_GLTFBufferView_setByteOffset($this.$this$0169, $it);
 }
 function oktgg_GLTFBufferView$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$0170 = var$1;
+    var$0.$this$0169 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFBufferView$readJson$3() {
     kji_Lambda.call(this);
-    this.$this$0171 = null;
+    this.$this$0170 = null;
 }
 function oktgg_GLTFBufferView$readJson$3__init_(var_0) {
     var var_1 = new oktgg_GLTFBufferView$readJson$3();
@@ -30728,15 +30763,15 @@ function oktgg_GLTFBufferView$readJson$3_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFBufferView$readJson$3_invoke0($this, $it) {
-    oktgg_GLTFBufferView_setTarget($this.$this$0171, $it);
+    oktgg_GLTFBufferView_setTarget($this.$this$0170, $it);
 }
 function oktgg_GLTFBufferView$readJson$3__init_0(var$0, var$1) {
-    var$0.$this$0171 = var$1;
+    var$0.$this$0170 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_AbstractCharClass$LazyJavaMirrored$1() {
     jur_AbstractCharClass.call(this);
-    this.$this$0172 = null;
+    this.$this$0171 = null;
 }
 function jur_AbstractCharClass$LazyJavaMirrored$1__init_(var_0) {
     var var_1 = new jur_AbstractCharClass$LazyJavaMirrored$1();
@@ -30744,7 +30779,7 @@ function jur_AbstractCharClass$LazyJavaMirrored$1__init_(var_0) {
     return var_1;
 }
 function jur_AbstractCharClass$LazyJavaMirrored$1__init_0($this, $this$0) {
-    $this.$this$0172 = $this$0;
+    $this.$this$0171 = $this$0;
     jur_AbstractCharClass__init_0($this);
 }
 function jur_AbstractCharClass$LazyJavaMirrored$1_contains($this, $ch) {
@@ -30827,8 +30862,8 @@ function oktgg_GLTFAnimation_readJson($this, $json) {
     $animationSamplers = ju_ArrayList__init_();
     oktgg_GLTFAnimation_setName($this, $json.$string2($rt_s(12), $rt_s(6)));
     $this.$anim1.$setName(oktgg_GLTFAnimation_getName($this));
-    $json.$array($rt_s(788), oktgg_GLTFAnimation$readJson$1__init_($animationSamplers));
-    $json.$array($rt_s(789), oktgg_GLTFAnimation$readJson$2__init_($this, $animationSamplers));
+    $json.$array($rt_s(792), oktgg_GLTFAnimation$readJson$1__init_($animationSamplers));
+    $json.$array($rt_s(793), oktgg_GLTFAnimation$readJson$2__init_($this, $animationSamplers));
     oktgg_GLTFAnimation_getGltf($this).$getAnimations0().$ready(oktgg_GLTFAnimation_getElementIndex($this));
 }
 function oktgg_GLTFAnimation_getGltf($this) {
@@ -30843,7 +30878,7 @@ function oktgg_GLTFAnimation_getAnim($this) {
 function oktgg_GLTFAnimation__init_1($this, $gltf, $elementIndex, $anim) {
     oktgg_GLTFAnimation_$callClinit();
     kji_Intrinsics_checkNotNullParameter($gltf, $rt_s(29));
-    kji_Intrinsics_checkNotNullParameter($anim, $rt_s(790));
+    kji_Intrinsics_checkNotNullParameter($anim, $rt_s(794));
     jl_Object__init_0($this);
     $this.$gltf7 = $gltf;
     $this.$elementIndex7 = $elementIndex;
@@ -30954,7 +30989,7 @@ function oktgg_GLTFTexture_readJson($this, $json) {
         $sWrap.$element1 = 10497;
         $tWrap = kji_Ref$IntRef__init_();
         $tWrap.$element1 = 10497;
-        $json.$int($rt_s(791), oktgg_GLTFTexture$readJson$1__init_($this, $minFilter, $magFilter, $sWrap, $tWrap));
+        $json.$int($rt_s(795), oktgg_GLTFTexture$readJson$1__init_($this, $minFilter, $magFilter, $sWrap, $tWrap));
         switch ($minFilter.$element1) {
             case 9984:
             case 9985:
@@ -30984,7 +31019,7 @@ function oktgg_GLTFTexture_getTexture($this) {
 }
 function oktgg_GLTFTexture__init_1($this, $gltf, $elementIndex, $texture, $name) {
     kji_Intrinsics_checkNotNullParameter($gltf, $rt_s(29));
-    kji_Intrinsics_checkNotNullParameter($texture, $rt_s(638));
+    kji_Intrinsics_checkNotNullParameter($texture, $rt_s(641));
     kji_Intrinsics_checkNotNullParameter($name, $rt_s(12));
     jl_Object__init_0($this);
     $this.$gltf8 = $gltf;
@@ -31227,7 +31262,7 @@ function ju_ArrayList_checkIndexForAdd($this, $index) {
 }
 function oktgg_GLTF$readJson$16$1() {
     kji_Lambda.call(this);
-    this.$this$0173 = null;
+    this.$this$0172 = null;
 }
 function oktgg_GLTF$readJson$16$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$16$1();
@@ -31241,7 +31276,7 @@ function oktgg_GLTF$readJson$16$1_invoke(var$0) {
 }
 function oktgg_GLTF$readJson$16$1_invoke0($this) {
     var $$this$forEach$iv, var$2, $element$iv, $it;
-    $$this$forEach$iv = $this.$this$0173.$this$0174.$getMaterials();
+    $$this$forEach$iv = $this.$this$0172.$this$0173.$getMaterials();
     var$2 = $$this$forEach$iv.$iterator();
     while (var$2.$hasNext()) {
         $element$iv = var$2.$next();
@@ -31250,7 +31285,7 @@ function oktgg_GLTF$readJson$16$1_invoke0($this) {
     }
 }
 function oktgg_GLTF$readJson$16$1__init_0(var$0, var$1) {
-    var$0.$this$0173 = var$1;
+    var$0.$this$0172 = var$1;
     kji_Lambda__init_0(var$0, 0);
 }
 function jur_RelAltGroupQuantifierSet() {
@@ -31309,7 +31344,7 @@ function oktgg_GLTFConf$configureMaterials$1__clinit_() {
 function okta_RunAction() {
     var a = this; jl_Object.call(a);
     a.$isRunning1 = 0;
-    a.$call0 = null;
+    a.$call = null;
 }
 function okta_RunAction__init_(var_0) {
     var var_1 = new okta_RunAction();
@@ -31327,19 +31362,19 @@ function okta_RunAction_reset($this) {
 }
 function okta_RunAction_update($this, $delta) {
     if (okta_RunAction_isRunning($this)) {
-        $this.$call0.$invoke21();
+        $this.$call.$invoke21();
         okta_RunAction_setRunning($this, 0);
     }
 }
 function okta_RunAction__init_0($this, $call) {
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     jl_Object__init_0($this);
-    $this.$call0 = $call;
+    $this.$call = $call;
     $this.$isRunning1 = 1;
 }
 function oktgg_IGLTFMaterial$readJson$10$1() {
     kji_Lambda.call(this);
-    this.$this$0175 = null;
+    this.$this$0174 = null;
 }
 function oktgg_IGLTFMaterial$readJson$10$1__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$10$1();
@@ -31352,10 +31387,10 @@ function oktgg_IGLTFMaterial$readJson$10$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_IGLTFMaterial$readJson$10$1_invoke0($this, $it) {
-    $this.$this$0175.$this$0176.$setEmissiveTextureUV($it);
+    $this.$this$0174.$this$0175.$setEmissiveTextureUV($it);
 }
 function oktgg_IGLTFMaterial$readJson$10$1__init_0(var$0, var$1) {
-    var$0.$this$0175 = var$1;
+    var$0.$this$0174 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_FSet$PossessiveFSet() {
@@ -31377,7 +31412,7 @@ function jur_FSet$PossessiveFSet_hasConsumed($this, $mr) {
 }
 function oktgg_GLTFAccessor$readJson$5() {
     kji_Lambda.call(this);
-    this.$this$0177 = null;
+    this.$this$0176 = null;
 }
 function oktgg_GLTFAccessor$readJson$5__init_(var_0) {
     var var_1 = new oktgg_GLTFAccessor$readJson$5();
@@ -31392,7 +31427,7 @@ function oktgg_GLTFAccessor$readJson$5_invoke(var$0, var$1) {
 function oktgg_GLTFAccessor$readJson$5_invoke0($this, $$this$array) {
     var var$2, var$3, var$4, var$5;
     kji_Intrinsics_checkNotNullParameter($$this$array, $rt_s(3));
-    var$2 = $this.$this$0177;
+    var$2 = $this.$this$0176;
     var$3 = $$this$array.$getSize();
     var$4 = $rt_createFloatArray(var$3);
     var$5 = 0;
@@ -31403,7 +31438,7 @@ function oktgg_GLTFAccessor$readJson$5_invoke0($this, $$this$array) {
     oktgg_GLTFAccessor_setMin(var$2, var$4);
 }
 function oktgg_GLTFAccessor$readJson$5__init_0(var$0, var$1) {
-    var$0.$this$0177 = var$1;
+    var$0.$this$0176 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jur_PosCompositeGroupQuantifierSet() {
@@ -31440,7 +31475,7 @@ function jur_PosCompositeGroupQuantifierSet_matches($this, $stringIndex, $testSt
 }
 function oktgl_DirectionalLight$renderShadowMaps$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0178 = null;
+    a.$this$0177 = null;
     a.$$i0 = 0;
     a.$$camFarSubNear = 0.0;
     a.$$sceneCameraFrustumPoints = null;
@@ -31463,7 +31498,7 @@ function oktgl_DirectionalLight$renderShadowMaps$1_invoke0($this, $$this$render)
     oktg_GL_glClear(oktg_GL_INSTANCE, 16640);
     oktgl_DirectionalLight_$callClinit();
     oktgl_DirectionalLight$Companion_getCentroid(oktgl_DirectionalLight_Companion).$set13(0.0, 0.0, 0.0);
-    $alphaNear = !$this.$$i0 ? 0.0 : oktgl_DirectionalLight_getShadowCascadeEnd($this.$this$0178).data[$this.$$i0 - 1 | 0].$floatValue() / $this.$$camFarSubNear;
+    $alphaNear = !$this.$$i0 ? 0.0 : oktgl_DirectionalLight_getShadowCascadeEnd($this.$this$0177).data[$this.$$i0 - 1 | 0].$floatValue() / $this.$$camFarSubNear;
     $j = 0;
     while ($j < 4) {
         $p = oktgl_DirectionalLight$Companion_getSubFrustumPoints(oktgl_DirectionalLight_Companion).data[$j];
@@ -31471,7 +31506,7 @@ function oktgl_DirectionalLight$renderShadowMaps$1_invoke0($this, $$this$render)
         oktgl_DirectionalLight$Companion_getCentroid(oktgl_DirectionalLight_Companion).$add4($p);
         $j = $j + 1 | 0;
     }
-    $alphaFar = oktgl_DirectionalLight_getShadowCascadeEnd($this.$this$0178).data[$this.$$i0].$floatValue() / $this.$$camFarSubNear;
+    $alphaFar = oktgl_DirectionalLight_getShadowCascadeEnd($this.$this$0177).data[$this.$$i0].$floatValue() / $this.$$camFarSubNear;
     $j = 0;
     while ($j < 4) {
         var$6 = oktgl_DirectionalLight$Companion_getSubFrustumPoints(oktgl_DirectionalLight_Companion).data;
@@ -31490,7 +31525,7 @@ function oktgl_DirectionalLight$renderShadowMaps$1_invoke0($this, $$this$render)
     $maxZ = 1.401298464324817E-45;
     var$14 = oktgl_DirectionalLight$Companion_getLightViewTmp(oktgl_DirectionalLight_Companion);
     var$15 = oktgl_DirectionalLight$Companion_getCentroid(oktgl_DirectionalLight_Companion);
-    var$16 = oktgl_DirectionalLight_getDirection($this.$this$0178);
+    var$16 = oktgl_DirectionalLight_getDirection($this.$this$0177);
     oktm_MATH_$callClinit();
     oktm_Mat4_setToLook(var$14, var$15, var$16, oktm_MATH_getY(oktm_MATH_INSTANCE));
     $j = 0;
@@ -31504,11 +31539,11 @@ function oktgl_DirectionalLight$renderShadowMaps$1_invoke0($this, $$this$render)
         $maxZ = jl_Math_max0($maxZ, $vW.$getZ());
         $j = $j + 1 | 0;
     }
-    $lightMat = oktgl_DirectionalLight_getViewProjectionMatrices($this.$this$0178).data[$this.$$i0];
-    $far = $maxZ - $minZ + oktgl_DirectionalLight_getLightPositionOffset($this.$this$0178);
+    $lightMat = oktgl_DirectionalLight_getViewProjectionMatrices($this.$this$0177).data[$this.$$i0];
+    $far = $maxZ - $minZ + oktgl_DirectionalLight_getLightPositionOffset($this.$this$0177);
     $lightMat.$setToOrtho($minX, $maxX, $minY, $maxY, 0.0, $far);
-    oktgl_DirectionalLight$Companion_getLightPos(oktgl_DirectionalLight_Companion).$set2(oktgl_DirectionalLight_getDirection($this.$this$0178)).$scl( -$maxZ - oktgl_DirectionalLight_getLightPositionOffset($this.$this$0178)).$add4(oktgl_DirectionalLight$Companion_getCentroid(oktgl_DirectionalLight_Companion));
-    oktm_Mat4_setToLook(oktgl_DirectionalLight$Companion_getLightViewTmp(oktgl_DirectionalLight_Companion), oktgl_DirectionalLight$Companion_getLightPos(oktgl_DirectionalLight_Companion), oktgl_DirectionalLight_getDirection($this.$this$0178), oktm_MATH_getY(oktm_MATH_INSTANCE));
+    oktgl_DirectionalLight$Companion_getLightPos(oktgl_DirectionalLight_Companion).$set2(oktgl_DirectionalLight_getDirection($this.$this$0177)).$scl( -$maxZ - oktgl_DirectionalLight_getLightPositionOffset($this.$this$0177)).$add4(oktgl_DirectionalLight$Companion_getCentroid(oktgl_DirectionalLight_Companion));
+    oktm_Mat4_setToLook(oktgl_DirectionalLight$Companion_getLightViewTmp(oktgl_DirectionalLight_Companion), oktgl_DirectionalLight$Companion_getLightPos(oktgl_DirectionalLight_Companion), oktgl_DirectionalLight_getDirection($this.$this$0177), oktm_MATH_getY(oktm_MATH_INSTANCE));
     oktm_IMat4$DefaultImpls_mul$default($lightMat, oktgl_DirectionalLight$Companion_getLightViewTmp(oktgl_DirectionalLight_Companion), null, 2, null);
     oktgc_Camera_setFar(oktgl_DirectionalLight$Companion_getTmpCam(oktgl_DirectionalLight_Companion), $far);
     oktgc_Camera_getPosition(oktgl_DirectionalLight$Companion_getTmpCam(oktgl_DirectionalLight_Companion)).$set2(oktgl_DirectionalLight$Companion_getLightPos(oktgl_DirectionalLight_Companion));
@@ -31518,7 +31553,7 @@ function oktgl_DirectionalLight$renderShadowMaps$1_invoke0($this, $$this$render)
     var$14.$render(oktg_ShaderChannel_getDepth(oktg_ShaderChannel_INSTANCE));
 }
 function oktgl_DirectionalLight$renderShadowMaps$1__init_0(var$0, var$1, var$2, var$3, var$4, var$5) {
-    var$0.$this$0178 = var$1;
+    var$0.$this$0177 = var$1;
     var$0.$$i0 = var$2;
     var$0.$$camFarSubNear = var$3;
     var$0.$$sceneCameraFrustumPoints = var$4;
@@ -31527,7 +31562,7 @@ function oktgl_DirectionalLight$renderShadowMaps$1__init_0(var$0, var$1, var$2, 
 }
 function oktgg_GLTFAccessor$readJson$6() {
     kji_Lambda.call(this);
-    this.$this$0179 = null;
+    this.$this$0178 = null;
 }
 function oktgg_GLTFAccessor$readJson$6__init_(var_0) {
     var var_1 = new oktgg_GLTFAccessor$readJson$6();
@@ -31542,18 +31577,18 @@ function oktgg_GLTFAccessor$readJson$6_invoke(var$0, var$1) {
 function oktgg_GLTFAccessor$readJson$6_invoke0($this, $$this$get) {
     var var$2;
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
-    oktgg_GLTFAccessor_setSparse($this.$this$0179, oktgg_GLTFSparse__init_1(0, 1, null));
-    var$2 = oktgg_GLTFAccessor_getSparse($this.$this$0179);
+    oktgg_GLTFAccessor_setSparse($this.$this$0178, oktgg_GLTFSparse__init_1(0, 1, null));
+    var$2 = oktgg_GLTFAccessor_getSparse($this.$this$0178);
     if (var$2 !== null)
         oktgg_GLTFSparse_readJson(var$2, $$this$get);
 }
 function oktgg_GLTFAccessor$readJson$6__init_0(var$0, var$1) {
-    var$0.$this$0179 = var$1;
+    var$0.$this$0178 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFAccessor$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$0180 = null;
+    this.$this$0179 = null;
 }
 function oktgg_GLTFAccessor$readJson$1__init_(var_0) {
     var var_1 = new oktgg_GLTFAccessor$readJson$1();
@@ -31566,15 +31601,15 @@ function oktgg_GLTFAccessor$readJson$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFAccessor$readJson$1_invoke0($this, $it) {
-    oktgg_GLTFAccessor_setBufferView($this.$this$0180, $it);
+    oktgg_GLTFAccessor_setBufferView($this.$this$0179, $it);
 }
 function oktgg_GLTFAccessor$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$0180 = var$1;
+    var$0.$this$0179 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFAccessor$readJson$2() {
     kji_Lambda.call(this);
-    this.$this$0181 = null;
+    this.$this$0180 = null;
 }
 function oktgg_GLTFAccessor$readJson$2__init_(var_0) {
     var var_1 = new oktgg_GLTFAccessor$readJson$2();
@@ -31587,15 +31622,15 @@ function oktgg_GLTFAccessor$readJson$2_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFAccessor$readJson$2_invoke0($this, $it) {
-    oktgg_GLTFAccessor_setByteOffset($this.$this$0181, $it);
+    oktgg_GLTFAccessor_setByteOffset($this.$this$0180, $it);
 }
 function oktgg_GLTFAccessor$readJson$2__init_0(var$0, var$1) {
-    var$0.$this$0181 = var$1;
+    var$0.$this$0180 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFAccessor$readJson$3() {
     kji_Lambda.call(this);
-    this.$this$0182 = null;
+    this.$this$0181 = null;
 }
 function oktgg_GLTFAccessor$readJson$3__init_(var_0) {
     var var_1 = new oktgg_GLTFAccessor$readJson$3();
@@ -31608,15 +31643,15 @@ function oktgg_GLTFAccessor$readJson$3_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFAccessor$readJson$3_invoke0($this, $it) {
-    oktgg_GLTFAccessor_setNormalized($this.$this$0182, $it);
+    oktgg_GLTFAccessor_setNormalized($this.$this$0181, $it);
 }
 function oktgg_GLTFAccessor$readJson$3__init_0(var$0, var$1) {
-    var$0.$this$0182 = var$1;
+    var$0.$this$0181 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFAccessor$readJson$4() {
     kji_Lambda.call(this);
-    this.$this$0183 = null;
+    this.$this$0182 = null;
 }
 function oktgg_GLTFAccessor$readJson$4__init_(var_0) {
     var var_1 = new oktgg_GLTFAccessor$readJson$4();
@@ -31631,7 +31666,7 @@ function oktgg_GLTFAccessor$readJson$4_invoke(var$0, var$1) {
 function oktgg_GLTFAccessor$readJson$4_invoke0($this, $$this$array) {
     var var$2, var$3, var$4, var$5;
     kji_Intrinsics_checkNotNullParameter($$this$array, $rt_s(3));
-    var$2 = $this.$this$0183;
+    var$2 = $this.$this$0182;
     var$3 = $$this$array.$getSize();
     var$4 = $rt_createFloatArray(var$3);
     var$5 = 0;
@@ -31642,7 +31677,7 @@ function oktgg_GLTFAccessor$readJson$4_invoke0($this, $$this$array) {
     oktgg_GLTFAccessor_setMax(var$2, var$4);
 }
 function oktgg_GLTFAccessor$readJson$4__init_0(var$0, var$1) {
-    var$0.$this$0183 = var$1;
+    var$0.$this$0182 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktt_TvmUInt8Array$Companion() {
@@ -31698,12 +31733,12 @@ function oktsn_OperationNode_setVarying($this, $_set___) {
 }
 function oktsn_OperationNode_setArgs($this, $args) {
     var $i, var$3, var$4, $i_0;
-    kji_Intrinsics_checkNotNullParameter($args, $rt_s(761));
+    kji_Intrinsics_checkNotNullParameter($args, $rt_s(764));
     oktsn_ShaderNode_getInputInternal($this).$clear();
     $i = 0;
     var$3 = $args.$size();
     while ($i < var$3) {
-        var$4 = jl_StringBuilder__init_().$append($rt_s(792));
+        var$4 = jl_StringBuilder__init_().$append($rt_s(796));
         $i_0 = $i + 1 | 0;
         $this.$setInput(var$4.$append1($i_0).$toString(), $args.$get1($i));
         $i = $i_0;
@@ -31721,22 +31756,22 @@ function oktsn_OperationNode_executionVert($this, $out) {
             $f = kt_StringsKt__StringsJVMKt_replace$default($f, $element$iv.$getKey(), $element$iv.$getValue0().$getRef0(), 0, 4, null);
         }
         if (!$this.$isVarying)
-            $out.$append(jl_StringBuilder__init_().$append($this.$result1.$getTypedRef0()).$append($rt_s(518)).$append($f).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($this.$result1.$getTypedRef0()).$append($rt_s(519)).$append($f).$append($rt_s(286)).$toString());
         else
-            $out.$append(jl_StringBuilder__init_().$append($this.$result1.$getRef0()).$append($rt_s(518)).$append($f).$append($rt_s(286)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($this.$result1.$getRef0()).$append($rt_s(519)).$append($f).$append($rt_s(286)).$toString());
     }
 }
 function oktsn_OperationNode_declarationVert($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     oktsn_ShaderNode_declarationVert($this, $out);
     if ($this.$isVarying)
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(793)).$append($this.$result1.$getTypedRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(797)).$append($this.$result1.$getTypedRef0()).$append($rt_s(286)).$toString());
 }
 function oktsn_OperationNode_declarationFrag($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     oktsn_ShaderNode_declarationFrag($this, $out);
     if ($this.$isVarying)
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(793)).$append($this.$result1.$getTypedRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(797)).$append($this.$result1.$getTypedRef0()).$append($rt_s(286)).$toString());
 }
 function oktsn_OperationNode_executionFrag($this, $out) {
     var $f, $$this$forEach$iv, var$4, $element$iv;
@@ -31749,17 +31784,17 @@ function oktsn_OperationNode_executionFrag($this, $out) {
             $element$iv = var$4.$next();
             $f = kt_StringsKt__StringsJVMKt_replace$default($f, $element$iv.$getKey(), $element$iv.$getValue0().$getRef0(), 0, 4, null);
         }
-        $out.$append(jl_StringBuilder__init_().$append($this.$result1.$getTypedRef0()).$append($rt_s(518)).$append($f).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($this.$result1.$getTypedRef0()).$append($rt_s(519)).$append($f).$append($rt_s(286)).$toString());
     }
 }
 function oktsn_OperationNode__init_0($this, $args, $function, $resultType) {
     var var$4;
     oktsn_OperationNode_$callClinit();
-    kji_Intrinsics_checkNotNullParameter($args, $rt_s(761));
-    kji_Intrinsics_checkNotNullParameter($function, $rt_s(629));
+    kji_Intrinsics_checkNotNullParameter($args, $rt_s(764));
+    kji_Intrinsics_checkNotNullParameter($function, $rt_s(632));
     oktsn_ShaderNode__init_0($this);
     $this.$function1 = $function;
-    var$4 = oktsn_GLSLValue__init_($rt_s(794), $resultType);
+    var$4 = oktsn_GLSLValue__init_($rt_s(798), $resultType);
     oktsn_ShaderNode_defOut($this, var$4);
     $this.$result1 = var$4;
     $this.$isFragment = 1;
@@ -31771,7 +31806,7 @@ function oktsn_OperationNode__init_2(var$0, var$1, var$2, var$3, var$4, var$5) {
     if (var$4 & 1)
         var$1 = ju_ArrayList__init_();
     if (var$4 & 2)
-        var$2 = $rt_s(795);
+        var$2 = $rt_s(799);
     if (var$4 & 4) {
         var$5 = kc_CollectionsKt___CollectionsKt_getOrNull(var$1, 0);
         var$3 = var$5 === null ? 3 : var$5.$getType();
@@ -31784,7 +31819,7 @@ function oktsn_OperationNode__clinit_() {
 }
 function jur_AbstractCharClass$LazyJavaDigit$1() {
     jur_AbstractCharClass.call(this);
-    this.$this$0184 = null;
+    this.$this$0183 = null;
 }
 function jur_AbstractCharClass$LazyJavaDigit$1__init_(var_0) {
     var var_1 = new jur_AbstractCharClass$LazyJavaDigit$1();
@@ -31792,7 +31827,7 @@ function jur_AbstractCharClass$LazyJavaDigit$1__init_(var_0) {
     return var_1;
 }
 function jur_AbstractCharClass$LazyJavaDigit$1__init_0($this, $this$0) {
-    $this.$this$0184 = $this$0;
+    $this.$this$0183 = $this$0;
     jur_AbstractCharClass__init_0($this);
 }
 function jur_AbstractCharClass$LazyJavaDigit$1_contains($this, $ch) {
@@ -31800,7 +31835,7 @@ function jur_AbstractCharClass$LazyJavaDigit$1_contains($this, $ch) {
 }
 function oktgg_GLTF$readJson$17() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0185 = null;
+    a.$this$0184 = null;
     a.$$skinnedNodes = null;
 }
 function oktgg_GLTF$readJson$17__init_(var_0, var_1) {
@@ -31816,9 +31851,9 @@ function oktgg_GLTF$readJson$17_invoke(var$0) {
 function oktgg_GLTF$readJson$17_invoke0($this) {
     var $i, var$2, $primitives, $j, var$5, $$this$forEach$iv, var$7, $element$iv, $it;
     $i = 0;
-    var$2 = $this.$this$0185.$getMeshes1().$size();
+    var$2 = $this.$this$0184.$getMeshes1().$size();
     while ($i < var$2) {
-        $primitives = oktgg_GLTFMesh_getPrimitives(oktgg_GLTFArray_get($this.$this$0185.$getMeshes1(), $i));
+        $primitives = oktgg_GLTFMesh_getPrimitives(oktgg_GLTFArray_get($this.$this$0184.$getMeshes1(), $i));
         $j = 0;
         var$5 = $primitives.$size();
         while ($j < var$5) {
@@ -31829,7 +31864,7 @@ function oktgg_GLTF$readJson$17_invoke0($this) {
         $i = $i + 1 | 0;
     }
     if ($this.$$skinnedNodes.$isEmpty()) {
-        $$this$forEach$iv = $this.$this$0185.$getMaterials();
+        $$this$forEach$iv = $this.$this$0184.$getMaterials();
         var$7 = $$this$forEach$iv.$iterator();
         while (var$7.$hasNext()) {
             $element$iv = var$7.$next();
@@ -31839,7 +31874,7 @@ function oktgg_GLTF$readJson$17_invoke0($this) {
     }
 }
 function oktgg_GLTF$readJson$17__init_0(var$0, var$1, var$2) {
-    var$0.$this$0185 = var$1;
+    var$0.$this$0184 = var$1;
     var$0.$$skinnedNodes = var$2;
     kji_Lambda__init_0(var$0, 0);
 }
@@ -31862,7 +31897,7 @@ function oktgn_ITransformNode$DefaultImpls_updateTransform($$this, $recursive) {
 }
 function oktgn_ITransformNode$DefaultImpls_updateTransform$default(var$1, var$2, var$3, var$4) {
     if (var$4 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(796)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(800)));
     if (var$3 & 1)
         var$2 = 1;
     var$1.$updateTransform1(var$2);
@@ -31935,13 +31970,13 @@ function oktt_TvmGL$RenderBufferWrap_getGl0(var$0) {
     return oktt_TvmGL$RenderBufferWrap_getGl(var$0);
 }
 function oktt_TvmGL$RenderBufferWrap__init_0($this, $gl) {
-    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(716));
+    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(719));
     oktt_TvmGL$GLObject__init_0($this);
     $this.$gl4 = $gl;
 }
 function oktgg_GLTF$readJson$14() {
     kji_Lambda.call(this);
-    this.$this$0152 = null;
+    this.$this$0151 = null;
 }
 function oktgg_GLTF$readJson$14__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$14();
@@ -31958,7 +31993,7 @@ function oktgg_GLTF$readJson$14_invoke0($this, $$this$array) {
     $$this$array.$objs(oktgg_GLTF$readJson$14$1__init_($this));
 }
 function oktgg_GLTF$readJson$14__init_0(var$0, var$1) {
-    var$0.$this$0152 = var$1;
+    var$0.$this$0151 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function k_Pair() {
@@ -32012,7 +32047,7 @@ function k_Pair_equals(var$0, var$1) {
 }
 function oktgg_GLTF$readJson$15() {
     kji_Lambda.call(this);
-    this.$this$0186 = null;
+    this.$this$0185 = null;
 }
 function oktgg_GLTF$readJson$15__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$15();
@@ -32026,13 +32061,13 @@ function oktgg_GLTF$readJson$15_invoke(var$0, var$1) {
 }
 function oktgg_GLTF$readJson$15_invoke0($this, $it) {
     var var$2, var$3;
-    $this.$this$0186.$setMainSceneIndex($it);
-    var$2 = $this.$this$0186;
-    var$3 = kc_CollectionsKt___CollectionsKt_getOrNull($this.$this$0186.$getScenes0(), $it);
+    $this.$this$0185.$setMainSceneIndex($it);
+    var$2 = $this.$this$0185;
+    var$3 = kc_CollectionsKt___CollectionsKt_getOrNull($this.$this$0185.$getScenes0(), $it);
     var$2.$setScene(var$3 === null ? null : oktgg_GLTFScene_getScene(var$3));
 }
 function oktgg_GLTF$readJson$15__init_0(var$0, var$1) {
-    var$0.$this$0186 = var$1;
+    var$0.$this$0185 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function okti_ITexture2D() {
@@ -32163,7 +32198,7 @@ function okti_Texture2D_access$checkMipmap($$this, $minFilter) {
 }
 function oktgg_GLTF$readJson$16() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0174 = null;
+    a.$this$0173 = null;
     a.$$loadedSkinnedNum = null;
     a.$$skinnedNodes0 = null;
 }
@@ -32183,17 +32218,17 @@ function oktgg_GLTF$readJson$16_invoke0($this, $it) {
     var$2 = $this.$$loadedSkinnedNum;
     var$2.$element1 = var$2.$element1 + 1 | 0;
     if ($this.$$loadedSkinnedNum.$element1 == $this.$$skinnedNodes0.$size())
-        $this.$this$0174.$runGLCall(oktgg_GLTF$readJson$16$1__init_($this));
+        $this.$this$0173.$runGLCall(oktgg_GLTF$readJson$16$1__init_($this));
 }
 function oktgg_GLTF$readJson$16__init_0(var$0, var$1, var$2, var$3) {
-    var$0.$this$0174 = var$1;
+    var$0.$this$0173 = var$1;
     var$0.$$loadedSkinnedNum = var$2;
     var$0.$$skinnedNodes0 = var$3;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFSparse$readJson$2() {
     kji_Lambda.call(this);
-    this.$this$0187 = null;
+    this.$this$0186 = null;
 }
 function oktgg_GLTFSparse$readJson$2__init_(var_0) {
     var var_1 = new oktgg_GLTFSparse$readJson$2();
@@ -32207,15 +32242,15 @@ function oktgg_GLTFSparse$readJson$2_invoke(var$0, var$1) {
 }
 function oktgg_GLTFSparse$readJson$2_invoke0($this, $$this$get) {
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
-    oktgg_GLTFSparse$Values_readJson(oktgg_GLTFSparse_getValues($this.$this$0187), $$this$get);
+    oktgg_GLTFSparse$Values_readJson(oktgg_GLTFSparse_getValues($this.$this$0186), $$this$get);
 }
 function oktgg_GLTFSparse$readJson$2__init_0(var$0, var$1) {
-    var$0.$this$0187 = var$1;
+    var$0.$this$0186 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFSparse$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$0188 = null;
+    this.$this$0187 = null;
 }
 function oktgg_GLTFSparse$readJson$1__init_(var_0) {
     var var_1 = new oktgg_GLTFSparse$readJson$1();
@@ -32229,10 +32264,10 @@ function oktgg_GLTFSparse$readJson$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFSparse$readJson$1_invoke0($this, $$this$get) {
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
-    oktgg_GLTFSparse$Indices_readJson(oktgg_GLTFSparse_getIndices($this.$this$0188), $$this$get);
+    oktgg_GLTFSparse$Indices_readJson(oktgg_GLTFSparse_getIndices($this.$this$0187), $$this$get);
 }
 function oktgg_GLTFSparse$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$0188 = var$1;
+    var$0.$this$0187 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jl_NullPointerException() {
@@ -32256,7 +32291,7 @@ function jl_NullPointerException__init_2($this) {
 }
 function jur_AbstractCharClass$LazyJavaSpaceChar$1() {
     jur_AbstractCharClass.call(this);
-    this.$this$0189 = null;
+    this.$this$0188 = null;
 }
 function jur_AbstractCharClass$LazyJavaSpaceChar$1__init_(var_0) {
     var var_1 = new jur_AbstractCharClass$LazyJavaSpaceChar$1();
@@ -32264,7 +32299,7 @@ function jur_AbstractCharClass$LazyJavaSpaceChar$1__init_(var_0) {
     return var_1;
 }
 function jur_AbstractCharClass$LazyJavaSpaceChar$1__init_0($this, $this$0) {
-    $this.$this$0189 = $this$0;
+    $this.$this$0188 = $this$0;
     jur_AbstractCharClass__init_0($this);
 }
 function jur_AbstractCharClass$LazyJavaSpaceChar$1_contains($this, $ch) {
@@ -32344,7 +32379,7 @@ function oktu_AsyncArrayList_getRequests($this) {
 function oktu_AsyncArrayList_iterator($this) {
     var var$1;
     var$1 = $this.$array5.$iterator();
-    kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(797));
+    kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(801));
     return var$1;
 }
 function oktu_AsyncArrayList_clear($this) {
@@ -32399,7 +32434,7 @@ function oktgg_IGLTFMaterial$DefaultImpls_readJson($$this, $json) {
                 var$6 = $material.$getShaderChannels();
                 oktg_ShaderChannel_$callClinit();
                 var$6.$put2(jl_Integer_valueOf(oktg_ShaderChannel_getDefault(oktg_ShaderChannel_INSTANCE)), $shader);
-                $json.$string($rt_s(798), oktgg_IGLTFMaterial$readJson$2__init_($$this));
+                $json.$string($rt_s(802), oktgg_IGLTFMaterial$readJson$2__init_($$this));
                 var$6 = $$this.$getAlphaMode();
                 switch (var$6.$hashCode()) {
                     case -1957365727:
@@ -32411,34 +32446,34 @@ function oktgg_IGLTFMaterial$DefaultImpls_readJson($$this, $json) {
                     default:
                         break a;
                 }
-                if (!var$6.$equals($rt_s(799)))
+                if (!var$6.$equals($rt_s(803)))
                     break a;
                 $material.$setAlphaMode0(0);
                 break a;
             }
-            if (!var$6.$equals($rt_s(800)))
+            if (!var$6.$equals($rt_s(804)))
                 break a;
             $material.$setAlphaMode0(2);
             break a;
         }
-        if (var$6.$equals($rt_s(801))) {
-            $$this.$setAlphaCutoff($json.$float5($rt_s(802), 0.5));
+        if (var$6.$equals($rt_s(805))) {
+            $$this.$setAlphaCutoff($json.$float5($rt_s(806), 0.5));
             $material.$setAlphaCutoff($$this.$getAlphaCutoff());
             $material.$setAlphaMode0(1);
         }
     }
-    $json.$bool($rt_s(803), oktgg_IGLTFMaterial$readJson$3__init_($$this));
+    $json.$bool($rt_s(807), oktgg_IGLTFMaterial$readJson$3__init_($$this));
     $material.$setCullFaceMode(!$$this.$getDoubleSided() ? 1029 : 0);
     $vertexNode = $shader.$addNode(oktsn_VertexNode__init_(0, 0, 0, 7, null));
-    oktsn_VertexNode_setBonesName($vertexNode, $rt_s(605));
-    oktsn_VertexNode_setBoneWeightsName($vertexNode, $rt_s(606));
+    oktsn_VertexNode_setBonesName($vertexNode, $rt_s(608));
+    oktsn_VertexNode_setBoneWeightsName($vertexNode, $rt_s(609));
     oktsn_VertexNode_setPositionName($vertexNode, $rt_s(400));
     oktsn_VertexNode_setNormalName($vertexNode, $rt_s(402));
-    oktsn_VertexNode_setTangentName($vertexNode, $rt_s(560));
+    oktsn_VertexNode_setTangentName($vertexNode, $rt_s(563));
     $cameraDataNode = $shader.$addNode(oktsn_CameraDataNode__init_0(oktsn_VertexNode_getPosition($vertexNode)));
     $normalValue = kji_Ref$ObjectRef__init_();
     $normalValue.$element = oktsn_VertexNode_getNormal($vertexNode);
-    $json.$get4($rt_s(804), oktgg_IGLTFMaterial$readJson$4__init_($$this, $shader, $uvNodes, $vertexNode, $cameraDataNode, $normalValue));
+    $json.$get4($rt_s(808), oktgg_IGLTFMaterial$readJson$4__init_($$this, $shader, $uvNodes, $vertexNode, $cameraDataNode, $normalValue));
     $baseColorValue = kji_Ref$ObjectRef__init_();
     oktsn_GLSL_$callClinit();
     $baseColorValue.$element = oktsn_GLSL_getOneFloat(oktsn_GLSL_INSTANCE);
@@ -32449,7 +32484,7 @@ function oktgg_IGLTFMaterial$DefaultImpls_readJson($$this, $json) {
     $metallicValue = kji_Ref$ObjectRef__init_();
     $metallicValue.$element = oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE);
     $alphaNodes = ju_ArrayList__init_();
-    $json.$get4($rt_s(805), oktgg_IGLTFMaterial$readJson$5__init_($$this, $shader, $uvNodes, $alphaNodes, $baseColorValue, $occlusionValue, $roughnessValue, $metallicValue));
+    $json.$get4($rt_s(809), oktgg_IGLTFMaterial$readJson$5__init_($$this, $shader, $uvNodes, $alphaNodes, $baseColorValue, $occlusionValue, $roughnessValue, $metallicValue));
     var$6 = oktsn_PrincipledBSDF__init_();
     oktsn_PrincipledBSDF_setNormal(var$6, $normalValue.$element);
     oktsn_PrincipledBSDF_setWorldPosition(var$6, oktsn_VertexNode_getPosition($vertexNode));
@@ -32493,8 +32528,8 @@ function oktgg_IGLTFMaterial$DefaultImpls_readJson($$this, $json) {
         oktsn_VelocityNode__init_2(var$21, var$22, var$23, var$24, var$25, 0, 0, 0, 112, var$26);
         var$21 = var$21;
         $velocityNode = var$19.$addNode(var$21);
-        oktsn_VelocityNode_setABonesName($velocityNode, $rt_s(605));
-        oktsn_VelocityNode_setABoneWeightsName($velocityNode, $rt_s(606));
+        oktsn_VelocityNode_setABonesName($velocityNode, $rt_s(608));
+        oktsn_VelocityNode_setABoneWeightsName($velocityNode, $rt_s(609));
         oktsn_VelocityNode_setAPositionName($velocityNode, $rt_s(400));
         var$21 = new oktsn_OperationNode;
         var$28 = $rt_createArray(oktsn_IShaderData, 2);
@@ -32502,7 +32537,7 @@ function oktgg_IGLTFMaterial$DefaultImpls_readJson($$this, $json) {
         var$29[0] = oktsn_VelocityNode_getVelocity($velocityNode);
         var$29[1] = $baseColorValue.$element;
         var$22 = kc_CollectionsKt__CollectionsKt_listOf(var$28);
-        oktsn_OperationNode__init_0(var$21, var$22, $rt_s(806), 6);
+        oktsn_OperationNode__init_0(var$21, var$22, $rt_s(810), 6);
         var$21 = var$21;
         $alphaOp = var$19.$addNode(var$21);
         oktsn_OperationNode_setVarying($alphaOp, 0);
@@ -32541,7 +32576,7 @@ function oktgg_IGLTFMaterial$DefaultImpls_readJson($$this, $json) {
         var$29 = var$28.data;
         var$29[0] = $color;
         var$29[1] = $baseColorValue.$element;
-        oktsn_OperationNode__init_0(var$6, kc_CollectionsKt__CollectionsKt_listOf(var$28), $rt_s(807), 6);
+        oktsn_OperationNode__init_0(var$6, kc_CollectionsKt__CollectionsKt_listOf(var$28), $rt_s(811), 6);
         $alphaCombineOp = var$21.$addNode(var$6);
         oktsn_OperationNode_setFragment($alphaCombineOp, 1);
         oktsn_OperationNode_setVarying($alphaCombineOp, 0);
@@ -32551,12 +32586,12 @@ function oktgg_IGLTFMaterial$DefaultImpls_readJson($$this, $json) {
         oktsn_OutputNode_setCullFaceMode($outputNode, $material.$getCullFaceMode());
         var$18.$put2(var$19, var$21);
     }
-    $json.$get4($rt_s(808), oktgg_IGLTFMaterial$readJson$9__init_($$this, $shader, $uvNodes, $principledBSDF));
-    if (!(!$json.$contains($rt_s(809)) && !$json.$contains($rt_s(810)))) {
+    $json.$get4($rt_s(812), oktgg_IGLTFMaterial$readJson$9__init_($$this, $shader, $uvNodes, $principledBSDF));
+    if (!(!$json.$contains($rt_s(813)) && !$json.$contains($rt_s(814)))) {
         $emissiveValue = kji_Ref$ObjectRef__init_();
         $emissiveValue.$element = oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE);
-        $json.$get4($rt_s(809), oktgg_IGLTFMaterial$readJson$10__init_($$this, $shader, $uvNodes, $emissiveValue));
-        $json.$array($rt_s(810), oktgg_IGLTFMaterial$readJson$11__init_($$this, $emissiveValue, $shader));
+        $json.$get4($rt_s(813), oktgg_IGLTFMaterial$readJson$10__init_($$this, $shader, $uvNodes, $emissiveValue));
+        $json.$array($rt_s(814), oktgg_IGLTFMaterial$readJson$11__init_($$this, $emissiveValue, $shader));
         if ($emissiveValue.$element !== oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE)) {
             var$6 = new oktsn_OperationNode;
             var$28 = $rt_createArray(oktsn_IShaderData, 2);
@@ -32564,7 +32599,7 @@ function oktgg_IGLTFMaterial$DefaultImpls_readJson($$this, $json) {
             var$29[0] = oktsn_PrincipledBSDF_getResult($principledBSDF);
             var$29[1] = $emissiveValue.$element;
             var$18 = kc_CollectionsKt__CollectionsKt_listOf(var$28);
-            oktsn_OperationNode__init_0(var$6, var$18, $rt_s(795), 6);
+            oktsn_OperationNode__init_0(var$6, var$18, $rt_s(799), 6);
             var$6 = var$6;
             $opNode = $shader.$addNode(var$6);
             oktsn_OperationNode_setFragment($opNode, 1);
@@ -32635,7 +32670,7 @@ function jl_Math_signum($d) {
 }
 function oktt_TvmSound$pool$1() {
     kji_Lambda.call(this);
-    this.$this$0190 = null;
+    this.$this$0189 = null;
 }
 function oktt_TvmSound$pool$1__init_(var_0) {
     var var_1 = new oktt_TvmSound$pool$1();
@@ -32651,13 +32686,13 @@ function oktt_TvmSound$pool$1_invoke0($this) {
     kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(341));
     var$2 = var$1.document.createElement("audio");
     if (var$2 === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(711)));
+        $rt_throw(jl_NullPointerException__init_0($rt_s(714)));
     $element = var$2;
-    var$2 = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0190));
+    var$2 = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0189));
     var$1 = $element;
     $source = var$2.createMediaElementSource(var$1);
-    $gain = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0190)).createGain();
-    $panner = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0190)).createStereoPanner();
+    $gain = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0189)).createGain();
+    $panner = oktt_TvmAL_getContext(oktt_TvmSound_getAl($this.$this$0189)).createStereoPanner();
     var$1 = new oktt_SoundInstance;
     kji_Intrinsics_checkNotNullExpressionValue($source, $rt_s(437));
     kji_Intrinsics_checkNotNullExpressionValue($gain, $rt_s(438));
@@ -32666,7 +32701,7 @@ function oktt_TvmSound$pool$1_invoke0($this) {
     return var$1;
 }
 function oktt_TvmSound$pool$1__init_0(var$0, var$1) {
-    var$0.$this$0190 = var$1;
+    var$0.$this$0189 = var$1;
     kji_Lambda__init_0(var$0, 0);
 }
 function oktg_IScene$DefaultImpls() {
@@ -32771,7 +32806,7 @@ function oktt_TvmGL$BufferWrap_getGl0(var$0) {
     return oktt_TvmGL$BufferWrap_getGl(var$0);
 }
 function oktt_TvmGL$BufferWrap__init_0($this, $gl) {
-    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(716));
+    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(719));
     oktt_TvmGL$GLObject__init_0($this);
     $this.$gl5 = $gl;
 }
@@ -32956,7 +32991,7 @@ function oktt_TvmGL$UniformLocationWrap_getGl0(var$0) {
     return oktt_TvmGL$UniformLocationWrap_getGl(var$0);
 }
 function oktt_TvmGL$UniformLocationWrap__init_0($this, $id, $gl) {
-    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(716));
+    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(719));
     oktt_TvmGL$GLObject__init_0($this);
     $this.$id3 = $id;
     $this.$gl6 = $gl;
@@ -32985,7 +33020,7 @@ function jur_Pattern_pattern($this) {
 }
 function jur_Pattern_compile0($pattern, $flags) {
     if ($pattern === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(811)));
+        $rt_throw(jl_NullPointerException__init_0($rt_s(815)));
     if ($flags && ($flags | 255) != 255)
         $rt_throw(jl_IllegalArgumentException__init_0($rt_s(6)));
     jur_AbstractSet_$callClinit();
@@ -33769,17 +33804,17 @@ function jur_Pattern_finalizeCompile($this) {
 }
 function jur_Pattern_quote($s) {
     var $sb, $apos, var$4, $apos_0;
-    $sb = jl_StringBuilder__init_().$append($rt_s(812));
+    $sb = jl_StringBuilder__init_().$append($rt_s(816));
     $apos = 0;
     while (true) {
-        var$4 = $s.$indexOf3($rt_s(813), $apos);
+        var$4 = $s.$indexOf3($rt_s(817), $apos);
         if (var$4 < 0)
             break;
         $apos_0 = var$4 + 2 | 0;
-        $sb.$append($s.$substring($apos, $apos_0)).$append($rt_s(814));
+        $sb.$append($s.$substring($apos, $apos_0)).$append($rt_s(818));
         $apos = $apos_0;
     }
-    return $sb.$append($s.$substring1($apos)).$append($rt_s(813)).$toString();
+    return $sb.$append($s.$substring1($apos)).$append($rt_s(817)).$toString();
 }
 function jur_Pattern_groupCount($this) {
     return $this.$globalGroupIndex;
@@ -33882,7 +33917,7 @@ function jur_PosAltGroupQuantifierSet_setNext($this, $next) {
 }
 function oktgg_GLTFNode$readJson$9$1() {
     kji_Lambda.call(this);
-    this.$this$0191 = null;
+    this.$this$0190 = null;
 }
 function oktgg_GLTFNode$readJson$9$1__init_(var_0) {
     var var_1 = new oktgg_GLTFNode$readJson$9$1();
@@ -33898,8 +33933,8 @@ function oktgg_GLTFNode$readJson$9$1_invoke0($this, $mesh) {
     var $newObj, $$this$forEach$iv, var$4, $element$iv, $it;
     kji_Intrinsics_checkNotNullParameter($mesh, $rt_s(45));
     $newObj = oktg_Object3D__init_1(null, null, null, 0, null, null, null, 127, null);
-    $newObj.$setName(oktgg_GLTFNode_getName($this.$this$0191.$this$0192));
-    $newObj.$setProxyNode(oktgg_GLTFNode_getNode($this.$this$0191.$this$0192));
+    $newObj.$setName(oktgg_GLTFNode_getName($this.$this$0190.$this$0191));
+    $newObj.$setProxyNode(oktgg_GLTFNode_getNode($this.$this$0190.$this$0191));
     $$this$forEach$iv = oktgg_GLTFMesh_getPrimitives($mesh);
     var$4 = $$this$forEach$iv.$iterator();
     while (var$4.$hasNext()) {
@@ -33907,13 +33942,13 @@ function oktgg_GLTFNode$readJson$9$1_invoke0($this, $mesh) {
         $it = $element$iv;
         $newObj.$getMeshes0().$add3(oktgg_GLTFPrimitive_getMesh($it));
     }
-    if (oktgg_GLTFConf_getSetupVelocityShader(oktgg_GLTFNode_getGltf($this.$this$0191.$this$0192).$getConf()))
+    if (oktgg_GLTFConf_getSetupVelocityShader(oktgg_GLTFNode_getGltf($this.$this$0190.$this$0191).$getConf()))
         $newObj.$setPreviousTransform(oktgn_PreviousTRS__init_());
-    oktgg_GLTFNode_getGltf($this.$this$0191.$this$0192).$getObjects0().$add3($newObj);
-    $this.$this$0191.$$obj0.$element = $newObj;
+    oktgg_GLTFNode_getGltf($this.$this$0190.$this$0191).$getObjects0().$add3($newObj);
+    $this.$this$0190.$$obj0.$element = $newObj;
 }
 function oktgg_GLTFNode$readJson$9$1__init_0(var$0, var$1) {
-    var$0.$this$0191 = var$1;
+    var$0.$this$0190 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktr_IResource$DefaultImpls() {
@@ -33940,12 +33975,41 @@ function oktr_IResource$DefaultImpls_onLoaded($$this, $error, $ready) {
 }
 function oktr_IResource$DefaultImpls_onLoaded$default(var$1, var$2, var$3, var$4, var$5) {
     if (var$5 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(815)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(819)));
     if (var$4 & 1) {
         oktr_IResource$onLoaded$1_$callClinit();
         var$2 = oktr_IResource$onLoaded$1_INSTANCE;
     }
     return var$1.$onLoaded0(var$2, var$3);
+}
+function ck_KotmeJsMain$main$4$2$1$1() {
+    kji_Lambda.call(this);
+    this.$this$0192 = null;
+}
+function ck_KotmeJsMain$main$4$2$1$1__init_(var_0) {
+    var var_1 = new ck_KotmeJsMain$main$4$2$1$1();
+    ck_KotmeJsMain$main$4$2$1$1__init_0(var_1, var_0);
+    return var_1;
+}
+function ck_KotmeJsMain$main$4$2$1$1_invoke(var$0, var$1) {
+    ck_KotmeJsMain$main$4$2$1$1_invoke0(var$0, var$1);
+    k_Unit_$callClinit();
+    return k_Unit_INSTANCE;
+}
+function ck_KotmeJsMain$main$4$2$1$1_invoke0($this, $name) {
+    var $label, var$3, var$4;
+    kji_Intrinsics_checkNotNullParameter($name, $rt_s(12));
+    $label = $this.$this$0192.$this$0193.$this$075.$$document.createElement("label");
+    kji_Intrinsics_checkNotNullExpressionValue($label, $rt_s(820));
+    var$3 = $rt_ustr($name);
+    $label.innerHTML = var$3;
+    var$3 = $this.$this$0192.$this$0193.$this$075.$$users;
+    var$4 = $label;
+    var$3.appendChild(var$4);
+}
+function ck_KotmeJsMain$main$4$2$1$1__init_0(var$0, var$1) {
+    var$0.$this$0192 = var$1;
+    kji_Lambda__init_0(var$0, 1);
 }
 function oktm_Mat4() {
     jl_Object.call(this);
@@ -34125,7 +34189,7 @@ function oktm_Mat4_mulLeft($this, $other) {
     return oktm_IMat4$DefaultImpls_mulLeft($this, $other);
 }
 function oktm_Mat4_project($this, $vec, $out) {
-    kji_Intrinsics_checkNotNullParameter($vec, $rt_s(627));
+    kji_Intrinsics_checkNotNullParameter($vec, $rt_s(630));
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     return oktm_IMat4$DefaultImpls_project($this, $vec, $out);
 }
@@ -34226,7 +34290,7 @@ function jur_UnicodeCategoryScope_contains($this, $ch) {
 }
 function oktt_TeaVMApp$2() {
     kji_Lambda.call(this);
-    this.$this$0193 = null;
+    this.$this$0194 = null;
 }
 function oktt_TeaVMApp$2__init_(var_0) {
     var var_1 = new oktt_TeaVMApp$2();
@@ -34241,35 +34305,35 @@ function oktt_TeaVMApp$2_invoke(var$0, var$1) {
 function oktt_TeaVMApp$2_invoke0($this, $it) {
     var $time, var$3;
     $time = jl_System_nanoTime();
-    if (Long_eq(oktt_TeaVMApp_access$getLastFrameTime$p($this.$this$0193), Long_fromInt(-1)))
-        oktt_TeaVMApp_access$setLastFrameTime$p($this.$this$0193, $time);
-    oktt_TeaVMApp_setDeltaTime($this.$this$0193, Long_toNumber(Long_sub($time, oktt_TeaVMApp_access$getLastFrameTime$p($this.$this$0193))) * 9.999999717180685E-10);
-    oktt_TeaVMApp_setRawDeltaTime($this.$this$0193, Long_toNumber(Long_sub($time, oktt_TeaVMApp_access$getLastFrameTime$p($this.$this$0193))) / 1.0E9);
-    oktt_TeaVMApp_access$setLastFrameTime$p($this.$this$0193, $time);
-    if (Long_ge(Long_sub($time, oktt_TeaVMApp_access$getFrameCounterStart$p($this.$this$0193)), Long_fromInt(1000000000))) {
-        oktt_TeaVMApp_setFps($this.$this$0193, oktt_TeaVMApp_access$getFrames$p($this.$this$0193));
-        oktt_TeaVMApp_access$setFrames$p($this.$this$0193, 0);
-        oktt_TeaVMApp_access$setFrameCounterStart$p($this.$this$0193, $time);
+    if (Long_eq(oktt_TeaVMApp_access$getLastFrameTime$p($this.$this$0194), Long_fromInt(-1)))
+        oktt_TeaVMApp_access$setLastFrameTime$p($this.$this$0194, $time);
+    oktt_TeaVMApp_setDeltaTime($this.$this$0194, Long_toNumber(Long_sub($time, oktt_TeaVMApp_access$getLastFrameTime$p($this.$this$0194))) * 9.999999717180685E-10);
+    oktt_TeaVMApp_setRawDeltaTime($this.$this$0194, Long_toNumber(Long_sub($time, oktt_TeaVMApp_access$getLastFrameTime$p($this.$this$0194))) / 1.0E9);
+    oktt_TeaVMApp_access$setLastFrameTime$p($this.$this$0194, $time);
+    if (Long_ge(Long_sub($time, oktt_TeaVMApp_access$getFrameCounterStart$p($this.$this$0194)), Long_fromInt(1000000000))) {
+        oktt_TeaVMApp_setFps($this.$this$0194, oktt_TeaVMApp_access$getFrames$p($this.$this$0194));
+        oktt_TeaVMApp_access$setFrames$p($this.$this$0194, 0);
+        oktt_TeaVMApp_access$setFrameCounterStart$p($this.$this$0194, $time);
     }
-    var$3 = $this.$this$0193;
+    var$3 = $this.$this$0194;
     oktt_TeaVMApp_access$setFrames$p(var$3, oktt_TeaVMApp_access$getFrames$p(var$3) + 1 | 0);
     oktr_RES_$callClinit();
-    oktr_RES_update(oktr_RES_INSTANCE, oktt_TeaVMApp_getDeltaTime($this.$this$0193));
+    oktr_RES_update(oktr_RES_INSTANCE, oktt_TeaVMApp_getDeltaTime($this.$this$0194));
     oktg_GL_$callClinit();
     oktg_GL_runSingleCalls(oktg_GL_INSTANCE);
     oktg_GL_runRenderCalls(oktg_GL_INSTANCE);
-    if (oktt_TeaVMApp_isEnabled($this.$this$0193)) {
-        var$3 = oktt_TeaVMApp_getAnim($this.$this$0193);
+    if (oktt_TeaVMApp_isEnabled($this.$this$0194)) {
+        var$3 = oktt_TeaVMApp_getAnim($this.$this$0194);
         requestAnimationFrame(otji_JS_function(otji_JS_functionAsObject(var$3 === null ? var$3 : oktt_TeaVMApp$sam$org_teavm_jso_browser_AnimationFrameCallback$0__init_(var$3), "onAnimationFrame"), "onAnimationFrame"));
     }
 }
 function oktt_TeaVMApp$2__init_0(var$0, var$1) {
-    var$0.$this$0193 = var$1;
+    var$0.$this$0194 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktt_TeaVMApp$1() {
     jl_Object.call(this);
-    this.$this$0194 = null;
+    this.$this$0195 = null;
 }
 function oktt_TeaVMApp$1__init_(var_0) {
     var var_1 = new oktt_TeaVMApp$1();
@@ -34279,14 +34343,14 @@ function oktt_TeaVMApp$1__init_(var_0) {
 function oktt_TeaVMApp$1_handleEvent($this, $it) {
     var $i, var$3;
     $i = 0;
-    var$3 = oktt_TeaVMApp_getListeners($this.$this$0194).$size();
+    var$3 = oktt_TeaVMApp_getListeners($this.$this$0195).$size();
     while ($i < var$3) {
-        oktt_TeaVMApp_getListeners($this.$this$0194).$get1($i).$resized(oktt_TeaVMApp_getCanvas($this.$this$0194).width, oktt_TeaVMApp_getCanvas($this.$this$0194).height);
+        oktt_TeaVMApp_getListeners($this.$this$0195).$get1($i).$resized(oktt_TeaVMApp_getCanvas($this.$this$0195).width, oktt_TeaVMApp_getCanvas($this.$this$0195).height);
         $i = $i + 1 | 0;
     }
 }
 function oktt_TeaVMApp$1__init_0(var$0, var$1) {
-    var$0.$this$0194 = var$1;
+    var$0.$this$0195 = var$1;
     jl_Object__init_0(var$0);
 }
 function oktt_TeaVMApp$1_handleEvent$exported$0(var$0, var$1) {
@@ -34294,7 +34358,7 @@ function oktt_TeaVMApp$1_handleEvent$exported$0(var$0, var$1) {
 }
 function ck_LocationView$receiveJson$2() {
     kji_Lambda.call(this);
-    this.$this$0195 = null;
+    this.$this$0196 = null;
 }
 function ck_LocationView$receiveJson$2__init_(var_0) {
     var var_1 = new ck_LocationView$receiveJson$2();
@@ -34308,15 +34372,15 @@ function ck_LocationView$receiveJson$2_invoke(var$0, var$1) {
 }
 function ck_LocationView$receiveJson$2_invoke0($this, $$this$array) {
     kji_Intrinsics_checkNotNullParameter($$this$array, $rt_s(3));
-    ck_HitFX__init_0(new ck_HitFX, $this.$this$0195, $$this$array.$float1(0), $$this$array.$float1(1), $$this$array.$float1(2));
+    ck_HitFX__init_0(new ck_HitFX, $this.$this$0196, $$this$array.$float1(0), $$this$array.$float1(1), $$this$array.$float1(2));
 }
 function ck_LocationView$receiveJson$2__init_0(var$0, var$1) {
-    var$0.$this$0195 = var$1;
+    var$0.$this$0196 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function ck_LocationView$receiveJson$1() {
     kji_Lambda.call(this);
-    this.$this$0196 = null;
+    this.$this$0197 = null;
 }
 function ck_LocationView$receiveJson$1__init_(var_0) {
     var var_1 = new ck_LocationView$receiveJson$1();
@@ -34330,16 +34394,16 @@ function ck_LocationView$receiveJson$1_invoke(var$0, var$1) {
 }
 function ck_LocationView$receiveJson$1_invoke0($this, $it) {
     var var$2, var$3;
-    var$2 = $this.$this$0196;
-    var$3 = ck_LocationImp_getSceneObjectsMap($this.$this$0196).$get0(jl_Integer_valueOf($it));
+    var$2 = $this.$this$0197;
+    var$3 = ck_LocationImp_getSceneObjectsMap($this.$this$0197).$get0(jl_Integer_valueOf($it));
     if (var$3 !== null) {
         ck_LocationView_setTargetPosition(var$2, var$3.$getPosition0());
         return;
     }
-    $rt_throw(jl_NullPointerException__init_0($rt_s(816)));
+    $rt_throw(jl_NullPointerException__init_0($rt_s(821)));
 }
 function ck_LocationView$receiveJson$1__init_0(var$0, var$1) {
-    var$0.$this$0196 = var$1;
+    var$0.$this$0197 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function otcit_FloatAnalyzer$Result() {
@@ -34395,7 +34459,7 @@ function jur_UCIDecomposedCharSet__init_0($this, $decomp, $decomposedCharLength)
 }
 function oktgg_GLTF$readJson$10() {
     kji_Lambda.call(this);
-    this.$this$0117 = null;
+    this.$this$0116 = null;
 }
 function oktgg_GLTF$readJson$10__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$10();
@@ -34412,7 +34476,7 @@ function oktgg_GLTF$readJson$10_invoke0($this, $$this$array) {
     $$this$array.$objs(oktgg_GLTF$readJson$10$1__init_($this));
 }
 function oktgg_GLTF$readJson$10__init_0(var$0, var$1) {
-    var$0.$this$0117 = var$1;
+    var$0.$this$0116 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTF$readJson$11() {
@@ -34439,7 +34503,7 @@ function oktgg_GLTF$readJson$11__init_0(var$0, var$1) {
 }
 function oktgg_GLTF$readJson$12() {
     kji_Lambda.call(this);
-    this.$this$0137 = null;
+    this.$this$0136 = null;
 }
 function oktgg_GLTF$readJson$12__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$12();
@@ -34456,7 +34520,7 @@ function oktgg_GLTF$readJson$12_invoke0($this, $$this$array) {
     $$this$array.$objs(oktgg_GLTF$readJson$12$1__init_($this));
 }
 function oktgg_GLTF$readJson$12__init_0(var$0, var$1) {
-    var$0.$this$0137 = var$1;
+    var$0.$this$0136 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktf_IFile$DefaultImpls() {
@@ -34494,14 +34558,14 @@ function oktsn_SkyboxVertexNode__init_(var_0, var_1, var_2) {
 }
 function oktsn_SkyboxVertexNode__init_1($this, $viewProjectionMatrix) {
     oktsn_SkyboxVertexNode_$callClinit();
-    kji_Intrinsics_checkNotNullParameter($viewProjectionMatrix, $rt_s(610));
+    kji_Intrinsics_checkNotNullParameter($viewProjectionMatrix, $rt_s(613));
     oktsn_ShaderNode__init_0($this);
     $this.$aPositionName0 = $rt_s(400);
-    $this.$attributePosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec3__init_($rt_s(817)));
-    $this.$worldSpacePosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec3__init_($rt_s(563)));
-    $this.$clipSpacePosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(564)));
-    $this.$velocity0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec2__init_($rt_s(608)));
-    $this.$setInput($rt_s(610), $viewProjectionMatrix);
+    $this.$attributePosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec3__init_($rt_s(822)));
+    $this.$worldSpacePosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec3__init_($rt_s(566)));
+    $this.$clipSpacePosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(567)));
+    $this.$velocity0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec2__init_($rt_s(611)));
+    $this.$setInput($rt_s(613), $viewProjectionMatrix);
 }
 function oktsn_SkyboxVertexNode__init_2(var$0, var$1, var$2, var$3) {
     oktsn_SkyboxVertexNode_$callClinit();
@@ -34515,8 +34579,8 @@ function oktsn_SkyboxVertexNode__clinit_() {
     var var$1;
     oktsn_SkyboxVertexNode_Companion = oktsn_SkyboxVertexNode$Companion__init_1(null);
     var$1 = ju_LinkedHashMap__init_();
-    var$1.$put2($rt_s(610), jl_Integer_valueOf(9));
-    var$1.$put2($rt_s(565), jl_Integer_valueOf(9));
+    var$1.$put2($rt_s(613), jl_Integer_valueOf(9));
+    var$1.$put2($rt_s(568), jl_Integer_valueOf(9));
     oktsn_SkyboxVertexNode_InputForm = var$1;
 }
 function oktsn_PrincipledBSDF() {
@@ -34543,7 +34607,7 @@ function oktsn_PrincipledBSDF__init_() {
 }
 function oktsn_PrincipledBSDF_getWorldPosition($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(818));
+    var$1 = $this.$getInput().$get0($rt_s(823));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE);
@@ -34552,7 +34616,7 @@ function oktsn_PrincipledBSDF_getWorldPosition($this) {
 }
 function oktsn_PrincipledBSDF_setWorldPosition($this, $value) {
     kji_Intrinsics_checkNotNullParameter($value, $rt_s(278));
-    $this.$setInput($rt_s(818), $value);
+    $this.$setInput($rt_s(823), $value);
 }
 function oktsn_PrincipledBSDF_getNormalizedViewVector($this) {
     var var$1;
@@ -34569,7 +34633,7 @@ function oktsn_PrincipledBSDF_setNormalizedViewVector($this, $value) {
 }
 function oktsn_PrincipledBSDF_getBaseColor($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(751));
+    var$1 = $this.$getInput().$get0($rt_s(754));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getOneFloat(oktsn_GLSL_INSTANCE);
@@ -34578,7 +34642,7 @@ function oktsn_PrincipledBSDF_getBaseColor($this) {
 }
 function oktsn_PrincipledBSDF_setBaseColor($this, $value) {
     kji_Intrinsics_checkNotNullParameter($value, $rt_s(278));
-    $this.$setInput($rt_s(751), $value);
+    $this.$setInput($rt_s(754), $value);
 }
 function oktsn_PrincipledBSDF_getNormal($this) {
     var var$1;
@@ -34595,7 +34659,7 @@ function oktsn_PrincipledBSDF_setNormal($this, $value) {
 }
 function oktsn_PrincipledBSDF_getOcclusion($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(819));
+    var$1 = $this.$getInput().$get0($rt_s(824));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getOneFloat(oktsn_GLSL_INSTANCE);
@@ -34604,11 +34668,11 @@ function oktsn_PrincipledBSDF_getOcclusion($this) {
 }
 function oktsn_PrincipledBSDF_setOcclusion($this, $value) {
     kji_Intrinsics_checkNotNullParameter($value, $rt_s(278));
-    $this.$setInput($rt_s(819), $value);
+    $this.$setInput($rt_s(824), $value);
 }
 function oktsn_PrincipledBSDF_getRoughness($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(820));
+    var$1 = $this.$getInput().$get0($rt_s(825));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getOneFloat(oktsn_GLSL_INSTANCE);
@@ -34617,11 +34681,11 @@ function oktsn_PrincipledBSDF_getRoughness($this) {
 }
 function oktsn_PrincipledBSDF_setRoughness($this, $value) {
     kji_Intrinsics_checkNotNullParameter($value, $rt_s(278));
-    $this.$setInput($rt_s(820), $value);
+    $this.$setInput($rt_s(825), $value);
 }
 function oktsn_PrincipledBSDF_getMetallic($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(821));
+    var$1 = $this.$getInput().$get0($rt_s(826));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE);
@@ -34630,11 +34694,11 @@ function oktsn_PrincipledBSDF_getMetallic($this) {
 }
 function oktsn_PrincipledBSDF_setMetallic($this, $value) {
     kji_Intrinsics_checkNotNullParameter($value, $rt_s(278));
-    $this.$setInput($rt_s(821), $value);
+    $this.$setInput($rt_s(826), $value);
 }
 function oktsn_PrincipledBSDF_getClipSpacePosition($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(564));
+    var$1 = $this.$getInput().$get0($rt_s(567));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE);
@@ -34643,7 +34707,7 @@ function oktsn_PrincipledBSDF_getClipSpacePosition($this) {
 }
 function oktsn_PrincipledBSDF_setClipSpacePosition($this, $value) {
     kji_Intrinsics_checkNotNullParameter($value, $rt_s(278));
-    $this.$setInput($rt_s(564), $value);
+    $this.$setInput($rt_s(567), $value);
 }
 function oktsn_PrincipledBSDF_getResult($this) {
     return $this.$result2;
@@ -34657,7 +34721,7 @@ function oktsn_PrincipledBSDF_prepareToBuild($this) {
     var$1 = oktsn_PrincipledBSDF_getClipSpacePosition($this);
     oktsn_GLSL_$callClinit();
     if (var$1 === oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE) && $this.$receiveShadows0)
-        $rt_throw(jl_IllegalStateException__init_0($rt_s(822)));
+        $rt_throw(jl_IllegalStateException__init_0($rt_s(827)));
 }
 function oktsn_PrincipledBSDF_prepareToDrawScene($this, $scene) {
     var $dirLightIndex, $pointLightIndex, $spotLightIndex, $lights, $i, var$7, $light, var$9, var$10, $lightCascadesStartIndex, $j, var$13, $cascadeIndex;
@@ -34674,10 +34738,10 @@ function oktsn_PrincipledBSDF_prepareToDrawScene($this, $scene) {
             var$7 = $lights.$size();
             b: while (true) {
                 if ($i >= var$7) {
-                    $this.$getShader().$set32($rt_s(823), $dirLightIndex);
-                    $this.$getShader().$set32($rt_s(824), $pointLightIndex);
-                    $this.$getShader().$set32($rt_s(825), $spotLightIndex);
-                    $this.$getShader().$set30($rt_s(826), $scene.$getWorld().$getAmbientColor());
+                    $this.$getShader().$set33($rt_s(828), $dirLightIndex);
+                    $this.$getShader().$set33($rt_s(829), $pointLightIndex);
+                    $this.$getShader().$set33($rt_s(830), $spotLightIndex);
+                    $this.$getShader().$set31($rt_s(831), $scene.$getWorld().$getAmbientColor());
                     break a;
                 }
                 c: {
@@ -34689,13 +34753,13 @@ function oktsn_PrincipledBSDF_prepareToDrawScene($this, $scene) {
                                     break d;
                                 case 2:
                                     if ($light === null)
-                                        $rt_throw(jl_NullPointerException__init_0($rt_s(827)));
+                                        $rt_throw(jl_NullPointerException__init_0($rt_s(832)));
                                     var$9 = $light;
                                     oktgl_PointLight_getGlobalPosition(var$9, $this.$tmpVec);
-                                    $this.$getShader().$set30(jl_StringBuilder__init_().$append($rt_s(828)).$append1($pointLightIndex).$append8(93).$toString(), $this.$tmpVec);
-                                    $this.$getShader().$set30(jl_StringBuilder__init_().$append($rt_s(829)).$append1($pointLightIndex).$append8(93).$toString(), $light.$getColor());
-                                    $this.$getShader().$set15(jl_StringBuilder__init_().$append($rt_s(830)).$append1($pointLightIndex).$append8(93).$toString(), $light.$getLightIntensity());
-                                    $this.$getShader().$set15(jl_StringBuilder__init_().$append($rt_s(831)).$append1($pointLightIndex).$append8(93).$toString(), oktgl_PointLight_getRange(var$9));
+                                    $this.$getShader().$set31(jl_StringBuilder__init_().$append($rt_s(833)).$append1($pointLightIndex).$append8(93).$toString(), $this.$tmpVec);
+                                    $this.$getShader().$set31(jl_StringBuilder__init_().$append($rt_s(834)).$append1($pointLightIndex).$append8(93).$toString(), $light.$getColor());
+                                    $this.$getShader().$set15(jl_StringBuilder__init_().$append($rt_s(835)).$append1($pointLightIndex).$append8(93).$toString(), $light.$getLightIntensity());
+                                    $this.$getShader().$set15(jl_StringBuilder__init_().$append($rt_s(836)).$append1($pointLightIndex).$append8(93).$toString(), oktgl_PointLight_getRange(var$9));
                                     $pointLightIndex = $pointLightIndex + 1 | 0;
                                     break c;
                                 default:
@@ -34706,9 +34770,9 @@ function oktsn_PrincipledBSDF_prepareToDrawScene($this, $scene) {
                             break b;
                         e: {
                             var$10 = $light;
-                            $this.$getShader().$set30(jl_StringBuilder__init_().$append($rt_s(832)).$append1($dirLightIndex).$append8(93).$toString(), oktgl_DirectionalLight_getDirection(var$10));
-                            $this.$getShader().$set30(jl_StringBuilder__init_().$append($rt_s(833)).$append1($dirLightIndex).$append8(93).$toString(), $light.$getColor());
-                            $this.$getShader().$set15(jl_StringBuilder__init_().$append($rt_s(834)).$append1($dirLightIndex).$append8(93).$toString(), $light.$getLightIntensity());
+                            $this.$getShader().$set31(jl_StringBuilder__init_().$append($rt_s(837)).$append1($dirLightIndex).$append8(93).$toString(), oktgl_DirectionalLight_getDirection(var$10));
+                            $this.$getShader().$set31(jl_StringBuilder__init_().$append($rt_s(838)).$append1($dirLightIndex).$append8(93).$toString(), $light.$getColor());
+                            $this.$getShader().$set15(jl_StringBuilder__init_().$append($rt_s(839)).$append1($dirLightIndex).$append8(93).$toString(), $light.$getLightIntensity());
                             if ($light.$isShadowEnabled0()) {
                                 $lightCascadesStartIndex = $rt_imul($dirLightIndex, oktgl_DirectionalLight_getShadowCascadesNum(var$10));
                                 $j = 0;
@@ -34717,8 +34781,8 @@ function oktsn_PrincipledBSDF_prepareToDrawScene($this, $scene) {
                                     if ($j >= var$13)
                                         break e;
                                     $cascadeIndex = $lightCascadesStartIndex + $j | 0;
-                                    $this.$getShader().$set15(jl_StringBuilder__init_().$append($rt_s(835)).$append1($cascadeIndex).$append8(93).$toString(), oktgl_DirectionalLight_getShadowCascadeEnd(var$10).data[$j].$floatValue());
-                                    $this.$getShader().$set22(jl_StringBuilder__init_().$append($rt_s(836)).$append1($cascadeIndex).$append8(93).$toString(), oktgl_DirectionalLight_getViewProjectionMatrices(var$10).data[$j]);
+                                    $this.$getShader().$set15(jl_StringBuilder__init_().$append($rt_s(840)).$append1($cascadeIndex).$append8(93).$toString(), oktgl_DirectionalLight_getShadowCascadeEnd(var$10).data[$j].$floatValue());
+                                    $this.$getShader().$set23(jl_StringBuilder__init_().$append($rt_s(841)).$append1($cascadeIndex).$append8(93).$toString(), oktgl_DirectionalLight_getViewProjectionMatrices(var$10).data[$j]);
                                     $j = $j + 1 | 0;
                                 }
                             }
@@ -34728,7 +34792,7 @@ function oktsn_PrincipledBSDF_prepareToDrawScene($this, $scene) {
                 }
                 $i = $i + 1 | 0;
             }
-            $rt_throw(jl_NullPointerException__init_0($rt_s(837)));
+            $rt_throw(jl_NullPointerException__init_0($rt_s(842)));
         }
     }
 }
@@ -34756,14 +34820,14 @@ function oktsn_PrincipledBSDF_prepareToDrawMesh($this, $mesh) {
                                     break c;
                                 case 2:
                                     if ($light === null)
-                                        $rt_throw(jl_NullPointerException__init_0($rt_s(827)));
+                                        $rt_throw(jl_NullPointerException__init_0($rt_s(832)));
                                     break b;
                                 default:
                             }
                             break b;
                         }
                         if ($light === null)
-                            $rt_throw(jl_NullPointerException__init_0($rt_s(837)));
+                            $rt_throw(jl_NullPointerException__init_0($rt_s(842)));
                         d: {
                             var$8 = $light;
                             if ($light.$isShadowEnabled0()) {
@@ -34777,7 +34841,7 @@ function oktsn_PrincipledBSDF_prepareToDrawMesh($this, $mesh) {
                                     var$13 = $shadowMaps.data;
                                     $cascadeIndex = $lightCascadesStartIndex + $j | 0;
                                     $unit = $this.$getShader().$getNextTextureUnit();
-                                    $this.$getShader().$set32(jl_StringBuilder__init_().$append($rt_s(838)).$append1($cascadeIndex).$append8(93).$toString(), $unit);
+                                    $this.$getShader().$set33(jl_StringBuilder__init_().$append($rt_s(843)).$append1($cascadeIndex).$append8(93).$toString(), $unit);
                                     var$13[$j].$bind4($unit);
                                     $j = $j + 1 | 0;
                                 }
@@ -34794,7 +34858,7 @@ function oktsn_PrincipledBSDF_prepareToDrawMesh($this, $mesh) {
 function oktsn_PrincipledBSDF_executionFrag($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if ($this.$result2.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append($this.$result2.$getRef0()).$append($rt_s(839)).$append(oktsn_PrincipledBSDF_getWorldPosition($this).$asVec3()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getNormalizedViewVector($this).$asVec3()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getBaseColor($this).$asVec4()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getNormal($this).$asVec3()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getOcclusion($this).$asFloat()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getRoughness($this).$asFloat()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getMetallic($this).$asFloat()).$append($rt_s(331)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($this.$result2.$getRef0()).$append($rt_s(844)).$append(oktsn_PrincipledBSDF_getWorldPosition($this).$asVec3()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getNormalizedViewVector($this).$asVec3()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getBaseColor($this).$asVec4()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getNormal($this).$asVec3()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getOcclusion($this).$asFloat()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getRoughness($this).$asFloat()).$append($rt_s(301)).$append(oktsn_PrincipledBSDF_getMetallic($this).$asFloat()).$append($rt_s(331)).$toString());
 }
 function oktsn_PrincipledBSDF_declarationFrag($this, $out) {
     var $num;
@@ -34802,11 +34866,11 @@ function oktsn_PrincipledBSDF_declarationFrag($this, $out) {
     if ($this.$result2.$isUsed0()) {
         if ($this.$receiveShadows0) {
             $num = $rt_imul($this.$maxNumDirectionLights, oktsn_PrincipledBSDF_shadowCascadesNum);
-            $out.$append(jl_StringBuilder__init_().$append($rt_s(840)).$append1($num).$append($rt_s(603)).$toString());
-            $out.$append(jl_StringBuilder__init_().$append($rt_s(841)).$append1($num).$append($rt_s(603)).$toString());
-            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(842)).$append1($num).$append($rt_s(603)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($rt_s(845)).$append1($num).$append($rt_s(606)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($rt_s(846)).$append1($num).$append($rt_s(606)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append($rt_s(847)).$append1($num).$append($rt_s(606)).$toString());
         }
-        $out.$append(jl_StringBuilder__init_().$append($this.$result2.$getTypedRef0()).$append($rt_s(518)).$append($this.$result2.$getTypeStr0()).$append($rt_s(843)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($this.$result2.$getTypedRef0()).$append($rt_s(519)).$append($this.$result2.$getTypeStr0()).$append($rt_s(848)).$toString());
         $out.$append(oktsn_PrincipledBSDF$Companion_pbrCode(oktsn_PrincipledBSDF_Companion, $this.$maxNumDirectionLights, $this.$maxNumPointLights, $this.$maxNumSpotLights, oktsn_PrincipledBSDF_getClipSpacePosition($this).$getRef0(), $this.$receiveShadows0));
     }
 }
@@ -34815,8 +34879,8 @@ function oktsn_PrincipledBSDF_declarationVert($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if ($this.$result2.$isUsed0() && $this.$receiveShadows0) {
         $num = $rt_imul($this.$maxNumDirectionLights, oktsn_PrincipledBSDF_shadowCascadesNum);
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(844)).$append1($num).$append($rt_s(603)).$toString());
-        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(842)).$append1($num).$append($rt_s(603)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(849)).$append1($num).$append($rt_s(606)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append($rt_s(847)).$append1($num).$append($rt_s(606)).$toString());
     }
 }
 function oktsn_PrincipledBSDF_executionVert($this, $out) {
@@ -34824,9 +34888,9 @@ function oktsn_PrincipledBSDF_executionVert($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if ($this.$result2.$isUsed0() && $this.$receiveShadows0) {
         $num = $rt_imul($this.$maxNumDirectionLights, oktsn_PrincipledBSDF_shadowCascadesNum);
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(845)).$append1($num).$append($rt_s(846)).$toString());
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(847)).$append(oktsn_PrincipledBSDF_getWorldPosition($this).$asVec4()).$append($rt_s(286)).$toString());
-        $out.$append($rt_s(512));
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(850)).$append1($num).$append($rt_s(851)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(852)).$append(oktsn_PrincipledBSDF_getWorldPosition($this).$asVec4()).$append($rt_s(286)).$toString());
+        $out.$append($rt_s(513));
     }
 }
 function oktsn_PrincipledBSDF__init_0($this) {
@@ -34843,14 +34907,14 @@ function oktsn_PrincipledBSDF__clinit_() {
     oktsn_PrincipledBSDF_Companion = oktsn_PrincipledBSDF$Companion__init_(null);
     oktsn_PrincipledBSDF_shadowCascadesNum = 4;
     var$1 = ju_LinkedHashMap__init_();
-    var$1.$put2($rt_s(818), jl_Integer_valueOf(5));
+    var$1.$put2($rt_s(823), jl_Integer_valueOf(5));
     var$1.$put2($rt_s(324), jl_Integer_valueOf(5));
-    var$1.$put2($rt_s(751), jl_Integer_valueOf(6));
+    var$1.$put2($rt_s(754), jl_Integer_valueOf(6));
     var$1.$put2($rt_s(306), jl_Integer_valueOf(5));
-    var$1.$put2($rt_s(819), jl_Integer_valueOf(3));
-    var$1.$put2($rt_s(820), jl_Integer_valueOf(3));
-    var$1.$put2($rt_s(821), jl_Integer_valueOf(3));
-    var$1.$put2($rt_s(564), jl_Integer_valueOf(6));
+    var$1.$put2($rt_s(824), jl_Integer_valueOf(3));
+    var$1.$put2($rt_s(825), jl_Integer_valueOf(3));
+    var$1.$put2($rt_s(826), jl_Integer_valueOf(3));
+    var$1.$put2($rt_s(567), jl_Integer_valueOf(6));
     oktsn_PrincipledBSDF_InputForm = var$1;
 }
 function oktsn_PrincipledBSDF_access$getShadowCascadesNum$cp() {
@@ -34926,7 +34990,7 @@ function oktsn_GLSLVec4Inline__init_2(var$0, var$1, var$2, var$3, var$4, var$5, 
 }
 function jur_AbstractCharClass$LazyJavaWhitespace$1() {
     jur_AbstractCharClass.call(this);
-    this.$this$0197 = null;
+    this.$this$0198 = null;
 }
 function jur_AbstractCharClass$LazyJavaWhitespace$1__init_(var_0) {
     var var_1 = new jur_AbstractCharClass$LazyJavaWhitespace$1();
@@ -34934,7 +34998,7 @@ function jur_AbstractCharClass$LazyJavaWhitespace$1__init_(var_0) {
     return var_1;
 }
 function jur_AbstractCharClass$LazyJavaWhitespace$1__init_0($this, $this$0) {
-    $this.$this$0197 = $this$0;
+    $this.$this$0198 = $this$0;
     jur_AbstractCharClass__init_0($this);
 }
 function jur_AbstractCharClass$LazyJavaWhitespace$1_contains($this, $ch) {
@@ -34981,7 +35045,7 @@ function oktt_TvmKB_getKeyCode($this, $event) {
     var var$2, var$3;
     a: {
         b: {
-            kji_Intrinsics_checkNotNullParameter($event, $rt_s(539));
+            kji_Intrinsics_checkNotNullParameter($event, $rt_s(542));
             var$2 = $rt_str($event.code);
             if (var$2 !== null) {
                 c: {
@@ -35266,337 +35330,337 @@ function oktt_TvmKB_getKeyCode($this, $event) {
                                                                                                                                                                                                                                                                                                                                                                                                     default:
                                                                                                                                                                                                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(848)))
+                                                                                                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(853)))
                                                                                                                                                                                                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                                                                                                                                                                                                 var$3 = 133;
                                                                                                                                                                                                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(849)))
+                                                                                                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(854)))
                                                                                                                                                                                                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                                                                                                                                                                                                             var$3 = 92;
                                                                                                                                                                                                                                                                                                                                                                                             break a;
                                                                                                                                                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(850)))
+                                                                                                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(855)))
                                                                                                                                                                                                                                                                                                                                                                                             break b;
                                                                                                                                                                                                                                                                                                                                                                                         var$3 = 56;
                                                                                                                                                                                                                                                                                                                                                                                         break a;
                                                                                                                                                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(851)))
+                                                                                                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(856)))
                                                                                                                                                                                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                                                                                                                                                                                     var$3 = 130;
                                                                                                                                                                                                                                                                                                                                                                                     break a;
                                                                                                                                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(852)))
+                                                                                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(857)))
                                                                                                                                                                                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                                                                                                                                                                                 var$3 = 59;
                                                                                                                                                                                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(853)))
+                                                                                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(858)))
                                                                                                                                                                                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                                                                                                                                                                                             var$3 = 68;
                                                                                                                                                                                                                                                                                                                                                                             break a;
                                                                                                                                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(854)))
+                                                                                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(859)))
                                                                                                                                                                                                                                                                                                                                                                             break b;
                                                                                                                                                                                                                                                                                                                                                                         var$3 = 73;
                                                                                                                                                                                                                                                                                                                                                                         break a;
                                                                                                                                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(855)))
+                                                                                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(860)))
                                                                                                                                                                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                                                                                                                                                                     var$3 = 67;
                                                                                                                                                                                                                                                                                                                                                                     break a;
                                                                                                                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(856)))
+                                                                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(861)))
                                                                                                                                                                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                                                                                                                                                                 var$3 = 60;
                                                                                                                                                                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(857)))
+                                                                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(862)))
                                                                                                                                                                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                                                                                                                                                                             var$3 = 144;
                                                                                                                                                                                                                                                                                                                                                             break a;
                                                                                                                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(858)))
+                                                                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(863)))
                                                                                                                                                                                                                                                                                                                                                             break b;
                                                                                                                                                                                                                                                                                                                                                         var$3 = 145;
                                                                                                                                                                                                                                                                                                                                                         break a;
                                                                                                                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(859)))
+                                                                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(864)))
                                                                                                                                                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                                                                                                                                                     var$3 = 146;
                                                                                                                                                                                                                                                                                                                                                     break a;
                                                                                                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(860)))
+                                                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(865)))
                                                                                                                                                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                                                                                                                                                 var$3 = 147;
                                                                                                                                                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(861)))
+                                                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(866)))
                                                                                                                                                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                                                                                                                                                             var$3 = 148;
                                                                                                                                                                                                                                                                                                                                             break a;
                                                                                                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(862)))
+                                                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(867)))
                                                                                                                                                                                                                                                                                                                                             break b;
                                                                                                                                                                                                                                                                                                                                         var$3 = 149;
                                                                                                                                                                                                                                                                                                                                         break a;
                                                                                                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(863)))
+                                                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(868)))
                                                                                                                                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                                                                                                                                     var$3 = 150;
                                                                                                                                                                                                                                                                                                                                     break a;
                                                                                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(864)))
+                                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(869)))
                                                                                                                                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                                                                                                                                 var$3 = 151;
                                                                                                                                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(865)))
+                                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(870)))
                                                                                                                                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                                                                                                                                             var$3 = 152;
                                                                                                                                                                                                                                                                                                                             break a;
                                                                                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(866)))
+                                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(871)))
                                                                                                                                                                                                                                                                                                                             break b;
                                                                                                                                                                                                                                                                                                                         var$3 = 153;
                                                                                                                                                                                                                                                                                                                         break a;
                                                                                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(867)))
+                                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(872)))
                                                                                                                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                                                                                                                     var$3 = 129;
                                                                                                                                                                                                                                                                                                                     break a;
                                                                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(868)))
+                                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(873)))
                                                                                                                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                                                                                                                 var$3 = 244;
                                                                                                                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(869)))
+                                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(874)))
                                                                                                                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                                                                                                                             var$3 = 245;
                                                                                                                                                                                                                                                                                                             break a;
                                                                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(870)))
+                                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(875)))
                                                                                                                                                                                                                                                                                                             break b;
                                                                                                                                                                                                                                                                                                         var$3 = 246;
                                                                                                                                                                                                                                                                                                         break a;
                                                                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(871)))
+                                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(876)))
                                                                                                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                                                                                                     var$3 = 247;
                                                                                                                                                                                                                                                                                                     break a;
                                                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(872)))
+                                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(877)))
                                                                                                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                                                                                                 var$3 = 248;
                                                                                                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(873)))
+                                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(878)))
                                                                                                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                                                                                                             var$3 = 249;
                                                                                                                                                                                                                                                                                             break a;
                                                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(874)))
+                                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(879)))
                                                                                                                                                                                                                                                                                             break b;
                                                                                                                                                                                                                                                                                         var$3 = 250;
                                                                                                                                                                                                                                                                                         break a;
                                                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(875)))
+                                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(880)))
                                                                                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                                                                                     var$3 = 251;
                                                                                                                                                                                                                                                                                     break a;
                                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(876)))
+                                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(881)))
                                                                                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                                                                                 var$3 = 252;
                                                                                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(877)))
+                                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(882)))
                                                                                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                                                                                             var$3 = 253;
                                                                                                                                                                                                                                                                             break a;
                                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(878)))
+                                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(883)))
                                                                                                                                                                                                                                                                             break b;
                                                                                                                                                                                                                                                                         var$3 = 254;
                                                                                                                                                                                                                                                                         break a;
                                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(879)))
+                                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(884)))
                                                                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                                                                     var$3 = 255;
                                                                                                                                                                                                                                                                     break a;
                                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(880)))
+                                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(885)))
                                                                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                                                                 var$3 = 132;
                                                                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(881)))
+                                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(886)))
                                                                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                                                                             var$3 = 61;
                                                                                                                                                                                                                                                             break a;
                                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(882)))
+                                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(887)))
                                                                                                                                                                                                                                                             break b;
                                                                                                                                                                                                                                                         var$3 = 3;
                                                                                                                                                                                                                                                         break a;
                                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(883)))
+                                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(888)))
                                                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                                                     var$3 = 29;
                                                                                                                                                                                                                                                     break a;
                                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(884)))
+                                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(889)))
                                                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                                                 var$3 = 30;
                                                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(885)))
+                                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(890)))
                                                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                                                             var$3 = 31;
                                                                                                                                                                                                                                             break a;
                                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(886)))
+                                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(891)))
                                                                                                                                                                                                                                             break b;
                                                                                                                                                                                                                                         var$3 = 32;
                                                                                                                                                                                                                                         break a;
                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(887)))
+                                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(892)))
                                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                                     var$3 = 33;
                                                                                                                                                                                                                                     break a;
                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(888)))
+                                                                                                                                                                                                                                if (!var$2.$equals($rt_s(893)))
                                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                                 var$3 = 34;
                                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                                             }
-                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(889)))
+                                                                                                                                                                                                                            if (!var$2.$equals($rt_s(894)))
                                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                                             var$3 = 35;
                                                                                                                                                                                                                             break a;
                                                                                                                                                                                                                         }
-                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(890)))
+                                                                                                                                                                                                                        if (!var$2.$equals($rt_s(895)))
                                                                                                                                                                                                                             break b;
                                                                                                                                                                                                                         var$3 = 36;
                                                                                                                                                                                                                         break a;
                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(891)))
+                                                                                                                                                                                                                    if (!var$2.$equals($rt_s(896)))
                                                                                                                                                                                                                         break b;
                                                                                                                                                                                                                     var$3 = 37;
                                                                                                                                                                                                                     break a;
                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                if (!var$2.$equals($rt_s(892)))
+                                                                                                                                                                                                                if (!var$2.$equals($rt_s(897)))
                                                                                                                                                                                                                     break b;
                                                                                                                                                                                                                 var$3 = 38;
                                                                                                                                                                                                                 break a;
                                                                                                                                                                                                             }
-                                                                                                                                                                                                            if (!var$2.$equals($rt_s(893)))
+                                                                                                                                                                                                            if (!var$2.$equals($rt_s(898)))
                                                                                                                                                                                                                 break b;
                                                                                                                                                                                                             var$3 = 39;
                                                                                                                                                                                                             break a;
                                                                                                                                                                                                         }
-                                                                                                                                                                                                        if (!var$2.$equals($rt_s(894)))
+                                                                                                                                                                                                        if (!var$2.$equals($rt_s(899)))
                                                                                                                                                                                                             break b;
                                                                                                                                                                                                         var$3 = 40;
                                                                                                                                                                                                         break a;
                                                                                                                                                                                                     }
-                                                                                                                                                                                                    if (!var$2.$equals($rt_s(895)))
+                                                                                                                                                                                                    if (!var$2.$equals($rt_s(900)))
                                                                                                                                                                                                         break b;
                                                                                                                                                                                                     var$3 = 41;
                                                                                                                                                                                                     break a;
                                                                                                                                                                                                 }
-                                                                                                                                                                                                if (!var$2.$equals($rt_s(896)))
+                                                                                                                                                                                                if (!var$2.$equals($rt_s(901)))
                                                                                                                                                                                                     break b;
                                                                                                                                                                                                 var$3 = 42;
                                                                                                                                                                                                 break a;
                                                                                                                                                                                             }
-                                                                                                                                                                                            if (!var$2.$equals($rt_s(897)))
+                                                                                                                                                                                            if (!var$2.$equals($rt_s(902)))
                                                                                                                                                                                                 break b;
                                                                                                                                                                                             var$3 = 43;
                                                                                                                                                                                             break a;
                                                                                                                                                                                         }
-                                                                                                                                                                                        if (!var$2.$equals($rt_s(898)))
+                                                                                                                                                                                        if (!var$2.$equals($rt_s(903)))
                                                                                                                                                                                             break b;
                                                                                                                                                                                         var$3 = 44;
                                                                                                                                                                                         break a;
                                                                                                                                                                                     }
-                                                                                                                                                                                    if (!var$2.$equals($rt_s(899)))
+                                                                                                                                                                                    if (!var$2.$equals($rt_s(904)))
                                                                                                                                                                                         break b;
                                                                                                                                                                                     var$3 = 45;
                                                                                                                                                                                     break a;
                                                                                                                                                                                 }
-                                                                                                                                                                                if (!var$2.$equals($rt_s(900)))
+                                                                                                                                                                                if (!var$2.$equals($rt_s(905)))
                                                                                                                                                                                     break b;
                                                                                                                                                                                 var$3 = 46;
                                                                                                                                                                                 break a;
                                                                                                                                                                             }
-                                                                                                                                                                            if (!var$2.$equals($rt_s(901)))
+                                                                                                                                                                            if (!var$2.$equals($rt_s(906)))
                                                                                                                                                                                 break b;
                                                                                                                                                                             var$3 = 47;
                                                                                                                                                                             break a;
                                                                                                                                                                         }
-                                                                                                                                                                        if (!var$2.$equals($rt_s(902)))
+                                                                                                                                                                        if (!var$2.$equals($rt_s(907)))
                                                                                                                                                                             break b;
                                                                                                                                                                         var$3 = 48;
                                                                                                                                                                         break a;
                                                                                                                                                                     }
-                                                                                                                                                                    if (!var$2.$equals($rt_s(903)))
+                                                                                                                                                                    if (!var$2.$equals($rt_s(908)))
                                                                                                                                                                         break b;
                                                                                                                                                                     var$3 = 49;
                                                                                                                                                                     break a;
                                                                                                                                                                 }
-                                                                                                                                                                if (!var$2.$equals($rt_s(904)))
+                                                                                                                                                                if (!var$2.$equals($rt_s(909)))
                                                                                                                                                                     break b;
                                                                                                                                                                 var$3 = 50;
                                                                                                                                                                 break a;
                                                                                                                                                             }
-                                                                                                                                                            if (!var$2.$equals($rt_s(905)))
+                                                                                                                                                            if (!var$2.$equals($rt_s(910)))
                                                                                                                                                                 break b;
                                                                                                                                                             var$3 = 51;
                                                                                                                                                             break a;
                                                                                                                                                         }
-                                                                                                                                                        if (!var$2.$equals($rt_s(906)))
+                                                                                                                                                        if (!var$2.$equals($rt_s(911)))
                                                                                                                                                             break b;
                                                                                                                                                         var$3 = 52;
                                                                                                                                                         break a;
                                                                                                                                                     }
-                                                                                                                                                    if (!var$2.$equals($rt_s(907)))
+                                                                                                                                                    if (!var$2.$equals($rt_s(912)))
                                                                                                                                                         break b;
                                                                                                                                                     var$3 = 53;
                                                                                                                                                     break a;
                                                                                                                                                 }
-                                                                                                                                                if (!var$2.$equals($rt_s(908)))
+                                                                                                                                                if (!var$2.$equals($rt_s(913)))
                                                                                                                                                     break b;
                                                                                                                                                 var$3 = 54;
                                                                                                                                                 break a;
                                                                                                                                             }
-                                                                                                                                            if (!var$2.$equals($rt_s(909)))
+                                                                                                                                            if (!var$2.$equals($rt_s(914)))
                                                                                                                                                 break b;
                                                                                                                                             var$3 = 55;
                                                                                                                                             break a;
                                                                                                                                         }
-                                                                                                                                        if (!var$2.$equals($rt_s(910)))
+                                                                                                                                        if (!var$2.$equals($rt_s(915)))
                                                                                                                                             break b;
                                                                                                                                         var$3 = 66;
                                                                                                                                         break a;
                                                                                                                                     }
-                                                                                                                                    if (!var$2.$equals($rt_s(911)))
+                                                                                                                                    if (!var$2.$equals($rt_s(916)))
                                                                                                                                         break b;
                                                                                                                                     var$3 = 70;
                                                                                                                                     break a;
                                                                                                                                 }
-                                                                                                                                if (!var$2.$equals($rt_s(912)))
+                                                                                                                                if (!var$2.$equals($rt_s(917)))
                                                                                                                                     break b;
                                                                                                                                 var$3 = 69;
                                                                                                                                 break a;
                                                                                                                             }
-                                                                                                                            if (!var$2.$equals($rt_s(913)))
+                                                                                                                            if (!var$2.$equals($rt_s(918)))
                                                                                                                                 break b;
                                                                                                                             var$3 = 75;
                                                                                                                             break a;
                                                                                                                         }
-                                                                                                                        if (!var$2.$equals($rt_s(914)))
+                                                                                                                        if (!var$2.$equals($rt_s(919)))
                                                                                                                             break b;
                                                                                                                         var$3 = 76;
                                                                                                                         break a;
@@ -35606,127 +35670,127 @@ function oktt_TvmKB_getKeyCode($this, $event) {
                                                                                                                     var$3 = 62;
                                                                                                                     break a;
                                                                                                                 }
-                                                                                                                if (!var$2.$equals($rt_s(915)))
+                                                                                                                if (!var$2.$equals($rt_s(920)))
                                                                                                                     break b;
                                                                                                                 var$3 = 25;
                                                                                                                 break a;
                                                                                                             }
-                                                                                                            if (!var$2.$equals($rt_s(916)))
+                                                                                                            if (!var$2.$equals($rt_s(921)))
                                                                                                                 break b;
                                                                                                             var$3 = 22;
                                                                                                             break a;
                                                                                                         }
-                                                                                                        if (!var$2.$equals($rt_s(917)))
+                                                                                                        if (!var$2.$equals($rt_s(922)))
                                                                                                             break b;
                                                                                                         var$3 = 57;
                                                                                                         break a;
                                                                                                     }
-                                                                                                    if (!var$2.$equals($rt_s(918)))
+                                                                                                    if (!var$2.$equals($rt_s(923)))
                                                                                                         break b;
                                                                                                     var$3 = 93;
                                                                                                     break a;
                                                                                                 }
-                                                                                                if (!var$2.$equals($rt_s(919)))
+                                                                                                if (!var$2.$equals($rt_s(924)))
                                                                                                     break b;
                                                                                                 var$3 = 19;
                                                                                                 break a;
                                                                                             }
-                                                                                            if (!var$2.$equals($rt_s(920)))
+                                                                                            if (!var$2.$equals($rt_s(925)))
                                                                                                 break b;
                                                                                             var$3 = 20;
                                                                                             break a;
                                                                                         }
-                                                                                        if (!var$2.$equals($rt_s(921)))
+                                                                                        if (!var$2.$equals($rt_s(926)))
                                                                                             break b;
                                                                                         var$3 = 21;
                                                                                         break a;
                                                                                     }
-                                                                                    if (!var$2.$equals($rt_s(922)))
+                                                                                    if (!var$2.$equals($rt_s(927)))
                                                                                         break b;
                                                                                     var$3 = 72;
                                                                                     break a;
                                                                                 }
-                                                                                if (!var$2.$equals($rt_s(923)))
+                                                                                if (!var$2.$equals($rt_s(928)))
                                                                                     break b;
                                                                                 var$3 = 74;
                                                                                 break a;
                                                                             }
-                                                                            if (!var$2.$equals($rt_s(924)))
+                                                                            if (!var$2.$equals($rt_s(929)))
                                                                                 break b;
                                                                             var$3 = 24;
                                                                             break a;
                                                                         }
-                                                                        if (!var$2.$equals($rt_s(925)))
+                                                                        if (!var$2.$equals($rt_s(930)))
                                                                             break b;
                                                                         var$3 = 71;
                                                                         break a;
                                                                     }
-                                                                    if (!var$2.$equals($rt_s(926)))
+                                                                    if (!var$2.$equals($rt_s(931)))
                                                                         break b;
                                                                     var$3 = 82;
                                                                     break a;
                                                                 }
-                                                                if (!var$2.$equals($rt_s(927)))
+                                                                if (!var$2.$equals($rt_s(932)))
                                                                     break b;
                                                                 var$3 = 67;
                                                                 break a;
                                                             }
-                                                            if (!var$2.$equals($rt_s(928)))
+                                                            if (!var$2.$equals($rt_s(933)))
                                                                 break b;
                                                             var$3 = 7;
                                                             break a;
                                                         }
-                                                        if (!var$2.$equals($rt_s(929)))
+                                                        if (!var$2.$equals($rt_s(934)))
                                                             break b;
                                                         var$3 = 8;
                                                         break a;
                                                     }
-                                                    if (!var$2.$equals($rt_s(930)))
+                                                    if (!var$2.$equals($rt_s(935)))
                                                         break b;
                                                     var$3 = 9;
                                                     break a;
                                                 }
-                                                if (!var$2.$equals($rt_s(931)))
+                                                if (!var$2.$equals($rt_s(936)))
                                                     break b;
                                                 var$3 = 10;
                                                 break a;
                                             }
-                                            if (!var$2.$equals($rt_s(932)))
+                                            if (!var$2.$equals($rt_s(937)))
                                                 break b;
                                             var$3 = 11;
                                             break a;
                                         }
-                                        if (!var$2.$equals($rt_s(933)))
+                                        if (!var$2.$equals($rt_s(938)))
                                             break b;
                                         var$3 = 12;
                                         break a;
                                     }
-                                    if (!var$2.$equals($rt_s(934)))
+                                    if (!var$2.$equals($rt_s(939)))
                                         break b;
                                     var$3 = 13;
                                     break a;
                                 }
-                                if (!var$2.$equals($rt_s(935)))
+                                if (!var$2.$equals($rt_s(940)))
                                     break b;
                                 var$3 = 14;
                                 break a;
                             }
-                            if (!var$2.$equals($rt_s(936)))
+                            if (!var$2.$equals($rt_s(941)))
                                 break b;
                             var$3 = 15;
                             break a;
                         }
-                        if (!var$2.$equals($rt_s(937)))
+                        if (!var$2.$equals($rt_s(942)))
                             break b;
                         var$3 = 16;
                         break a;
                     }
-                    if (!var$2.$equals($rt_s(938)))
+                    if (!var$2.$equals($rt_s(943)))
                         break b;
                     var$3 = 58;
                     break a;
                 }
-                if (var$2.$equals($rt_s(939))) {
+                if (var$2.$equals($rt_s(944))) {
                     var$3 = 131;
                     break a;
                 }
@@ -35735,7 +35799,7 @@ function oktt_TvmKB_getKeyCode($this, $event) {
         var$2 = $this.$auxMap.$get0($rt_str($event.code));
         if (var$2 === null)
             var$2 = jl_Integer_valueOf(0);
-        kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(940));
+        kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(945));
         var$3 = var$2.$intValue();
     }
     return var$3;
@@ -35946,35 +36010,27 @@ function jur_AbstractCharClass$LazyJavaLowerCase_computeValue($this) {
     return $chCl;
 }
 function ck_KotmeJsMain$main$4$2$1() {
-    var a = this; kji_Lambda.call(a);
-    a.$this$0198 = null;
-    a.$$it = null;
+    kji_Lambda.call(this);
+    this.$this$0193 = null;
 }
-function ck_KotmeJsMain$main$4$2$1__init_(var_0, var_1) {
-    var var_2 = new ck_KotmeJsMain$main$4$2$1();
-    ck_KotmeJsMain$main$4$2$1__init_0(var_2, var_0, var_1);
-    return var_2;
+function ck_KotmeJsMain$main$4$2$1__init_(var_0) {
+    var var_1 = new ck_KotmeJsMain$main$4$2$1();
+    ck_KotmeJsMain$main$4$2$1__init_0(var_1, var_0);
+    return var_1;
 }
-function ck_KotmeJsMain$main$4$2$1_invoke(var$0) {
-    ck_KotmeJsMain$main$4$2$1_invoke0(var$0);
+function ck_KotmeJsMain$main$4$2$1_invoke(var$0, var$1) {
+    ck_KotmeJsMain$main$4$2$1_invoke0(var$0, var$1);
     k_Unit_$callClinit();
     return k_Unit_INSTANCE;
 }
-function ck_KotmeJsMain$main$4$2$1_invoke0($this) {
-    var var$1, var$2, $json;
-    oktj_JSON_$callClinit();
-    var$1 = oktj_JSON_INSTANCE;
-    var$2 = $this.$$it;
-    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(4));
-    var$2 = $rt_str(var$2.data);
-    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(941));
-    $json = oktj_JSON_parseObject(var$1, var$2);
-    ck_LocationView_receiveJson($this.$this$0198.$this$073.$$location, $json.$obj2($rt_s(276)), $json.$int0($rt_s(485)));
+function ck_KotmeJsMain$main$4$2$1_invoke0($this, $$this$array) {
+    kji_Intrinsics_checkNotNullParameter($$this$array, $rt_s(3));
+    otjdh_HTMLElement_clear$static($this.$this$0193.$this$075.$$users);
+    $$this$array.$strings(ck_KotmeJsMain$main$4$2$1$1__init_($this));
 }
-function ck_KotmeJsMain$main$4$2$1__init_0(var$0, var$1, var$2) {
-    var$0.$this$0198 = var$1;
-    var$0.$$it = var$2;
-    kji_Lambda__init_0(var$0, 0);
+function ck_KotmeJsMain$main$4$2$1__init_0(var$0, var$1) {
+    var$0.$this$0193 = var$1;
+    kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTF$readJson$2$1() {
     kji_Lambda.call(this);
@@ -36109,7 +36165,7 @@ function oktsn_TextureNode_getColor($this) {
 }
 function oktsn_TextureNode_prepareToBuild($this) {
     oktsn_ShaderNode_prepareToBuild($this);
-    $this.$alpha.$setInlineCode(jl_StringBuilder__init_().$append($this.$color0.$getRef0()).$append($rt_s(942)).$toString());
+    $this.$alpha.$setInlineCode(jl_StringBuilder__init_().$append($this.$color0.$getRef0()).$append($rt_s(946)).$toString());
 }
 function oktsn_TextureNode_prepareToDrawMesh($this, $mesh) {
     var $unit, var$3;
@@ -36117,7 +36173,7 @@ function oktsn_TextureNode_prepareToDrawMesh($this, $mesh) {
     oktsn_ShaderNode_prepareToDrawMesh($this, $mesh);
     if (!(!$this.$color0.$isUsed0() && !$this.$alpha.$isUsed0())) {
         $unit = $this.$getShader().$getNextTextureUnit();
-        $this.$getShader().$set32($this.$sampler0.$getRef0(), $unit);
+        $this.$getShader().$set33($this.$sampler0.$getRef0(), $unit);
         var$3 = $this.$texture0;
         if (var$3 !== null)
             var$3.$bind4($unit);
@@ -36126,31 +36182,31 @@ function oktsn_TextureNode_prepareToDrawMesh($this, $mesh) {
 function oktsn_TextureNode_declarationFrag($this, $out) {
     var var$2;
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
-    var$2 = jl_StringBuilder__init_().$append($rt_s(943));
+    var$2 = jl_StringBuilder__init_().$append($rt_s(947));
     oktsn_GLSLType_$callClinit();
     $out.$append(var$2.$append(oktsn_GLSLType_getTypeName(oktsn_GLSLType_INSTANCE, $this.$textureType)).$append8(32).$append($this.$sampler0.$getRef0()).$append($rt_s(286)).$toString());
-    $out.$append(jl_StringBuilder__init_().$append($this.$color0.$getTypedRef0()).$append($rt_s(491)).$toString());
+    $out.$append(jl_StringBuilder__init_().$append($this.$color0.$getTypedRef0()).$append($rt_s(492)).$toString());
 }
 function oktsn_TextureNode_getSamplerAccessCode($this, $type) {
     var var$2;
     a: {
         if ($this.$getShader().$getVersion() >= 130)
-            var$2 = $rt_s(638);
+            var$2 = $rt_s(641);
         else {
             switch ($type) {
                 case 12:
                     break;
                 case 13:
-                    var$2 = $rt_s(944);
+                    var$2 = $rt_s(948);
                     break a;
                 case 14:
-                    var$2 = $rt_s(945);
+                    var$2 = $rt_s(949);
                     break a;
                 default:
-                    var$2 = $rt_s(638);
+                    var$2 = $rt_s(641);
                     break a;
             }
-            var$2 = $rt_s(946);
+            var$2 = $rt_s(950);
         }
     }
     return var$2;
@@ -36179,9 +36235,9 @@ function oktsn_TextureNode_getCoordinates($this, $type) {
 }
 function oktsn_TextureNode_executionFrag($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
-    $out.$append(jl_StringBuilder__init_().$append($this.$color0.$getRef0()).$append($rt_s(518)).$append(oktsn_TextureNode_getSamplerAccessCode($this, $this.$textureType)).$append8(40).$append($this.$sampler0.$getRef0()).$append($rt_s(301)).$append(oktsn_TextureNode_getCoordinates($this, $this.$textureType)).$append($rt_s(331)).$toString());
+    $out.$append(jl_StringBuilder__init_().$append($this.$color0.$getRef0()).$append($rt_s(519)).$append(oktsn_TextureNode_getSamplerAccessCode($this, $this.$textureType)).$append8(40).$append($this.$sampler0.$getRef0()).$append($rt_s(301)).$append(oktsn_TextureNode_getCoordinates($this, $this.$textureType)).$append($rt_s(331)).$toString());
     if ($this.$sRGB)
-        $out.$append(jl_StringBuilder__init_().$append($this.$color0.$getRef0()).$append($rt_s(947)).$append($this.$color0.$getRef0()).$append($rt_s(948)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($this.$color0.$getRef0()).$append($rt_s(951)).$append($this.$color0.$getRef0()).$append($rt_s(952)).$toString());
 }
 function oktsn_TextureNode__init_1($this, $uv, $texture, $sRGB, $textureType) {
     var var$5;
@@ -36191,9 +36247,9 @@ function oktsn_TextureNode__init_1($this, $uv, $texture, $sRGB, $textureType) {
     $this.$texture0 = $texture;
     $this.$sRGB = $sRGB;
     $this.$textureType = $textureType;
-    $this.$sampler0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLFloat__init_($rt_s(783)));
-    $this.$color0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(949)));
-    var$5 = oktsn_GLSLFloat__init_($rt_s(950));
+    $this.$sampler0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLFloat__init_($rt_s(787)));
+    $this.$color0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(953)));
+    var$5 = oktsn_GLSLFloat__init_($rt_s(954));
     var$5.$setScope(0);
     $this.$alpha = oktsn_ShaderNode_defOut($this, var$5);
     $this.$setInput($rt_s(326), $uv);
@@ -36460,17 +36516,17 @@ function oktgg_GLTFAnimation$readJson$2$1$1$1$1_invoke0($this, $$this$get) {
                         default:
                             break b;
                     }
-                    if (!var$4.$equals($rt_s(951)))
+                    if (!var$4.$equals($rt_s(955)))
                         break b;
                     $interpolation = 1;
                     break a;
                 }
-                if (!var$4.$equals($rt_s(952)))
+                if (!var$4.$equals($rt_s(956)))
                     break b;
                 $interpolation = 2;
                 break a;
             }
-            if (var$4.$equals($rt_s(953))) {
+            if (var$4.$equals($rt_s(957))) {
                 $interpolation = 3;
                 break a;
             }
@@ -36493,7 +36549,7 @@ function oktgg_GLTFAnimation$readJson$2$1$1$1$1_invoke0($this, $$this$get) {
                 if (!$path.$equals($rt_s(40)))
                     break e;
                 h: {
-                    $track = okta_Vec3Track__init_($interpolation, $nodeIndex, oktgg_GLTFNode_getName(oktgg_GLTFAnimation_getGltf($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$089).$getNodes0().$get1($nodeIndex)));
+                    $track = okta_Vec3Track__init_($interpolation, $nodeIndex, oktgg_GLTFNode_getName(oktgg_GLTFAnimation_getGltf($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$088).$getNodes0().$get1($nodeIndex)));
                     $values = okta_Vec3Track_getValues($track);
                     $times = okta_Vec3Track_getTimes($track);
                     $elementSize = 3;
@@ -36526,13 +36582,13 @@ function oktgg_GLTFAnimation$readJson$2$1$1$1$1_invoke0($this, $$this$get) {
                     }
                 }
                 okta_Vec3Track_calculateDuration($track);
-                oktgg_GLTFAnimation_getAnim($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$089).$getTranslationTracks().$add3($track);
+                oktgg_GLTFAnimation_getAnim($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$088).$getTranslationTracks().$add3($track);
                 break e;
             }
             if (!$path.$equals($rt_s(41)))
                 break e;
             i: {
-                $track = okta_Vec4Track__init_($interpolation, $nodeIndex, oktgg_GLTFNode_getName(oktgg_GLTFAnimation_getGltf($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$089).$getNodes0().$get1($nodeIndex)), null, null, null, null, 0.0, 248, null);
+                $track = okta_Vec4Track__init_($interpolation, $nodeIndex, oktgg_GLTFNode_getName(oktgg_GLTFAnimation_getGltf($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$088).$getNodes0().$get1($nodeIndex)), null, null, null, null, 0.0, 248, null);
                 $values = okta_Vec4Track_getValues($track);
                 $times = okta_Vec4Track_getTimes($track);
                 $elementSize = 4;
@@ -36565,12 +36621,12 @@ function oktgg_GLTFAnimation$readJson$2$1$1$1$1_invoke0($this, $$this$get) {
                 }
             }
             okta_Vec4Track_calculateDuration($track);
-            oktgg_GLTFAnimation_getAnim($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$089).$getRotationTracks().$add3($track);
+            oktgg_GLTFAnimation_getAnim($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$088).$getRotationTracks().$add3($track);
             break e;
         }
         if ($path.$equals($rt_s(42))) {
             j: {
-                $track = okta_Vec3Track__init_($interpolation, $nodeIndex, oktgg_GLTFNode_getName(oktgg_GLTFAnimation_getGltf($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$089).$getNodes0().$get1($nodeIndex)));
+                $track = okta_Vec3Track__init_($interpolation, $nodeIndex, oktgg_GLTFNode_getName(oktgg_GLTFAnimation_getGltf($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$088).$getNodes0().$get1($nodeIndex)));
                 $values = okta_Vec3Track_getValues($track);
                 $times = okta_Vec3Track_getTimes($track);
                 $elementSize = 3;
@@ -36603,8 +36659,8 @@ function oktgg_GLTFAnimation$readJson$2$1$1$1$1_invoke0($this, $$this$get) {
                 }
             }
             okta_Vec3Track_calculateDuration($track);
-            oktgg_GLTFAnimation_getAnim($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$089).$getScaleTracks().$add3($track);
-            oktgg_GLTFAnimation_getAnim($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$089).$calculateDuration2();
+            oktgg_GLTFAnimation_getAnim($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$088).$getScaleTracks().$add3($track);
+            oktgg_GLTFAnimation_getAnim($this.$this$0211.$this$0212.$this$0213.$this$0214.$this$088).$calculateDuration2();
         }
     }
 }
@@ -36630,8 +36686,8 @@ function oktgg_GLTFAnimation$readJson$2$1$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFAnimation$readJson$2$1$1_invoke0($this, $inputData) {
-    kji_Intrinsics_checkNotNullParameter($inputData, $rt_s(954));
-    oktgg_GLTFAnimation_access$asFloatBuffer($this.$this$0213.$this$0214.$this$089, oktgg_GLTFAnimationSampler_getOutput($this.$$animationSampler), oktgg_GLTFAnimation$readJson$2$1$1$1__init_($this, $inputData));
+    kji_Intrinsics_checkNotNullParameter($inputData, $rt_s(958));
+    oktgg_GLTFAnimation_access$asFloatBuffer($this.$this$0213.$this$0214.$this$088, oktgg_GLTFAnimationSampler_getOutput($this.$$animationSampler), oktgg_GLTFAnimation$readJson$2$1$1$1__init_($this, $inputData));
 }
 function oktgg_GLTFAnimation$readJson$2$1$1__init_0(var$0, var$1, var$2, var$3) {
     var$0.$this$0213 = var$1;
@@ -36931,13 +36987,13 @@ function oktgg_GLTFMaterial_getMaterial($this) {
 }
 function oktgg_GLTFMaterial__init_0($this, $gltf, $elementIndex, $material) {
     kji_Intrinsics_checkNotNullParameter($gltf, $rt_s(29));
-    kji_Intrinsics_checkNotNullParameter($material, $rt_s(748));
+    kji_Intrinsics_checkNotNullParameter($material, $rt_s(751));
     jl_Object__init_0($this);
     $this.$gltf9 = $gltf;
     $this.$elementIndex9 = $elementIndex;
     $this.$material1 = $material;
     $this.$name36 = $rt_s(6);
-    $this.$alphaMode2 = $rt_s(799);
+    $this.$alphaMode2 = $rt_s(803);
     $this.$alphaCutoff2 = 0.5;
     $this.$baseColorTexture = (-1);
     $this.$roughness0 = 1.0;
@@ -36978,29 +37034,29 @@ function ck_JonesView$1$1_invoke(var$0) {
 }
 function ck_JonesView$1$1_invoke0($this) {
     var var$1, $gltfScene, $$this$first$iv, var$4, $element$iv, $it;
-    var$1 = ck_JonesView_getGltf($this.$this$0215.$this$079).$getScene();
+    var$1 = ck_JonesView_getGltf($this.$this$0215.$this$080).$getScene();
     kji_Intrinsics_checkNotNull(var$1);
     $gltfScene = var$1.$copy4();
-    ck_JonesView_getScene($this.$this$0215.$this$079).$getScenes().$add3($gltfScene);
-    ck_JonesView_getScene($this.$this$0215.$this$079).$addChildNode0($gltfScene);
-    $this.$this$0215.$this$079.$updateTransform3();
-    var$1 = $this.$this$0215.$this$079;
+    ck_JonesView_getScene($this.$this$0215.$this$080).$getScenes().$add3($gltfScene);
+    ck_JonesView_getScene($this.$this$0215.$this$080).$addChildNode0($gltfScene);
+    $this.$this$0215.$this$080.$updateTransform3();
+    var$1 = $this.$this$0215.$this$080;
     $$this$first$iv = $gltfScene.$getRelatedNodes();
     var$4 = $$this$first$iv.$iterator();
     while (var$4.$hasNext()) {
         $element$iv = var$4.$next();
         $it = $element$iv;
-        if (!kji_Intrinsics_areEqual($it.$getName(), $rt_s(955)))
+        if (!kji_Intrinsics_areEqual($it.$getName(), $rt_s(959)))
             continue;
         else {
             ck_JonesView_access$setArm$p(var$1, $it);
-            okta_AnimPlayer_setNodes(ck_JonesView_getAnimPlayer($this.$this$0215.$this$079), $gltfScene.$getRelatedNodes());
-            ck_JonesView_setG($this.$this$0215.$this$079, $gltfScene);
-            ck_CharacterImp_animate$default($this.$this$0215.$this$079, $rt_s(357), 0.0, 0, 6, null);
+            okta_AnimPlayer_setNodes(ck_JonesView_getAnimPlayer($this.$this$0215.$this$080), $gltfScene.$getRelatedNodes());
+            ck_JonesView_setG($this.$this$0215.$this$080, $gltfScene);
+            ck_CharacterImp_animate$default($this.$this$0215.$this$080, $rt_s(357), 0.0, 0, 6, null);
             return;
         }
     }
-    $rt_throw(ju_NoSuchElementException__init_0($rt_s(721)));
+    $rt_throw(ju_NoSuchElementException__init_0($rt_s(724)));
 }
 function ck_JonesView$1$1__init_0(var$0, var$1) {
     var$0.$this$0215 = var$1;
@@ -37237,20 +37293,20 @@ function oktsn_PrincipledBSDF$Companion_getShadowCascadesNum($this) {
 }
 function oktsn_PrincipledBSDF$Companion_cascadedShadowsExe($this, $maxNumDirLights, $clipSpacePos, $use, $visualizeCascadeFields) {
     var var$5, var$6;
-    kji_Intrinsics_checkNotNullParameter($clipSpacePos, $rt_s(956));
+    kji_Intrinsics_checkNotNullParameter($clipSpacePos, $rt_s(960));
     if (!$use)
         var$5 = $rt_s(6);
     else {
-        var$5 = jl_StringBuilder__init_().$append($rt_s(957));
-        var$6 = !$visualizeCascadeFields ? $rt_s(6) : $rt_s(958);
-        var$5 = var$5.$append(var$6).$append($rt_s(959));
+        var$5 = jl_StringBuilder__init_().$append($rt_s(961));
+        var$6 = !$visualizeCascadeFields ? $rt_s(6) : $rt_s(962);
+        var$5 = var$5.$append(var$6).$append($rt_s(963));
         var$6 = $this;
-        var$5 = var$5.$append1(oktsn_PrincipledBSDF$Companion_getShadowCascadesNum(var$6)).$append($rt_s(960));
-        var$5 = var$5.$append1($rt_imul(oktsn_PrincipledBSDF$Companion_getShadowCascadesNum(var$6), $maxNumDirLights)).$append($rt_s(961));
-        var$5 = var$5.$append($clipSpacePos).$append($rt_s(962)).$append1(oktsn_PrincipledBSDF$Companion_getShadowCascadesNum(var$6)).$append($rt_s(963));
-        var$6 = !$visualizeCascadeFields ? $rt_s(6) : $rt_s(964);
-        var$5 = var$5.$append(var$6).$append($rt_s(965));
-        var$5 = var$5.$append(!$visualizeCascadeFields ? $rt_s(6) : $rt_s(966)).$append($rt_s(967)).$toString();
+        var$5 = var$5.$append1(oktsn_PrincipledBSDF$Companion_getShadowCascadesNum(var$6)).$append($rt_s(964));
+        var$5 = var$5.$append1($rt_imul(oktsn_PrincipledBSDF$Companion_getShadowCascadesNum(var$6), $maxNumDirLights)).$append($rt_s(965));
+        var$5 = var$5.$append($clipSpacePos).$append($rt_s(966)).$append1(oktsn_PrincipledBSDF$Companion_getShadowCascadesNum(var$6)).$append($rt_s(967));
+        var$6 = !$visualizeCascadeFields ? $rt_s(6) : $rt_s(968);
+        var$5 = var$5.$append(var$6).$append($rt_s(969));
+        var$5 = var$5.$append(!$visualizeCascadeFields ? $rt_s(6) : $rt_s(970)).$append($rt_s(971)).$toString();
     }
     return var$5;
 }
@@ -37263,27 +37319,27 @@ function oktsn_PrincipledBSDF$Companion_cascadedShadowsExe$default(var$1, var$2,
 }
 function oktsn_PrincipledBSDF$Companion_pbrCode($this, $maxNumDirLights, $maxNumPointLights, $maxNumSpotLights, $clipSpacePos, $receiveShadow) {
     var var$6;
-    kji_Intrinsics_checkNotNullParameter($clipSpacePos, $rt_s(956));
-    var$6 = jl_StringBuilder__init_().$append($rt_s(968));
-    var$6 = var$6.$append1($maxNumDirLights).$append($rt_s(969));
-    var$6 = var$6.$append1($maxNumDirLights).$append($rt_s(970));
-    var$6 = var$6.$append1($maxNumDirLights).$append($rt_s(971));
-    var$6 = var$6.$append1($maxNumPointLights).$append($rt_s(972));
-    var$6 = var$6.$append1($maxNumPointLights).$append($rt_s(973));
-    var$6 = var$6.$append1($maxNumPointLights).$append($rt_s(974));
-    var$6 = var$6.$append1($maxNumPointLights).$append($rt_s(975));
-    var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(976));
-    var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(977));
-    var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(978));
-    var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(979));
-    var$6 = var$6.$append1($maxNumDirLights).$append($rt_s(980));
+    kji_Intrinsics_checkNotNullParameter($clipSpacePos, $rt_s(960));
+    var$6 = jl_StringBuilder__init_().$append($rt_s(972));
+    var$6 = var$6.$append1($maxNumDirLights).$append($rt_s(973));
+    var$6 = var$6.$append1($maxNumDirLights).$append($rt_s(974));
+    var$6 = var$6.$append1($maxNumDirLights).$append($rt_s(975));
+    var$6 = var$6.$append1($maxNumPointLights).$append($rt_s(976));
+    var$6 = var$6.$append1($maxNumPointLights).$append($rt_s(977));
+    var$6 = var$6.$append1($maxNumPointLights).$append($rt_s(978));
+    var$6 = var$6.$append1($maxNumPointLights).$append($rt_s(979));
+    var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(980));
     var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(981));
     var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(982));
     var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(983));
     var$6 = var$6.$append1($maxNumDirLights).$append($rt_s(984));
-    var$6 = var$6.$append(oktsn_PrincipledBSDF$Companion_cascadedShadowsExe$default($this, $maxNumDirLights, $clipSpacePos, $receiveShadow, 0, 8, null)).$append($rt_s(985));
-    var$6 = var$6.$append1($maxNumPointLights).$append($rt_s(986));
-    var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(987)).$toString();
+    var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(985));
+    var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(986));
+    var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(987));
+    var$6 = var$6.$append1($maxNumDirLights).$append($rt_s(988));
+    var$6 = var$6.$append(oktsn_PrincipledBSDF$Companion_cascadedShadowsExe$default($this, $maxNumDirLights, $clipSpacePos, $receiveShadow, 0, 8, null)).$append($rt_s(989));
+    var$6 = var$6.$append1($maxNumPointLights).$append($rt_s(990));
+    var$6 = var$6.$append1($maxNumSpotLights).$append($rt_s(991)).$toString();
     return var$6;
 }
 function oktsn_PrincipledBSDF$Companion__init_1($this) {
@@ -37382,7 +37438,7 @@ function oktt_TvmSound$1$1__init_(var_0, var_1) {
     return var_2;
 }
 function oktt_TvmSound$1$1_handleEvent($this, $it) {
-    oktu_Pool_free(oktt_TvmSound_getPool($this.$this$0220.$this$0139), $this.$$instance);
+    oktu_Pool_free(oktt_TvmSound_getPool($this.$this$0220.$this$0138), $this.$$instance);
 }
 function oktt_TvmSound$1$1__init_0(var$0, var$1, var$2) {
     var$0.$this$0220 = var$1;
@@ -37451,7 +37507,7 @@ function jur_Quantifier_max($this) {
     return $this.$max3;
 }
 function jur_Quantifier_toString($this) {
-    return jl_StringBuilder__init_().$append($rt_s(988)).$append1($this.$min3).$append($rt_s(652)).$append($this.$max3 == 2147483647 ? $rt_s(6) : jl_Integer__init_($this.$max3).$toString()).$append($rt_s(989)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(992)).$append1($this.$min3).$append($rt_s(655)).$append($this.$max3 == 2147483647 ? $rt_s(6) : jl_Integer__init_($this.$max3).$toString()).$append($rt_s(993)).$toString();
 }
 function ck_ActionDescriptor$readJson$2() {
     kji_Lambda.call(this);
@@ -37557,6 +37613,9 @@ function okttj_TvmJsonArray_obj($this, $index) {
     }
     $rt_throw(jl_NullPointerException__init_0($rt_s(318)));
 }
+function okttj_TvmJsonArray_string($this, $index) {
+    return $rt_str($this.$array6[$index]);
+}
 function okttj_TvmJsonArray_float($this, $index) {
     return $this.$array6[$index];
 }
@@ -37583,6 +37642,10 @@ function okttj_TvmJsonArray_objs($this, $call) {
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     oktj_IJsonArray$DefaultImpls_objs($this, $call);
 }
+function okttj_TvmJsonArray_strings($this, $call) {
+    kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
+    oktj_IJsonArray$DefaultImpls_strings($this, $call);
+}
 function okti_FrameBufferAttachment() {
     var a = this; jl_Object.call(a);
     a.$attachment = 0;
@@ -37607,7 +37670,7 @@ function okti_FrameBufferAttachment_getGlHandle($this) {
 }
 function okti_FrameBufferAttachment_setup($this, $frameBuffer) {
     var $filter, $texture, $target, var$5, var$6, var$7, var$8, var$9, var$10, var$11, var$12, var$13;
-    kji_Intrinsics_checkNotNullParameter($frameBuffer, $rt_s(990));
+    kji_Intrinsics_checkNotNullParameter($frameBuffer, $rt_s(994));
     if (!okti_FrameBufferAttachment_getGlHandle($this)) {
         a: {
             if ($this.$pixelFormat == 6402) {
@@ -37662,7 +37725,7 @@ function okti_FrameBufferAttachment_getTexture0(var$0) {
     return okti_FrameBufferAttachment_getTexture(var$0);
 }
 function okti_FrameBufferAttachment__init_0($this, $attachment, $internalFormat, $pixelFormat, $type, $mipmapLevel, $texture) {
-    kji_Intrinsics_checkNotNullParameter($texture, $rt_s(638));
+    kji_Intrinsics_checkNotNullParameter($texture, $rt_s(641));
     jl_Object__init_0($this);
     $this.$attachment = $attachment;
     $this.$internalFormat = $internalFormat;
@@ -37746,7 +37809,7 @@ function okta_SequenceAction_delayRun($this, $delay, $call) {
     return okta_IActionContainer$DefaultImpls_delayRun($this, $delay, $call);
 }
 function okta_SequenceAction_doWhile($this, $function) {
-    kji_Intrinsics_checkNotNullParameter($function, $rt_s(629));
+    kji_Intrinsics_checkNotNullParameter($function, $rt_s(632));
     return okta_IActionContainer$DefaultImpls_doWhile($this, $function);
 }
 function okta_SequenceAction_run($this, $call) {
@@ -37775,10 +37838,10 @@ function oktgg_GLTFSampler__init_(var_0, var_1, var_2, var_3, var_4, var_5, var_
 }
 function oktgg_GLTFSampler_readJson($this, $json) {
     kji_Intrinsics_checkNotNullParameter($json, $rt_s(25));
-    $json.$int($rt_s(991), oktgg_GLTFSampler$readJson$1__init_($this));
-    $json.$int($rt_s(992), oktgg_GLTFSampler$readJson$2__init_($this));
-    $json.$int($rt_s(993), oktgg_GLTFSampler$readJson$3__init_($this));
-    $json.$int($rt_s(994), oktgg_GLTFSampler$readJson$4__init_($this));
+    $json.$int($rt_s(995), oktgg_GLTFSampler$readJson$1__init_($this));
+    $json.$int($rt_s(996), oktgg_GLTFSampler$readJson$2__init_($this));
+    $json.$int($rt_s(997), oktgg_GLTFSampler$readJson$3__init_($this));
+    $json.$int($rt_s(998), oktgg_GLTFSampler$readJson$4__init_($this));
     oktgg_GLTFSampler_getGltf($this).$getSamplers0().$ready(oktgg_GLTFSampler_getElementIndex($this));
 }
 function oktgg_GLTFSampler_getGltf($this) {
@@ -37855,8 +37918,8 @@ function oktgg_GLTFAnimationSampler__init_(var_0, var_1, var_2, var_3, var_4) {
 function oktgg_GLTFAnimationSampler_readJson($this, $json) {
     kji_Intrinsics_checkNotNullParameter($json, $rt_s(25));
     $this.$input0 = $json.$int0($rt_s(387));
-    $json.$string($rt_s(995), oktgg_GLTFAnimationSampler$readJson$1__init_($this));
-    $this.$output0 = $json.$int0($rt_s(637));
+    $json.$string($rt_s(999), oktgg_GLTFAnimationSampler$readJson$1__init_($this));
+    $this.$output0 = $json.$int0($rt_s(640));
 }
 function oktgg_GLTFAnimationSampler_getInput($this) {
     return $this.$input0;
@@ -37872,7 +37935,7 @@ function oktgg_GLTFAnimationSampler_getOutput($this) {
     return $this.$output0;
 }
 function oktgg_GLTFAnimationSampler__init_1($this, $input, $interpolation, $output) {
-    kji_Intrinsics_checkNotNullParameter($interpolation, $rt_s(995));
+    kji_Intrinsics_checkNotNullParameter($interpolation, $rt_s(999));
     jl_Object__init_0($this);
     $this.$input0 = $input;
     $this.$interpolation0 = $interpolation;
@@ -37882,7 +37945,7 @@ function oktgg_GLTFAnimationSampler__init_2(var$0, var$1, var$2, var$3, var$4, v
     if (var$4 & 1)
         var$1 = (-1);
     if (var$4 & 2)
-        var$2 = $rt_s(951);
+        var$2 = $rt_s(955);
     if (var$4 & 4)
         var$3 = (-1);
     oktgg_GLTFAnimationSampler__init_1(var$0, var$1, var$2, var$3);
@@ -38057,10 +38120,10 @@ function oktgg_GLTFAnimation$readJson$2$1$1$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFAnimation$readJson$2$1$1$1_invoke0($this, $outputBuffer) {
     var $inputAccessor, var$3, var$4, var$5, var$6;
-    kji_Intrinsics_checkNotNullParameter($outputBuffer, $rt_s(996));
-    $inputAccessor = oktgg_GLTFAnimation_getGltf($this.$this$0212.$this$0213.$this$0214.$this$089).$getAccessors().$get1(oktgg_GLTFAnimationSampler_getInput($this.$this$0212.$$animationSampler));
-    var$3 = oktgg_GLTFAnimation_getAnim($this.$this$0212.$this$0213.$this$0214.$this$089);
-    var$4 = oktgg_GLTFAnimation_getAnim($this.$this$0212.$this$0213.$this$0214.$this$089).$getDuration();
+    kji_Intrinsics_checkNotNullParameter($outputBuffer, $rt_s(1000));
+    $inputAccessor = oktgg_GLTFAnimation_getGltf($this.$this$0212.$this$0213.$this$0214.$this$088).$getAccessors().$get1(oktgg_GLTFAnimationSampler_getInput($this.$this$0212.$$animationSampler));
+    var$3 = oktgg_GLTFAnimation_getAnim($this.$this$0212.$this$0213.$this$0214.$this$088);
+    var$4 = oktgg_GLTFAnimation_getAnim($this.$this$0212.$this$0213.$this$0214.$this$088).$getDuration();
     var$5 = oktgg_GLTFAccessor_getMax($inputAccessor);
     var$6 = var$5.data;
     kji_Intrinsics_checkNotNull(var$5);
@@ -38174,7 +38237,7 @@ function kt_DelimitedRangesSequence$iterator$1_next($this) {
         $rt_throw(ju_NoSuchElementException__init_());
     $result = $this.$nextItem;
     if ($result === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(997)));
+        $rt_throw(jl_NullPointerException__init_0($rt_s(1001)));
     $this.$nextItem = null;
     $this.$nextState = (-1);
     return $result;
@@ -38325,7 +38388,7 @@ function oktt_TvmGL_glBindTextureBase($this, $target, $texture) {
 }
 function oktt_TvmGL_isExtensionSupported($this, $extension) {
     var var$2;
-    kji_Intrinsics_checkNotNullParameter($extension, $rt_s(630));
+    kji_Intrinsics_checkNotNullParameter($extension, $rt_s(633));
     var$2 = otji_JS_unwrapStringArray($this.$gl7.getSupportedExtensions());
     return var$2 === null ? 0 : kc_ArraysKt___ArraysKt_contains(var$2, $extension);
 }
@@ -38394,7 +38457,7 @@ function oktt_TvmGL_glTexImage2D0($this, $target, $level, $internalformat, $widt
     var$10 = $this.$gl7;
     var$11 = $image.$getSourceObject();
     if (var$11 === null)
-        $rt_throw(jl_NullPointerException__init_0($rt_s(998)));
+        $rt_throw(jl_NullPointerException__init_0($rt_s(1002)));
     var$12 = var$11;
     var$10.texImage2D($target, $level, $internalformat, $format, $type, var$12);
 }
@@ -38437,7 +38500,7 @@ function oktt_TvmGL_glBufferData($this, $target, $size, $data, $usage) {
 function oktt_TvmGL_glGetIntegerv($this, $pname, $params) {
     var var$3;
     var$3 = $params.data;
-    kji_Intrinsics_checkNotNullParameter($params, $rt_s(633));
+    kji_Intrinsics_checkNotNullParameter($params, $rt_s(636));
     var$3[0] = $this.$gl7.getParameter($pname);
 }
 function oktt_TvmGL_glBindFramebuffer($this, $target, $framebuffer) {
@@ -38486,7 +38549,7 @@ function oktt_TvmGL_glEnableVertexAttribArray($this, $index) {
 function oktt_TvmGL_glGetFloatv($this, $pname, $params) {
     var var$3;
     var$3 = $params.data;
-    kji_Intrinsics_checkNotNullParameter($params, $rt_s(633));
+    kji_Intrinsics_checkNotNullParameter($params, $rt_s(636));
     var$3[0] = $this.$gl7.getParameter($pname);
 }
 function oktt_TvmGL_uLoc($this, $location) {
@@ -38548,7 +38611,7 @@ function oktt_TvmGL_glShaderSource($this, $shader, $string) {
 function oktt_TvmGL_glGetShaderiv($this, $shader, $pname, $params) {
     var var$4, var$5, var$6;
     var$4 = $params.data;
-    kji_Intrinsics_checkNotNullParameter($params, $rt_s(633));
+    kji_Intrinsics_checkNotNullParameter($params, $rt_s(636));
     var$5 = $this.$gl7;
     var$6 = oktt_TvmGL$GLObjectArray_gl($this.$shaders, $shader);
     var$4[0] = var$5.getShaderParameter(var$6, $pname);
@@ -38556,15 +38619,15 @@ function oktt_TvmGL_glGetShaderiv($this, $shader, $pname, $params) {
 function oktt_TvmGL_glGetProgramiv($this, $program, $pname, $params) {
     var var$4, var$5, var$6;
     var$4 = $params.data;
-    kji_Intrinsics_checkNotNullParameter($params, $rt_s(633));
+    kji_Intrinsics_checkNotNullParameter($params, $rt_s(636));
     var$5 = $this.$gl7;
     var$6 = oktt_TvmGL$GLObjectArray_gl($this.$programs, $program);
     var$4[0] = var$5.getProgramParameter(var$6, $pname);
 }
 function oktt_TvmGL_glGetActiveUniform($this, $program, $index, $size, $type) {
     var var$5, var$6, $info, var$8, var$9;
-    kji_Intrinsics_checkNotNullParameter($size, $rt_s(632));
-    kji_Intrinsics_checkNotNullParameter($type, $rt_s(485));
+    kji_Intrinsics_checkNotNullParameter($size, $rt_s(635));
+    kji_Intrinsics_checkNotNullParameter($type, $rt_s(486));
     var$5 = $this.$gl7;
     var$6 = oktt_TvmGL$GLObjectArray_gl($this.$programs, $program);
     $info = var$5.getActiveUniform(var$6, $index);
@@ -38602,8 +38665,8 @@ function oktt_TvmGL_glAttachShader($this, $program, $shader) {
 }
 function oktt_TvmGL_glGetActiveAttrib($this, $program, $index, $size, $type) {
     var var$5, var$6, $info, var$8, var$9;
-    kji_Intrinsics_checkNotNullParameter($size, $rt_s(632));
-    kji_Intrinsics_checkNotNullParameter($type, $rt_s(485));
+    kji_Intrinsics_checkNotNullParameter($size, $rt_s(635));
+    kji_Intrinsics_checkNotNullParameter($type, $rt_s(486));
     var$5 = $this.$gl7;
     var$6 = oktt_TvmGL$GLObjectArray_gl($this.$programs, $program);
     $info = var$5.getActiveAttrib(var$6, $index);
@@ -38637,7 +38700,7 @@ function oktt_TvmGL_glDrawArraysInstanced($this, $mode, $first, $count, $instanc
     $this.$gl7.drawArraysInstanced($mode, $first, $count, $instanceCount);
 }
 function oktt_TvmGL_glDrawBuffers($this, $n, $bufs) {
-    kji_Intrinsics_checkNotNullParameter($bufs, $rt_s(631));
+    kji_Intrinsics_checkNotNullParameter($bufs, $rt_s(634));
     $this.$gl7.drawBuffers($bufs.data);
 }
 function oktt_TvmGL_glDrawElementsInstanced($this, $mode, $count, $type, $indicesOffset, $instanceCount) {
@@ -38654,7 +38717,7 @@ function oktt_TvmGL_getMajVer($this) {
 }
 function oktt_TvmGL__init_1($this, $gl, $majVer, $minVer, $glslVer) {
     var var$5, var$6;
-    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(716));
+    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(719));
     oktg_AbstractGL__init_0($this);
     $this.$gl7 = $gl;
     $this.$majVer = $majVer;
@@ -38698,6 +38761,33 @@ function oktt_TvmGL__init_2(var$0, var$1, var$2, var$3, var$4, var$5, var$6) {
         var$4 = 100;
     oktt_TvmGL__init_1(var$0, var$1, var$2, var$3, var$4);
 }
+function ck_LocationView$3$1() {
+    var a = this; kji_Lambda.call(a);
+    a.$this$0229 = null;
+    a.$$this_loadTyped0 = null;
+}
+function ck_LocationView$3$1__init_(var_0, var_1) {
+    var var_2 = new ck_LocationView$3$1();
+    ck_LocationView$3$1__init_0(var_2, var_0, var_1);
+    return var_2;
+}
+function ck_LocationView$3$1_invoke(var$0) {
+    ck_LocationView$3$1_invoke0(var$0);
+    k_Unit_$callClinit();
+    return k_Unit_INSTANCE;
+}
+function ck_LocationView$3$1_invoke0($this) {
+    var var$1, $gltfScene;
+    var$1 = $this.$$this_loadTyped0.$getScene();
+    kji_Intrinsics_checkNotNull(var$1);
+    $gltfScene = var$1.$copy4();
+    ck_LocationView_getMainScene($this.$this$0229.$this$0230).$getScenes().$add3($gltfScene);
+}
+function ck_LocationView$3$1__init_0(var$0, var$1, var$2) {
+    var$0.$this$0229 = var$1;
+    var$0.$$this_loadTyped0 = var$2;
+    kji_Lambda__init_0(var$0, 0);
+}
 function oktt_TvmGL$GLObjectArray() {
     ju_ArrayList.call(this);
     this.$buildWrap = null;
@@ -38733,7 +38823,7 @@ function oktt_TvmGL$GLObjectArray_delete($this, $id) {
     return $program;
 }
 function oktt_TvmGL$GLObjectArray__init_($this, $buildWrap) {
-    kji_Intrinsics_checkNotNullParameter($buildWrap, $rt_s(999));
+    kji_Intrinsics_checkNotNullParameter($buildWrap, $rt_s(1003));
     ju_ArrayList__init_1($this);
     $this.$buildWrap = $buildWrap;
 }
@@ -38839,7 +38929,7 @@ function okta_AnimPlayer_update($this, $delta) {
                     $time = $times.$get1($i).$floatValue();
                     if ($time >= okta_AnimPlayer$AnimationDesc_getPreviousTime($current) && $time <= okta_AnimPlayer$AnimationDesc_getTime($current)) {
                         var$5 = $actions.$get1($i);
-                        kji_Intrinsics_checkNotNullExpressionValue(var$5, $rt_s(1000));
+                        kji_Intrinsics_checkNotNullExpressionValue(var$5, $rt_s(1004));
                         $action = var$5;
                         okta_AnimPlayer$AnimationDesc_getExecutedActions($current).$add3($action);
                         $action.$invoke21();
@@ -38852,7 +38942,7 @@ function okta_AnimPlayer_update($this, $delta) {
     }
 }
 function okta_AnimPlayer_animate0($this, $animation, $transitionTime, $offset, $duration, $loopCount, $speed, $listener) {
-    kji_Intrinsics_checkNotNullParameter($animation, $rt_s(1001));
+    kji_Intrinsics_checkNotNullParameter($animation, $rt_s(1005));
     return okta_AnimPlayer_animate($this, okta_AnimPlayer_obtain($this, $animation, $offset, $duration, $loopCount, $speed, $listener), $transitionTime);
 }
 function okta_AnimPlayer_animate$default(var$1, var$2, var$3, var$4, var$5, var$6, var$7, var$8, var$9, var$10) {
@@ -38939,21 +39029,21 @@ function okta_AnimPlayer_begin($this) {
         $this.$applying = 1;
         return;
     }
-    $rt_throw(jl_RuntimeException__init_($rt_s(1002)));
+    $rt_throw(jl_RuntimeException__init_($rt_s(1006)));
 }
 function okta_AnimPlayer_apply($this, $animation, $time, $weight) {
     if ($this.$applying) {
         okta_AnimPlayer_applyAnimation0($this, 1, $weight, $animation, $time);
         return;
     }
-    $rt_throw(jl_RuntimeException__init_($rt_s(1003)));
+    $rt_throw(jl_RuntimeException__init_($rt_s(1007)));
 }
 function okta_AnimPlayer_end($this) {
     var var$1, $$this$forEach$iv, var$3, $element$iv, $it, var$6, var$7;
     if (!$this.$applying)
-        $rt_throw(jl_RuntimeException__init_($rt_s(1004)));
+        $rt_throw(jl_RuntimeException__init_($rt_s(1008)));
     var$1 = $this.$blendingPosition.$entrySet();
-    kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(1005));
+    kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(1009));
     $$this$forEach$iv = var$1;
     var$3 = $$this$forEach$iv.$iterator();
     while (var$3.$hasNext()) {
@@ -38961,16 +39051,16 @@ function okta_AnimPlayer_end($this) {
         $it = $element$iv;
         var$1 = $it.$getKey().$getPosition0();
         var$6 = $it.$getValue0();
-        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1006));
+        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1010));
         var$1.$set2(var$6);
         var$1 = $this.$vec3Pool;
         var$6 = $it.$getValue0();
-        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1006));
+        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1010));
         oktu_Pool_free(var$1, var$6);
     }
     $this.$blendingPosition.$clear();
     var$3 = $this.$blendingRotation.$entrySet();
-    kji_Intrinsics_checkNotNullExpressionValue(var$3, $rt_s(1007));
+    kji_Intrinsics_checkNotNullExpressionValue(var$3, $rt_s(1011));
     $$this$forEach$iv = var$3;
     var$3 = $$this$forEach$iv.$iterator();
     while (var$3.$hasNext()) {
@@ -38978,16 +39068,16 @@ function okta_AnimPlayer_end($this) {
         $it = $element$iv;
         var$1 = $it.$getKey().$getRotation0();
         var$6 = $it.$getValue0();
-        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1006));
+        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1010));
         var$1.$set6(var$6);
         var$1 = $this.$vec4Pool;
         var$6 = $it.$getValue0();
-        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1006));
+        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1010));
         oktu_Pool_free(var$1, var$6);
     }
     $this.$blendingRotation.$clear();
     var$3 = $this.$blendingScale.$entrySet();
-    kji_Intrinsics_checkNotNullExpressionValue(var$3, $rt_s(1008));
+    kji_Intrinsics_checkNotNullExpressionValue(var$3, $rt_s(1012));
     $$this$forEach$iv = var$3;
     var$1 = $$this$forEach$iv.$iterator();
     while (var$1.$hasNext()) {
@@ -38995,11 +39085,11 @@ function okta_AnimPlayer_end($this) {
         $it = $element$iv;
         var$6 = $it.$getKey().$getScale0();
         var$7 = $it.$getValue0();
-        kji_Intrinsics_checkNotNullExpressionValue(var$7, $rt_s(1006));
+        kji_Intrinsics_checkNotNullExpressionValue(var$7, $rt_s(1010));
         var$6.$set2(var$7);
         var$3 = $this.$vec3Pool;
         var$6 = $it.$getValue0();
-        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1006));
+        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1010));
         oktu_Pool_free(var$3, var$6);
     }
     $this.$blendingScale.$clear();
@@ -39010,13 +39100,13 @@ function okta_AnimPlayer_applyAnimation($this, $animation, $time) {
         okta_AnimPlayer_applyAnimation0($this, 0, 1.0, $animation, $time);
         return;
     }
-    $rt_throw(jl_RuntimeException__init_($rt_s(1009)));
+    $rt_throw(jl_RuntimeException__init_($rt_s(1013)));
 }
 function okta_AnimPlayer_applyAnimations($this, $anim1, $time1, $anim2, $time2, $weight) {
     if ($anim2 !== null && $weight !== 0.0) {
         if ($anim1 !== null && $weight !== 1.0) {
             if ($this.$applying)
-                $rt_throw(jl_RuntimeException__init_($rt_s(1009)));
+                $rt_throw(jl_RuntimeException__init_($rt_s(1013)));
             okta_AnimPlayer_begin($this);
             okta_AnimPlayer_apply($this, $anim1, $time1, 1.0);
             okta_AnimPlayer_apply($this, $anim2, $time2, $weight);
@@ -39052,7 +39142,7 @@ function okta_AnimPlayer_applyAnimation0($this, $blending, $alpha, $animation, $
                         }
                     }
                     oktu_LOG_$callClinit();
-                    oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, jl_StringBuilder__init_().$append($rt_s(1010)).$append1(okta_Vec3Track_getNodeIndex($track)).$append($rt_s(1011)).$append1($this.$nodes.$size()).$toString(), null, 2, null);
+                    oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, jl_StringBuilder__init_().$append($rt_s(1014)).$append1(okta_Vec3Track_getNodeIndex($track)).$append($rt_s(1015)).$append1($this.$nodes.$size()).$toString(), null, 2, null);
                 }
                 $i = $i + 1 | 0;
             }
@@ -39293,20 +39383,20 @@ function oktt_TvmDATA_bytes($this, $capacity) {
     var var$2, var$3;
     var$2 = new oktt_TvmUInt8Array;
     var$3 = new Uint8Array($capacity);
-    kji_Intrinsics_checkNotNullExpressionValue(var$3, $rt_s(1012));
+    kji_Intrinsics_checkNotNullExpressionValue(var$3, $rt_s(1016));
     oktt_TvmUInt8Array__init_0(var$2, var$3);
     return var$2;
 }
 function oktt_TvmDATA_decodeBase64($this, $text, $out) {
     kji_Intrinsics_checkNotNullParameter($text, $rt_s(317));
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
-    $rt_throw(k_NotImplementedError__init_(jl_StringBuilder__init_().$append($rt_s(1013)).$append($rt_s(1014)).$toString()));
+    $rt_throw(k_NotImplementedError__init_(jl_StringBuilder__init_().$append($rt_s(1017)).$append($rt_s(1018)).$toString()));
 }
 function oktt_TvmDATA_decodeURI($this, $uri) {
     var var$2;
     kji_Intrinsics_checkNotNullParameter($uri, $rt_s(26));
     var$2 = $rt_str(decodeURI($rt_ustr($uri)));
-    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(1015));
+    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(1019));
     return var$2;
 }
 function oktt_TvmDATA_destroyBytes($this, $data) {
@@ -39571,10 +39661,10 @@ function oktgg_GLTFAnimation$readJson$2$1_invoke(var$0, var$1) {
 function oktgg_GLTFAnimation$readJson$2$1_invoke0($this, $$this$objs) {
     var var$2, $animationSampler;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    var$2 = $this.$this$0214.$$animationSamplers.$get1($$this$objs.$int0($rt_s(791)));
-    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(1016));
+    var$2 = $this.$this$0214.$$animationSamplers.$get1($$this$objs.$int0($rt_s(795)));
+    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(1020));
     $animationSampler = var$2;
-    oktgg_GLTFAnimation_access$asFloatBuffer($this.$this$0214.$this$089, oktgg_GLTFAnimationSampler_getInput($animationSampler), oktgg_GLTFAnimation$readJson$2$1$1__init_($this, $$this$objs, $animationSampler));
+    oktgg_GLTFAnimation_access$asFloatBuffer($this.$this$0214.$this$088, oktgg_GLTFAnimationSampler_getInput($animationSampler), oktgg_GLTFAnimation$readJson$2$1$1__init_($this, $$this$objs, $animationSampler));
 }
 function oktgg_GLTFAnimation$readJson$2$1__init_0(var$0, var$1) {
     var$0.$this$0214 = var$1;
@@ -39611,7 +39701,7 @@ function okts_IShader$DefaultImpls_prepareSceneData($$this, $scene) {
 }
 function okts_IShader$DefaultImpls_prepareObjectData($$this, $object3D) {
     var $i, var$4, $node;
-    kji_Intrinsics_checkNotNullParameter($object3D, $rt_s(1017));
+    kji_Intrinsics_checkNotNullParameter($object3D, $rt_s(1021));
     $$this.$bind();
     $i = 0;
     var$4 = $$this.$getNodes1().$size();
@@ -39652,27 +39742,27 @@ function okts_IShader$DefaultImpls_numerateLines($$this, $title, $text, $pad) {
         $i_0 = $i + 1 | 0;
         $str.$append(kt_StringsKt__StringsKt_padEnd0(jl_String_valueOf0($i_0), $pad, 32));
         $str.$append($lines.$get1($i));
-        $str.$append($rt_s(1018));
+        $str.$append($rt_s(1022));
         $i = $i_0;
     }
     var$12 = $str.$toString();
-    kji_Intrinsics_checkNotNullExpressionValue(var$12, $rt_s(1019));
+    kji_Intrinsics_checkNotNullExpressionValue(var$12, $rt_s(1023));
     return var$12;
 }
 function okts_IShader$DefaultImpls_vertSourceCode$default(var$1, var$2, var$3, var$4, var$5) {
     if (var$5 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1020)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1024)));
     if (var$4 & 1)
-        var$2 = $rt_s(1021);
+        var$2 = $rt_s(1025);
     if (var$4 & 2)
         var$3 = 5;
     return var$1.$vertSourceCode(var$2, var$3);
 }
 function okts_IShader$DefaultImpls_fragSourceCode$default(var$1, var$2, var$3, var$4, var$5) {
     if (var$5 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1022)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1026)));
     if (var$4 & 1)
-        var$2 = $rt_s(1023);
+        var$2 = $rt_s(1027);
     if (var$4 & 2)
         var$3 = 5;
     return var$1.$fragSourceCode(var$2, var$3);
@@ -39682,7 +39772,7 @@ function okts_IShader$DefaultImpls_sourceCode($$this, $pad) {
 }
 function okts_IShader$DefaultImpls_sourceCode$default(var$1, var$2, var$3, var$4) {
     if (var$4 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1024)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1028)));
     if (var$3 & 1)
         var$2 = 5;
     return var$1.$sourceCode(var$2);
@@ -39712,7 +39802,7 @@ function okts_IShader$DefaultImpls_getUniformLocation($$this, $name, $pedantic) 
         oktg_GL_$callClinit();
         $location = jl_Integer_valueOf(oktg_GL_glGetUniformLocation(oktg_GL_INSTANCE, $$this.$getProgramHandle(), $name));
         if (!($location.$intValue() == (-1) && $pedantic ? 0 : 1)) {
-            var$5 = jl_StringBuilder__init_().$append($rt_s(1025)).$append($name).$append($rt_s(1026)).$toString();
+            var$5 = jl_StringBuilder__init_().$append($rt_s(1029)).$append($name).$append($rt_s(1030)).$toString();
             $rt_throw(jl_IllegalArgumentException__init_0(var$5.$toString()));
         }
         $$this.$getUniforms().$put2($name, $location);
@@ -39721,7 +39811,7 @@ function okts_IShader$DefaultImpls_getUniformLocation($$this, $name, $pedantic) 
 }
 function okts_IShader$DefaultImpls_getUniformLocation$default(var$1, var$2, var$3, var$4, var$5) {
     if (var$5 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1027)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1031)));
     if (var$4 & 2)
         var$3 = 0;
     return var$1.$getUniformLocation(var$2, var$3);
@@ -39754,7 +39844,7 @@ function okts_IShader$DefaultImpls_setMatrix40($$this, $name, $values, $offset, 
 }
 function okts_IShader$DefaultImpls_setMatrix4$default(var$1, var$2, var$3, var$4, var$5, var$6, var$7) {
     if (var$7 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1028)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1032)));
     if (var$6 & 4)
         var$4 = 0;
     if (var$6 & 8)
@@ -39773,7 +39863,7 @@ function okts_IShader$DefaultImpls_set3($$this, $name, $value) {
 function okts_IShader$DefaultImpls_set4($$this, $name, $values) {
     kji_Intrinsics_checkNotNullParameter($name, $rt_s(12));
     kji_Intrinsics_checkNotNullParameter($values, $rt_s(53));
-    $$this.$set31($name, $values.$getX(), $values.$getY0(), $values.$getZ());
+    $$this.$set32($name, $values.$getX(), $values.$getY0(), $values.$getZ());
 }
 function okts_IShader$DefaultImpls_set5($$this, $name, $value) {
     kji_Intrinsics_checkNotNullParameter($name, $rt_s(12));
@@ -39797,12 +39887,16 @@ function okts_IShader$DefaultImpls_destroy($$this) {
 }
 function ck_LocationView$2() {
     kji_Lambda.call(this);
-    this.$this$081 = null;
 }
-function ck_LocationView$2__init_(var_0) {
-    var var_1 = new ck_LocationView$2();
-    ck_LocationView$2__init_0(var_1, var_0);
-    return var_1;
+var ck_LocationView$2_INSTANCE = null;
+function ck_LocationView$2_$callClinit() {
+    ck_LocationView$2_$callClinit = $rt_eraseClinit(ck_LocationView$2);
+    ck_LocationView$2__clinit_();
+}
+function ck_LocationView$2__init_() {
+    var var_0 = new ck_LocationView$2();
+    ck_LocationView$2__init_0(var_0);
+    return var_0;
 }
 function ck_LocationView$2_invoke(var$0, var$1) {
     ck_LocationView$2_invoke0(var$0, var$1);
@@ -39814,52 +39908,39 @@ function ck_LocationView$2_invoke0($this, $$this$loadTyped) {
     oktgg_GLTFConf_setSeparateThread($$this$loadTyped.$getConf(), 1);
     oktgg_GLTFConf_setReceiveShadows($$this$loadTyped.$getConf(), 1);
     oktgg_GLTFConf_setSetupDepthRendering($$this$loadTyped.$getConf(), 1);
-    oktr_IResource$DefaultImpls_onLoaded$default($$this$loadTyped, null, ck_LocationView$2$1__init_($this, $$this$loadTyped), 1, null);
 }
-function ck_LocationView$2__init_0(var$0, var$1) {
-    var$0.$this$081 = var$1;
+function ck_LocationView$2__init_0(var$0) {
+    ck_LocationView$2_$callClinit();
     kji_Lambda__init_0(var$0, 1);
+}
+function ck_LocationView$2__clinit_() {
+    ck_LocationView$2_INSTANCE = ck_LocationView$2__init_();
 }
 function ck_LocationView$3() {
     kji_Lambda.call(this);
-    this.$this$0229 = null;
+    this.$this$0230 = null;
 }
 function ck_LocationView$3__init_(var_0) {
     var var_1 = new ck_LocationView$3();
     ck_LocationView$3__init_0(var_1, var_0);
     return var_1;
 }
-function ck_LocationView$3_invoke(var$0) {
-    ck_LocationView$3_invoke0(var$0);
+function ck_LocationView$3_invoke(var$0, var$1) {
+    ck_LocationView$3_invoke0(var$0, var$1);
     k_Unit_$callClinit();
     return k_Unit_INSTANCE;
 }
-function ck_LocationView$3_invoke0($this) {
-    var $delta, $targetPosition;
-    oktg_GL_$callClinit();
-    oktg_GL_glClear(oktg_GL_INSTANCE, 16640);
-    okta_APP_$callClinit();
-    $delta = okta_APP_getDeltaTime(okta_APP_INSTANCE);
-    $targetPosition = ck_LocationView_getTargetPosition($this.$this$0229);
-    if ($targetPosition !== null)
-        oktgc_OrbitCameraControl_getTarget(ck_LocationView_getCameraControl($this.$this$0229)).$set2($targetPosition).$add8(0.0, 1.0, 0.0);
-    ck_LocationView_getCameraControl($this.$this$0229).$update1($delta);
-    oktgc_ActiveCamera_$callClinit();
-    oktgn_ITransformNode$DefaultImpls_updateTransform$default(oktgc_ActiveCamera_INSTANCE, 0, 1, null);
-    $this.$this$0229.$update1($delta);
-    oktgl_DirectionalLight_renderShadowMaps(ck_Sky_getLight(ck_LocationView_getSky($this.$this$0229)), ck_LocationView_getMainScene($this.$this$0229));
-    ck_SkyClient_render(ck_LocationView_getSky($this.$this$0229));
-    oktg_IScene$DefaultImpls_render$default(ck_LocationView_getMainScene($this.$this$0229), 0, 1, null);
-    ck_SeaClient_update(ck_LocationView_getSea($this.$this$0229), $delta);
-    ck_SeaClient_render(ck_LocationView_getSea($this.$this$0229));
+function ck_LocationView$3_invoke0($this, $$this$loadTyped) {
+    kji_Intrinsics_checkNotNullParameter($$this$loadTyped, $rt_s(3));
+    oktr_IResource$DefaultImpls_onLoaded$default($$this$loadTyped, null, ck_LocationView$3$1__init_($this, $$this$loadTyped), 1, null);
 }
 function ck_LocationView$3__init_0(var$0, var$1) {
-    var$0.$this$0229 = var$1;
-    kji_Lambda__init_0(var$0, 0);
+    var$0.$this$0230 = var$1;
+    kji_Lambda__init_0(var$0, 1);
 }
 function oktr_ResourceAdapter$notifyLoaded$1() {
     kji_Lambda.call(this);
-    this.$this$0230 = null;
+    this.$this$0231 = null;
 }
 function oktr_ResourceAdapter$notifyLoaded$1__init_(var_0) {
     var var_1 = new oktr_ResourceAdapter$notifyLoaded$1();
@@ -39873,11 +39954,48 @@ function oktr_ResourceAdapter$notifyLoaded$1_invoke(var$0, var$1) {
 }
 function oktr_ResourceAdapter$notifyLoaded$1_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    $it.$loaded($this.$this$0230);
+    $it.$loaded($this.$this$0231);
 }
 function oktr_ResourceAdapter$notifyLoaded$1__init_0(var$0, var$1) {
-    var$0.$this$0230 = var$1;
+    var$0.$this$0231 = var$1;
     kji_Lambda__init_0(var$0, 1);
+}
+function ck_LocationView$4() {
+    kji_Lambda.call(this);
+    this.$this$0232 = null;
+}
+function ck_LocationView$4__init_(var_0) {
+    var var_1 = new ck_LocationView$4();
+    ck_LocationView$4__init_0(var_1, var_0);
+    return var_1;
+}
+function ck_LocationView$4_invoke(var$0) {
+    ck_LocationView$4_invoke0(var$0);
+    k_Unit_$callClinit();
+    return k_Unit_INSTANCE;
+}
+function ck_LocationView$4_invoke0($this) {
+    var $delta, $targetPosition;
+    oktg_GL_$callClinit();
+    oktg_GL_glClear(oktg_GL_INSTANCE, 16640);
+    okta_APP_$callClinit();
+    $delta = okta_APP_getDeltaTime(okta_APP_INSTANCE);
+    $targetPosition = ck_LocationView_getTargetPosition($this.$this$0232);
+    if ($targetPosition !== null)
+        oktgc_OrbitCameraControl_getTarget(ck_LocationView_getCameraControl($this.$this$0232)).$set2($targetPosition).$add8(0.0, 1.0, 0.0);
+    ck_LocationView_getCameraControl($this.$this$0232).$update1($delta);
+    oktgc_ActiveCamera_$callClinit();
+    oktgn_ITransformNode$DefaultImpls_updateTransform$default(oktgc_ActiveCamera_INSTANCE, 0, 1, null);
+    $this.$this$0232.$update1($delta);
+    oktgl_DirectionalLight_renderShadowMaps(ck_Sky_getLight(ck_LocationView_getSky($this.$this$0232)), ck_LocationView_getMainScene($this.$this$0232));
+    ck_SkyClient_render(ck_LocationView_getSky($this.$this$0232));
+    oktg_IScene$DefaultImpls_render$default(ck_LocationView_getMainScene($this.$this$0232), 0, 1, null);
+    ck_SeaClient_update(ck_LocationView_getSea($this.$this$0232), $delta);
+    ck_SeaClient_render(ck_LocationView_getSea($this.$this$0232));
+}
+function ck_LocationView$4__init_0(var$0, var$1) {
+    var$0.$this$0232 = var$1;
+    kji_Lambda__init_0(var$0, 0);
 }
 function okta_IAnimTrack$DefaultImpls() {
     jl_Object.call(this);
@@ -39940,6 +40058,7 @@ function oktgg_GLTF() {
     a.$name39 = null;
     a.$glCalls = null;
     a.$runOnGLThreadRequestInternal = 0;
+    a.$jsonReading = 0;
     a.$source1 = null;
     a.$sourceType = null;
     a.$directory = null;
@@ -40083,11 +40202,18 @@ function oktgg_GLTF_setName($this, $_set___) {
     kji_Intrinsics_checkNotNullParameter($_set___, $rt_s(5));
     $this.$name39 = $_set___;
 }
+function oktgg_GLTF_getRunOnGLThreadRequest($this) {
+    return $this.$runOnGLThreadRequestInternal;
+}
 function oktgg_GLTF_getLoadOnSeparateThread($this) {
     return oktgg_GLTFConf_getSeparateThread($this.$getConf());
 }
 function oktgg_GLTF_setLoadOnSeparateThread($this, $value) {
     oktgg_GLTFConf_setSeparateThread($this.$getConf(), $value);
+}
+function oktgg_GLTF_setJsonReading($this, $value) {
+    $this.$jsonReading = $value;
+    oktgg_GLTF_updateProgress($this);
 }
 function oktgg_GLTF_updateProgress($this) {
     oktr_ResourceAdapter_setProgressInternal($this, 0.0);
@@ -40101,7 +40227,7 @@ function oktgg_GLTF_updateProgress($this) {
     oktr_ResourceAdapter_setProgressInternal($this, oktr_ResourceAdapter_getProgressInternal($this) + oktgg_GLTFArray_getProgress($this.$getScenes0()));
     oktr_ResourceAdapter_setProgressInternal($this, oktr_ResourceAdapter_getProgressInternal($this) + oktgg_GLTFArray_getProgress($this.$getAnimations()));
     oktr_ResourceAdapter_setProgressInternal($this, oktr_ResourceAdapter_getProgressInternal($this) / 9.0);
-    if (oktr_ResourceAdapter_getProgressInternal($this) === 1.0) {
+    if (oktr_ResourceAdapter_getProgressInternal($this) === 1.0 && !$this.$jsonReading) {
         $this.$isLoadingInternal = 0;
         $this.$notifyLoaded();
     }
@@ -40159,18 +40285,18 @@ function oktgg_GLTF_load($this) {
                 }
                 var$1 = $this.$source1;
                 if (var$1 === null)
-                    $rt_throw(jl_NullPointerException__init_0($rt_s(1029)));
+                    $rt_throw(jl_NullPointerException__init_0($rt_s(1033)));
                 $gltfFile = var$1;
                 $this.$setName($gltfFile.$getPath());
                 oktr_ResourceAdapter_setUriInternal($this, $gltfFile.$getPath());
                 var$3 = oktgg_GLTF$load$1__init_($this, $gltfFile);
                 var$4 = oktgg_GLTF$load$2__init_($this);
-                $gltfFile.$readText($rt_s(1030), var$3, var$4);
+                $gltfFile.$readText($rt_s(1034), var$3, var$4);
                 break a;
             }
             var$1 = $this.$source1;
             if (var$1 === null)
-                $rt_throw(jl_NullPointerException__init_0($rt_s(1031)));
+                $rt_throw(jl_NullPointerException__init_0($rt_s(1035)));
             $this.$readJson(var$1);
             $i = 0;
             var$6 = oktr_ResourceAdapter_getListeners($this).$size();
@@ -40186,44 +40312,45 @@ function oktgg_GLTF_load($this) {
 function oktgg_GLTF_createArrayElement($this, $arrayName, $elementIndex) {
     var var$3;
     a: {
-        kji_Intrinsics_checkNotNullParameter($arrayName, $rt_s(1032));
+        kji_Intrinsics_checkNotNullParameter($arrayName, $rt_s(1036));
         switch ($arrayName.$hashCode()) {
             case 227996723:
                 break;
             default:
                 break a;
         }
-        if ($arrayName.$equals($rt_s(1033))) {
+        if ($arrayName.$equals($rt_s(1037))) {
             var$3 = oktgg_GLTFBuffer__init_1($this, $elementIndex, null, null, 0, null, 60, null);
             return var$3;
         }
     }
-    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(1034)).$append($arrayName).$toString()));
+    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(1038)).$append($arrayName).$toString()));
 }
 function oktgg_GLTF_readJson($this, $json) {
     var $loadedSkinnedNum, $skinnedNodes, $i, var$5, $node, var$7, var$8, $nodeIndex;
     kji_Intrinsics_checkNotNullParameter($json, $rt_s(25));
     oktr_ResourceAdapter_setProgressInternal($this, 0.0);
     $this.$isLoadingInternal = 1;
+    oktgg_GLTF_setJsonReading($this, 1);
     $this.$destroy0();
-    $json.$get4($rt_s(1035), oktgg_GLTF$readJson$1__init_($this));
-    if ($json.$contains($rt_s(1036))) {
+    $json.$get4($rt_s(1039), oktgg_GLTF$readJson$1__init_($this));
+    if ($json.$contains($rt_s(1040))) {
         oktu_LOG_$callClinit();
-        oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, $rt_s(1037), null, 2, null);
+        oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, $rt_s(1041), null, 2, null);
     }
     $json.$array(oktgg_GLTFArray_getName($this.$getBuffers0()), oktgg_GLTF$readJson$2__init_($this));
-    $json.$array($rt_s(1038), oktgg_GLTF$readJson$3__init_($this));
-    $json.$array($rt_s(1039), oktgg_GLTF$readJson$4__init_($this));
-    $json.$array($rt_s(788), oktgg_GLTF$readJson$5__init_($this));
-    $json.$array($rt_s(1040), oktgg_GLTF$readJson$6__init_($this));
-    $json.$array($rt_s(1041), oktgg_GLTF$readJson$7__init_($this));
-    $json.$array($rt_s(1042), oktgg_GLTF$readJson$8__init_($this));
-    $json.$array($rt_s(665), oktgg_GLTF$readJson$9__init_($this));
-    $json.$array($rt_s(1043), oktgg_GLTF$readJson$10__init_($this));
-    $json.$array($rt_s(1044), oktgg_GLTF$readJson$11__init_($this));
-    $json.$array($rt_s(1045), oktgg_GLTF$readJson$12__init_($this));
-    $json.$array($rt_s(1046), oktgg_GLTF$readJson$13__init_($this));
-    $json.$array($rt_s(1047), oktgg_GLTF$readJson$14__init_($this));
+    $json.$array($rt_s(1042), oktgg_GLTF$readJson$3__init_($this));
+    $json.$array($rt_s(1043), oktgg_GLTF$readJson$4__init_($this));
+    $json.$array($rt_s(792), oktgg_GLTF$readJson$5__init_($this));
+    $json.$array($rt_s(1044), oktgg_GLTF$readJson$6__init_($this));
+    $json.$array($rt_s(1045), oktgg_GLTF$readJson$7__init_($this));
+    $json.$array($rt_s(1046), oktgg_GLTF$readJson$8__init_($this));
+    $json.$array($rt_s(668), oktgg_GLTF$readJson$9__init_($this));
+    $json.$array($rt_s(1047), oktgg_GLTF$readJson$10__init_($this));
+    $json.$array($rt_s(1048), oktgg_GLTF$readJson$11__init_($this));
+    $json.$array($rt_s(1049), oktgg_GLTF$readJson$12__init_($this));
+    $json.$array($rt_s(1050), oktgg_GLTF$readJson$13__init_($this));
+    $json.$array($rt_s(1051), oktgg_GLTF$readJson$14__init_($this));
     $json.$int($rt_s(275), oktgg_GLTF$readJson$15__init_($this));
     $loadedSkinnedNum = kji_Ref$IntRef__init_();
     $loadedSkinnedNum.$element1 = 0;
@@ -40240,12 +40367,13 @@ function oktgg_GLTF_readJson($this, $json) {
     var$7 = $skinnedNodes.$size();
     while ($i < var$7) {
         var$8 = $skinnedNodes.$get1($i);
-        kji_Intrinsics_checkNotNullExpressionValue(var$8, $rt_s(1048));
+        kji_Intrinsics_checkNotNullExpressionValue(var$8, $rt_s(1052));
         $nodeIndex = var$8.$intValue();
         oktgg_GLTFArray_getOrWait($this.$getNodes(), $nodeIndex, oktgg_GLTF$readJson$16__init_($this, $loadedSkinnedNum, $skinnedNodes));
         $i = $i + 1 | 0;
     }
     $this.$runGLCall(oktgg_GLTF$readJson$17__init_($this, $skinnedNodes));
+    oktgg_GLTF_setJsonReading($this, 0);
 }
 function oktgg_GLTF_destroy($this) {
     var $i, var$2, $$this$forEach$iv, var$4, $element$iv, $it;
@@ -40288,56 +40416,56 @@ function oktgg_GLTF__init_1($this, $source, $sourceType, $directory) {
     var var$4;
     oktgg_GLTF_$callClinit();
     kji_Intrinsics_checkNotNullParameter($source, $rt_s(437));
-    kji_Intrinsics_checkNotNullParameter($sourceType, $rt_s(1049));
-    kji_Intrinsics_checkNotNullParameter($directory, $rt_s(1050));
+    kji_Intrinsics_checkNotNullParameter($sourceType, $rt_s(1053));
+    kji_Intrinsics_checkNotNullParameter($directory, $rt_s(1054));
     oktr_ResourceAdapter__init_0($this);
     $this.$source1 = $source;
     $this.$sourceType = $sourceType;
     $this.$directory = $directory;
     $this.$conf0 = oktgg_GLTFConf__init_();
     $this.$generator = $rt_s(6);
-    $this.$version = $rt_s(1051);
+    $this.$version = $rt_s(1055);
     $this.$copyright = $rt_s(6);
     $this.$minVersion = $rt_s(6);
     $this.$objects0 = oktu_AsyncArrayList__init_();
     $this.$arrayListener0 = oktgg_GLTF$arrayListener$1__init_($this);
-    var$4 = oktgg_GLTFArray__init_($rt_s(1033));
+    var$4 = oktgg_GLTFArray__init_($rt_s(1037));
     oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
     $this.$buffers0 = var$4;
-    var$4 = oktgg_GLTFArray__init_($rt_s(1038));
-    oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
-    $this.$bufferViews = var$4;
-    var$4 = oktgg_GLTFArray__init_($rt_s(1039));
-    oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
-    $this.$accessors = var$4;
-    var$4 = oktgg_GLTFArray__init_($rt_s(788));
-    oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
-    $this.$samplers = var$4;
-    var$4 = oktgg_GLTFArray__init_($rt_s(1040));
-    oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
-    $this.$images = var$4;
-    var$4 = oktgg_GLTFArray__init_($rt_s(1041));
-    oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
-    $this.$textures0 = var$4;
     var$4 = oktgg_GLTFArray__init_($rt_s(1042));
     oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
-    $this.$materials = var$4;
-    var$4 = oktgg_GLTFArray__init_($rt_s(665));
+    $this.$bufferViews = var$4;
+    var$4 = oktgg_GLTFArray__init_($rt_s(1043));
     oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
-    $this.$meshes0 = var$4;
+    $this.$accessors = var$4;
+    var$4 = oktgg_GLTFArray__init_($rt_s(792));
+    oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
+    $this.$samplers = var$4;
     var$4 = oktgg_GLTFArray__init_($rt_s(1044));
     oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
-    $this.$nodes0 = var$4;
+    $this.$images = var$4;
     var$4 = oktgg_GLTFArray__init_($rt_s(1045));
     oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
-    $this.$skins = var$4;
+    $this.$textures0 = var$4;
     var$4 = oktgg_GLTFArray__init_($rt_s(1046));
     oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
+    $this.$materials = var$4;
+    var$4 = oktgg_GLTFArray__init_($rt_s(668));
+    oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
+    $this.$meshes0 = var$4;
+    var$4 = oktgg_GLTFArray__init_($rt_s(1048));
+    oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
+    $this.$nodes0 = var$4;
+    var$4 = oktgg_GLTFArray__init_($rt_s(1049));
+    oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
+    $this.$skins = var$4;
+    var$4 = oktgg_GLTFArray__init_($rt_s(1050));
+    oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
     $this.$animations = var$4;
-    var$4 = oktgg_GLTFArray__init_($rt_s(1047));
+    var$4 = oktgg_GLTFArray__init_($rt_s(1051));
     oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
     $this.$scenes0 = var$4;
-    var$4 = oktgg_GLTFArray__init_($rt_s(1043));
+    var$4 = oktgg_GLTFArray__init_($rt_s(1047));
     oktgg_GLTFArray_addListener(var$4, $this.$arrayListener0);
     $this.$cameras = var$4;
     $this.$extra0 = ju_HashMap__init_();
@@ -40348,8 +40476,8 @@ function oktgg_GLTF__init_1($this, $source, $sourceType, $directory) {
 function oktgg_GLTF__init_3($this, $file, $sourceType, $directory) {
     oktgg_GLTF_$callClinit();
     kji_Intrinsics_checkNotNullParameter($file, $rt_s(295));
-    kji_Intrinsics_checkNotNullParameter($sourceType, $rt_s(1049));
-    kji_Intrinsics_checkNotNullParameter($directory, $rt_s(1050));
+    kji_Intrinsics_checkNotNullParameter($sourceType, $rt_s(1053));
+    kji_Intrinsics_checkNotNullParameter($directory, $rt_s(1054));
     oktgg_GLTF__init_1($this, $file, $sourceType, $directory);
 }
 function oktgg_GLTF__init_(var$0, var$1, var$2, var$3, var$4, var$5) {
@@ -40389,12 +40517,12 @@ function ck_SkyClient_render($this) {
     $this.$skyShader.$bind();
     var$1 = $this.$skyShader;
     oktgc_ActiveCamera_$callClinit();
-    var$1.$set22($rt_s(1052), oktgc_ActiveCamera_getViewProjectionMatrix(oktgc_ActiveCamera_INSTANCE));
-    $this.$skyShader.$set15($rt_s(1053), oktgc_ActiveCamera_getFar(oktgc_ActiveCamera_INSTANCE));
-    $this.$skyShader.$set30($rt_s(1054), oktgc_ActiveCamera_getPosition(oktgc_ActiveCamera_INSTANCE));
+    var$1.$set23($rt_s(1056), oktgc_ActiveCamera_getViewProjectionMatrix(oktgc_ActiveCamera_INSTANCE));
+    $this.$skyShader.$set15($rt_s(1057), oktgc_ActiveCamera_getFar(oktgc_ActiveCamera_INSTANCE));
+    $this.$skyShader.$set31($rt_s(1058), oktgc_ActiveCamera_getPosition(oktgc_ActiveCamera_INSTANCE));
     $this.$sunPos.$set2(oktgl_DirectionalLight_getDirection(ck_Sky_getLight($this))).$scl((-1.0));
-    $this.$skyShader.$set30($rt_s(1055), $this.$sunPos);
-    $this.$skyShader.$set30($rt_s(1056), oktgl_DirectionalLight_getColor(ck_Sky_getLight($this)));
+    $this.$skyShader.$set31($rt_s(1059), $this.$sunPos);
+    $this.$skyShader.$set31($rt_s(1060), oktgl_DirectionalLight_getColor(ck_Sky_getLight($this)));
     oktm_IMesh$DefaultImpls_render$default($this.$skybox, $this.$skyShader, 0, 0, 0, 0, 30, null);
     oktg_GL_$callClinit();
     oktg_GL_glClear(oktg_GL_INSTANCE, 256);
@@ -40410,7 +40538,7 @@ function ck_SkyClient__init_0($this) {
     var$3 = null;
     var$4 = null;
     var$5 = null;
-    okts_Shader__init_0(var$1, $rt_s(1057), $rt_s(1058), var$2, 0, var$3, 0, var$4, 124, var$5);
+    okts_Shader__init_0(var$1, $rt_s(1061), $rt_s(1062), var$2, 0, var$3, 0, var$4, 124, var$5);
     $this.$skyShader = var$1;
     oktgl_DirectionalLight_setLightPositionOffset(ck_Sky_getLight($this), 100.0);
     oktgl_DirectionalLight_setupShadowMaps(ck_Sky_getLight($this), 1048, 1048);
@@ -40504,14 +40632,14 @@ function oktgg_GLTFArray_ready($this, $index) {
         $element$iv = var$3.$next();
         $it = $element$iv;
         if ($this === null)
-            $rt_throw(jl_NullPointerException__init_0($rt_s(1059)));
+            $rt_throw(jl_NullPointerException__init_0($rt_s(1063)));
         $it.$ready3($this, $index);
     }
 }
 function oktgg_GLTFArray_get($this, $index) {
     var var$2;
     var$2 = $this.$list.$get1($index);
-    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(1060));
+    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(1064));
     return var$2;
 }
 function oktgg_GLTFArray_get0(var$0, var$1) {
@@ -40520,7 +40648,7 @@ function oktgg_GLTFArray_get0(var$0, var$1) {
 function oktgg_GLTFArray_iterator($this) {
     var var$1;
     var$1 = $this.$list.$iterator();
-    kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(1061));
+    kji_Intrinsics_checkNotNullExpressionValue(var$1, $rt_s(1065));
     return var$1;
 }
 function oktgg_GLTFArray_add($this, $element) {
@@ -40554,7 +40682,7 @@ function oktgg_GLTFArray_getOrWait($this, $index, $call) {
 }
 function oktgg_GLTFNode$readJson$2() {
     kji_Lambda.call(this);
-    this.$this$0106 = null;
+    this.$this$0105 = null;
 }
 function oktgg_GLTFNode$readJson$2__init_(var_0) {
     var var_1 = new oktgg_GLTFNode$readJson$2();
@@ -40567,16 +40695,16 @@ function oktgg_GLTFNode$readJson$2_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFNode$readJson$2_invoke0($this, $childIndex) {
-    oktgg_GLTFNode_getChildren($this.$this$0106).$add3(jl_Integer_valueOf($childIndex));
-    oktgg_GLTFNode_getGltf($this.$this$0106).$getNodes0().$getOrWait0($childIndex, oktgg_GLTFNode$readJson$2$1__init_($this));
+    oktgg_GLTFNode_getChildren($this.$this$0105).$add3(jl_Integer_valueOf($childIndex));
+    oktgg_GLTFNode_getGltf($this.$this$0105).$getNodes0().$getOrWait0($childIndex, oktgg_GLTFNode$readJson$2$1__init_($this));
 }
 function oktgg_GLTFNode$readJson$2__init_0(var$0, var$1) {
-    var$0.$this$0106 = var$1;
+    var$0.$this$0105 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFNode$readJson$3() {
     kji_Lambda.call(this);
-    this.$this$0231 = null;
+    this.$this$0233 = null;
 }
 function oktgg_GLTFNode$readJson$3__init_(var_0) {
     var var_1 = new oktgg_GLTFNode$readJson$3();
@@ -40596,12 +40724,12 @@ function oktgg_GLTFNode$readJson$3_invoke0($this, $$this$array) {
     $$this$array.$floats1(oktgg_GLTFNode$readJson$3$1__init_($this, $i));
 }
 function oktgg_GLTFNode$readJson$3__init_0(var$0, var$1) {
-    var$0.$this$0231 = var$1;
+    var$0.$this$0233 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFNode$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$0232 = null;
+    this.$this$0234 = null;
 }
 function oktgg_GLTFNode$readJson$1__init_(var_0) {
     var var_1 = new oktgg_GLTFNode$readJson$1();
@@ -40615,16 +40743,16 @@ function oktgg_GLTFNode$readJson$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFNode$readJson$1_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    oktgg_GLTFNode_setName($this.$this$0232, $it);
-    oktgg_GLTFNode_getNode($this.$this$0232).$setName($it);
+    oktgg_GLTFNode_setName($this.$this$0234, $it);
+    oktgg_GLTFNode_getNode($this.$this$0234).$setName($it);
 }
 function oktgg_GLTFNode$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$0232 = var$1;
+    var$0.$this$0234 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFNode$readJson$6() {
     kji_Lambda.call(this);
-    this.$this$0233 = null;
+    this.$this$0235 = null;
 }
 function oktgg_GLTFNode$readJson$6__init_(var_0) {
     var var_1 = new oktgg_GLTFNode$readJson$6();
@@ -40638,15 +40766,15 @@ function oktgg_GLTFNode$readJson$6_invoke(var$0, var$1) {
 }
 function oktgg_GLTFNode$readJson$6_invoke0($this, $$this$array) {
     kji_Intrinsics_checkNotNullParameter($$this$array, $rt_s(3));
-    oktgg_GLTFNode_getNode($this.$this$0233).$getScale0().$set13($$this$array.$float1(0), $$this$array.$float1(1), $$this$array.$float1(2));
+    oktgg_GLTFNode_getNode($this.$this$0235).$getScale0().$set13($$this$array.$float1(0), $$this$array.$float1(1), $$this$array.$float1(2));
 }
 function oktgg_GLTFNode$readJson$6__init_0(var$0, var$1) {
-    var$0.$this$0233 = var$1;
+    var$0.$this$0235 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFNode$readJson$7() {
     kji_Lambda.call(this);
-    this.$this$0234 = null;
+    this.$this$0236 = null;
 }
 function oktgg_GLTFNode$readJson$7__init_(var_0) {
     var var_1 = new oktgg_GLTFNode$readJson$7();
@@ -40659,10 +40787,10 @@ function oktgg_GLTFNode$readJson$7_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFNode$readJson$7_invoke0($this, $it) {
-    oktgg_GLTFNode_getWeights($this.$this$0234).$add3(jl_Float_valueOf($it));
+    oktgg_GLTFNode_getWeights($this.$this$0236).$add3(jl_Float_valueOf($it));
 }
 function oktgg_GLTFNode$readJson$7__init_0(var$0, var$1) {
-    var$0.$this$0234 = var$1;
+    var$0.$this$0236 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function jl_System() {
@@ -40730,7 +40858,7 @@ function jl_System_arraycopy($src, $srcPos, $dest, $destPos, $length) {
         }
         $rt_throw(jl_IndexOutOfBoundsException__init_());
     }
-    $rt_throw(jl_NullPointerException__init_0($rt_s(1062)));
+    $rt_throw(jl_NullPointerException__init_0($rt_s(1066)));
 }
 function jl_System_doArrayCopy(var$1, var$2, var$3, var$4, var$5) {
     if (var$1 !== var$3 || var$4 < var$2) {
@@ -40753,7 +40881,7 @@ function jl_System_nanoTime() {
 }
 function oktgg_GLTFNode$readJson$4() {
     kji_Lambda.call(this);
-    this.$this$0235 = null;
+    this.$this$0237 = null;
 }
 function oktgg_GLTFNode$readJson$4__init_(var_0) {
     var var_1 = new oktgg_GLTFNode$readJson$4();
@@ -40767,15 +40895,15 @@ function oktgg_GLTFNode$readJson$4_invoke(var$0, var$1) {
 }
 function oktgg_GLTFNode$readJson$4_invoke0($this, $$this$array) {
     kji_Intrinsics_checkNotNullParameter($$this$array, $rt_s(3));
-    oktgg_GLTFNode_getNode($this.$this$0235).$getPosition0().$set13($$this$array.$float1(0), $$this$array.$float1(1), $$this$array.$float1(2));
+    oktgg_GLTFNode_getNode($this.$this$0237).$getPosition0().$set13($$this$array.$float1(0), $$this$array.$float1(1), $$this$array.$float1(2));
 }
 function oktgg_GLTFNode$readJson$4__init_0(var$0, var$1) {
-    var$0.$this$0235 = var$1;
+    var$0.$this$0237 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFNode$readJson$5() {
     kji_Lambda.call(this);
-    this.$this$0236 = null;
+    this.$this$0238 = null;
 }
 function oktgg_GLTFNode$readJson$5__init_(var_0) {
     var var_1 = new oktgg_GLTFNode$readJson$5();
@@ -40789,10 +40917,10 @@ function oktgg_GLTFNode$readJson$5_invoke(var$0, var$1) {
 }
 function oktgg_GLTFNode$readJson$5_invoke0($this, $$this$array) {
     kji_Intrinsics_checkNotNullParameter($$this$array, $rt_s(3));
-    oktgg_GLTFNode_getNode($this.$this$0236).$getRotation0().$set18($$this$array.$float1(0), $$this$array.$float1(1), $$this$array.$float1(2), $$this$array.$float1(3));
+    oktgg_GLTFNode_getNode($this.$this$0238).$getRotation0().$set18($$this$array.$float1(0), $$this$array.$float1(1), $$this$array.$float1(2), $$this$array.$float1(3));
 }
 function oktgg_GLTFNode$readJson$5__init_0(var$0, var$1) {
-    var$0.$this$0236 = var$1;
+    var$0.$this$0238 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function okta_IApp$DefaultImpls() {
@@ -40804,7 +40932,7 @@ function okta_IApp$DefaultImpls_thread($$this, $block) {
 }
 function oktgg_GLTFNode$readJson$8() {
     kji_Lambda.call(this);
-    this.$this$0237 = null;
+    this.$this$0239 = null;
 }
 function oktgg_GLTFNode$readJson$8__init_(var_0) {
     var var_1 = new oktgg_GLTFNode$readJson$8();
@@ -40817,10 +40945,10 @@ function oktgg_GLTFNode$readJson$8_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFNode$readJson$8_invoke0($this, $it) {
-    oktgg_GLTFNode_setCamera($this.$this$0237, $it);
+    oktgg_GLTFNode_setCamera($this.$this$0239, $it);
 }
 function oktgg_GLTFNode$readJson$8__init_0(var$0, var$1) {
-    var$0.$this$0237 = var$1;
+    var$0.$this$0239 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktm_IVec4$DefaultImpls() {
@@ -40988,7 +41116,7 @@ function oktm_IVec4$DefaultImpls_getQuaternionAngleAround($$this, $axisX, $axisY
 }
 function oktgg_GLTFNode$readJson$9() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0192 = null;
+    a.$this$0191 = null;
     a.$$obj0 = null;
 }
 function oktgg_GLTFNode$readJson$9__init_(var_0, var_1) {
@@ -41002,11 +41130,11 @@ function oktgg_GLTFNode$readJson$9_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFNode$readJson$9_invoke0($this, $meshIndex) {
-    oktgg_GLTFNode_setMesh($this.$this$0192, $meshIndex);
-    oktgg_GLTFNode_getGltf($this.$this$0192).$getMeshes().$getOrWait0($meshIndex, oktgg_GLTFNode$readJson$9$1__init_($this));
+    oktgg_GLTFNode_setMesh($this.$this$0191, $meshIndex);
+    oktgg_GLTFNode_getGltf($this.$this$0191).$getMeshes().$getOrWait0($meshIndex, oktgg_GLTFNode$readJson$9$1__init_($this));
 }
 function oktgg_GLTFNode$readJson$9__init_0(var$0, var$1, var$2) {
-    var$0.$this$0192 = var$1;
+    var$0.$this$0191 = var$1;
     var$0.$$obj0 = var$2;
     kji_Lambda__init_0(var$0, 1);
 }
@@ -41064,7 +41192,7 @@ function oktt_TvmUInt16Array_put0(var$0, var$1) {
     oktt_TvmUInt16Array_put(var$0, var$1.$shortValue());
 }
 function oktt_TvmUInt16Array__init_($this, $shortArray) {
-    kji_Intrinsics_checkNotNullParameter($shortArray, $rt_s(1063));
+    kji_Intrinsics_checkNotNullParameter($shortArray, $rt_s(1067));
     oktt_TvmArrayBufferView__init_0($this);
     $this.$shortArray = $shortArray;
     $this.$size7 = $this.$shortArray.length;
@@ -41133,7 +41261,7 @@ function oktm_Mesh_setPrimitiveType($this, $_set___) {
     $this.$primitiveType = $_set___;
 }
 function oktm_Mesh__init_1($this, $vertices, $indices, $material, $instances, $primitiveType) {
-    kji_Intrinsics_checkNotNullParameter($material, $rt_s(748));
+    kji_Intrinsics_checkNotNullParameter($material, $rt_s(751));
     jl_Object__init_0($this);
     $this.$vertices = $vertices;
     $this.$indices1 = $indices;
@@ -41165,7 +41293,7 @@ function oktm_Mesh_render($this, $shader, $primitiveType, $offset, $count, $bind
 }
 function oktgg_IGLTFMaterial$readJson$11() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0238 = null;
+    a.$this$0240 = null;
     a.$$emissiveValue = null;
     a.$$shader2 = null;
 }
@@ -41187,7 +41315,7 @@ function oktgg_IGLTFMaterial$readJson$11_invoke0($this, $$this$array) {
     var$4 = $$this$array.$float1(1);
     var$5 = $$this$array.$float1(2);
     oktm_Vec3__init_1($color, var$3, var$4, var$5);
-    $this.$this$0238.$setEmissiveFactor($color);
+    $this.$this$0240.$setEmissiveFactor($color);
     $factor = oktsn_GLSLVec3Inline__init_1($color.$getX(), $color.$getY0(), $color.$getZ(), null, 8, null);
     var$7 = $this.$$emissiveValue;
     var$8 = $this.$$emissiveValue.$element;
@@ -41200,7 +41328,7 @@ function oktgg_IGLTFMaterial$readJson$11_invoke0($this, $$this$array) {
         var$11 = var$10.data;
         var$11[0] = $this.$$emissiveValue.$element;
         var$11[1] = $factor;
-        oktsn_OperationNode__init_0($op, kc_CollectionsKt__CollectionsKt_listOf(var$10), $rt_s(1064), 5);
+        oktsn_OperationNode__init_0($op, kc_CollectionsKt__CollectionsKt_listOf(var$10), $rt_s(1068), 5);
         oktsn_OperationNode_setFragment($op, 1);
         oktsn_OperationNode_setVarying($op, 0);
         $node = $this.$$shader2.$addNode($op);
@@ -41209,7 +41337,7 @@ function oktgg_IGLTFMaterial$readJson$11_invoke0($this, $$this$array) {
     var$7.$element = var$8;
 }
 function oktgg_IGLTFMaterial$readJson$11__init_0(var$0, var$1, var$2, var$3) {
-    var$0.$this$0238 = var$1;
+    var$0.$this$0240 = var$1;
     var$0.$$emissiveValue = var$2;
     var$0.$$shader2 = var$3;
     kji_Lambda__init_0(var$0, 1);
@@ -41218,7 +41346,7 @@ function jur_Matcher() {
     var a = this; jl_Object.call(a);
     a.$pat = null;
     a.$start6 = null;
-    a.$string8 = null;
+    a.$string9 = null;
     a.$matchResult = null;
     a.$leftBound0 = 0;
     a.$rightBound0 = 0;
@@ -41230,7 +41358,7 @@ function jur_Matcher__init_(var_0, var_1) {
 }
 function jur_Matcher_find0($this, $start) {
     var $stringLength, var$3;
-    $stringLength = $this.$string8.$length();
+    $stringLength = $this.$string9.$length();
     if ($start >= 0 && $start <= $stringLength) {
         var$3 = jur_Matcher_findAt($this, $start);
         if (var$3 >= 0 && $this.$matchResult.$isValid()) {
@@ -41247,14 +41375,14 @@ function jur_Matcher_findAt($this, $startIndex) {
     $this.$matchResult.$reset0();
     $this.$matchResult.$setMode(1);
     $this.$matchResult.$setStartIndex($startIndex);
-    $foundIndex = $this.$start6.$find($startIndex, $this.$string8, $this.$matchResult);
+    $foundIndex = $this.$start6.$find($startIndex, $this.$string9, $this.$matchResult);
     if ($foundIndex == (-1))
         $this.$matchResult.$hitEnd = 1;
     return $foundIndex;
 }
 function jur_Matcher_find($this) {
     var $length, var$2;
-    $length = $this.$string8.$length();
+    $length = $this.$string9.$length();
     if (!jur_Matcher_hasTransparentBounds($this))
         $length = $this.$rightBound0;
     if ($this.$matchResult.$startIndex >= 0 && $this.$matchResult.$mode0() == 1) {
@@ -41289,9 +41417,9 @@ function jur_Matcher__init_0($this, $pat, $cs) {
     $this.$rightBound0 = (-1);
     $this.$pat = $pat;
     $this.$start6 = $pat.$start5;
-    $this.$string8 = $cs;
+    $this.$string9 = $cs;
     $this.$leftBound0 = 0;
-    $this.$rightBound0 = $this.$string8.$length();
+    $this.$rightBound0 = $this.$string9.$length();
     var$3 = new jur_MatchResultImpl;
     var$4 = $this.$leftBound0;
     var$5 = $this.$rightBound0;
@@ -41302,7 +41430,7 @@ function jur_Matcher__init_0($this, $pat, $cs) {
 }
 function oktgg_IGLTFMaterial$readJson$10() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0176 = null;
+    a.$this$0175 = null;
     a.$$shader3 = null;
     a.$$uvNodes2 = null;
     a.$$emissiveValue0 = null;
@@ -41320,14 +41448,14 @@ function oktgg_IGLTFMaterial$readJson$10_invoke(var$0, var$1) {
 function oktgg_IGLTFMaterial$readJson$10_invoke0($this, $$this$get) {
     var $uvNode, $textureNode;
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
-    $$this$get.$int($rt_s(647), oktgg_IGLTFMaterial$readJson$10$1__init_($this));
-    $uvNode = oktgg_IGLTFMaterial$DefaultImpls_access$getOrCreateUVNode($this.$this$0176, $this.$$shader3, jl_StringBuilder__init_().$append($rt_s(648)).$append1($this.$this$0176.$getEmissiveTextureUV()).$toString(), $this.$$uvNodes2);
-    $this.$this$0176.$setEmissiveTexture($$this$get.$int0($rt_s(649)));
-    $textureNode = $this.$$shader3.$addNode(oktsn_TextureNode__init_(oktsn_UVNode_getUv($uvNode), oktgg_GLTFTexture_getTexture($this.$this$0176.$getGltf().$getTextures0().$get1($this.$this$0176.$getEmissiveTexture())), 0, 0, 12, null));
+    $$this$get.$int($rt_s(650), oktgg_IGLTFMaterial$readJson$10$1__init_($this));
+    $uvNode = oktgg_IGLTFMaterial$DefaultImpls_access$getOrCreateUVNode($this.$this$0175, $this.$$shader3, jl_StringBuilder__init_().$append($rt_s(651)).$append1($this.$this$0175.$getEmissiveTextureUV()).$toString(), $this.$$uvNodes2);
+    $this.$this$0175.$setEmissiveTexture($$this$get.$int0($rt_s(652)));
+    $textureNode = $this.$$shader3.$addNode(oktsn_TextureNode__init_(oktsn_UVNode_getUv($uvNode), oktgg_GLTFTexture_getTexture($this.$this$0175.$getGltf().$getTextures0().$get1($this.$this$0175.$getEmissiveTexture())), 0, 0, 12, null));
     $this.$$emissiveValue0.$element = oktsn_TextureNode_getColor($textureNode);
 }
 function oktgg_IGLTFMaterial$readJson$10__init_0(var$0, var$1, var$2, var$3, var$4) {
-    var$0.$this$0176 = var$1;
+    var$0.$this$0175 = var$1;
     var$0.$$shader3 = var$2;
     var$0.$$uvNodes2 = var$3;
     var$0.$$emissiveValue0 = var$4;
@@ -41578,7 +41706,7 @@ function oktgg_PlaneMeshBuilder_build($this, $out) {
     $yNum = $this.$yDivisions + 1 | 0;
     var$4 = $rt_imul($xNum, $yNum);
     if (var$4 > 32768)
-        $rt_throw(jl_IllegalStateException__init_0($rt_s(1065)));
+        $rt_throw(jl_IllegalStateException__init_0($rt_s(1069)));
     $out.$setVertices(oktgg_MeshBuilder_createVerticesFloat($this, var$4, oktgg_PlaneMeshBuilder$build$1__init_($this, $yNum, $xNum)));
     $out.$setIndices(oktgg_MeshBuilder_createIndicesShort($this, $rt_imul(6 * $this.$xDivisions | 0, $this.$yDivisions), oktgg_PlaneMeshBuilder$build$2__init_($this)));
     $out.$setMaterial(oktgg_MeshBuilder_getMaterial($this));
@@ -41604,7 +41732,7 @@ function oktgg_PlaneMeshBuilder_getHeightProvider($this) {
 }
 function oktgg_PlaneMeshBuilder__init_1($this, $width, $height, $xDivisions, $yDivisions, $normal, $heightProvider) {
     kji_Intrinsics_checkNotNullParameter($normal, $rt_s(306));
-    kji_Intrinsics_checkNotNullParameter($heightProvider, $rt_s(1066));
+    kji_Intrinsics_checkNotNullParameter($heightProvider, $rt_s(1070));
     oktgg_MeshBuilder__init_0($this);
     $this.$width1 = $width;
     $this.$height1 = $height;
@@ -41677,12 +41805,12 @@ function kji_Intrinsics_throwUninitializedProperty($message) {
     $rt_throw(kji_Intrinsics_sanitizeStackTrace0(k_UninitializedPropertyAccessException__init_($message)));
 }
 function kji_Intrinsics_throwUninitializedPropertyAccessException($propertyName) {
-    kji_Intrinsics_throwUninitializedProperty(jl_StringBuilder__init_().$append($rt_s(1067)).$append($propertyName).$append($rt_s(1068)).$toString());
+    kji_Intrinsics_throwUninitializedProperty(jl_StringBuilder__init_().$append($rt_s(1071)).$append($propertyName).$append($rt_s(1072)).$toString());
 }
 function kji_Intrinsics_checkNotNullExpressionValue($value, $expression) {
     if ($value !== null)
         return;
-    $rt_throw(kji_Intrinsics_sanitizeStackTrace0(jl_NullPointerException__init_0(jl_StringBuilder__init_().$append($expression).$append($rt_s(1069)).$toString())));
+    $rt_throw(kji_Intrinsics_sanitizeStackTrace0(jl_NullPointerException__init_0(jl_StringBuilder__init_().$append($expression).$append($rt_s(1073)).$toString())));
 }
 function kji_Intrinsics_checkNotNullParameter($value, $paramName) {
     if ($value === null)
@@ -41698,7 +41826,7 @@ function kji_Intrinsics_createParameterIsNullExceptionMessage($paramName) {
     $caller = var$3[4];
     $className = jl_StackTraceElement_getClassName($caller);
     $methodName = jl_StackTraceElement_getMethodName($caller);
-    return jl_StringBuilder__init_().$append($rt_s(1070)).$append($className).$append($rt_s(1071)).$append($methodName).$append($rt_s(1072)).$append($paramName).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(1074)).$append($className).$append($rt_s(1075)).$append($methodName).$append($rt_s(1076)).$append($paramName).$toString();
 }
 function kji_Intrinsics_areEqual($first, $second) {
     return $first !== null ? $first.$equals($second) : $second !== null ? 0 : 1;
@@ -41724,7 +41852,7 @@ function kji_Intrinsics_sanitizeStackTrace($throwable, $classNameToDrop) {
 }
 function oktgg_GLTF$readJson$6$1() {
     kji_Lambda.call(this);
-    this.$this$0239 = null;
+    this.$this$0241 = null;
 }
 function oktgg_GLTF$readJson$6$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$6$1();
@@ -41739,12 +41867,12 @@ function oktgg_GLTF$readJson$6$1_invoke(var$0, var$1) {
 function oktgg_GLTF$readJson$6$1_invoke0($this, $$this$objs) {
     var $image;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    $image = oktgg_GLTFImage__init_1($this.$this$0239.$this$0240, oktgg_GLTFArray_size($this.$this$0239.$this$0240.$getImages0()), null, 4, null);
-    oktgg_GLTFArray_add($this.$this$0239.$this$0240.$getImages0(), $image);
+    $image = oktgg_GLTFImage__init_1($this.$this$0241.$this$0242, oktgg_GLTFArray_size($this.$this$0241.$this$0242.$getImages0()), null, 4, null);
+    oktgg_GLTFArray_add($this.$this$0241.$this$0242.$getImages0(), $image);
     oktgg_GLTFImage_readJson($image, $$this$objs);
 }
 function oktgg_GLTF$readJson$6$1__init_0(var$0, var$1) {
-    var$0.$this$0239 = var$1;
+    var$0.$this$0241 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktg_IBoundingBox() {
@@ -41771,8 +41899,8 @@ function oktg_BoundingBox_getMax($this) {
     return $this.$max4;
 }
 function oktg_BoundingBox__init_1($this, $min, $max) {
-    kji_Intrinsics_checkNotNullParameter($min, $rt_s(550));
-    kji_Intrinsics_checkNotNullParameter($max, $rt_s(549));
+    kji_Intrinsics_checkNotNullParameter($min, $rt_s(553));
+    kji_Intrinsics_checkNotNullParameter($max, $rt_s(552));
     jl_Object__init_0($this);
     $this.$min4 = $min;
     $this.$max4 = $max;
@@ -41814,7 +41942,7 @@ function oktgc_ActiveCamera_setProxy($this, $value) {
         oktgc_ActiveCamera_proxy = $value;
         return;
     }
-    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(1073)));
+    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(1077)));
 }
 function oktgc_ActiveCamera_getPosition($this) {
     return oktgc_ActiveCamera_proxy.$getPosition0();
@@ -41872,7 +42000,7 @@ function oktg_ISceneProxy() {
 }
 function ck_LocationImp$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$0142 = null;
+    this.$this$0141 = null;
 }
 function ck_LocationImp$readJson$1__init_(var_0) {
     var var_1 = new ck_LocationImp$readJson$1();
@@ -41888,16 +42016,16 @@ function ck_LocationImp$readJson$1_invoke0($this, $$this$array) {
     var var$2;
     kji_Intrinsics_checkNotNullParameter($$this$array, $rt_s(3));
     $$this$array.$objs(ck_LocationImp$readJson$1$1__init_($this));
-    var$2 = $this.$this$0142;
+    var$2 = $this.$this$0141;
     ck_LocationImp_setIdCounter(var$2, ck_LocationImp_getIdCounter(var$2) + 1 | 0);
 }
 function ck_LocationImp$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$0142 = var$1;
+    var$0.$this$0141 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function ck_CrabImp$addAction$4() {
     kji_Lambda.call(this);
-    this.$this$0241 = null;
+    this.$this$0243 = null;
 }
 function ck_CrabImp$addAction$4__init_(var_0) {
     var var_1 = new ck_CrabImp$addAction$4();
@@ -41910,16 +42038,16 @@ function ck_CrabImp$addAction$4_invoke(var$0) {
     return k_Unit_INSTANCE;
 }
 function ck_CrabImp$addAction$4_invoke0($this) {
-    ck_CharacterImp_setOperationBlocked($this.$this$0241, 0);
-    $this.$this$0241.$animate($rt_s(357), 0.5, (-1));
+    ck_CharacterImp_setOperationBlocked($this.$this$0243, 0);
+    $this.$this$0243.$animate($rt_s(357), 0.5, (-1));
 }
 function ck_CrabImp$addAction$4__init_0(var$0, var$1) {
-    var$0.$this$0241 = var$1;
+    var$0.$this$0243 = var$1;
     kji_Lambda__init_0(var$0, 0);
 }
 function ck_CrabImp$addAction$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0242 = null;
+    a.$this$0244 = null;
     a.$$descriptor0 = null;
 }
 function ck_CrabImp$addAction$1__init_(var_0, var_1) {
@@ -41933,17 +42061,17 @@ function ck_CrabImp$addAction$1_invoke(var$0) {
     return k_Unit_INSTANCE;
 }
 function ck_CrabImp$addAction$1_invoke0($this) {
-    ck_CharacterImp_setTarget($this.$this$0242, ck_LocationImp_getSceneObjectsMap(ck_CharacterImp_getLocation($this.$this$0242)).$get0(jl_Integer_valueOf(ck_ActionDescriptor_getTarget($this.$$descriptor0))));
-    $this.$this$0242.$animate($rt_s(377), 0.20000000298023224, 1);
+    ck_CharacterImp_setTarget($this.$this$0244, ck_LocationImp_getSceneObjectsMap(ck_CharacterImp_getLocation($this.$this$0244)).$get0(jl_Integer_valueOf(ck_ActionDescriptor_getTarget($this.$$descriptor0))));
+    $this.$this$0244.$animate($rt_s(377), 0.20000000298023224, 1);
 }
 function ck_CrabImp$addAction$1__init_0(var$0, var$1, var$2) {
-    var$0.$this$0242 = var$1;
+    var$0.$this$0244 = var$1;
     var$0.$$descriptor0 = var$2;
     kji_Lambda__init_0(var$0, 0);
 }
 function ck_CrabImp$addAction$2() {
     kji_Lambda.call(this);
-    this.$this$0243 = null;
+    this.$this$0245 = null;
 }
 function ck_CrabImp$addAction$2__init_(var_0) {
     var var_1 = new ck_CrabImp$addAction$2();
@@ -41956,10 +42084,10 @@ function ck_CrabImp$addAction$2_invoke(var$0) {
     return k_Unit_INSTANCE;
 }
 function ck_CrabImp$addAction$2_invoke0($this) {
-    $this.$this$0243.$hit();
+    $this.$this$0245.$hit();
 }
 function ck_CrabImp$addAction$2__init_0(var$0, var$1) {
-    var$0.$this$0243 = var$1;
+    var$0.$this$0245 = var$1;
     kji_Lambda__init_0(var$0, 0);
 }
 function jur_WordBoundary() {
@@ -42009,7 +42137,7 @@ function jur_WordBoundary_isSpace($this, $ch, $index, $leftBound, $testString) {
 }
 function ck_CrabImp$addAction$3() {
     kji_Lambda.call(this);
-    this.$this$0244 = null;
+    this.$this$0246 = null;
 }
 function ck_CrabImp$addAction$3__init_(var_0) {
     var var_1 = new ck_CrabImp$addAction$3();
@@ -42022,15 +42150,15 @@ function ck_CrabImp$addAction$3_invoke(var$0) {
     return k_Unit_INSTANCE;
 }
 function ck_CrabImp$addAction$3_invoke0($this) {
-    $this.$this$0244.$hit();
+    $this.$this$0246.$hit();
 }
 function ck_CrabImp$addAction$3__init_0(var$0, var$1) {
-    var$0.$this$0244 = var$1;
+    var$0.$this$0246 = var$1;
     kji_Lambda__init_0(var$0, 0);
 }
 function oktgg_GLTFTexture$readJson$2$1$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0245 = null;
+    a.$this$0247 = null;
     a.$$image = null;
 }
 function oktgg_GLTFTexture$readJson$2$1$1__init_(var_0, var_1) {
@@ -42045,13 +42173,13 @@ function oktgg_GLTFTexture$readJson$2$1$1_invoke(var$0) {
 }
 function oktgg_GLTFTexture$readJson$2$1$1_invoke0($this) {
     var var$1;
-    var$1 = oktgg_GLTFTexture_getTexture($this.$this$0245.$this$09.$this$010);
+    var$1 = oktgg_GLTFTexture_getTexture($this.$this$0247.$this$09.$this$010);
     oktg_GL_$callClinit();
     var$1.$setTextureHandle(oktg_GL_glGenTexture(oktg_GL_INSTANCE));
-    okti_ITexture2D$DefaultImpls_load$default0(oktgg_GLTFTexture_getTexture($this.$this$0245.$this$09.$this$010), oktgg_GLTFImage_getImage($this.$$image), $this.$this$0245.$this$09.$$minFilter0.$element1, $this.$this$0245.$this$09.$$magFilter0.$element1, $this.$this$0245.$this$09.$$sWrap0.$element1, $this.$this$0245.$this$09.$$tWrap0.$element1, 0.0, jl_Boolean_valueOf($this.$this$0245.$this$09.$$generateMipmaps0), 32, null);
+    okti_ITexture2D$DefaultImpls_load$default0(oktgg_GLTFTexture_getTexture($this.$this$0247.$this$09.$this$010), oktgg_GLTFImage_getImage($this.$$image), $this.$this$0247.$this$09.$$minFilter0.$element1, $this.$this$0247.$this$09.$$magFilter0.$element1, $this.$this$0247.$this$09.$$sWrap0.$element1, $this.$this$0247.$this$09.$$tWrap0.$element1, 0.0, jl_Boolean_valueOf($this.$this$0247.$this$09.$$generateMipmaps0), 32, null);
 }
 function oktgg_GLTFTexture$readJson$2$1$1__init_0(var$0, var$1, var$2) {
-    var$0.$this$0245 = var$1;
+    var$0.$this$0247 = var$1;
     var$0.$$image = var$2;
     kji_Lambda__init_0(var$0, 0);
 }
@@ -42103,7 +42231,7 @@ function ju_LinkedHashMap$ValueIterator_next($this) {
 }
 function oktgg_GLTFNode$readJson$3$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0246 = null;
+    a.$this$0248 = null;
     a.$$i1 = null;
 }
 function oktgg_GLTFNode$readJson$3$1__init_(var_0, var_1) {
@@ -42118,18 +42246,18 @@ function oktgg_GLTFNode$readJson$3$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFNode$readJson$3$1_invoke0($this, $it) {
     var var$2;
-    oktgg_GLTFNode_getNode($this.$this$0246.$this$0231).$getWorldMatrix().$getValues().data[$this.$$i1.$element1] = $it;
+    oktgg_GLTFNode_getNode($this.$this$0248.$this$0233).$getWorldMatrix().$getValues().data[$this.$$i1.$element1] = $it;
     var$2 = $this.$$i1;
     var$2.$element1 = var$2.$element1 + 1 | 0;
 }
 function oktgg_GLTFNode$readJson$3$1__init_0(var$0, var$1, var$2) {
-    var$0.$this$0246 = var$1;
+    var$0.$this$0248 = var$1;
     var$0.$$i1 = var$2;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFAnimationSampler$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$0247 = null;
+    this.$this$0249 = null;
 }
 function oktgg_GLTFAnimationSampler$readJson$1__init_(var_0) {
     var var_1 = new oktgg_GLTFAnimationSampler$readJson$1();
@@ -42143,10 +42271,10 @@ function oktgg_GLTFAnimationSampler$readJson$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTFAnimationSampler$readJson$1_invoke0($this, $it) {
     kji_Intrinsics_checkNotNullParameter($it, $rt_s(4));
-    oktgg_GLTFAnimationSampler_setInterpolation($this.$this$0247, $it);
+    oktgg_GLTFAnimationSampler_setInterpolation($this.$this$0249, $it);
 }
 function oktgg_GLTFAnimationSampler$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$0247 = var$1;
+    var$0.$this$0249 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function otjb_StorageProvider() {
@@ -42233,42 +42361,42 @@ function oktsn_CameraDataNode_prepareToDrawScene($this, $scene) {
     oktsn_ShaderNode_prepareToDrawScene($this, $scene);
     oktgc_ActiveCamera_$callClinit();
     $cam = oktgc_ActiveCamera_INSTANCE;
-    $this.$getShader().$set30($this.$cameraPosition.$getRef0(), oktgc_ActiveCamera_getPosition($cam));
-    $this.$getShader().$set22($this.$viewProjectionMatrix1.$getRef0(), oktgc_ActiveCamera_getViewProjectionMatrix($cam));
-    $this.$getShader().$set22($this.$previousViewProjectionMatrix0.$getRef0(), oktgc_ActiveCamera_getPreviousViewProjectionMatrix($cam));
-    $this.$getShader().$set22($this.$viewMatrix1.$getRef0(), oktgc_ActiveCamera_getViewMatrix($cam));
-    $this.$getShader().$set22($this.$projectionMatrix1.$getRef0(), oktgc_ActiveCamera_getProjectionMatrix($cam));
-    $this.$getShader().$set22($this.$inverseViewProjectionMatrix.$getRef0(), oktgc_ActiveCamera_getInverseViewProjectionMatrix($cam));
+    $this.$getShader().$set31($this.$cameraPosition.$getRef0(), oktgc_ActiveCamera_getPosition($cam));
+    $this.$getShader().$set23($this.$viewProjectionMatrix1.$getRef0(), oktgc_ActiveCamera_getViewProjectionMatrix($cam));
+    $this.$getShader().$set23($this.$previousViewProjectionMatrix0.$getRef0(), oktgc_ActiveCamera_getPreviousViewProjectionMatrix($cam));
+    $this.$getShader().$set23($this.$viewMatrix1.$getRef0(), oktgc_ActiveCamera_getViewMatrix($cam));
+    $this.$getShader().$set23($this.$projectionMatrix1.$getRef0(), oktgc_ActiveCamera_getProjectionMatrix($cam));
+    $this.$getShader().$set23($this.$inverseViewProjectionMatrix.$getRef0(), oktgc_ActiveCamera_getInverseViewProjectionMatrix($cam));
 }
 function oktsn_CameraDataNode_executionFrag($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if ($this.$normalizedViewVector.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append($this.$normalizedViewVector.$getRef0()).$append($rt_s(1074)).$append($this.$cameraPosition.$asVec3()).$append($rt_s(589)).$append(oktsn_CameraDataNode_getVertexPosition($this).$asVec3()).$append($rt_s(331)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($this.$normalizedViewVector.$getRef0()).$append($rt_s(1078)).$append($this.$cameraPosition.$asVec3()).$append($rt_s(592)).$append(oktsn_CameraDataNode_getVertexPosition($this).$asVec3()).$append($rt_s(331)).$toString());
 }
 function oktsn_CameraDataNode_executionVert($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if (!(!$this.$clipSpacePosition0.$isUsed0() && !$this.$viewZDepth.$isUsed0())) {
-        $out.$append(jl_StringBuilder__init_().$append($this.$clipSpacePosition0.$getRef0()).$append($rt_s(518)).$append($this.$viewProjectionMatrix1.$getRef0()).$append($rt_s(571)).$append(oktsn_CameraDataNode_getVertexPosition($this).$asVec4()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($this.$clipSpacePosition0.$getRef0()).$append($rt_s(519)).$append($this.$viewProjectionMatrix1.$getRef0()).$append($rt_s(574)).$append(oktsn_CameraDataNode_getVertexPosition($this).$asVec4()).$append($rt_s(286)).$toString());
         if ($this.$viewZDepth.$isUsed0())
-            $out.$append(jl_StringBuilder__init_().$append($this.$viewZDepth.$getRef0()).$append($rt_s(518)).$append($this.$clipSpacePosition0.$getRef0()).$append($rt_s(1075)).$toString());
+            $out.$append(jl_StringBuilder__init_().$append($this.$viewZDepth.$getRef0()).$append($rt_s(519)).$append($this.$clipSpacePosition0.$getRef0()).$append($rt_s(1079)).$toString());
     }
     if ($this.$viewSpacePosition.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append($this.$viewSpacePosition.$getRef0()).$append($rt_s(518)).$append($this.$viewMatrix1.$getRef0()).$append($rt_s(571)).$append(oktsn_CameraDataNode_getVertexPosition($this).$asVec4()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($this.$viewSpacePosition.$getRef0()).$append($rt_s(519)).$append($this.$viewMatrix1.$getRef0()).$append($rt_s(574)).$append(oktsn_CameraDataNode_getVertexPosition($this).$asVec4()).$append($rt_s(286)).$toString());
 }
 function oktsn_CameraDataNode_declarationVert($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if (!(!$this.$cameraPosition.$isUsed0() && !$this.$normalizedViewVector.$isUsed0()))
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(943)).$append($this.$cameraPosition.$getTypedRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(947)).$append($this.$cameraPosition.$getTypedRef0()).$append($rt_s(286)).$toString());
     if (!(!$this.$clipSpacePosition0.$isUsed0() && !$this.$viewProjectionMatrix1.$isUsed0()))
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(943)).$append($this.$viewProjectionMatrix1.$getTypedRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(947)).$append($this.$viewProjectionMatrix1.$getTypedRef0()).$append($rt_s(286)).$toString());
     if ($this.$previousViewProjectionMatrix0.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(943)).$append($this.$previousViewProjectionMatrix0.$getTypedRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(947)).$append($this.$previousViewProjectionMatrix0.$getTypedRef0()).$append($rt_s(286)).$toString());
     if (!(!$this.$viewSpacePosition.$isUsed0() && !$this.$viewMatrix1.$isUsed0()))
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(943)).$append($this.$viewMatrix1.$getTypedRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(947)).$append($this.$viewMatrix1.$getTypedRef0()).$append($rt_s(286)).$toString());
     if ($this.$projectionMatrix1.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(943)).$append($this.$projectionMatrix1.$getTypedRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(947)).$append($this.$projectionMatrix1.$getTypedRef0()).$append($rt_s(286)).$toString());
     if ($this.$inverseViewProjectionMatrix.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(943)).$append($this.$inverseViewProjectionMatrix.$getTypedRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(947)).$append($this.$inverseViewProjectionMatrix.$getTypedRef0()).$append($rt_s(286)).$toString());
     if (!(!$this.$clipSpacePosition0.$isUsed0() && !$this.$viewZDepth.$isUsed0())) {
         $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarOut($this)).$append8(32).$append($this.$clipSpacePosition0.$getTypedRef0()).$append($rt_s(286)).$toString());
         if ($this.$viewZDepth.$isUsed0())
@@ -42280,9 +42408,9 @@ function oktsn_CameraDataNode_declarationVert($this, $out) {
 function oktsn_CameraDataNode_declarationFrag($this, $out) {
     kji_Intrinsics_checkNotNullParameter($out, $rt_s(52));
     if (!(!$this.$cameraPosition.$isUsed0() && !$this.$normalizedViewVector.$isUsed0()))
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(943)).$append($this.$cameraPosition.$getTypedRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(947)).$append($this.$cameraPosition.$getTypedRef0()).$append($rt_s(286)).$toString());
     if ($this.$normalizedViewVector.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(1076)).$append($this.$normalizedViewVector.$getRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(1080)).$append($this.$normalizedViewVector.$getRef0()).$append($rt_s(286)).$toString());
     if ($this.$clipSpacePosition0.$isUsed0())
         $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append8(32).$append($this.$clipSpacePosition0.$getTypedRef0()).$append($rt_s(286)).$toString());
     if ($this.$viewSpacePosition.$isUsed0())
@@ -42290,22 +42418,22 @@ function oktsn_CameraDataNode_declarationFrag($this, $out) {
     if ($this.$viewZDepth.$isUsed0())
         $out.$append(jl_StringBuilder__init_().$append(oktsn_ShaderNode_getVarIn($this)).$append8(32).$append($this.$viewZDepth.$getTypedRef0()).$append($rt_s(286)).$toString());
     if ($this.$viewMatrix1.$isUsed0())
-        $out.$append(jl_StringBuilder__init_().$append($rt_s(943)).$append($this.$viewMatrix1.$getTypedRef0()).$append($rt_s(286)).$toString());
+        $out.$append(jl_StringBuilder__init_().$append($rt_s(947)).$append($this.$viewMatrix1.$getTypedRef0()).$append($rt_s(286)).$toString());
 }
 function oktsn_CameraDataNode__init_1($this, $vertexPosition) {
     oktsn_CameraDataNode_$callClinit();
     kji_Intrinsics_checkNotNullParameter($vertexPosition, $rt_s(325));
     oktsn_ShaderNode__init_0($this);
-    $this.$cameraPosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec3__init_($rt_s(1077)));
-    $this.$viewProjectionMatrix1 = oktsn_ShaderNode_defOut($this, oktsn_GLSLMat4__init_($rt_s(610)));
-    $this.$previousViewProjectionMatrix0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLMat4__init_($rt_s(1078)));
-    $this.$viewMatrix1 = oktsn_ShaderNode_defOut($this, oktsn_GLSLMat4__init_($rt_s(1079)));
-    $this.$projectionMatrix1 = oktsn_ShaderNode_defOut($this, oktsn_GLSLMat4__init_($rt_s(1080)));
-    $this.$inverseViewProjectionMatrix = oktsn_ShaderNode_defOut($this, oktsn_GLSLMat4__init_($rt_s(1081)));
+    $this.$cameraPosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec3__init_($rt_s(1081)));
+    $this.$viewProjectionMatrix1 = oktsn_ShaderNode_defOut($this, oktsn_GLSLMat4__init_($rt_s(613)));
+    $this.$previousViewProjectionMatrix0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLMat4__init_($rt_s(1082)));
+    $this.$viewMatrix1 = oktsn_ShaderNode_defOut($this, oktsn_GLSLMat4__init_($rt_s(1083)));
+    $this.$projectionMatrix1 = oktsn_ShaderNode_defOut($this, oktsn_GLSLMat4__init_($rt_s(1084)));
+    $this.$inverseViewProjectionMatrix = oktsn_ShaderNode_defOut($this, oktsn_GLSLMat4__init_($rt_s(1085)));
     $this.$normalizedViewVector = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec3__init_($rt_s(324)));
-    $this.$viewZDepth = oktsn_ShaderNode_defOut($this, oktsn_GLSLFloat__init_($rt_s(1082)));
-    $this.$clipSpacePosition0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(564)));
-    $this.$viewSpacePosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(1083)));
+    $this.$viewZDepth = oktsn_ShaderNode_defOut($this, oktsn_GLSLFloat__init_($rt_s(1086)));
+    $this.$clipSpacePosition0 = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(567)));
+    $this.$viewSpacePosition = oktsn_ShaderNode_defOut($this, oktsn_GLSLVec4__init_($rt_s(1087)));
     $this.$setInput($rt_s(325), $vertexPosition);
 }
 function oktsn_CameraDataNode__init_2(var$0, var$1, var$2, var$3) {
@@ -42353,7 +42481,7 @@ function ck_StarsAboveHeadFx__init_0($this) {
     var$2 = null;
     var$3 = ck_StarsAboveHeadFx$1__init_($this);
     var$4 = null;
-    oktr_IResources$DefaultImpls_loadTyped$default(var$1, $rt_s(1084), var$2, var$3, 2, var$4);
+    oktr_IResources$DefaultImpls_loadTyped$default(var$1, $rt_s(1088), var$2, var$3, 2, var$4);
 }
 function ck_StarsAboveHeadFx_getChildNodes($this) {
     return oktg_ISceneProxy$DefaultImpls_getChildNodes($this);
@@ -42525,7 +42653,7 @@ function oktt_TvmGL$TextureWrap_getGl0(var$0) {
     return oktt_TvmGL$TextureWrap_getGl(var$0);
 }
 function oktt_TvmGL$TextureWrap__init_0($this, $gl) {
-    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(716));
+    kji_Intrinsics_checkNotNullParameter($gl, $rt_s(719));
     oktt_TvmGL$GLObject__init_0($this);
     $this.$gl9 = $gl;
 }
@@ -42607,10 +42735,10 @@ function oktgg_GLTFBufferView__init_(var_0, var_1, var_2, var_3, var_4, var_5, v
 }
 function oktgg_GLTFBufferView_readJson($this, $json) {
     kji_Intrinsics_checkNotNullParameter($json, $rt_s(25));
-    $this.$buffer1 = $json.$int0($rt_s(530));
-    $this.$byteLength0 = $json.$int0($rt_s(650));
+    $this.$buffer1 = $json.$int0($rt_s(533));
+    $this.$byteLength0 = $json.$int0($rt_s(653));
     $json.$int($rt_s(267), oktgg_GLTFBufferView$readJson$1__init_($this));
-    $json.$int($rt_s(1085), oktgg_GLTFBufferView$readJson$2__init_($this));
+    $json.$int($rt_s(1089), oktgg_GLTFBufferView$readJson$2__init_($this));
     $json.$int($rt_s(49), oktgg_GLTFBufferView$readJson$3__init_($this));
     oktgg_GLTFBufferView_getGltf($this).$getBufferViews().$ready(oktgg_GLTFBufferView_getElementIndex($this));
 }
@@ -42828,7 +42956,7 @@ function kc_CollectionsKt___CollectionsKt$elementAt$1_invoke(var$0, var$1) {
     return kc_CollectionsKt___CollectionsKt$elementAt$1_invoke0(var$0, var$1.$intValue());
 }
 function kc_CollectionsKt___CollectionsKt$elementAt$1_invoke0($this, $it) {
-    $rt_throw(jl_IndexOutOfBoundsException__init_0(jl_StringBuilder__init_().$append($rt_s(1086)).$append1($this.$$index0).$append8(46).$toString()));
+    $rt_throw(jl_IndexOutOfBoundsException__init_0(jl_StringBuilder__init_().$append($rt_s(1090)).$append1($this.$$index0).$append8(46).$toString()));
 }
 function kc_CollectionsKt___CollectionsKt$elementAt$1__init_0(var$0, var$1) {
     var$0.$$index0 = var$1;
@@ -42839,30 +42967,32 @@ function ck_KotmeJsMain$main$4() {
     a.$$app = null;
     a.$$location = null;
     a.$$connected = null;
-    a.$$name = null;
+    a.$$userName = null;
+    a.$$users = null;
+    a.$$document = null;
 }
-function ck_KotmeJsMain$main$4__init_(var_0, var_1, var_2, var_3) {
-    var var_4 = new ck_KotmeJsMain$main$4();
-    ck_KotmeJsMain$main$4__init_0(var_4, var_0, var_1, var_2, var_3);
-    return var_4;
+function ck_KotmeJsMain$main$4__init_(var_0, var_1, var_2, var_3, var_4, var_5) {
+    var var_6 = new ck_KotmeJsMain$main$4();
+    ck_KotmeJsMain$main$4__init_0(var_6, var_0, var_1, var_2, var_3, var_4, var_5);
+    return var_6;
 }
 function ck_KotmeJsMain$main$4_handleEvent($this, $it) {
     var var$2, var$3, $loc, $protocol, var$6, var$7;
     oktt_TeaVMApp_initiateAudio($this.$$app);
     ck_LocationView_initAudio($this.$$location);
-    var$2 = $rt_str($this.$$name.value);
-    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(1087));
+    var$2 = $rt_str($this.$$userName.value);
+    kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(484));
     var$3 = var$2.$length() <= 0 ? 0 : 1;
     if (var$3 && !$this.$$connected.$element2) {
         var$2 = window;
         kji_Intrinsics_checkNotNullExpressionValue(var$2, $rt_s(341));
         $loc = var$2.location;
-        kji_Intrinsics_checkNotNullExpressionValue($loc, $rt_s(1088));
-        $protocol = !kji_Intrinsics_areEqual($rt_str($loc.protocol), $rt_s(1089)) ? $rt_s(1090) : $rt_s(1091);
+        kji_Intrinsics_checkNotNullExpressionValue($loc, $rt_s(1091));
+        $protocol = !kji_Intrinsics_areEqual($rt_str($loc.protocol), $rt_s(1092)) ? $rt_s(1093) : $rt_s(1094);
         ck_KotmeJsMain_$callClinit();
         var$2 = ck_KotmeJsMain_INSTANCE;
-        var$6 = new WebSocket($rt_ustr(jl_StringBuilder__init_().$append($protocol).$append($rt_s(1092)).$append($rt_str($loc.host)).$append($rt_s(1093)).$toString()));
-        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1094));
+        var$6 = new WebSocket($rt_ustr(jl_StringBuilder__init_().$append($protocol).$append($rt_s(1095)).$append($rt_str($loc.host)).$append($rt_s(1096)).$toString()));
+        kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1097));
         ck_KotmeJsMain_setWs(var$2, var$6);
         var$7 = ck_KotmeJsMain_getWs(ck_KotmeJsMain_INSTANCE);
         var$2 = otji_JS_function(otji_JS_functionAsObject(ck_KotmeJsMain$main$4$1__init_($this), "handleEvent"), "handleEvent");
@@ -42875,11 +43005,13 @@ function ck_KotmeJsMain$main$4_handleEvent($this, $it) {
         var$7.onclose = var$2;
     }
 }
-function ck_KotmeJsMain$main$4__init_0(var$0, var$1, var$2, var$3, var$4) {
+function ck_KotmeJsMain$main$4__init_0(var$0, var$1, var$2, var$3, var$4, var$5, var$6) {
     var$0.$$app = var$1;
     var$0.$$location = var$2;
     var$0.$$connected = var$3;
-    var$0.$$name = var$4;
+    var$0.$$userName = var$4;
+    var$0.$$users = var$5;
+    var$0.$$document = var$6;
     jl_Object__init_0(var$0);
 }
 function ck_KotmeJsMain$main$4_handleEvent$exported$0(var$0, var$1) {
@@ -42920,28 +43052,25 @@ function ck_KotmeJsMain$main$3_handleEvent$exported$0(var$0, var$1) {
     ck_KotmeJsMain$main$3_handleEvent(var$0, var$1);
 }
 function ck_KotmeJsMain$main$2() {
-    var a = this; jl_Object.call(a);
-    a.$$connected1 = null;
-    a.$$location1 = null;
+    jl_Object.call(this);
+    this.$$connected1 = null;
 }
-function ck_KotmeJsMain$main$2__init_(var_0, var_1) {
-    var var_2 = new ck_KotmeJsMain$main$2();
-    ck_KotmeJsMain$main$2__init_0(var_2, var_0, var_1);
-    return var_2;
+function ck_KotmeJsMain$main$2__init_(var_0) {
+    var var_1 = new ck_KotmeJsMain$main$2();
+    ck_KotmeJsMain$main$2__init_0(var_1, var_0);
+    return var_1;
 }
 function ck_KotmeJsMain$main$2_handleEvent($this, $it) {
     var var$2;
     if ($this.$$connected1.$element2) {
-        $this.$$location1.$resetScene();
         ck_KotmeJsMain_$callClinit();
         var$2 = ck_KotmeJsMain_INSTANCE;
         ck_KotmeJsMain$main$2$1_$callClinit();
         ck_KotmeJsMain_send(var$2, 2, ck_KotmeJsMain$main$2$1_INSTANCE);
     }
 }
-function ck_KotmeJsMain$main$2__init_0(var$0, var$1, var$2) {
+function ck_KotmeJsMain$main$2__init_0(var$0, var$1) {
     var$0.$$connected1 = var$1;
-    var$0.$$location1 = var$2;
     jl_Object__init_0(var$0);
 }
 function ck_KotmeJsMain$main$2_handleEvent$exported$0(var$0, var$1) {
@@ -43059,10 +43188,10 @@ function okta_Vec4Track_setDuration($this, $_set___) {
 }
 function okta_Vec4Track__init_1($this, $interpolation, $nodeIndex, $nodeName, $times, $values, $inTangents, $outTangents, $duration) {
     kji_Intrinsics_checkNotNullParameter($nodeName, $rt_s(364));
-    kji_Intrinsics_checkNotNullParameter($times, $rt_s(1095));
+    kji_Intrinsics_checkNotNullParameter($times, $rt_s(1098));
     kji_Intrinsics_checkNotNullParameter($values, $rt_s(53));
-    kji_Intrinsics_checkNotNullParameter($inTangents, $rt_s(1096));
-    kji_Intrinsics_checkNotNullParameter($outTangents, $rt_s(1097));
+    kji_Intrinsics_checkNotNullParameter($inTangents, $rt_s(1099));
+    kji_Intrinsics_checkNotNullParameter($outTangents, $rt_s(1100));
     jl_Object__init_0($this);
     $this.$interpolation1 = $interpolation;
     $this.$nodeIndex0 = $nodeIndex;
@@ -43129,7 +43258,7 @@ function kr_IntRange_access$getEMPTY$cp() {
 }
 function oktgg_GLTF$readJson$8() {
     kji_Lambda.call(this);
-    this.$this$0147 = null;
+    this.$this$0146 = null;
 }
 function oktgg_GLTF$readJson$8__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$8();
@@ -43146,7 +43275,7 @@ function oktgg_GLTF$readJson$8_invoke0($this, $$this$array) {
     $$this$array.$objs(oktgg_GLTF$readJson$8$1__init_($this));
 }
 function oktgg_GLTF$readJson$8__init_0(var$0, var$1) {
-    var$0.$this$0147 = var$1;
+    var$0.$this$0146 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTF$readJson$9() {
@@ -43173,7 +43302,7 @@ function oktgg_GLTF$readJson$9__init_0(var$0, var$1) {
 }
 function oktgg_GLTF$readJson$6() {
     kji_Lambda.call(this);
-    this.$this$0240 = null;
+    this.$this$0242 = null;
 }
 function oktgg_GLTF$readJson$6__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$6();
@@ -43190,7 +43319,7 @@ function oktgg_GLTF$readJson$6_invoke0($this, $$this$array) {
     $$this$array.$objs(oktgg_GLTF$readJson$6$1__init_($this));
 }
 function oktgg_GLTF$readJson$6__init_0(var$0, var$1) {
-    var$0.$this$0240 = var$1;
+    var$0.$this$0242 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function okta_IActionContainer$DefaultImpls() {
@@ -43198,7 +43327,7 @@ function okta_IActionContainer$DefaultImpls() {
 }
 function okta_IActionContainer$DefaultImpls_doWhile($$this, $function) {
     var $action;
-    kji_Intrinsics_checkNotNullParameter($function, $rt_s(629));
+    kji_Intrinsics_checkNotNullParameter($function, $rt_s(632));
     $action = okta_DoWhileAction__init_($function);
     $$this.$getChildren().$add3($action);
     return $action;
@@ -43232,7 +43361,7 @@ function okta_IActionContainer$DefaultImpls_reset($$this) {
 }
 function oktgg_GLTF$readJson$7() {
     kji_Lambda.call(this);
-    this.$this$0103 = null;
+    this.$this$0102 = null;
 }
 function oktgg_GLTF$readJson$7__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$7();
@@ -43249,12 +43378,12 @@ function oktgg_GLTF$readJson$7_invoke0($this, $$this$array) {
     $$this$array.$objs(oktgg_GLTF$readJson$7$1__init_($this));
 }
 function oktgg_GLTF$readJson$7__init_0(var$0, var$1) {
-    var$0.$this$0103 = var$1;
+    var$0.$this$0102 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTF$readJson$4() {
     kji_Lambda.call(this);
-    this.$this$0248 = null;
+    this.$this$0250 = null;
 }
 function oktgg_GLTF$readJson$4__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$4();
@@ -43271,7 +43400,7 @@ function oktgg_GLTF$readJson$4_invoke0($this, $$this$array) {
     $$this$array.$objs(oktgg_GLTF$readJson$4$1__init_($this));
 }
 function oktgg_GLTF$readJson$4__init_0(var$0, var$1) {
-    var$0.$this$0248 = var$1;
+    var$0.$this$0250 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktg_World() {
@@ -43303,7 +43432,7 @@ function oktg_World__init_0($this) {
 }
 function oktgg_GLTF$readJson$5() {
     kji_Lambda.call(this);
-    this.$this$0126 = null;
+    this.$this$0125 = null;
 }
 function oktgg_GLTF$readJson$5__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$5();
@@ -43320,7 +43449,7 @@ function oktgg_GLTF$readJson$5_invoke0($this, $$this$array) {
     $$this$array.$objs(oktgg_GLTF$readJson$5$1__init_($this));
 }
 function oktgg_GLTF$readJson$5__init_0(var$0, var$1) {
-    var$0.$this$0126 = var$1;
+    var$0.$this$0125 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTF$readJson$2() {
@@ -43347,7 +43476,7 @@ function oktgg_GLTF$readJson$2__init_0(var$0, var$1) {
 }
 function oktgg_GLTF$readJson$3() {
     kji_Lambda.call(this);
-    this.$this$067 = null;
+    this.$this$069 = null;
 }
 function oktgg_GLTF$readJson$3__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$3();
@@ -43364,12 +43493,12 @@ function oktgg_GLTF$readJson$3_invoke0($this, $$this$array) {
     $$this$array.$objs(oktgg_GLTF$readJson$3$1__init_($this));
 }
 function oktgg_GLTF$readJson$3__init_0(var$0, var$1) {
-    var$0.$this$067 = var$1;
+    var$0.$this$069 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTF$readJson$4$1() {
     kji_Lambda.call(this);
-    this.$this$0249 = null;
+    this.$this$0251 = null;
 }
 function oktgg_GLTF$readJson$4$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$4$1();
@@ -43384,17 +43513,17 @@ function oktgg_GLTF$readJson$4$1_invoke(var$0, var$1) {
 function oktgg_GLTF$readJson$4$1_invoke0($this, $$this$objs) {
     var $accessor;
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
-    $accessor = oktgg_GLTFAccessor__init_1($this.$this$0249.$this$0248, oktgg_GLTFArray_size($this.$this$0249.$this$0248.$getAccessors0()), 0, 0, 0, 0, 0, null, null, null, null, null, 4092, null);
-    oktgg_GLTFArray_add($this.$this$0249.$this$0248.$getAccessors0(), $accessor);
+    $accessor = oktgg_GLTFAccessor__init_1($this.$this$0251.$this$0250, oktgg_GLTFArray_size($this.$this$0251.$this$0250.$getAccessors0()), 0, 0, 0, 0, 0, null, null, null, null, null, 4092, null);
+    oktgg_GLTFArray_add($this.$this$0251.$this$0250.$getAccessors0(), $accessor);
     oktgg_GLTFAccessor_readJson($accessor, $$this$objs);
 }
 function oktgg_GLTF$readJson$4$1__init_0(var$0, var$1) {
-    var$0.$this$0249 = var$1;
+    var$0.$this$0251 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTF$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$084 = null;
+    this.$this$083 = null;
 }
 function oktgg_GLTF$readJson$1__init_(var_0) {
     var var_1 = new oktgg_GLTF$readJson$1();
@@ -43408,13 +43537,13 @@ function oktgg_GLTF$readJson$1_invoke(var$0, var$1) {
 }
 function oktgg_GLTF$readJson$1_invoke0($this, $$this$get) {
     kji_Intrinsics_checkNotNullParameter($$this$get, $rt_s(3));
-    $$this$get.$string($rt_s(1098), oktgg_GLTF$readJson$1$1__init_($this));
-    $$this$get.$string($rt_s(1099), oktgg_GLTF$readJson$1$2__init_($this));
-    $this.$this$084.$setVersion($$this$get.$string4($rt_s(1100)));
-    $$this$get.$string($rt_s(1101), oktgg_GLTF$readJson$1$3__init_($this));
+    $$this$get.$string($rt_s(1101), oktgg_GLTF$readJson$1$1__init_($this));
+    $$this$get.$string($rt_s(1102), oktgg_GLTF$readJson$1$2__init_($this));
+    $this.$this$083.$setVersion($$this$get.$string4($rt_s(1103)));
+    $$this$get.$string($rt_s(1104), oktgg_GLTF$readJson$1$3__init_($this));
 }
 function oktgg_GLTF$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$084 = var$1;
+    var$0.$this$083 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function okts_Shader() {
@@ -43524,14 +43653,14 @@ function okts_Shader_fragSourceCode($this, $title, $pad) {
 function okts_Shader_getVersionStr($this) {
     var var$1;
     okta_APP_$callClinit();
-    var$1 = okta_APP_getPlatformType(okta_APP_INSTANCE) ? ($this.$getVersion() >= 330 ? $rt_s(1102) : $rt_s(1103)) : !($this.$getProfile().$length() <= 0 ? 0 : 1) ? jl_StringBuilder__init_().$append($rt_s(1104)).$append1($this.$getVersion()).$append8(10).$toString() : jl_StringBuilder__init_().$append($rt_s(1104)).$append1($this.$getVersion()).$append8(32).$append($this.$getProfile()).$append8(10).$toString();
+    var$1 = okta_APP_getPlatformType(okta_APP_INSTANCE) ? ($this.$getVersion() >= 330 ? $rt_s(1105) : $rt_s(1106)) : !($this.$getProfile().$length() <= 0 ? 0 : 1) ? jl_StringBuilder__init_().$append($rt_s(1107)).$append1($this.$getVersion()).$append8(10).$toString() : jl_StringBuilder__init_().$append($rt_s(1107)).$append1($this.$getVersion()).$append8(32).$append($this.$getProfile()).$append8(10).$toString();
     return var$1;
 }
 function okts_Shader_load($this, $vertCode, $fragCode) {
     var $ver, $fullVertCode, $fullFragCode, $params, var$7, $type, $numAttributes, $i, var$11, $name, $location, $numUniforms, var$15;
     a: {
-        kji_Intrinsics_checkNotNullParameter($vertCode, $rt_s(1105));
-        kji_Intrinsics_checkNotNullParameter($fragCode, $rt_s(1106));
+        kji_Intrinsics_checkNotNullParameter($vertCode, $rt_s(1108));
+        kji_Intrinsics_checkNotNullParameter($fragCode, $rt_s(1109));
         $ver = okts_Shader_getVersionStr($this);
         $fullVertCode = jl_StringBuilder__init_().$append($ver).$append($this.$defaultPrecision).$append($vertCode).$toString();
         $fullFragCode = jl_StringBuilder__init_().$append($ver).$append($this.$defaultPrecision).$append($fragCode).$toString();
@@ -43574,9 +43703,9 @@ function okts_Shader_load($this, $vertCode, $fragCode) {
         oktg_GL_$callClinit();
         oktu_ILog$DefaultImpls_error$default(var$15, oktg_IGL$DefaultImpls_getErrorString$default(oktg_GL_INSTANCE, 0, 1, null), null, 2, null);
         if (!($this.$getName().$length() <= 0 ? 0 : 1))
-            oktu_ILog$DefaultImpls_error$default(oktu_LOG_INSTANCE, $rt_s(1107), null, 2, null);
+            oktu_ILog$DefaultImpls_error$default(oktu_LOG_INSTANCE, $rt_s(1110), null, 2, null);
         else
-            oktu_ILog$DefaultImpls_error$default(oktu_LOG_INSTANCE, jl_StringBuilder__init_().$append($rt_s(1108)).$append($this.$getName()).$append($rt_s(1109)).$toString(), null, 2, null);
+            oktu_ILog$DefaultImpls_error$default(oktu_LOG_INSTANCE, jl_StringBuilder__init_().$append($rt_s(1111)).$append($this.$getName()).$append($rt_s(1112)).$toString(), null, 2, null);
         oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, $this.$getLog(), null, 2, null);
         oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, okts_IShader$DefaultImpls_sourceCode$default($this, 0, 1, null), null, 2, null);
     }
@@ -43612,7 +43741,7 @@ function okts_Shader_loadShader($this, $type, $source) {
         return $shader;
     $infoLog = oktg_GL_glGetShaderInfoLog(oktg_GL_INSTANCE, $shader);
     var$8 = $this.$logInternal;
-    $this.$logInternal = jl_StringBuilder__init_().$append(var$8).$append($type != 35633 ? $rt_s(1110) : $rt_s(1111)).$toString();
+    $this.$logInternal = jl_StringBuilder__init_().$append(var$8).$append($type != 35633 ? $rt_s(1113) : $rt_s(1114)).$toString();
     var$8 = $this.$logInternal;
     $this.$logInternal = jl_StringBuilder__init_().$append(var$8).$append($infoLog).$toString();
     return (-1);
@@ -43687,20 +43816,20 @@ function okts_Shader_buildByNodes($this) {
         $it.$executionFrag($fragExe);
     }
     $vertDecl.$append8(10);
-    $vertDecl.$append($rt_s(1112));
+    $vertDecl.$append($rt_s(1115));
     $vertDecl.$append12($vertExe);
     $vertDecl.$append8(10);
-    $vertDecl.$append($rt_s(512));
+    $vertDecl.$append($rt_s(513));
     var$6 = $vertDecl.$toString();
-    kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1113));
+    kji_Intrinsics_checkNotNullExpressionValue(var$6, $rt_s(1116));
     $this.$setVertCode(var$6);
     $fragDecl.$append8(10);
-    $fragDecl.$append($rt_s(1112));
+    $fragDecl.$append($rt_s(1115));
     $fragDecl.$append12($fragExe);
     $fragDecl.$append8(10);
-    $fragDecl.$append($rt_s(512));
+    $fragDecl.$append($rt_s(513));
     var$8 = $fragDecl.$toString();
-    kji_Intrinsics_checkNotNullExpressionValue(var$8, $rt_s(1114));
+    kji_Intrinsics_checkNotNullExpressionValue(var$8, $rt_s(1117));
     $this.$setFragCode(var$8);
 }
 function okts_Shader_build($this) {
@@ -43712,7 +43841,7 @@ function okts_Shader_build($this) {
     if (!$this.$isCompiled()) {
         oktu_LOG_$callClinit();
         oktu_ILog$DefaultImpls_info$default(oktu_LOG_INSTANCE, okts_IShader$DefaultImpls_sourceCode$default($this, 0, 1, null), null, 2, null);
-        $rt_throw(jl_RuntimeException__init_($rt_s(1115)));
+        $rt_throw(jl_RuntimeException__init_($rt_s(1118)));
     }
     $this.$bind();
     $$this$forEach$iv = $this.$getNodes1();
@@ -43745,7 +43874,7 @@ function okts_Shader_findMaxChildrenTreeDepth($this, $node, $count) {
 }
 function okts_Shader_findMaxChildrenTreeDepth$default(var$1, var$2, var$3, var$4, var$5) {
     if (var$5 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1116)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1119)));
     if (var$4 & 2)
         var$3 = 0;
     return okts_Shader_findMaxChildrenTreeDepth(var$1, var$2, var$3);
@@ -43772,11 +43901,11 @@ function okts_Shader_getProfile($this) {
     return $this.$profile;
 }
 function okts_Shader__init_2($this, $vertCode, $fragCode, $name, $compile, $defaultPrecision, $version, $profile) {
-    kji_Intrinsics_checkNotNullParameter($vertCode, $rt_s(1105));
-    kji_Intrinsics_checkNotNullParameter($fragCode, $rt_s(1106));
+    kji_Intrinsics_checkNotNullParameter($vertCode, $rt_s(1108));
+    kji_Intrinsics_checkNotNullParameter($fragCode, $rt_s(1109));
     kji_Intrinsics_checkNotNullParameter($name, $rt_s(12));
-    kji_Intrinsics_checkNotNullParameter($defaultPrecision, $rt_s(1117));
-    kji_Intrinsics_checkNotNullParameter($profile, $rt_s(1118));
+    kji_Intrinsics_checkNotNullParameter($defaultPrecision, $rt_s(1120));
+    kji_Intrinsics_checkNotNullParameter($profile, $rt_s(1121));
     jl_Object__init_0($this);
     $this.$name43 = $name;
     $this.$defaultPrecision = $defaultPrecision;
@@ -43803,7 +43932,7 @@ function okts_Shader__init_0(var$0, var$1, var$2, var$3, var$4, var$5, var$6, va
         var$4 = 1;
     if (var$8 & 16) {
         okta_APP_$callClinit();
-        var$5 = !okta_APP_getPlatformType(okta_APP_INSTANCE) ? $rt_s(6) : $rt_s(1119);
+        var$5 = !okta_APP_getPlatformType(okta_APP_INSTANCE) ? $rt_s(6) : $rt_s(1122);
     }
     if (var$8 & 32)
         var$6 = 110;
@@ -43831,7 +43960,7 @@ function okts_Shader_numerateLines($this, $title, $text, $pad) {
     return okts_IShader$DefaultImpls_numerateLines($this, $title, $text, $pad);
 }
 function okts_Shader_prepareObjectData($this, $object3D) {
-    kji_Intrinsics_checkNotNullParameter($object3D, $rt_s(1017));
+    kji_Intrinsics_checkNotNullParameter($object3D, $rt_s(1021));
     okts_IShader$DefaultImpls_prepareObjectData($this, $object3D);
 }
 function okts_Shader_prepareSceneData($this, $scene) {
@@ -43912,13 +44041,13 @@ function oktd_DataByteOrder__clinit_() {
     var var$1, var$2, var$3;
     var$1 = $rt_createArray(oktd_DataByteOrder, 3);
     var$2 = var$1.data;
-    var$3 = oktd_DataByteOrder__init_($rt_s(1120), 0);
+    var$3 = oktd_DataByteOrder__init_($rt_s(1123), 0);
     oktd_DataByteOrder_Native = var$3;
     var$2[0] = var$3;
-    var$3 = oktd_DataByteOrder__init_($rt_s(1121), 1);
+    var$3 = oktd_DataByteOrder__init_($rt_s(1124), 1);
     oktd_DataByteOrder_LittleEndian = var$3;
     var$2[1] = var$3;
-    var$3 = oktd_DataByteOrder__init_($rt_s(1122), 2);
+    var$3 = oktd_DataByteOrder__init_($rt_s(1125), 2);
     oktd_DataByteOrder_BigEndian = var$3;
     var$2[2] = var$3;
     oktd_DataByteOrder_$VALUES = var$1;
@@ -43949,7 +44078,7 @@ function okts_Shader$buildByNodes$$inlined$sortBy$1_compare($this, $a, $b) {
 }
 function ck_StarsAboveHeadFx$1$1() {
     var a = this; kji_Lambda.call(a);
-    a.$this$0250 = null;
+    a.$this$0252 = null;
     a.$$this_loadTyped1 = null;
 }
 function ck_StarsAboveHeadFx$1$1__init_(var_0, var_1) {
@@ -43967,17 +44096,17 @@ function ck_StarsAboveHeadFx$1$1_invoke0($this) {
     var$1 = $this.$$this_loadTyped1.$getScene();
     kji_Intrinsics_checkNotNull(var$1);
     $gltfScene = var$1.$copy4();
-    ck_StarsAboveHeadFx_getScenes($this.$this$0250.$this$028).$add3($gltfScene);
-    ck_StarsAboveHeadFx_addChildNode($this.$this$0250.$this$028, $gltfScene);
+    ck_StarsAboveHeadFx_getScenes($this.$this$0252.$this$028).$add3($gltfScene);
+    ck_StarsAboveHeadFx_addChildNode($this.$this$0252.$this$028, $gltfScene);
 }
 function ck_StarsAboveHeadFx$1$1__init_0(var$0, var$1, var$2) {
-    var$0.$this$0250 = var$1;
+    var$0.$this$0252 = var$1;
     var$0.$$this_loadTyped1 = var$2;
     kji_Lambda__init_0(var$0, 0);
 }
 function oktgg_IGLTFMaterial$readJson$9$2() {
     kji_Lambda.call(this);
-    this.$this$0251 = null;
+    this.$this$0253 = null;
 }
 function oktgg_IGLTFMaterial$readJson$9$2__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$9$2();
@@ -43990,15 +44119,15 @@ function oktgg_IGLTFMaterial$readJson$9$2_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_IGLTFMaterial$readJson$9$2_invoke0($this, $it) {
-    $this.$this$0251.$this$0113.$setOcclusionTextureUV($it);
+    $this.$this$0253.$this$0112.$setOcclusionTextureUV($it);
 }
 function oktgg_IGLTFMaterial$readJson$9$2__init_0(var$0, var$1) {
-    var$0.$this$0251 = var$1;
+    var$0.$this$0253 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_IGLTFMaterial$readJson$9$1() {
     kji_Lambda.call(this);
-    this.$this$0252 = null;
+    this.$this$0254 = null;
 }
 function oktgg_IGLTFMaterial$readJson$9$1__init_(var_0) {
     var var_1 = new oktgg_IGLTFMaterial$readJson$9$1();
@@ -44011,10 +44140,10 @@ function oktgg_IGLTFMaterial$readJson$9$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_IGLTFMaterial$readJson$9$1_invoke0($this, $it) {
-    $this.$this$0252.$this$0113.$setOcclusionStrength($it);
+    $this.$this$0254.$this$0112.$setOcclusionStrength($it);
 }
 function oktgg_IGLTFMaterial$readJson$9$1__init_0(var$0, var$1) {
-    var$0.$this$0252 = var$1;
+    var$0.$this$0254 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFSparse$Indices() {
@@ -44037,7 +44166,7 @@ function oktgg_GLTFSparse$Indices_readJson($this, $json) {
     kji_Intrinsics_checkNotNullParameter($json, $rt_s(25));
     $this.$bufferView2 = $json.$int0($rt_s(28));
     $json.$int($rt_s(267), oktgg_GLTFSparse$Indices$readJson$1__init_($this));
-    $this.$componentType0 = $json.$int0($rt_s(547));
+    $this.$componentType0 = $json.$int0($rt_s(550));
 }
 function oktgg_GLTFSparse$Indices_setByteOffset($this, $_set___) {
     $this.$byteOffset3 = $_set___;
@@ -44059,7 +44188,7 @@ function oktgg_GLTFSparse$Indices__init_2(var$0, var$1, var$2, var$3, var$4, var
 }
 function ck_CharacterImp$readJson$4$3$1() {
     kji_Lambda.call(this);
-    this.$this$0253 = null;
+    this.$this$0255 = null;
 }
 function ck_CharacterImp$readJson$4$3$1__init_(var_0) {
     var var_1 = new ck_CharacterImp$readJson$4$3$1();
@@ -44076,10 +44205,10 @@ function ck_CharacterImp$readJson$4$3$1_invoke0($this, $$this$objs) {
     kji_Intrinsics_checkNotNullParameter($$this$objs, $rt_s(3));
     $descriptor = ck_ActionDescriptor__init_1(0, 1, null);
     $descriptor.$readJson($$this$objs);
-    $this.$this$0253.$this$069.$this$052.$addAction($descriptor);
+    $this.$this$0255.$this$071.$this$052.$addAction($descriptor);
 }
 function ck_CharacterImp$readJson$4$3$1__init_0(var$0, var$1) {
-    var$0.$this$0253 = var$1;
+    var$0.$this$0255 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktgg_GLTFScene() {
@@ -44120,7 +44249,7 @@ function oktgg_GLTFScene_readJson($this, $json) {
         $this.$scene2.$getArmatures().$add3(oktgg_GLTFSkin_getSkin($it));
     }
     $this.$nodes2.$clear();
-    $json.$array($rt_s(1044), oktgg_GLTFScene$readJson$3__init_($this));
+    $json.$array($rt_s(1048), oktgg_GLTFScene$readJson$3__init_($this));
     oktgg_GLTFScene_getGltf($this).$getScenes2().$ready(oktgg_GLTFScene_getElementIndex($this));
 }
 function oktgg_GLTFScene_getGltf($this) {
@@ -44208,15 +44337,15 @@ function oktr_DefaultResources_update($this, $delta) {
     }
 }
 function oktr_DefaultResources_addResourceType($this, $provider) {
-    kji_Intrinsics_checkNotNullParameter($provider, $rt_s(1123));
+    kji_Intrinsics_checkNotNullParameter($provider, $rt_s(1126));
     $this.$typesInternal.$add3($provider);
 }
 function oktr_DefaultResources_load($this, $uri, $beforeLoad, $afterLoad) {
     var $existedRes, $i, var$6, var$7, $type, $res;
     a: {
         kji_Intrinsics_checkNotNullParameter($uri, $rt_s(26));
-        kji_Intrinsics_checkNotNullParameter($beforeLoad, $rt_s(745));
-        kji_Intrinsics_checkNotNullParameter($afterLoad, $rt_s(746));
+        kji_Intrinsics_checkNotNullParameter($beforeLoad, $rt_s(748));
+        kji_Intrinsics_checkNotNullParameter($afterLoad, $rt_s(749));
         $existedRes = oktr_DefaultResources_getOrNull($this, $uri);
         if ($existedRes !== null) {
             if (!$existedRes.$isLoaded0() && !$existedRes.$isLoading()) {
@@ -44240,7 +44369,7 @@ function oktr_DefaultResources_load($this, $uri, $beforeLoad, $afterLoad) {
             if ($i >= var$6)
                 break a;
             var$7 = $this.$typesInternal.$get1($i);
-            kji_Intrinsics_checkNotNullExpressionValue(var$7, $rt_s(1124));
+            kji_Intrinsics_checkNotNullExpressionValue(var$7, $rt_s(1127));
             $type = var$7;
             if ($type.$canLoad($uri)) {
                 $res = $type.$provideResource($uri);
@@ -44261,7 +44390,7 @@ function oktr_DefaultResources_load($this, $uri, $beforeLoad, $afterLoad) {
             $i = $i + 1 | 0;
         }
     }
-    $rt_throw(jl_IllegalStateException__init_0(jl_StringBuilder__init_().$append($rt_s(1125)).$append($uri).$toString()));
+    $rt_throw(jl_IllegalStateException__init_0(jl_StringBuilder__init_().$append($rt_s(1128)).$append($uri).$toString()));
 }
 function oktr_DefaultResources_getOrNull($this, $uri) {
     kji_Intrinsics_checkNotNullParameter($uri, $rt_s(26));
@@ -44276,12 +44405,6 @@ function oktr_DefaultResources__init_0($this) {
     $this.$resourceListener = oktr_DefaultResources$resourceListener$1__init_($this);
     oktr_DefaultResources_addResourceType($this, oktr_DefaultResourceProvider__init_());
 }
-function oktr_DefaultResources_loadTyped($this, $uri, $beforeLoad, $afterLoad) {
-    kji_Intrinsics_checkNotNullParameter($uri, $rt_s(26));
-    kji_Intrinsics_checkNotNullParameter($beforeLoad, $rt_s(745));
-    kji_Intrinsics_checkNotNullParameter($afterLoad, $rt_s(746));
-    return oktr_IResources$DefaultImpls_loadTyped($this, $uri, $beforeLoad, $afterLoad);
-}
 function oktr_DefaultResources_get($this, $uri) {
     kji_Intrinsics_checkNotNullParameter($uri, $rt_s(26));
     return oktr_IResources$DefaultImpls_get($this, $uri);
@@ -44289,6 +44412,12 @@ function oktr_DefaultResources_get($this, $uri) {
 function oktr_DefaultResources_getTyped($this, $uri) {
     kji_Intrinsics_checkNotNullParameter($uri, $rt_s(26));
     return oktr_IResources$DefaultImpls_getTyped($this, $uri);
+}
+function oktr_DefaultResources_loadTyped($this, $uri, $beforeLoad, $afterLoad) {
+    kji_Intrinsics_checkNotNullParameter($uri, $rt_s(26));
+    kji_Intrinsics_checkNotNullParameter($beforeLoad, $rt_s(748));
+    kji_Intrinsics_checkNotNullParameter($afterLoad, $rt_s(749));
+    return oktr_IResources$DefaultImpls_loadTyped($this, $uri, $beforeLoad, $afterLoad);
 }
 function oktr_DefaultResources_access$getResourcesRequestedGLCalls$p($$this) {
     return $$this.$resourcesRequestedGLCalls;
@@ -44309,7 +44438,7 @@ function ki_ProgressionUtilKt_differenceModulo($a, $b, $c) {
 function ki_ProgressionUtilKt_getProgressionLastElement($start, $end, $step) {
     if ($step <= 0) {
         if ($step >= 0)
-            $rt_throw(jl_IllegalArgumentException__init_0($rt_s(1126)));
+            $rt_throw(jl_IllegalArgumentException__init_0($rt_s(1129)));
         if ($start > $end)
             $end = $end + ki_ProgressionUtilKt_differenceModulo($start, $end,  -$step) | 0;
     } else if ($start < $end)
@@ -44355,7 +44484,7 @@ function oktsn_SplitVec4Node__init_(var_0, var_1, var_2) {
 }
 function oktsn_SplitVec4Node_getVector($this) {
     var var$1;
-    var$1 = $this.$getInput().$get0($rt_s(1127));
+    var$1 = $this.$getInput().$get0($rt_s(1130));
     if (var$1 === null) {
         oktsn_GLSL_$callClinit();
         var$1 = oktsn_GLSL_getZeroFloat(oktsn_GLSL_INSTANCE);
@@ -44382,33 +44511,33 @@ function oktsn_SplitVec4Node_setChannelNames($this) {
                 break;
             case 4:
                 $this.$x4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(7)).$toString());
-                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1128)).$toString());
-                $this.$z3.$setInlineCode($rt_s(1129));
-                $this.$w1.$setInlineCode($rt_s(1130));
+                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1131)).$toString());
+                $this.$z3.$setInlineCode($rt_s(1132));
+                $this.$w1.$setInlineCode($rt_s(1133));
                 break a;
             case 5:
                 $this.$x4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(7)).$toString());
-                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1128)).$toString());
-                $this.$z3.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1131)).$toString());
-                $this.$w1.$setInlineCode($rt_s(1130));
+                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1131)).$toString());
+                $this.$z3.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1134)).$toString());
+                $this.$w1.$setInlineCode($rt_s(1133));
                 break a;
             default:
                 $this.$x4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(7)).$toString());
-                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1128)).$toString());
-                $this.$z3.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1131)).$toString());
-                $this.$w1.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1132)).$toString());
+                $this.$y4.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1131)).$toString());
+                $this.$z3.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1134)).$toString());
+                $this.$w1.$setInlineCode(jl_StringBuilder__init_().$append(oktsn_SplitVec4Node_getVector($this).$getRef0()).$append($rt_s(1135)).$toString());
                 break a;
         }
         $this.$x4.$setInlineCode(oktsn_SplitVec4Node_getVector($this).$getRef0());
-        $this.$y4.$setInlineCode($rt_s(1129));
-        $this.$z3.$setInlineCode($rt_s(1129));
-        $this.$w1.$setInlineCode($rt_s(1130));
+        $this.$y4.$setInlineCode($rt_s(1132));
+        $this.$z3.$setInlineCode($rt_s(1132));
+        $this.$w1.$setInlineCode($rt_s(1133));
     }
 }
 function oktsn_SplitVec4Node__init_1($this, $vector) {
     var var$2;
     oktsn_SplitVec4Node_$callClinit();
-    kji_Intrinsics_checkNotNullParameter($vector, $rt_s(1127));
+    kji_Intrinsics_checkNotNullParameter($vector, $rt_s(1130));
     oktsn_ShaderNode__init_0($this);
     var$2 = oktsn_GLSLFloat__init_($rt_s(480));
     var$2.$setScope(0);
@@ -44422,7 +44551,7 @@ function oktsn_SplitVec4Node__init_1($this, $vector) {
     var$2 = oktsn_GLSLFloat__init_($rt_s(97));
     var$2.$setScope(0);
     $this.$w1 = oktsn_ShaderNode_defOut($this, var$2);
-    $this.$setInput($rt_s(1127), $vector);
+    $this.$setInput($rt_s(1130), $vector);
 }
 function oktsn_SplitVec4Node__init_2(var$0, var$1, var$2, var$3) {
     oktsn_SplitVec4Node_$callClinit();
@@ -44436,14 +44565,14 @@ function oktsn_SplitVec4Node__clinit_() {
     var var$1;
     oktsn_SplitVec4Node_Companion = oktsn_SplitVec4Node$Companion__init_1(null);
     var$1 = ju_LinkedHashMap__init_();
-    var$1.$put2($rt_s(1127), jl_Integer_valueOf(6));
+    var$1.$put2($rt_s(1130), jl_Integer_valueOf(6));
     oktsn_SplitVec4Node_InputForm = var$1;
 }
 function okta_DelayRunAction() {
     var a = this; jl_Object.call(a);
     a.$remain = 0.0;
     a.$delay = 0.0;
-    a.$call1 = null;
+    a.$call0 = null;
 }
 function okta_DelayRunAction__init_(var_0, var_1) {
     var var_2 = new okta_DelayRunAction();
@@ -44461,14 +44590,14 @@ function okta_DelayRunAction_update($this, $delta) {
         if ($this.$remain > 0.0)
             $this.$remain = $this.$remain - $delta;
         if ($this.$remain <= 0.0)
-            $this.$call1.$invoke21();
+            $this.$call0.$invoke21();
     }
 }
 function okta_DelayRunAction__init_0($this, $delay, $call) {
     kji_Intrinsics_checkNotNullParameter($call, $rt_s(62));
     jl_Object__init_0($this);
     $this.$delay = $delay;
-    $this.$call1 = $call;
+    $this.$call0 = $call;
     $this.$remain = $this.$delay;
 }
 function jl_ConsoleOutputStreamStderr() {
@@ -44490,7 +44619,7 @@ function jl_ConsoleOutputStreamStderr_writeImpl($b) {
 }
 function oktgg_GLTFSparse$Indices$readJson$1() {
     kji_Lambda.call(this);
-    this.$this$0254 = null;
+    this.$this$0256 = null;
 }
 function oktgg_GLTFSparse$Indices$readJson$1__init_(var_0) {
     var var_1 = new oktgg_GLTFSparse$Indices$readJson$1();
@@ -44503,10 +44632,10 @@ function oktgg_GLTFSparse$Indices$readJson$1_invoke(var$0, var$1) {
     return k_Unit_INSTANCE;
 }
 function oktgg_GLTFSparse$Indices$readJson$1_invoke0($this, $it) {
-    oktgg_GLTFSparse$Indices_setByteOffset($this.$this$0254, $it);
+    oktgg_GLTFSparse$Indices_setByteOffset($this.$this$0256, $it);
 }
 function oktgg_GLTFSparse$Indices$readJson$1__init_0(var$0, var$1) {
-    var$0.$this$0254 = var$1;
+    var$0.$this$0256 = var$1;
     kji_Lambda__init_0(var$0, 1);
 }
 function oktm_IMeshProvider$DefaultImpls() {
@@ -44514,14 +44643,14 @@ function oktm_IMeshProvider$DefaultImpls() {
 }
 function oktm_IMeshProvider$DefaultImpls_vertexBuffer$default(var$1, var$2, var$3, var$4, var$5, var$6) {
     if (var$6 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1133)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1136)));
     if (var$5 & 4)
         var$4 = 1;
     return var$1.$vertexBuffer(var$2, var$3, var$4);
 }
 function oktm_IMeshProvider$DefaultImpls_indexBuffer$default(var$1, var$2, var$3, var$4, var$5, var$6) {
     if (var$6 !== null)
-        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1134)));
+        $rt_throw(jl_UnsupportedOperationException__init_($rt_s(1137)));
     if (var$5 & 4)
         var$4 = 1;
     return var$1.$indexBuffer(var$2, var$3, var$4);
@@ -44601,6 +44730,8 @@ oktgg_IGLTFArrayElement, 0, jl_Object, [oktj_IJsonObjectIO], 3, 3, 0, 0,
 oktgg_GLTFImage, 0, jl_Object, [oktj_IJsonObjectIO, oktgg_IGLTFArrayElement], 4, 3, 0, ["$getName", function() { return oktgg_GLTFImage_getName(this); }, "$setName", function(var_1) { oktgg_GLTFImage_setName(this, var_1); }, "$setUri", function(var_1) { oktgg_GLTFImage_setUri(this, var_1); }, "$setMimeType", function(var_1) { oktgg_GLTFImage_setMimeType(this, var_1); }, "$setBufferView", function(var_1) { oktgg_GLTFImage_setBufferView(this, var_1); }, "$readJson", function(var_1) { oktgg_GLTFImage_readJson(this,
 var_1); }, "$getGltf", function() { return oktgg_GLTFImage_getGltf(this); }, "$getElementIndex", function() { return oktgg_GLTFImage_getElementIndex(this); }, "$getImage", function() { return oktgg_GLTFImage_getImage(this); }],
 okti_IKB$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
+otj_JSObject, 0, jl_Object, [], 3, 3, 0, 0,
+otjdc_ElementCSSInlineStyle, 0, jl_Object, [otj_JSObject], 3, 3, 0, 0,
 jur_AbstractCharClass$LazyAlpha, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyAlpha_computeValue(this); }],
 oktsn_SplitVec4Node$Companion, 0, jl_Object, [], 4, 3, 0, 0,
 jur_AbstractCharClass$LazyWord, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyWord_computeValue(this); }],
@@ -44615,12 +44746,12 @@ jl_CharSequence, 0, jl_Object, [], 3, 3, 0, 0,
 jl_Throwable, 0, jl_Object, [], 0, 3, 0, ["$fillInStackTrace", function() { return jl_Throwable_fillInStackTrace(this); }, "$getStackTrace", function() { return jl_Throwable_getStackTrace(this); }, "$setStackTrace", function(var_1) { jl_Throwable_setStackTrace(this, var_1); }],
 jl_Error, 0, jl_Throwable, [], 0, 3, 0, 0,
 jl_LinkageError, 0, jl_Error, [], 0, 3, 0, 0,
-oktd_IDataArray, 0, jl_Object, [], 3, 3, 0, 0,
-oktt_TvmArrayBufferView, 0, jl_Object, [oktd_IDataArray], 1, 3, 0, ["$getSourceObject", function() { return oktt_TvmArrayBufferView_getSourceObject(this); }, "$getPosition", function() { return oktt_TvmArrayBufferView_getPosition(this); }, "$setPosition", function(var_1) { oktt_TvmArrayBufferView_setPosition(this, var_1); }, "$getCapacity", function() { return oktt_TvmArrayBufferView_getCapacity(this); }],
-oktd_IByteData, 0, jl_Object, [oktd_IDataArray], 3, 3, 0, 0]);
-$rt_metadata([oktt_TvmUInt8Array, 0, oktt_TvmArrayBufferView, [oktd_IByteData], 4, 3, oktt_TvmUInt8Array_$callClinit, ["$setOrder", function(var_1) { oktt_TvmUInt8Array_setOrder(this, var_1); }, "$getArray", function() { return oktt_TvmUInt8Array_getArray(this); }, "$getSize", function() { return oktt_TvmUInt8Array_getSize(this); }, "$setSize", function(var_1) { oktt_TvmUInt8Array_setSize(this, var_1); }, "$set0", function(var_1, var_2) { oktt_TvmUInt8Array_set(this, var_1, var_2); }, "$set14", function(var_1,
-var_2) { oktt_TvmUInt8Array_set0(this, var_1, var_2); }, "$get2", function(var_1) { return oktt_TvmUInt8Array_get(this, var_1); }, "$get1", function(var_1) { return oktt_TvmUInt8Array_get0(this, var_1); }, "$get3", function() { return oktt_TvmUInt8Array_get1(this); }, "$get5", function() { return oktt_TvmUInt8Array_get2(this); }, "$put", function(var_1) { oktt_TvmUInt8Array_put(this, var_1); }, "$put6", function(var_1) { oktt_TvmUInt8Array_put0(this, var_1); }, "$byteView", function() { return oktt_TvmUInt8Array_byteView(this);
-}, "$shortView", function() { return oktt_TvmUInt8Array_shortView0(this); }, "$intView", function() { return oktt_TvmUInt8Array_intView0(this); }, "$floatView", function() { return oktt_TvmUInt8Array_floatView0(this); }, "$put7", function(var_1) { return oktt_TvmUInt8Array_put1(this, var_1); }, "$destroy0", function() { oktt_TvmUInt8Array_destroy(this); }, "$toUInt1", function(var_1) { return oktt_TvmUInt8Array_toUInt(this, var_1); }],
+oktd_IDataArray, 0, jl_Object, [], 3, 3, 0, 0]);
+$rt_metadata([oktt_TvmArrayBufferView, 0, jl_Object, [oktd_IDataArray], 1, 3, 0, ["$getSourceObject", function() { return oktt_TvmArrayBufferView_getSourceObject(this); }, "$getPosition", function() { return oktt_TvmArrayBufferView_getPosition(this); }, "$setPosition", function(var_1) { oktt_TvmArrayBufferView_setPosition(this, var_1); }, "$getCapacity", function() { return oktt_TvmArrayBufferView_getCapacity(this); }],
+oktd_IByteData, 0, jl_Object, [oktd_IDataArray], 3, 3, 0, 0,
+oktt_TvmUInt8Array, 0, oktt_TvmArrayBufferView, [oktd_IByteData], 4, 3, oktt_TvmUInt8Array_$callClinit, ["$setOrder", function(var_1) { oktt_TvmUInt8Array_setOrder(this, var_1); }, "$getArray", function() { return oktt_TvmUInt8Array_getArray(this); }, "$getSize", function() { return oktt_TvmUInt8Array_getSize(this); }, "$setSize", function(var_1) { oktt_TvmUInt8Array_setSize(this, var_1); }, "$set0", function(var_1, var_2) { oktt_TvmUInt8Array_set(this, var_1, var_2); }, "$set14", function(var_1, var_2) { oktt_TvmUInt8Array_set0(this,
+var_1, var_2); }, "$get2", function(var_1) { return oktt_TvmUInt8Array_get(this, var_1); }, "$get1", function(var_1) { return oktt_TvmUInt8Array_get0(this, var_1); }, "$get3", function() { return oktt_TvmUInt8Array_get1(this); }, "$get5", function() { return oktt_TvmUInt8Array_get2(this); }, "$put", function(var_1) { oktt_TvmUInt8Array_put(this, var_1); }, "$put6", function(var_1) { oktt_TvmUInt8Array_put0(this, var_1); }, "$byteView", function() { return oktt_TvmUInt8Array_byteView(this); }, "$shortView", function()
+{ return oktt_TvmUInt8Array_shortView0(this); }, "$intView", function() { return oktt_TvmUInt8Array_intView0(this); }, "$floatView", function() { return oktt_TvmUInt8Array_floatView0(this); }, "$put7", function(var_1) { return oktt_TvmUInt8Array_put1(this, var_1); }, "$destroy0", function() { oktt_TvmUInt8Array_destroy(this); }, "$toUInt1", function(var_1) { return oktt_TvmUInt8Array_toUInt(this, var_1); }],
 jur_AbstractCharClass$LazyCategory, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyCategory_computeValue(this); }],
 jur_FSet, 0, jur_AbstractSet, [], 0, 0, jur_FSet_$callClinit, ["$matches", function(var_1, var_2, var_3) { return jur_FSet_matches(this, var_1, var_2, var_3); }, "$getGroupIndex", function() { return jur_FSet_getGroupIndex(this); }, "$hasConsumed", function(var_1) { return jur_FSet_hasConsumed(this, var_1); }],
 jur_BehindFSet, 0, jur_FSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_BehindFSet_matches(this, var_1, var_2, var_3); }],
@@ -44682,11 +44813,11 @@ jl_Appendable, 0, jl_Object, [], 3, 3, 0, 0,
 jl_StringBuffer, 0, jl_AbstractStringBuilder, [jl_Appendable], 0, 3, 0, ["$append13", function(var_1) { return jl_StringBuffer_append(this, var_1); }, "$append6", function(var_1, var_2, var_3) { return jl_StringBuffer_append0(this, var_1, var_2, var_3); }, "$append14", function(var_1) { return jl_StringBuffer_append1(this, var_1); }, "$insert6", function(var_1, var_2, var_3, var_4) { return jl_StringBuffer_insert(this, var_1, var_2, var_3, var_4); }, "$insert7", function(var_1, var_2) { return jl_StringBuffer_insert0(this,
 var_1, var_2); }, "$insert5", function(var_1, var_2, var_3, var_4) { return jl_StringBuffer_insert1(this, var_1, var_2, var_3, var_4); }, "$append3", function(var_1, var_2, var_3) { return jl_StringBuffer_append2(this, var_1, var_2, var_3); }, "$charAt", function(var_1) { return jl_StringBuffer_charAt(this, var_1); }, "$length", function() { return jl_StringBuffer_length(this); }, "$toString", function() { return jl_StringBuffer_toString(this); }, "$ensureCapacity", function(var_1) { jl_StringBuffer_ensureCapacity(this,
 var_1); }, "$insert2", function(var_1, var_2) { return jl_StringBuffer_insert2(this, var_1, var_2); }],
-jn_Buffer, 0, jl_Object, [], 1, 3, 0, ["$position5", function() { return jn_Buffer_position(this); }, "$position6", function(var_1) { return jn_Buffer_position0(this, var_1); }, "$clear5", function() { return jn_Buffer_clear(this); }, "$remaining", function() { return jn_Buffer_remaining(this); }, "$hasRemaining", function() { return jn_Buffer_hasRemaining(this); }],
-jur_SpecialToken, 0, jl_Object, [], 1, 0, 0, 0,
+jn_Buffer, 0, jl_Object, [], 1, 3, 0, ["$position5", function() { return jn_Buffer_position(this); }, "$position6", function(var_1) { return jn_Buffer_position0(this, var_1); }, "$clear5", function() { return jn_Buffer_clear(this); }, "$remaining", function() { return jn_Buffer_remaining(this); }, "$hasRemaining", function() { return jn_Buffer_hasRemaining(this); }]]);
+$rt_metadata([jur_SpecialToken, 0, jl_Object, [], 1, 0, 0, 0,
 jur_AbstractCharClass, 0, jur_SpecialToken, [], 1, 0, jur_AbstractCharClass_$callClinit, ["$getBits", function() { return jur_AbstractCharClass_getBits(this); }, "$getLowHighSurrogates", function() { return jur_AbstractCharClass_getLowHighSurrogates(this); }, "$hasLowHighSurrogates", function() { return jur_AbstractCharClass_hasLowHighSurrogates(this); }, "$mayContainSupplCodepoints2", function() { return jur_AbstractCharClass_mayContainSupplCodepoints(this); }, "$getInstance", function() { return jur_AbstractCharClass_getInstance(this);
-}, "$getSurrogates", function() { return jur_AbstractCharClass_getSurrogates(this); }, "$getWithoutSurrogates", function() { return jur_AbstractCharClass_getWithoutSurrogates(this); }, "$hasUCI0", function() { return jur_AbstractCharClass_hasUCI(this); }, "$setNegative", function(var_1) { return jur_AbstractCharClass_setNegative(this, var_1); }, "$isNegative", function() { return jur_AbstractCharClass_isNegative(this); }]]);
-$rt_metadata([jur_AbstractCharClass$LazyJavaUnicodeIdentifierPart$1, "AbstractCharClass$LazyJavaUnicodeIdentifierPart$1", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_AbstractCharClass$LazyJavaUnicodeIdentifierPart$1_contains(this, var_1); }],
+}, "$getSurrogates", function() { return jur_AbstractCharClass_getSurrogates(this); }, "$getWithoutSurrogates", function() { return jur_AbstractCharClass_getWithoutSurrogates(this); }, "$hasUCI0", function() { return jur_AbstractCharClass_hasUCI(this); }, "$setNegative", function(var_1) { return jur_AbstractCharClass_setNegative(this, var_1); }, "$isNegative", function() { return jur_AbstractCharClass_isNegative(this); }],
+jur_AbstractCharClass$LazyJavaUnicodeIdentifierPart$1, "AbstractCharClass$LazyJavaUnicodeIdentifierPart$1", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_AbstractCharClass$LazyJavaUnicodeIdentifierPart$1_contains(this, var_1); }],
 jur_AbstractCharClass$PredefinedCharacterClasses, 0, jl_Object, [], 4, 0, jur_AbstractCharClass$PredefinedCharacterClasses_$callClinit, ["$getObject", function(var_1) { return jur_AbstractCharClass$PredefinedCharacterClasses_getObject(this, var_1); }],
 jur_AbstractCharClass$LazyDigit, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyDigit_computeValue(this); }],
 jur_AbstractCharClass$LazyJavaLetter, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyJavaLetter_computeValue(this); }],
@@ -44704,6 +44835,15 @@ jur_NegativeLookAhead, 0, jur_AtomicJointSet, [], 0, 0, 0, ["$matches", function
 oktf_IFileSystem, 0, jl_Object, [], 3, 3, 0, 0,
 oktm_IVec, 0, jl_Object, [], 3, 3, 0, 0,
 oktm_IVec4, 0, jl_Object, [oktm_IVec], 3, 3, oktm_IVec4_$callClinit, 0,
+otjdx_Node, 0, jl_Object, [otj_JSObject], 3, 3, 0, 0,
+otjdx_Element, 0, jl_Object, [otjdx_Node], 3, 3, 0, 0,
+otjde_EventTarget, 0, jl_Object, [otj_JSObject], 3, 3, 0, 0,
+otjde_FocusEventTarget, 0, jl_Object, [otjde_EventTarget], 3, 3, 0, 0,
+otjde_MouseEventTarget, 0, jl_Object, [otjde_EventTarget], 3, 3, 0, 0,
+otjde_WheelEventTarget, 0, jl_Object, [otjde_EventTarget], 3, 3, 0, 0,
+otjde_KeyboardEventTarget, 0, jl_Object, [otjde_EventTarget], 3, 3, 0, 0,
+otjde_LoadEventTarget, 0, jl_Object, [otjde_EventTarget], 3, 3, 0, 0,
+otjdh_HTMLElement, 0, jl_Object, [otjdx_Element, otjdc_ElementCSSInlineStyle, otjde_EventTarget, otjde_FocusEventTarget, otjde_MouseEventTarget, otjde_WheelEventTarget, otjde_KeyboardEventTarget, otjde_LoadEventTarget], 3, 3, 0, 0,
 oktm_IVec3, 0, jl_Object, [oktm_IVec], 3, 3, 0, 0,
 jl_UnsupportedOperationException, 0, jl_RuntimeException, [], 0, 3, 0, 0,
 jn_ReadOnlyBufferException, 0, jl_UnsupportedOperationException, [], 0, 3, 0, 0,
@@ -44727,8 +44867,8 @@ otji_JS, 0, jl_Object, [], 4, 0, 0, 0,
 oktf_FS, 0, jl_Object, [oktf_IFileSystem], 4, 3, oktf_FS_$callClinit, ["$setProxy5", function(var_1) { oktf_FS_setProxy(this, var_1); }, "$file", function(var_1, var_2) { return oktf_FS_file(this, var_1, var_2); }, "$internal0", function(var_1) { return oktf_FS_internal(this, var_1); }],
 jur_AbstractCharClass$LazyJavaUnicodeIdentifierStart$1, "AbstractCharClass$LazyJavaUnicodeIdentifierStart$1", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_AbstractCharClass$LazyJavaUnicodeIdentifierStart$1_contains(this, var_1); }],
 kt_CharsKt__CharJVMKt, 0, jl_Object, [], 0, 0, 0, 0,
-kt_CharsKt__CharKt, 0, kt_CharsKt__CharJVMKt, [], 0, 0, 0, 0,
-oktsn_IShaderNode, 0, jl_Object, [oktj_IJsonObjectIO], 3, 3, 0, 0,
+kt_CharsKt__CharKt, 0, kt_CharsKt__CharJVMKt, [], 0, 0, 0, 0]);
+$rt_metadata([oktsn_IShaderNode, 0, jl_Object, [oktj_IJsonObjectIO], 3, 3, 0, 0,
 oktsn_ShaderNode, 0, jl_Object, [oktsn_IShaderNode], 1, 3, 0, ["$getInputInternal", function() { return oktsn_ShaderNode_getInputInternal(this); }, "$getShaderOrNull", function() { return oktsn_ShaderNode_getShaderOrNull(this); }, "$setShaderOrNull", function(var_1) { oktsn_ShaderNode_setShaderOrNull(this, var_1); }, "$getInput", function() { return oktsn_ShaderNode_getInput(this); }, "$getOutput", function() { return oktsn_ShaderNode_getOutput(this); }, "$getAttribute", function() { return oktsn_ShaderNode_getAttribute(this);
 }, "$getVarOut", function() { return oktsn_ShaderNode_getVarOut(this); }, "$getVarIn", function() { return oktsn_ShaderNode_getVarIn(this); }, "$defOut", function(var_1) { return oktsn_ShaderNode_defOut(this, var_1); }, "$setInput", function(var_1, var_2) { oktsn_ShaderNode_setInput(this, var_1, var_2); }, "$prepareToBuild", function() { oktsn_ShaderNode_prepareToBuild(this); }, "$shaderCompiled", function() { oktsn_ShaderNode_shaderCompiled(this); }, "$prepareToDrawScene", function(var_1) { oktsn_ShaderNode_prepareToDrawScene(this,
 var_1); }, "$prepareObjectData", function(var_1) { oktsn_ShaderNode_prepareObjectData(this, var_1); }, "$prepareToDrawMesh", function(var_1) { oktsn_ShaderNode_prepareToDrawMesh(this, var_1); }, "$executionFrag", function(var_1) { oktsn_ShaderNode_executionFrag(this, var_1); }, "$executionVert", function(var_1) { oktsn_ShaderNode_executionVert(this, var_1); }, "$declarationVert", function(var_1) { oktsn_ShaderNode_declarationVert(this, var_1); }, "$declarationFrag", function(var_1) { oktsn_ShaderNode_declarationFrag(this,
@@ -44743,8 +44883,8 @@ okti_IImg, 0, jl_Object, [], 3, 3, 0, 0,
 okti_IMG, 0, jl_Object, [okti_IImg], 4, 3, okti_IMG_$callClinit, ["$setProxy3", function(var_1) { okti_IMG_setProxy(this, var_1); }, "$image0", function() { return okti_IMG_image(this); }, "$load", function(var_1, var_2, var_3, var_4, var_5) { return okti_IMG_load(this, var_1, var_2, var_3, var_4, var_5); }, "$load0", function(var_1, var_2, var_3, var_4) { return okti_IMG_load0(this, var_1, var_2, var_3, var_4); }],
 jur_AbstractCharClass$LazyAlnum, 0, jur_AbstractCharClass$LazyAlpha, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyAlnum_computeValue(this); }],
 jur_AbstractCharClass$LazyGraph, 0, jur_AbstractCharClass$LazyAlnum, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyGraph_computeValue(this); }],
-jur_AbstractCharClass$LazyPrint, 0, jur_AbstractCharClass$LazyGraph, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyPrint_computeValue(this); }]]);
-$rt_metadata([jur_AbstractCharClass$LazyJavaSpaceChar, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyJavaSpaceChar_computeValue(this); }],
+jur_AbstractCharClass$LazyPrint, 0, jur_AbstractCharClass$LazyGraph, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyPrint_computeValue(this); }],
+jur_AbstractCharClass$LazyJavaSpaceChar, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyJavaSpaceChar_computeValue(this); }],
 jur_PositiveLookBehind, 0, jur_AtomicJointSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_PositiveLookBehind_matches(this, var_1, var_2, var_3); }, "$hasConsumed", function(var_1) { return jur_PositiveLookBehind_hasConsumed(this, var_1); }],
 oktg_IGL, 0, jl_Object, [], 3, 3, 0, 0,
 jnc_CharsetEncoder, 0, jl_Object, [], 1, 3, 0, ["$checkReplacement", function(var_1) { jnc_CharsetEncoder_checkReplacement(this, var_1); }, "$onMalformedInput", function(var_1) { return jnc_CharsetEncoder_onMalformedInput(this, var_1); }, "$implOnMalformedInput", function(var_1) { jnc_CharsetEncoder_implOnMalformedInput(this, var_1); }, "$onUnmappableCharacter", function(var_1) { return jnc_CharsetEncoder_onUnmappableCharacter(this, var_1); }, "$implOnUnmappableCharacter", function(var_1) { jnc_CharsetEncoder_implOnUnmappableCharacter(this,
@@ -44756,7 +44896,6 @@ kc_ComparisonsKt, 0, kc_ComparisonsKt___ComparisonsKt, [], 4, 3, 0, 0,
 oktm_IMat4$Companion, 0, jl_Object, [], 4, 3, oktm_IMat4$Companion_$callClinit, ["$getCap0", function() { return oktm_IMat4$Companion_getCap(this); }, "$inv0", function(var_1) { return oktm_IMat4$Companion_inv(this, var_1); }],
 jl_Iterable, 0, jl_Object, [], 3, 3, 0, 0,
 ks_SequencesKt___SequencesKt$asIterable$$inlined$Iterable$1, 0, jl_Object, [jl_Iterable, kjim_KMappedMarker], 4, 3, 0, ["$iterator", function() { return ks_SequencesKt___SequencesKt$asIterable$$inlined$Iterable$1_iterator(this); }],
-otj_JSObject, 0, jl_Object, [], 3, 3, 0, 0,
 otjde_EventListener, 0, jl_Object, [otj_JSObject], 3, 3, 0, 0,
 oktt_TvmMouse$2, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { oktt_TvmMouse$2_handleEvent(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return oktt_TvmMouse$2_handleEvent$exported$0(this, var_1); }],
 oktsn_GLSLInlineBase, 0, oktsn_ShaderData, [], 1, 3, 0, ["$getScope", function() { return oktsn_GLSLInlineBase_getScope(this); }, "$str", function(var_1) { return oktsn_GLSLInlineBase_str(this, var_1); }, "$getName", function() { return oktsn_GLSLInlineBase_getName(this); }],
@@ -44774,7 +44913,7 @@ jur_MatchResultImpl, 0, jl_Object, [jur_MatchResult], 0, 0, 0, ["$setConsumed", 
 }, "$getEnterCounter", function(var_1) { return jur_MatchResultImpl_getEnterCounter(this, var_1); }, "$setEnterCounter", function(var_1, var_2) { jur_MatchResultImpl_setEnterCounter(this, var_1, var_2); }, "$checkGroup", function(var_1) { jur_MatchResultImpl_checkGroup(this, var_1); }, "$setValid", function() { jur_MatchResultImpl_setValid(this); }, "$isValid", function() { return jur_MatchResultImpl_isValid(this); }, "$reset", function(var_1, var_2, var_3) { jur_MatchResultImpl_reset(this, var_1, var_2, var_3);
 }, "$reset0", function() { jur_MatchResultImpl_reset0(this); }, "$setBounds", function(var_1, var_2) { jur_MatchResultImpl_setBounds(this, var_1, var_2); }, "$setStartIndex", function(var_1) { jur_MatchResultImpl_setStartIndex(this, var_1); }, "$getLeftBound", function() { return jur_MatchResultImpl_getLeftBound(this); }, "$getRightBound", function() { return jur_MatchResultImpl_getRightBound(this); }, "$setMode", function(var_1) { jur_MatchResultImpl_setMode(this, var_1); }, "$mode0", function() { return jur_MatchResultImpl_mode(this);
 }, "$hasAnchoringBounds", function() { return jur_MatchResultImpl_hasAnchoringBounds(this); }, "$hasTransparentBounds", function() { return jur_MatchResultImpl_hasTransparentBounds(this); }, "$getPreviousMatchEnd", function() { return jur_MatchResultImpl_getPreviousMatchEnd(this); }],
-oktm_Plane, 0, jl_Object, [], 4, 3, 0, ["$set29", function(var_1, var_2, var_3) { oktm_Plane_set(this, var_1, var_2, var_3); }],
+oktm_Plane, 0, jl_Object, [], 4, 3, 0, ["$set30", function(var_1, var_2, var_3) { oktm_Plane_set(this, var_1, var_2, var_3); }],
 oktgg_GLTFSkin, 0, jl_Object, [oktj_IJsonObjectIO, oktgg_IGLTFArrayElement], 4, 3, 0, ["$getName", function() { return oktgg_GLTFSkin_getName(this); }, "$setName", function(var_1) { oktgg_GLTFSkin_setName(this, var_1); }, "$readJson", function(var_1) { oktgg_GLTFSkin_readJson(this, var_1); }, "$getGltf", function() { return oktgg_GLTFSkin_getGltf(this); }, "$getElementIndex", function() { return oktgg_GLTFSkin_getElementIndex(this); }, "$getSkin", function() { return oktgg_GLTFSkin_getSkin(this); }],
 jur_AbstractCharClass$LazyJavaJavaIdentifierPart$1, "AbstractCharClass$LazyJavaJavaIdentifierPart$1", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_AbstractCharClass$LazyJavaJavaIdentifierPart$1_contains(this, var_1); }],
 oktgn_ITransformNodeProxy, 0, jl_Object, [oktgn_ITransformNode], 3, 3, 0, 0,
@@ -44785,9 +44924,9 @@ function() { return oktg_Scene_copy1(this); }, "$getName", function() { return o
 }, "$getScale0", function() { return oktg_Scene_getScale(this); }, "$getWorldMatrix", function() { return oktg_Scene_getWorldMatrix(this); }, "$addChildNode0", function(var_1) { oktg_Scene_addChildNode(this, var_1); }, "$clear", function() { oktg_Scene_clear(this); }, "$getAllObjects", function(var_1, var_2) { oktg_Scene_getAllObjects(this, var_1, var_2); }, "$getGlobalPosition2", function(var_1) { return oktg_Scene_getGlobalPosition(this, var_1); }, "$removeChildNode1", function(var_1) { oktg_Scene_removeChildNode(this,
 var_1); }, "$set8", function(var_1) { return oktg_Scene_set(this, var_1); }, "$set3", function(var_1) { return oktg_Scene_set0(this, var_1); }, "$updateTransform1", function(var_1) { oktg_Scene_updateTransform(this, var_1); }],
 oktr_ResourceListener, 0, jl_Object, [], 3, 3, 0, 0,
-oktr_ResourceListenerAdapter, 0, jl_Object, [oktr_ResourceListener], 1, 3, 0, ["$error", function(var_1, var_2) { oktr_ResourceListenerAdapter_error(this, var_1, var_2); }, "$loaded", function(var_1) { oktr_ResourceListenerAdapter_loaded(this, var_1); }, "$progressChanged", function(var_1, var_2, var_3) { oktr_ResourceListenerAdapter_progressChanged(this, var_1, var_2, var_3); }, "$runOnGLThreadRequested", function(var_1) { oktr_ResourceListenerAdapter_runOnGLThreadRequested(this, var_1); }, "$removeListenerOnLoaded0",
-function() { return oktr_ResourceListenerAdapter_removeListenerOnLoaded(this); }],
-oktr_DefaultResources$resourceListener$1, 0, oktr_ResourceListenerAdapter, [], 4, 3, 0, ["$removeListenerOnLoaded0", function() { return oktr_DefaultResources$resourceListener$1_removeListenerOnLoaded(this); }, "$runOnGLThreadRequested", function(var_1) { oktr_DefaultResources$resourceListener$1_runOnGLThreadRequested(this, var_1); }],
+oktr_ResourceListenerAdapter, 0, jl_Object, [oktr_ResourceListener], 1, 3, 0, ["$error", function(var_1, var_2) { oktr_ResourceListenerAdapter_error(this, var_1, var_2); }, "$progressChanged", function(var_1, var_2, var_3) { oktr_ResourceListenerAdapter_progressChanged(this, var_1, var_2, var_3); }, "$runOnGLThreadRequested", function(var_1) { oktr_ResourceListenerAdapter_runOnGLThreadRequested(this, var_1); }, "$removeListenerOnLoaded0", function() { return oktr_ResourceListenerAdapter_removeListenerOnLoaded(this);
+}],
+oktr_DefaultResources$resourceListener$1, 0, oktr_ResourceListenerAdapter, [], 4, 3, 0, ["$removeListenerOnLoaded0", function() { return oktr_DefaultResources$resourceListener$1_removeListenerOnLoaded(this); }, "$loaded", function(var_1) { oktr_DefaultResources$resourceListener$1_loaded(this, var_1); }],
 jnc_Charset, 0, jl_Object, [jl_Comparable], 1, 3, 0, 0,
 k_UninitializedPropertyAccessException, 0, jl_RuntimeException, [], 4, 3, 0, 0,
 jur_DecomposedCharSet, 0, jur_JointSet, [], 0, 0, 0, ["$setNext", function(var_1) { jur_DecomposedCharSet_setNext(this, var_1); }, "$matches", function(var_1, var_2, var_3) { return jur_DecomposedCharSet_matches(this, var_1, var_2, var_3); }, "$getDecomposedChar", function() { return jur_DecomposedCharSet_getDecomposedChar(this); }, "$codePointAt", function(var_1, var_2, var_3) { return jur_DecomposedCharSet_codePointAt(this, var_1, var_2, var_3); }, "$first", function(var_1) { return jur_DecomposedCharSet_first(this,
@@ -44795,8 +44934,8 @@ var_1); }, "$hasConsumed", function(var_1) { return jur_DecomposedCharSet_hasCon
 oktg_Scene$Companion, 0, jl_Object, [], 4, 3, 0, 0,
 jl_IllegalArgumentException, 0, jl_RuntimeException, [], 0, 3, 0, 0,
 jnc_IllegalCharsetNameException, 0, jl_IllegalArgumentException, [], 0, 3, 0, 0,
-oktj_IJSON, 0, jl_Object, [], 3, 3, 0, 0,
-okttj_TvmJson, 0, jl_Object, [oktj_IJSON], 4, 3, 0, ["$parseObject", function(var_1) { return okttj_TvmJson_parseObject(this, var_1); }, "$printObject", function(var_1) { return okttj_TvmJson_printObject(this, var_1); }],
+oktj_IJSON, 0, jl_Object, [], 3, 3, 0, 0]);
+$rt_metadata([okttj_TvmJson, 0, jl_Object, [oktj_IJSON], 4, 3, 0, ["$parseObject", function(var_1) { return okttj_TvmJson_parseObject(this, var_1); }, "$printObject", function(var_1) { return okttj_TvmJson_printObject(this, var_1); }],
 otja_ReadyStateChangeHandler, 0, jl_Object, [otj_JSObject], 3, 3, 0, 0,
 jl_AutoCloseable, 0, jl_Object, [], 3, 3, 0, 0,
 ji_Closeable, 0, jl_Object, [jl_AutoCloseable], 3, 3, 0, 0,
@@ -44805,8 +44944,8 @@ ji_OutputStream, 0, jl_Object, [ji_Closeable, ji_Flushable], 1, 3, 0, ["$write0"
 ji_FilterOutputStream, 0, ji_OutputStream, [], 0, 3, 0, 0,
 ji_PrintStream, 0, ji_FilterOutputStream, [], 0, 3, 0, ["$write0", function(var_1, var_2, var_3) { ji_PrintStream_write(this, var_1, var_2, var_3); }, "$check", function() { return ji_PrintStream_check(this); }, "$print", function(var_1, var_2, var_3) { ji_PrintStream_print(this, var_1, var_2, var_3); }, "$println", function(var_1) { ji_PrintStream_println(this, var_1); }, "$printSB", function() { ji_PrintStream_printSB(this); }],
 oktgg_GLTF$readJson$9$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTF$readJson$9$1_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_GLTF$readJson$9$1_invoke0(this, var_1); }],
-jur_NegativeLookBehind, 0, jur_AtomicJointSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_NegativeLookBehind_matches(this, var_1, var_2, var_3); }, "$hasConsumed", function(var_1) { return jur_NegativeLookBehind_hasConsumed(this, var_1); }]]);
-$rt_metadata([jur_AbstractCharClass$LazyJavaJavaIdentifierPart, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyJavaJavaIdentifierPart_computeValue(this); }],
+jur_NegativeLookBehind, 0, jur_AtomicJointSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_NegativeLookBehind_matches(this, var_1, var_2, var_3); }, "$hasConsumed", function(var_1) { return jur_NegativeLookBehind_hasConsumed(this, var_1); }],
+jur_AbstractCharClass$LazyJavaJavaIdentifierPart, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyJavaJavaIdentifierPart_computeValue(this); }],
 okti_ITexture$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 oktsn_NormalMapNode, 0, oktsn_ShaderNode, [], 4, 3, oktsn_NormalMapNode_$callClinit, ["$getNormalizedViewVector", function() { return oktsn_NormalMapNode_getNormalizedViewVector(this); }, "$setNormalizedViewVector", function(var_1) { oktsn_NormalMapNode_setNormalizedViewVector(this, var_1); }, "$getVertexPosition", function() { return oktsn_NormalMapNode_getVertexPosition(this); }, "$getUv0", function() { return oktsn_NormalMapNode_getUv(this); }, "$setUv", function(var_1) { oktsn_NormalMapNode_setUv(this, var_1);
 }, "$getNormalScale", function() { return oktsn_NormalMapNode_getNormalScale(this); }, "$getNormalColor", function() { return oktsn_NormalMapNode_getNormalColor(this); }, "$setNormalColor", function(var_1) { oktsn_NormalMapNode_setNormalColor(this, var_1); }, "$getTbn", function() { return oktsn_NormalMapNode_getTbn(this); }, "$setTbn", function(var_1) { oktsn_NormalMapNode_setTbn(this, var_1); }, "$getNormalResult", function() { return oktsn_NormalMapNode_getNormalResult(this); }, "$executionFrag", function(var_1)
@@ -44855,8 +44994,8 @@ function() { oktt_TvmSound_stop(this); }, "$getAl", function() { return oktt_Tvm
 jl_Readable, 0, jl_Object, [], 3, 3, 0, 0,
 jn_CharBuffer, 0, jn_Buffer, [jl_Comparable, jl_Appendable, jl_CharSequence, jl_Readable], 1, 3, 0, ["$get6", function(var_1, var_2, var_3) { return jn_CharBuffer_get(this, var_1, var_2, var_3); }, "$position4", function(var_1) { return jn_CharBuffer_position(this, var_1); }],
 jn_CharBufferImpl, 0, jn_CharBuffer, [], 1, 0, 0, 0,
-jn_CharBufferOverArray, 0, jn_CharBufferImpl, [], 0, 0, 0, ["$getChar0", function(var_1) { return jn_CharBufferOverArray_getChar(this, var_1); }],
-kjf_Function3, 0, jl_Object, [k_Function], 3, 3, 0, 0,
+jn_CharBufferOverArray, 0, jn_CharBufferImpl, [], 0, 0, 0, ["$getChar0", function(var_1) { return jn_CharBufferOverArray_getChar(this, var_1); }]]);
+$rt_metadata([kjf_Function3, 0, jl_Object, [k_Function], 3, 3, 0, 0,
 kjf_Function4, 0, jl_Object, [k_Function], 3, 3, 0, 0,
 ck_StarsAboveHeadFx$1, "StarsAboveHeadFx$1", 1, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_StarsAboveHeadFx$1_invoke(this, var_1); }, "$invoke11", function(var_1) { ck_StarsAboveHeadFx$1_invoke0(this, var_1); }],
 jur_AbstractCharClass$LazyJavaTitleCase$1, "AbstractCharClass$LazyJavaTitleCase$1", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_AbstractCharClass$LazyJavaTitleCase$1_contains(this, var_1); }],
@@ -44865,8 +45004,8 @@ kjf_Function9, 0, jl_Object, [k_Function], 3, 3, 0, 0,
 kjf_Function7, 0, jl_Object, [k_Function], 3, 3, 0, 0,
 ck_CharacterImp$addAction$6, 0, kji_Lambda, [kjf_Function1], 4, 0, ck_CharacterImp$addAction$6_$callClinit, ["$invoke8", function(var_1) { return ck_CharacterImp$addAction$6_invoke(this, var_1); }, "$invoke12", function(var_1) { ck_CharacterImp$addAction$6_invoke0(this, var_1); }],
 kjf_Function8, 0, jl_Object, [k_Function], 3, 3, 0, 0,
-ck_CharacterImp$addAction$5, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_CharacterImp$addAction$5_invoke(this); }, "$invoke10", function() { ck_CharacterImp$addAction$5_invoke0(this); }]]);
-$rt_metadata([kjf_Function5, 0, jl_Object, [k_Function], 3, 3, 0, 0,
+ck_CharacterImp$addAction$5, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_CharacterImp$addAction$5_invoke(this); }, "$invoke10", function() { ck_CharacterImp$addAction$5_invoke0(this); }],
+kjf_Function5, 0, jl_Object, [k_Function], 3, 3, 0, 0,
 ck_CharacterImp$addAction$4, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_CharacterImp$addAction$4_invoke(this, var_1); }, "$invoke13", function(var_1) { return ck_CharacterImp$addAction$4_invoke0(this, var_1); }],
 kjf_Function6, 0, jl_Object, [k_Function], 3, 3, 0, 0,
 ck_CharacterImp$addAction$3, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_CharacterImp$addAction$3_invoke(this, var_1); }, "$invoke13", function(var_1) { return ck_CharacterImp$addAction$3_invoke0(this, var_1); }],
@@ -44908,8 +45047,6 @@ oktgl_ILight$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 jnci_UTF8Charset, 0, jnc_Charset, [], 0, 3, 0, ["$newEncoder", function() { return jnci_UTF8Charset_newEncoder(this); }],
 okta_Vec3Track, 0, jl_Object, [okta_IAnimTrack], 4, 3, 0, ["$getTimes", function() { return okta_Vec3Track_getTimes(this); }, "$getValues1", function() { return okta_Vec3Track_getValues(this); }, "$getInTangents", function() { return okta_Vec3Track_getInTangents(this); }, "$getOutTangents", function() { return okta_Vec3Track_getOutTangents(this); }, "$getDuration", function() { return okta_Vec3Track_getDuration(this); }, "$setDuration", function(var_1) { okta_Vec3Track_setDuration(this, var_1); }, "$getNodeIndex",
 function() { return okta_Vec3Track_getNodeIndex(this); }, "$calculateDuration1", function() { return okta_Vec3Track_calculateDuration(this); }],
-otjde_EventTarget, 0, jl_Object, [otj_JSObject], 3, 3, 0, 0,
-otjde_KeyboardEventTarget, 0, jl_Object, [otjde_EventTarget], 3, 3, 0, 0,
 oktgg_IGLTFArrayListener, 0, jl_Object, [], 3, 3, 0, 0,
 oktgg_GLTF$WhenMappings, 0, jl_Object, [], 36, 3, oktgg_GLTF$WhenMappings_$callClinit, 0,
 jur_MultiLineEOLSet, 0, jur_AbstractSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_MultiLineEOLSet_matches(this, var_1, var_2, var_3); }, "$hasConsumed", function(var_1) { return jur_MultiLineEOLSet_hasConsumed(this, var_1); }],
@@ -44922,8 +45059,8 @@ ck_CharacterImp, 0, jl_Object, [ck_Character, ck_SceneObject], 1, 3, 0, ["$getHe
 { return ck_CharacterImp_getUpdateTransformRequest(this); }, "$setUpdateTransformRequest", function(var_1) { ck_CharacterImp_setUpdateTransformRequest(this, var_1); }, "$getTmp", function() { return ck_CharacterImp_getTmp(this); }, "$update1", function(var_1) { ck_CharacterImp_update(this, var_1); }, "$addAction", function(var_1) { ck_CharacterImp_addAction(this, var_1); }, "$updateTransform3", function() { ck_CharacterImp_updateTransform(this); }, "$clearActions", function() { ck_CharacterImp_clearActions(this);
 }, "$readJson", function(var_1) { ck_CharacterImp_readJson(this, var_1); }, "$addAction0", function(var_1, var_2) { return ck_CharacterImp_addAction0(this, var_1, var_2); }, "$getLocation", function() { return ck_CharacterImp_getLocation(this); }, "$getId", function() { return ck_CharacterImp_getId(this); }],
 ck_JonesImp, 0, ck_CharacterImp, [ck_Jones], 0, 3, 0, ["$getRunSpeed", function() { return ck_JonesImp_getRunSpeed(this); }, "$setAnger", function(var_1) { ck_JonesImp_setAnger(this, var_1); }, "$getHeight0", function() { return ck_JonesImp_getHeight(this); }, "$addAction", function(var_1) { ck_JonesImp_addAction(this, var_1); }, "$getId", function() { return ck_JonesImp_getId(this); }],
-ck_CharacterClient, 0, jl_Object, [], 3, 3, 0, 0,
-ck_JonesView, 0, ck_JonesImp, [ck_CharacterClient], 4, 3, 0, ["$setArm", function(var_1) { ck_JonesView_setArm(this, var_1); }, "$getAnimPlayer", function() { return ck_JonesView_getAnimPlayer(this); }, "$getGltf0", function() { return ck_JonesView_getGltf(this); }, "$getGltf", function() { return ck_JonesView_getGltf0(this); }, "$setBranch", function(var_1) { ck_JonesView_setBranch(this, var_1); }, "$getScene", function() { return ck_JonesView_getScene(this); }, "$getPosition0", function() { return ck_JonesView_getPosition(this);
+ck_CharacterClient, 0, jl_Object, [], 3, 3, 0, 0]);
+$rt_metadata([ck_JonesView, 0, ck_JonesImp, [ck_CharacterClient], 4, 3, 0, ["$setArm", function(var_1) { ck_JonesView_setArm(this, var_1); }, "$getAnimPlayer", function() { return ck_JonesView_getAnimPlayer(this); }, "$getGltf0", function() { return ck_JonesView_getGltf(this); }, "$getGltf", function() { return ck_JonesView_getGltf0(this); }, "$setBranch", function(var_1) { ck_JonesView_setBranch(this, var_1); }, "$getScene", function() { return ck_JonesView_getScene(this); }, "$getPosition0", function() { return ck_JonesView_getPosition(this);
 }, "$getRotation0", function() { return ck_JonesView_getRotation(this); }, "$getUpdateTransformRequestClient", function() { return ck_JonesView_getUpdateTransformRequestClient(this); }, "$setUpdateTransformRequestClient", function(var_1) { ck_JonesView_setUpdateTransformRequestClient(this, var_1); }, "$setG", function(var_1) { ck_JonesView_setG(this, var_1); }, "$eqip", function() { ck_JonesView_eqip(this); }, "$readJson", function(var_1) { ck_JonesView_readJson(this, var_1); }, "$hit", function() { ck_JonesView_hit(this);
 }, "$animate", function(var_1, var_2, var_3) { ck_JonesView_animate(this, var_1, var_2, var_3); }, "$animNameMap", function(var_1) { return ck_JonesView_animNameMap(this, var_1); }, "$update1", function(var_1) { ck_JonesView_update(this, var_1); }, "$animateClient", function(var_1, var_2, var_3) { ck_JonesView_animateClient(this, var_1, var_2, var_3); }, "$updateClient", function(var_1) { ck_JonesView_updateClient(this, var_1); }],
 ck_CrabView$1$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_CrabView$1$1_invoke(this); }, "$invoke10", function() { ck_CrabView$1$1_invoke0(this); }],
@@ -44932,8 +45069,8 @@ oktg_IGL$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 kt_Regex, 0, jl_Object, [ji_Serializable], 4, 3, kt_Regex_$callClinit, ["$split0", function(var_1, var_2) { return kt_Regex_split(this, var_1, var_2); }],
 otja_XMLHttpRequest$onComplete$static$lambda$_27_0, 0, jl_Object, [otja_ReadyStateChangeHandler], 0, 3, 0, ["$stateChanged", function() { otja_XMLHttpRequest$onComplete$static$lambda$_27_0_stateChanged(this); }, "$stateChanged$exported$0", function() { return otja_XMLHttpRequest$onComplete$static$lambda$_27_0_stateChanged$exported$0(this); }],
 okti_ITexture2D$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
-ck_JonesImp$addAction$4, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_JonesImp$addAction$4_invoke(this); }, "$invoke10", function() { ck_JonesImp$addAction$4_invoke0(this); }]]);
-$rt_metadata([ck_JonesImp$addAction$3, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_JonesImp$addAction$3_invoke(this); }, "$invoke10", function() { ck_JonesImp$addAction$3_invoke0(this); }],
+ck_JonesImp$addAction$4, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_JonesImp$addAction$4_invoke(this); }, "$invoke10", function() { ck_JonesImp$addAction$4_invoke0(this); }],
+ck_JonesImp$addAction$3, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_JonesImp$addAction$3_invoke(this); }, "$invoke10", function() { ck_JonesImp$addAction$3_invoke0(this); }],
 ck_JonesImp$addAction$2, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_JonesImp$addAction$2_invoke(this); }, "$invoke10", function() { ck_JonesImp$addAction$2_invoke0(this); }],
 oktd_IFloatData$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 ck_JonesImp$addAction$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_JonesImp$addAction$1_invoke(this); }, "$invoke10", function() { ck_JonesImp$addAction$1_invoke0(this); }],
@@ -44981,8 +45118,8 @@ oktsn_VelocityNode$Companion, 0, jl_Object, [], 4, 3, 0, 0,
 jur_AbstractCharClass$LazyJavaUnicodeIdentifierStart, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyJavaUnicodeIdentifierStart_computeValue(this); }],
 oktgg_GLTFCamera$readJson$2, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFCamera$readJson$2_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_GLTFCamera$readJson$2_invoke0(this, var_1); }],
 okti_IFrameBuffer$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
-oktgg_GLTFCamera$readJson$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFCamera$readJson$1_invoke(this, var_1); }, "$invoke0", function(var_1) { oktgg_GLTFCamera$readJson$1_invoke0(this, var_1); }],
-otci_CharFlow, 0, jl_Object, [], 0, 3, 0, 0,
+oktgg_GLTFCamera$readJson$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFCamera$readJson$1_invoke(this, var_1); }, "$invoke0", function(var_1) { oktgg_GLTFCamera$readJson$1_invoke0(this, var_1); }]]);
+$rt_metadata([otci_CharFlow, 0, jl_Object, [], 0, 3, 0, 0,
 jur_RangeSet, 0, jur_LeafSet, [], 0, 0, 0, ["$accepts", function(var_1, var_2) { return jur_RangeSet_accepts(this, var_1, var_2); }, "$first", function(var_1) { return jur_RangeSet_first(this, var_1); }, "$getChars0", function() { return jur_RangeSet_getChars(this); }],
 oktsn_OutputNode, 0, oktsn_ShaderNode, [], 4, 3, oktsn_OutputNode_$callClinit, ["$getVertPosition", function() { return oktsn_OutputNode_getVertPosition(this); }, "$getFragColor", function() { return oktsn_OutputNode_getFragColor(this); }, "$setAlphaMode0", function(var_1) { oktsn_OutputNode_setAlphaMode(this, var_1); }, "$setAlphaCutoff", function(var_1) { oktsn_OutputNode_setAlphaCutoff(this, var_1); }, "$setCullFaceMode", function(var_1) { oktsn_OutputNode_setCullFaceMode(this, var_1); }, "$prepareToDrawMesh",
 function(var_1) { oktsn_OutputNode_prepareToDrawMesh(this, var_1); }, "$declarationVert", function(var_1) { oktsn_OutputNode_declarationVert(this, var_1); }, "$declarationFrag", function(var_1) { oktsn_OutputNode_declarationFrag(this, var_1); }, "$executionVert", function(var_1) { oktsn_OutputNode_executionVert(this, var_1); }, "$executionFrag", function(var_1) { oktsn_OutputNode_executionFrag(this, var_1); }],
@@ -44991,8 +45128,8 @@ otjt_Float32Array, 0, otjt_ArrayBufferView, [], 1, 3, 0, 0,
 jur_CharClass, "CharClass", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$add", function(var_1) { return jur_CharClass_add(this, var_1); }, "$add9", function(var_1) { return jur_CharClass_add0(this, var_1); }, "$add0", function(var_1, var_2) { return jur_CharClass_add1(this, var_1, var_2); }, "$union", function(var_1) { jur_CharClass_union(this, var_1); }, "$intersection", function(var_1) { jur_CharClass_intersection(this, var_1); }, "$contains0", function(var_1) { return jur_CharClass_contains(this, var_1); },
 "$getBits", function() { return jur_CharClass_getBits(this); }, "$getLowHighSurrogates", function() { return jur_CharClass_getLowHighSurrogates(this); }, "$getInstance", function() { return jur_CharClass_getInstance(this); }, "$toString", function() { return jur_CharClass_toString(this); }, "$hasUCI0", function() { return jur_CharClass_hasUCI(this); }],
 jn_BufferUnderflowException, 0, jl_RuntimeException, [], 0, 3, 0, 0,
-oktm_IMesh$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0]);
-$rt_metadata([okti_IMouse, 0, jl_Object, [], 3, 3, 0, 0,
+oktm_IMesh$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
+okti_IMouse, 0, jl_Object, [], 3, 3, 0, 0,
 okti_MOUSE, 0, jl_Object, [okti_IMouse], 4, 3, okti_MOUSE_$callClinit, ["$setProxy7", function(var_1) { okti_MOUSE_setProxy(this, var_1); }, "$getX0", function() { return okti_MOUSE_getX(this); }, "$getY1", function() { return okti_MOUSE_getY(this); }, "$addListener0", function(var_1) { okti_MOUSE_addListener(this, var_1); }],
 kr_ClosedRange, 0, jl_Object, [], 3, 3, 0, 0,
 jl_CloneNotSupportedException, 0, jl_Exception, [], 0, 3, 0, 0,
@@ -45012,7 +45149,6 @@ jur_AbstractCharClass$2, "AbstractCharClass$2", 4, jur_AbstractCharClass, [], 0,
 oktm_IMeshProvider, 0, jl_Object, [], 3, 3, 0, 0,
 oktm_MSH, 0, jl_Object, [oktm_IMeshProvider], 4, 3, oktm_MSH_$callClinit, ["$mesh0", function() { return oktm_MSH_mesh(this); }, "$vertexBuffer", function(var_1, var_2, var_3) { return oktm_MSH_vertexBuffer(this, var_1, var_2, var_3); }, "$indexBuffer", function(var_1, var_2, var_3) { return oktm_MSH_indexBuffer(this, var_1, var_2, var_3); }],
 jur_PossessiveCompositeQuantifierSet, 0, jur_CompositeQuantifierSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_PossessiveCompositeQuantifierSet_matches(this, var_1, var_2, var_3); }],
-otjde_LoadEventTarget, 0, jl_Object, [otjde_EventTarget], 3, 3, 0, 0,
 ck_CharacterImp$readJson$4, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_CharacterImp$readJson$4_invoke(this, var_1); }, "$invoke1", function(var_1) { ck_CharacterImp$readJson$4_invoke0(this, var_1); }],
 ck_CharacterImp$readJson$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_CharacterImp$readJson$1_invoke(this, var_1); }, "$invoke", function(var_1) { ck_CharacterImp$readJson$1_invoke0(this, var_1); }],
 oktgg_BoxMeshBuilder, 0, oktgg_MeshBuilder, [], 4, 3, oktgg_BoxMeshBuilder_$callClinit, ["$build", function(var_1) { return oktgg_BoxMeshBuilder_build(this, var_1); }, "$putSide", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9, var_10, var_11, var_12, var_13, var_14, var_15, var_16) { oktgg_BoxMeshBuilder_putSide(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9, var_10, var_11, var_12, var_13, var_14, var_15, var_16); }, "$putVertex", function(var_1, var_2, var_3, var_4,
@@ -45039,15 +45175,15 @@ kr_RangesKt___RangesKt, 0, kr_RangesKt__RangesKt, [], 0, 0, 0, 0,
 kr_RangesKt, 0, kr_RangesKt___RangesKt, [], 4, 3, 0, 0,
 jur_FinalSet, 0, jur_FSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_FinalSet_matches(this, var_1, var_2, var_3); }],
 oktu_ILog, 0, jl_Object, [], 3, 3, 0, 0,
-oktt_TvmLog, 0, jl_Object, [oktu_ILog], 4, 3, 0, ["$info", function(var_1, var_2, var_3) { oktt_TvmLog_info(this, var_1, var_2, var_3); }, "$error0", function(var_1, var_2, var_3) { oktt_TvmLog_error(this, var_1, var_2, var_3); }],
-okti_Texture2D$load$2, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return okti_Texture2D$load$2_invoke(this, var_1); }, "$invoke4", function(var_1) { okti_Texture2D$load$2_invoke0(this, var_1); }],
+oktt_TvmLog, 0, jl_Object, [oktu_ILog], 4, 3, 0, ["$info", function(var_1, var_2, var_3) { oktt_TvmLog_info(this, var_1, var_2, var_3); }, "$error0", function(var_1, var_2, var_3) { oktt_TvmLog_error(this, var_1, var_2, var_3); }]]);
+$rt_metadata([okti_Texture2D$load$2, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return okti_Texture2D$load$2_invoke(this, var_1); }, "$invoke4", function(var_1) { okti_Texture2D$load$2_invoke0(this, var_1); }],
 okti_Texture2D$load$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return okti_Texture2D$load$1_invoke(this, var_1); }, "$invoke18", function(var_1) { okti_Texture2D$load$1_invoke0(this, var_1); }],
 okta_DoWhileAction, 0, jl_Object, [okta_IAction], 4, 3, 0, ["$isRunning0", function() { return okta_DoWhileAction_isRunning(this); }, "$setRunning", function(var_1) { okta_DoWhileAction_setRunning(this, var_1); }, "$reset0", function() { okta_DoWhileAction_reset(this); }, "$update1", function(var_1) { okta_DoWhileAction_update(this, var_1); }],
 jur_EmptySet, 0, jur_LeafSet, [], 0, 0, 0, ["$accepts", function(var_1, var_2) { return jur_EmptySet_accepts(this, var_1, var_2); }, "$find", function(var_1, var_2, var_3) { return jur_EmptySet_find(this, var_1, var_2, var_3); }, "$findBack", function(var_1, var_2, var_3, var_4) { return jur_EmptySet_findBack(this, var_1, var_2, var_3, var_4); }, "$hasConsumed", function(var_1) { return jur_EmptySet_hasConsumed(this, var_1); }],
 oktgg_GLTFMesh$readJson$2$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFMesh$readJson$2$1_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_GLTFMesh$readJson$2$1_invoke0(this, var_1); }],
 oktt_TvmKB$2, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { oktt_TvmKB$2_handleEvent(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return oktt_TvmKB$2_handleEvent$exported$0(this, var_1); }],
-oktt_TvmKB$1, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { oktt_TvmKB$1_handleEvent(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return oktt_TvmKB$1_handleEvent$exported$0(this, var_1); }]]);
-$rt_metadata([jl_StackTraceElement, 0, jl_Object, [ji_Serializable], 4, 3, 0, 0,
+oktt_TvmKB$1, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { oktt_TvmKB$1_handleEvent(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return oktt_TvmKB$1_handleEvent$exported$0(this, var_1); }],
+jl_StackTraceElement, 0, jl_Object, [ji_Serializable], 4, 3, 0, 0,
 oktt_TvmKB$3, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { oktt_TvmKB$3_handleEvent(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return oktt_TvmKB$3_handleEvent$exported$0(this, var_1); }],
 oktsn_UVNode$Companion, 0, jl_Object, [], 4, 3, 0, 0,
 oktgg_GLTFPrimitive$readJson$2, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFPrimitive$readJson$2_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_GLTFPrimitive$readJson$2_invoke0(this, var_1); }],
@@ -45061,6 +45197,7 @@ oktgg_GLTFCamera$readJson$3$4, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invok
 okta_IAnim, 0, jl_Object, [], 3, 3, 0, 0,
 oktsn_MergeVec4, 0, oktsn_ShaderNode, [], 4, 3, oktsn_MergeVec4_$callClinit, 0,
 jl_NoSuchMethodError, 0, jl_IncompatibleClassChangeError, [], 0, 3, 0, 0,
+ck_KotmeJsMain$main$4$1$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_KotmeJsMain$main$4$1$1_invoke(this, var_1); }, "$invoke1", function(var_1) { ck_KotmeJsMain$main$4$1$1_invoke0(this, var_1); }],
 ji_IOException, 0, jl_Exception, [], 0, 3, 0, 0,
 ck_SceneObject$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 oktgg_GLTF$readJson$3$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTF$readJson$3$1_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_GLTF$readJson$3$1_invoke0(this, var_1); }],
@@ -45090,8 +45227,8 @@ oktsn_ToneMapNode, 0, oktsn_ShaderNode, [], 4, 3, oktsn_ToneMapNode_$callClinit,
 function(var_1) { oktsn_ToneMapNode_executionFrag(this, var_1); }],
 jur_AbstractCharClass$LazyJavaLetter$1, "AbstractCharClass$LazyJavaLetter$1", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_AbstractCharClass$LazyJavaLetter$1_contains(this, var_1); }],
 oktu_Pool, 0, jl_Object, [], 4, 3, 0, ["$getFree", function() { return oktu_Pool_getFree(this); }, "$getUsed", function() { return oktu_Pool_getUsed(this); }, "$get5", function() { return oktu_Pool_get(this); }, "$free", function(var_1) { oktu_Pool_free(this, var_1); }],
-oktsn_UVNode, 0, oktsn_ShaderNode, [], 4, 3, oktsn_UVNode_$callClinit, ["$setAUVName", function(var_1) { oktsn_UVNode_setAUVName(this, var_1); }, "$getUv0", function() { return oktsn_UVNode_getUv(this); }, "$declarationFrag", function(var_1) { oktsn_UVNode_declarationFrag(this, var_1); }, "$executionVert", function(var_1) { oktsn_UVNode_executionVert(this, var_1); }, "$declarationVert", function(var_1) { oktsn_UVNode_declarationVert(this, var_1); }],
-okti_IFrameBuffer, 0, jl_Object, [], 3, 3, 0, 0,
+oktsn_UVNode, 0, oktsn_ShaderNode, [], 4, 3, oktsn_UVNode_$callClinit, ["$setAUVName", function(var_1) { oktsn_UVNode_setAUVName(this, var_1); }, "$getUv0", function() { return oktsn_UVNode_getUv(this); }, "$declarationFrag", function(var_1) { oktsn_UVNode_declarationFrag(this, var_1); }, "$executionVert", function(var_1) { oktsn_UVNode_executionVert(this, var_1); }, "$declarationVert", function(var_1) { oktsn_UVNode_declarationVert(this, var_1); }]]);
+$rt_metadata([okti_IFrameBuffer, 0, jl_Object, [], 3, 3, 0, 0,
 ck_LocationImp, 0, jl_Object, [ck_Location, oktj_IJsonObjectIO], 1, 3, 0, ["$getCrabs", function() { return ck_LocationImp_getCrabs(this); }, "$getIdCounter", function() { return ck_LocationImp_getIdCounter(this); }, "$setIdCounter", function(var_1) { ck_LocationImp_setIdCounter(this, var_1); }, "$getSceneObjectsMap", function() { return ck_LocationImp_getSceneObjectsMap(this); }, "$getSceneObjects", function() { return ck_LocationImp_getSceneObjects(this); }, "$readJson", function(var_1) { ck_LocationImp_readJson(this,
 var_1); }, "$resetScene", function() { ck_LocationImp_resetScene(this); }, "$addSceneObject", function(var_1) { ck_LocationImp_addSceneObject(this, var_1); }, "$removeSceneObject", function(var_1) { ck_LocationImp_removeSceneObject(this, var_1); }, "$id1", function() { return ck_LocationImp_id(this); }, "$update1", function(var_1) { ck_LocationImp_update(this, var_1); }],
 ck_LocationView, 0, ck_LocationImp, [], 1, 3, 0, ["$getMainScene", function() { return ck_LocationView_getMainScene(this); }, "$getSky", function() { return ck_LocationView_getSky(this); }, "$getSea", function() { return ck_LocationView_getSea(this); }, "$getCameraControl", function() { return ck_LocationView_getCameraControl(this); }, "$getTargetPosition", function() { return ck_LocationView_getTargetPosition(this); }, "$setTargetPosition", function(var_1) { ck_LocationView_setTargetPosition(this, var_1); },
@@ -45101,8 +45238,8 @@ ck_KotmeJsMain$main$4$2, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handle
 jur_AbstractCharClass$LazyUpper, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyUpper_computeValue(this); }],
 ck_KotmeJsMain$main$4$3, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { ck_KotmeJsMain$main$4$3_handleEvent(this, var_1); }, "$handleEvent1", function(var_1) { ck_KotmeJsMain$main$4$3_handleEvent0(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return ck_KotmeJsMain$main$4$3_handleEvent$exported$0(this, var_1); }],
 ju_HashMap$KeyIterator, 0, ju_HashMap$AbstractMapIterator, [ju_Iterator], 0, 0, 0, ["$next", function() { return ju_HashMap$KeyIterator_next(this); }],
-oktd_IShortData, 0, jl_Object, [oktd_IDataArray], 3, 3, 0, 0]);
-$rt_metadata([ck_KotmeJsMain$main$4$1, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { ck_KotmeJsMain$main$4$1_handleEvent(this, var_1); }, "$handleEvent0", function(var_1) { ck_KotmeJsMain$main$4$1_handleEvent0(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return ck_KotmeJsMain$main$4$1_handleEvent$exported$0(this, var_1); }],
+oktd_IShortData, 0, jl_Object, [oktd_IDataArray], 3, 3, 0, 0,
+ck_KotmeJsMain$main$4$1, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { ck_KotmeJsMain$main$4$1_handleEvent(this, var_1); }, "$handleEvent0", function(var_1) { ck_KotmeJsMain$main$4$1_handleEvent0(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return ck_KotmeJsMain$main$4$1_handleEvent$exported$0(this, var_1); }],
 oktr_IResource, 0, jl_Object, [], 3, 3, 0, 0,
 oktr_ResourceAdapter, 0, jl_Object, [oktr_IResource], 1, 3, 0, ["$getListeners", function() { return oktr_ResourceAdapter_getListeners(this); }, "$setUriInternal", function(var_1) { oktr_ResourceAdapter_setUriInternal(this, var_1); }, "$getProgressInternal", function() { return oktr_ResourceAdapter_getProgressInternal(this); }, "$setProgressInternal", function(var_1) { oktr_ResourceAdapter_setProgressInternal(this, var_1); }, "$getProgress", function() { return oktr_ResourceAdapter_getProgress(this); }, "$notifyLoaded",
 function() { oktr_ResourceAdapter_notifyLoaded(this); }, "$notifyAndCleanListeners", function(var_1) { oktr_ResourceAdapter_notifyAndCleanListeners(this, var_1); }, "$notifyError", function(var_1) { oktr_ResourceAdapter_notifyError(this, var_1); }, "$addResourceListener", function(var_1) { oktr_ResourceAdapter_addResourceListener(this, var_1); }, "$isLoaded0", function() { return oktr_ResourceAdapter_isLoaded(this); }, "$runOnGLThread0", function() { oktr_ResourceAdapter_runOnGLThread(this); }, "$onLoaded0",
@@ -45123,7 +45260,6 @@ ck_CrabView$1, "CrabView$1", 1, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8
 oktsn_GBufferOutputNode$Companion, 0, jl_Object, [], 4, 3, 0, 0,
 oktsn_GLSL$8, 0, kji_Lambda, [kjf_Function0], 4, 0, oktsn_GLSL$8_$callClinit, ["$invoke21", function() { return oktsn_GLSL$8_invoke(this); }, "$invoke30", function() { return oktsn_GLSL$8_invoke0(this); }],
 oktsn_GLSL$7, 0, kji_Lambda, [kjf_Function0], 4, 0, oktsn_GLSL$7_$callClinit, ["$invoke21", function() { return oktsn_GLSL$7_invoke(this); }, "$invoke31", function() { return oktsn_GLSL$7_invoke0(this); }],
-ck_LocationView$2$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_LocationView$2$1_invoke(this); }, "$invoke10", function() { ck_LocationView$2$1_invoke0(this); }],
 jur_AbstractCharClass$LazyLower, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyLower_computeValue(this); }],
 oktgg_GLTFPrimitive$loadIndices$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFPrimitive$loadIndices$1_invoke(this, var_1); }, "$invoke32", function(var_1) { oktgg_GLTFPrimitive$loadIndices$1_invoke0(this, var_1); }],
 oktsn_GLSL$9, 0, kji_Lambda, [kjf_Function0], 4, 0, oktsn_GLSL$9_$callClinit, ["$invoke21", function() { return oktsn_GLSL$9_invoke(this); }, "$invoke33", function() { return oktsn_GLSL$9_invoke0(this); }],
@@ -45146,16 +45282,16 @@ jur_NonCapFSet, 0, jur_FSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, va
 oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1_invoke(this); }, "$invoke10", function() { oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1$1_invoke0(this); }],
 oktsn_GLSL$1, 0, kji_Lambda, [kjf_Function0], 4, 0, oktsn_GLSL$1_$callClinit, ["$invoke21", function() { return oktsn_GLSL$1_invoke(this); }, "$invoke39", function() { return oktsn_GLSL$1_invoke0(this); }],
 jur_UCISupplCharSet, 0, jur_LeafSet, [], 0, 0, 0, ["$accepts", function(var_1, var_2) { return jur_UCISupplCharSet_accepts(this, var_1, var_2); }],
-oktgl_PointLight, 0, jl_Object, [oktgl_ILight, oktgn_ITransformNodeProxy], 4, 3, 0, 0,
-oktgg_GLTFAnimation$asFloatBuffer$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFAnimation$asFloatBuffer$1_invoke(this, var_1); }, "$invoke32", function(var_1) { oktgg_GLTFAnimation$asFloatBuffer$1_invoke0(this, var_1); }],
+oktgl_PointLight, 0, jl_Object, [oktgl_ILight, oktgn_ITransformNodeProxy], 4, 3, 0, 0]);
+$rt_metadata([oktgg_GLTFAnimation$asFloatBuffer$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFAnimation$asFloatBuffer$1_invoke(this, var_1); }, "$invoke32", function(var_1) { oktgg_GLTFAnimation$asFloatBuffer$1_invoke0(this, var_1); }],
 oktgn_ITransformNode$Companion, 0, jl_Object, [], 4, 3, oktgn_ITransformNode$Companion_$callClinit, ["$getCap", function() { return oktgn_ITransformNode$Companion_getCap(this); }],
 kt_StringsKt___StringsKt, 0, kt_StringsKt___StringsJvmKt, [], 0, 0, 0, 0,
 oktgg_GLTFAnimation$readJson$2, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFAnimation$readJson$2_invoke(this, var_1); }, "$invoke", function(var_1) { oktgg_GLTFAnimation$readJson$2_invoke0(this, var_1); }],
 oktgg_GLTFTexture$readJson$2$2$1, 0, kji_Lambda, [kjf_Function1], 4, 0, oktgg_GLTFTexture$readJson$2$2$1_$callClinit, ["$invoke8", function(var_1) { return oktgg_GLTFTexture$readJson$2$2$1_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_GLTFTexture$readJson$2$2$1_invoke0(this, var_1); }],
 oktgg_GLTFAnimation$readJson$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFAnimation$readJson$1_invoke(this, var_1); }, "$invoke", function(var_1) { oktgg_GLTFAnimation$readJson$1_invoke0(this, var_1); }],
-jur_AbstractCharClass$LazyRange, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyRange_computeValue(this); }]]);
-$rt_metadata([oktt_TvmMouse, 0, jl_Object, [okti_IMouse], 4, 3, 0, ["$getX0", function() { return oktt_TvmMouse_getX(this); }, "$setX", function(var_1) { oktt_TvmMouse_setX(this, var_1); }, "$getY1", function() { return oktt_TvmMouse_getY(this); }, "$setY", function(var_1) { oktt_TvmMouse_setY(this, var_1); }, "$setDeltaX", function(var_1) { oktt_TvmMouse_setDeltaX(this, var_1); }, "$setDeltaY", function(var_1) { oktt_TvmMouse_setDeltaY(this, var_1); }, "$getPressed", function() { return oktt_TvmMouse_getPressed(this);
-}, "$getListeners", function() { return oktt_TvmMouse_getListeners(this); }, "$getLastButton", function() { return oktt_TvmMouse_getLastButton(this); }, "$setLastButton", function(var_1) { oktt_TvmMouse_setLastButton(this, var_1); }, "$getButton", function(var_1) { return oktt_TvmMouse_getButton(this, var_1); }, "$updatePos", function(var_1) { oktt_TvmMouse_updatePos(this, var_1); }, "$addListener0", function(var_1) { oktt_TvmMouse_addListener(this, var_1); }],
+jur_AbstractCharClass$LazyRange, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyRange_computeValue(this); }],
+oktt_TvmMouse, 0, jl_Object, [okti_IMouse], 4, 3, 0, ["$getX0", function() { return oktt_TvmMouse_getX(this); }, "$setX", function(var_1) { oktt_TvmMouse_setX(this, var_1); }, "$getY1", function() { return oktt_TvmMouse_getY(this); }, "$setY", function(var_1) { oktt_TvmMouse_setY(this, var_1); }, "$setDeltaX", function(var_1) { oktt_TvmMouse_setDeltaX(this, var_1); }, "$setDeltaY", function(var_1) { oktt_TvmMouse_setDeltaY(this, var_1); }, "$getPressed", function() { return oktt_TvmMouse_getPressed(this); },
+"$getListeners", function() { return oktt_TvmMouse_getListeners(this); }, "$getLastButton", function() { return oktt_TvmMouse_getLastButton(this); }, "$setLastButton", function(var_1) { oktt_TvmMouse_setLastButton(this, var_1); }, "$getButton", function(var_1) { return oktt_TvmMouse_getButton(this, var_1); }, "$updatePos", function(var_1) { oktt_TvmMouse_updatePos(this, var_1); }, "$addListener0", function(var_1) { oktt_TvmMouse_addListener(this, var_1); }],
 jur_AltQuantifierSet, 0, jur_LeafQuantifierSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_AltQuantifierSet_matches(this, var_1, var_2, var_3); }, "$setNext", function(var_1) { jur_AltQuantifierSet_setNext(this, var_1); }],
 okti_Texture, 0, jl_Object, [okti_ITexture], 1, 3, 0, ["$setName", function(var_1) { okti_Texture_setName(this, var_1); }, "$getMinFilter", function() { return okti_Texture_getMinFilter(this); }, "$setMinFilter", function(var_1) { okti_Texture_setMinFilter(this, var_1); }, "$getMagFilter", function() { return okti_Texture_getMagFilter(this); }, "$setMagFilter", function(var_1) { okti_Texture_setMagFilter(this, var_1); }, "$getSWrap", function() { return okti_Texture_getSWrap(this); }, "$setSWrap", function(var_1)
 { okti_Texture_setSWrap(this, var_1); }, "$getTWrap", function() { return okti_Texture_getTWrap(this); }, "$setTWrap", function(var_1) { okti_Texture_setTWrap(this, var_1); }, "$getAnisotropicFilter", function() { return okti_Texture_getAnisotropicFilter(this); }, "$setAnisotropicFilter", function(var_1) { okti_Texture_setAnisotropicFilter(this, var_1); }, "$getGlTarget", function() { return okti_Texture_getGlTarget(this); }, "$getTextureHandle", function() { return okti_Texture_getTextureHandle(this); }, "$setTextureHandle",
@@ -45187,15 +45323,13 @@ ju_HashMap$2, 0, ju_AbstractCollection, [], 0, 0, 0, ["$iterator", function() { 
 oktgc_OrbitCameraControl, 0, jl_Object, [], 0, 3, 0, ["$setTranslationEnabled", function(var_1) { oktgc_OrbitCameraControl_setTranslationEnabled(this, var_1); }, "$setDraggingButton", function(var_1) { oktgc_OrbitCameraControl_setDraggingButton(this, var_1); }, "$setMaxTargetDistance", function(var_1) { oktgc_OrbitCameraControl_setMaxTargetDistance(this, var_1); }, "$setMinTargetDistance", function(var_1) { oktgc_OrbitCameraControl_setMinTargetDistance(this, var_1); }, "$setTargetDistance", function(var_1) {
 oktgc_OrbitCameraControl_setTargetDistance(this, var_1); }, "$listenToMouse", function() { return oktgc_OrbitCameraControl_listenToMouse(this); }, "$update1", function(var_1) { oktgc_OrbitCameraControl_update(this, var_1); }, "$buttonDown0", function(var_1, var_2, var_3) { oktgc_OrbitCameraControl_buttonDown(this, var_1, var_2, var_3); }, "$dragged0", function(var_1, var_2) { oktgc_OrbitCameraControl_dragged(this, var_1, var_2); }, "$scrolled0", function(var_1, var_2, var_3) { oktgc_OrbitCameraControl_scrolled(this,
 var_1, var_2, var_3); }, "$setMaxZenith", function(var_1) { oktgc_OrbitCameraControl_setMaxZenith(this, var_1); }, "$setMinZenith", function(var_1) { oktgc_OrbitCameraControl_setMinZenith(this, var_1); }, "$getTarget0", function() { return oktgc_OrbitCameraControl_getTarget(this); }],
-otjde_FocusEventTarget, 0, jl_Object, [otjde_EventTarget], 3, 3, 0, 0,
-otjde_MouseEventTarget, 0, jl_Object, [otjde_EventTarget], 3, 3, 0, 0,
 otjb_WindowEventTarget, 0, jl_Object, [otjde_EventTarget, otjde_FocusEventTarget, otjde_MouseEventTarget, otjde_KeyboardEventTarget, otjde_LoadEventTarget], 3, 3, 0, 0,
 oktr_IResources$loadTyped$1, "IResources$loadTyped$1", 9, kji_Lambda, [kjf_Function1], 4, 0, oktr_IResources$loadTyped$1_$callClinit, ["$invoke8", function(var_1) { return oktr_IResources$loadTyped$1_invoke(this, var_1); }, "$invoke41", function(var_1) { oktr_IResources$loadTyped$1_invoke0(this, var_1); }],
-oktr_IResources$loadTyped$2, "IResources$loadTyped$2", 9, kji_Lambda, [kjf_Function1], 4, 0, oktr_IResources$loadTyped$2_$callClinit, ["$invoke8", function(var_1) { return oktr_IResources$loadTyped$2_invoke(this, var_1); }, "$invoke41", function(var_1) { oktr_IResources$loadTyped$2_invoke0(this, var_1); }],
 ju_LinkedHashMap$2, 0, ju_AbstractCollection, [], 0, 0, 0, ["$iterator", function() { return ju_LinkedHashMap$2_iterator(this); }],
+oktr_IResources$loadTyped$2, "IResources$loadTyped$2", 9, kji_Lambda, [kjf_Function1], 4, 0, oktr_IResources$loadTyped$2_$callClinit, ["$invoke8", function(var_1) { return oktr_IResources$loadTyped$2_invoke(this, var_1); }, "$invoke41", function(var_1) { oktr_IResources$loadTyped$2_invoke0(this, var_1); }],
 oktd_IIntData$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
-okttj_TvmJsonObject, 0, jl_Object, [oktj_IJsonObject], 4, 3, 0, ["$obj2", function(var_1) { return okttj_TvmJsonObject_obj(this, var_1); }, "$array0", function(var_1) { return okttj_TvmJsonObject_array(this, var_1); }, "$string4", function(var_1) { return okttj_TvmJsonObject_string(this, var_1); }, "$float0", function(var_1) { return okttj_TvmJsonObject_float(this, var_1); }, "$int0", function(var_1) { return okttj_TvmJsonObject_int(this, var_1); }, "$bool1", function(var_1) { return okttj_TvmJsonObject_bool(this,
-var_1); }, "$contains", function(var_1) { return okttj_TvmJsonObject_contains(this, var_1); }, "$ints0", function(var_1) { okttj_TvmJsonObject_ints(this, var_1); }, "$set33", function(var_1, var_2) { okttj_TvmJsonObject_set(this, var_1, var_2); }, "$set32", function(var_1, var_2) { okttj_TvmJsonObject_set0(this, var_1, var_2); }, "$set34", function(var_1, var_2) { okttj_TvmJsonObject_set1(this, var_1, var_2); }, "$getObj", function() { return okttj_TvmJsonObject_getObj(this); }, "$obj", function(var_1, var_2)
+okttj_TvmJsonObject, 0, jl_Object, [oktj_IJsonObject], 4, 3, 0, ["$obj0", function(var_1) { return okttj_TvmJsonObject_obj(this, var_1); }, "$array0", function(var_1) { return okttj_TvmJsonObject_array(this, var_1); }, "$string4", function(var_1) { return okttj_TvmJsonObject_string(this, var_1); }, "$float0", function(var_1) { return okttj_TvmJsonObject_float(this, var_1); }, "$int0", function(var_1) { return okttj_TvmJsonObject_int(this, var_1); }, "$bool1", function(var_1) { return okttj_TvmJsonObject_bool(this,
+var_1); }, "$contains", function(var_1) { return okttj_TvmJsonObject_contains(this, var_1); }, "$ints0", function(var_1) { okttj_TvmJsonObject_ints(this, var_1); }, "$set34", function(var_1, var_2) { okttj_TvmJsonObject_set(this, var_1, var_2); }, "$set33", function(var_1, var_2) { okttj_TvmJsonObject_set0(this, var_1, var_2); }, "$set21", function(var_1, var_2) { okttj_TvmJsonObject_set1(this, var_1, var_2); }, "$getObj", function() { return okttj_TvmJsonObject_getObj(this); }, "$obj", function(var_1, var_2)
 { return okttj_TvmJsonObject_obj0(this, var_1, var_2); }, "$array", function(var_1, var_2) { return okttj_TvmJsonObject_array0(this, var_1, var_2); }, "$string", function(var_1, var_2) { okttj_TvmJsonObject_string0(this, var_1, var_2); }, "$string2", function(var_1, var_2) { return okttj_TvmJsonObject_string1(this, var_1, var_2); }, "$float", function(var_1, var_2) { okttj_TvmJsonObject_float0(this, var_1, var_2); }, "$float5", function(var_1, var_2) { return okttj_TvmJsonObject_float1(this, var_1, var_2); },
 "$int", function(var_1, var_2) { okttj_TvmJsonObject_int0(this, var_1, var_2); }, "$int1", function(var_1, var_2) { return okttj_TvmJsonObject_int1(this, var_1, var_2); }, "$bool", function(var_1, var_2) { okttj_TvmJsonObject_bool0(this, var_1, var_2); }, "$ints", function(var_1, var_2) { okttj_TvmJsonObject_ints0(this, var_1, var_2); }, "$floats", function(var_1, var_2) { okttj_TvmJsonObject_floats(this, var_1, var_2); }, "$arrayOrNull0", function(var_1) { return okttj_TvmJsonObject_arrayOrNull(this, var_1);
 }, "$get4", function(var_1, var_2) { return okttj_TvmJsonObject_get(this, var_1, var_2); }, "$objOrNull0", function(var_1) { return okttj_TvmJsonObject_objOrNull(this, var_1); }],
@@ -45206,14 +45340,14 @@ oktgg_GLTF$readJson$7$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", f
 okti_IMouseListener$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 oktgg_GLTFPrimitive$readJson$2$1, 0, kji_Lambda, [kjf_Function2], 4, 0, 0, ["$invoke42", function(var_1, var_2) { return oktgg_GLTFPrimitive$readJson$2$1_invoke(this, var_1, var_2); }, "$invoke43", function(var_1, var_2) { oktgg_GLTFPrimitive$readJson$2$1_invoke0(this, var_1, var_2); }],
 oktd_IFloatData, 0, jl_Object, [oktd_IDataArray], 3, 3, 0, 0,
-oktt_TvmFloat32Array, 0, oktt_TvmArrayBufferView, [oktd_IFloatData], 4, 3, 0, ["$getSize", function() { return oktt_TvmFloat32Array_getSize(this); }, "$setSize", function(var_1) { oktt_TvmFloat32Array_setSize(this, var_1); }, "$set21", function(var_1, var_2) { oktt_TvmFloat32Array_set(this, var_1, var_2); }, "$set14", function(var_1, var_2) { oktt_TvmFloat32Array_set0(this, var_1, var_2); }, "$get11", function(var_1) { return oktt_TvmFloat32Array_get(this, var_1); }, "$get1", function(var_1) { return oktt_TvmFloat32Array_get0(this,
+oktt_TvmFloat32Array, 0, oktt_TvmArrayBufferView, [oktd_IFloatData], 4, 3, 0, ["$getSize", function() { return oktt_TvmFloat32Array_getSize(this); }, "$setSize", function(var_1) { oktt_TvmFloat32Array_setSize(this, var_1); }, "$set22", function(var_1, var_2) { oktt_TvmFloat32Array_set(this, var_1, var_2); }, "$set14", function(var_1, var_2) { oktt_TvmFloat32Array_set0(this, var_1, var_2); }, "$get11", function(var_1) { return oktt_TvmFloat32Array_get(this, var_1); }, "$get1", function(var_1) { return oktt_TvmFloat32Array_get0(this,
 var_1); }, "$get12", function() { return oktt_TvmFloat32Array_get1(this); }, "$get5", function() { return oktt_TvmFloat32Array_get2(this); }, "$put8", function(var_1) { oktt_TvmFloat32Array_put(this, var_1); }, "$put6", function(var_1) { oktt_TvmFloat32Array_put0(this, var_1); }, "$get19", function(var_1) { oktt_TvmFloat32Array_get3(this, var_1); }, "$put10", function(var_1) { oktt_TvmFloat32Array_put1(this, var_1); }, "$put3", function(var_1) { oktt_TvmFloat32Array_put2(this, var_1); }],
 oktgg_IGLTFMaterial, 0, jl_Object, [oktgg_IGLTFArrayElement], 3, 3, 0, 0,
 ck_Sky, 0, jl_Object, [oktj_IJsonObjectIO], 0, 3, 0, ["$getLight", function() { return ck_Sky_getLight(this); }],
 oktgg_GLTFNode$readJson$2$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFNode$readJson$2$1_invoke(this, var_1); }, "$invoke44", function(var_1) { oktgg_GLTFNode$readJson$2$1_invoke0(this, var_1); }],
 jl_VirtualMachineError, 0, jl_Error, [], 0, 3, 0, 0,
-jl_OutOfMemoryError, 0, jl_VirtualMachineError, [], 0, 3, 0, 0,
-ck_JonesView$2$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_JonesView$2$1_invoke(this); }, "$invoke10", function() { ck_JonesView$2$1_invoke0(this); }],
+jl_OutOfMemoryError, 0, jl_VirtualMachineError, [], 0, 3, 0, 0]);
+$rt_metadata([ck_JonesView$2$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_JonesView$2$1_invoke(this); }, "$invoke10", function() { ck_JonesView$2$1_invoke0(this); }],
 jl_IllegalStateException, 0, jl_Exception, [], 0, 3, 0, 0,
 oktg_IObject3D$Companion, 0, jl_Object, [], 4, 3, oktg_IObject3D$Companion_$callClinit, 0,
 oktsn_VelocityNode, 0, oktsn_ShaderNode, [], 4, 3, oktsn_VelocityNode_$callClinit, ["$setAPositionName", function(var_1) { oktsn_VelocityNode_setAPositionName(this, var_1); }, "$setABonesName", function(var_1) { oktsn_VelocityNode_setABonesName(this, var_1); }, "$setABoneWeightsName", function(var_1) { oktsn_VelocityNode_setABoneWeightsName(this, var_1); }, "$getVelocity0", function() { return oktsn_VelocityNode_getVelocity(this); }, "$getStretchedClipSpacePosition", function() { return oktsn_VelocityNode_getStretchedClipSpacePosition(this);
@@ -45221,8 +45355,8 @@ oktsn_VelocityNode, 0, oktsn_ShaderNode, [], 4, 3, oktsn_VelocityNode_$callClini
 function() { return oktsn_VelocityNode_getUPrevWorldMatrixName(this); }, "$getUid", function() { return oktsn_VelocityNode_getUid(this); }, "$getHasBones", function() { return oktsn_VelocityNode_getHasBones(this); }, "$shaderCompiled", function() { oktsn_VelocityNode_shaderCompiled(this); }, "$boneInfluenceCode", function(var_1, var_2, var_3, var_4) { return oktsn_VelocityNode_boneInfluenceCode(this, var_1, var_2, var_3, var_4); }, "$skinningSetCode", function(var_1, var_2, var_3, var_4) { oktsn_VelocityNode_skinningSetCode(this,
 var_1, var_2, var_3, var_4); }, "$prepareObjectData", function(var_1) { oktsn_VelocityNode_prepareObjectData(this, var_1); }, "$executionVert", function(var_1) { oktsn_VelocityNode_executionVert(this, var_1); }, "$executionFrag", function(var_1) { oktsn_VelocityNode_executionFrag(this, var_1); }, "$declarationFrag", function(var_1) { oktsn_VelocityNode_declarationFrag(this, var_1); }, "$declarationVert", function(var_1) { oktsn_VelocityNode_declarationVert(this, var_1); }, "$setMaxBones", function(var_1) { oktsn_VelocityNode_setMaxBones(this,
 var_1); }, "$setWorldTransformType", function(var_1) { oktsn_VelocityNode_setWorldTransformType(this, var_1); }],
-oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke(this); }, "$invoke10", function() { oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke0(this); }]]);
-$rt_metadata([jur_ReluctantCompositeQuantifierSet, 0, jur_CompositeQuantifierSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_ReluctantCompositeQuantifierSet_matches(this, var_1, var_2, var_3); }],
+oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke(this); }, "$invoke10", function() { oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$1_invoke0(this); }],
+jur_ReluctantCompositeQuantifierSet, 0, jur_CompositeQuantifierSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_ReluctantCompositeQuantifierSet_matches(this, var_1, var_2, var_3); }],
 oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$2, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$2_invoke(this, var_1); }, "$invoke32", function(var_1) { oktgg_GLTFPrimitive$readJson$$inlined$forEach$lambda$2_invoke0(this, var_1); }],
 oktsn_IShaderData$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 oktm_IMat4$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
@@ -45238,17 +45372,17 @@ kt_CharsKt, 0, kt_CharsKt__CharKt, [], 4, 3, 0, 0,
 oktg_GL, 0, jl_Object, [oktg_IGL], 4, 3, oktg_GL_$callClinit, ["$setProxy2", function(var_1) { oktg_GL_setProxy(this, var_1); }, "$getMainFrameBufferWidth", function() { return oktg_GL_getMainFrameBufferWidth(this); }, "$getMainFrameBufferHeight", function() { return oktg_GL_getMainFrameBufferHeight(this); }, "$getMainFrameBufferHandle", function() { return oktg_GL_getMainFrameBufferHandle(this); }, "$getGlesMajVer", function() { return oktg_GL_getGlesMajVer(this); }, "$isGLES", function() { return oktg_GL_isGLES(this);
 }, "$getMaxAnisotropicFilterLevel", function() { return oktg_GL_getMaxAnisotropicFilterLevel(this); }, "$setActiveTexture", function(var_1) { oktg_GL_setActiveTexture(this, var_1); }, "$isCullFaceEnabled", function() { return oktg_GL_isCullFaceEnabled(this); }, "$setCullFaceEnabled", function(var_1) { oktg_GL_setCullFaceEnabled(this, var_1); }, "$getCullFaceMode", function() { return oktg_GL_getCullFaceMode(this); }, "$setCullFaceMode", function(var_1) { oktg_GL_setCullFaceMode(this, var_1); }, "$isBlendingEnabled",
 function() { return oktg_GL_isBlendingEnabled(this); }, "$setBlendingEnabled", function(var_1) { oktg_GL_setBlendingEnabled(this, var_1); }, "$setDepthTestEnabled", function(var_1) { oktg_GL_setDepthTestEnabled(this, var_1); }, "$initGL", function() { oktg_GL_initGL(this); }, "$getNextTextureUnit", function() { return oktg_GL_getNextTextureUnit(this); }, "$resetTextureUnitCounter", function() { oktg_GL_resetTextureUnitCounter(this); }, "$setSimpleAlphaBlending", function() { oktg_GL_setSimpleAlphaBlending(this);
-}, "$call", function(var_1) { oktg_GL_call(this, var_1); }, "$render2", function(var_1) { oktg_GL_render(this, var_1); }, "$runSingleCalls", function() { oktg_GL_runSingleCalls(this); }, "$runRenderCalls", function() { oktg_GL_runRenderCalls(this); }, "$isExtensionSupported", function(var_1) { return oktg_GL_isExtensionSupported(this, var_1); }, "$getErrorString", function(var_1) { return oktg_GL_getErrorString(this, var_1); }, "$glDrawBuffers", function(var_1, var_2) { oktg_GL_glDrawBuffers(this, var_1, var_2);
-}, "$glDrawArraysInstanced", function(var_1, var_2, var_3, var_4) { oktg_GL_glDrawArraysInstanced(this, var_1, var_2, var_3, var_4); }, "$glDrawElementsInstanced", function(var_1, var_2, var_3, var_4, var_5) { oktg_GL_glDrawElementsInstanced(this, var_1, var_2, var_3, var_4, var_5); }, "$glVertexAttribDivisor", function(var_1, var_2) { oktg_GL_glVertexAttribDivisor(this, var_1, var_2); }, "$glBindTexture", function(var_1, var_2) { oktg_GL_glBindTexture(this, var_1, var_2); }, "$glClear", function(var_1) { oktg_GL_glClear(this,
-var_1); }, "$glClearColor", function(var_1, var_2, var_3, var_4) { oktg_GL_glClearColor(this, var_1, var_2, var_3, var_4); }, "$glDeleteTexture", function(var_1) { oktg_GL_glDeleteTexture(this, var_1); }, "$glDrawArrays", function(var_1, var_2, var_3) { oktg_GL_glDrawArrays(this, var_1, var_2, var_3); }, "$glGenTexture", function() { return oktg_GL_glGenTexture(this); }, "$glGetError", function() { return oktg_GL_glGetError(this); }, "$glTexImage2D", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7,
-var_8, var_9) { oktg_GL_glTexImage2D(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9); }, "$glTexImage2D0", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9) { oktg_GL_glTexImage2D0(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9); }, "$glTexParameterf", function(var_1, var_2, var_3) { oktg_GL_glTexParameterf(this, var_1, var_2, var_3); }, "$glViewport", function(var_1, var_2, var_3, var_4) { oktg_GL_glViewport(this, var_1, var_2, var_3, var_4); },
-"$glAttachShader", function(var_1, var_2) { oktg_GL_glAttachShader(this, var_1, var_2); }, "$glBindBuffer", function(var_1, var_2) { oktg_GL_glBindBuffer(this, var_1, var_2); }, "$glBindFramebuffer", function(var_1, var_2) { oktg_GL_glBindFramebuffer(this, var_1, var_2); }, "$glBufferData", function(var_1, var_2, var_3, var_4) { oktg_GL_glBufferData(this, var_1, var_2, var_3, var_4); }, "$glCompileShader", function(var_1) { oktg_GL_glCompileShader(this, var_1); }, "$glCreateProgram", function() { return oktg_GL_glCreateProgram(this);
-}, "$glCreateShader", function(var_1) { return oktg_GL_glCreateShader(this, var_1); }, "$glDeleteProgram", function(var_1) { oktg_GL_glDeleteProgram(this, var_1); }, "$glDeleteShader", function(var_1) { oktg_GL_glDeleteShader(this, var_1); }, "$glDetachShader", function(var_1, var_2) { oktg_GL_glDetachShader(this, var_1, var_2); }, "$glDrawElements", function(var_1, var_2, var_3, var_4) { oktg_GL_glDrawElements(this, var_1, var_2, var_3, var_4); }, "$glEnableVertexAttribArray", function(var_1) { oktg_GL_glEnableVertexAttribArray(this,
-var_1); }, "$glFramebufferTexture2D", function(var_1, var_2, var_3, var_4, var_5) { oktg_GL_glFramebufferTexture2D(this, var_1, var_2, var_3, var_4, var_5); }, "$glGenBuffer", function() { return oktg_GL_glGenBuffer(this); }, "$glGenerateMipmap", function(var_1) { oktg_GL_glGenerateMipmap(this, var_1); }, "$glGenFramebuffer", function() { return oktg_GL_glGenFramebuffer(this); }, "$glGetActiveAttrib", function(var_1, var_2, var_3, var_4) { return oktg_GL_glGetActiveAttrib(this, var_1, var_2, var_3, var_4); },
-"$glGetActiveUniform", function(var_1, var_2, var_3, var_4) { return oktg_GL_glGetActiveUniform(this, var_1, var_2, var_3, var_4); }, "$glGetAttribLocation", function(var_1, var_2) { return oktg_GL_glGetAttribLocation(this, var_1, var_2); }, "$glGetProgramiv", function(var_1, var_2, var_3) { oktg_GL_glGetProgramiv(this, var_1, var_2, var_3); }, "$glGetProgramInfoLog", function(var_1) { return oktg_GL_glGetProgramInfoLog(this, var_1); }, "$glGetShaderiv", function(var_1, var_2, var_3) { oktg_GL_glGetShaderiv(this,
-var_1, var_2, var_3); }, "$glGetShaderInfoLog", function(var_1) { return oktg_GL_glGetShaderInfoLog(this, var_1); }, "$glGetUniformLocation", function(var_1, var_2) { return oktg_GL_glGetUniformLocation(this, var_1, var_2); }, "$glLinkProgram", function(var_1) { oktg_GL_glLinkProgram(this, var_1); }, "$glShaderSource", function(var_1, var_2) { oktg_GL_glShaderSource(this, var_1, var_2); }, "$glTexParameteri", function(var_1, var_2, var_3) { oktg_GL_glTexParameteri(this, var_1, var_2, var_3); }, "$glUniform1f",
-function(var_1, var_2) { oktg_GL_glUniform1f(this, var_1, var_2); }, "$glUniform1i", function(var_1, var_2) { oktg_GL_glUniform1i(this, var_1, var_2); }, "$glUniform2f", function(var_1, var_2, var_3) { oktg_GL_glUniform2f(this, var_1, var_2, var_3); }, "$glUniform3f", function(var_1, var_2, var_3, var_4) { oktg_GL_glUniform3f(this, var_1, var_2, var_3, var_4); }, "$glUniformMatrix4fv", function(var_1, var_2, var_3, var_4, var_5) { oktg_GL_glUniformMatrix4fv(this, var_1, var_2, var_3, var_4, var_5); }, "$glUseProgram",
-function(var_1) { oktg_GL_glUseProgram(this, var_1); }, "$glVertexAttribPointer", function(var_1, var_2, var_3, var_4, var_5, var_6) { oktg_GL_glVertexAttribPointer(this, var_1, var_2, var_3, var_4, var_5, var_6); }],
+}, "$render2", function(var_1) { oktg_GL_render(this, var_1); }, "$runSingleCalls", function() { oktg_GL_runSingleCalls(this); }, "$runRenderCalls", function() { oktg_GL_runRenderCalls(this); }, "$isExtensionSupported", function(var_1) { return oktg_GL_isExtensionSupported(this, var_1); }, "$getErrorString", function(var_1) { return oktg_GL_getErrorString(this, var_1); }, "$glDrawBuffers", function(var_1, var_2) { oktg_GL_glDrawBuffers(this, var_1, var_2); }, "$glDrawArraysInstanced", function(var_1, var_2,
+var_3, var_4) { oktg_GL_glDrawArraysInstanced(this, var_1, var_2, var_3, var_4); }, "$glDrawElementsInstanced", function(var_1, var_2, var_3, var_4, var_5) { oktg_GL_glDrawElementsInstanced(this, var_1, var_2, var_3, var_4, var_5); }, "$glVertexAttribDivisor", function(var_1, var_2) { oktg_GL_glVertexAttribDivisor(this, var_1, var_2); }, "$glBindTexture", function(var_1, var_2) { oktg_GL_glBindTexture(this, var_1, var_2); }, "$glClear", function(var_1) { oktg_GL_glClear(this, var_1); }, "$glClearColor", function(var_1,
+var_2, var_3, var_4) { oktg_GL_glClearColor(this, var_1, var_2, var_3, var_4); }, "$glDeleteTexture", function(var_1) { oktg_GL_glDeleteTexture(this, var_1); }, "$glDrawArrays", function(var_1, var_2, var_3) { oktg_GL_glDrawArrays(this, var_1, var_2, var_3); }, "$glGenTexture", function() { return oktg_GL_glGenTexture(this); }, "$glGetError", function() { return oktg_GL_glGetError(this); }, "$glTexImage2D", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9) { oktg_GL_glTexImage2D(this, var_1,
+var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9); }, "$glTexImage2D0", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9) { oktg_GL_glTexImage2D0(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9); }, "$glTexParameterf", function(var_1, var_2, var_3) { oktg_GL_glTexParameterf(this, var_1, var_2, var_3); }, "$glViewport", function(var_1, var_2, var_3, var_4) { oktg_GL_glViewport(this, var_1, var_2, var_3, var_4); }, "$glAttachShader", function(var_1, var_2) { oktg_GL_glAttachShader(this,
+var_1, var_2); }, "$glBindBuffer", function(var_1, var_2) { oktg_GL_glBindBuffer(this, var_1, var_2); }, "$glBindFramebuffer", function(var_1, var_2) { oktg_GL_glBindFramebuffer(this, var_1, var_2); }, "$glBufferData", function(var_1, var_2, var_3, var_4) { oktg_GL_glBufferData(this, var_1, var_2, var_3, var_4); }, "$glCompileShader", function(var_1) { oktg_GL_glCompileShader(this, var_1); }, "$glCreateProgram", function() { return oktg_GL_glCreateProgram(this); }, "$glCreateShader", function(var_1) { return oktg_GL_glCreateShader(this,
+var_1); }, "$glDeleteProgram", function(var_1) { oktg_GL_glDeleteProgram(this, var_1); }, "$glDeleteShader", function(var_1) { oktg_GL_glDeleteShader(this, var_1); }, "$glDetachShader", function(var_1, var_2) { oktg_GL_glDetachShader(this, var_1, var_2); }, "$glDrawElements", function(var_1, var_2, var_3, var_4) { oktg_GL_glDrawElements(this, var_1, var_2, var_3, var_4); }, "$glEnableVertexAttribArray", function(var_1) { oktg_GL_glEnableVertexAttribArray(this, var_1); }, "$glFramebufferTexture2D", function(var_1,
+var_2, var_3, var_4, var_5) { oktg_GL_glFramebufferTexture2D(this, var_1, var_2, var_3, var_4, var_5); }, "$glGenBuffer", function() { return oktg_GL_glGenBuffer(this); }, "$glGenerateMipmap", function(var_1) { oktg_GL_glGenerateMipmap(this, var_1); }, "$glGenFramebuffer", function() { return oktg_GL_glGenFramebuffer(this); }, "$glGetActiveAttrib", function(var_1, var_2, var_3, var_4) { return oktg_GL_glGetActiveAttrib(this, var_1, var_2, var_3, var_4); }, "$glGetActiveUniform", function(var_1, var_2, var_3,
+var_4) { return oktg_GL_glGetActiveUniform(this, var_1, var_2, var_3, var_4); }, "$glGetAttribLocation", function(var_1, var_2) { return oktg_GL_glGetAttribLocation(this, var_1, var_2); }, "$glGetProgramiv", function(var_1, var_2, var_3) { oktg_GL_glGetProgramiv(this, var_1, var_2, var_3); }, "$glGetProgramInfoLog", function(var_1) { return oktg_GL_glGetProgramInfoLog(this, var_1); }, "$glGetShaderiv", function(var_1, var_2, var_3) { oktg_GL_glGetShaderiv(this, var_1, var_2, var_3); }, "$glGetShaderInfoLog",
+function(var_1) { return oktg_GL_glGetShaderInfoLog(this, var_1); }, "$glGetUniformLocation", function(var_1, var_2) { return oktg_GL_glGetUniformLocation(this, var_1, var_2); }, "$glLinkProgram", function(var_1) { oktg_GL_glLinkProgram(this, var_1); }, "$glShaderSource", function(var_1, var_2) { oktg_GL_glShaderSource(this, var_1, var_2); }, "$glTexParameteri", function(var_1, var_2, var_3) { oktg_GL_glTexParameteri(this, var_1, var_2, var_3); }, "$glUniform1f", function(var_1, var_2) { oktg_GL_glUniform1f(this,
+var_1, var_2); }, "$glUniform1i", function(var_1, var_2) { oktg_GL_glUniform1i(this, var_1, var_2); }, "$glUniform2f", function(var_1, var_2, var_3) { oktg_GL_glUniform2f(this, var_1, var_2, var_3); }, "$glUniform3f", function(var_1, var_2, var_3, var_4) { oktg_GL_glUniform3f(this, var_1, var_2, var_3, var_4); }, "$glUniformMatrix4fv", function(var_1, var_2, var_3, var_4, var_5) { oktg_GL_glUniformMatrix4fv(this, var_1, var_2, var_3, var_4, var_5); }, "$glUseProgram", function(var_1) { oktg_GL_glUseProgram(this,
+var_1); }, "$glVertexAttribPointer", function(var_1, var_2, var_3, var_4, var_5, var_6) { oktg_GL_glVertexAttribPointer(this, var_1, var_2, var_3, var_4, var_5, var_6); }],
 oktsn_GLSL, 0, jl_Object, [], 4, 3, oktsn_GLSL_$callClinit, ["$getZeroFloat", function() { return oktsn_GLSL_getZeroFloat(this); }, "$getOneFloat", function() { return oktsn_GLSL_getOneFloat(this); }, "$getDefaultNormal", function() { return oktsn_GLSL_getDefaultNormal(this); }],
 kjf_Function18, 0, jl_Object, [k_Function], 3, 3, 0, 0,
 oktgg_IGLTFMaterial$readJson$9, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$9_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_IGLTFMaterial$readJson$9_invoke0(this, var_1); }],
@@ -45277,20 +45411,20 @@ jnc_CoderResult, 0, jl_Object, [], 0, 3, jnc_CoderResult_$callClinit, ["$isUnder
 oktgg_GLTFImage$readJson$3, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFImage$readJson$3_invoke(this, var_1); }, "$invoke0", function(var_1) { oktgg_GLTFImage$readJson$3_invoke0(this, var_1); }],
 oktg_IObject3D, 0, jl_Object, [oktgn_ITransformNodeProxy], 3, 3, oktg_IObject3D_$callClinit, 0,
 oktg_Object3D, 0, jl_Object, [oktg_IObject3D], 0, 3, 0, ["$getProxyNode", function() { return oktg_Object3D_getProxyNode(this); }, "$setProxyNode", function(var_1) { oktg_Object3D_setProxyNode(this, var_1); }, "$getPreviousTransform", function() { return oktg_Object3D_getPreviousTransform(this); }, "$setPreviousTransform", function(var_1) { oktg_Object3D_setPreviousTransform(this, var_1); }, "$getName", function() { return oktg_Object3D_getName(this); }, "$setName", function(var_1) { oktg_Object3D_setName(this,
-var_1); }, "$isVisible0", function() { return oktg_Object3D_isVisible(this); }, "$setVisible", function(var_1) { oktg_Object3D_setVisible(this, var_1); }, "$getMeshes0", function() { return oktg_Object3D_getMeshes(this); }, "$getArmature", function() { return oktg_Object3D_getArmature(this); }, "$setArmature", function(var_1) { oktg_Object3D_setArmature(this, var_1); }, "$set39", function(var_1) { return oktg_Object3D_set(this, var_1); }, "$set27", function(var_1) { return oktg_Object3D_set0(this, var_1); },
+var_1); }, "$isVisible0", function() { return oktg_Object3D_isVisible(this); }, "$setVisible", function(var_1) { oktg_Object3D_setVisible(this, var_1); }, "$getMeshes0", function() { return oktg_Object3D_getMeshes(this); }, "$getArmature", function() { return oktg_Object3D_getArmature(this); }, "$setArmature", function(var_1) { oktg_Object3D_setArmature(this, var_1); }, "$set39", function(var_1) { return oktg_Object3D_set(this, var_1); }, "$set28", function(var_1) { return oktg_Object3D_set0(this, var_1); },
 "$set3", function(var_1) { return oktg_Object3D_set1(this, var_1); }, "$copy1", function() { return oktg_Object3D_copy(this); }, "$copy", function() { return oktg_Object3D_copy0(this); }, "$update1", function(var_1) { oktg_Object3D_update(this, var_1); }, "$render", function(var_1) { oktg_Object3D_render(this, var_1); }, "$clear", function() { oktg_Object3D_clear(this); }, "$getPosition0", function() { return oktg_Object3D_getPosition(this); }, "$getRotation0", function() { return oktg_Object3D_getRotation(this);
 }, "$getScale0", function() { return oktg_Object3D_getScale(this); }, "$getWorldMatrix", function() { return oktg_Object3D_getWorldMatrix(this); }, "$setParentNode1", function(var_1) { oktg_Object3D_setParentNode(this, var_1); }, "$getChildNodes0", function() { return oktg_Object3D_getChildNodes(this); }, "$updateTransform1", function(var_1) { oktg_Object3D_updateTransform(this, var_1); }, "$addChildNode0", function(var_1) { oktg_Object3D_addChildNode(this, var_1); }, "$removeChildNode1", function(var_1) { oktg_Object3D_removeChildNode(this,
 var_1); }, "$getGlobalPosition2", function(var_1) { return oktg_Object3D_getGlobalPosition(this, var_1); }],
 ck_HitFX, 0, oktg_Object3D, [], 4, 3, ck_HitFX_$callClinit, ["$render", function(var_1) { ck_HitFX_render(this, var_1); }, "$update1", function(var_1) { ck_HitFX_update(this, var_1); }],
 oktgg_GLTFImage$readJson$4, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFImage$readJson$4_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTFImage$readJson$4_invoke0(this, var_1); }],
 jur_EOLSet, 0, jur_AbstractSet, [], 4, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_EOLSet_matches(this, var_1, var_2, var_3); }, "$hasConsumed", function(var_1) { return jur_EOLSet_hasConsumed(this, var_1); }],
-oktgg_GLTFImage$readJson$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFImage$readJson$1_invoke(this, var_1); }, "$invoke0", function(var_1) { oktgg_GLTFImage$readJson$1_invoke0(this, var_1); }],
-oktm_Frustum, 0, jl_Object, [], 4, 3, oktm_Frustum_$callClinit, ["$getPoints", function() { return oktm_Frustum_getPoints(this); }, "$setFromMatrix", function(var_1) { oktm_Frustum_setFromMatrix(this, var_1); }],
+oktgg_GLTFImage$readJson$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFImage$readJson$1_invoke(this, var_1); }, "$invoke0", function(var_1) { oktgg_GLTFImage$readJson$1_invoke0(this, var_1); }]]);
+$rt_metadata([oktm_Frustum, 0, jl_Object, [], 4, 3, oktm_Frustum_$callClinit, ["$getPoints", function() { return oktm_Frustum_getPoints(this); }, "$setFromMatrix", function(var_1) { oktm_Frustum_setFromMatrix(this, var_1); }],
 oktgg_GLTFImage$readJson$2, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFImage$readJson$2_invoke(this, var_1); }, "$invoke0", function(var_1) { oktgg_GLTFImage$readJson$2_invoke0(this, var_1); }],
 oktgg_IGLTFMaterial$readJson$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$1_invoke(this, var_1); }, "$invoke0", function(var_1) { oktgg_IGLTFMaterial$readJson$1_invoke0(this, var_1); }],
 oktg_I3DGraphicsProvider, 0, jl_Object, [], 3, 3, 0, 0,
-oktg_G3D, 0, jl_Object, [oktg_I3DGraphicsProvider], 4, 3, oktg_G3D_$callClinit, ["$node0", function(var_1) { return oktg_G3D_node(this, var_1); }]]);
-$rt_metadata([oktgg_IGLTFMaterial$readJson$3, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$3_invoke(this, var_1); }, "$invoke22", function(var_1) { oktgg_IGLTFMaterial$readJson$3_invoke0(this, var_1); }],
+oktg_G3D, 0, jl_Object, [oktg_I3DGraphicsProvider], 4, 3, oktg_G3D_$callClinit, ["$node0", function(var_1) { return oktg_G3D_node(this, var_1); }],
+oktgg_IGLTFMaterial$readJson$3, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$3_invoke(this, var_1); }, "$invoke22", function(var_1) { oktgg_IGLTFMaterial$readJson$3_invoke0(this, var_1); }],
 oktgg_IGLTFMaterial$readJson$2, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$2_invoke(this, var_1); }, "$invoke0", function(var_1) { oktgg_IGLTFMaterial$readJson$2_invoke0(this, var_1); }],
 jur_Lexer, 0, jl_Object, [], 0, 0, 0, ["$peek", function() { return jur_Lexer_peek(this); }, "$setMode", function(var_1) { jur_Lexer_setMode(this, var_1); }, "$restoreFlags", function(var_1) { jur_Lexer_restoreFlags(this, var_1); }, "$peekSpecial", function() { return jur_Lexer_peekSpecial(this); }, "$isSpecial", function() { return jur_Lexer_isSpecial(this); }, "$isNextSpecial", function() { return jur_Lexer_isNextSpecial(this); }, "$next3", function() { return jur_Lexer_next(this); }, "$nextSpecial", function()
 { return jur_Lexer_nextSpecial(this); }, "$lookAhead0", function() { return jur_Lexer_lookAhead(this); }, "$back", function() { return jur_Lexer_back(this); }, "$reread", function() { jur_Lexer_reread(this); }, "$movePointer", function() { jur_Lexer_movePointer(this); }, "$parseCharClassName", function() { return jur_Lexer_parseCharClassName(this); }, "$processQuantifier", function(var_1) { return jur_Lexer_processQuantifier(this, var_1); }, "$toString", function() { return jur_Lexer_toString(this); }, "$isEmpty",
@@ -45320,8 +45454,8 @@ oktg_AbstractGL, 0, jl_Object, [oktg_IGL], 1, 3, 0, ["$getMaxAnisotropicFilterLe
 { oktg_AbstractGL_setProgram(this, var_1); }, "$setArrayBuffer", function(var_1) { oktg_AbstractGL_setArrayBuffer(this, var_1); }, "$setElementArrayBuffer", function(var_1) { oktg_AbstractGL_setElementArrayBuffer(this, var_1); }, "$isCullFaceEnabled", function() { return oktg_AbstractGL_isCullFaceEnabled(this); }, "$setCullFaceEnabled", function(var_1) { oktg_AbstractGL_setCullFaceEnabled(this, var_1); }, "$getCullFaceMode", function() { return oktg_AbstractGL_getCullFaceMode(this); }, "$setCullFaceMode", function(var_1)
 { oktg_AbstractGL_setCullFaceMode(this, var_1); }, "$isBlendingEnabled", function() { return oktg_AbstractGL_isBlendingEnabled(this); }, "$setBlendingEnabled", function(var_1) { oktg_AbstractGL_setBlendingEnabled(this, var_1); }, "$getBlendFactorS", function() { return oktg_AbstractGL_getBlendFactorS(this); }, "$setBlendFactorS", function(var_1) { oktg_AbstractGL_setBlendFactorS(this, var_1); }, "$getBlendFactorD", function() { return oktg_AbstractGL_getBlendFactorD(this); }, "$setBlendFactorD", function(var_1)
 { oktg_AbstractGL_setBlendFactorD(this, var_1); }, "$setDepthTestEnabled", function(var_1) { oktg_AbstractGL_setDepthTestEnabled(this, var_1); }, "$initGL", function() { oktg_AbstractGL_initGL(this); }, "$getNextTextureUnit", function() { return oktg_AbstractGL_getNextTextureUnit(this); }, "$resetTextureUnitCounter", function() { oktg_AbstractGL_resetTextureUnitCounter(this); }, "$glBindBuffer", function(var_1, var_2) { oktg_AbstractGL_glBindBuffer(this, var_1, var_2); }, "$glBindTexture", function(var_1, var_2)
-{ oktg_AbstractGL_glBindTexture(this, var_1, var_2); }, "$glBlendFunc", function(var_1, var_2) { oktg_AbstractGL_glBlendFunc(this, var_1, var_2); }, "$glUseProgram", function(var_1) { oktg_AbstractGL_glUseProgram(this, var_1); }, "$setSimpleAlphaBlending", function() { oktg_AbstractGL_setSimpleAlphaBlending(this); }, "$call", function(var_1) { oktg_AbstractGL_call(this, var_1); }, "$render2", function(var_1) { oktg_AbstractGL_render(this, var_1); }, "$runSingleCalls", function() { oktg_AbstractGL_runSingleCalls(this);
-}, "$runRenderCalls", function() { oktg_AbstractGL_runRenderCalls(this); }, "$getErrorString", function(var_1) { return oktg_AbstractGL_getErrorString(this, var_1); }],
+{ oktg_AbstractGL_glBindTexture(this, var_1, var_2); }, "$glBlendFunc", function(var_1, var_2) { oktg_AbstractGL_glBlendFunc(this, var_1, var_2); }, "$glUseProgram", function(var_1) { oktg_AbstractGL_glUseProgram(this, var_1); }, "$setSimpleAlphaBlending", function() { oktg_AbstractGL_setSimpleAlphaBlending(this); }, "$render2", function(var_1) { oktg_AbstractGL_render(this, var_1); }, "$runSingleCalls", function() { oktg_AbstractGL_runSingleCalls(this); }, "$runRenderCalls", function() { oktg_AbstractGL_runRenderCalls(this);
+}, "$getErrorString", function(var_1) { return oktg_AbstractGL_getErrorString(this, var_1); }],
 oktgg_GLTFTexture$readJson$2, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFTexture$readJson$2_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTFTexture$readJson$2_invoke0(this, var_1); }],
 oktgg_GLTFTexture$readJson$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFTexture$readJson$1_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTFTexture$readJson$1_invoke0(this, var_1); }],
 jl_AbstractStringBuilder$Constants, 0, jl_Object, [], 0, 0, jl_AbstractStringBuilder$Constants_$callClinit, 0,
@@ -45340,8 +45474,8 @@ ju_MissingResourceException, 0, jl_RuntimeException, [], 0, 3, 0, 0,
 okta_ISound$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 jur_UCIBackReferenceSet, 0, jur_CIBackReferenceSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_UCIBackReferenceSet_matches(this, var_1, var_2, var_3); }],
 oktt_TeaVMApp$anim$1, 0, kji_Lambda, [kjf_Function1], 4, 0, oktt_TeaVMApp$anim$1_$callClinit, ["$invoke8", function(var_1) { return oktt_TeaVMApp$anim$1_invoke(this, var_1); }, "$invoke45", function(var_1) { oktt_TeaVMApp$anim$1_invoke0(this, var_1); }],
-ck_LocationView$resetScene$$inlined$apply$lambda$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_LocationView$resetScene$$inlined$apply$lambda$1_invoke(this); }, "$invoke10", function() { ck_LocationView$resetScene$$inlined$apply$lambda$1_invoke0(this); }],
 jn_ByteOrder, 0, jl_Object, [], 4, 3, jn_ByteOrder_$callClinit, 0,
+ck_LocationView$resetScene$$inlined$apply$lambda$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_LocationView$resetScene$$inlined$apply$lambda$1_invoke(this); }, "$invoke10", function() { ck_LocationView$resetScene$$inlined$apply$lambda$1_invoke0(this); }],
 k_Unit, 0, jl_Object, [], 4, 3, k_Unit_$callClinit, 0,
 okti_FrameBuffer, 0, jl_Object, [okti_IFrameBuffer], 4, 3, 0, ["$getWidth", function() { return okti_FrameBuffer_getWidth(this); }, "$getHeight", function() { return okti_FrameBuffer_getHeight(this); }, "$isBound", function() { return okti_FrameBuffer_isBound(this); }, "$setBound", function(var_1) { okti_FrameBuffer_setBound(this, var_1); }, "$getAttachments0", function() { return okti_FrameBuffer_getAttachments(this); }, "$getAttachments", function() { return okti_FrameBuffer_getAttachments0(this); }, "$getFrameBufferHandle",
 function() { return okti_FrameBuffer_getFrameBufferHandle(this); }, "$setFrameBufferHandle", function(var_1) { okti_FrameBuffer_setFrameBufferHandle(this, var_1); }, "$getTexture1", function(var_1) { return okti_FrameBuffer_getTexture(this, var_1); }, "$buildAttachments", function() { okti_FrameBuffer_buildAttachments(this); }, "$initBuffersOrder", function(var_1) { okti_FrameBuffer_initBuffersOrder(this, var_1); }, "$bind2", function(var_1) { okti_FrameBuffer_bind(this, var_1); }, "$render1", function(var_1)
@@ -45349,13 +45483,13 @@ function() { return okti_FrameBuffer_getFrameBufferHandle(this); }, "$setFrameBu
 oktm_IMat4, 0, jl_Object, [], 3, 3, oktm_IMat4_$callClinit, 0,
 jur_DotAllQuantifierSet, 0, jur_QuantifierSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_DotAllQuantifierSet_matches(this, var_1, var_2, var_3); }, "$find", function(var_1, var_2, var_3) { return jur_DotAllQuantifierSet_find(this, var_1, var_2, var_3); }],
 oktgg_IGLTFMaterial$readJson$5$2, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$5$2_invoke(this, var_1); }, "$invoke", function(var_1) { oktgg_IGLTFMaterial$readJson$5$2_invoke0(this, var_1); }],
-oktt_TvmGL$shaders$1, 0, kji_Lambda, [kjf_Function1], 4, 0, oktt_TvmGL$shaders$1_$callClinit, ["$invoke8", function(var_1) { return oktt_TvmGL$shaders$1_invoke(this, var_1); }, "$invoke46", function(var_1) { return oktt_TvmGL$shaders$1_invoke0(this, var_1); }],
-oktgg_IGLTFMaterial$readJson$5$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$5$1_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_IGLTFMaterial$readJson$5$1_invoke0(this, var_1); }],
+oktt_TvmGL$shaders$1, 0, kji_Lambda, [kjf_Function1], 4, 0, oktt_TvmGL$shaders$1_$callClinit, ["$invoke8", function(var_1) { return oktt_TvmGL$shaders$1_invoke(this, var_1); }, "$invoke46", function(var_1) { return oktt_TvmGL$shaders$1_invoke0(this, var_1); }]]);
+$rt_metadata([oktgg_IGLTFMaterial$readJson$5$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$5$1_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_IGLTFMaterial$readJson$5$1_invoke0(this, var_1); }],
 okti_IKB, 0, jl_Object, [], 3, 3, 0, 0,
 okti_KB, 0, jl_Object, [okti_IKB], 4, 3, okti_KB_$callClinit, ["$setProxy8", function(var_1) { okti_KB_setProxy(this, var_1); }, "$getShift", function() { return okti_KB_getShift(this); }, "$isKeyPressed", function(var_1) { return okti_KB_isKeyPressed(this, var_1); }],
 oktgg_GLTFSampler$readJson$2, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFSampler$readJson$2_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTFSampler$readJson$2_invoke0(this, var_1); }],
-oktgg_GLTFSampler$readJson$3, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFSampler$readJson$3_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTFSampler$readJson$3_invoke0(this, var_1); }]]);
-$rt_metadata([oktgg_GLTFSampler$readJson$4, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFSampler$readJson$4_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTFSampler$readJson$4_invoke0(this, var_1); }],
+oktgg_GLTFSampler$readJson$3, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFSampler$readJson$3_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTFSampler$readJson$3_invoke0(this, var_1); }],
+oktgg_GLTFSampler$readJson$4, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFSampler$readJson$4_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTFSampler$readJson$4_invoke0(this, var_1); }],
 oktgg_GLTFSampler$readJson$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFSampler$readJson$1_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTFSampler$readJson$1_invoke0(this, var_1); }],
 oktsn_VertexNode, 0, oktsn_ShaderNode, [], 4, 3, oktsn_VertexNode_$callClinit, ["$setPositionName", function(var_1) { oktsn_VertexNode_setPositionName(this, var_1); }, "$setNormalName", function(var_1) { oktsn_VertexNode_setNormalName(this, var_1); }, "$setTangentName", function(var_1) { oktsn_VertexNode_setTangentName(this, var_1); }, "$setBonesName", function(var_1) { oktsn_VertexNode_setBonesName(this, var_1); }, "$setBoneWeightsName", function(var_1) { oktsn_VertexNode_setBoneWeightsName(this, var_1); },
 "$getPosition2", function() { return oktsn_VertexNode_getPosition(this); }, "$getNormal", function() { return oktsn_VertexNode_getNormal(this); }, "$getTbn", function() { return oktsn_VertexNode_getTbn(this); }, "$getUBoneMatricesName", function() { return oktsn_VertexNode_getUBoneMatricesName(this); }, "$getUWorldMatrix", function() { return oktsn_VertexNode_getUWorldMatrix(this); }, "$getHasBones", function() { return oktsn_VertexNode_getHasBones(this); }, "$getUid", function() { return oktsn_VertexNode_getUid(this);
@@ -45408,14 +45542,14 @@ oktgg_GLTF$readJson$8$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", f
 oktg_IMaterial, 0, jl_Object, [], 3, 3, 0, 0,
 oktg_Material, 0, jl_Object, [oktg_IMaterial], 0, 3, 0, ["$getShader", function() { return oktg_Material_getShader(this); }, "$setShader", function(var_1) { oktg_Material_setShader(this, var_1); }, "$getAlphaCutoff", function() { return oktg_Material_getAlphaCutoff(this); }, "$setAlphaCutoff", function(var_1) { oktg_Material_setAlphaCutoff(this, var_1); }, "$getAlphaMode0", function() { return oktg_Material_getAlphaMode(this); }, "$setAlphaMode0", function(var_1) { oktg_Material_setAlphaMode(this, var_1); },
 "$getCullFaceMode", function() { return oktg_Material_getCullFaceMode(this); }, "$setCullFaceMode", function(var_1) { oktg_Material_setCullFaceMode(this, var_1); }, "$getTranslucentPriority", function() { return oktg_Material_getTranslucentPriority(this); }, "$setName", function(var_1) { oktg_Material_setName(this, var_1); }, "$getShaderChannels", function() { return oktg_Material_getShaderChannels(this); }],
-ju_Objects, 0, jl_Object, [], 4, 3, 0, 0,
-jur_SequenceSet, 0, jur_LeafSet, [], 0, 0, 0, ["$accepts", function(var_1, var_2) { return jur_SequenceSet_accepts(this, var_1, var_2); }, "$find", function(var_1, var_2, var_3) { return jur_SequenceSet_find(this, var_1, var_2, var_3); }, "$findBack", function(var_1, var_2, var_3, var_4) { return jur_SequenceSet_findBack(this, var_1, var_2, var_3, var_4); }, "$first", function(var_1) { return jur_SequenceSet_first(this, var_1); }, "$indexOf5", function(var_1, var_2, var_3) { return jur_SequenceSet_indexOf(this,
+ju_Objects, 0, jl_Object, [], 4, 3, 0, 0]);
+$rt_metadata([jur_SequenceSet, 0, jur_LeafSet, [], 0, 0, 0, ["$accepts", function(var_1, var_2) { return jur_SequenceSet_accepts(this, var_1, var_2); }, "$find", function(var_1, var_2, var_3) { return jur_SequenceSet_find(this, var_1, var_2, var_3); }, "$findBack", function(var_1, var_2, var_3, var_4) { return jur_SequenceSet_findBack(this, var_1, var_2, var_3, var_4); }, "$first", function(var_1) { return jur_SequenceSet_first(this, var_1); }, "$indexOf5", function(var_1, var_2, var_3) { return jur_SequenceSet_indexOf(this,
 var_1, var_2, var_3); }, "$lastIndexOf1", function(var_1, var_2, var_3) { return jur_SequenceSet_lastIndexOf(this, var_1, var_2, var_3); }, "$startsWith2", function(var_1, var_2) { return jur_SequenceSet_startsWith(this, var_1, var_2); }],
 kc_CollectionsKt___CollectionsJvmKt, 0, kc_CollectionsKt__ReversedViewsKt, [], 0, 0, 0, 0,
 kc_CollectionsKt___CollectionsKt, 0, kc_CollectionsKt___CollectionsJvmKt, [], 0, 0, 0, 0,
 kc_CollectionsKt, 0, kc_CollectionsKt___CollectionsKt, [], 4, 3, 0, 0,
-jur_AltGroupQuantifierSet, 0, jur_GroupQuantifierSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_AltGroupQuantifierSet_matches(this, var_1, var_2, var_3); }, "$setNext", function(var_1) { jur_AltGroupQuantifierSet_setNext(this, var_1); }]]);
-$rt_metadata([oktgg_IGLTFMaterial$readJson$5$5, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$5$5_invoke(this, var_1); }, "$invoke9", function(var_1) { oktgg_IGLTFMaterial$readJson$5$5_invoke0(this, var_1); }],
+jur_AltGroupQuantifierSet, 0, jur_GroupQuantifierSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_AltGroupQuantifierSet_matches(this, var_1, var_2, var_3); }, "$setNext", function(var_1) { jur_AltGroupQuantifierSet_setNext(this, var_1); }],
+oktgg_IGLTFMaterial$readJson$5$5, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$5$5_invoke(this, var_1); }, "$invoke9", function(var_1) { oktgg_IGLTFMaterial$readJson$5$5_invoke0(this, var_1); }],
 oktgg_IGLTFMaterial$readJson$5$4, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$5$4_invoke(this, var_1); }, "$invoke9", function(var_1) { oktgg_IGLTFMaterial$readJson$5$4_invoke0(this, var_1); }],
 oktgg_IGLTFMaterial$readJson$5$3, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$5$3_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_IGLTFMaterial$readJson$5$3_invoke0(this, var_1); }],
 jur_UCIRangeSet, 0, jur_LeafSet, [], 0, 0, 0, ["$accepts", function(var_1, var_2) { return jur_UCIRangeSet_accepts(this, var_1, var_2); }],
@@ -45462,13 +45596,13 @@ jur_CharClass$3, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(
 oktgg_GLTFSkin$readJson$3, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFSkin$readJson$3_invoke(this, var_1); }, "$invoke44", function(var_1) { oktgg_GLTFSkin$readJson$3_invoke0(this, var_1); }],
 jur_CharClass$4, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$4_contains(this, var_1); }],
 jur_CharClass$1, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$1_contains(this, var_1); }],
-jur_CharClass$2, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$2_contains(this, var_1); }],
-jur_CharClass$7, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$7_contains(this, var_1); }],
+jur_CharClass$2, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$2_contains(this, var_1); }]]);
+$rt_metadata([jur_CharClass$7, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$7_contains(this, var_1); }],
 jur_CharClass$8, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$8_contains(this, var_1); }],
 jur_CharClass$5, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$5_contains(this, var_1); }],
 jur_CharClass$6, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$6_contains(this, var_1); }],
-jur_DotSet, 0, jur_JointSet, [], 4, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_DotSet_matches(this, var_1, var_2, var_3); }, "$setNext", function(var_1) { jur_DotSet_setNext(this, var_1); }, "$getType", function() { return jur_DotSet_getType(this); }, "$hasConsumed", function(var_1) { return jur_DotSet_hasConsumed(this, var_1); }]]);
-$rt_metadata([jur_CharClass$9, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$9_contains(this, var_1); }],
+jur_DotSet, 0, jur_JointSet, [], 4, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_DotSet_matches(this, var_1, var_2, var_3); }, "$setNext", function(var_1) { jur_DotSet_setNext(this, var_1); }, "$getType", function() { return jur_DotSet_getType(this); }, "$hasConsumed", function(var_1) { return jur_DotSet_hasConsumed(this, var_1); }],
+jur_CharClass$9, 0, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$9_contains(this, var_1); }],
 jl_Character, 0, jl_Object, [jl_Comparable], 0, 3, jl_Character_$callClinit, 0,
 jur_CICharSet, 0, jur_LeafSet, [], 0, 0, 0, ["$accepts", function(var_1, var_2) { return jur_CICharSet_accepts(this, var_1, var_2); }],
 jur_SupplCharSet, 0, jur_LeafSet, [], 0, 0, 0, ["$accepts", function(var_1, var_2) { return jur_SupplCharSet_accepts(this, var_1, var_2); }, "$find", function(var_1, var_2, var_3) { return jur_SupplCharSet_find(this, var_1, var_2, var_3); }, "$findBack", function(var_1, var_2, var_3, var_4) { return jur_SupplCharSet_findBack(this, var_1, var_2, var_3, var_4); }, "$getCodePoint", function() { return jur_SupplCharSet_getCodePoint(this); }, "$first", function(var_1) { return jur_SupplCharSet_first(this, var_1);
@@ -45517,13 +45651,13 @@ oktsn_OperationNode, 0, oktsn_ShaderNode, [], 4, 3, oktsn_OperationNode_$callCli
 jur_AbstractCharClass$LazyJavaDigit$1, "AbstractCharClass$LazyJavaDigit$1", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_AbstractCharClass$LazyJavaDigit$1_contains(this, var_1); }],
 oktgg_GLTF$readJson$17, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return oktgg_GLTF$readJson$17_invoke(this); }, "$invoke10", function() { oktgg_GLTF$readJson$17_invoke0(this); }],
 oktgn_ITransformNode$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
-oktgg_GLTF$readJson$13, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTF$readJson$13_invoke(this, var_1); }, "$invoke", function(var_1) { oktgg_GLTF$readJson$13_invoke0(this, var_1); }],
-oktt_TvmGL$RenderBufferWrap, 0, oktt_TvmGL$GLObject, [], 4, 3, 0, ["$getGl3", function() { return oktt_TvmGL$RenderBufferWrap_getGl(this); }, "$getGl6", function() { return oktt_TvmGL$RenderBufferWrap_getGl0(this); }],
+oktgg_GLTF$readJson$13, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTF$readJson$13_invoke(this, var_1); }, "$invoke", function(var_1) { oktgg_GLTF$readJson$13_invoke0(this, var_1); }]]);
+$rt_metadata([oktt_TvmGL$RenderBufferWrap, 0, oktt_TvmGL$GLObject, [], 4, 3, 0, ["$getGl3", function() { return oktt_TvmGL$RenderBufferWrap_getGl(this); }, "$getGl6", function() { return oktt_TvmGL$RenderBufferWrap_getGl0(this); }],
 oktgg_GLTF$readJson$14, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTF$readJson$14_invoke(this, var_1); }, "$invoke", function(var_1) { oktgg_GLTF$readJson$14_invoke0(this, var_1); }],
 k_Pair, 0, jl_Object, [ji_Serializable], 4, 3, 0, ["$getFirst0", function() { return k_Pair_getFirst(this); }, "$getSecond", function() { return k_Pair_getSecond(this); }, "$component1", function() { return k_Pair_component1(this); }, "$component2", function() { return k_Pair_component2(this); }, "$hashCode", function() { return k_Pair_hashCode(this); }, "$equals", function(var_1) { return k_Pair_equals(this, var_1); }],
 oktgg_GLTF$readJson$15, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTF$readJson$15_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTF$readJson$15_invoke0(this, var_1); }],
-okti_ITexture2D, 0, jl_Object, [okti_ITexture], 3, 3, 0, 0]);
-$rt_metadata([okti_Texture2D, 0, okti_Texture, [okti_ITexture2D], 0, 3, 0, ["$getWidth", function() { return okti_Texture2D_getWidth(this); }, "$setWidth", function(var_1) { okti_Texture2D_setWidth(this, var_1); }, "$getHeight", function() { return okti_Texture2D_getHeight(this); }, "$setHeight", function(var_1) { okti_Texture2D_setHeight(this, var_1); }, "$setImage", function(var_1) { okti_Texture2D_setImage(this, var_1); }, "$load1", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7) { return okti_Texture2D_load(this,
+okti_ITexture2D, 0, jl_Object, [okti_ITexture], 3, 3, 0, 0,
+okti_Texture2D, 0, okti_Texture, [okti_ITexture2D], 0, 3, 0, ["$getWidth", function() { return okti_Texture2D_getWidth(this); }, "$setWidth", function(var_1) { okti_Texture2D_setWidth(this, var_1); }, "$getHeight", function() { return okti_Texture2D_getHeight(this); }, "$setHeight", function(var_1) { okti_Texture2D_setHeight(this, var_1); }, "$setImage", function(var_1) { okti_Texture2D_setImage(this, var_1); }, "$load1", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7) { return okti_Texture2D_load(this,
 var_1, var_2, var_3, var_4, var_5, var_6, var_7); }, "$load2", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7) { return okti_Texture2D_load0(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7); }, "$checkMipmap", function(var_1) { return okti_Texture2D_checkMipmap(this, var_1); }, "$initParameters", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7) { okti_Texture2D_initParameters(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7); }, "$bind", function() { okti_Texture2D_bind(this); },
 "$bind4", function(var_1) { okti_Texture2D_bind0(this, var_1); }, "$destroy0", function() { okti_Texture2D_destroy(this); }, "$generateMipmapsGPU0", function() { okti_Texture2D_generateMipmapsGPU(this); }, "$initTexture", function() { okti_Texture2D_initTexture(this); }],
 oktgg_GLTF$readJson$16, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTF$readJson$16_invoke(this, var_1); }, "$invoke44", function(var_1) { oktgg_GLTF$readJson$16_invoke0(this, var_1); }],
@@ -45555,14 +45689,15 @@ oktsn_GLSLFloatInline, 0, oktsn_GLSLInlineBase, [], 4, 3, 0, ["$getInlineCode", 
 jur_PosAltGroupQuantifierSet, 0, jur_AltGroupQuantifierSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_PosAltGroupQuantifierSet_matches(this, var_1, var_2, var_3); }, "$setNext", function(var_1) { jur_PosAltGroupQuantifierSet_setNext(this, var_1); }],
 oktgg_GLTFNode$readJson$9$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFNode$readJson$9$1_invoke(this, var_1); }, "$invoke54", function(var_1) { oktgg_GLTFNode$readJson$9$1_invoke0(this, var_1); }],
 oktr_IResource$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
+ck_KotmeJsMain$main$4$2$1$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_KotmeJsMain$main$4$2$1$1_invoke(this, var_1); }, "$invoke0", function(var_1) { ck_KotmeJsMain$main$4$2$1$1_invoke0(this, var_1); }],
 oktm_Mat4, 0, jl_Object, [oktm_IMat4], 4, 3, 0, ["$getValues", function() { return oktm_Mat4_getValues(this); }, "$getM00", function() { return oktm_Mat4_getM00(this); }, "$setM00", function(var_1) { oktm_Mat4_setM00(this, var_1); }, "$getM01", function() { return oktm_Mat4_getM01(this); }, "$setM01", function(var_1) { oktm_Mat4_setM01(this, var_1); }, "$getM02", function() { return oktm_Mat4_getM02(this); }, "$setM02", function(var_1) { oktm_Mat4_setM02(this, var_1); }, "$getM03", function() { return oktm_Mat4_getM03(this);
 }, "$setM03", function(var_1) { oktm_Mat4_setM03(this, var_1); }, "$getM10", function() { return oktm_Mat4_getM10(this); }, "$setM10", function(var_1) { oktm_Mat4_setM10(this, var_1); }, "$getM11", function() { return oktm_Mat4_getM11(this); }, "$setM11", function(var_1) { oktm_Mat4_setM11(this, var_1); }, "$getM12", function() { return oktm_Mat4_getM12(this); }, "$setM12", function(var_1) { oktm_Mat4_setM12(this, var_1); }, "$getM13", function() { return oktm_Mat4_getM13(this); }, "$setM13", function(var_1)
 { oktm_Mat4_setM13(this, var_1); }, "$getM20", function() { return oktm_Mat4_getM20(this); }, "$setM20", function(var_1) { oktm_Mat4_setM20(this, var_1); }, "$getM21", function() { return oktm_Mat4_getM21(this); }, "$setM21", function(var_1) { oktm_Mat4_setM21(this, var_1); }, "$getM22", function() { return oktm_Mat4_getM22(this); }, "$setM22", function(var_1) { oktm_Mat4_setM22(this, var_1); }, "$getM23", function() { return oktm_Mat4_getM23(this); }, "$setM23", function(var_1) { oktm_Mat4_setM23(this, var_1);
 }, "$getM30", function() { return oktm_Mat4_getM30(this); }, "$setM30", function(var_1) { oktm_Mat4_setM30(this, var_1); }, "$getM31", function() { return oktm_Mat4_getM31(this); }, "$setM31", function(var_1) { oktm_Mat4_setM31(this, var_1); }, "$getM32", function() { return oktm_Mat4_getM32(this); }, "$setM32", function(var_1) { oktm_Mat4_setM32(this, var_1); }, "$getM33", function() { return oktm_Mat4_getM33(this); }, "$setM33", function(var_1) { oktm_Mat4_setM33(this, var_1); }, "$getScaleX", function() {
 return oktm_Mat4_getScaleX(this); }, "$getScaleXSquared", function() { return oktm_Mat4_getScaleXSquared(this); }, "$getScaleY", function() { return oktm_Mat4_getScaleY(this); }, "$getScaleYSquared", function() { return oktm_Mat4_getScaleYSquared(this); }, "$getScaleZ", function() { return oktm_Mat4_getScaleZ(this); }, "$getScaleZSquared", function() { return oktm_Mat4_getScaleZSquared(this); }, "$getCol3Vec3", function(var_1) { return oktm_Mat4_getCol3Vec3(this, var_1); }, "$getRotation", function(var_1) {
 return oktm_Mat4_getRotation(this, var_1); }, "$getRow0Vec3", function(var_1) { return oktm_Mat4_getRow0Vec3(this, var_1); }, "$getRow1Vec3", function(var_1) { return oktm_Mat4_getRow1Vec3(this, var_1); }, "$getScale", function(var_1) { return oktm_Mat4_getScale(this, var_1); }, "$getTranslation", function(var_1) { return oktm_Mat4_getTranslation(this, var_1); }, "$idt", function() { return oktm_Mat4_idt(this); }, "$inv", function() { return oktm_Mat4_inv(this); }, "$isNotEqualTo", function(var_1) { return oktm_Mat4_isNotEqualTo(this,
-var_1); }, "$mul0", function(var_1, var_2) { return oktm_Mat4_mul(this, var_1, var_2); }, "$mulLeft", function(var_1) { return oktm_Mat4_mulLeft(this, var_1); }, "$project", function(var_1, var_2) { return oktm_Mat4_project(this, var_1, var_2); }, "$scale1", function(var_1, var_2, var_3) { return oktm_Mat4_scale(this, var_1, var_2, var_3); }, "$set24", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9, var_10) { return oktm_Mat4_set1(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7,
-var_8, var_9, var_10); }, "$set23", function(var_1) { return oktm_Mat4_set2(this, var_1); }, "$set", function(var_1) { return oktm_Mat4_set(this, var_1); }, "$set4", function(var_1, var_2, var_3) { return oktm_Mat4_set0(this, var_1, var_2, var_3); }, "$setToLook", function(var_1, var_2, var_3) { return oktm_Mat4_setToLook(this, var_1, var_2, var_3); }, "$setToOrtho", function(var_1, var_2, var_3, var_4, var_5, var_6) { return oktm_Mat4_setToOrtho(this, var_1, var_2, var_3, var_4, var_5, var_6); }, "$setToProjection",
+var_1); }, "$mul0", function(var_1, var_2) { return oktm_Mat4_mul(this, var_1, var_2); }, "$mulLeft", function(var_1) { return oktm_Mat4_mulLeft(this, var_1); }, "$project", function(var_1, var_2) { return oktm_Mat4_project(this, var_1, var_2); }, "$scale1", function(var_1, var_2, var_3) { return oktm_Mat4_scale(this, var_1, var_2, var_3); }, "$set25", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9, var_10) { return oktm_Mat4_set1(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7,
+var_8, var_9, var_10); }, "$set24", function(var_1) { return oktm_Mat4_set2(this, var_1); }, "$set", function(var_1) { return oktm_Mat4_set(this, var_1); }, "$set4", function(var_1, var_2, var_3) { return oktm_Mat4_set0(this, var_1, var_2, var_3); }, "$setToLook", function(var_1, var_2, var_3) { return oktm_Mat4_setToLook(this, var_1, var_2, var_3); }, "$setToOrtho", function(var_1, var_2, var_3, var_4, var_5, var_6) { return oktm_Mat4_setToOrtho(this, var_1, var_2, var_3, var_4, var_5, var_6); }, "$setToProjection",
 function(var_1, var_2, var_3, var_4) { return oktm_Mat4_setToProjection(this, var_1, var_2, var_3, var_4); }, "$setTransposed3x3From", function(var_1) { oktm_Mat4_setTransposed3x3From(this, var_1); }, "$translate", function(var_1, var_2, var_3) { return oktm_Mat4_translate(this, var_1, var_2, var_3); }],
 okta_AnimPlayer$animationPool$1, 0, kji_Lambda, [kjf_Function0], 4, 0, okta_AnimPlayer$animationPool$1_$callClinit, ["$invoke21", function() { return okta_AnimPlayer$animationPool$1_invoke(this); }, "$invoke55", function() { return okta_AnimPlayer$animationPool$1_invoke0(this); }],
 jur_UnicodeCategory, "UnicodeCategory", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_UnicodeCategory_contains(this, var_1); }],
@@ -45584,19 +45719,19 @@ oktsn_PrincipledBSDF, 0, oktsn_ShaderNode, [], 4, 3, oktsn_PrincipledBSDF_$callC
 }, "$setBaseColor0", function(var_1) { oktsn_PrincipledBSDF_setBaseColor(this, var_1); }, "$getNormal", function() { return oktsn_PrincipledBSDF_getNormal(this); }, "$setNormal", function(var_1) { oktsn_PrincipledBSDF_setNormal(this, var_1); }, "$getOcclusion", function() { return oktsn_PrincipledBSDF_getOcclusion(this); }, "$setOcclusion", function(var_1) { oktsn_PrincipledBSDF_setOcclusion(this, var_1); }, "$getRoughness", function() { return oktsn_PrincipledBSDF_getRoughness(this); }, "$setRoughness0", function(var_1)
 { oktsn_PrincipledBSDF_setRoughness(this, var_1); }, "$getMetallic", function() { return oktsn_PrincipledBSDF_getMetallic(this); }, "$setMetallic0", function(var_1) { oktsn_PrincipledBSDF_setMetallic(this, var_1); }, "$getClipSpacePosition", function() { return oktsn_PrincipledBSDF_getClipSpacePosition(this); }, "$setClipSpacePosition", function(var_1) { oktsn_PrincipledBSDF_setClipSpacePosition(this, var_1); }, "$getResult0", function() { return oktsn_PrincipledBSDF_getResult(this); }, "$setReceiveShadows",
 function(var_1) { oktsn_PrincipledBSDF_setReceiveShadows(this, var_1); }, "$prepareToBuild", function() { oktsn_PrincipledBSDF_prepareToBuild(this); }, "$prepareToDrawScene", function(var_1) { oktsn_PrincipledBSDF_prepareToDrawScene(this, var_1); }, "$prepareToDrawMesh", function(var_1) { oktsn_PrincipledBSDF_prepareToDrawMesh(this, var_1); }, "$executionFrag", function(var_1) { oktsn_PrincipledBSDF_executionFrag(this, var_1); }, "$declarationFrag", function(var_1) { oktsn_PrincipledBSDF_declarationFrag(this,
-var_1); }, "$declarationVert", function(var_1) { oktsn_PrincipledBSDF_declarationVert(this, var_1); }, "$executionVert", function(var_1) { oktsn_PrincipledBSDF_executionVert(this, var_1); }],
-oktsn_GLSLVec4Inline, 0, oktsn_GLSLInlineBase, [], 4, 3, 0, ["$getInlineCode", function() { return oktsn_GLSLVec4Inline_getInlineCode(this); }, "$getType", function() { return oktsn_GLSLVec4Inline_getType(this); }, "$getScope", function() { return oktsn_GLSLVec4Inline_getScope(this); }, "$asFloat", function() { return oktsn_GLSLVec4Inline_asFloat(this); }, "$asVec2", function() { return oktsn_GLSLVec4Inline_asVec2(this); }, "$asVec3", function() { return oktsn_GLSLVec4Inline_asVec3(this); }, "$asVec4", function()
-{ return oktsn_GLSLVec4Inline_asVec4(this); }, "$getName", function() { return oktsn_GLSLVec4Inline_getName(this); }],
+var_1); }, "$declarationVert", function(var_1) { oktsn_PrincipledBSDF_declarationVert(this, var_1); }, "$executionVert", function(var_1) { oktsn_PrincipledBSDF_executionVert(this, var_1); }]]);
+$rt_metadata([oktsn_GLSLVec4Inline, 0, oktsn_GLSLInlineBase, [], 4, 3, 0, ["$getInlineCode", function() { return oktsn_GLSLVec4Inline_getInlineCode(this); }, "$getType", function() { return oktsn_GLSLVec4Inline_getType(this); }, "$getScope", function() { return oktsn_GLSLVec4Inline_getScope(this); }, "$asFloat", function() { return oktsn_GLSLVec4Inline_asFloat(this); }, "$asVec2", function() { return oktsn_GLSLVec4Inline_asVec2(this); }, "$asVec3", function() { return oktsn_GLSLVec4Inline_asVec3(this); }, "$asVec4",
+function() { return oktsn_GLSLVec4Inline_asVec4(this); }, "$getName", function() { return oktsn_GLSLVec4Inline_getName(this); }],
 jur_AbstractCharClass$LazyJavaWhitespace$1, "AbstractCharClass$LazyJavaWhitespace$1", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_AbstractCharClass$LazyJavaWhitespace$1_contains(this, var_1); }],
 jur_AbstractCharClass$LazyJavaJavaIdentifierStart, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyJavaJavaIdentifierStart_computeValue(this); }],
 otjt_Uint8Array, 0, otjt_ArrayBufferView, [], 1, 3, 0, 0,
 oktt_TvmKB, 0, jl_Object, [okti_IKB], 4, 3, 0, ["$getPressed", function() { return oktt_TvmKB_getPressed(this); }, "$getListeners", function() { return oktt_TvmKB_getListeners(this); }, "$getKeyCode", function(var_1) { return oktt_TvmKB_getKeyCode(this, var_1); }, "$isKeyPressed", function(var_1) { return oktt_TvmKB_isKeyPressed(this, var_1); }, "$getShift", function() { return oktt_TvmKB_getShift(this); }],
-jur_SequenceSet$IntHash, 0, jl_Object, [], 0, 0, 0, ["$put11", function(var_1, var_2) { jur_SequenceSet$IntHash_put(this, var_1, var_2); }, "$get15", function(var_1) { return jur_SequenceSet$IntHash_get(this, var_1); }]]);
-$rt_metadata([okta_AnimPlayer$AnimationDesc, 0, jl_Object, [], 4, 3, 0, ["$setListener", function(var_1) { okta_AnimPlayer$AnimationDesc_setListener(this, var_1); }, "$getAnimation", function() { return okta_AnimPlayer$AnimationDesc_getAnimation(this); }, "$setAnimation", function(var_1) { okta_AnimPlayer$AnimationDesc_setAnimation(this, var_1); }, "$setSpeed", function(var_1) { okta_AnimPlayer$AnimationDesc_setSpeed(this, var_1); }, "$getTime", function() { return okta_AnimPlayer$AnimationDesc_getTime(this);
-}, "$setTime", function(var_1) { okta_AnimPlayer$AnimationDesc_setTime(this, var_1); }, "$getOffset", function() { return okta_AnimPlayer$AnimationDesc_getOffset(this); }, "$setOffset", function(var_1) { okta_AnimPlayer$AnimationDesc_setOffset(this, var_1); }, "$getDuration", function() { return okta_AnimPlayer$AnimationDesc_getDuration(this); }, "$setDuration", function(var_1) { okta_AnimPlayer$AnimationDesc_setDuration(this, var_1); }, "$getLoopCount", function() { return okta_AnimPlayer$AnimationDesc_getLoopCount(this);
+jur_SequenceSet$IntHash, 0, jl_Object, [], 0, 0, 0, ["$put11", function(var_1, var_2) { jur_SequenceSet$IntHash_put(this, var_1, var_2); }, "$get15", function(var_1) { return jur_SequenceSet$IntHash_get(this, var_1); }],
+okta_AnimPlayer$AnimationDesc, 0, jl_Object, [], 4, 3, 0, ["$setListener", function(var_1) { okta_AnimPlayer$AnimationDesc_setListener(this, var_1); }, "$getAnimation", function() { return okta_AnimPlayer$AnimationDesc_getAnimation(this); }, "$setAnimation", function(var_1) { okta_AnimPlayer$AnimationDesc_setAnimation(this, var_1); }, "$setSpeed", function(var_1) { okta_AnimPlayer$AnimationDesc_setSpeed(this, var_1); }, "$getTime", function() { return okta_AnimPlayer$AnimationDesc_getTime(this); }, "$setTime",
+function(var_1) { okta_AnimPlayer$AnimationDesc_setTime(this, var_1); }, "$getOffset", function() { return okta_AnimPlayer$AnimationDesc_getOffset(this); }, "$setOffset", function(var_1) { okta_AnimPlayer$AnimationDesc_setOffset(this, var_1); }, "$getDuration", function() { return okta_AnimPlayer$AnimationDesc_getDuration(this); }, "$setDuration", function(var_1) { okta_AnimPlayer$AnimationDesc_setDuration(this, var_1); }, "$getLoopCount", function() { return okta_AnimPlayer$AnimationDesc_getLoopCount(this);
 }, "$setLoopCount", function(var_1) { okta_AnimPlayer$AnimationDesc_setLoopCount(this, var_1); }, "$getPreviousTime", function() { return okta_AnimPlayer$AnimationDesc_getPreviousTime(this); }, "$getExecutedActions", function() { return okta_AnimPlayer$AnimationDesc_getExecutedActions(this); }, "$update4", function(var_1) { return okta_AnimPlayer$AnimationDesc_update(this, var_1); }],
 jur_AbstractCharClass$LazyJavaLowerCase, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyJavaLowerCase_computeValue(this); }],
-ck_KotmeJsMain$main$4$2$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_KotmeJsMain$main$4$2$1_invoke(this); }, "$invoke10", function() { ck_KotmeJsMain$main$4$2$1_invoke0(this); }],
+ck_KotmeJsMain$main$4$2$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_KotmeJsMain$main$4$2$1_invoke(this, var_1); }, "$invoke", function(var_1) { ck_KotmeJsMain$main$4$2$1_invoke0(this, var_1); }],
 oktgg_GLTF$readJson$2$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTF$readJson$2$1_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_GLTF$readJson$2$1_invoke0(this, var_1); }],
 jur_AbstractCharClass$LazyJavaLetterOrDigit$1, "AbstractCharClass$LazyJavaLetterOrDigit$1", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_AbstractCharClass$LazyJavaLetterOrDigit$1_contains(this, var_1); }],
 jur_CharClass$18, "CharClass$18", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_CharClass$18_contains(this, var_1); }, "$toString", function() { return jur_CharClass$18_toString(this); }],
@@ -45650,19 +45785,19 @@ ck_ActionDescriptor$readJson$3, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invo
 kr_IntProgression$Companion, 0, jl_Object, [], 4, 3, 0, ["$fromClosedRange", function(var_1, var_2, var_3) { return kr_IntProgression$Companion_fromClosedRange(this, var_1, var_2, var_3); }],
 jur_AbstractCharClass$LazyJavaUpperCase$1, "AbstractCharClass$LazyJavaUpperCase$1", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_AbstractCharClass$LazyJavaUpperCase$1_contains(this, var_1); }],
 oktj_IJsonArray, 0, jl_Object, [], 3, 3, 0, 0,
-okttj_TvmJsonArray, 0, jl_Object, [oktj_IJsonArray], 4, 3, 0, ["$getSize", function() { return okttj_TvmJsonArray_getSize(this); }, "$obj3", function(var_1) { return okttj_TvmJsonArray_obj(this, var_1); }, "$float1", function(var_1) { return okttj_TvmJsonArray_float(this, var_1); }, "$int4", function(var_1) { return okttj_TvmJsonArray_int(this, var_1); }, "$float4", function(var_1, var_2) { return okttj_TvmJsonArray_float0(this, var_1, var_2); }, "$floats1", function(var_1) { okttj_TvmJsonArray_floats(this,
-var_1); }, "$ints2", function(var_1) { okttj_TvmJsonArray_ints(this, var_1); }, "$objs", function(var_1) { okttj_TvmJsonArray_objs(this, var_1); }],
+okttj_TvmJsonArray, 0, jl_Object, [oktj_IJsonArray], 4, 3, 0, ["$getSize", function() { return okttj_TvmJsonArray_getSize(this); }, "$obj3", function(var_1) { return okttj_TvmJsonArray_obj(this, var_1); }, "$string7", function(var_1) { return okttj_TvmJsonArray_string(this, var_1); }, "$float1", function(var_1) { return okttj_TvmJsonArray_float(this, var_1); }, "$int4", function(var_1) { return okttj_TvmJsonArray_int(this, var_1); }, "$float4", function(var_1, var_2) { return okttj_TvmJsonArray_float0(this,
+var_1, var_2); }, "$floats1", function(var_1) { okttj_TvmJsonArray_floats(this, var_1); }, "$ints2", function(var_1) { okttj_TvmJsonArray_ints(this, var_1); }, "$objs", function(var_1) { okttj_TvmJsonArray_objs(this, var_1); }, "$strings", function(var_1) { okttj_TvmJsonArray_strings(this, var_1); }],
 okti_FrameBufferAttachment, 0, jl_Object, [okti_IFrameBufferAttachment], 4, 3, 0, ["$getGlHandle", function() { return okti_FrameBufferAttachment_getGlHandle(this); }, "$setup", function(var_1) { okti_FrameBufferAttachment_setup(this, var_1); }, "$getAttachment", function() { return okti_FrameBufferAttachment_getAttachment(this); }, "$getInternalFormat", function() { return okti_FrameBufferAttachment_getInternalFormat(this); }, "$getTexture3", function() { return okti_FrameBufferAttachment_getTexture(this);
-}, "$getTexture0", function() { return okti_FrameBufferAttachment_getTexture0(this); }],
-okta_SequenceAction, 0, jl_Object, [okta_IActionContainer], 4, 3, 0, ["$isRunning0", function() { return okta_SequenceAction_isRunning(this); }, "$setRunning", function(var_1) { okta_SequenceAction_setRunning(this, var_1); }, "$getChildren", function() { return okta_SequenceAction_getChildren(this); }, "$getCurrentAction", function() { return okta_SequenceAction_getCurrentAction(this); }, "$reset0", function() { okta_SequenceAction_reset(this); }, "$update1", function(var_1) { okta_SequenceAction_update(this,
+}, "$getTexture0", function() { return okti_FrameBufferAttachment_getTexture0(this); }]]);
+$rt_metadata([okta_SequenceAction, 0, jl_Object, [okta_IActionContainer], 4, 3, 0, ["$isRunning0", function() { return okta_SequenceAction_isRunning(this); }, "$setRunning", function(var_1) { okta_SequenceAction_setRunning(this, var_1); }, "$getChildren", function() { return okta_SequenceAction_getChildren(this); }, "$getCurrentAction", function() { return okta_SequenceAction_getCurrentAction(this); }, "$reset0", function() { okta_SequenceAction_reset(this); }, "$update1", function(var_1) { okta_SequenceAction_update(this,
 var_1); }, "$delayRun", function(var_1, var_2) { return okta_SequenceAction_delayRun(this, var_1, var_2); }, "$doWhile", function(var_1) { return okta_SequenceAction_doWhile(this, var_1); }, "$run", function(var_1) { return okta_SequenceAction_run(this, var_1); }],
 oktgg_GLTFSampler, 0, jl_Object, [oktj_IJsonObjectIO, oktgg_IGLTFArrayElement], 4, 3, 0, ["$readJson", function(var_1) { oktgg_GLTFSampler_readJson(this, var_1); }, "$getGltf", function() { return oktgg_GLTFSampler_getGltf(this); }, "$getElementIndex", function() { return oktgg_GLTFSampler_getElementIndex(this); }, "$getMinFilter", function() { return oktgg_GLTFSampler_getMinFilter(this); }, "$setMinFilter", function(var_1) { oktgg_GLTFSampler_setMinFilter(this, var_1); }, "$getMagFilter", function() { return oktgg_GLTFSampler_getMagFilter(this);
 }, "$setMagFilter", function(var_1) { oktgg_GLTFSampler_setMagFilter(this, var_1); }, "$getWrapS", function() { return oktgg_GLTFSampler_getWrapS(this); }, "$setWrapS", function(var_1) { oktgg_GLTFSampler_setWrapS(this, var_1); }, "$getWrapT", function() { return oktgg_GLTFSampler_getWrapT(this); }, "$setWrapT", function(var_1) { oktgg_GLTFSampler_setWrapT(this, var_1); }],
 oktgg_GLTFAnimationSampler, 0, jl_Object, [oktj_IJsonObjectIO], 4, 3, 0, ["$readJson", function(var_1) { oktgg_GLTFAnimationSampler_readJson(this, var_1); }, "$getInput0", function() { return oktgg_GLTFAnimationSampler_getInput(this); }, "$getInterpolation", function() { return oktgg_GLTFAnimationSampler_getInterpolation(this); }, "$setInterpolation", function(var_1) { oktgg_GLTFAnimationSampler_setInterpolation(this, var_1); }, "$getOutput0", function() { return oktgg_GLTFAnimationSampler_getOutput(this); }],
 otpp_ResourceAccessor, 0, jl_Object, [], 4, 0, 0, 0,
 ck_ActionDescriptor$readJson$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_ActionDescriptor$readJson$1_invoke(this, var_1); }, "$invoke4", function(var_1) { ck_ActionDescriptor$readJson$1_invoke0(this, var_1); }],
-ck_KotmeJsMain$send$1$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_KotmeJsMain$send$1$1_invoke(this, var_1); }, "$invoke1", function(var_1) { ck_KotmeJsMain$send$1$1_invoke0(this, var_1); }]]);
-$rt_metadata([oktg_Scene$objectSorter$1, 0, jl_Object, [ju_Comparator], 4, 0, 0, ["$compare1", function(var_1, var_2) { return oktg_Scene$objectSorter$1_compare(this, var_1, var_2); }, "$compare2", function(var_1, var_2) { return oktg_Scene$objectSorter$1_compare0(this, var_1, var_2); }],
+ck_KotmeJsMain$send$1$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_KotmeJsMain$send$1$1_invoke(this, var_1); }, "$invoke1", function(var_1) { ck_KotmeJsMain$send$1$1_invoke0(this, var_1); }],
+oktg_Scene$objectSorter$1, 0, jl_Object, [ju_Comparator], 4, 0, 0, ["$compare1", function(var_1, var_2) { return oktg_Scene$objectSorter$1_compare(this, var_1, var_2); }, "$compare2", function(var_1, var_2) { return oktg_Scene$objectSorter$1_compare0(this, var_1, var_2); }],
 oktgg_GLTFAnimation$readJson$2$1$1$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFAnimation$readJson$2$1$1$1_invoke(this, var_1); }, "$invoke6", function(var_1) { oktgg_GLTFAnimation$readJson$2$1$1$1_invoke0(this, var_1); }],
 oktgg_GLTFMesh$arrayListener$1, 0, jl_Object, [oktgg_IGLTFArrayListener], 4, 3, 0, ["$ready3", function(var_1, var_2) { oktgg_GLTFMesh$arrayListener$1_ready(this, var_1, var_2); }],
 jur_AbstractCharClass$LazyJavaIdentifierIgnorable$1, "AbstractCharClass$LazyJavaIdentifierIgnorable$1", 4, jur_AbstractCharClass, [], 0, 0, 0, ["$contains0", function(var_1) { return jur_AbstractCharClass$LazyJavaIdentifierIgnorable$1_contains(this, var_1); }],
@@ -45684,6 +45819,7 @@ var_2, var_3, var_4, var_5) { oktt_TvmGL_glUniformMatrix4fv(this, var_1, var_2, 
 var_1, var_2, var_3, var_4); }, "$glGetShaderInfoLog", function(var_1) { return oktt_TvmGL_glGetShaderInfoLog(this, var_1); }, "$glAttachShader", function(var_1, var_2) { oktt_TvmGL_glAttachShader(this, var_1, var_2); }, "$glGetActiveAttrib", function(var_1, var_2, var_3, var_4) { return oktt_TvmGL_glGetActiveAttrib(this, var_1, var_2, var_3, var_4); }, "$glGetAttribLocation", function(var_1, var_2) { return oktt_TvmGL_glGetAttribLocation(this, var_1, var_2); }, "$glVertexAttribPointer", function(var_1, var_2,
 var_3, var_4, var_5, var_6) { oktt_TvmGL_glVertexAttribPointer(this, var_1, var_2, var_3, var_4, var_5, var_6); }, "$glDrawArraysInstanced", function(var_1, var_2, var_3, var_4) { oktt_TvmGL_glDrawArraysInstanced(this, var_1, var_2, var_3, var_4); }, "$glDrawBuffers", function(var_1, var_2) { oktt_TvmGL_glDrawBuffers(this, var_1, var_2); }, "$glDrawElementsInstanced", function(var_1, var_2, var_3, var_4, var_5) { oktt_TvmGL_glDrawElementsInstanced(this, var_1, var_2, var_3, var_4, var_5); }, "$glVertexAttribDivisor",
 function(var_1, var_2) { oktt_TvmGL_glVertexAttribDivisor(this, var_1, var_2); }, "$glGetError", function() { return oktt_TvmGL_glGetError(this); }, "$getMajVer", function() { return oktt_TvmGL_getMajVer(this); }],
+ck_LocationView$3$1, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_LocationView$3$1_invoke(this); }, "$invoke10", function() { ck_LocationView$3$1_invoke0(this); }],
 oktt_TvmGL$GLObjectArray, 0, ju_ArrayList, [], 4, 3, 0, ["$gl8", function(var_1) { return oktt_TvmGL$GLObjectArray_gl(this, var_1); }, "$wrap2", function(var_1) { return oktt_TvmGL$GLObjectArray_wrap(this, var_1); }, "$new", function(var_1) { return oktt_TvmGL$GLObjectArray_new(this, var_1); }, "$delete1", function(var_1) { return oktt_TvmGL$GLObjectArray_delete(this, var_1); }, "$getSize", function() { return oktt_TvmGL$GLObjectArray_getSize(this); }, "$size", function() { return oktt_TvmGL$GLObjectArray_size(this);
 }],
 okta_AnimPlayer, 0, jl_Object, [], 4, 3, 0, ["$setNodes", function(var_1) { okta_AnimPlayer_setNodes(this, var_1); }, "$obtain", function(var_1, var_2, var_3, var_4, var_5, var_6) { return okta_AnimPlayer_obtain(this, var_1, var_2, var_3, var_4, var_5, var_6); }, "$update1", function(var_1) { okta_AnimPlayer_update(this, var_1); }, "$animate1", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7) { return okta_AnimPlayer_animate0(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7); }, "$animate0", function(var_1,
@@ -45703,9 +45839,10 @@ oktgg_GLTFAnimation$readJson$2$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$in
 oktf_IFileSystem$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 otjc_JSString, 0, jl_Object, [otj_JSObject], 1, 3, 0, 0,
 okts_IShader$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
-ck_LocationView$2, "LocationView$2", 1, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_LocationView$2_invoke(this, var_1); }, "$invoke11", function(var_1) { ck_LocationView$2_invoke0(this, var_1); }],
-ck_LocationView$3, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_LocationView$3_invoke(this); }, "$invoke10", function() { ck_LocationView$3_invoke0(this); }],
+ck_LocationView$2, "LocationView$2", 1, kji_Lambda, [kjf_Function1], 4, 0, ck_LocationView$2_$callClinit, ["$invoke8", function(var_1) { return ck_LocationView$2_invoke(this, var_1); }, "$invoke11", function(var_1) { ck_LocationView$2_invoke0(this, var_1); }],
+ck_LocationView$3, "LocationView$3", 1, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return ck_LocationView$3_invoke(this, var_1); }, "$invoke11", function(var_1) { ck_LocationView$3_invoke0(this, var_1); }],
 oktr_ResourceAdapter$notifyLoaded$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktr_ResourceAdapter$notifyLoaded$1_invoke(this, var_1); }, "$invoke2", function(var_1) { oktr_ResourceAdapter$notifyLoaded$1_invoke0(this, var_1); }],
+ck_LocationView$4, 0, kji_Lambda, [kjf_Function0], 4, 0, 0, ["$invoke21", function() { return ck_LocationView$4_invoke(this); }, "$invoke10", function() { ck_LocationView$4_invoke0(this); }],
 okta_IAnimTrack$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 otja_XMLHttpRequest, 0, jl_Object, [otj_JSObject], 1, 3, 0, 0,
 oktgg_IGLTF, 0, jl_Object, [oktj_IJsonObjectIO], 3, 3, 0, 0,
@@ -45714,8 +45851,9 @@ oktgg_GLTF, 0, oktr_ResourceAdapter, [oktgg_IGLTF], 0, 3, oktgg_GLTF_$callClinit
 function() { return oktgg_GLTF_getSamplers(this); }, "$getSamplers0", function() { return oktgg_GLTF_getSamplers0(this); }, "$getImages0", function() { return oktgg_GLTF_getImages(this); }, "$getImages", function() { return oktgg_GLTF_getImages0(this); }, "$getTextures", function() { return oktgg_GLTF_getTextures(this); }, "$getTextures0", function() { return oktgg_GLTF_getTextures0(this); }, "$getMaterials", function() { return oktgg_GLTF_getMaterials(this); }, "$getMeshes1", function() { return oktgg_GLTF_getMeshes(this);
 }, "$getMeshes", function() { return oktgg_GLTF_getMeshes0(this); }, "$getNodes", function() { return oktgg_GLTF_getNodes(this); }, "$getNodes0", function() { return oktgg_GLTF_getNodes0(this); }, "$getSkins0", function() { return oktgg_GLTF_getSkins(this); }, "$getSkins", function() { return oktgg_GLTF_getSkins0(this); }, "$getAnimations", function() { return oktgg_GLTF_getAnimations(this); }, "$getAnimations0", function() { return oktgg_GLTF_getAnimations0(this); }, "$getScenes0", function() { return oktgg_GLTF_getScenes(this);
 }, "$getScenes2", function() { return oktgg_GLTF_getScenes0(this); }, "$getCameras0", function() { return oktgg_GLTF_getCameras(this); }, "$getCameras", function() { return oktgg_GLTF_getCameras0(this); }, "$getScene", function() { return oktgg_GLTF_getScene(this); }, "$setScene", function(var_1) { oktgg_GLTF_setScene(this, var_1); }, "$setMainSceneIndex", function(var_1) { oktgg_GLTF_setMainSceneIndex(this, var_1); }, "$setLoadingInternal", function(var_1) { oktgg_GLTF_setLoadingInternal(this, var_1); }, "$isLoading",
-function() { return oktgg_GLTF_isLoading(this); }, "$setName", function(var_1) { oktgg_GLTF_setName(this, var_1); }, "$getLoadOnSeparateThread", function() { return oktgg_GLTF_getLoadOnSeparateThread(this); }, "$setLoadOnSeparateThread", function(var_1) { oktgg_GLTF_setLoadOnSeparateThread(this, var_1); }, "$updateProgress", function() { oktgg_GLTF_updateProgress(this); }, "$runOnGLThread0", function() { oktgg_GLTF_runOnGLThread(this); }, "$runGLCall", function(var_1) { oktgg_GLTF_runGLCall(this, var_1); },
-"$createMaterial", function() { return oktgg_GLTF_createMaterial(this); }, "$load5", function() { oktgg_GLTF_load(this); }, "$createArrayElement", function(var_1, var_2) { return oktgg_GLTF_createArrayElement(this, var_1, var_2); }, "$readJson", function(var_1) { oktgg_GLTF_readJson(this, var_1); }, "$destroy0", function() { oktgg_GLTF_destroy(this); }, "$getDirectory", function() { return oktgg_GLTF_getDirectory(this); }],
+function() { return oktgg_GLTF_isLoading(this); }, "$setName", function(var_1) { oktgg_GLTF_setName(this, var_1); }, "$getRunOnGLThreadRequest", function() { return oktgg_GLTF_getRunOnGLThreadRequest(this); }, "$getLoadOnSeparateThread", function() { return oktgg_GLTF_getLoadOnSeparateThread(this); }, "$setLoadOnSeparateThread", function(var_1) { oktgg_GLTF_setLoadOnSeparateThread(this, var_1); }, "$setJsonReading", function(var_1) { oktgg_GLTF_setJsonReading(this, var_1); }, "$updateProgress", function() {
+oktgg_GLTF_updateProgress(this); }, "$runOnGLThread0", function() { oktgg_GLTF_runOnGLThread(this); }, "$runGLCall", function(var_1) { oktgg_GLTF_runGLCall(this, var_1); }, "$createMaterial", function() { return oktgg_GLTF_createMaterial(this); }, "$load5", function() { oktgg_GLTF_load(this); }, "$createArrayElement", function(var_1, var_2) { return oktgg_GLTF_createArrayElement(this, var_1, var_2); }, "$readJson", function(var_1) { oktgg_GLTF_readJson(this, var_1); }, "$destroy0", function() { oktgg_GLTF_destroy(this);
+}, "$getDirectory", function() { return oktgg_GLTF_getDirectory(this); }],
 ck_SkyClient, 0, ck_Sky, [], 4, 3, 0, ["$render5", function() { ck_SkyClient_render(this); }],
 oktn_NET, 0, jl_Object, [], 4, 3, oktn_NET_$callClinit, ["$isSuccess", function(var_1) { return oktn_NET_isSuccess(this, var_1); }],
 kr_IntRange$Companion, 0, jl_Object, [], 4, 3, 0, ["$getEMPTY", function() { return kr_IntRange$Companion_getEMPTY(this); }],
@@ -45729,8 +45867,8 @@ oktgg_GLTFNode$readJson$6, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8",
 oktgg_GLTFNode$readJson$7, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFNode$readJson$7_invoke(this, var_1); }, "$invoke9", function(var_1) { oktgg_GLTFNode$readJson$7_invoke0(this, var_1); }],
 jl_System, 0, jl_Object, [], 4, 3, 0, 0,
 oktgg_GLTFNode$readJson$4, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFNode$readJson$4_invoke(this, var_1); }, "$invoke", function(var_1) { oktgg_GLTFNode$readJson$4_invoke0(this, var_1); }],
-oktgg_GLTFNode$readJson$5, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFNode$readJson$5_invoke(this, var_1); }, "$invoke", function(var_1) { oktgg_GLTFNode$readJson$5_invoke0(this, var_1); }],
-okta_IApp$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
+oktgg_GLTFNode$readJson$5, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFNode$readJson$5_invoke(this, var_1); }, "$invoke", function(var_1) { oktgg_GLTFNode$readJson$5_invoke0(this, var_1); }]]);
+$rt_metadata([okta_IApp$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 oktgg_GLTFNode$readJson$8, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFNode$readJson$8_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTFNode$readJson$8_invoke0(this, var_1); }],
 oktm_IVec4$DefaultImpls, 0, jl_Object, [], 4, 3, 0, 0,
 oktgg_GLTFNode$readJson$9, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_GLTFNode$readJson$9_invoke(this, var_1); }, "$invoke4", function(var_1) { oktgg_GLTFNode$readJson$9_invoke0(this, var_1); }],
@@ -45739,8 +45877,8 @@ oktt_TvmUInt16Array, 0, oktt_TvmArrayBufferView, [oktd_IShortData], 4, 3, 0, ["$
 { oktt_TvmUInt16Array_put0(this, var_1); }, "$put14", function(var_1) { oktt_TvmUInt16Array_put1(this, var_1); }, "$put3", function(var_1) { oktt_TvmUInt16Array_put2(this, var_1); }, "$toUInt1", function(var_1) { return oktt_TvmUInt16Array_toUInt(this, var_1); }],
 oktm_IMesh, 0, jl_Object, [], 3, 3, 0, 0,
 oktm_Mesh, 0, jl_Object, [oktm_IMesh], 4, 3, 0, ["$setName", function(var_1) { oktm_Mesh_setName(this, var_1); }, "$getVertices", function() { return oktm_Mesh_getVertices(this); }, "$setVertices", function(var_1) { oktm_Mesh_setVertices(this, var_1); }, "$getIndices", function() { return oktm_Mesh_getIndices(this); }, "$setIndices", function(var_1) { oktm_Mesh_setIndices(this, var_1); }, "$getMaterial", function() { return oktm_Mesh_getMaterial(this); }, "$setMaterial", function(var_1) { oktm_Mesh_setMaterial(this,
-var_1); }, "$getInstances", function() { return oktm_Mesh_getInstances(this); }, "$getPrimitiveType", function() { return oktm_Mesh_getPrimitiveType(this); }, "$setPrimitiveType", function(var_1) { oktm_Mesh_setPrimitiveType(this, var_1); }, "$bind3", function(var_1) { oktm_Mesh_bind(this, var_1); }, "$render0", function(var_1, var_2, var_3, var_4, var_5) { oktm_Mesh_render(this, var_1, var_2, var_3, var_4, var_5); }]]);
-$rt_metadata([oktgg_IGLTFMaterial$readJson$11, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$11_invoke(this, var_1); }, "$invoke", function(var_1) { oktgg_IGLTFMaterial$readJson$11_invoke0(this, var_1); }],
+var_1); }, "$getInstances", function() { return oktm_Mesh_getInstances(this); }, "$getPrimitiveType", function() { return oktm_Mesh_getPrimitiveType(this); }, "$setPrimitiveType", function(var_1) { oktm_Mesh_setPrimitiveType(this, var_1); }, "$bind3", function(var_1) { oktm_Mesh_bind(this, var_1); }, "$render0", function(var_1, var_2, var_3, var_4, var_5) { oktm_Mesh_render(this, var_1, var_2, var_3, var_4, var_5); }],
+oktgg_IGLTFMaterial$readJson$11, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$11_invoke(this, var_1); }, "$invoke", function(var_1) { oktgg_IGLTFMaterial$readJson$11_invoke0(this, var_1); }],
 jur_Matcher, 0, jl_Object, [jur_MatchResult], 4, 3, 0, ["$find1", function(var_1) { return jur_Matcher_find0(this, var_1); }, "$findAt", function(var_1) { return jur_Matcher_findAt(this, var_1); }, "$find0", function() { return jur_Matcher_find(this); }, "$start", function(var_1) { return jur_Matcher_start0(this, var_1); }, "$end", function(var_1) { return jur_Matcher_end0(this, var_1); }, "$start1", function() { return jur_Matcher_start(this); }, "$end0", function() { return jur_Matcher_end(this); }, "$hasTransparentBounds",
 function() { return jur_Matcher_hasTransparentBounds(this); }],
 oktgg_IGLTFMaterial$readJson$10, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return oktgg_IGLTFMaterial$readJson$10_invoke(this, var_1); }, "$invoke1", function(var_1) { oktgg_IGLTFMaterial$readJson$10_invoke0(this, var_1); }],
@@ -45792,8 +45930,8 @@ ju_Collections$_clinit_$lambda$_61_0, 0, jl_Object, [ju_Comparator], 0, 3, 0, ["
 jl_NumberFormatException, 0, jl_IllegalArgumentException, [], 0, 3, 0, 0,
 k_NotImplementedError, 0, jl_Error, [], 4, 3, 0, 0,
 oktt_TvmGL$TextureWrap, 0, oktt_TvmGL$GLObject, [], 4, 3, 0, ["$getGl7", function() { return oktt_TvmGL$TextureWrap_getGl(this); }, "$getGl6", function() { return oktt_TvmGL$TextureWrap_getGl0(this); }],
-jur_IntArrHash, 0, jl_Object, [], 0, 0, 0, 0,
-jur_AbstractCharClass$LazyJavaMirrored, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyJavaMirrored_computeValue(this); }],
+jur_IntArrHash, 0, jl_Object, [], 0, 0, 0, 0]);
+$rt_metadata([jur_AbstractCharClass$LazyJavaMirrored, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyJavaMirrored_computeValue(this); }],
 oktt_TvmAL, 0, jl_Object, [okta_IAL], 4, 3, 0, ["$getContext", function() { return oktt_TvmAL_getContext(this); }, "$newSound", function(var_1) { return oktt_TvmAL_newSound(this, var_1); }, "$newMusic", function(var_1) { return oktt_TvmAL_newMusic(this, var_1); }],
 jur_AbstractCharClass$LazyJavaISOControl, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazyJavaISOControl_computeValue(this); }],
 oktgg_GLTFBufferView, 0, jl_Object, [oktj_IJsonObjectIO, oktgg_IGLTFArrayElement], 4, 3, 0, ["$readJson", function(var_1) { oktgg_GLTFBufferView_readJson(this, var_1); }, "$getGltf", function() { return oktgg_GLTFBufferView_getGltf(this); }, "$getElementIndex", function() { return oktgg_GLTFBufferView_getElementIndex(this); }, "$getBuffer", function() { return oktgg_GLTFBufferView_getBuffer(this); }, "$getByteLength", function() { return oktgg_GLTFBufferView_getByteLength(this); }, "$getByteOffset", function()
@@ -45802,8 +45940,8 @@ jur_HighSurrogateCharSet, 0, jur_JointSet, [], 0, 0, 0, ["$setNext", function(va
 { return jur_HighSurrogateCharSet_first(this, var_1); }, "$hasConsumed", function(var_1) { return jur_HighSurrogateCharSet_hasConsumed(this, var_1); }],
 ck_KotmeJsMain$main$1, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { ck_KotmeJsMain$main$1_handleEvent(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return ck_KotmeJsMain$main$1_handleEvent$exported$0(this, var_1); }],
 oktsn_CameraDataNode$Companion, 0, jl_Object, [], 4, 3, 0, 0,
-kc_CollectionsKt___CollectionsKt$elementAt$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return kc_CollectionsKt___CollectionsKt$elementAt$1_invoke(this, var_1); }, "$invoke58", function(var_1) { return kc_CollectionsKt___CollectionsKt$elementAt$1_invoke0(this, var_1); }]]);
-$rt_metadata([ck_KotmeJsMain$main$4, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { ck_KotmeJsMain$main$4_handleEvent(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return ck_KotmeJsMain$main$4_handleEvent$exported$0(this, var_1); }],
+kc_CollectionsKt___CollectionsKt$elementAt$1, 0, kji_Lambda, [kjf_Function1], 4, 0, 0, ["$invoke8", function(var_1) { return kc_CollectionsKt___CollectionsKt$elementAt$1_invoke(this, var_1); }, "$invoke58", function(var_1) { return kc_CollectionsKt___CollectionsKt$elementAt$1_invoke0(this, var_1); }],
+ck_KotmeJsMain$main$4, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { ck_KotmeJsMain$main$4_handleEvent(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return ck_KotmeJsMain$main$4_handleEvent$exported$0(this, var_1); }],
 ck_KotmeJsMain$main$3, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { ck_KotmeJsMain$main$3_handleEvent(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return ck_KotmeJsMain$main$3_handleEvent$exported$0(this, var_1); }],
 ck_KotmeJsMain$main$2, 0, jl_Object, [otjde_EventListener], 4, 0, 0, ["$handleEvent", function(var_1) { ck_KotmeJsMain$main$2_handleEvent(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return ck_KotmeJsMain$main$2_handleEvent$exported$0(this, var_1); }],
 okti_IImg$load$1, 0, kji_Lambda, [kjf_Function1], 4, 0, okti_IImg$load$1_$callClinit, ["$invoke8", function(var_1) { return okti_IImg$load$1_invoke(this, var_1); }, "$invoke4", function(var_1) { okti_IImg$load$1_invoke0(this, var_1); }],
@@ -45829,8 +45967,8 @@ function(var_1) { okts_Shader_setFragmentShaderHandle(this, var_1); }, "$getProg
 { return okts_Shader_fragSourceCode(this, var_1, var_2); }, "$getVersionStr", function() { return okts_Shader_getVersionStr(this); }, "$load4", function(var_1, var_2) { okts_Shader_load(this, var_1, var_2); }, "$compileShaders", function(var_1, var_2) { okts_Shader_compileShaders(this, var_1, var_2); }, "$loadShader", function(var_1, var_2) { return okts_Shader_loadShader(this, var_1, var_2); }, "$linkProgram", function(var_1) { return okts_Shader_linkProgram(this, var_1); }, "$buildByNodes", function() { okts_Shader_buildByNodes(this);
 }, "$build0", function() { okts_Shader_build(this); }, "$findMaxChildrenTreeDepth", function(var_1, var_2) { return okts_Shader_findMaxChildrenTreeDepth(this, var_1, var_2); }, "$destroy0", function() { okts_Shader_destroy(this); }, "$getName", function() { return okts_Shader_getName(this); }, "$setName", function(var_1) { okts_Shader_setName(this, var_1); }, "$getVersion", function() { return okts_Shader_getVersion(this); }, "$getProfile", function() { return okts_Shader_getProfile(this); }, "$addNode", function(var_1)
 { return okts_Shader_addNode(this, var_1); }, "$bind", function() { okts_Shader_bind(this); }, "$getNextTextureUnit", function() { return okts_Shader_getNextTextureUnit(this); }, "$getUniformLocation", function(var_1, var_2) { return okts_Shader_getUniformLocation(this, var_1, var_2); }, "$numerateLines", function(var_1, var_2, var_3) { return okts_Shader_numerateLines(this, var_1, var_2, var_3); }, "$prepareObjectData", function(var_1) { okts_Shader_prepareObjectData(this, var_1); }, "$prepareSceneData", function(var_1)
-{ okts_Shader_prepareSceneData(this, var_1); }, "$prepareToDrawMesh", function(var_1) { okts_Shader_prepareToDrawMesh(this, var_1); }, "$set15", function(var_1, var_2) { okts_Shader_set(this, var_1, var_2); }, "$set28", function(var_1, var_2, var_3) { okts_Shader_set0(this, var_1, var_2, var_3); }, "$set31", function(var_1, var_2, var_3, var_4) { okts_Shader_set1(this, var_1, var_2, var_3, var_4); }, "$set32", function(var_1, var_2) { okts_Shader_set2(this, var_1, var_2); }, "$set22", function(var_1, var_2)
-{ okts_Shader_set3(this, var_1, var_2); }, "$set41", function(var_1, var_2, var_3) { okts_Shader_set4(this, var_1, var_2, var_3); }, "$set30", function(var_1, var_2) { okts_Shader_set5(this, var_1, var_2); }, "$setMatrix4", function(var_1, var_2, var_3, var_4) { okts_Shader_setMatrix4(this, var_1, var_2, var_3, var_4); }, "$setMatrix40", function(var_1, var_2, var_3, var_4) { okts_Shader_setMatrix40(this, var_1, var_2, var_3, var_4); }, "$setUniformi", function(var_1, var_2) { okts_Shader_setUniformi(this, var_1,
+{ okts_Shader_prepareSceneData(this, var_1); }, "$prepareToDrawMesh", function(var_1) { okts_Shader_prepareToDrawMesh(this, var_1); }, "$set15", function(var_1, var_2) { okts_Shader_set(this, var_1, var_2); }, "$set29", function(var_1, var_2, var_3) { okts_Shader_set0(this, var_1, var_2, var_3); }, "$set32", function(var_1, var_2, var_3, var_4) { okts_Shader_set1(this, var_1, var_2, var_3, var_4); }, "$set33", function(var_1, var_2) { okts_Shader_set2(this, var_1, var_2); }, "$set23", function(var_1, var_2)
+{ okts_Shader_set3(this, var_1, var_2); }, "$set41", function(var_1, var_2, var_3) { okts_Shader_set4(this, var_1, var_2, var_3); }, "$set31", function(var_1, var_2) { okts_Shader_set5(this, var_1, var_2); }, "$setMatrix4", function(var_1, var_2, var_3, var_4) { okts_Shader_setMatrix4(this, var_1, var_2, var_3, var_4); }, "$setMatrix40", function(var_1, var_2, var_3, var_4) { okts_Shader_setMatrix40(this, var_1, var_2, var_3, var_4); }, "$setUniformi", function(var_1, var_2) { okts_Shader_setUniformi(this, var_1,
 var_2); }, "$sourceCode", function(var_1) { return okts_Shader_sourceCode(this, var_1); }, "$startTextureBinding", function() { okts_Shader_startTextureBinding(this); }],
 oktd_DataByteOrder, 0, jl_Enum, [], 12, 3, oktd_DataByteOrder_$callClinit, 0,
 okts_Shader$buildByNodes$$inlined$sortBy$1, 0, jl_Object, [ju_Comparator], 4, 3, 0, ["$compare1", function(var_1, var_2) { return okts_Shader$buildByNodes$$inlined$sortBy$1_compare(this, var_1, var_2); }],
@@ -45843,7 +45981,7 @@ oktgg_GLTFScene, 0, jl_Object, [oktj_IJsonObjectIO, oktgg_IGLTFArrayElement], 4,
 }],
 jur_UMultiLineEOLSet, 0, jur_AbstractSet, [], 0, 0, 0, ["$matches", function(var_1, var_2, var_3) { return jur_UMultiLineEOLSet_matches(this, var_1, var_2, var_3); }, "$hasConsumed", function(var_1) { return jur_UMultiLineEOLSet_hasConsumed(this, var_1); }],
 oktr_DefaultResources, 0, jl_Object, [oktr_IResources], 4, 3, 0, ["$getLoadOnSeparateThreadByDefault", function() { return oktr_DefaultResources_getLoadOnSeparateThreadByDefault(this); }, "$setLoadOnSeparateThreadByDefault", function(var_1) { oktr_DefaultResources_setLoadOnSeparateThreadByDefault(this, var_1); }, "$update1", function(var_1) { oktr_DefaultResources_update(this, var_1); }, "$addResourceType", function(var_1) { oktr_DefaultResources_addResourceType(this, var_1); }, "$load3", function(var_1, var_2,
-var_3) { return oktr_DefaultResources_load(this, var_1, var_2, var_3); }, "$getOrNull0", function(var_1) { return oktr_DefaultResources_getOrNull(this, var_1); }, "$loadTyped", function(var_1, var_2, var_3) { return oktr_DefaultResources_loadTyped(this, var_1, var_2, var_3); }, "$get18", function(var_1) { return oktr_DefaultResources_get(this, var_1); }, "$getTyped", function(var_1) { return oktr_DefaultResources_getTyped(this, var_1); }],
+var_3) { return oktr_DefaultResources_load(this, var_1, var_2, var_3); }, "$getOrNull0", function(var_1) { return oktr_DefaultResources_getOrNull(this, var_1); }, "$get18", function(var_1) { return oktr_DefaultResources_get(this, var_1); }, "$getTyped", function(var_1) { return oktr_DefaultResources_getTyped(this, var_1); }, "$loadTyped", function(var_1, var_2, var_3) { return oktr_DefaultResources_loadTyped(this, var_1, var_2, var_3); }],
 ki_ProgressionUtilKt, 0, jl_Object, [], 4, 3, 0, 0,
 jur_AbstractCharClass$LazySpecialsBlock, 0, jur_AbstractCharClass$LazyCharClass, [], 0, 0, 0, ["$computeValue", function() { return jur_AbstractCharClass$LazySpecialsBlock_computeValue(this); }],
 oktsn_SplitVec4Node, 0, oktsn_ShaderNode, [], 4, 3, oktsn_SplitVec4Node_$callClinit, ["$getVector", function() { return oktsn_SplitVec4Node_getVector(this); }, "$getX1", function() { return oktsn_SplitVec4Node_getX(this); }, "$getY2", function() { return oktsn_SplitVec4Node_getY(this); }, "$getZ0", function() { return oktsn_SplitVec4Node_getZ(this); }, "$prepareToBuild", function() { oktsn_SplitVec4Node_prepareToBuild(this); }, "$setChannelNames", function() { oktsn_SplitVec4Node_setChannelNames(this); }],
@@ -45901,30 +46039,30 @@ $rt_stringPool(["@", "bytes", "vertexInputs", "$receiver", "it", "<set-?>", "", 
 "point", "numComponents specified for VertexAttribute is incorrect. It must be >= 1 and <= 4", "currentFloatBuffer", "Super calls with default arguments not supported in this target, function: build", "POSITION", "UV", "NORMAL", "Can\'t load image ", ", status: ", "xmag", "ymag", "zfar", "znear", "null cannot be cast to non-null type org.ksdfv.thelema.teavm.HTMLImageElement", "url", "Step must be non-zero.", "Step must be greater than Int.MIN_VALUE to avoid overflow on negation.", "aspectRatio", "yfov", "Frame buffer handle is 0",
 "Frame buffer it not bound. You must use bind {}", "fadeStart", "fadeMul", "varying float depthForFade;", "uniform float fadeStart;", "uniform float fadeMul;", "depthForFade = gl_Position.w;\n", "gl_FragColor = ", "if (gl_FragColor.a < 0.001 || gl_FragColor.a < ", "gl_FragColor.a = 1.0;\n", "gl_FragColor.a *= clamp(1.0 - (depthForFade - fadeStart) * fadeMul, 0.0, 1.0);\n", "shader", "Mesh attempting to access memory outside of the index buffer (count: ", ", offset: ", ", max: ", "Super calls with default arguments not supported in this target, function: render",
 "listener", "xhr", "null cannot be cast to non-null type org.teavm.jso.typedarrays.ArrayBuffer", "data", "element", "source", "gain", "panner", "current", "clear", "list", "$this$replace", "oldValue", "newValue", "stringBuilder.append(this, i, length).toString()", "$this$startsWith", "prefix", "$this$endsWith", "suffix", "$this$regionMatches", "$this$padEnd", "Desired length ", " is less than zero.", "$this$substring", "range", "$this$substringAfterLast", "missingDelimiterValue", "(this as java.lang.Strin…ing(startIndex, endIndex)",
-"$this$removeSuffix", "$this$regionMatchesImpl", "$this$indexOfAny", "chars", "$this$lastIndexOfAny", "$this$indexOf", "string", "$this$lastIndexOf", "$this$contains", "$this$split", "delimiters", "color", "getNextMatch", "Cannot coerce value to an empty range: maximum ", " is less than minimum ", "can\'t read ", ", status ", "img", "updateCall", "null cannot be cast to non-null type org.teavm.jso.dom.events.KeyboardEvent", "x", "y", "z", "result", "$this$asIterable", "type", "perspective", "orthographic", "inputColor",
-"uExposure", "uniform float uExposure;\n", " = vec4(0.0);\n", "vec3 toneMap(vec3 color) {\n", "color *= uExposure;\n", "const float A = 0.15;\n", "const float B = 0.50;\n", "const float C = 0.10;\n", "const float D = 0.20;\n", "const float E = 0.02;\n", "const float F = 0.30;\n", "color = color * 2.0;\n", "color = ((color*(A*color+C*B)+D*E)/(color*(A*color+B)+D*F))-E/F;\n", "return pow(color * 1.3790643, vec3(0.45454544));\n", "color = max(vec3(0.0), color - vec3(0.004));\n", "return (color*(6.2*color+.5))/(color*(6.2*color+1.7)+0.06);\n",
+"$this$removeSuffix", "$this$regionMatchesImpl", "$this$indexOfAny", "chars", "$this$lastIndexOfAny", "$this$indexOf", "string", "$this$lastIndexOf", "$this$contains", "$this$split", "delimiters", "color", "getNextMatch", "Cannot coerce value to an empty range: maximum ", " is less than minimum ", "can\'t read ", ", status ", "img", "updateCall", "null cannot be cast to non-null type org.teavm.jso.dom.events.KeyboardEvent", "x", "y", "z", "result", "userName.value", "$this$asIterable", "type", "perspective",
+"orthographic", "inputColor", "uExposure", "uniform float uExposure;\n", " = vec4(0.0);\n", "vec3 toneMap(vec3 color) {\n", "color *= uExposure;\n", "const float A = 0.15;\n", "const float B = 0.50;\n", "const float C = 0.10;\n", "const float D = 0.20;\n", "const float E = 0.02;\n", "const float F = 0.30;\n", "color = color * 2.0;\n", "color = ((color*(A*color+C*B)+D*E)/(color*(A*color+B)+D*F))-E/F;\n", "return pow(color * 1.3790643, vec3(0.45454544));\n", "color = max(vec3(0.0), color - vec3(0.004));\n", "return (color*(6.2*color+.5))/(color*(6.2*color+1.7)+0.06);\n",
 "const float A = 2.51;\n", "const float B = 0.03;\n", "const float C = 2.43;\n", "const float D = 0.59;\n", "const float E = 0.14;\n", "color = clamp((color * (A * color + B)) / (color * (C * color + D) + E), 0.0, 1.0);\n", "return pow(color, vec3(0.45454544));\n", "}\n", " = vec4(toneMap(", "), ", ".a);\n", "toneMappedColor", "create", " = ", "TEXCOORD_0", "Super calls with default arguments not supported in this target, function: sendToClient", "gameObjects", "Exploration4 - Prairie Nights.ogg", "console",
-"errors", "id", "character", "Unknown game object: ", "loc/loc.gltf", "listeners[i]", "buffer", "SCALAR", "indices accessor must be SCALAR but was ", "unsupported componentType ", "GltfLoader: unsupported componentType ", "Empty list doesn\'t contain element at index ", ", 0.0, 0.0)", ", 0.0, 0.0, 1.0)", "offset", "event", "MAT3", "MAT4", "VEC2", "VEC3", "MAT2", "VEC4", "type not known yet : ", "componentType", "normalized", "max", "min", "sparse", "htmlImage", "intArray", "key", "null cannot be cast to non-null type org.ksdfv.thelema.teavm.json.JsArray",
-"childBlock", "JSObjects.create()", "default", "attributeName", "TANGENT", "floatArray", "childNode", "worldSpacePosition", "clipSpacePosition", "previousViewProjectionMatrix", "uPrevBoneMatrices", "uPrevWorldMatrix", "if (", " > 0.0) ", " += ", " * ", "[int(", ")];\n", "prevPos", "vec4 ", " = vec4(", ", 1.0);\n", "prevSkinning", ".xyz = ", ".xyz * uTransVec4", ".w + uTransVec4", ".xyz;\n", ".xyz = rotate_vertex_position(uTransVec4", ".xyz, uTransVec4", ".w) + uTransVec4", ".xyz + uTransVec4", "prevClipSpacePos = ",
-"\nif (dot(", " - ", ") > 0.0) {\n    ", ";\n} else {\n    ", " = prevClipSpacePos;\n}\n", "vec4 clipSpacePos = ", "vec2 ndcPos = (clipSpacePos / clipSpacePos.w).xy;\n", "vec2 prevNdcPos = (prevClipSpacePos / prevClipSpacePos.w).xy;\n", " = ndcPos - prevNdcPos;\n", " vec3 ", " vec4 prevClipSpacePos;\n", "vec2 ", "uniform mat4 ", "uniform vec4 uTransVec4", "uniform vec4 uTransVec3", "];\n", "mat4 prevSkinning = mat4(0.0);\n", "JOINTS_", "WEIGHTS_", "prevPosition", "velocity", "stretchedPosition", "viewProjectionMatrix",
-"Index type is unknown", "int", "float", "vec2", "vec3", "vec4", "mat2", "mat3", "mat4", "sampler1D", "sampler2D", "sampler3D", "samplerCube", "sampler2DArray", "bool", "Super calls with default arguments not supported in this target, function: mul", "vec", "The last byte in src ", "function", "extension", "bufs", "size", "params", "vertex", "cameraData", "operation", "output", "texture", "normalMap", "principledBSDF", "toneMap", "gBufferOutput", "splitVec4", "mergeVec4", "skyboxVertex", "strength", "texCoord",
-"TEXCOORD_", "index", "byteLength", "data:", ",", "null cannot be cast to non-null type kotlin.Array<T>", "baseColorTexture", "baseColorFactor", "metallicRoughnessTexture", "roughnessFactor", "metallicFactor", "gltfNode", "$this$single", "Array is empty.", "Array has more than one element.", "GltfLoader: uri as image data is not supported yet", "previousTransform", "meshes", "worldMatrix", "frameOffset", "projView", "hitSound", "inverseViewProjection", "inverseProjectionView", "Is", "In", "Incorrect type. Must be one of GL_UNSIGNED_BYTE, GL_UNSIGNED_SHORT, or GL_UNSIGNED_INT",
-"inputName", "crab/crab.gltf", "walk", "GL_EXT_texture_filter_anisotropic", "Texture unit exceeds maximum number of texture units", "extensions", "main", "invoke(...)", "distance2", "Super calls with default arguments not supported in this target, function: play", "BIG_ENDIAN", "LITTLE_ENDIAN", "arg1 * arg2", "uBoneMatrices", "uWorldMatrix", "mat3(", "[0].xyz, ", "[1].xyz, ", "[2].xyz);", "pos", "skinning", "mat3 normalMat = ", " = normalize(normalMat * ", "vec3 T = normalize(normalMat * ", ".xyz);\n", "vec3 B = cross(",
-", T) * ", ".w;\n", " = mat3(T, B, ", "vec3 T = ", " mat3 ", "\n                    uniform vec4 uTransVec4", ";\n\n                    // https://www.geeks3d.com/20141201/how-to-rotate-a-vertex-by-a-quaternion-in-glsl/\n                    vec3 rotate_vertex_position(vec3 position, float angle) {\n                        float half_angle = angle * 0.5;\n                        vec4 q = vec4(0.0, sin(half_angle), 0.0, cos(half_angle));\n                        vec3 v = position.xyz;\n                        return v + 2.0 * cross(q.xyz, cross(q.xyz, v) + q.w * v);\n                    }\n                ",
+"errors", "id", "character", "Unknown game object: ", "loc/loc.gltf", "it.dataAsString", "users", "listeners[i]", "buffer", "SCALAR", "indices accessor must be SCALAR but was ", "unsupported componentType ", "GltfLoader: unsupported componentType ", "Empty list doesn\'t contain element at index ", ", 0.0, 0.0)", ", 0.0, 0.0, 1.0)", "offset", "event", "MAT3", "MAT4", "VEC2", "VEC3", "MAT2", "VEC4", "type not known yet : ", "componentType", "normalized", "max", "min", "sparse", "htmlImage", "intArray", "key",
+"null cannot be cast to non-null type org.ksdfv.thelema.teavm.json.JsArray", "childBlock", "JSObjects.create()", "default", "attributeName", "TANGENT", "floatArray", "childNode", "worldSpacePosition", "clipSpacePosition", "previousViewProjectionMatrix", "uPrevBoneMatrices", "uPrevWorldMatrix", "if (", " > 0.0) ", " += ", " * ", "[int(", ")];\n", "prevPos", "vec4 ", " = vec4(", ", 1.0);\n", "prevSkinning", ".xyz = ", ".xyz * uTransVec4", ".w + uTransVec4", ".xyz;\n", ".xyz = rotate_vertex_position(uTransVec4",
+".xyz, uTransVec4", ".w) + uTransVec4", ".xyz + uTransVec4", "prevClipSpacePos = ", "\nif (dot(", " - ", ") > 0.0) {\n    ", ";\n} else {\n    ", " = prevClipSpacePos;\n}\n", "vec4 clipSpacePos = ", "vec2 ndcPos = (clipSpacePos / clipSpacePos.w).xy;\n", "vec2 prevNdcPos = (prevClipSpacePos / prevClipSpacePos.w).xy;\n", " = ndcPos - prevNdcPos;\n", " vec3 ", " vec4 prevClipSpacePos;\n", "vec2 ", "uniform mat4 ", "uniform vec4 uTransVec4", "uniform vec4 uTransVec3", "];\n", "mat4 prevSkinning = mat4(0.0);\n",
+"JOINTS_", "WEIGHTS_", "prevPosition", "velocity", "stretchedPosition", "viewProjectionMatrix", "Index type is unknown", "int", "float", "vec2", "vec3", "vec4", "mat2", "mat3", "mat4", "sampler1D", "sampler2D", "sampler3D", "samplerCube", "sampler2DArray", "bool", "Super calls with default arguments not supported in this target, function: mul", "vec", "The last byte in src ", "function", "extension", "bufs", "size", "params", "vertex", "cameraData", "operation", "output", "texture", "normalMap", "principledBSDF",
+"toneMap", "gBufferOutput", "splitVec4", "mergeVec4", "skyboxVertex", "strength", "texCoord", "TEXCOORD_", "index", "byteLength", "data:", ",", "null cannot be cast to non-null type kotlin.Array<T>", "baseColorTexture", "baseColorFactor", "metallicRoughnessTexture", "roughnessFactor", "metallicFactor", "gltfNode", "$this$single", "Array is empty.", "Array has more than one element.", "GltfLoader: uri as image data is not supported yet", "previousTransform", "meshes", "worldMatrix", "frameOffset", "projView",
+"hitSound", "inverseViewProjection", "inverseProjectionView", "Is", "In", "Incorrect type. Must be one of GL_UNSIGNED_BYTE, GL_UNSIGNED_SHORT, or GL_UNSIGNED_INT", "inputName", "crab/crab.gltf", "walk", "GL_EXT_texture_filter_anisotropic", "Texture unit exceeds maximum number of texture units", "extensions", "main", "invoke(...)", "distance2", "Super calls with default arguments not supported in this target, function: play", "BIG_ENDIAN", "LITTLE_ENDIAN", "arg1 * arg2", "uBoneMatrices", "uWorldMatrix", "mat3(",
+"[0].xyz, ", "[1].xyz, ", "[2].xyz);", "pos", "skinning", "mat3 normalMat = ", " = normalize(normalMat * ", "vec3 T = normalize(normalMat * ", ".xyz);\n", "vec3 B = cross(", ", T) * ", ".w;\n", " = mat3(T, B, ", "vec3 T = ", " mat3 ", "\n                    uniform vec4 uTransVec4", ";\n\n                    // https://www.geeks3d.com/20141201/how-to-rotate-a-vertex-by-a-quaternion-in-glsl/\n                    vec3 rotate_vertex_position(vec3 position, float angle) {\n                        float half_angle = angle * 0.5;\n                        vec4 q = vec4(0.0, sin(half_angle), 0.0, cos(half_angle));\n                        vec3 v = position.xyz;\n                        return v + 2.0 * cross(q.xyz, cross(q.xyz, v) + q.w * v);\n                    }\n                ",
 "mat4 skinning = mat4(0.0);\n", " vec4 ", "uniform mat3 uNormalMatrix;\n", "null cannot be cast to non-null type org.teavm.jso.dom.html.HTMLAudioElement", "gain.gain", "al.context", "map.values", "inputs", "gl", "mat3x4", "uniformLocations", "uniformLocationsMap", "gltfSkin", "Collection contains no element matching the predicate.", "null cannot be cast to non-null type org.ksdfv.thelema.shader.node.VertexNode", "null cannot be cast to non-null type org.ksdfv.thelema.shader.node.VelocityNode", "0", "outTangentName",
 "outBiNormalName", "outNormalName", "\nvec3 ", " = vec3(0.0);\nvec3 ", " = vec3(0.0);\n\n/*\nviewDir = normalize(cameraPosition - worldPosition), need for back-facing surface\nnormal - vertex normal\nworldPosition - vertex position\nuv - texture coordinates\nnormalScale - normal texture scaling. Used if normalTexValue is not vec3(0.0, 0.0, 0.0)\nnormalTexValue - RGB value from normal texture. May be vec3(0.0, 0.0, 0.0) and it will be not used.\n */\nvoid normalMapMain(vec3 viewVector, mat3 tbn, vec3 worldPosition, vec2 uv, float normalScale, vec3 colorValue) {\n    vec3 t = tbn[0];\n    ve"
 + "c3 b = tbn[1];\n    vec3 ng = tbn[2];\n\n    // For a back-facing surface, the tangential basis vectors are negated.\n    float facing = step(0.0, dot(viewVector, ng)) * 2.0 - 1.0;\n    t *= facing;\n    b *= facing;\n    ng *= facing;\n\n    vec3 n = colorValue * 2.0 - vec3(1.0);\n    n *= vec3(normalScale, normalScale, 1.0);\n    n = mat3(t, b, ng) * normalize(n);\n\n    ", " = t;\n    ", " = b;\n    ", " = n;\n}", "conf", "time", "projViewMatrix", "cameraPos", "\nattribute vec3 POSITION;\nattribute vec2 UV;\nvarying vec2 vUv;\nuniform mat4 projViewMatrix;\nuniform float time;\n\nuniform float waterLevel;\nuniform vec3 cameraPos;\nvarying vec3 viewVector;\n\nconst float uvScale = 100.0;\n\nvarying float depthForFade;\n\nvoid main() {\n    vUv = UV;\n    \n    vec4 pos = vec4(POSITION, 1.0);\n    \n    float t = time;\n    //pos.y += 0.3 * (cos(0.5*t + uvScale * vUv.x) + sin(0.5*t + uvScale * vUv.y));\n    pos.y += waterLevel;\n    \n    viewVector = pos.xyz - cameraPos;\n    \n    gl_Positi"
 + "on = projViewMatrix * pos;\n    \n    depthForFade = gl_Position.w;\n}", "\nvarying vec2 vUv;\n\nuniform sampler2D map;\nuniform vec3 basecolor;\nuniform vec3 foamcolor;\nuniform float time;\n\nvarying vec3 viewVector;\n\nconst float uvScale = 100.0;\n\nuniform float fadeStart;\nuniform float fadeMul;\nvarying float depthForFade;\n \nvoid main() {\n    gl_FragColor.a = 0.5;\n    gl_FragColor.a *= clamp(1.0 - (depthForFade - fadeStart) * fadeMul, 0.0, 1.0);\n    \n    vec3 color = texture2D( map,\n      vUv * uvScale +\n      0.5*vec2(\n        cos(time*0.1),\n        sin(time*0.1)\n      ) +\n      0.1*ve"
 + "c2(\n        cos(time * 0.12 + 3.2 * uvScale * vUv.x),\n        sin(time * 0.1 + 3.0 * uvScale * vUv.y)\n      )\n    ).rgb;\n    \n    vec3 color2 = texture2D( map,\n      vUv * uvScale * 1.3 +\n      0.8*vec2(\n        cos(time*0.1),\n        sin(time*0.1)\n      ) +\n      0.01*vec2(\n        cos(1.7 + time * 0.12 + 3.2 * uvScale * vUv.x),\n        sin(1.7 + time * 0.1 + 3.0 * uvScale * vUv.y)\n      )\n    ).rgb;\n    \n    gl_FragColor.rgb = mix(basecolor * clamp(1.0 - color2, 0.9, 1.0), foamcolor, color.r);\n}\n",
-"basecolor", "foamcolor", "map", "waterLevel", "water-foam.png", "beforeLoad", "afterLoad", "mode", "material", "attributes", "aValue", "baseColor", "shaderChannels", "$this$elementAt", "$this$elementAtOrElse", "defaultValue", "$this$first", "Collection is empty.", "List is empty.", "$this$getOrNull", "ws", "args", "null cannot be cast to non-null type org.teavm.jso.dom.html.HTMLTextAreaElement", "null cannot be cast to non-null type org.teavm.jso.dom.html.HTMLButtonElement", "null cannot be cast to non-null type org.teavm.jso.dom.html.HTMLInputElement",
-"xhr.responseText", "None", "GLTFFile", "JSON", "IGNORE", "REPLACE", "REPORT", "Can\'t get parent of root", "charset", ".xyzw", ".xyz, 1.0)", "null cannot be cast to non-null type T", "Super calls with default arguments not supported in this target, function: loadTyped", " can\'t read, status ", "458867__raclure__damage-sound-effect.ogg", "Hit-Yellow.png", "\nattribute vec3 POSITION;\nattribute vec2 UV;\n\nvarying vec2 uv;\n\nuniform mat4 worldMatrix;\nuniform mat4 projView;\n\nvoid main() {\n    uv = UV;\n    gl_Position = projView * worldMatrix * vec4(POSITION, 1.0);\n}\n",
+"basecolor", "foamcolor", "map", "waterLevel", "water-foam.png", "beforeLoad", "afterLoad", "mode", "material", "attributes", "aValue", "baseColor", "shaderChannels", "$this$elementAt", "$this$elementAtOrElse", "defaultValue", "$this$first", "Collection is empty.", "List is empty.", "$this$getOrNull", "ws", "args", "null cannot be cast to non-null type org.teavm.jso.dom.html.HTMLTextAreaElement", "null cannot be cast to non-null type org.teavm.jso.dom.html.HTMLElement", "null cannot be cast to non-null type org.teavm.jso.dom.html.HTMLButtonElement",
+"null cannot be cast to non-null type org.teavm.jso.dom.html.HTMLInputElement", "xhr.responseText", "None", "GLTFFile", "JSON", "IGNORE", "REPLACE", "REPORT", "Can\'t get parent of root", "charset", ".xyzw", ".xyz, 1.0)", "null cannot be cast to non-null type T", "Super calls with default arguments not supported in this target, function: loadTyped", " can\'t read, status ", "458867__raclure__damage-sound-effect.ogg", "Hit-Yellow.png", "\nattribute vec3 POSITION;\nattribute vec2 UV;\n\nvarying vec2 uv;\n\nuniform mat4 worldMatrix;\nuniform mat4 projView;\n\nvoid main() {\n    uv = UV;\n    gl_Position = projView * worldMatrix * vec4(POSITION, 1.0);\n}\n",
 "\nvarying vec2 uv;\n\nuniform sampler2D tex;\n\nuniform vec2 frameSize;\nuniform vec2 frameOffset;\n\nvoid main() {\n    gl_FragColor = texture2D(tex, uv * frameSize + frameOffset);\n    if (gl_FragColor.a < 0.7) discard;\n}\n", "tex", "frameSize", "codeArea.value", "code", "\n\n", "samplers", "channels", "anim", "sampler", "arg", "varying ", "op", "vec4(arg1.xyz + arg2.xyz, arg1.a)", "Super calls with default arguments not supported in this target, function: updateTransform", "array.iterator()", "alphaMode",
-"OPAQUE", "BLEND", "MASK", "alphaCutoff", "doubleSided", "normalTexture", "pbrMetallicRoughness", "vec4(arg1.xy, 0.0, arg2.a)", "vec4(arg1, arg2.a)", "occlusionTexture", "emissiveTexture", "emissiveFactor", "Patter is null", "\\Q", "\\E", "\\\\E\\Q", "Super calls with default arguments not supported in this target, function: onLoaded", "null cannot be cast to non-null type com.kotme.JonesImp", "attributePosition", "worldPosition", "occlusion", "roughness", "metallic", "PrincipledBSDF: receiveShadows enabled, but clipSpacePos is not set",
+"OPAQUE", "BLEND", "MASK", "alphaCutoff", "doubleSided", "normalTexture", "pbrMetallicRoughness", "vec4(arg1.xy, 0.0, arg2.a)", "vec4(arg1, arg2.a)", "occlusionTexture", "emissiveTexture", "emissiveFactor", "Patter is null", "\\Q", "\\E", "\\\\E\\Q", "Super calls with default arguments not supported in this target, function: onLoaded", "label", "null cannot be cast to non-null type com.kotme.JonesImp", "attributePosition", "worldPosition", "occlusion", "roughness", "metallic", "PrincipledBSDF: receiveShadows enabled, but clipSpacePos is not set",
 "uDirLightsNum", "uPointLightsNum", "uSpotLightsNum", "uAmbientColor", "null cannot be cast to non-null type org.ksdfv.thelema.g3d.light.PointLight", "uPointLightPosition[", "uPointLightColor[", "uPointLightIntensity[", "uPointLightRange[", "uDirLightDirection[", "uDirLightColor[", "uDirLightIntensity[", "uDirLightCascadeEnd[", "uDirLightViewProj[", "null cannot be cast to non-null type org.ksdfv.thelema.g3d.light.DirectionalLight", "uDirLightShadowMap[", " = principledBSDFMain(", "uniform sampler2D uDirLightShadowMap[",
 "uniform float uDirLightCascadeEnd[", " vec4 vDirLightClipSpacePos[", "(0.0);\n", "uniform mat4 uDirLightViewProj[", "for (int i = 0; i < ", "; i++) {\n", "vDirLightClipSpacePos[i] = uDirLightViewProj[i] * ", "Insert", "PageUp", "Period", "ControlRight", "ShiftLeft", "Backquote", "Backslash", "Backspace", "ShiftRight", "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "ControlLeft", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11",
 "F12", "End", "Tab", "Home", "KeyA", "KeyB", "KeyC", "KeyD", "KeyE", "KeyF", "KeyG", "KeyH", "KeyI", "KeyJ", "KeyK", "KeyL", "KeyM", "KeyN", "KeyO", "KeyP", "KeyQ", "KeyR", "KeyS", "KeyT", "KeyU", "KeyV", "KeyW", "KeyX", "KeyY", "KeyZ", "Comma", "Enter", "Equal", "Minus", "Quote", "Slash", "AudioVolumeDown", "ArrowRight", "AltLeft", "PageDown", "ArrowUp", "ArrowDown", "ArrowLeft", "BracketRight", "Semicolon", "AudioVolumeUp", "BracketLeft", "ContextMenu", "Delete", "Digit0", "Digit1", "Digit2", "Digit3", "Digit4",
-"Digit5", "Digit6", "Digit7", "Digit8", "Digit9", "AltRight", "Escape", "auxMap[event.code] ?: KB.UNKNOWN", "it.dataAsString", ".a", "uniform ", "texture3D", "textureCube", "texture2D", ".xyz = pow(", ".xyz, vec3(2.2));\n", "texColor", "texAlpha", "LINEAR", "STEP", "CUBICSPLINE", "inputData", "mixamorig:RightHandIndex1", "clipSpacePos", "\n// cascaded shadow\n", "vec3 cascadeColor = vec3(0.0);", "\nint lightIndex = i * ", ";\nfor (int j = 0; j < ", "; j++) {\n    // this index comparison is for webgl\n    if (",
-".z < uDirLightCascadeEnd[j] && j >= lightIndex && j < lightIndex + ", ") {\n        ", "\n        if (j == 0) {\n            cascadeColor = vec3(1.0, 0.0, 0.0);\n        } else if (j == 1) {\n            cascadeColor = vec3(0.0, 1.0, 0.0);\n        } else if (j == 2) {\n            cascadeColor = vec3(0.0, 0.0, 1.0);       \n        } else if (j == 3) {\n            cascadeColor = vec3(1.0, 1.0, 0.0);       \n        }\n        ", "\n        \n        vec4 lightSpacePos = vDirLightClipSpacePos[j];\n        vec3 projCoords = (lightSpacePos.xyz / lightSpacePos.w) * 0.5 + 0.5;\n        \n        float closestDepth = texture2D(uDirLightShadowMap[j], projCoords.xy).x;        \n        light *= 1.0 - shadowFactor(projCoords.z, closestDepth);\n        ",
+"Digit5", "Digit6", "Digit7", "Digit8", "Digit9", "AltRight", "Escape", "auxMap[event.code] ?: KB.UNKNOWN", ".a", "uniform ", "texture3D", "textureCube", "texture2D", ".xyz = pow(", ".xyz, vec3(2.2));\n", "texColor", "texAlpha", "LINEAR", "STEP", "CUBICSPLINE", "inputData", "mixamorig:RightHandIndex1", "clipSpacePos", "\n// cascaded shadow\n", "vec3 cascadeColor = vec3(0.0);", "\nint lightIndex = i * ", ";\nfor (int j = 0; j < ", "; j++) {\n    // this index comparison is for webgl\n    if (", ".z < uDirLightCascadeEnd[j] && j >= lightIndex && j < lightIndex + ",
+") {\n        ", "\n        if (j == 0) {\n            cascadeColor = vec3(1.0, 0.0, 0.0);\n        } else if (j == 1) {\n            cascadeColor = vec3(0.0, 1.0, 0.0);\n        } else if (j == 2) {\n            cascadeColor = vec3(0.0, 0.0, 1.0);       \n        } else if (j == 3) {\n            cascadeColor = vec3(1.0, 1.0, 0.0);       \n        }\n        ", "\n        \n        vec4 lightSpacePos = vDirLightClipSpacePos[j];\n        vec3 projCoords = (lightSpacePos.xyz / lightSpacePos.w) * 0.5 + 0.5;\n        \n        float closestDepth = texture2D(uDirLightShadowMap[j], projCoords.xy).x;        \n        light *= 1.0 - shadowFactor(projCoords.z, closestDepth);\n        ",
 "light += cascadeColor * 0.5;", "\n        \n        break;\n    }\n}\n", "\n//float CalcShadowFactor(int index, vec4 lightSpacePos) {\n//    vec3 projCoords = (lightSpacePos.xyz / lightSpacePos.w) * 0.5 + 0.5;\n//\n//    float currentDepth = projCoords.z;\n//    float closestDepth = texture2D(shadowMap[index], projCoords).x;\n//\n//    float bias = 0.001;\n//    if (currentDepth - bias > closestDepth)\n//        return 0.5;\n//    else\n//        return 0.0;\n//}\n\nfloat shadowFactor(float currentDepth, float closestDepth) {\n    float bias = 0.001;\n    if (currentDepth - bias > closestDepth)\n"
 + "        return 1.0;\n    else\n        return 0.0;\n}\n\nuniform int uDirLightsNum;\nuniform vec3 uDirLightDirection[", "];\nuniform vec3 uDirLightColor[", "];\nuniform float uDirLightIntensity[", "];\n\nuniform int uPointLightsNum;\nuniform vec3 uPointLightColor[", "];\nuniform float uPointLightRange[", "];\nuniform float uPointLightIntensity[", "];\nuniform vec3 uPointLightPosition[", "];\n\nuniform int numSpotLights;\nuniform vec3 uSpotLightColor[", "];\nuniform float uSpotLightRange[", "];\nuniform float uSpotLightIntensity[",
 "];\nuniform vec3 uSpotLightPosition[", "];\nuniform vec3 uSpotLightDirection[", "];\nuniform float uSpotLightInnerConeCos[", "];\nuniform float uSpotLightInnerConeCos2[", "];\nuniform float uSpotLightOuterConeCos[", "];\n\nuniform vec3 uAmbientColor;\n\nconst float M_PI = 3.141592653589793;\nconst float c_MinReflectance = 0.04;\n\n// functions =======================================\nstruct AngularInfo\n{\n    float NdotL;                  // cos angle between normal and light direction\n    float NdotV;                  // cos angle between normal and view direction\n    float NdotH;                  // cos angle between normal and half vector\n    float LdotH;                  // cos angle between light direction and half vector\n\n"
@@ -45952,9 +46090,9 @@ $rt_stringPool(["@", "bytes", "vertexInputs", "$receiver", "it", "<set-?>", "", 
 "null cannot be cast to non-null type org.ksdfv.thelema.fs.IFile", "UTF8", "null cannot be cast to non-null type org.ksdfv.thelema.json.IJsonObject", "arrayName", "buffers", "glTF: array name is unknown: ", "asset", "extensionsRequired", "glTF extensions are not supported yet", "bufferViews", "accessors", "images", "textures", "materials", "cameras", "nodes", "skins", "animations", "scenes", "skinnedNodes[i]", "sourceType", "directory", "2.0", "viewProj", "camFar", "camPos", "uSunPosition", "uSunColor", "\nattribute vec3 POSITION;\nvarying vec3 vPosition;\n\nuniform mat4 viewProj;\nuniform vec3 camPos;\nuniform float camFar;\n\nvoid main () {\n    vPosition = POSITION;\n    gl_Position = viewProj * vec4(POSITION * camFar + camPos, 1.0);\n}",
 "\nvarying vec3 vPosition;\nuniform samplerCube texture;\n\nuniform vec3 uSunColor;\nuniform vec3 uSunPosition;\nconst float uSunDiskSize = 0.05;\nconst float uSunStrength = 2.0;\n\nvoid main () {\n    vec3 norm = normalize(vPosition);\n    \n    vec3 up = vec3(0.1, 0.5, 0.6);\n    vec3 bottom = vec3(0.5, 0.7, 0.8);\n    vec3 skyColor = mix(bottom, up, clamp(norm.y, 0.0, 1.0));\n    \n    float dist = length(norm - uSunPosition);\n\tfloat sunMix = clamp(uSunDiskSize/dist, 0.0, uSunStrength);\n\n\tvec3 skySun = mix(skyColor, uSun"
 + "Color, sunMix);\n    //vec3 skySun = skyColor + uSunColor * sunMix;\n    \n    gl_FragColor = vec4(skySun, 1.0);\n}", "null cannot be cast to non-null type org.ksdfv.thelema.g3d.gltf.IGLTFArray<org.ksdfv.thelema.g3d.gltf.IGLTFArrayElement>", "list[index]", "list.iterator()", "Either src or dest is null", "shortArray", "arg1.xyz * arg2", "Currently mesh builder supports only maximum 32768 vertices", "heightProvider", "lateinit property ", " has not been initialized", " must not be null", "Parameter specified as non-null is null: method ",
-".", ", parameter ", "ActiveCamera proxy can\'t be ActiveCamera", " = normalize(", ".z;\n", "vec3 ", "cameraPosition", "prevViewProjectionMatrix", "viewMatrix", "projectionMatrix", "inverseViewProjectionMatrix", "viewZDepth", "viewSpacePosition", "stars-above-head/stars-above-head.gltf", "byteStride", "Collection doesn\'t contain element at index ", "name.value", "loc", "https:", "ws:", "wss:", "//", "/ws", "WebSocket.create(\"$protocol//${loc.host}/ws\")", "times", "inTangents", "outTangents", "copyright",
-"generator", "version", "minVersion", "#version 300 es\n", "#version 100\n", "#version ", "vertCode", "fragCode", "==== Errors in shader ====", "==== Errors in shader \"", "\" ====", "Fragment shader:\n", "Vertex shader:\n", "void main() {\n", "vertDecl.toString()", "fragDecl.toString()", "Errors in generated shader", "Super calls with default arguments not supported in this target, function: findMaxChildrenTreeDepth", "defaultPrecision", "profile", "precision mediump float;\n", "Native", "LittleEndian", "BigEndian",
-"provider", "typesInternal[i]", "Resource type is not found for: ", "Step is zero.", "vector", ".y", "0.0", "1.0", ".z", ".w", "Super calls with default arguments not supported in this target, function: vertexBuffer", "Super calls with default arguments not supported in this target, function: indexBuffer"]);
+".", ", parameter ", "ActiveCamera proxy can\'t be ActiveCamera", " = normalize(", ".z;\n", "vec3 ", "cameraPosition", "prevViewProjectionMatrix", "viewMatrix", "projectionMatrix", "inverseViewProjectionMatrix", "viewZDepth", "viewSpacePosition", "stars-above-head/stars-above-head.gltf", "byteStride", "Collection doesn\'t contain element at index ", "loc", "https:", "ws:", "wss:", "//", "/ws", "WebSocket.create(\"$protocol//${loc.host}/ws\")", "times", "inTangents", "outTangents", "copyright", "generator", "version",
+"minVersion", "#version 300 es\n", "#version 100\n", "#version ", "vertCode", "fragCode", "==== Errors in shader ====", "==== Errors in shader \"", "\" ====", "Fragment shader:\n", "Vertex shader:\n", "void main() {\n", "vertDecl.toString()", "fragDecl.toString()", "Errors in generated shader", "Super calls with default arguments not supported in this target, function: findMaxChildrenTreeDepth", "defaultPrecision", "profile", "precision mediump float;\n", "Native", "LittleEndian", "BigEndian", "provider", "typesInternal[i]",
+"Resource type is not found for: ", "Step is zero.", "vector", ".y", "0.0", "1.0", ".z", ".w", "Super calls with default arguments not supported in this target, function: vertexBuffer", "Super calls with default arguments not supported in this target, function: indexBuffer"]);
 jl_String.prototype.toString = function() {
     return $rt_ustr(this);
 };

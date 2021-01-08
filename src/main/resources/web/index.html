@@ -88,7 +88,7 @@
                 height: 100%;
             }
 
-            #code, #console {
+            #code, #console, #name {
                 display:block;
                 vertical-align: top;
                 flex:1;
@@ -96,25 +96,33 @@
             #leftPanel {
                 width: 400px;
             }
+            .userLabel {
+                display: block;
+            }
+            #users {
+                max-height: 100px;
+                overflow-y: scroll;
+            }
         </style>
 </head>
 <body onload="main()">
 <div class="hbox height100">
     <div id="leftPanel" class="vbox">
-        <div class="hbox">
-            <label>Name:</label>
+        <form class="hbox" action="javascript:void(0);">
             <input id="name" value="userName"/>
-            <button id="connect">Присоединиться</button>
-        </div>
+        </form>
         <div class="hbox">
-            <button id="eval">Запустить код</button>
+            <button id="eval">Исполнить</button>
             <button id="restart">Заново</button>
+            <button id="connect">Войти</button>
             <input type="checkbox" id="music">Музыка</input>
         </div>
-        <label>Code:</label>
+        <label>Код:</label>
         <textarea id="code"></textarea>
-        <label>Console:</label>
+        <label>Консоль:</label>
         <textarea id="console"></textarea>
+        <label>Пользовтели:</label>
+        <div id="users" class="vbox"></div>
     </div>
     <canvas id="canvas"></canvas>
 </div>
